@@ -1,0 +1,13 @@
+{
+  "name": "components",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "theme": "*"
+  },
+  "dependencies": {
+    "react-accessible-accordion": "^3.0.0"
+  }
+}
