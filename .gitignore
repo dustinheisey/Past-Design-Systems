@@ -4,8 +4,9 @@ node_modules/
 # Optional eslint cache
 .eslintcache
 
-# Yarn Integrity file
+# Yarn
 .yarn-integrity
+yarn.lock
 
 # Mac Files
 .DS_Store
