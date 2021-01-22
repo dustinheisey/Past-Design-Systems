@@ -1,8 +1,7 @@
 import { Layout as StyledLayout, Main, React, SEO, Global } from 'styles'
 
 export const Layout = ({ title, description, index, children }) => (
-  <>
-    <Global/>
+    <Global>
     <SEO
       title={title}
       desc={description}
@@ -14,5 +13,5 @@ export const Layout = ({ title, description, index, children }) => (
           {children}
         </Main>
       </StyledLayout>
-  </>
+      </Global>
 )

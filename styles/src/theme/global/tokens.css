@@ -1,0 +1,96 @@
+:root {
+  /* Primary Colors */
+  --color-primary-100: #000;
+  --color-primary-200: #000;
+  --color-primary-300: #000;
+  --color-primary-400: #000;
+  --color-primary-500: #000;
+
+  /* Secondary Colors */
+  --color-secondary-100: #000;
+  --color-secondary-200: #000;
+  --color-secondary-300: #000;
+  --color-secondary-400: #000;
+  --color-secondary-500: #000;
+
+  /* Grey Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey-100: #000;
+  --color-grey-100: #000;
+  --color-grey-200: #000;
+  --color-grey-300: #000;
+  --color-grey-400: #000;
+  --color-grey-500: #000;
+
+  /* Semantic Colors */
+  --color-success: #000;
+  --color-info: #000;
+  --color-warning: #000;
+  --color-danger: #000;
+
+  /* Font */
+  --font-heading: sans-serif;
+  --font-body: sans-serif;
+
+  /* Font Size */
+  --font-size-xxs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2.25rem;
+  --font-size-display: 3.5rem;
+
+  /* Line Height */
+  --line-height-dense: 1.4;
+  --line-height-normal: 1.8;
+  --line-height-loose: 2.2;
+
+  /* Font Weight */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-semibold: 500;
+  --weight-bold: 700;
+
+  /* Letter Spacing */
+  --letter-spacing-dense: -0.015em;
+  --letter-spacing-normal: normal;
+  --letter-spacing-loose: 0.075em;
+
+  /* Border Radius */
+  --radius: 3px;
+  --radius-pill: 9999px;
+  --radius-circle: 50%;
+
+  /* Shadow */
+  --shadow-xs: 0 1px 0 #0d131e0d;
+  --shadow-sm: 0 1px 2px #0d131e1a;
+  --shadow-md: 0 2px 4px #0d131e1a;
+  --shadow-lg: 0 2px 8px #0d131e1a;
+  --shadow-xl: 0 4px 16px #0d131e1a;
+
+  /* Spacing */
+  --space-xxxs: 2px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 36px;
+  --space-xxl: 48px;
+  --space-xxxl: 72px;
+
+  /* Transition */
+  --transition-slow: 1000ms;
+  --transition: 250ms;
+  --transition-fast: 50ms;
+
+  /* Z-Index */
+  --z-drawer: 700;
+  --z-dialog: 800;
+  --z-popover: 900;
+  --z-toast: 950;
+  --z-tooltip: 1000;
+}
