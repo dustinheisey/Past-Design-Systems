@@ -1,31 +1,20 @@
-// const meta = require('./src/config/meta')
-const website = require('./src/config/website')
+const meta = require('./src/config/meta')
 
-const pathPrefix = website.pathPrefix === '/' ? '' : website.pathPrefix
+const pathPrefix = meta.pathPrefix === '/' ? '' : meta.pathPrefix
 
 module.exports = {
-  // siteMetadata: {
-  //   siteUrl: meta.siteUrl,
-  //   siteTitle: meta.siteTitle,
-  //   siteTitleShort: meta.siteTitleShort,
-  //   siteDescription: meta.siteDescription,
-  //   twitter: meta.twitter,
-  //   facebook: meta.facebook,
-  //   instagram: meta.instagram
-  // },
   siteMetadata: {
-    siteUrl: website.url + pathPrefix, // For gatsby-plugin-sitemap
+    siteUrl: meta.url + pathPrefix, // For gatsby-plugin-sitemap
     pathPrefix,
-    title: website.title,
-    titleAlt: website.titleAlt,
-    description: website.description,
-    logo: website.logo,
-    headline: website.headline,
-    siteLanguage: website.siteLanguage,
-    ogLanguage: website.ogLanguage,
-    author: website.author,
-    twitter: website.twitter,
-    facebook: website.facebook
+    title: meta.title,
+    description: meta.description,
+    siteLanguage: meta.siteLanguage,
+    headline: meta.headline,
+    author: meta.author,
+    logo: meta.logo,
+    ogLanguage: meta.ogLanguage,
+    twitter: meta.twitter,
+    facebook: meta.facebook
   },
   plugins: [
     {
@@ -49,7 +38,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: website.url
+        siteUrl: meta.url
       }
     },
     'gatsby-plugin-advanced-sitemap',
@@ -57,20 +46,14 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest', // Progressive Web App
       options: {
-        name: website.title,
-        short_name: website.shortName,
-        description: website.description,
+        name: meta.title,
+        short_name: meta.shortName,
+        description: meta.description,
         start_url: '/',
-        background_color: website.backgroundColor,
-        theme_color: website.themeColor,
+        background_color: meta.backgroundColor,
+        theme_color: meta.themeColor,
         display: 'standalone',
-        icon: website.favicon
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: website.googleAnalyticsID
+        icon: meta.favicon
       }
     }
   ]

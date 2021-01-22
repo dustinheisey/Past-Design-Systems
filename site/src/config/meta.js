@@ -1,18 +1,17 @@
-const path = require('path')
-
 module.exports = {
-  siteUrl: 'https://climatestrikeoregon.org',
-  siteTitle: 'Climate Strike Oregon + Week of Action',
-  siteTitleShort: 'Climate Strike Oregon',
-  siteDescription:
-    'Our house is on fire — let’s act like it. We demand climate justice for everyone. This week is our chance to show the politicians and fossil fuel billionaires that the real power lies with the people. This week is your chance to join the climate justice movement, and put a stop to business as usual.',
-  author: 'Dustin Heisey',
-  twitter: '@PortlandStrike',
-  facebook: '@portlandstrikeforclimate',
-  instagram: 'portlandclimatestrike',
-  manifest: {
-    themeColor: '#E9A41E',
-    backgroundColor: '#ffffff'
-  },
-  logo: path.resolve(__dirname, '../assets/images/favicon.png')
+  title: 'Example Title', // Navigation and Site Title
+  shortName: 'Short Name', // shortname for manifest. MUST be shorter than 12 characters
+  description: 'Example description',
+  pathPrefix: '/',
+  logo: '/static/logo.png',
+  url: 'https://example.com', // Domain of your site. No trailing slash!
+  siteLanguage: 'en', // Language Tag on <html> element
+  ogLanguage: 'en_US', // Facebook Language
+  favicon: 'src/assets/images/favicon.png', // Used for manifest favicon generation
+  author: 'DustinHeisey', // Author for schemaORGJSONLD
+  headline: 'Example Title', // Headline for schema.org JSONLD 
+  themeColor: '#000',
+  backgroundColor: '#fff',
+  twitter: '@username', // Twitter Username
+  facebook: 'Site Name', // Facebook Site Name
 }
