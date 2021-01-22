@@ -1,6 +1,0 @@
-export { H1, H2, H3, H4, H5, H6, P } from './src/text'
-export { default as Link } from './src/link'
-export { default as Btn } from './src/button'
-export { default as Divider } from './src/divider'
-export { default as SVG } from './src/svg'
-export { default as Img } from './src/image'

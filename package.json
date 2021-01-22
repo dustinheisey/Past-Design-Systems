@@ -2,7 +2,7 @@
   "private": true,
   "workspaces": [
     "site",
-    "packages/*"
+    "styles"
   ],
   "scripts": {
     "dev": "yarn workspace site dev"

@@ -17,6 +17,7 @@ module.exports = {
     facebook: meta.facebook
   },
   plugins: [
+    `styles`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,10 +25,6 @@ module.exports = {
         name: 'images'
       }
     },
-    `theme`,
-    `layout`,
-    `elements`,
-    `components`,
     'gatsby-plugin-robots-txt',
     {
       resolve: 'gatsby-plugin-typography',
