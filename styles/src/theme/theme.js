@@ -35,7 +35,7 @@ export const Theme = {
   },
   fonts: {
     heading: 'sans-serif',
-    body: 'serif'
+    text: 'sans-serif'
   },
   fontSizes: {
     xxs: '0.625rem',
@@ -62,7 +62,7 @@ export const Theme = {
     xl: '36px',
     xxl: '48px'
   },
-  radii: { default: '3px', pill: '9999px', circle: '50%' },
+  radii: { normal: '3px', pill: '9999px', circle: '50%' },
   shadows: {
     xs: '0 1px 0 #0d131e0d',
     sm: '0 1px 2px #0d131e1a',
@@ -78,6 +78,73 @@ export const Theme = {
     tooltip: 1000
   },
   breakpoints: ['40em', '56em', '64em'],
+  button: {
+    primary: {
+      backgroundColor: 'primary',
+      borderColor: 'primary',
+      color: 'white',
+      '&:hover': {
+        backgroundColor: 'primaryDark',
+        boxShadow: 'xs'
+      }
+    },
+    primaryInverse: {
+      backgroundColor: 'lightest',
+      borderColor: 'lightest',
+      color: 'primary',
+      '&:hover': {
+        color: 'primaryDark',
+        boxShadow: 'xs'
+      }
+    },
+    outline: {
+      backgroundColor: 'transparent',
+      borderColor: 'dark',
+      color: 'darkest',
+      '&:hover': {
+        boxShadow: 'xs'
+      }
+    },
+    outlineInverse: {
+      backgroundColor: 'transparent',
+      borderColor: 'lightest',
+      color: 'lightest',
+      '&:hover': {
+        boxShadow: 'xs'
+      }
+    },
+    text: {
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      color: 'primary',
+      '&:hover': {
+        color: 'primaryDark'
+      }
+    },
+    textInverse: {
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      color: 'lightest',
+      '&:hover': {
+        color: 'primary'
+      }
+    },
+    danger: {
+      backgroundColor: 'danger',
+      borderColor: 'danger',
+      color: 'white',
+      '&:hover': {
+        backgroundColor: 'dangerDark',
+        boxShadow: 'xs'
+      }
+    },
+    icon: {
+      borderColor: 'transparent',
+      '&:hover': {
+        boxShadow: 'xs'
+      }
+    }
+  },
   sidebar: {
     left: {
       gridTemplateColumns: 'minmax(150px, 25%) 1fr'
