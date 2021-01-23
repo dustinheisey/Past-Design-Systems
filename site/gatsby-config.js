@@ -1,4 +1,4 @@
-const meta = require('./src/config/meta')
+const meta = require('./meta.js')
 
 const pathPrefix = meta.pathPrefix === '/' ? '' : meta.pathPrefix
 
@@ -26,12 +26,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-robots-txt',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: './src/config/typography'
-      }
-    },
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
