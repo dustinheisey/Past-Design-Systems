@@ -4,6 +4,7 @@ import { jsx, Box } from 'styles'
 const styles = (
   variant = 'primary',
   radius = 'normal',
+  inverse = false,
   size = 'md'
 ) => ({
   display: ['flex', 'inline-flex'],
@@ -30,7 +31,7 @@ const styles = (
     (size === 'lg' && 'md'),
   width: 'auto',
   cursor: 'pointer',
-  variant: `button.${variant}`,
+  variant: `button.${variant}${inverse ? 'Inverse' : ''}`,
   borderRadius: radius
 })
 
@@ -39,6 +40,7 @@ export const Button = ({
   suffix,
   children,
   as,
+  inverse,
   radius,
   size,
   variant,
@@ -50,7 +52,7 @@ export const Button = ({
       ? "target='_blank' rel='noopener noreferrer'"
       : {})}
     sx={{
-      ...styles(variant, radius, size)
+      ...styles(variant, radius, inverse, size)
     }}
     {...props}
   >

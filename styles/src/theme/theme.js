@@ -78,6 +78,26 @@ export const Theme = {
     tooltip: 1000
   },
   breakpoints: ['40em', '56em', '64em'],
+  link: {
+    primary: {
+      color: 'primary'
+    },
+    inverse: {
+      color: 'lightest'
+    },
+    success: {
+      color: 'success'
+    },
+    info: {
+      color: 'info'
+    },
+    warning: {
+      color: 'warning'
+    },
+    danger: {
+      color: 'danger'
+    }
+  },
   button: {
     primary: {
       backgroundColor: 'primary',

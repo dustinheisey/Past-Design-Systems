@@ -1,90 +1,33 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import {Link as GatsbyLink} from 'gatsby'
+import { jsx, Box } from 'styles'
+import { Link as GatsbyLink } from 'gatsby'
+
+const styles = (variant, justify) => ({
+  textDecoration: 'none',
+  display: 'inlineBlock',
+  variant: `link.${variant}`,
+  textAlign: justify
+})
 
 export const Link = ({
   children,
   to,
-  a,
+  as = { GatsbyLink },
   inverse,
-  accent,
-  hoverPrimary,
-  hoverAccent,
-  hoverInverse,
-  success,
-  warning,
-  danger,
-  info,
-  left,
-  right,
-  center,
-  active,
+  justify,
   download,
+  variant,
   ...props
-}) =>
-  (a && (
-    <a
-      href={to}
-      target='_blank'
-      rel='noopener noreferrer'
-      download={download}
-      sx={{
-        textDecoration: 'none',
-        display: 'inlineBlock',
-        color:
-          (inverse && 'textLight') ||
-          (success && 'success') ||
-          (warning && 'warning') ||
-          (danger && 'danger') ||
-          (info && 'info') ||
-          'primary',
-        textAlign:
-          (left && 'left') ||
-          (center && 'center') ||
-          (right && 'right') ||
-          'left',
-        ':hover': {
-          color:
-            (hoverPrimary && 'primary') ||
-            (hoverInverse && 'textLight') ||
-            (hoverAccent && 'accent') ||
-            'primary'
-        },
-        ...props
-      }}>
-      {children}
-    </a>
-  )) || (
-    <GatsbyLink
-      to={to}
-      sx={{
-        textDecoration: 'none',
-        display: 'inlineBlock',
-        color:
-          (inverse && 'textLight') ||
-          (accent && 'accent') ||
-          (success && 'success') ||
-          (warning && 'warning') ||
-          (danger && 'danger') ||
-          (info && 'info') ||
-          'primary',
-        textAlign:
-          (left && 'left') ||
-          (center && 'center') ||
-          (right && 'right') ||
-          'left',
-        transition: 'all 0.3s',
-        ':hover': {
-          color:
-            (hoverPrimary && 'primary') ||
-            (hoverInverse && 'textLight') ||
-            (hoverAccent && 'accent') ||
-            'primary'
-        },
-        mb: '1.5vmin',
-        ...props
-      }}
-      activeStyle={{ color: '#E9A41E' }}>
-      {children}
-    </GatsbyLink>
-  )
+}) => (
+  <Box
+    as={as}
+    {...(as === 'a'
+      ? `href=${to} target="_blank" rel="noopener noreferrer"`
+      : `to=${to}`)}
+    download={download}
+    sx={{ ...styles(variant, justify) }}
+    {...props}
+  >
+    {children}
+  </Box>
+)
