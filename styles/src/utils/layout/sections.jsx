@@ -1,4 +1,4 @@
-import { Box } from 'styles'
+import { React, Box } from 'styles'
 
 export const Main = ({ children, ...props }) => (
   <Box as='main' {...props}>

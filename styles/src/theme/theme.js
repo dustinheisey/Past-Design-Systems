@@ -78,5 +78,24 @@ export const Theme = {
     tooltip: 1000
   },
   breakpoints: ['40em', '56em', '64em'],
-  useColorSchemeMediaQuery: true
+  sidebar: {
+    left: {
+      gridTemplateColumns: 'minmax(150px, 25%) 1fr'
+    },
+    right: {
+      gridTemplateColumns: '1fr minmax(150px, 25%)'
+    }
+  },
+  columns: {
+    left: {
+      gridTemplateColumns: '.6fr .4fr'
+    },
+    right: {
+      gridTemplateColumns: '.4fr .6fr'
+    },
+    auto: {
+      gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr)',
+      placeItems: 'center'
+    }
+  }
 }

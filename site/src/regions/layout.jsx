@@ -1,5 +1,6 @@
 import {
-  Layout as StyledLayout,
+  Header,
+  Footer,
   Main,
   React,
   SEO,
@@ -18,9 +19,9 @@ export const Layout = ({ title, description, index, children }) => (
       url='https://examplesite.com'
     />
     <ThemeProvider theme={Theme}>
-      <StyledLayout>
-        <Main>{children}</Main>
-      </StyledLayout>
+      <Header></Header>
+      <Main>{children}</Main>
+      <Footer></Footer>
     </ThemeProvider>
   </Global>
 )

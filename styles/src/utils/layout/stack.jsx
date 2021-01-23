@@ -1,11 +1,20 @@
-import { React, Box } from 'styles'
+/** @jsx jsx */
+import { jsx, Box } from 'styles'
 
-export const Stack = ({ gap, as, justify, children, ...props }) => (
+export const Stack = ({
+  gap,
+  align = 'center',
+  justify = 'left',
+  children,
+  ...props
+}) => (
   <Box
-    as={as}
-    display='grid'
-    gap={gap}
-    justifyItems={justify}
+    sx={{
+      display: 'grid',
+      gridGap: gap,
+      justifyItems: justify,
+      alignItems: align
+    }}
     {...props}
   >
     {children}

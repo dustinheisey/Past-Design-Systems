@@ -1,7 +1,7 @@
 import { React, Box } from 'styles'
 
 export const H1 = ({ children, variant, ...props }) => (
-  <Box as='h1' variant={variant || 'h1'} {...props}>
+  <Box as='h1' variant={variant || 'heading.page'} {...props}>
     {children}
   </Box>
 )

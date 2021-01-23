@@ -1,7 +1,14 @@
-import { React, Box } from 'styles'
+/** @jsx jsx */
+import { jsx, Box } from 'styles'
 
-export const Masonry = ({ col, gap, as, children, ...props }) => (
-  <Box columns={col} gap={gap} as={as} {...props}>
+export const Masonry = ({ col, gap = 'md', children, ...props }) => (
+  <Box
+    sx={{
+      columns: col,
+      columnGap: gap
+    }}
+    {...props}
+  >
     {children}
   </Box>
 )
