@@ -1,15 +1,15 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import {Styled} from 'styles'
+import { Styled } from 'styles'
 
-const StyledBox = Styled.div``;
+const StyledBox = Styled.div``
 
 export const Box = ({ children, as, ...props }) => (
   <StyledBox
     sx={{
       ...props
     }}
-    as={as}
+    as={as || 'div'}
   >
     {children}
   </StyledBox>

@@ -7,7 +7,7 @@ export { SEO } from './src/theme/seo/seo.jsx'
 
 export { styled as Styled, React, Component, StaticQuery, graphql }
 
-export { Box } from './src/utils/box.jsx'
+export { Box } from './src/utils/layout/box.jsx'
 export { Flex } from './src/utils/flex.jsx'
 export { Masonry } from './src/utils/masonry.jsx'
 export { Row, Col, Grid } from './src/utils/grid.jsx'
@@ -21,16 +21,11 @@ export {
   Main,
   Section,
   Nav
-} from './src/utils/layout.jsx'
+} from './src/utils/layout/sections.jsx'
 
-export {
-  H1,
-  H2,
-  H3,
-  H4,
-  Body,
-  Caption
-} from './src/elements/text.jsx'
+export { H1, H2, H3, H4 } from './src/elements/text/heading.jsx'
+export { Text } from './src/elements/text/text.jsx'
+export { Caption } from './src/elements/text/caption.jsx'
 export { Link } from './src/elements/link.jsx'
 export { Button } from './src/elements/button.jsx'
 export { Divider } from './src/elements/divider.jsx'

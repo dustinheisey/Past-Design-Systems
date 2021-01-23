@@ -1,4 +1,4 @@
-import { Box } from 'styles'
+import { React, Box } from 'styles'
 
 export const H1 = ({ children, variant, ...props }) => (
   <Box as='h1' variant={variant || 'h1'} {...props}>
@@ -20,18 +20,6 @@ export const H3 = ({ children, variant, ...props }) => (
 
 export const H4 = ({ children, variant, ...props }) => (
   <Box as='h4' variant={variant || 'h4'} {...props}>
-    {children}
-  </Box>
-)
-
-export const Body = ({ children, variant, ...props }) => (
-  <Box as='p' variant={variant} {...props}>
-    {children}
-  </Box>
-)
-
-export const Caption = ({ children, variant, ...props }) => (
-  <Box as='p' variant={variant} {...props}>
     {children}
   </Box>
 )
