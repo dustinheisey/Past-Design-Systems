@@ -1,0 +1,29 @@
+{
+  "name": "styles",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "@humblebee/styled-components-breakpoint": "^2.1.4",
+    "@mdx-js/react": "^1.0.27",
+    "@svgr/webpack": "^4.3.2",
+    "@xstyled/styled-components": "^1.8.4",
+    "gatsby": "^2.13.23",
+    "gatsby-image": "^2.2.6",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-plugin-svgr": "^2.0.2",
+    "gatsby-plugin-theme-ui": "^0.3.5",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-transformer-sharp": "^2.2.4",
+    "react": "^16.8.6",
+    "react-accessible-accordion": "^3.0.0",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2",
+    "theme-ui": "^0.2.14"
+  }
+}

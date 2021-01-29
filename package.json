@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "workspaces": [
+    "site",
+    "styles"
+  ],
+  "scripts": {
+    "dev": "yarn workspace site dev"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 70,
+    "jsxSingleQuote": true
+  }
+}
