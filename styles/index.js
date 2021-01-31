@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { ThemeProvider, jsx } from 'theme-ui'
 
-export { Global } from './src/theme/global/global.jsx'
-export { SEO } from './src/theme/seo/seo.jsx'
-export { Theme } from './src/theme/theme.js'
+export { Global } from './src/theme/global/global'
+export { SEO } from './src/theme/seo/seo'
+export { Theme } from './src/theme/theme'
 
 export {
   ThemeProvider,
@@ -17,10 +17,10 @@ export {
   graphql
 }
 
-export { Box } from './src/utils/layout/box.jsx'
-export { Columns } from './src/utils/layout/columns.jsx'
-export { Inline } from './src/utils/layout/inline.jsx'
-export { Masonry } from './src/utils/layout/masonry.jsx'
+export { Box } from './src/utils/layout/box'
+export { Columns } from './src/utils/layout/columns'
+export { Inline } from './src/utils/layout/inline'
+export { Masonry } from './src/utils/layout/masonry'
 export {
   Address,
   Article,
@@ -30,16 +30,16 @@ export {
   Main,
   Section,
   Nav
-} from './src/utils/layout/sections.jsx'
-export { Sidebar } from './src/utils/layout/sidebar.jsx'
-export { Stack } from './src/utils/layout/stack.jsx'
-export { Tiles } from './src/utils/layout/tiles.jsx'
+} from './src/utils/layout/sections'
+export { Sidebar } from './src/utils/layout/sidebar'
+export { Stack } from './src/utils/layout/stack'
+export { Tiles } from './src/utils/layout/tiles'
 
-export { H1, H2, H3, H4 } from './src/elements/text/heading.jsx'
-export { Text } from './src/elements/text/text.jsx'
-export { Caption } from './src/elements/text/caption.jsx'
-export { Link } from './src/elements/link.jsx'
-export { Button } from './src/elements/button.jsx'
-export { Divider } from './src/elements/divider.jsx'
-export { SVG } from './src/elements/svg.jsx'
-export { Image } from './src/elements/image.jsx'
+export { H1, H2, H3, H4 } from './src/elements/text/heading'
+export { Text } from './src/elements/text/text'
+export { Caption } from './src/elements/text/caption'
+export { Link } from './src/elements/link'
+export { Button } from './src/elements/button'
+export { Divider } from './src/elements/divider'
+export { SVG } from './src/elements/svg'
+export { Image } from './src/elements/image'

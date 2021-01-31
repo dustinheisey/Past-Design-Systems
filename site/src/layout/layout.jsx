@@ -1,14 +1,13 @@
 import {
-  Header,
-  Footer,
   Main,
   React,
   SEO,
   Global,
-  ThemeProvider
+  ThemeProvider,
+  Theme
 } from 'styles'
-
-import { Theme } from 'styles'
+import Header from './header'
+import Footer from './footer'
 
 export const Layout = ({ title, description, index, children }) => (
   <Global>
