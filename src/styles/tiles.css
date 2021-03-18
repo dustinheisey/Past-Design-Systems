@@ -1,0 +1,8 @@
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min, 200px), 1fr));
+  gap: var(--space-md);
+  align-items: var(--align, center);
+  justify-items: var(--justify, center);
+  width: 100%;
+}

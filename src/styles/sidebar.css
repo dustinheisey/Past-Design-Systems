@@ -1,0 +1,7 @@
+.sidebar {
+  grid-template-columns: minmax(var(--min, 150px), 25%) 1fr;
+}
+
+.sidebar[variant='end'] {
+  grid-template-columns: 1fr minmax(var(--min, 150px), 25%);
+}

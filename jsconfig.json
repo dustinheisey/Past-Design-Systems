@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "$app/*": [".svelte/dev/runtime/app/*", ".svelte/build/runtime/app/*"],
+      "$styles/*": ["src/styles/*"],
+      "$components/*": ["src/components/*"],
+      "$sections/*": ["src/sections/*"]
+    }
+  },
+  "include": ["src/**/*.js", "src/**/*.svelte"]
+}

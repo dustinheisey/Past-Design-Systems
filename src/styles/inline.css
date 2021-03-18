@@ -1,0 +1,79 @@
+.inline {
+  display: flex;
+
+  gap: var(--space-xs);
+
+  align-items: var(--align, center);
+  justify-content: var(--justify, flex-start);
+}
+
+.inline[justify='start'] {
+  --justify: flex-start;
+}
+
+.inline[justify='end'] {
+  --justify: flex-end;
+}
+
+.inline[align='start'] {
+  --align: flex-start;
+}
+
+.inline[align='end'] {
+  --align: flex-end;
+}
+
+@media (--xs) {
+  .xs-inline {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs);
+
+    align-items: var(--align, center);
+    justify-content: var(--justify, flex-start);
+  }
+}
+
+@media (--sm) {
+  .sm-inline {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs);
+
+    align-items: var(--align, center);
+    justify-content: var(--justify, flex-start);
+  }
+}
+
+@media (--md) {
+  .md-inline {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs);
+
+    align-items: var(--align, center);
+    justify-content: var(--justify, flex-start);
+  }
+}
+
+@media (--lg) {
+  .lg-inline {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs);
+
+    align-items: var(--align, center);
+    justify-content: var(--justify, flex-start);
+  }
+}
+
+@media (--xl) {
+  .xl-inline {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs);
+
+    align-items: var(--align, center);
+    justify-content: var(--justify, flex-start);
+  }
+}
