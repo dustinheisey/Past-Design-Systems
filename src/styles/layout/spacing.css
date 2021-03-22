@@ -1,0 +1,221 @@
+[space~='xxs'] {
+  --measure: var(--space-xxs);
+}
+
+[space~='xs'] {
+  --measure: var(--space-xs);
+}
+
+[space~='sm'] {
+  --measure: var(--space-sm);
+}
+
+[space~='md'] {
+  --measure: var(--space);
+}
+
+[space~='lg'] {
+  --measure: var(--space-lg);
+}
+
+[space~='xl'] {
+  --measure: var(--space-xl);
+}
+
+[space~='xxl'] {
+  --measure: var(--space-xxl);
+}
+
+[space~='xxxl'] {
+  --measure: var(--space-xxxl);
+}
+
+@media (--phone-up) {
+  [space~='phone\:xxxs'] {
+    --measure: var(--space-xxxs);
+  }
+
+  [space~='phone\:xxs'] {
+    --measure: var(--space-xxs);
+  }
+
+  [space~='phone\:xs'] {
+    --measure: var(--space-xs);
+  }
+
+  [space~='phone\:sm'] {
+    --measure: var(--space-sm);
+  }
+
+  [space~='phone\:md'] {
+    --measure: var(--space);
+  }
+
+  [space~='phone\:lg'] {
+    --measure: var(--space-lg);
+  }
+
+  [space~='phone\:xl'] {
+    --measure: var(--space-xl);
+  }
+
+  [space~='phone\:xxl'] {
+    --measure: var(--space-xxl);
+  }
+
+  [space~='phone\:xxxl'] {
+    --measure: var(--space-xxxl);
+  }
+}
+
+@media (--tablet-portrait-up) {
+  [space~='tablet-portrait\:xxxs'] {
+    --measure: var(--space-xxxs);
+  }
+
+  [space~='tablet-portrait\:xxs'] {
+    --measure: var(--space-xxs);
+  }
+
+  [space~='tablet-portrait\:xs'] {
+    --measure: var(--space-xs);
+  }
+
+  [space~='tablet-portrait\:sm'] {
+    --measure: var(--space-sm);
+  }
+
+  [space~='tablet-portrait\:md'] {
+    --measure: var(--space);
+  }
+
+  [space~='tablet-portrait\:lg'] {
+    --measure: var(--space-lg);
+  }
+
+  [space~='tablet-portrait\:xl'] {
+    --measure: var(--space-xl);
+  }
+
+  [space~='tablet-portrait\:xxl'] {
+    --measure: var(--space-xxl);
+  }
+
+  [space~='tablet-portrait\:xxxl'] {
+    --measure: var(--space-xxxl);
+  }
+}
+
+@media (--tablet-landscape-up) {
+  [space~='tablet-landscape\:xxxs'] {
+    --measure: var(--space-xxxs);
+  }
+
+  [space~='tablet-landscape\:xxs'] {
+    --measure: var(--space-xxs);
+  }
+
+  [space~='tablet-landscape\:xs'] {
+    --measure: var(--space-xs);
+  }
+
+  [space~='tablet-landscape\:sm'] {
+    --measure: var(--space-sm);
+  }
+
+  [space~='tablet-landscape\:md'] {
+    --measure: var(--space);
+  }
+
+  [space~='tablet-landscape\:lg'] {
+    --measure: var(--space-lg);
+  }
+
+  [space~='tablet-landscape\:xl'] {
+    --measure: var(--space-xl);
+  }
+
+  [space~='tablet-landscape\:xxl'] {
+    --measure: var(--space-xxl);
+  }
+
+  [space~='tablet-landscape\:xxxl'] {
+    --measure: var(--space-xxxl);
+  }
+}
+
+@media (--desktop-up) {
+  [space~='desktop\:xxxs'] {
+    --measure: var(--space-xxxs);
+  }
+
+  [space~='desktop\:xxs'] {
+    --measure: var(--space-xxs);
+  }
+
+  [space~='desktop\:xs'] {
+    --measure: var(--space-xs);
+  }
+
+  [space~='desktop\:sm'] {
+    --measure: var(--space-sm);
+  }
+
+  [space~='desktop\:md'] {
+    --measure: var(--space);
+  }
+
+  [space~='desktop\:lg'] {
+    --measure: var(--space-lg);
+  }
+
+  [space~='desktop\:xl'] {
+    --measure: var(--space-xl);
+  }
+
+  [space~='desktop\:xxl'] {
+    --measure: var(--space-xxl);
+  }
+
+  [space~='desktop\:xxxl'] {
+    --measure: var(--space-xxxl);
+  }
+}
+
+@media (--lg-desktop-up) {
+  [space~='lg-desktop\:xxxs'] {
+    --measure: var(--space-xxxs);
+  }
+
+  [space~='lg-desktop\:xxs'] {
+    --measure: var(--space-xxs);
+  }
+
+  [space~='lg-desktop\:xs'] {
+    --measure: var(--space-xs);
+  }
+
+  [space~='lg-desktop\:sm'] {
+    --measure: var(--space-sm);
+  }
+
+  [space~='lg-desktop\:md'] {
+    --measure: var(--space);
+  }
+
+  [space~='lg-desktop\:lg'] {
+    --measure: var(--space-lg);
+  }
+
+  [space~='lg-desktop\:xl'] {
+    --measure: var(--space-xl);
+  }
+
+  [space~='lg-desktop\:xxl'] {
+    --measure: var(--space-xxl);
+  }
+
+  [space~='lg-desktop\:xxxl'] {
+    --measure: var(--space-xxxl);
+  }
+}

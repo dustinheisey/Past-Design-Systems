@@ -1,24 +1,4 @@
 @import 'reset.css';
 @import 'tokens.css';
 
-@import 'address.css';
-@import 'blockquote.css';
-@import 'button.css';
-@import 'checkbox.css';
-@import 'fieldset.css';
-@import 'image.css';
-@import 'input.css';
-@import 'link.css';
-@import 'list.css';
-@import 'radio.css';
-@import 'select.css';
-@import 'text.css';
-@import 'textarea.css';
-@import 'columns.css';
-@import 'inline.css';
-@import 'layout.css';
-@import 'masonry.css';
-@import 'sidebar.css';
-@import 'spacing.css';
-@import 'stack.css';
-@import 'tiles.css';
+@import 'layout/spacing.css';

@@ -1,62 +1,114 @@
-  @custom-media --xs (width < 30em);
-  @custom-media --sm (width < 30em);
-  @custom-media --md (width > 30em);
-  @custom-media --lg (width < 30em);
-  @custom-media --xl (width < 30em);
+/* Media Queries */
+@custom-media --phone-up (width > 20em);
+@custom-media --tablet-portrait-up (width > 38em);
+@custom-media --tablet-landscape-up (width > 56em);
+@custom-media --desktop-up (width > 75em);
+@custom-media --lg-desktop-up (width > 112em);
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
 
 :root {
-  --color-primary-500: #083216;
-  --color-primary-400: #346444;
-  --color-primary-300: #5f8841;
-  --color-primary-200: #7aa35d;
+  /* Color */
   --color-primary-100: #f7faf5;
+  --color-primary-200: #5f8841;
+  --color-primary-300: #346444;
+  --color-primary-400: #083216;
+
   --color-ui-100: #fff;
   --color-ui-200: #fcfbf0;
   --color-ui-300: #bebeb5;
   --color-ui-400: #75756f;
   --color-ui-500: #3d3d3a;
   --color-ui-600: #131312;
-  --color-success: #44bd32;
-  --color-info: #40739e;
-  --color-warning: #ff793f;
-  --color-danger: #e84118;
+
+  --color-success-100: #44bd32;
+  --color-success-200: #44bd32;
+  --color-success-300: #44bd32;
+  --color-success-400: #44bd32;
+
+  --color-info-100: #40739e;
+  --color-info-200: #40739e;
+  --color-info-300: #40739e;
+
+  --color-warning-100: #ff793f;
+  --color-warning-200: #ff793f;
+  --color-warning-300: #ff793f;
+
+  --color-danger-100: #e84118;
+  --color-danger-200: #e84118;
+  --color-danger-300: #e84118;
+  --color-danger-400: #e84118;
+
+  /* Font */
   --font-heading: sans-serif;
   --font-body: serif;
-  --font-size-xxs: 0.625rem; /* 10px */
-  --font-size-xs: 0.75rem; /* 12px */
-  --font-size-sm: 0.875rem; /* 14px */
-  --font-size-md: 1rem; /* 16px */
-  --font-size-lg: 1.75rem; /* 24px */
-  --font-size-xl: 2.5rem; /* 44px */
-  --font-size-xxl: 2.75rem; /* 56px */
-  --font-size-xxxl: 3.5rem; /* 56px */
-  --font-size-display: 5rem; /* 96px */
-  --line-height-heading: 1.4;
-  --line-height-body: 1.8;
-  --weight-light: 300;
-  --weight-normal: 400;
-  --weight-semibold: 500;
-  --weight-bold: 700;
+
+  /* Font Size */
+  --font-size-xxs: clamp(5px, 0.625rem, 20px); /* 10px */
+  --font-size-xs: clamp(6px, 0.75rem, 24px); /* 12px */
+  --font-size-sm: clamp(7px, 0.875rem, 28px); /* 14px */
+  --font-size-md: clamp(8px, 1rem, 32px); /* 16px */
+  --font-size-lg: clamp(12px, 1.75rem, 48px); /* 24px */
+  --font-size-xl: clamp(22px, 2.5rem, 80px); /* 40px */
+  --font-size-xxl: clamp(22px, 2.75rem, 88px); /* 44px */
+  --font-size-xxxl: clamp(28px, 3.5rem, 112px); /* 56px */
+  --font-size-display: clamp(40px, 5rem, 160px); /* 96px */
+
+  /* Line Height */
+  --line-height-heading: 1.2;
+  --line-height-body: 1.5;
+
+  /* Letter Spacing */
+
+  /* Font Weight */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+
+  /* Size */
+
+  /* Component Spacing */
   --space-xxxs: 2px;
   --space-xxs: 4px;
   --space-xs: 8px;
   --space-sm: 12px;
-  --space-md: 16px;
+  --space: 16px;
   --space-lg: 24px;
   --space-xl: 32px;
-  --space-xxl: 64px;
-  --space-xxxl: 96px;
-  --radius-sm: 5px;
+  --space-xxl: 40px;
+  --space-xxxl: 48px;
+
+  /* Layout Spacing */
+  --layout-1: 16px;
+  --layout-2: 24px;
+  --layout-3: 32px;
+  --layout-4: 48px;
+  --layout-5: 64px;
+  --layout-6: 96px;
+  --layout-7: 156px;
+
+  /* Border Radius */
+  --radius: 5px;
   --radius-lg: 12px;
   --radius-pill: 9999px;
   --radius-circle: 50%;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  --shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
 
-@media (--xs) {
-  :root {
-    --space-xxxl: 10000px;
-  }
+  /* Box Shadow */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  /* Z Index */
+  --z-dialog: 1;
+  --z-popover: 1;
+  --z-tooltip: 1;
+  --z-drawer: 1;
+
+  /* Outline Styles */
+
+  /* Animation */
 }

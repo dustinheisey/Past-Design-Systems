@@ -11,7 +11,7 @@
   @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
   :--heading {
-    color: var(--color-primary-300) @(--md) var(--color-success);
+    color: var(--color-primary-300) @(--md) var(--color-danger);
   }
 
   button {
