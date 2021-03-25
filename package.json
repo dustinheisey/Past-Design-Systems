@@ -1,13 +1,21 @@
 {
   "name": "system",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "start": "svelte-kit start"
+    "start": "svelte-kit start",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "next",
+    "@storybook/addon-essentials": "next",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addons": "next",
+    "@storybook/svelte": "next",
     "@sveltejs/adapter-node": "next",
+    "@sveltejs/adapter-static": "^1.0.0-next.0",
     "@sveltejs/kit": "next",
     "postcss": "^8.2.8",
     "postcss-import": "^14.0.0",
@@ -17,6 +25,7 @@
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.35.0",
+    "svelte-loader": "^3.0.0",
     "svelte-preprocess": "^4.6.9",
     "vite": "^2.1.2"
   },

@@ -1,11 +1,21 @@
 const preprocess = require('svelte-preprocess')
+const node = require('@sveltejs/adapter-node')
 
 /** @type {import('@sveltejs/kit').Config} */
-
 module.exports = {
   preprocess: [preprocess({ postcss: true })],
+  extensions: ['.svelte'],
   kit: {
-    adapter: '@sveltejs/adapter-node',
-    target: '#svelte'
+    adapter: node(),
+    target: '#svelte',
+    vite: () => ({
+      resolve: {
+        alias: {
+          $styles: '/src/styles',
+          $components: '/src/components',
+          $sections: '/src/sections'
+        }
+      }
+    })
   }
 }

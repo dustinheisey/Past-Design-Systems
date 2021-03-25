@@ -71,25 +71,47 @@
 
   /* Size */
 
-  /* Component Spacing */
-  --space-xxxs: 2px;
-  --space-xxs: 4px;
-  --space-xs: 8px;
-  --space-sm: 12px;
-  --space: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-xxl: 40px;
-  --space-xxxl: 48px;
+  /* Space */
+  /* Inset (All) */
+  --inset-2xs: var(--space-2xs) var(--space-2xs) var(--space-2xs) var(--space-2xs);
+  --inset-xs: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+  --inset-s: var(--space-s) var(--space-s) var(--space-s) var(--space-s);
+  --inset-m: var(--space-m) var(--space-m) var(--space-m) var(--space-m);
+  --inset-l: var(--space-l) var(--space-l) var(--space-l) var(--space-l);
+  --inset-xl: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-xl);
+  --inset-2xl: var(--space-2xl) var(--space-2xl) var(--space-2xl) var(--space-2xl);
 
-  /* Layout Spacing */
-  --layout-1: 16px;
-  --layout-2: 24px;
-  --layout-3: 32px;
-  --layout-4: 48px;
-  --layout-5: 64px;
-  --layout-6: 96px;
-  --layout-7: 156px;
+  /* Squish (full width, less height) */
+  --squish-xs: var(--space-2xs) var(--space-xs) var(--space-2xs) var(--space-xs);
+  --squish-s: var(--space-2xs) var(--space-s) var(--space-2xs) var(--space-s);
+  --squish-m: var(--space-xs) var(--space-m) var(--space-xs) var(--space-m);
+  --squish-l: var(--space-s) var(--space-l) var(--space-s) var(--space-l);
+  --squish-xl: var(--space-l) var(--space-xl) var(--space-l) var(--space-xl);
+
+  /* Stretch (full height, less width) */
+  --stretch-xs: var(--space-xs) var(--space-2xs) var(--space-xs) var(--space-2xs);
+  --stretch-s: var(--space-s) var(--space-2xs) var(--space-s) var(--space-2xs);
+  --stretch-m: var(--space-m) var(--space-xs) var(--space-m) var(--space-xs);
+  --stretch-l: var(--space-l) var(--space-s) var(--space-l) var(--space-s);
+  --stretch-xl: var(--space-xl) var(--space-l) var(--space-xl) var(--space-l);
+
+  /* Stack (bottom not last) */
+  --stack-2xs: 0 0 var(--space-2xs) 0;
+  --stack-xs: 0 0 var(--space-xs) 0;
+  --stack-s: 0 0 var(--space-s) 0;
+  --stack-m: 0 0 var(--space-m) 0;
+  --stack-l: 0 0 var(--space-l) 0;
+  --stack-xl: 0 0 var(--space-xl) 0;
+  --stack-2xl: 0 0 var(--space-2xl) 0;
+
+  /* Inline (right not last) */
+  --stack-2xs: 0 var(--space-2xs) 0 0;
+  --stack-xs: 0 var(--space-xs) 0 0;
+  --stack-s: 0 var(--space-s) 0 0;
+  --stack-m: 0 var(--space-m) 0 0;
+  --stack-l: 0 var(--space-l) 0 0;
+  --stack-xl: 0 var(--space-xl) 0 0;
+  --stack-2xl: 0 var(--space-2xl) 0 0;
 
   /* Border Radius */
   --radius: 5px;
