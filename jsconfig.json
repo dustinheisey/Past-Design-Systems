@@ -3,8 +3,9 @@
     "baseUrl": ".",
     "paths": {
       "$app/*": [".svelte/dev/runtime/app/*", ".svelte/build/runtime/app/*"],
-      "$styles/*": ["src/styles/*"],
+      "$styles": ["src/styles/index.css"],
       "$components/*": ["src/components/*"],
+      "$layout/*": ["src/components/layout/*"],
       "$sections/*": ["src/sections/*"]
     }
   },

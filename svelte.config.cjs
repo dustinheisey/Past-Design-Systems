@@ -11,8 +11,9 @@ module.exports = {
     vite: () => ({
       resolve: {
         alias: {
-          $styles: '/src/styles',
+          $styles: '/src/styles/index.css',
           $components: '/src/components',
+          $layout: '/src/layout',
           $sections: '/src/sections'
         }
       }

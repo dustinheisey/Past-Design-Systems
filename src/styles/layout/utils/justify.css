@@ -1,0 +1,153 @@
+[justify='start'] {
+  --justify: flex-start;
+}
+
+[justify='center'] {
+  --justify: center;
+}
+
+[justify='end'] {
+  --justify: flex-end;
+}
+
+[justify='space-around'] {
+  --justify: space-around;
+}
+
+[justify='space-between'] {
+  --justify: space-between;
+}
+
+[justify='space-evenly'] {
+  --justify: space-evenly;
+}
+
+@media (--phone-up) {
+  [justify='phone:start'] {
+    --justify: flex-start;
+  }
+
+  [justify='phone:center'] {
+    --justify: center;
+  }
+
+  [justify='phone:end'] {
+    --justify: flex-end;
+  }
+
+  [justify='phone:space-around'] {
+    --justify: space-around;
+  }
+
+  [justify='phone:space-between'] {
+    --justify: space-between;
+  }
+
+  [justify='phone:space-evenly'] {
+    --justify: space-evenly;
+  }
+}
+
+@media (--tablet-portrait-up) {
+  [justify='tablet-portrait:start'] {
+    --justify: flex-start;
+  }
+
+  [justify='tablet-portrait:center'] {
+    --justify: center;
+  }
+
+  [justify='tablet-portrait:end'] {
+    --justify: flex-end;
+  }
+
+  [justify='tablet-portrait:space-around'] {
+    --justify: space-around;
+  }
+
+  [justify='tablet-portrait:space-between'] {
+    --justify: space-between;
+  }
+
+  [justify='tablet-portrait:space-evenly'] {
+    --justify: space-evenly;
+  }
+}
+
+@media (--tablet-landscape-up) {
+  [justify='tablet-landscape:start'] {
+    --justify: flex-start;
+  }
+
+  [justify='tablet-landscape:center'] {
+    --justify: center;
+  }
+
+  [justify='tablet-landscape:end'] {
+    --justify: flex-end;
+  }
+
+  [justify='tablet-landscape:space-around'] {
+    --justify: space-around;
+  }
+
+  [justify='tablet-landscape:space-between'] {
+    --justify: space-between;
+  }
+
+  [justify='tablet-landscape:space-evenly'] {
+    --justify: space-evenly;
+  }
+}
+
+@media (--desktop-up) {
+  [justify='desktop:start'] {
+    --justify: flex-start;
+  }
+
+  [justify='desktop:center'] {
+    --justify: center;
+  }
+
+  [justify='desktop:end'] {
+    --justify: flex-end;
+  }
+
+  [justify='desktop:space-around'] {
+    --justify: space-around;
+  }
+
+  [justify='desktop:space-between'] {
+    --justify: space-between;
+  }
+
+  [justify='desktop:space-evenly'] {
+    --justify: space-evenly;
+  }
+}
+
+@media (--lg-desktop-up) {
+  [justify='lg-desktop:start'] {
+    --justify: flex-start;
+  }
+
+  [justify='lg-desktop:center'] {
+    --justify: center;
+  }
+
+  [justify='lg-desktop:end'] {
+    --justify: flex-end;
+  }
+
+  [justify='lg-desktop:space-around'] {
+    --justify: space-around;
+  }
+
+  [justify='lg-desktop:space-between'] {
+    --justify: space-between;
+  }
+
+  [justify='lg-desktop:space-evenly'] {
+    --justify: space-evenly;
+  }
+}
