@@ -1,73 +1,27 @@
 .reel {
-  /* ↓ Custom properties for ease of adjustment */
-  --space: 1rem;
-  --color-light: #fff;
-  --color-dark: #000;
-  --reel-height: auto;
-  --item-width: 25ch;
   display: flex;
-  height: var(--reel-height);
-  /* ↓ Overflow */
   overflow-x: auto;
-  “overflow-y: hidden;
-  /* ↓ For Firefox */
-  scrollbar-color: var(--color-light) var(--color-dark);
+  /* ↓ First value: thumb; second value: track */
+  scrollbar-color: #fff #000;
 }
 
-reel-l::-webkit-scrollbar {
-  /*
-  ↓ Instead, you could make the scrollbar height
-  a variable too. This is left as an exercise
-  (be mindful of the linear-gradient!)
-  */
+.reel::-webkit-scrollbar {
   height: 1rem;
 }
 
-reel-l::-webkit-scrollbar-track {
-  background-color: var(--color-dark);
+.reel::-webkit-scrollbar-track {
+  background-color: #000;
 }
 
-reel-l::-webkit-scrollbar-thumb {
-  background-color: var(--color-dark);
-  /* ↓ Linear gradient ‘insets’ the white thumb within the black bar */
-  background-image: linear-gradient(
-    var(--color-dark) 0,
-    var(--color-dark) 0.25rem,
-    var(--color-light) 0.25rem,
-    var(--color-light) 0.75rem,
-    var(--color-dark) 0.75rem
-  );
-}
-
-.reel > * {
-  /*
-  ↓ Just a `width` wouldn’t work because
-  `flex-shrink: 1` (default) still applies
-   */
-  flex: 0 0 var(--item-width);
-}
-
-reel-l > img {
-  /* ↓ Reset for images */
-  height: 100%;
-  flex-basis: auto;
-  width: auto;
+.reel::-webkit-scrollbar-thumb {
+  background-color: #000;
 }
 
 .reel > * + * {
-  margin-left: var(--space);
+  margin-left: var(--space, var(--space-s));
 }
 
-.reel.overflowing {
-  /* ↓ Only apply if there is a scrollbar (see the JavaScript) */
-  padding-bottom: var(--space);
-}
-
-/* ↓ Hide scrollbar with `no-bar` class */
-.reel.no-bar {
-  scrollbar-width: none;
-}
-
-.reel.no-bar::-webkit-scrollbar {
-  display: none;
+.reel::after {
+  content: '';
+  flex-basis: var(--space, var(--space-s));
 }

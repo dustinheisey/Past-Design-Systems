@@ -2,39 +2,16 @@ alert
 avatar
 badges/tags
 icon button
-button
 button group
-input
 input group
-checkbox
-radio
-details
-dialog
-popover
-drawer
 icons
-select
-
-dropdown
-menu
-menu divider
-menu item
-menu label
 
 progress bar
 progress ring
 spinner
-switch
-tabs
-textarea
-tooltip
 relative time
 
-range
 rating
-
-card
-skeleton
 
 ## custom properties
 

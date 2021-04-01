@@ -1,5 +1,4 @@
-.button,
-button {
+:is(button, .button) {
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -16,46 +15,40 @@ button {
   transition: all 0.3s;
 }
 
-button:hover,
-.button:hover {
+:is(button, .button):hover {
   text-decoration: none;
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
   box-shadow: var(--shadow-lg);
 }
 
-[background='dark'] button,
-[background='dark'] .button {
+[background='dark'] :is(button, .button) {
   color: var(--color-primary);
   background-color: #fff;
   border-color: #fff;
 }
 
-[background='primary'] button,
-[background='primary'] .button {
+[background='primary'] :is(button, .button) {
   color: #fff;
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
 }
 
-[background='dark'] button:hover,
-[background='dark'] .button:hover {
+[background='dark'] :is(button, .button):hover {
   color: #fff;
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   box-shadow: var(--shadow-lg);
 }
 
-[background='primary'] button:hover,
-[background='primary'] .button:hover {
+[background='primary'] :is(button, .button):hover {
   color: #fff;
   background-color: var(--color-primary-darkest);
   border-color: var(--color-primary-darkest);
   box-shadow: var(--shadow-lg);
 }
 
-button[size='sm'],
-.button[size='sm'] {
+:is(button, .button)[size='sm'] {
   font-size: var(--font-size-sm);
   padding-block-start: var(--space-xxs);
   padding-block-end: var(--space-xxs);
@@ -63,8 +56,7 @@ button[size='sm'],
   padding-inline-end: var(--space-sm);
 }
 
-button[size='lg'],
-.button[size='sm'] {
+:is(button, .button)[size='sm'] {
   font-size: var(--font-size-lg);
   padding-block-start: var(--space-md);
   padding-block-end: var(--space-md);
@@ -72,73 +64,62 @@ button[size='lg'],
   padding-inline-end: var(--space-lg);
 }
 
-button[radius='pill'],
-.button[radius='pill'] {
+:is(button, .button)[radius='pill'] {
   border-radius: var(--radius-pill);
 }
 
-button[radius='circle'],
-.button[radius='circle'] {
+:is(button, .button)[radius='circle'] {
   padding: var(--space-xs);
   border-radius: var(--radius-circle);
   aspect-ratio: 1;
 }
 
-button[radius='circle'] img,
-.button[radius='circle'] img {
+:is(button, .button)[radius='circle'] img {
   inline-size: 1.25rem;
   block-size: auto;
   margin: 0;
 }
 
-button[variant='outline'],
-.button[variant='outline'] {
+:is(button, .button)[variant='outline'] {
   color: var(--color-darkest);
   background-color: transparent;
   border-color: var(--color-dark);
 }
 
-button[variant='outline']:hover,
-.button[variant='outline']:hover {
+:is(button, .button)[variant='outline']:hover {
   box-shadow: var(--shadow-lg);
 }
 
-button[variant='outline'][background='dark'],
-.button[variant='outline'][background='dark'] {
+:is(button, .button)[variant='outline'][background='dark'] {
   color: #fff;
   background-color: transparent;
   border-color: #fff;
 }
 
-button[variant='outline'][background='dark']:hover,
-.button[variant='outline'][background='dark']:hover {
+:is(button, .button)[variant='outline'][background='dark']:hover {
   color: var(--color-darkest);
   background-color: #fff;
   box-shadow: var(--shadow-lg);
 }
 
-button[variant='text'],
-.button[variant='text'] {
+:is(button, .button)[variant='text'] {
   color: var(--color-dark);
   background-color: transparent;
   border-color: transparent;
 }
 
-button[variant='text']:hover,
-.button[variant='text']:hover {
+:is(button, .button)[variant='text']:hover {
   color: var(--color-darkest);
   background-color: var(--color-lighter);
 }
 
-button[variant='text'][background='dark'],
-.button[variant='text'][background='dark'] {
+:is(button, .button)[variant='text'][background='dark'] {
   color: #fff;
   background-color: transparent;
   border-color: transparent;
 }
 
-button[variant='text'][background='dark']:hover,
-.button[variant='text'][background='dark']:hover {
+:is(button, .button)[variant='text'][background='dark']:hover {
   color: #fff;
   background-color: var(--color-darker);
 }
