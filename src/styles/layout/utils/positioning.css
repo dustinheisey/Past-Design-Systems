@@ -74,7 +74,7 @@
   --transform: translate(-50%, -50%);
 }
 
-@media (--phone-up) {
+@media (--phone) {
   [position='phone:block-start'] {
     --top: -100%;
   }
@@ -152,7 +152,7 @@
   }
 }
 
-@media (--tablet-portrait-up) {
+@media (--tablet-portrait) {
   [position='tablet-portrait:block-start'] {
     --top: -100%;
   }
@@ -230,7 +230,7 @@
   }
 }
 
-@media (--tablet-landscape-up) {
+@media (--tablet-landscape) {
   [position='tablet-landscape:block-start'] {
     --top: -100%;
   }
@@ -308,7 +308,7 @@
   }
 }
 
-@media (--desktop-up) {
+@media (--desktop) {
   [position='desktop:block-start'] {
     --top: -100%;
   }
@@ -386,7 +386,7 @@
   }
 }
 
-@media (--lg-desktop-up) {
+@media (--lg-desktop) {
   [position='lg-desktop:block-start'] {
     --top: -100%;
   }

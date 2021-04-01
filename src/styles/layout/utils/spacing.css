@@ -30,7 +30,7 @@
   --space: var(--space-2xl);
 }
 
-@media (--phone-up) {
+@media (--phone) {
   [space~='phone:n'] {
     --space: 0;
   }
@@ -64,7 +64,7 @@
   }
 }
 
-@media (--tablet-portrait-up) {
+@media (--tablet-portrait) {
   [space~='tablet-portrait:n'] {
     --space: 0;
   }
@@ -97,7 +97,7 @@
   }
 }
 
-@media (--tablet-landscape-up) {
+@media (--tablet-landscape) {
   [space~='tablet-landscape:n'] {
     --space: 0;
   }
@@ -130,7 +130,7 @@
   }
 }
 
-@media (--desktop-up) {
+@media (--desktop) {
   [space~='desktop:n'] {
     --space: 0;
   }
@@ -164,7 +164,7 @@
   }
 }
 
-@media (--lg-desktop-up) {
+@media (--lg-desktop) {
   [space~='lg-desktop:n'] {
     --space: 0;
   }

@@ -22,7 +22,7 @@
   --justify: space-evenly;
 }
 
-@media (--phone-up) {
+@media (--phone) {
   [justify='phone:start'] {
     --justify: flex-start;
   }
@@ -48,7 +48,7 @@
   }
 }
 
-@media (--tablet-portrait-up) {
+@media (--tablet-portrait) {
   [justify='tablet-portrait:start'] {
     --justify: flex-start;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media (--tablet-landscape-up) {
+@media (--tablet-landscape) {
   [justify='tablet-landscape:start'] {
     --justify: flex-start;
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@media (--desktop-up) {
+@media (--desktop) {
   [justify='desktop:start'] {
     --justify: flex-start;
   }
@@ -126,7 +126,7 @@
   }
 }
 
-@media (--lg-desktop-up) {
+@media (--lg-desktop) {
   [justify='lg-desktop:start'] {
     --justify: flex-start;
   }

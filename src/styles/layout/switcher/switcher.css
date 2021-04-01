@@ -23,3 +23,23 @@
 .switcher > [grow='3'] {
   flex-grow: 3;
 }
+
+[collapse='phone'] {
+  --breakpoint: 20em;
+}
+
+[collapse='tablet-portrait'] {
+  --breakpoint: 38em;
+}
+
+[collapse='tablet-landscape'] {
+  --breakpoint: 56em;
+}
+
+[collapse='desktop'] {
+  --breakpoint: 75em;
+}
+
+[collapse='lg-desktop'] {
+  --breakpoint: 112em;
+}

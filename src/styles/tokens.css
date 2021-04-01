@@ -1,9 +1,9 @@
 /* Media Queries */
-@custom-media --phone-up (width > 20em);
-@custom-media --tablet-portrait-up (width > 38em);
-@custom-media --tablet-landscape-up (width > 56em);
-@custom-media --desktop-up (width > 75em);
-@custom-media --lg-desktop-up (width > 112em);
+@custom-media --phone (width > 20em);
+@custom-media --tablet-portrait (width > 38em);
+@custom-media --tablet-landscape (width > 56em);
+@custom-media --desktop (width > 75em);
+@custom-media --lg-desktop (width > 112em);
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -75,8 +75,8 @@
   --space-s: 16px;
   --space-m: 24px;
   --space-l: 32px;
-  --space-xl: 48px @(--desktop-up) 64px;
-  --space-2xl: 64px @(--desktop-up) 192px;
+  --space-xl: 48px @(--desktop) 64px;
+  --space-2xl: 64px @(--desktop) 192px;
 
   /* High Density Space */
   /* --space-2xs: 4px;
