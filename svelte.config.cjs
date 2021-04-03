@@ -13,7 +13,7 @@ module.exports = {
         alias: {
           $styles: '/src/styles/index.css',
           $components: '/src/components',
-          $layout: '/src/layout',
+          $layout: '/src/styles/layout',
           $sections: '/src/sections'
         }
       }

@@ -16,6 +16,10 @@ body {
   clip-path: inset(50%);
 }
 
-:focus-visible {
+:focus {
   outline-color: var(--color-primary);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }
