@@ -1,0 +1,35 @@
+.box {
+  padding: var(--space-m);
+
+  /* High Contrast Mode */
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.box[space='2xs'] {
+  padding: var(--space-2xs);
+}
+
+.box[space='xs'] {
+  padding: var(--space-xs);
+}
+
+.box[space='s'] {
+  padding: var(--space-s);
+}
+
+.box[space='m'] {
+  padding: var(--space-m);
+}
+
+.box[space='l'] {
+  padding: var(--space-l);
+}
+
+.box[space='xl'] {
+  padding: var(--space-xl);
+}
+
+.box[space='2xl'] {
+  padding: var(--space-2xl);
+}

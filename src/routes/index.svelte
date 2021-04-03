@@ -1,7 +1,7 @@
 <div class="box" space="m">
   <div class="center" style="--max: 60ch">
     <div class="stack" space="l">
-      <div class="sidebar" space="xs">
+      <div class="sidebar" gap="xs">
         <div>
           <input type="text" />
           <button fixed>Copy</button>

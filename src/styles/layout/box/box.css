@@ -1,7 +1,0 @@
-.box {
-  padding: var(--space, var(--space-md));
-
-  /* High Contrast Mode */
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-}

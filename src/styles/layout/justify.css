@@ -1,0 +1,153 @@
+[justify='start'] {
+  justify-content: flex-start;
+}
+
+[justify='center'] {
+  justify-content: center;
+}
+
+[justify='end'] {
+  justify-content: flex-end;
+}
+
+[justify='space-around'] {
+  justify-content: space-around;
+}
+
+[justify='space-between'] {
+  justify-content: space-between;
+}
+
+[justify='space-evenly'] {
+  justify-content: space-evenly;
+}
+
+@media (--phone) {
+  [justify='phone:start'] {
+    justify-content: flex-start;
+  }
+
+  [justify='phone:center'] {
+    justify-content: center;
+  }
+
+  [justify='phone:end'] {
+    justify-content: flex-end;
+  }
+
+  [justify='phone:space-around'] {
+    justify-content: space-around;
+  }
+
+  [justify='phone:space-between'] {
+    justify-content: space-between;
+  }
+
+  [justify='phone:space-evenly'] {
+    justify-content: space-evenly;
+  }
+}
+
+@media (--tablet-portrait) {
+  [justify='tablet-portrait:start'] {
+    justify-content: flex-start;
+  }
+
+  [justify='tablet-portrait:center'] {
+    justify-content: center;
+  }
+
+  [justify='tablet-portrait:end'] {
+    justify-content: flex-end;
+  }
+
+  [justify='tablet-portrait:space-around'] {
+    justify-content: space-around;
+  }
+
+  [justify='tablet-portrait:space-between'] {
+    justify-content: space-between;
+  }
+
+  [justify='tablet-portrait:space-evenly'] {
+    justify-content: space-evenly;
+  }
+}
+
+@media (--tablet-landscape) {
+  [justify='tablet-landscape:start'] {
+    justify-content: flex-start;
+  }
+
+  [justify='tablet-landscape:center'] {
+    justify-content: center;
+  }
+
+  [justify='tablet-landscape:end'] {
+    justify-content: flex-end;
+  }
+
+  [justify='tablet-landscape:space-around'] {
+    justify-content: space-around;
+  }
+
+  [justify='tablet-landscape:space-between'] {
+    justify-content: space-between;
+  }
+
+  [justify='tablet-landscape:space-evenly'] {
+    justify-content: space-evenly;
+  }
+}
+
+@media (--desktop) {
+  [justify='desktop:start'] {
+    justify-content: flex-start;
+  }
+
+  [justify='desktop:center'] {
+    justify-content: center;
+  }
+
+  [justify='desktop:end'] {
+    justify-content: flex-end;
+  }
+
+  [justify='desktop:space-around'] {
+    justify-content: space-around;
+  }
+
+  [justify='desktop:space-between'] {
+    justify-content: space-between;
+  }
+
+  [justify='desktop:space-evenly'] {
+    justify-content: space-evenly;
+  }
+}
+
+@media (--lg-desktop) {
+  [justify='lg-desktop:start'] {
+    justify-content: flex-start;
+  }
+
+  [justify='lg-desktop:center'] {
+    justify-content: center;
+  }
+
+  [justify='lg-desktop:end'] {
+    justify-content: flex-end;
+  }
+
+  [justify='lg-desktop:space-around'] {
+    justify-content: space-around;
+  }
+
+  [justify='lg-desktop:space-between'] {
+    justify-content: space-between;
+  }
+
+  [justify='lg-desktop:space-evenly'] {
+    justify-content: space-evenly;
+  }
+}

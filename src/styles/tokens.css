@@ -5,11 +5,6 @@
 @custom-media --desktop (width > 75em);
 @custom-media --lg-desktop (width > 112em);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
-}
-
 :root {
   /* Color */
   --color-primary-100: #f7faf5;

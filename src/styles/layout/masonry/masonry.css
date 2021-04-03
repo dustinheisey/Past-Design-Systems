@@ -1,9 +1,0 @@
-.masonry {
-  gap: var(--space-md);
-  columns: 3;
-}
-
-.masonry > * {
-  margin-block-end: var(--space-md);
-  break-inside: avoid;
-}
