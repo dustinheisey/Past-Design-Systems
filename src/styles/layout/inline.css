@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: var(--justify, flex-start);
   align-items: center;
+  padding: var(--inset);
   /* -1/2 margin on container to get rid of gap on start and end  */
   margin: calc(var(--space, var(--space-2xs)) / 2 * -1);
 }

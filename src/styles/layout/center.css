@@ -7,43 +7,8 @@
   margin-left: auto;
   margin-right: auto;
   /* ↓ Apply the minimum horizontal space */
-  padding-left: var(--space-m);
-  padding-right: var(--space-m);
-}
-
-.center[space='2xs'] {
-  padding-left: var(--space-2xs);
-  padding-right: var(--space-2xs);
-}
-
-.center[space='xs'] {
-  padding-left: var(--space-xs);
-  padding-right: var(--space-xs);
-}
-
-.center[space='s'] {
-  padding-left: var(--space-s);
-  padding-right: var(--space-s);
-}
-
-.center[space='m'] {
-  padding-left: var(--space-m);
-  padding-right: var(--space-m);
-}
-
-.center[space='l'] {
-  padding-left: var(--space-l);
-  padding-right: var(--space-l);
-}
-
-.center[space='xl'] {
-  padding-left: var(--space-xl);
-  padding-right: var(--space-xl);
-}
-
-.center[space='2xl'] {
-  padding-left: var(--space-2xl);
-  padding-right: var(--space-2xl);
+  padding-left: var(--inset);
+  padding-right: var(--inset);
 }
 
 /* Possibly remove */

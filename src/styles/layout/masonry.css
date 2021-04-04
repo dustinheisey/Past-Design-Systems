@@ -1,5 +1,6 @@
 .masonry {
   gap: var(--space-m);
+  padding: var(--inset);
   columns: 3;
 }
 

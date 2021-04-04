@@ -2,6 +2,7 @@
 .switcher {
   display: flex;
   flex-wrap: wrap;
+  padding: var(--inset);
   margin: calc(var(--space) / 2 * -1);
 }
 
