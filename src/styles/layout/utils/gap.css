@@ -1,0 +1,177 @@
+[gap='2xs'] > * {
+  --gap: var(--space-2xs) !important;
+}
+
+[gap='xs'] > * {
+  --gap: var(--space-xs) !important;
+}
+
+[gap='s'] > * {
+  --gap: var(--space-s) !important;
+}
+
+[gap='m'] > * {
+  --gap: var(--space-m) !important;
+}
+
+[gap='l'] > * {
+  --gap: var(--space-l) !important;
+}
+
+[gap='xl'] > * {
+  --gap: var(--space-xl) !important;
+}
+
+[gap='2xl'] > * {
+  --gap: var(--space-2xl) !important;
+}
+
+@media (--phone) {
+  [gap='phone:2xs'] > * {
+    --gap: var(--space-2xs) !important;
+  }
+
+  [gap='phone:xs'] > * {
+    --gap: var(--space-xs) !important;
+  }
+
+  [gap='phone:s'] > * {
+    --gap: var(--space-s) !important;
+  }
+
+  [gap='phone:m'] > * {
+    --gap: var(--space-m) !important;
+  }
+
+  [gap='phone:l'] > * {
+    --gap: var(--space-l) !important;
+  }
+
+  [gap='phone:xl'] > * {
+    --gap: var(--space-xl) !important;
+  }
+
+  [gap='phone:2xl'] > * {
+    --gap: var(--space-2xl) !important;
+  }
+}
+
+@media (--tablet-portrait) {
+  [gap='tablet-portrait:2xs'] > * {
+    --gap: var(--space-2xs) !important;
+  }
+
+  [gap='tablet-portrait:xs'] > * {
+    --gap: var(--space-xs) !important;
+  }
+
+  [gap='tablet-portrait:s'] > * {
+    --gap: var(--space-s) !important;
+  }
+
+  [gap='tablet-portrait:m'] > * {
+    --gap: var(--space-m) !important;
+  }
+
+  [gap='tablet-portrait:l'] > * {
+    --gap: var(--space-l) !important;
+  }
+
+  [gap='tablet-portrait:xl'] > * {
+    --gap: var(--space-xl) !important;
+  }
+
+  [gap='tablet-portrait:2xl'] > * {
+    --gap: var(--space-2xl) !important;
+  }
+}
+
+@media (--tablet-landscape) {
+  [gap='tablet-landscape:2xs'] > * {
+    --gap: var(--space-2xs) !important;
+  }
+
+  [gap='tablet-landscape:xs'] > * {
+    --gap: var(--space-xs) !important;
+  }
+
+  [gap='tablet-landscape:s'] > * {
+    --gap: var(--space-s) !important;
+  }
+
+  [gap='tablet-landscape:m'] > * {
+    --gap: var(--space-m) !important;
+  }
+
+  [gap='tablet-landscape:l'] > * {
+    --gap: var(--space-l) !important;
+  }
+
+  [gap='tablet-landscape:xl'] > * {
+    --gap: var(--space-xl) !important;
+  }
+
+  [gap='tablet-landscape:2xl'] > * {
+    --gap: var(--space-2xl) !important;
+  }
+}
+
+@media (--desktop) {
+  [gap='desktop:2xs'] > * {
+    --gap: var(--space-2xs) !important;
+  }
+
+  [gap='desktop:xs'] > * {
+    --gap: var(--space-xs) !important;
+  }
+
+  [gap='desktop:s'] > * {
+    --gap: var(--space-s) !important;
+  }
+
+  [gap='desktop:m'] > * {
+    --gap: var(--space-m) !important;
+  }
+
+  [gap='desktop:l'] > * {
+    --gap: var(--space-l) !important;
+  }
+
+  [gap='desktop:xl'] > * {
+    --gap: var(--space-xl) !important;
+  }
+
+  [gap='desktop:2xl'] > * {
+    --gap: var(--space-2xl) !important;
+  }
+}
+
+@media (--lg-desktop) {
+  [gap='lg-desktop:2xs'] > * {
+    --gap: var(--space-2xs) !important;
+  }
+
+  [gap='lg-desktop:xs'] > * {
+    --gap: var(--space-xs) !important;
+  }
+
+  [gap='lg-desktop:s'] > * {
+    --gap: var(--space-s) !important;
+  }
+
+  [gap='lg-desktop:m'] > * {
+    --gap: var(--space-m) !important;
+  }
+
+  [gap='lg-desktop:l'] > * {
+    --gap: var(--space-l) !important;
+  }
+
+  [gap='lg-desktop:xl'] > * {
+    --gap: var(--space-xl) !important;
+  }
+
+  [gap='lg-desktop:2xl'] > * {
+    --gap: var(--space-2xl) !important;
+  }
+}

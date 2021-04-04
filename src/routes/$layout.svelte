@@ -2,7 +2,9 @@
   import '$styles/reset.css'
   import '$styles/tokens.css'
 
-  import '$layout/inset.css'
+  import '$layout/utils/inset.css'
+  import '$layout/utils/gap.css'
+  import '$layout/utils/space.css'
 
   import '$layout/center.css'
   import '$layout/cover.css'

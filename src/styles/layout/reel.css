@@ -1,14 +1,14 @@
 .reel {
   display: flex;
   overflow-x: auto;
-  padding: var(--inset);
+  padding: var(--inset) 0;
 }
 
 .reel > * + * {
-  margin-left: var(--space-s);
+  margin-left: var(--gap);
 }
 
 .reel::after {
   content: '';
-  flex-basis: var(--space-s);
+  flex-basis: var(--gap);
 }

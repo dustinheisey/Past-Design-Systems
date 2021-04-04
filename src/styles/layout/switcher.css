@@ -1,46 +1,44 @@
-/* one column with gap on small screens, equal columns row with gap on large screens */
-.switcher {
+.switcher > * {
   display: flex;
   flex-wrap: wrap;
-  padding: var(--inset);
-  margin: calc(var(--space) / 2 * -1);
+  margin: calc((var(--gap) / 2) * -1);
 }
 
-.switcher > * {
+.switcher > * > * {
   flex-grow: 1;
-  flex-basis: calc((var(--breakpoint) - (100% - var(--space))) * 999);
-  margin: calc(var(--space) / 2);
+  flex-basis: calc((var(--breakpoint) - (100% - var(--gap))) * 999);
+  margin: calc(var(--gap) / 2);
 }
 
-.switcher > :nth-last-child(n + 5),
-.switcher > :nth-last-child(n + 5) ~ * {
+.switcher > * > :nth-last-child(n + 5),
+.switcher > * > :nth-last-child(n + 5) ~ * {
   flex-basis: 100%;
 }
 
-.switcher > [grow='2'] {
+.switcher > * > [grow='2'] {
   flex-grow: 2;
 }
 
-.switcher > [grow='3'] {
+.switcher > * > [grow='3'] {
   flex-grow: 3;
 }
 
-[collapse='phone'] {
+.switcher[collapse='phone'] {
   --breakpoint: 20em;
 }
 
-[collapse='tablet-portrait'] {
+.switcher[collapse='tablet-portrait'] {
   --breakpoint: 38em;
 }
 
-[collapse='tablet-landscape'] {
+.switcher[collapse='tablet-landscape'] {
   --breakpoint: 56em;
 }
 
-[collapse='desktop'] {
+.switcher[collapse='desktop'] {
   --breakpoint: 75em;
 }
 
-[collapse='lg-desktop'] {
+.switcher[collapse='lg-desktop'] {
   --breakpoint: 112em;
 }

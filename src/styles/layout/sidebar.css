@@ -1,27 +1,22 @@
 .sidebar {
-  --gap: var(--space-m)
-  padding: var(--inset);
   overflow: hidden;
   inline-size: 100%;
+  padding: var(--inset);
 }
 
 .sidebar > * {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(-1 * (var(--gap) / 2));
+  margin: calc(var(--gap) / 2 * -1);
 }
 
 .sidebar > * > * {
   margin: calc(var(--gap) / 2);
-}
-
-
-.sidebar > * > [fixed] {
   flex-grow: 1;
 }
 
 .sidebar > * > :not([fixed]) {
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: 50%;
+  min-width: calc(50% - var(--gap));
 }

@@ -27,7 +27,7 @@
 }
 
 [inset] * {
-  --inset: 0;
+  --inset: initial;
 }
 
 @media (--phone) {

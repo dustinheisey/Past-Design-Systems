@@ -1,0 +1,181 @@
+[space] * {
+  --space: initial;
+}
+
+[space='2xs'] > * {
+  --space: var(--space-2xs) !important;
+}
+
+[space='xs'] > * {
+  --space: var(--space-xs) !important;
+}
+
+[space='s'] > * {
+  --space: var(--space-s) !important;
+}
+
+[space='m'] > * {
+  --space: var(--space-m) !important;
+}
+
+[space='l'] > * {
+  --space: var(--space-l) !important;
+}
+
+[space='xl'] > * {
+  --space: var(--space-xl) !important;
+}
+
+[space='2xl'] > * {
+  --space: var(--space-2xl) !important;
+}
+
+@media (--phone) {
+  [space='phone:2xs'] > * {
+    --space: var(--space-2xs) !important;
+  }
+
+  [space='phone:xs'] > * {
+    --space: var(--space-xs) !important;
+  }
+
+  [space='phone:s'] > * {
+    --space: var(--space-s) !important;
+  }
+
+  [space='phone:m'] > * {
+    --space: var(--space-m) !important;
+  }
+
+  [space='phone:l'] > * {
+    --space: var(--space-l) !important;
+  }
+
+  [space='phone:xl'] > * {
+    --space: var(--space-xl) !important;
+  }
+
+  [space='phone:2xl'] > * {
+    --space: var(--space-2xl) !important;
+  }
+}
+
+@media (--tablet-portrait) {
+  [space='tablet-portrait:2xs'] > * {
+    --space: var(--space-2xs) !important;
+  }
+
+  [space='tablet-portrait:xs'] > * {
+    --space: var(--space-xs) !important;
+  }
+
+  [space='tablet-portrait:s'] > * {
+    --space: var(--space-s) !important;
+  }
+
+  [space='tablet-portrait:m'] > * {
+    --space: var(--space-m) !important;
+  }
+
+  [space='tablet-portrait:l'] > * {
+    --space: var(--space-l) !important;
+  }
+
+  [space='tablet-portrait:xl'] > * {
+    --space: var(--space-xl) !important;
+  }
+
+  [space='tablet-portrait:2xl'] > * {
+    --space: var(--space-2xl) !important;
+  }
+}
+
+@media (--tablet-landscape) {
+  [space='tablet-landscape:2xs'] > * {
+    --space: var(--space-2xs) !important;
+  }
+
+  [space='tablet-landscape:xs'] > * {
+    --space: var(--space-xs) !important;
+  }
+
+  [space='tablet-landscape:s'] > * {
+    --space: var(--space-s) !important;
+  }
+
+  [space='tablet-landscape:m'] > * {
+    --space: var(--space-m) !important;
+  }
+
+  [space='tablet-landscape:l'] > * {
+    --space: var(--space-l) !important;
+  }
+
+  [space='tablet-landscape:xl'] > * {
+    --space: var(--space-xl) !important;
+  }
+
+  [space='tablet-landscape:2xl'] > * {
+    --space: var(--space-2xl) !important;
+  }
+}
+
+@media (--desktop) {
+  [space='desktop:2xs'] > * {
+    --space: var(--space-2xs) !important;
+  }
+
+  [space='desktop:xs'] > * {
+    --space: var(--space-xs) !important;
+  }
+
+  [space='desktop:s'] > * {
+    --space: var(--space-s) !important;
+  }
+
+  [space='desktop:m'] > * {
+    --space: var(--space-m) !important;
+  }
+
+  [space='desktop:l'] > * {
+    --space: var(--space-l) !important;
+  }
+
+  [space='desktop:xl'] > * {
+    --space: var(--space-xl) !important;
+  }
+
+  [space='desktop:2xl'] > * {
+    --space: var(--space-2xl) !important;
+  }
+}
+
+@media (--lg-desktop) {
+  [space='lg-desktop:2xs'] > * {
+    --space: var(--space-2xs) !important;
+  }
+
+  [space='lg-desktop:xs'] > * {
+    --space: var(--space-xs) !important;
+  }
+
+  [space='lg-desktop:s'] > * {
+    --space: var(--space-s) !important;
+  }
+
+  [space='lg-desktop:m'] > * {
+    --space: var(--space-m) !important;
+  }
+
+  [space='lg-desktop:l'] > * {
+    --space: var(--space-l) !important;
+  }
+
+  [space='lg-desktop:xl'] > * {
+    --space: var(--space-xl) !important;
+  }
+
+  [space='lg-desktop:2xl'] > * {
+    --space: var(--space-2xl) !important;
+  }
+}

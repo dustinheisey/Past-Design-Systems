@@ -11,7 +11,7 @@
 }
 
 .stack > * + * {
-  margin-block-start: var(--space-m);
+  margin-block-start: var(--space, var(--gap));
 }
 
 /* Split beflow */

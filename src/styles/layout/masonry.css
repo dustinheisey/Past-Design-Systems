@@ -1,10 +1,10 @@
 .masonry {
-  gap: var(--space-m);
+  gap: var(--gap);
   padding: var(--inset);
   columns: 3;
 }
 
 .masonry > * {
-  margin-block-end: var(--space-m);
+  margin-block-end: var(--gap);
   break-inside: avoid;
 }
