@@ -1,0 +1,15 @@
+:root {
+    /* Color */
+    /* Space */
+    --space-3xs: 2px;
+    --space-2xs: 4px;
+    --space-xs: 8px;
+    --space-s: 12px;
+    --space-m: 16px;
+    --space-l: 24px;
+    --space-xl: 32px;
+    --space-2xl: 64px;
+    --space-3xl: 128px;
+
+    /* Size */
+}

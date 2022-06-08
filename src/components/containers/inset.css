@@ -1,0 +1,39 @@
+[inset='3xs'] {
+    --inset: var(--space-3xs);
+}
+
+[inset='2xs'] {
+    --inset: var(--space-2xs);
+}
+
+[inset='xs'] {
+    --inset: var(--space-xs);
+}
+
+[inset='s'] {
+    --inset: var(--space-s);
+}
+
+[inset='m'] {
+    --inset: var(--space-m);
+}
+
+[inset='l'] {
+    --inset: var(--space-l);
+}
+
+[inset='xl'] {
+    --inset: var(--space-xl);
+}
+
+[inset='2xl'] {
+    --inset: var(--space-2xl);
+}
+
+[inset='3xl'] {
+    --inset: var(--space-3xl);
+}
+
+[inset] > * {
+    --inset: initial;
+}
