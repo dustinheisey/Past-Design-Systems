@@ -1,0 +1,31 @@
+.inset\:2xs {
+    --inset: var(--space-2xs) !important;
+}
+
+.inset\:xs {
+    --inset: var(--space-xs) !important;
+}
+
+.inset\:s {
+    --inset: var(--space-s) !important;
+}
+
+.inset\:m {
+    --inset: var(--space-m) !important;
+}
+
+.inset\:l {
+    --inset: var(--space-l) !important;
+}
+
+.inset\:xl {
+    --inset: var(--space-xl) !important;
+}
+
+.inset\:2xl {
+    --inset: var(--space-2xl) !important;
+}
+
+[class*='inset'] > * {
+    --inset: initial;
+}

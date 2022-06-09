@@ -1,0 +1,64 @@
+:not(.stack).gap\:2xs {
+    --gap: var(--space-2xs) !important;
+}
+
+:not(.stack).gap\:xs {
+    --gap: var(--space-xs) !important;
+}
+
+:not(.stack).gap\:s {
+    --gap: var(--space-s) !important;
+}
+
+:not(.stack).gap\:m {
+    --gap: var(--space-m) !important;
+}
+
+:not(.stack).gap\:l {
+    --gap: var(--space-l) !important;
+}
+
+:not(.stack).gap\:xl {
+    --gap: var(--space-xl) !important;
+}
+
+:not(.stack).gap\:2xl {
+    --gap: var(--space-2xl) !important;
+}
+
+:not(.stack)[class*='gap'] * {
+    --gap: initial;
+}
+
+/* Stack */
+.stack.gap\:2xs > * {
+    --gap: var(--space-2xs) !important;
+}
+
+.stack.gap\:xs > * {
+    --gap: var(--space-xs) !important;
+}
+
+.stack.gap\:s > * {
+    --gap: var(--space-s) !important;
+}
+
+.stack.gap\:m > * {
+    --gap: var(--space-m) !important;
+}
+
+.stack.gap\:l > * {
+    --gap: var(--space-l) !important;
+}
+
+.stack.gap\:xl > * {
+    --gap: var(--space-xl) !important;
+}
+
+.stack.gap\:2xl > * {
+    --gap: var(--space-2xl) !important;
+}
+
+.stack[class*='gap'] > * > * {
+    --gap: initial;
+}

@@ -1,0 +1,23 @@
+.threshold\:phone > * {
+    --threshold: 20em;
+}
+
+.threshold\:tablet-portrait > * {
+    --threshold: 38em;
+}
+
+.threshold\:tablet-landscape > * {
+    --threshold: 56em;
+}
+
+.threshold\:desktop > * {
+    --threshold: 75em;
+}
+
+.threshold\:l-desktop > * {
+    --threshold: 112em;
+}
+
+[class*='threshold'] > * > * {
+    --threshold: initial;
+}

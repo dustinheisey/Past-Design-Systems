@@ -1,6 +1,0 @@
-.stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: var(--justify, flex-start);
-    gap: var(--gap, var(--space-m));
-}

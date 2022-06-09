@@ -1,0 +1,15 @@
+.grow\:1 {
+    --grow: 1;
+}
+
+.grow\:2 {
+    --grow: 2;
+}
+
+.grow\:3 {
+    --grow: 3;
+}
+
+[class*='grow'] > * {
+    --grow: initial;
+}

@@ -1,5 +1,11 @@
 module.exports = {
-    stories: ['../src/components/**/*.story.mdx'],
+    stories: [
+        {
+            directory: '../src/components/containers/stories',
+            titlePrefix: 'Containers/',
+            files: '*.story.*'
+        }
+    ],
     addons: [
         '@storybook/addon-links',
         '@storybook/addon-essentials',

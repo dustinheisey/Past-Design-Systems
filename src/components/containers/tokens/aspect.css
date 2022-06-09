@@ -1,0 +1,15 @@
+.aspect\:square {
+    --aspect: 1/1;
+}
+
+.aspect\:photo {
+    --aspect: 3/2;
+}
+
+.aspect\:video {
+    --aspect: 16/9;
+}
+
+[class*='aspect'] > * {
+    --aspect: initial;
+}

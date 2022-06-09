@@ -1,0 +1,31 @@
+.space\:2xs {
+    --space: var(--space-2xs) !important;
+}
+
+.space\:xs {
+    --space: var(--space-xs) !important;
+}
+
+.space\:s {
+    --space: var(--space-s) !important;
+}
+
+.space\:m {
+    --space: var(--space-m) !important;
+}
+
+.space\:l {
+    --space: var(--space-l) !important;
+}
+
+.space\:xl {
+    --space: var(--space-xl) !important;
+}
+
+.space\:2xl {
+    --space: var(--space-2xl) !important;
+}
+
+[class*='space'] > * {
+    --space: initial;
+}

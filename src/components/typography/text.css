@@ -9,7 +9,6 @@ h4,
 h5,
 h6 {
     font-family: var(--font-heading);
-    margin: 0;
     line-height: var(--line-height-heading);
     letter-spacing: 2px;
 }
@@ -19,38 +18,6 @@ p {
     font-size: var(--font-size-m);
     max-inline-size: 70ch;
     line-height: var(--line-height-body);
-    margin: 0;
-    margin-block-end: var(--space-lg);
-}
-
-h1[justify='start'],
-h2[justify='start'],
-h3[justify='start'],
-h4[justify='start'],
-h5[justify='start'],
-h6[justify='start'],
-p[justify='start'] {
-    text-align: start;
-}
-
-h1[justify='center'],
-h2[justify='center'],
-h3[justify='center'],
-h4[justify='center'],
-h5[justify='center'],
-h6[justify='center'],
-p[justify='center'] {
-    text-align: center;
-}
-
-h1[justify='end'],
-h2[justify='end'],
-h3[justify='end'],
-h4[justify='end'],
-h5[justify='end'],
-h6[justify='end'],
-p[justify='end'] {
-    text-align: end;
 }
 
 [color='muted'] {
@@ -67,18 +34,6 @@ p[justify='end'] {
 
 [color='primary-dark'] {
     color: var(--color-primary-darkest) !important;
-}
-
-[color='green'] {
-    color: #d3de24 !important;
-}
-
-[color='orange'] {
-    color: var(--color-orange) !important;
-}
-
-[color='blue'] {
-    color: #20adff !important;
 }
 
 .caption {

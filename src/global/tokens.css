@@ -35,8 +35,8 @@
 
 /* Typography */
 :root {
-    --font-heading: ;
-    --font-body: ;
+    --font-heading: monospace;
+    --font-body: sans-serif;
 
     --font-size-2xs: ;
     --font-size-xs: ;
