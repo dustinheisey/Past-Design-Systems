@@ -1,0 +1,27 @@
+.justify\:s {
+    --justify: flex-start !important;
+}
+
+.justify\:c {
+    --justify: center !important;
+}
+
+.justify\:e {
+    --justify: flex-end !important;
+}
+
+.justify\:sb {
+    --justify: space-between !important;
+}
+
+.justify\:sa {
+    --justify: space-around !important;
+}
+
+.justify\:se {
+    --justify: space-evenly !important;
+}
+
+[class*='justify'] > * {
+    --justify: initial;
+}

@@ -1,10 +1,8 @@
 .cluster {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.cluster:not([gap]) {
-    gap: var(--space-m);
+    padding: var(--inset, 0);
+    gap: var(--gap, var(--space-m));
+    justify-content: var(--justify, flex-start);
+    align-items: var(--align, center);
 }

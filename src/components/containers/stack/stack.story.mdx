@@ -1,0 +1,27 @@
+import { Meta, Source } from '@storybook/addon-docs';
+
+<Meta title="Layout/Stack" />
+
+## Stack Layout
+
+Anywhere elements are stacked one atop another, it is likely a Stack should be in effect. Only adjacent elements (such as grid cells) should not be subject to a Stack. The grid cells are likely to be Stacks, however, and the grid itself a member of a Stack.
+
+<Source
+    language="html"
+    format={true}
+    code={`
+        <div class="stack">
+            <p>lorem ipsum dolor</p>
+            <p>lorem ipsum dolor</p>
+        </div>
+    `}
+/>
+
+<div class="stack gap:xs">
+    <p>lorem ipsum dolor</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolore minima, id aliquam
+        quam sed incidunt aperiam, fuga iure, temporibus magnam. Explicabo, quae ut. Magni velit
+        vitae voluptates repellat deserunt?
+    </p>
+</div>

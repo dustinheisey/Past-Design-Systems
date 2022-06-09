@@ -1,0 +1,92 @@
+a:not(.button) {
+    color: var(--color-primary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+    font-size: var(--font-size-md);
+}
+
+a:not(.button):visited {
+    color: var(--color-primary);
+}
+
+a:not(.button)[background='dark'] {
+    color: #fff;
+}
+
+a:not(.button)[variant='default'] {
+    color: var(--color-dark);
+}
+
+a:not(.button)[variant='default']:hover,
+a:not(.button)[variant='default']:active {
+    color: var(--color-primary);
+}
+
+.link {
+    color: var(--color-primary);
+    position: relative;
+    text-decoration: none;
+    transition: color 0.4s ease-out;
+    max-inline-size: max-content;
+}
+
+.link[background='dark'] {
+    color: #fff;
+}
+
+.link:hover {
+    color: var(--color-primary);
+    right: 0;
+    text-decoration: none;
+}
+
+.link[background='dark']:hover {
+    color: #fff;
+}
+
+.link:hover:after {
+    border-color: var(--color-primary);
+    right: 0;
+}
+
+.link[background='dark']:hover:after {
+    border-color: #fff;
+}
+
+.link:after {
+    border-radius: var(--radius-pill);
+    border-top: 2px solid var(--color-primary);
+    content: '';
+    position: absolute;
+    right: 100%;
+    bottom: 0em;
+    left: 0;
+    transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+.link[background='dark']:after {
+    border-color: #fff;
+}
+
+.link:hover:after {
+    animation: anchor-underline 0.3s cubic-bezier(0, 0.5, 0, 1) normal forwards;
+    border-color: var(--color-primary);
+}
+
+.link[background='dark']:hover:after {
+    border-color: #fff;
+}
+
+@keyframes anchor-underline {
+    0%,
+    10% {
+        left: 0;
+        right: 100%;
+    }
+    90%,
+    100% {
+        left: 0;
+        right: 0;
+    }
+}

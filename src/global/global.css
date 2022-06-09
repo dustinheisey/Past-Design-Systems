@@ -4,6 +4,8 @@
 /* Layout */
 @import '../components/containers/inset.css';
 @import '../components/containers/gap.css';
+@import '../components/containers/justify.css';
+@import '../components/containers/align.css';
 
 @import '../components/containers/center/center.css';
 @import '../components/containers/cluster/cluster.css';
@@ -16,9 +18,11 @@
 @import '../components/containers/stack/stack.css';
 @import '../components/containers/switcher/switcher.css';
 
-* {
+@import '../components/typography/text.css';
+
+/* * {
     max-inline-size: 60ch;
-}
+} */
 
 html,
 body,

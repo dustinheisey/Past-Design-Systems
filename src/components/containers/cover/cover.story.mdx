@@ -1,7 +1,36 @@
-import { Meta } from '@storybook/addon-docs'
+import { Meta, Source } from '@storybook/addon-docs';
 
 <Meta title="Layout/Cover" />
 
-<div className="cover">
-    <p>lorem</p>
+## Cover
+
+A typical use for the Cover would be to create the “above the fold” introductory content for a web page.
+
+<Source
+    language="html"
+    format={true}
+    code={`
+        <div class="center">
+            <button>Centered Button</button>
+        </div>
+    `}
+/>
+
+<div class="cover">
+    <div class="cluster justify:sb">
+        <h1>Hello World</h1>
+        <div class="cluster">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquam illo aut quasi quas
+        nam odio quos recusandae enim consequatur. Dicta ullam corrupti ea! Consequatur harum
+        corrupti omnis neque praesentium?
+    </div>
+    <div>&copy; 2022 Hello World Incorporated</div>
 </div>

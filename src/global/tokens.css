@@ -1,15 +1,113 @@
-:root {
-    /* Color */
-    /* Space */
-    --space-3xs: 2px;
-    --space-2xs: 4px;
-    --space-xs: 8px;
-    --space-s: 12px;
-    --space-m: 16px;
-    --space-l: 24px;
-    --space-xl: 32px;
-    --space-2xl: 64px;
-    --space-3xl: 128px;
+/* Media Queries */
+@custom-media --phone (width > 20em);
+@custom-media --tablet-portrait (width > 38em);
+@custom-media --tablet-landscape (width > 56em);
+@custom-media --desktop (width > 75em);
+@custom-media --l-desktop (width > 112em);
 
-    /* Size */
+/* Color */
+:root {
+    --color-brand-primary: ;
+    --color-brand-secondary: ;
+    --color-brand-tertiary: ;
+    --color-brand-bg: ;
+
+    --color-fg-primary: ;
+    --color-fg-secondary: ;
+    --color-fg-tertiary: ;
+
+    --color-bg-primary: ;
+    --color-bg-secondary: ;
+    --color-bg-tertiary: ;
+
+    --color-success: ;
+    --color-success-bg: ;
+
+    --color-info: ;
+    --color-info-bg: ;
+
+    --color-warning: ;
+    --color-warning-bg: ;
+
+    --color-danger: ;
+    --color-danger-bg: ;
+}
+
+/* Typography */
+:root {
+    --font-heading: ;
+    --font-body: ;
+
+    --font-size-2xs: ;
+    --font-size-xs: ;
+    --font-size-s: ;
+    --font-size-l: ;
+    --font-size-xl: ;
+    --font-size-2xl: ;
+    --font-size-3xl: ;
+    --font-size-4xl: ;
+
+    --font-size-xxs: clamp(5px, 0.625rem, 20px); /* 10px */
+    --font-size-xs: clamp(6px, 0.75rem, 24px); /* 12px */
+    --font-size-sm: clamp(7px, 0.875rem, 28px); /* 14px */
+    --font-size-md: clamp(8px, 1rem, 32px); /* 16px */
+    --font-size-lg: clamp(12px, 1.75rem, 48px); /* 24px */
+    --font-size-xl: clamp(22px, 2.5rem, 80px); /* 40px */
+    --font-size-xxl: clamp(22px, 2.75rem, 88px); /* 44px */
+    --font-size-xxxl: clamp(28px, 3.5rem, 112px); /* 56px */
+    --font-size-display: clamp(40px, 5rem, 160px); /* 96px */
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --letter-spacing: normal;
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.5;
+}
+
+/* Layout */
+:root {
+    --space-2xs: 8px;
+    --space-xs: 12px;
+    --space-s: 16px;
+    --space-m: 24px;
+    --space-l: 32px;
+    --space-xl: 48px @(--desktop) 64px;
+    --space-2xl: 64px @(--desktop) 192px;
+}
+
+/* Z Index */
+:root {
+    --z-5: 500;
+    --z-4: 400;
+    --z-3: 300;
+    --z-2: 200;
+    --z-1: 100;
+}
+
+/* Animation */
+:root {
+}
+
+/* Shadow */
+:root {
+    --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-m: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    --shadow-l: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Radius */
+:root {
+    --radius: 5px;
+    --radius-l: 12px;
+    --radius-pill: 9999px;
+    --radius-circle: 50%;
+}
+
+/* Outline */
+:root {
+    --outline: ;
+    --outline-offset: ;
 }

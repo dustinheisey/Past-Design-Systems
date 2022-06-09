@@ -1,9 +1,65 @@
-import { Meta } from '@storybook/addon-docs'
+import { Meta, Source } from '@storybook/addon-docs';
 
 <Meta title="Layout/Cluster" />
 
-<div className="cluster" gap="3xl">
-    <button>hello world</button>
-    <button>hello world</button>
-    <button>hello world</button>
+## Cluster
+
+Cluster components suit any groups of elements that differ in length and are liable to wrap. Buttons that appear together at the end of forms are ideal candidates, as well as lists of tags, keywords, or other meta information. Use the Cluster to align any groups of horizontally laid out elements to the left or right, or in the center.
+
+#### Default
+
+<Source
+    language="html"
+    format={true}
+    code={`
+        <div class="cluster">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+        </div>
+    `}
+/>
+
+<div class="cluster">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+</div>
+
+#### 3xl Gap
+
+<Source
+    language="html"
+    format={true}
+    code={`
+        <div class="cluster gap:3xl">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+        </div>
+    `}
+/>
+<div class="cluster gap:3xl">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+</div>
+
+#### Justify End
+
+<Source
+    language="html"
+    format={true}
+    code={`
+        <div class="cluster justify:e">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+        </div>
+    `}
+/>
+<div class="cluster  justify:e">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
 </div>

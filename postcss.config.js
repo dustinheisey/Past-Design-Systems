@@ -6,6 +6,7 @@ module.exports = {
             browsers: 'last 2 versions'
             // importFrom: 'path/to/file.css'
         },
-        'postcss-import': {}
+        'postcss-import': {},
+        'postcss-inline-media': {}
     }
-}
+};

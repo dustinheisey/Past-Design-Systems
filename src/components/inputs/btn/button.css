@@ -1,0 +1,143 @@
+button,
+.button {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: #fff;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: var(--font-size-md);
+    font-weight: var(--weight-semibold);
+    text-decoration: none;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: all 0.3s;
+    padding-block-start: var(--space-xs);
+    padding-block-end: var(--space-xs);
+    padding-inline-start: var(--space-md);
+    padding-inline-end: var(--space-md);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+}
+
+button:hover,
+.button:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    box-shadow: var(--shadow-lg);
+    text-decoration: none;
+}
+
+button[background='dark'],
+.button[background='dark'],
+button[background='primary'],
+.button[background='primary'] {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--color-primary);
+}
+
+button[background='dark']:hover,
+.button[background='dark']:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+    box-shadow: var(--shadow-lg);
+}
+
+button[background='primary']:hover,
+.button[background='primary']:hover {
+    background-color: var(--color-primary-darkest);
+    border-color: var(--color-primary-darkest);
+    color: #fff;
+    box-shadow: var(--shadow-lg);
+}
+
+button[size='sm'],
+.button[size='sm'] {
+    font-size: var(--font-size-sm);
+    padding-block-start: var(--space-xxs);
+    padding-block-end: var(--space-xxs);
+    padding-inline-start: var(--space-sm);
+    padding-inline-end: var(--space-sm);
+}
+
+button[size='lg'],
+.button[size='sm'] {
+    font-size: var(--font-size-lg);
+    padding-block-start: var(--space-md);
+    padding-block-end: var(--space-md);
+    padding-inline-start: var(--space-lg);
+    padding-inline-end: var(--space-lg);
+}
+
+button[radius='pill'],
+.button[radius='pill'] {
+    border-radius: var(--radius-pill);
+}
+
+button[radius='circle'],
+.button[radius='circle'] {
+    border-radius: var(--radius-circle);
+    aspect-ratio: 1;
+    padding: var(--space-xs);
+}
+
+button[radius='circle'] img,
+.button[radius='circle'] img {
+    inline-size: 1.25rem;
+    block-size: auto;
+    margin: 0;
+}
+
+button[variant='outline'],
+.button[variant='outline'] {
+    background-color: transparent;
+    border-color: var(--color-dark);
+    color: var(--color-darkest);
+}
+
+button[variant='outline']:hover,
+.button[variant='outline']:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+button[variant='outline'][background='dark'],
+.button[variant='outline'][background='dark'] {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+button[variant='outline'][background='dark']:hover,
+.button[variant='outline'][background='dark']:hover {
+    background-color: #fff;
+    color: var(--color-darkest);
+    box-shadow: var(--shadow-lg);
+}
+
+button[variant='text'],
+.button[variant='text'] {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-dark);
+}
+
+button[variant='text']:hover,
+.button[variant='text']:hover {
+    color: var(--color-darkest);
+    background-color: var(--color-lighter);
+}
+
+button[variant='text'][background='dark'],
+.button[variant='text'][background='dark'] {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+}
+
+button[variant='text'][background='dark']:hover,
+.button[variant='text'][background='dark']:hover {
+    color: #fff;
+    background-color: var(--color-darker);
+}
