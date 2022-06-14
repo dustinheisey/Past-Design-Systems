@@ -26,7 +26,8 @@
         "postcss-import": "^14.1.0",
         "postcss-preset-env": "^7.7.1",
         "story-description-loader": "^1.0.0",
-        "storybook-dark-mode": "^1.1.0"
+        "storybook-dark-mode": "^1.1.0",
+        "storybook-design-token": "^2.3.0"
     },
     "dependencies": {
         "postcss-inline-media": "^1.4.0"

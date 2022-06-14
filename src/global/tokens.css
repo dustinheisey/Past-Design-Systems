@@ -5,109 +5,289 @@
 @custom-media --desktop (width > 75em);
 @custom-media --l-desktop (width > 112em);
 
-/* Color */
 :root {
-    --color-brand-primary: ;
-    --color-brand-secondary: ;
-    --color-brand-tertiary: ;
-    --color-brand-bg: ;
+    /*
+    * @tokens Primitive
+    * @presenter Color
+    */
+    --color-brand-300: #19573d;
+    --color-brand-200: #36b07d;
+    --color-brand-100: #d9fced;
 
-    --color-fg-primary: ;
-    --color-fg-secondary: ;
-    --color-fg-tertiary: ;
+    --color-grey-600: #191a1a;
+    --color-grey-500: #2a2c2b;
+    --color-grey-400: #474a49;
+    --color-grey-300: #b5bdb9;
+    --color-grey-200: #dbe4e1;
+    --color-grey-100: #f2fcf8;
 
-    --color-bg-primary: ;
-    --color-bg-secondary: ;
-    --color-bg-tertiary: ;
+    --color-success-300: #195733;
+    --color-success-200: #1aab56;
+    --color-success-100: #aefccf;
+    --color-info-300: #192b57;
+    --color-info-200: #4372e8;
+    --color-info-100: #aec4fc;
+    --color-warning-300: #634900;
+    --color-warning-200: #edb929;
+    --color-warning-100: #fce194;
+    --color-danger-300: #731118;
+    --color-danger-200: #a12a2a;
+    --color-danger-100: #fcbdc2;
 
-    --color-success: ;
-    --color-success-bg: ;
+    /*
+    * @tokens Brand
+    * @presenter Color
+    */
+    --color-brand-text: var(--color-brand-300);
+    --color-brand-ui: var(--color-brand-200);
+    --color-brand-bg: var(--color-brand-100);
 
-    --color-info: ;
-    --color-info-bg: ;
+    /*
+    * @tokens Greys
+    * @presenter Color
+    */
+    --color-fg-primary: var(--color-grey-600);
+    --color-fg-secondary: var(--color-grey-500);
+    --color-fg-tertiary: var(--color-grey-400);
 
-    --color-warning: ;
-    --color-warning-bg: ;
+    --color-bg-primary: var(--color-grey-300);
+    --color-bg-secondary: var(--color-grey-200);
+    --color-bg-tertiary: var(--color-grey-100);
 
-    --color-danger: ;
-    --color-danger-bg: ;
+    /*
+    * @tokens Semantic
+    * @presenter Color
+    */
+    --color-success-text: var(--color-success-300);
+    --color-success-ui: var(--color-success-200);
+    --color-success-bg: var(--color-success-100);
+
+    --color-info-text: var(--color-info-300);
+    --color-info-ui: var(--color-info-200);
+    --color-info-bg: var(--color-info-100);
+
+    --color-warning-text: var(--color-warning-300);
+    --color-warning-ui: var(--color-warning-200);
+    --color-warning-bg: var(--color-warning-100);
+
+    --color-danger-text: var(--color-danger-300);
+    --color-danger-ui: var(--color-danger-200);
+    --color-danger-bg: var(--color-danger-100);
 }
 
-/* Typography */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /*
+        * @tokens Dark Brand
+        * @presenter Color
+        */
+        --color-brand-text: var(--color-brand-100);
+        --color-brand-ui: var(--color-brand-200);
+        --color-brand-bg: var(--color-brand-300);
+
+        /*
+        * @tokens Dark Greys
+        * @presenter Color
+        */
+        --color-fg-primary: var(--color-grey-100);
+        --color-fg-secondary: var(--color-grey-200);
+        --color-fg-tertiary: var(--color-grey-300);
+
+        --color-bg-primary: var(--color-grey-400);
+        --color-bg-secondary: var(--color-grey-500);
+        --color-bg-tertiary: var(--color-grey-600);
+
+        /*
+        * @tokens Dark Semantic
+        * @presenter Color
+        */
+        --color-success-text: var(--color-success-100);
+        --color-success-ui: var(--color-success-200);
+        --color-success-bg: var(--color-success-300);
+
+        --color-info-text: var(--color-info-100);
+        --color-info-ui: var(--color-info-200);
+        --color-info-bg: var(--color-info-300);
+
+        --color-warning-text: var(--color-warning-100);
+        --color-warning-ui: var(--color-warning-200);
+        --color-warning-bg: var(--color-warning-300);
+
+        --color-danger-text: var(--color-danger-100);
+        --color-danger-ui: var(--color-danger-200);
+        --color-danger-bg: var(--color-danger-300);
+    }
+}
+
+/*
+* @tokens Alpha
+* @presenter Opacity
+*/
+:root {
+    --alpha: 1;
+}
+
+/*
+* @tokens Font Family
+* @presenter FontFamily
+*/
 :root {
     --font-heading: monospace;
     --font-body: sans-serif;
+}
 
-    --font-size-2xs: ;
-    --font-size-xs: ;
-    --font-size-s: ;
-    --font-size-l: ;
-    --font-size-xl: ;
-    --font-size-2xl: ;
-    --font-size-3xl: ;
-    --font-size-4xl: ;
+/*
+* @tokens Font Size
+* @presenter FontSize
+*/
+:root {
+    --font-size-2xs: 0.625rem; /* 10px */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-s: 0.875rem; /* 14px */
+    --font-size-m: 1rem; /* 16px */
+    --font-size-l: 1.25rem; /* 20px */
+    --font-size-xl: 1.5rem; /* 24px */
+    --font-size-2xl: 2rem; /* 32px */
+    --font-size-3xl: 2.5rem; /* 40px */
+    --font-size-4xl: 3rem; /* 48px */
+    --font-size-5xl: 3.75rem; /* 60px */
+    --font-size-6xl: 4.5rem; /* 72px */
+    --font-size-7xl: 6rem; /* 96px */
+}
 
-    --font-size-xxs: clamp(5px, 0.625rem, 20px); /* 10px */
-    --font-size-xs: clamp(6px, 0.75rem, 24px); /* 12px */
-    --font-size-sm: clamp(7px, 0.875rem, 28px); /* 14px */
-    --font-size-md: clamp(8px, 1rem, 32px); /* 16px */
-    --font-size-lg: clamp(12px, 1.75rem, 48px); /* 24px */
-    --font-size-xl: clamp(22px, 2.5rem, 80px); /* 40px */
-    --font-size-xxl: clamp(22px, 2.75rem, 88px); /* 44px */
-    --font-size-xxxl: clamp(28px, 3.5rem, 112px); /* 56px */
-    --font-size-display: clamp(40px, 5rem, 160px); /* 96px */
-
+/*
+* @tokens Font Weight
+* @presenter FontWeight
+*/
+:root {
     --font-weight-light: 300;
     --font-weight-normal: 400;
+    --font-weight-semibold: 500;
     --font-weight-bold: 700;
+}
 
-    --letter-spacing: normal;
-
+/*
+* @tokens Line Height
+* @presenter LineHeight
+*/
+:root {
     --line-height-heading: 1.2;
     --line-height-body: 1.5;
 }
 
-/* Layout */
+/*
+* @tokens Letter Spacing
+* @presenter LetterSpacing
+*/
 :root {
+    --letter-spacing-s: 0em;
+    --letter-spacing-m: 0.2;
+    --letter-spacing-l: 0.5em;
+}
+
+/*
+* @tokens Measure
+*/
+:root {
+    --measure-s: 45ch;
+    --measure-m: 60ch;
+    --measure-l: 75ch;
+}
+
+/*
+* @tokens Space
+* @presenter Spacing
+*/
+:root {
+    --space-3xs: 4px;
     --space-2xs: 8px;
     --space-xs: 12px;
     --space-s: 16px;
     --space-m: 24px;
     --space-l: 32px;
-    --space-xl: 48px @(--desktop) 64px;
-    --space-2xl: 64px @(--desktop) 192px;
+    --space-xl: 48px;
+    --space-2xl: 64px;
+    --space-3xl: 96px;
+    --space-4xl: 128px;
 }
 
-/* Z Index */
+/*
+* @tokens Z Index
+*/
 :root {
-    --z-5: 500;
-    --z-4: 400;
-    --z-3: 300;
-    --z-2: 200;
-    --z-1: 100;
+    --z-drawer: 100;
+    --z-dialog: 200;
+    --z-popover: 300;
+    --z-toast: 400;
+    --z-tooltip: 500;
 }
 
-/* Animation */
+/*
+* @tokens Transition
+* @presenter Animation
+*/
 :root {
+    --transition-xl: 1000ms;
+    --transition-l: 500ms;
+    --transition-m: 250ms;
+    --transition-s: 150ms;
+    --transition-xs: 50ms;
 }
 
-/* Shadow */
+/*
+* @tokens Shadow
+* @presenter Shadow
+*/
 :root {
-    --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    --shadow-m: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    --shadow-l: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    --shadow-inset: inset 0 2px 2px hsla(0, 0%, 0%, 0.1);
+    --shadow-xs: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+    --shadow-s: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+    --shadow-m: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+    --shadow-l: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+    --shadow-xl: 0 15px 35px hsla(0, 0%, 0%, 0.2);
 }
 
-/* Radius */
+/*
+* @tokens Radius
+* @presenter BorderRadius
+*/
 :root {
-    --radius: 5px;
+    --radius-s: 3px;
+    --radius-m: 5px;
     --radius-l: 12px;
     --radius-pill: 9999px;
     --radius-circle: 50%;
 }
 
-/* Outline */
+/*
+* @tokens Outline
+*/
 :root {
-    --outline: ;
-    --outline-offset: ;
+    --outline-color: var(--color-brand);
+    --outline-offset: 2px;
+    --outline: 2px solid var(--color-outline);
+}
+
+/*
+* @tokens Theming
+*/
+:root {
+    --font-heading: var(--font-heading);
+    --font-body: var(--font-body);
+
+    --measure: var(--measure-m);
+
+    --shadow-btn: var(--shadow-xs);
+    --shadow-btn-hover: var(--shadow-s);
+    --shadow-btn-active: none;
+    --shadow-toast: var(--shadow-m);
+    --shadow-tooltip: var(--shadow-m);
+    --shadow-dropdown: var(--shadow-m);
+    --shadow-drawer: var(--shadow-l);
+    --shadow-dialog: var(--shadow-l);
+
+    --btn-radius: var(--radius-m);
+    --card-radius: var(--radius-l);
+
+    --transition: var(--transition-m);
 }

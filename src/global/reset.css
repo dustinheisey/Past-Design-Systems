@@ -77,3 +77,7 @@ meter {
 :where([draggable='true']) {
     -webkit-user-drag: element;
 }
+
+html {
+    scroll-behavior: smooth;
+}
