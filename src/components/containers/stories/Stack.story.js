@@ -12,12 +12,10 @@ export const Stack = ({ gap, inset, space }) =>
 Stack.argTypes = {
     gap: {
         control: 'select',
-        defaultValue: 'gap:m',
         options: ['gap:2xs', 'gap:xs', 'gap:s', 'gap:m', 'gap:l', 'gap:xl', 'gap:2xl']
     },
     inset: {
         control: 'select',
-        defaultValue: '0',
         options: [
             '0',
             'inset:2xs',
@@ -31,7 +29,6 @@ Stack.argTypes = {
     },
     space: {
         control: 'select',
-        defaultValue: 'undefined',
         options: [
             'undefined',
             'space:2xs',

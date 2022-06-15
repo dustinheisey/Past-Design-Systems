@@ -18,7 +18,6 @@ export const Frame = ({ aspect }) =>
 Frame.argTypes = {
     aspect: {
         control: 'select',
-        defaultValue: 'aspect:photo',
         options: ['aspect:square', 'aspect:photo', 'aspect:video']
     }
 };

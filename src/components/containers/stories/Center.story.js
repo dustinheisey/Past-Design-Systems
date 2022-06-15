@@ -9,7 +9,6 @@ export const Center = ({ inset }) => `
 Center.argTypes = {
     inset: {
         control: 'select',
-        defaultValue: 'inset:xs',
         options: [
             '0',
             'inset:2xs',

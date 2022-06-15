@@ -12,12 +12,10 @@ export const Cluster = ({ gap, inset, justify }) =>
 Cluster.argTypes = {
     gap: {
         control: 'select',
-        defaultValue: 'gap:m',
         options: ['gap:2xs', 'gap:xs', 'gap:s', 'gap:m', 'gap:l', 'gap:xl', 'gap:2xl']
     },
     inset: {
         control: 'select',
-        defaultValue: '0',
         options: [
             '0',
             'inset:2xs',
@@ -31,7 +29,6 @@ Cluster.argTypes = {
     },
     justify: {
         control: 'select',
-        defaultValue: 'justify:s',
         options: ['justify:s', 'justify:c', 'justify:e', 'justify:sb', 'justify:sa', 'justify:se']
     }
 };

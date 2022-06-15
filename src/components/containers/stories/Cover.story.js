@@ -23,7 +23,6 @@ export const Cover = ({ inset, gap }) =>
 Cover.argTypes = {
     inset: {
         control: 'select',
-        defaultValue: '0',
         options: [
             '0',
             'inset:2xs',

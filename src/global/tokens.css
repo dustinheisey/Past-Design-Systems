@@ -55,7 +55,7 @@
     --color-bg-tertiary: var(--color-grey-100);
 
     /*
-    * @tokens Semantic
+    * @tokens SemanticColors
     * @presenter Color
     */
     --color-success-text: var(--color-success-300);
@@ -78,7 +78,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /*
-        * @tokens Dark Brand
+        * @tokens DarkBrand
         * @presenter Color
         */
         --color-brand-text: var(--color-brand-100);
@@ -86,7 +86,7 @@
         --color-brand-bg: var(--color-brand-300);
 
         /*
-        * @tokens Dark Greys
+        * @tokens DarkGreys
         * @presenter Color
         */
         --color-fg-primary: var(--color-grey-100);
@@ -98,7 +98,7 @@
         --color-bg-tertiary: var(--color-grey-600);
 
         /*
-        * @tokens Dark Semantic
+        * @tokens DarkSemantic
         * @presenter Color
         */
         --color-success-text: var(--color-success-100);
