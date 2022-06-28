@@ -48,13 +48,12 @@ module.exports = {
     ],
     addons: [
         'storybook-design-token',
-        '@storybook/addon-links',
         '@storybook/addon-essentials',
-        '@storybook/addon-interactions',
         '@storybook/addon-postcss'
     ],
     framework: '@storybook/html',
     core: {
-        disableTelemetry: true
+        disableTelemetry: true,
+        builder: '@storybook/builder-vite'
     }
 };

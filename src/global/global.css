@@ -29,6 +29,11 @@
     max-inline-size: 60ch;
 } */
 
+:root {
+    font-family: var(--font-body);
+    color: var(--color-fg-primary);
+}
+
 html,
 body,
 div,

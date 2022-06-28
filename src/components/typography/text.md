@@ -1,0 +1,10 @@
+- body text
+- caption text
+- title text
+- section heading
+- page heading
+- site heading
+- form input label
+- overline text
+- copywrite text
+- code block

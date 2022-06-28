@@ -1,0 +1,6 @@
+p {
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    max-inline-size: 70ch;
+    line-height: var(--line-height-body);
+}

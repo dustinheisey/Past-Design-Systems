@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    line-height: var(--line-height-heading);
+    max-width: var(--measure-s);
+}
+
+.headline\:site {
+    letter-spacing: var(--letter-spacing-site);
+    font-size: var(--font-size-site);
+    font-weight: var(--font-weight-site);
+}
+
+.headline\:page {
+    letter-spacing: var(--letter-spacing-page);
+    font-size: var(--font-size-page);
+    font-weight: var(--font-weight-page);
+}
+
+.headline\:section {
+    letter-spacing: var(--letter-spacing-section);
+    font-size: var(--font-size-section);
+    font-weight: var(--font-weight-section);
+}
