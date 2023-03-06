@@ -1,0 +1,187 @@
+/* ? Align */
+.align\:start {
+	align-items: flex-start !important;
+}
+
+.align\:center {
+	align-items: center !important;
+}
+
+.align\:end {
+	align-items: flex-end !important;
+}
+
+.align\:between {
+	align-items: space-between !important;
+}
+
+.align\:around {
+	align-items: space-around !important;
+}
+
+.align\:evenly {
+	align-items: space-evenly !important;
+}
+
+.align\:stretch {
+	align-items: stretch !important;
+}
+
+/* ? Aspect */
+.aspect\:square {
+	aspect-ratio: 1/1 !important;
+}
+
+.aspect\:photo {
+	aspect-ratio: 3/2 !important;
+}
+
+.aspect\:video {
+	aspect-ratio: 16/9 !important;
+}
+
+/* ? Gap */
+.gap\:2xs {
+	--gap: var(--space-2xs);
+}
+
+.gap\:xs {
+	--gap: var(--space-xs);
+}
+
+.gap\:s {
+	--gap: var(--space-s);
+}
+
+.gap\:m {
+	--gap: var(--space-m);
+}
+
+.gap\:l {
+	--gap: var(--space-l);
+}
+
+.gap\:xl {
+	--gap: var(--space-xl);
+}
+
+.gap\:2xl {
+	--gap: var(--space-2xl);
+}
+
+:not([class*=":recursive"])[class*="gap"] > * {
+	--gap: initial;
+}
+
+/* ? Grow */
+.grow\:1 {
+	flex-grow: 1 !important;
+}
+
+.grow\:2 {
+	flex-grow: 2 !important;
+}
+
+.grow\:3 {
+	flex-grow: 3 !important;
+}
+
+/* ? Inset */
+.inset\:2xs {
+	--inset: var(--space-2xs);
+}
+
+.inset\:xs {
+	--inset: var(--space-xs);
+}
+
+.inset\:s {
+	--inset: var(--space-s);
+}
+
+.inset\:m {
+	--inset: var(--space-m);
+}
+
+.inset\:l {
+	--inset: var(--space-l);
+}
+
+.inset\:xl {
+	--inset: var(--space-xl);
+}
+
+.inset\:2xl {
+	--inset: var(--space-2xl);
+}
+
+:not([class*=":recursive"])[class*="inset"] > * {
+	--inset: initial;
+}
+
+/* ? Justify */
+.justify\:start {
+	justify-content: flex-start !important;
+}
+
+.justify\:center {
+	justify-content: center !important;
+}
+
+.justify\:end {
+	justify-content: flex-end !important;
+}
+
+.justify\:between {
+	justify-content: space-between !important;
+}
+
+.justify\:around {
+	justify-content: space-around !important;
+}
+
+.justify\:evenly {
+	justify-content: space-evenly !important;
+}
+
+.justify\:stretch {
+	justify-content: stretch !important;
+}
+
+/* ? Text Align */
+.text-align\:start {
+	text-align: start !important;
+}
+
+.text-align\:center {
+	text-align: center !important;
+}
+
+.text-align\:end {
+	text-align: end !important;
+}
+
+/* ? Color */
+.color\:muted {
+	color: var(--color-fg-tertiary);
+}
+
+.color\:brand {
+	color: var(--color-brand-text);
+}
+
+.color\:success {
+	color: var(--color-success-text);
+}
+
+.color\:info {
+	color: var(--color-info-text);
+}
+
+.color\:warning {
+	color: var(--color-warning-text);
+}
+
+.color\:danger {
+	color: var(--color-danger-text);
+}

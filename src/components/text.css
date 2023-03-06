@@ -1,0 +1,93 @@
+.h\:site {
+	color: var(--color-site);
+	font-family: var(--font-family-site);
+	font-size: var(--font-size-site);
+	font-weight: var(--font-weight-site);
+	line-height: var(--line-height-site);
+	letter-spacing: var(--letter-spacing-site);
+	max-inline-size: var(--measure-site);
+}
+
+.h\:page {
+	color: var(--color-page);
+	font-family: var(--font-family-page);
+	font-size: var(--font-size-page);
+	font-weight: var(--font-weight-page);
+	line-height: var(--line-height-page);
+	letter-spacing: var(--letter-spacing-page);
+	max-inline-size: var(--measure-page);
+}
+
+.h\:section {
+	color: var(--color-section);
+	font-family: var(--font-family-section);
+	font-size: var(--font-size-section);
+	font-weight: var(--font-weight-section);
+	line-height: var(--line-height-section);
+	letter-spacing: var(--letter-spacing-section);
+	max-inline-size: var(--measure-section);
+}
+
+.h\:subsection {
+	color: var(--color-subsection);
+	font-family: var(--font-family-subsection);
+	font-size: var(--font-size-subsection);
+	font-weight: var(--font-weight-subsection);
+	line-height: var(--line-height-subsection);
+	letter-spacing: var(--letter-spacing-subsection);
+	max-inline-size: var(--measure-subsection);
+}
+
+.h\:title {
+	color: var(--color-title);
+	font-family: var(--font-family-title);
+	font-size: var(--font-size-title);
+	font-weight: var(--font-weight-title);
+	line-height: var(--line-height-title);
+	letter-spacing: var(--letter-spacing-title);
+	max-inline-size: var(--measure-title);
+}
+
+.overline {
+	text-transform: uppercase;
+	color: var(--color-overline);
+	font-family: var(--font-family-overline);
+	font-size: var(--font-size-overline);
+	font-weight: var(--font-weight-overline);
+	line-height: var(--line-height-overline);
+	letter-spacing: var(--letter-spacing-overline);
+	max-inline-size: var(--measure-overline);
+}
+
+.caption {
+	font-style: italic;
+	color: var(--color-caption);
+	font-family: var(--font-family-caption);
+	font-size: var(--font-size-caption);
+	font-weight: var(--font-weight-caption);
+	line-height: var(--line-height-caption);
+	letter-spacing: var(--letter-spacing-caption);
+	max-inline-size: var(--measure-caption);
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	color: var(--color-label);
+	font-family: var(--font-family-label);
+	font-size: var(--font-size-label);
+	font-weight: var(--font-weight-label);
+	line-height: var(--line-height-label);
+	letter-spacing: var(--letter-spacing-label);
+	max-inline-size: var(--measure-label);
+}
+
+p {
+	color: var(--color-body);
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body);
+	font-weight: var(--font-weight-body);
+	line-height: var(--line-height-body);
+	letter-spacing: var(--letter-spacing-body);
+	max-inline-size: var(--measure-body);
+}

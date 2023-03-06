@@ -1,6 +1,0 @@
-label {
-    font-family: var(--font-body);
-    font-weight: var(--weight-bold);
-    display: flex;
-    flex-direction: column;
-}

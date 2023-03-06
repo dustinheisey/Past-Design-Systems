@@ -2,20 +2,27 @@
     "name": "design-system",
     "version": "1.0.0",
     "description": "",
-    "scripts": {
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dustinheisey/html-design-system.git"
     },
     "author": "Dustin Heisey",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dustinheisey/html-design-system/issues"
+    },
+    "homepage": "https://github.com/dustinheisey/html-design-system#readme",
     "devDependencies": {
-        "@storybook/addon-essentials": "^6.5.9",
-        "@storybook/addon-links": "^6.5.9",
-        "@storybook/addon-postcss": "^2.0.0",
-        "@storybook/builder-vite": "^0.1.36",
-        "@storybook/html": "^6.5.9",
-        "postcss": "^8.4.14",
-        "postcss-import": "^14.1.0",
-        "postcss-preset-env": "^7.7.1",
-        "storybook-design-token": "^2.4.0"
+        "autoprefixer": "^10.4.13",
+        "gulp": "^4.0.2",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sourcemaps": "^3.0.0",
+        "postcss": "^8.4.21",
+        "postcss-import": "^15.1.0",
+        "postcss-inline-media": "^1.4.0",
+        "postcss-nested": "^6.0.1",
+        "postcss-preset-env": "^8.0.1"
     }
 }

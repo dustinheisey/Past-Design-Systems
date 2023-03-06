@@ -1,8 +1,0 @@
-.cluster {
-    display: flex;
-    flex-wrap: wrap;
-    padding: var(--inset, 0);
-    gap: var(--gap, var(--space-m));
-    justify-content: var(--justify, flex-start);
-    align-items: var(--align, center);
-}

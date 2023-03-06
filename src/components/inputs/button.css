@@ -1,0 +1,212 @@
+.button,
+button {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: var(--space-xs) var(--space-s);
+    color: var(--color-bg-primary);
+    font-weight: var(--weight-semibold);
+    font-size: var(--font-size-m);
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: var(--color-brand-ui);
+    border: 1px solid var(--color-brand-ui);
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover,
+.button:hover {
+    text-decoration: none;
+    background-color: var(--color-brand-text);
+    border-color: var(--color-brand-text);
+    box-shadow: var(--shadow-l);
+}
+
+.bg\:dark button,
+.bg\:dark .button {
+    color: var(--color-brand-text);
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.bg\:primary button,
+.bg\:primary .button {
+    color: #fff;
+    background-color: var(--color-brand-text);
+    border-color: var(--color-brand-text);
+}
+
+.bg\:dark button:hover,
+.bg\:dark .button:hover {
+    color: #fff;
+    background-color: var(--color-brand-text);
+    border-color: var(--color-brand-text);
+    box-shadow: var(--shadow-l);
+}
+
+.bg\:primary button:hover,
+.bg\:primary .button:hover {
+    color: #fff;
+    background-color: var(--color-brand-text);
+    border-color: var(--color-brand-text);
+    box-shadow: var(--shadow-l);
+}
+
+button.size\:s,
+.button.size\:s {
+    font-size: var(--font-size-sm);
+    padding-block-start: var(--space-xxs);
+    padding-block-end: var(--space-xxs);
+    padding-inline-start: var(--space-sm);
+    padding-inline-end: var(--space-sm);
+}
+
+button.size\:l,
+.button.size\:s {
+    font-size: var(--font-size-lg);
+    padding-block-start: var(--space-md);
+    padding-block-end: var(--space-md);
+    padding-inline-start: var(--space-lg);
+    padding-inline-end: var(--space-lg);
+}
+
+button.radius\:pill,
+.button.radius\:pill {
+    border-radius: var(--radius-pill);
+}
+
+button.radius\:circle,
+.button.radius\:circle {
+    padding: var(--space-xs);
+    border-radius: var(--radius-circle);
+    aspect-ratio: 1;
+}
+
+button.radius\:circle img,
+.button.radius\:circle img {
+    inline-size: 1.25rem;
+    block-size: auto;
+    margin: 0;
+}
+
+button.outline,
+.button.outline {
+    color: var(--color-darkest);
+    background-color: transparent;
+    border-color: var(--color-dark);
+}
+
+button.outline:hover,
+.button.outline:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+button.outline.bg\:dark,
+.button.outline.bg\:dark {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+button.outline.bg\:dark:hover,
+.button.outline.bg\:dark:hover {
+    color: var(--color-darkest);
+    background-color: #fff;
+    box-shadow: var(--shadow-lg);
+}
+
+button.text,
+.button.text {
+    color: var(--color-dark);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button.text:hover,
+.button.text:hover {
+    color: var(--color-darkest);
+    background-color: var(--color-lighter);
+}
+
+button.text.bg\:dark,
+.button.text.bg\:dark {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button.text.bg\:dark:hover,
+.button.text.bg\:dark:hover {
+    color: #fff;
+    background-color: var(--color-darker);
+}
+
+  /* button: {
+    primary: {
+      backgroundColor: 'primary',
+      borderColor: 'primary',
+      color: 'white',
+      '&:hover': {
+        backgroundColor: 'primaryDark',
+        boxShadow: 'xs'
+      }
+    },
+    primaryInverse: {
+      backgroundColor: 'lightest',
+      borderColor: 'lightest',
+      color: 'primary',
+      '&:hover': {
+        color: 'primaryDark',
+        boxShadow: 'xs'
+      }
+    },
+    outline: {
+      backgroundColor: 'transparent',
+      borderColor: 'dark',
+      color: 'darkest',
+      '&:hover': {
+        boxShadow: 'xs'
+      }
+    },
+    outlineInverse: {
+      backgroundColor: 'transparent',
+      borderColor: 'lightest',
+      color: 'lightest',
+      '&:hover': {
+        boxShadow: 'xs'
+      }
+    },
+    text: {
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      color: 'primary',
+      '&:hover': {
+        color: 'primaryDark'
+      }
+    },
+    textInverse: {
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      color: 'lightest',
+      '&:hover': {
+        color: 'primary'
+      }
+    },
+    danger: {
+      backgroundColor: 'danger',
+      borderColor: 'danger',
+      color: 'white',
+      '&:hover': {
+        backgroundColor: 'dangerDark',
+        boxShadow: 'xs'
+      }
+    },
+    icon: {
+      borderColor: 'transparent',
+      '&:hover': {
+        boxShadow: 'xs'
+      }
+    }
+  }, */

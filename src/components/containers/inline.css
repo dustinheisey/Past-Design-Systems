@@ -1,0 +1,8 @@
+.inline {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--inset, 0);
+    gap: var(--gap, var(--space-m));
+    justify-content: flex-start;
+    align-items: center;
+}

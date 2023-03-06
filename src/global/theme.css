@@ -1,0 +1,91 @@
+/* ? Typography */
+:root {
+	--color-text: var(--color-fg-primary);
+	--color-heading: var(--color-text);
+	--color-body: var(--color-text);
+
+	--color-site: var(--color-heading);
+	--color-page: var(--color-heading);
+	--color-section: var(--color-heading);
+	--color-subsection: var(--color-heading);
+	--color-overline: var(--color-heading);
+	--color-title: var(--color-heading);
+	--color-label: var(--color-body);
+	--color-caption: var(--color-body);
+
+	--font-family-heading: monospace;
+	--font-family-body: sans-serif;
+
+	--font-family-site: var(--font-family-heading);
+	--font-family-page: var(--font-family-heading);
+	--font-family-section: var(--font-family-heading);
+	--font-family-subsection: var(--font-family-heading);
+	--font-family-overline: var(--font-family-heading);
+	--font-family-title: var(--font-family-heading);
+	--font-family-label: var(--font-family-body);
+	--font-family-caption: var(--font-family-body);
+
+	--font-size-heading: var(--font-size-xl);
+	--font-size-body: var(--font-size-s);
+
+	--font-size-site: var(--font-size-4xl);
+	--font-size-page: var(--font-size-3xl);
+	--font-size-section: var(--font-size-2xl);
+	--font-size-subsection: var(--font-size-xl);
+	--font-size-overline: var(--font-size-xs);
+	--font-size-title: var(--font-size-m);
+	--font-size-label: var(--font-size-m);
+	--font-size-caption: var(--font-size-2xs);
+
+	--font-weight-heading: var(--font-weight-light);
+	--font-weight-body: var(--font-weight-normal);
+
+	--font-weight-site: var(--font-weight-heading);
+	--font-weight-page: var(--font-weight-heading);
+	--font-weight-section: var(--font-weight-heading);
+	--font-weight-subsection: var(--font-weight-heading);
+	--font-weight-overline: var(--font-weight-heading);
+	--font-weight-title: var(--font-weight-heading);
+	--font-weight-label: var(--font-weight-bold);
+	--font-weight-caption: var(--font-weight-body);
+
+	--line-height-heading: 1.2;
+	--line-height-body: 1.5;
+
+	--line-height-site: var(--line-height-heading);
+	--line-height-page: var(--line-height-heading);
+	--line-height-section: var(--line-height-heading);
+	--line-height-subsection: var(--line-height-heading);
+	--line-height-overline: var(--line-height-heading);
+	--line-height-title: var(--line-height-heading);
+	--line-height-label: var(--line-height-body);
+	--line-height-caption: var(--line-height-body);
+
+	--letter-spacing-heading: 0em;
+	--letter-spacing-body: 0.2em;
+
+	--letter-spacing-site: var(--letter-spacing-heading);
+	--letter-spacing-page: var(--letter-spacing-heading);
+	--letter-spacing-section: var(--letter-spacing-heading);
+	--letter-spacing-subsection: var(--letter-spacing-heading);
+	--letter-spacing-overline: 0.5em;
+	--letter-spacing-title: var(--letter-spacing-heading);
+	--letter-spacing-label: var(--letter-spacing-body);
+	--letter-spacing-caption: var(--letter-spacing-body);
+
+	--measure-heading: 25ch;
+	--measure-body: 70ch;
+
+	--measure-site: var(--measure-heading);
+	--measure-page: var(--measure-heading);
+	--measure-section: var(--measure-heading);
+	--measure-subsection: var(--measure-heading);
+	--measure-overline: var(--measure-heading);
+	--measure-title: var(--measure-heading);
+	--measure-label: var(--measure-body);
+	--measure-caption: var(--measure-body);
+}
+
+/* ? Color */
+
+/* ? Space */

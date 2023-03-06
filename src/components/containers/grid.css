@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    gap: var(--gap, var(--space-m));
+    padding: var(--inset, 0);
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+
+.grid > * {
+    align-items: stretch;
+}

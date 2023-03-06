@@ -1,9 +1,0 @@
-.overline {
-    color: var(--color-var(--color-primary));
-    text-transform: uppercase;
-    font-family: var(--font-body);
-    font-weight: var(--weight-bold);
-    letter-spacing: 1.5;
-    font-size: var(--font-size-xs);
-    margin-bottom: var(--space-xs);
-}
