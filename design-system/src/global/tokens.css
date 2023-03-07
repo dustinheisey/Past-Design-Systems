@@ -53,21 +53,6 @@
 	--color-danger-200: #a12a2a;
 	--color-danger-100: #fcbdc2;
 
-	--shadow-btn: var(--shadow-xs);
-	--shadow-btn-hover: var(--shadow-s);
-	--shadow-btn-active: none;
-	--shadow-toast: var(--shadow-m);
-	--shadow-tooltip: var(--shadow-m);
-	--shadow-dropdown: var(--shadow-m);
-	--shadow-drawer: var(--shadow-l);
-	--shadow-dialog: var(--shadow-l);
-
-	--btn-radius: var(--radius-m);
-	--card-radius: var(--radius-l);
-
-	--transition: var(--transition-m);
-
-	/* ? Alpha */
 	--alpha: 1;
 
 	--font-weight-light: 300;
@@ -85,7 +70,6 @@
 	--font-size-3xl: clamp(30px, 3.75rem, 120px); /* 60px */
 	--font-size-4xl: clamp(48px, 6rem, 192px); /* 96px */
 
-	/* ? Space */
 	--space-3xs: 4px;
 	--space-2xs: 8px;
 	--space-xs: 12px;
@@ -97,21 +81,18 @@
 	--space-3xl: 96px;
 	--space-4xl: 128px;
 
-	/* ? Z Index */
 	--z-drawer: 100;
 	--z-dialog: 200;
 	--z-popover: 300;
 	--z-toast: 400;
 	--z-tooltip: 500;
 
-	/* ? Transititon */
 	--transition-xl: 1000ms;
 	--transition-l: 500ms;
 	--transition-m: 250ms;
 	--transition-s: 150ms;
 	--transition-xs: 50ms;
 
-	/* ? Shadow */
 	--shadow-inset: inset 0 2px 2px hsla(0, 0%, 0%, 0.1);
 	--shadow-xs: 0 1px 3px hsla(0, 0%, 0%, 0.2);
 	--shadow-s: 0 4px 6px hsla(0, 0%, 0%, 0.2);
@@ -119,14 +100,12 @@
 	--shadow-l: 0 10px 24px hsla(0, 0%, 0%, 0.2);
 	--shadow-xl: 0 15px 35px hsla(0, 0%, 0%, 0.2);
 
-	/* ? Radius */
 	--radius-s: 3px;
 	--radius-m: 5px;
 	--radius-l: 12px;
 	--radius-pill: 9999px;
 	--radius-circle: 50%;
 
-	/* ? Outline */
 	--color-outline: var(--color-brand-ui);
 	--offset-outline: 2px;
 	--outline: var(--offset-outline) solid var(--color-outline);

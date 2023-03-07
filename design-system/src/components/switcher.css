@@ -1,8 +1,8 @@
 .switcher {
     display: flex;
     flex-wrap: wrap;
-    padding: var(--inset, 0);
-    gap: var(--gap, var(--space-m));
+    padding: var(--inset, var(--switcher-inset));
+    gap: var(--gap, var(--switcher-gap));
 }
 
 .switcher > * {

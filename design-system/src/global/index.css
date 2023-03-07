@@ -1,0 +1,71 @@
+@import "../components/center.css";
+@import "../components/cover.css";
+/* @import '../components/details.css'; */
+/* @import '../components/dialog.css'; */
+/* @import '../components/drawer.css'; */
+/* @import '../components/dropwdown.css'; */
+@import "../components/frame.css";
+@import "../components/grid.css";
+@import "../components/inline.css";
+@import "../components/masonry.css";
+/* @import '../components/popover.css'; */
+@import "../components/reel.css";
+@import "../components/sidebar.css";
+/* @import '../components/skeleton.css'; */
+@import "../components/stack.css";
+@import "../components/switcher.css";
+/* @import '../components/tabs.css'; */
+
+/* @import '../components/alert.css'; */
+/* @import '../components/toast.css'; */
+/* @import '../components/tooltip.css'; */
+
+/* @import '../components/button-group.css'; */
+@import "../components/btn.css";
+/* @import '../components/checkbox.css'; */
+/* @import '../components/color-picker.css'; */
+/* @import '../components/datalist.css'; */
+/* @import '../components/date-picker.css'; */
+/* @import '../components/fieldset.css'; */
+/* @import '../components/file-uploader.css'; */
+@import "../components/input.css";
+@import "../components/link.css";
+/* @import '../components/radio-button.css'; */
+/* @import '../components/radio.css'; */
+/* @import '../components/range.css'; */
+/* @import '../components/rating.css'; */
+/* @import '../components/select.css'; */
+@import "../components/textarea.css";
+
+@import "../components/avatar.css";
+@import "../components/icon.css";
+@import "../components/img.css";
+@import "../components/video.css";
+@import "../components/svg.css";
+
+/* @import '../components/badge.css'; */
+/* @import '../components/indicator.css'; */
+/* @import '../components/progress.css'; */
+/* @import '../components/spinner.css'; */
+@import "../components/tag.css";
+@import "../components/text.css";
+
+@import "./helpers.css";
+@import "./reset.css";
+@import "./tokens.css";
+@import "./theme.css";
+
+:root {
+	font-family: var(--font-body);
+	color: var(--color-fg-primary);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+	max-inline-size: none;
+}

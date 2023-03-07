@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    padding: var(--inset, 0);
-    gap: var(--gap, var(--space-m));
+    padding: var(--inset, var(--sidebar-inset));
+    gap: var(--gap, var(--sidebar-gap));
 }
 
 .sidebar > .fixed {

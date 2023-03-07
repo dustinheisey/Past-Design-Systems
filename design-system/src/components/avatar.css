@@ -1,0 +1,13 @@
+.avatar {
+	border-radius: var(--radius-circle);
+	inline-size: var(--space-xl);
+	aspect-ratio: 1;
+}
+
+.avatar.size\:s {
+	inline-size: var(--space-l);
+}
+
+.avatar.size\:l {
+	inline-size: var(--space-2xl);
+}

@@ -1,0 +1,10 @@
+.masonry {
+    gap: var(--gap, var(--masonry-gap));
+    padding: var(--inset, var(--masonry-inset));
+    columns: var(--columns, var(--masonry-columns));
+}
+
+.masonry > * {
+    margin-block-end: var(--gap, var(--masonry-gap));
+    break-inside: avoid;
+}

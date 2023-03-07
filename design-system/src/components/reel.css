@@ -4,8 +4,8 @@
     overflow-x: auto;
     overflow-y: hidden;
 
-    gap: var(--gap, var(--space-m));
-    padding: var(--inset, 0);
+    gap: var(--gap, var(--reel-gap));
+    padding: var(--inset, var(--reel-inset));
 }
 
 .reel::-webkit-scrollbar {
