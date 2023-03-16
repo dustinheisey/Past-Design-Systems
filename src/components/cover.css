@@ -1,17 +1,12 @@
 .cover {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
 	min-block-size: var(--min-block-size, 100vh);
 	padding: var(--inset, 0);
 }
 
 .cover > * {
-	margin-block: var(--gap, var(--cover-gap));
-}
-
-.cover > .main {
-	margin: auto;
+	margin-block: var(--gap, var(--space-m));
 }
 
 .cover > :first-child:not(.main) {
@@ -20,4 +15,62 @@
 
 .cover > :last-child:not(.main) {
 	margin-block-end: 0;
+}
+
+/* ? Alignment */
+.cover > .main {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.cover.start > .main {
+	margin-inline-start: 0;
+	text-align: start;
+	align-items: flex-start;
+}
+
+.cover.end > .main {
+	margin-inline-end: 0;
+	text-align: end;
+	align-items: flex-end;
+}
+
+/* ? Visual Hierarchy */
+.cover > .main > [class*="h:"] + p {
+	margin-block-start: var(--space-m);
+}
+
+.main > p + .btn {
+	margin-block-start: var(--space-s);
+}
+
+/* ? Background Image */
+header.bg {
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header.bg::before {
+	background-image: url("../../website/media/cafe.jpeg");
+	z-index: -100;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: linear-gradient(
+		to right bottom,
+		rgba(50, 50, 50, 0.35),
+		rgba(100, 100, 100, 0.35)
+	);
+	transition: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
