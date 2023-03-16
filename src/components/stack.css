@@ -1,0 +1,22 @@
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: var(--inset, 0);
+}
+
+.stack > * {
+	margin-block: 0;
+}
+
+.stack > * + * {
+	margin-block-start: var(--space, var(--gap, var(--stack-gap)));
+}
+
+.stack > .split {
+	margin-block-start: auto;
+}
+
+.stack:only-child {
+	block-size: 100%;
+}

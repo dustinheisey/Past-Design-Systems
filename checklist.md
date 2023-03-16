@@ -1,0 +1,6 @@
+- inset
+- gap
+- width
+- layout shifting
+- typography
+- alignment

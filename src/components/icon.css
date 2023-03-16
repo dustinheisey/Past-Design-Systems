@@ -1,0 +1,32 @@
+.icon {
+	width: 0.75em;
+	width: 1cap;
+	height: 0.75em;
+	height: 1cap;
+}
+
+.icon.size\:s {
+	font-size: var(--font-size-s);
+}
+
+.icon.size\:l {
+	font-size: var(--font-size-l);
+}
+
+.icon.size\:xl {
+	font-size: var(--font-size-xl);
+}
+
+.icon.size\:2xl {
+	font-size: var(--font-size-2xl);
+}
+
+.icon.size\:3xl {
+	font-size: var(--font-size-3xl);
+}
+
+/* 
+  <svg class="icon">
+    <use href="./icons.svg#my-icon"></use>
+  </svg>
+*/

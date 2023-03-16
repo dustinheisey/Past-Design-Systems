@@ -1,0 +1,31 @@
+.columns {
+	display: grid;
+	inline-size: 100%;
+	box-sizing: border-box;
+	padding: var(--inset, 0);
+	gap: var(--gap, var(--subsection-gap));
+	justify-items: center;
+}
+
+.columns.start {
+	grid-template-columns: 0.6fr 0.4fr;
+}
+
+.columns.end {
+	grid-template-columns: 0.4fr 0.6fr;
+}
+
+.columns.align\:s {
+	align-items: start;
+	align-content: start;
+}
+
+.columns.align\:c {
+	align-items: center;
+	align-content: center;
+}
+
+.columns.align\:e {
+	align-items: end;
+	align-content: end;
+}

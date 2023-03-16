@@ -1,0 +1,13 @@
+svg {
+	inline-size: 100%;
+	block-size: auto;
+}
+
+svg * {
+	fill: var(--color-brand-text);
+}
+@media (prefers-color-scheme: dark) {
+	svg * {
+		fill: white;
+	}
+}

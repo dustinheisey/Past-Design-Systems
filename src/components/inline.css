@@ -1,0 +1,12 @@
+.inline {
+	display: flex;
+	flex-wrap: wrap;
+	padding: var(--inset, 0);
+	gap: var(--gap, var(--inline-gap));
+	justify-content: flex-start;
+	align-items: center;
+}
+
+ul {
+	list-style-type: none;
+}

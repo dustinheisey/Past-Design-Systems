@@ -1,0 +1,66 @@
+:is(button, .btn) {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	padding: var(--space-2xs) var(--space-s);
+	box-shadow: var(--shadow-btn);
+	font-weight: var(--font-weight-semibold);
+	font-size: var(--font-size-m);
+	white-space: nowrap;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: var(--color-brand-200);
+	border-radius: var(--radius-btn);
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+	border: none;
+	outline: none;
+}
+
+:is(button, .btn):is(:hover, :active) {
+	text-decoration: none;
+	background-color: var(--color-brand-300);
+	border-color: var(--color-brand-text);
+}
+
+:is(button, .btn):hover {
+	box-shadow: var(--shadow-btn-hover);
+}
+
+:is(button, .btn):active {
+	box-shadow: var(--shadow-btn-active);
+}
+
+:is(button, .btn).secondary,
+:is(button, .btn).secondary:is(:hover, :active) {
+	background-color: var(--color-bg);
+	border-color: var(--color-border);
+	color: var(--color-text);
+	box-shadow: var(--shadow-btn);
+}
+
+:is(button, .btn).outline {
+	color: var(--color-fg-primary);
+	background-color: transparent;
+	border-color: var(--color-fg-tertiary);
+}
+
+:is(button, .btn).radius-pill {
+	border-radius: var(--radius-pill);
+}
+
+:is(button, .btn).radius-circle {
+	padding: var(--space-xs);
+	border-radius: var(--radius-circle);
+	aspect-ratio: 1;
+}
+
+:is(button, .btn).size-s {
+	font-size: var(--font-size-s);
+	padding: var(--space-2xs) var(--space-s);
+}
+
+:is(button, .btn).size-l {
+	font-size: var(--font-size-l);
+	padding: var(--space-m) var(--space-l);
+}

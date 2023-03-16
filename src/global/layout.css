@@ -1,0 +1,59 @@
+body {
+	padding: var(--body-inset);
+}
+
+header {
+	padding: var(--header-inset);
+}
+
+main {
+	padding: var(--main-inset);
+}
+
+footer {
+	padding: var(--footer-inset);
+}
+
+main > section + section {
+	margin-block-start: var(--section-gap);
+}
+
+section > section {
+	margin-block-start: var(--subsection-gap);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+label {
+	margin: 0;
+}
+
+[class*="h:"] + p {
+	margin-block-start: var(--heading-gap);
+}
+
+.title + p {
+	margin-block-start: var(--title-gap);
+}
+
+label + input,
+label + textarea {
+	margin-block-start: var(--label-gap);
+}
+
+[class*="h:"] + .overline {
+	margin-block-start: var(--overline-gap);
+}
+
+p + p {
+	margin-block-start: var(--copy-gap);
+}
+
+p + .btn,
+p + button {
+	margin-block-start: var(--btn-gap);
+}

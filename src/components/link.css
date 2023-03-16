@@ -1,0 +1,70 @@
+a:not(.btn),
+.link {
+	position: relative;
+	color: var(--color, var(--color-brand-text));
+	text-decoration: none;
+	transition: color 0.4s ease-out;
+	max-inline-size: max-content;
+}
+
+.bg\:dark a:not(.btn),
+.bg\:dark .link {
+	--color: #fff;
+}
+
+a:not(.btn).default,
+.link.default {
+	--color: var(--color-fg-primary);
+}
+
+a:not(.btn).inverse,
+.link.inverse {
+	--color: var(--color-bg-tertiary);
+}
+
+a:not(.btn).success,
+.link.success {
+	--color: var(--color-success-text);
+}
+
+a:not(.btn).info,
+.link.info {
+	--color: var(--color-info-text);
+}
+
+a:not(.btn).warning,
+.link.warning {
+	--color: var(--color-warning-text);
+}
+
+a:not(.btn).danger,
+.link.danger {
+	--color: var(--color-danger-text);
+}
+a:not(.btn):hover,
+.link:hover {
+	text-decoration: none;
+}
+
+a:not(.btn)::after,
+.link::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	right: 0px;
+	width: 0%;
+	height: 100%;
+	border-bottom: 2px solid var(--color, var(--color-brand-text));
+	transition: width 0.3s ease 0s;
+}
+
+a:not(.btn):hover::after,
+.link:hover::after {
+	left: 0px;
+	width: 100%;
+	transition: width 0.3s ease 0s;
+}
+
+a.media::after {
+	all: initial;
+}
