@@ -1,14 +1,32 @@
 .grid {
 	display: grid;
 	padding: var(--inset, 0);
+	gap: var(--gap, var(--space-m));
 	grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-}
-
-section > .grid {
-	gap: var(--gap, var(--subsection-gap)) !important;
 }
 
 .grid > * {
 	align-items: stretch;
 	margin: 0;
 }
+
+.columns\:2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.columns\:3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.columns\:4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.columns\:5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.columns\:6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+

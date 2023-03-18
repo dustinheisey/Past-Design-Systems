@@ -5,6 +5,10 @@
 	padding: var(--inset, 0);
 }
 
+.cover.size\:s {
+	min-block-size: var(--min-block-size, 75vh);
+}
+
 .cover > * {
 	margin-block: var(--gap, var(--space-m));
 }
@@ -36,25 +40,15 @@
 	align-items: flex-end;
 }
 
-/* ? Visual Hierarchy */
-.cover > .main > [class*="h:"] + p {
-	margin-block-start: var(--space-m);
-}
-
-.main > p + .btn {
-	margin-block-start: var(--space-s);
-}
-
 /* ? Background Image */
-header.bg {
+.bg {
 	position: relative;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-header.bg::before {
-	background-image: url("../../website/media/cafe.jpeg");
+.bg::before {
 	z-index: -100;
 	content: "";
 	display: block;
@@ -73,4 +67,12 @@ header.bg::before {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+.bg#header::before {
+	background-image: url("../../website/media/cafe.jpeg");
+}
+
+.bg#c2contact::before {
+	background-image: url("../../website/media/coffee.jpg");
 }

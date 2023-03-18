@@ -1,0 +1,39 @@
+img {
+	border-radius: var(--radius-image);
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+img.size\:s,
+svg.size\:s {
+	block-size: 3rem;
+	inline-size: auto;
+}
+
+img.full {
+	inline-size: 100%;
+}
+
+svg {
+	inline-size: 100%;
+	block-size: auto;
+}
+
+video {
+	inline-size: 100%;
+	block-size: auto;
+}
+
+.avatar {
+	border-radius: var(--radius-circle);
+	inline-size: var(--space-xl);
+	aspect-ratio: 1;
+}
+
+.avatar.size\:s {
+	inline-size: var(--space-l);
+}
+
+.avatar.size\:l {
+	inline-size: var(--space-2xl);
+}

@@ -5,6 +5,12 @@
 	height: 1cap;
 }
 
+.icon.duo-tone {
+	padding: var(--space-2xs);
+	background: var(--color-bg-secondary);
+	border-radius: var(--radius-circle);
+}
+
 .icon.size\:s {
 	font-size: var(--font-size-s);
 }
@@ -24,9 +30,3 @@
 .icon.size\:3xl {
 	font-size: var(--font-size-3xl);
 }
-
-/* 
-  <svg class="icon">
-    <use href="./icons.svg#my-icon"></use>
-  </svg>
-*/

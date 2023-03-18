@@ -1,0 +1,10 @@
+.box {
+	padding: var(--inset, var(--space-xl));
+	background: #fff;
+	border-radius: var(--radius-l);
+	border: 1px solid var(--color-bg-secondary);
+}
+
+.elevation\:card {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

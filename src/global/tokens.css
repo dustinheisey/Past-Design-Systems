@@ -68,7 +68,7 @@
 	--font-size-xl: clamp(20px, 2.5rem, 80px); /* 40px */
 	--font-size-2xl: clamp(24px, 3rem, 96px); /* 48px */
 	--font-size-3xl: clamp(30px, 3.75rem, 120px); /* 60px */
-	--font-size-4xl: clamp(48px, 6rem, 192px); /* 96px */
+	--font-size-4xl: clamp(48px, 5.5rem, 192px); /* 96px */
 
 	--space-3xs: 4px;
 	--space-2xs: 8px;

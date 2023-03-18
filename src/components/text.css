@@ -1,5 +1,5 @@
-.h\:site {
-	color: var(--color-site);
+.site {
+	color: var(--color, var(--color-page));
 	font-family: var(--font-family-site);
 	font-size: var(--font-size-site);
 	font-weight: var(--font-weight-site);
@@ -8,8 +8,8 @@
 	max-inline-size: var(--measure-site);
 }
 
-.h\:page {
-	color: var(--color-page);
+.page {
+	color: var(--color, var(--color-page));
 	font-family: var(--font-family-page);
 	font-size: var(--font-size-page);
 	font-weight: var(--font-weight-page);
@@ -18,8 +18,8 @@
 	max-inline-size: var(--measure-page);
 }
 
-.h\:section {
-	color: var(--color-section);
+.section {
+	color: var(--color, var(--color-section));
 	font-family: var(--font-family-section);
 	font-size: var(--font-size-section);
 	font-weight: var(--font-weight-section);
@@ -28,8 +28,8 @@
 	max-inline-size: var(--measure-section);
 }
 
-.h\:subsection {
-	color: var(--color-subsection);
+.subsection {
+	color: var(--color, var(--color-subsection));
 	font-family: var(--font-family-subsection);
 	font-size: var(--font-size-subsection);
 	font-weight: var(--font-weight-subsection);
@@ -39,7 +39,7 @@
 }
 
 .title {
-	color: var(--color-title);
+	color: var(--color, var(--color-title));
 	font-family: var(--font-family-title);
 	font-size: var(--font-size-title);
 	font-weight: var(--font-weight-title);
@@ -50,18 +50,17 @@
 
 .overline {
 	text-transform: uppercase;
-	color: var(--color-overline);
+	color: var(--color, var(--color-overline));
 	font-family: var(--font-family-overline);
 	font-size: var(--font-size-overline);
 	font-weight: var(--font-weight-overline);
 	line-height: var(--line-height-overline);
 	letter-spacing: var(--letter-spacing-overline);
-	max-inline-size: var(--measure-overline);
 }
 
 .caption {
 	font-style: italic;
-	color: var(--color-caption);
+	color: var(--color, var(--color-caption));
 	font-family: var(--font-family-caption);
 	font-size: var(--font-size-caption);
 	font-weight: var(--font-weight-caption);
@@ -70,10 +69,10 @@
 	max-inline-size: var(--measure-caption);
 }
 
-label {
-	display: flex;
-	flex-direction: column;
-	color: var(--color-label);
+label,
+.label {
+	display: inline;
+	color: var(--color, var(--color-label));
 	font-family: var(--font-family-label);
 	font-size: var(--font-size-label);
 	font-weight: var(--font-weight-label);
@@ -82,12 +81,58 @@ label {
 	max-inline-size: var(--measure-label);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+label {
+	margin: 0;
+}
+
 p {
-	color: var(--color-body);
+	color: var(--color, var(--color-body));
 	font-family: var(--font-family-body);
 	font-size: var(--font-size-body);
 	font-weight: var(--font-weight-body);
 	line-height: var(--line-height-body);
 	letter-spacing: var(--letter-spacing-body);
 	max-inline-size: var(--measure-body);
+}
+
+.site + *,
+.page + * {
+	margin-block-start: var(--space, var(--space-m));
+}
+
+.section + * {
+	margin-block-start: var(--space, var(--space-s));
+}
+
+.subsection + * {
+	margin-block-start: var(--space, var(--space-xs));
+}
+
+.title + *,
+label + *,
+.label + *,
+.overline + * {
+	margin-block-start: var(--space, var(--space-2xs));
+}
+
+* + label {
+	margin-block-start: var(--space, var(--space-l));
+}
+
+p + * {
+	margin-block-start: var(--space, var(--space-m));
+}
+
+p + .btn {
+	margin-block-start: var(--space, var(--space-xs));
+}
+
+.icon + * {
+	margin-block-start: var(--space, 0);
 }

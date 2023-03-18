@@ -65,6 +65,10 @@
 	--gap: var(--space-2xl) !important;
 }
 
+.gap\:3xl {
+	--gap: var(--space-3xl) !important;
+}
+
 :not(.stack)[class*="gap"] > * {
 	--gap: initial;
 }
@@ -74,6 +78,14 @@
 }
 
 /* ? space */
+.space\:n {
+	--space: 0 !important;
+}
+
+.space\:3xs {
+	--space: var(--space-3xs) !important;
+}
+
 .space\:2xs {
 	--space: var(--space-2xs) !important;
 }
@@ -113,22 +125,27 @@
 /* ? Measure */
 .measure\:2xs {
 	max-inline-size: 20ch;
+	--measure: 20ch;
 }
 
 .measure\:xs {
 	max-inline-size: 30ch;
+	--measure: 30ch;
 }
 
 .measure\:s {
 	max-inline-size: 45ch;
+	--measure: 45ch;
 }
 
 .measure\:m {
 	max-inline-size: 60ch;
+	--measure: 60ch;
 }
 
 .measure\:l {
-	max-inline-size: 75ch;
+	max-inline-size: 80ch;
+	--measure: 80ch;
 }
 
 /* ? Grow */
@@ -145,6 +162,10 @@
 }
 
 /* ? Inset */
+.inset\:n {
+	--inset: 0 !important;
+}
+
 .inset\:2xs {
 	--inset: var(--space-2xs) !important;
 }
@@ -216,6 +237,10 @@
 }
 
 /* ? Semantics */
+.light {
+	--color: var(--color-grey-100);
+}
+
 .muted {
 	--color-text: var(--color-fg-tertiary);
 }

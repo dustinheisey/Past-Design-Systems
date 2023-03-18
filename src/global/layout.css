@@ -1,3 +1,4 @@
+/* ? Inset */
 body {
 	padding: var(--body-inset);
 }
@@ -14,22 +15,26 @@ footer {
 	padding: var(--footer-inset);
 }
 
-main > section + section {
+
+/* ? Space */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: var(--section-gap);
+}
+
+/* section + * {
+	margin-block-start: var(--subsection-gap);
+} */
+
+/* main > section + section {
 	margin-block-start: var(--section-gap);
 }
 
 section > section {
 	margin-block-start: var(--subsection-gap);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-label {
-	margin: 0;
 }
 
 [class*="h:"] + p {
@@ -56,4 +61,4 @@ p + p {
 p + .btn,
 p + button {
 	margin-block-start: var(--btn-gap);
-}
+} */

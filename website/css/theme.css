@@ -7,10 +7,10 @@
 	--color-page: var(--color-heading);
 	--color-section: var(--color-heading);
 	--color-subsection: var(--color-heading);
-	--color-overline: var(--color-heading);
+	--color-overline: var(--color-brand-ui);
 	--color-title: var(--color-heading);
 	--color-label: var(--color-body);
-	--color-caption: var(--color-body);
+	--color-caption: var(--color-fg-tertiary);
 
 	--font-family-heading: monospace;
 	--font-family-body: sans-serif;
@@ -28,11 +28,11 @@
 	--font-size-heading: var(--font-size-xl);
 	--font-size-body: var(--font-size-s);
 
-	--font-size-site: var(--font-size-3xl);
+	--font-size-site: var(--font-size-4xl);
 	--font-size-page: var(--font-size-3xl);
 	--font-size-section: var(--font-size-2xl);
-	--font-size-subsection: var(--font-size-xl);
-	--font-size-overline: var(--font-size-xs);
+	--font-size-subsection: var(--font-size-l);
+	--font-size-overline: var(--font-size-s);
 	--font-size-title: var(--font-size-m);
 	--font-size-label: var(--font-size-m);
 	--font-size-caption: var(--font-size-2xs);
@@ -45,8 +45,8 @@
 	--font-weight-section: var(--font-weight-heading);
 	--font-weight-subsection: var(--font-weight-heading);
 	--font-weight-overline: var(--font-weight-heading);
-	--font-weight-title: var(--font-weight-heading);
-	--font-weight-label: var(--font-weight-bold);
+	--font-weight-title: var(--font-weight-bold);
+	--font-weight-label: var(--font-weight-bolder);
 	--font-weight-caption: var(--font-weight-body);
 
 	--line-height-heading: 1.2;
@@ -112,28 +112,19 @@
 	--color-danger-ui: var(--color-danger-200);
 	--color-danger-bg: var(--color-danger-100);
 
-	--cover-gap: var(--space-m);
-	--grid-gap: var(--space-m);
-	--inline-gap: var(--space-m);
-	--masonry-gap: var(--space-m);
-	--reel-gap: var(--space-m);
-	--sidebar-gap: var(--space-m);
-	--stack-gap: var(--space-xs);
-	--switcher-gap: var(--space-m);
+	--body-inset: 0;
+	--header-inset: var(--space-xl) var(--space-xl) 0 var(--space-xl);
+	--main-inset: var(--space-4xl) var(--space-xl);
+	--footer-inset: var(--space-xl);
 
-	--body-inset: var(--space-xl);
-	--header-inset: 0;
-	--main-inset: 0;
-	--footer-inset: 0;
-
-	--section-gap: var(--space-3xl);
-	--subsection-gap: var(--space-l);
-	--heading-gap: var(--space-s);
-	--title-gap: var(--space-xs);
-	--label-gap: var(--space-xs);
-	--overline-gap: var(--space-xs);
-	--copy-gap: var(--space-m);
-	--btn-gap: var(--space-s);
+	--section-gap: var(--space-4xl);
+	--subsection-gap: var(--space-2xl);
+	/* --heading-gap: var(--space-s); */
+	/* --title-gap: var(--space-xs); */
+	/* --label-gap: var(--space-xs); */
+	/* --overline-gap: var(--space-xs); */
+	/* --copy-gap: var(--space-m); */
+	/* --btn-gap: var(--space-s); */
 
 	--masonry-columns: 3;
 

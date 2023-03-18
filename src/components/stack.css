@@ -10,7 +10,7 @@
 }
 
 .stack > * + * {
-	margin-block-start: var(--space, var(--gap, var(--stack-gap)));
+	margin-block-start: var(--space, var(--gap, var(--space-m)));
 }
 
 .stack > .split {

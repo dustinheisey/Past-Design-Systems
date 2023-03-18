@@ -1,10 +1,10 @@
 .masonry {
-    gap: var(--gap, var(--masonry-gap));
+    gap: var(--gap, var(--space-xl));
     padding: var(--inset, 0);
-    columns: var(--columns, var(--masonry-columns));
+    columns: var(--columns, 2);
 }
 
-.masonry > * {
-    margin-block-end: var(--gap, var(--masonry-gap));
+.masonry > * + * {
+    margin-block-start: var(--gap, var(--space-xl));
     break-inside: avoid;
 }
