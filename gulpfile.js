@@ -6,7 +6,7 @@ const processCSS = () => {
 	return src("src/**/*.css")
 		.pipe(minifyCSS())
 		.pipe(concatCSS("style.css"))
-		.pipe(dest("website/css"));
+		.pipe(dest("website/styles"));
 };
 
 const watchCSS = () => {
