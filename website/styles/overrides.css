@@ -1,0 +1,15 @@
+/* Color */
+:root {
+	--color-brand-400: #053326;
+	--color-brand-300: #14664f;
+	--color-brand-200: #52cca9;
+	--color-brand-100: #80ffdb;
+
+	--color-neutral-700: #090d0c;
+	--color-neutral-600: #27302e;
+	--color-neutral-500: #3f4745;
+	--color-neutral-400: #78827f;
+	--color-neutral-300: #b3bdba;
+	--color-neutral-200: #dae3e0;
+	--color-neutral-100: #f2fcfa;
+}
