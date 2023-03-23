@@ -31,6 +31,7 @@ label {
 
 .page {
 	font-size: var(--font-size-page);
+	max-inline-size: var(--measure-hero);
 }
 
 p,
@@ -40,12 +41,13 @@ a {
 
 .overline {
 	font-size: var(--font-size-overline);
-	text-transform: uppercase;
+	text-transform: var(--text-transform-overline, uppercase);
 	letter-spacing: var(--letter-spacing-overline);
 	color: var(--color-brand-primary);
 	font-family: var(--font-family-overline, var(--font-family-body));
 	font-weight: var(--font-weight-overline, var(--font-weight-body));
 	line-height: var(--line-height-body);
+	
 }
 
 .caption,
@@ -79,6 +81,7 @@ small > a {
 label {
 	font-size: var(--font-size-label);
 	font-weight: var(--font-weight-heading);
+	text-transform: var(--text-transform-label, none);
 }
 
 

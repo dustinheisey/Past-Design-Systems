@@ -132,7 +132,9 @@
 	--letter-spacing-body: initial;
 	--letter-spacing-overline: 0.05em;
 
-	--text-transform-btn: capitalize;
+	--text-transform-btn: uppercase;
+	--text-transform-overline: uppercase;
+	--text-transform-label: uppercase;
 
 	--icon-size-1: var(--font-size-3);
 	--icon-size-2: var(--font-size-5);
