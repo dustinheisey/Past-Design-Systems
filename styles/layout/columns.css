@@ -1,6 +1,7 @@
 /* Sepperate children into 2 groups, 1 wider than the other */
 .columns {
 	display: grid;
+	align-items: center;
 	gap: var(--space-6);
 }
 

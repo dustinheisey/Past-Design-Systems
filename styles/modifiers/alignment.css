@@ -50,3 +50,7 @@
 .text-align\:e {
 	text-align: end !important;
 }
+
+.equal > * {
+	flex: 1;
+}

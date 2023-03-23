@@ -14,7 +14,7 @@
 	block-size: var(--icon-size-2);
 } 
 
-.icon.heading {
+.icon {
 	inline-size: var(--icon-size-3);
 	block-size: var(--icon-size-3);
 }

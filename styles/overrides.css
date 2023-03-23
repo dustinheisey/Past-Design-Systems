@@ -1,8 +1,8 @@
 :root {
-	--color-brand-100: #053326;
-	--color-brand-200: #14664f;
-	--color-brand-300: #52cca9;
-	--color-brand-400: #e5f4f0;
+	--color-brand-400: #053326;
+	--color-brand-300: #14664f;
+	--color-brand-200: #52cca9;
+	--color-brand-100: #80f9ff;
 
 	--color-neutral-700: #090d0c;
 	--color-neutral-600: #27302e;
@@ -32,10 +32,10 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-brand-primary: #14332a;
-		--color-brand: #336658;
-		--color-brand-border: #8fccba;
-		--color-brand-muted: #ccfff1;
+		--color-brand-muted: #14332a;
+		--color-brand-border: #336658;
+		--color-brand: #8fccba;
+		--color-brand-primary: #CFF4EA;
 	}
 }
 

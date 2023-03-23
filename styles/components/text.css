@@ -53,7 +53,7 @@ small {
 	font-size: var(--font-size-caption);
 }
 
-small > .link {
+small > a {
 	font-size: var(--font-size-caption);
 }
 

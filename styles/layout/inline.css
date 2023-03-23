@@ -1,5 +1,6 @@
 /* align children horizontally */
 .inline {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--space-4);

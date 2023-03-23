@@ -2,7 +2,7 @@
 .cover {
 	display: flex;
 	flex-direction: column;
-	min-block-size: 100vh;
+	min-block-size: 75vh;
 	max-inline-size: 100%;
 	gap: var(--space-4);
 }
@@ -14,6 +14,10 @@
 	align-items: flex-start;
 }
 
+.cover.large {
+	min-block-size: 100vh;
+}
+
 .cover.small {
-	min-block-size: 75vh;
+	min-block-size: 50vh;
 }
