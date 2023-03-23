@@ -4,7 +4,7 @@
 	flex-direction: column;
 	min-block-size: 75vh;
 	max-inline-size: 100%;
-	gap: var(--space-4);
+	gap: var(--space-8);
 }
 
 .cover > .main {

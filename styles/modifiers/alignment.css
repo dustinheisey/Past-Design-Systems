@@ -22,6 +22,10 @@
 	justify-content: space-evenly;
 }
 
+:not(.stack).stretch {
+	justify-content: stretch;
+}
+
 .cover.start {
 	align-items: start;
 }

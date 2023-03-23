@@ -6,7 +6,7 @@ h5,
 h6 {
 	font-family: var(--font-family-heading);
 	font-weight: var(--font-weight-heading);
-	max-inline-size: var(--measure-heading);
+	max-inline-size: var(--measure-heading) !important;
 	line-height: var(--line-height-heading);
 	letter-spacing: var(--letter-spacing-heading);
 	color: var(--color-fg-primary);
@@ -16,7 +16,7 @@ h6 {
 p,
 a,
 label {
-	max-inline-size: var(--measure-body);
+	max-inline-size: var(--measure-body) !important;
 	line-height: var(--line-height-body);
 	letter-spacing: var(--letters-spacing-body);
 	color: var(--color-fg);

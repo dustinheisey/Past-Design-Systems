@@ -9,8 +9,7 @@ label {
 	margin: 0;
 }
 
-.hero + *,
-.page + * {
+:is(.hero, .page) + * {
 	margin-block-start: var(--space-4);
 }
 
@@ -22,8 +21,7 @@ label {
 	margin-block-start: var(--space-2);
 }
 
-label + *,
-.overline + * {
+:is(label, .overline) + * {
 	margin-block-start: var(--space-1);
 }
 
@@ -32,6 +30,10 @@ label + *,
 }
 
 p + p {
+	margin-block-start: var(--space-4);
+}
+
+svg + * {
 	margin-block-start: var(--space-4);
 }
 
