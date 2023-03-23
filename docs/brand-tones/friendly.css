@@ -1,0 +1,35 @@
+/* Brand Tone
+	- Professional - competence, reliability, and expertise - clean, sharp lines, neutral colors, and minimalistic design
+	- Informative - clarity, authority, and precision - clean, simple typography, muted colors, and clear organization of information
+	- Luxurious - exclusivity, sophistication, and indulgence - rich, deep colors, ornate typography and imagery, and high-quality materials like leather or metal
+	- Inspirational - motivation, encouragement, and positivity - bright, uplifting colors, bold typography, and inspiring imagery like natural landscapes or people overcoming obstacles
+	- Irreverent - rebellion, humor, and irreverence towards authority - bold, provocative imagery and typography, bright and contrasting colors, and edgy design elements
+	- Playful - humor, creativity, and whimsy - bright colors, playful shapes and patterns, and cartoonish illustrations
+	- Friendly - approachability, warmth, and positivity - bright, cheerful colors, rounded shapes, and playful illustrations or icons
+	- Sincere - honesty, authenticity, and trustworthiness - soft, rounded shapes, warm and muted colors, and natural textures like wood or fabric
+	- Innovative - creativity, forward-thinking, and cutting-edge technology - bold, unconventional shapes and layouts, bright and futuristic colors, and dynamic animations or transitions
+*/
+
+:root {
+	--color-friendly-neutral-700: #090d0b;
+	--color-friendly-neutral-600: #27302c;
+	--color-friendly-neutral-500: #3f4743;
+	--color-friendly-neutral-400: #78827d;
+	--color-friendly-neutral-300: #b3bdb8;
+	--color-friendly-neutral-200: #dae3de;
+	--color-friendly-neutral-100: #f2fcf7;
+
+	--color-friendly-brand-400: #05331c;
+	--color-friendly-brand-300: #14663d;
+	--color-friendly-brand-200: #52cc8f;
+	--color-friendly-brand-100: #80ffbf;
+
+	--radius-friendly-s: 4px;
+	--radius-friendly-l: 6px;
+
+	--font-friendly-1: Helvetica;
+	--font-friendly-2: Arial;
+	--font-friendly-3: Verdana;
+	--font-friendly-4: Tahoma;
+	--font-friendly-5: "Open Sans";
+}

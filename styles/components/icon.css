@@ -1,0 +1,25 @@
+.icon {
+	display: inline-block;
+	inline-size: 1cap;
+	block-size: 1cap;
+}
+
+.icon.body-small {
+	inline-size: var(--icon-size-1);
+	block-size: var(--icon-size-1);
+}
+
+.icon.body {
+	inline-size: var(--icon-size-2);
+	block-size: var(--icon-size-2);
+} 
+
+.icon.heading {
+	inline-size: var(--icon-size-3);
+	block-size: var(--icon-size-3);
+}
+
+.icon.large {
+	inline-size: var(--icon-size-4);
+	block-size: var(--icon-size-4);
+}

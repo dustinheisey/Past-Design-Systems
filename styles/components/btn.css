@@ -1,0 +1,89 @@
+/* ? Outline */
+button.outline,
+.btn.outline {
+	color: var(--color-fg-primary);
+	background-color: transparent;
+	border-color: var(--color-fg-muted);
+}
+
+button.icon,
+.btn.icon {
+	padding: var(--space-1);
+	background: transparent;
+	box-shadow: none;
+	block-size: min-content;
+}
+
+button.icon:hover,
+.btn.icon:hover {
+	background: var(--color-bg);
+}
+
+:is(button, .btn) {
+	text-decoration: none;
+	vertical-align: baseline;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	max-inline-size: max-content;
+	border-radius: var(--radius-btn);
+	font-size: var(--font-size-btn);
+	font-weight: var(--font-weight-btn, var(--font-weight-body));
+	line-height: var(--line-height-body);
+	text-transform: var(--text-transform-btn, capitalize);
+	padding: var(--space-2) var(--space-5);
+	border: none;
+	background-color: var(--color-brand);
+	color: var(--color-neutral-100);
+	transition: all 0.5s ease 0s;
+}
+
+:is(button, .btn):not(.secondary):not(.tertiary) {
+	box-shadow: var(--elevation-btn);
+}
+
+:is(button, .btn).large {
+	font-size: var(--font-size-btn-l);
+	padding: var(--space-2) var(--space-7);
+}
+
+:is(button, .btn):is(:hover, :active):not(.secondary):not(.tertiary) {
+	background-color: var(--color-brand-primary);
+	border-color: var(--color-brand-primary);
+	color: var(--color-neutral-100);
+}
+
+:is(button, .btn):not(.tertiary):hover {
+	box-shadow: var(--elevation-btn-hover);
+}
+
+:is(button, .btn):not(.tertiary):active {
+	box-shadow: var(--elevation-btn-active);
+}
+
+:is(button, .btn).secondary {
+	background-color: var(--color-brand-muted);
+	color: var(--color-brand-primary);
+}
+
+:is(button, .btn).tertiary {
+	background-color: transparent;
+	color: var(--color-brand-primary);
+}
+
+:is(button, .btn).tertiary:is(:hover, :active) {
+	background-color: var(--color-brand-muted);
+}
+
+:is(button, .btn).icon {
+	min-inline-size: 44px;
+	min-block-size: 44px;
+	display: inline-flex;
+	align-items: baseline;
+	justify-content: center;
+	background-color: transparent;
+}
+
+:is(button, .btn).icon:is(:hover, :active) {
+	background-color: var(--color-bg-primary);
+}

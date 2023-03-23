@@ -1,0 +1,46 @@
+/* Brand Tone
+	- Professional - competence, reliability, and expertise - clean, sharp lines, neutral colors, and minimalistic design
+	- Informative - clarity, authority, and precision - clean, simple typography, muted colors, and clear organization of information
+	- Luxurious - exclusivity, sophistication, and indulgence - rich, deep colors, ornate typography and imagery, and high-quality materials like leather or metal
+	- Inspirational - motivation, encouragement, and positivity - bright, uplifting colors, bold typography, and inspiring imagery like natural landscapes or people overcoming obstacles
+	- Irreverent - rebellion, humor, and irreverence towards authority - bold, provocative imagery and typography, bright and contrasting colors, and edgy design elements
+	- Playful - humor, creativity, and whimsy - bright colors, playful shapes and patterns, and cartoonish illustrations
+	- Friendly - approachability, warmth, and positivity - bright, cheerful colors, rounded shapes, and playful illustrations or icons
+	- Sincere - honesty, authenticity, and trustworthiness - soft, rounded shapes, warm and muted colors, and natural textures like wood or fabric
+	- Innovative - creativity, forward-thinking, and cutting-edge technology - bold, unconventional shapes and layouts, bright and futuristic colors, and dynamic animations or transitions
+*/
+
+:root {
+	--color-irreverent-neutral-700: #0d090a;
+	--color-irreverent-neutral-600: #302729;
+	--color-irreverent-neutral-500: #473f40;
+	--color-irreverent-neutral-400: #827879;
+	--color-irreverent-neutral-300: #bdb3b5;
+	--color-irreverent-neutral-200: #e3dadb;
+	--color-irreverent-neutral-100: #fcf2f4;
+
+	--color-irreverent-brand-400: #33050d;
+	--color-irreverent-brand-300: #661422;
+	--color-irreverent-brand-200: #cc5266;
+	--color-irreverent-brand-100: #ff8095;
+
+	--radius-irreverent-s: 20px;
+	--radius-irreverent-l: 30px;
+
+	--font-irreverent-heading-1: Impact;
+	--font-irreverent-heading-2: "Arial Black";
+	--font-irreverent-heading-3: "Futura Bold";
+	--font-irreverent-heading-4: "Copper Black";
+	--font-irreverent-heading-5: "Helvetica Bold";
+	--font-irreverent-heading-6: "franklin Gothic Bold";
+	--font-irreverent-heading-7: "Bebas Neue";
+	--font-irreverent-heading-8: "Chunk Five";
+	--font-irreverent-heading-9: "Oswald Bold";
+	--font-irreverent-heading-10: Bangers;
+
+	--font-irreverent-body-1: Helvetica;
+	--font-irreverent-body-2: Futura;
+	--font-irreverent-body-3: "Gill Sans";
+	--font-irreverent-body-4: Avenir;
+	--font-irreverent-body-5: "Proxima Nova";
+}

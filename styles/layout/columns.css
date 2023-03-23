@@ -1,0 +1,13 @@
+/* Sepperate children into 2 groups, 1 wider than the other */
+.columns {
+	display: grid;
+	gap: var(--space-6);
+}
+
+.start-heavy {
+	grid-template-columns: 0.6fr 0.4fr;
+}
+
+.end-heavy {
+	grid-template-columns: 0.4fr 0.6fr;
+}

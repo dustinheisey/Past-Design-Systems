@@ -1,0 +1,55 @@
+:root {
+	--color-brand-100: #053326;
+	--color-brand-200: #14664f;
+	--color-brand-300: #52cca9;
+	--color-brand-400: #e5f4f0;
+
+	--color-neutral-700: #090d0c;
+	--color-neutral-600: #27302e;
+	--color-neutral-500: #3f4745;
+	--color-neutral-400: #78827f;
+	--color-neutral-300: #b3bdba;
+	--color-neutral-200: #dae3e0;
+	--color-neutral-100: #f2fcfa;
+
+	--radius-s: 20px;
+	--radius-l: 20px;
+	--radius-btn: 999px;
+
+	--font-size-hero: var(--font-size-15);
+	--font-size-page: var(--font-size-14);
+	--font-size-copy: var(--font-size-5);
+	--font-size-overline: var(--font-size-3);
+	--font-size-caption: var(--font-size-1);
+	--font-size-section: var(--font-size-12);
+	--font-size-subsection: var(--font-size-10);
+	--font-size-card-copy: var(--font-size-4);
+	--font-size-title: var(--font-size-5);
+	--font-size-label: var(--font-size-2);
+	--font-size-btn: var(--font-size-2);
+	--font-size-btn-l: var(--font-size-4);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-brand-primary: #14332a;
+		--color-brand: #336658;
+		--color-brand-border: #8fccba;
+		--color-brand-muted: #ccfff1;
+	}
+}
+
+#header::before {
+	background-image: linear-gradient(to right bottom, #05313345, #14626645),
+		url("../assets/coffee.jpg");
+}
+
+#services::before {
+	background-image: linear-gradient(to right bottom, #05313345, #14626645),
+		url("../assets/cafe.jpg");
+}
+
+#c2contact::before {
+	background-image: linear-gradient(to right bottom, #05313345, #14626645),
+		url("../assets/cafe.jpg");
+}

@@ -1,0 +1,35 @@
+/* Brand Tone
+	- Professional - competence, reliability, and expertise - clean, sharp lines, neutral colors, and minimalistic design
+	- Informative - clarity, authority, and precision - clean, simple typography, muted colors, and clear organization of information
+	- Luxurious - exclusivity, sophistication, and indulgence - rich, deep colors, ornate typography and imagery, and high-quality materials like leather or metal
+	- Inspirational - motivation, encouragement, and positivity - bright, uplifting colors, bold typography, and inspiring imagery like natural landscapes or people overcoming obstacles
+	- Irreverent - rebellion, humor, and irreverence towards authority - bold, provocative imagery and typography, bright and contrasting colors, and edgy design elements
+	- Playful - humor, creativity, and whimsy - bright colors, playful shapes and patterns, and cartoonish illustrations
+	- Friendly - approachability, warmth, and positivity - bright, cheerful colors, rounded shapes, and playful illustrations or icons
+	- Sincere - honesty, authenticity, and trustworthiness - soft, rounded shapes, warm and muted colors, and natural textures like wood or fabric
+	- Innovative - creativity, forward-thinking, and cutting-edge technology - bold, unconventional shapes and layouts, bright and futuristic colors, and dynamic animations or transitions
+*/
+
+:root {
+	--color-informative-neutral-700: #090a0d;
+	--color-informative-neutral-600: #272a30;
+	--color-informative-neutral-500: #3f4147;
+	--color-informative-neutral-400: #787b82;
+	--color-informative-neutral-300: #b3b6bd;
+	--color-informative-neutral-200: #dadce3;
+	--color-informative-neutral-100: #f2f5fc;
+
+	--color-informative-brand-400: #051233;
+	--color-informative-brand-300: #142c66;
+	--color-informative-brand-200: #5274cc;
+	--color-informative-brand-100: #80a4ff;
+
+	--radius-informative-s: 4px;
+	--radius-informative-l: 6px;
+
+	--font-informative-1: Helvetica;
+	--font-informative-2: Arial;
+	--font-informative-3: Georgia;
+	--font-informative-4: "Times New Roman";
+	--font-informative-5: Verdana;
+}

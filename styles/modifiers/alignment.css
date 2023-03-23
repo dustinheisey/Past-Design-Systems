@@ -1,0 +1,52 @@
+:not(.stack):not(.cover).start {
+	justify-content: start;
+}
+
+:not(.stack).center {
+	justify-content: center;
+}
+
+:not(.stack).end {
+	justify-content: end;
+}
+
+:not(.stack).around {
+	justify-content: space-around;
+}
+
+:not(.stack).between {
+	justify-content: space-between;
+}
+
+:not(.stack).evenly {
+	justify-content: space-evenly;
+}
+
+.cover.start {
+	align-items: start;
+}
+
+.stack.start {
+	align-items: start;
+}
+
+.stack.center {
+	align-items: center;
+}
+
+.stack.end {
+	align-items: end;
+}
+
+/* ? Text Align */
+.text-align\:s {
+	text-align: start !important;
+}
+
+.text-align\:c {
+	text-align: center !important;
+}
+
+.text-align\:e {
+	text-align: end !important;
+}

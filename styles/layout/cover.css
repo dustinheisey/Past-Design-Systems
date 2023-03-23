@@ -1,0 +1,19 @@
+/* Fill screen, arrange 3 sections vertically evenly, background image */
+.cover {
+	display: flex;
+	flex-direction: column;
+	min-block-size: 100vh;
+	max-inline-size: 100%;
+	gap: var(--space-4);
+}
+
+.cover > .main {
+	margin-block: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.cover.small {
+	min-block-size: 75vh;
+}

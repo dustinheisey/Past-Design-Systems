@@ -1,0 +1,35 @@
+/* Brand Tone
+	- Professional - competence, reliability, and expertise - clean, sharp lines, neutral colors, and minimalistic design
+	- Informative - clarity, authority, and precision - clean, simple typography, muted colors, and clear organization of information
+	- Luxurious - exclusivity, sophistication, and indulgence - rich, deep colors, ornate typography and imagery, and high-quality materials like leather or metal
+	- Inspirational - motivation, encouragement, and positivity - bright, uplifting colors, bold typography, and inspiring imagery like natural landscapes or people overcoming obstacles
+	- Irreverent - rebellion, humor, and irreverence towards authority - bold, provocative imagery and typography, bright and contrasting colors, and edgy design elements
+	- Playful - humor, creativity, and whimsy - bright colors, playful shapes and patterns, and cartoonish illustrations
+	- Friendly - approachability, warmth, and positivity - bright, cheerful colors, rounded shapes, and playful illustrations or icons
+	- Sincere - honesty, authenticity, and trustworthiness - soft, rounded shapes, warm and muted colors, and natural textures like wood or fabric
+	- Innovative - creativity, forward-thinking, and cutting-edge technology - bold, unconventional shapes and layouts, bright and futuristic colors, and dynamic animations or transitions
+*/
+
+:root {
+	--color-inspirational-neutral-700: #090c0d;
+	--color-inspirational-neutral-600: #272e30;
+	--color-inspirational-neutral-500: #3f4547;
+	--color-inspirational-neutral-400: #787f82;
+	--color-inspirational-neutral-300: #b3babd;
+	--color-inspirational-neutral-200: #dae1e3;
+	--color-inspirational-neutral-100: #f2fafc;
+
+	--color-inspirational-brand-400: #052833;
+	--color-inspirational-brand-300: #145266;
+	--color-inspirational-brand-200: #52adcc;
+	--color-inspirational-brand-100: #80dfff;
+
+	--radius-inspirational-s: 20px;
+	--radius-inspirational-l: 30px;
+
+	--font-inspirational-1: Helvetica;
+	--font-inspirational-2: Futura;
+	--font-inspirational-3: "Proxima Nova";
+	--font-inspirational-4: Gotham;
+	--font-inspirational-5: Avenir;
+}

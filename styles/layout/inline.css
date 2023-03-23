@@ -1,0 +1,10 @@
+/* align children horizontally */
+.inline {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-4);
+	padding: 0;
+	justify-content: flex-start;
+	align-items: baseline;
+	inline-size: max-content;
+}
