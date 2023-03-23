@@ -6,6 +6,5 @@
 	gap: var(--space-4);
 	padding: 0;
 	justify-content: flex-start;
-	align-items: baseline;
-	inline-size: max-content;
+	align-items: center;
 }

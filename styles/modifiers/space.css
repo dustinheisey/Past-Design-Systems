@@ -33,7 +33,11 @@ p + p {
 	margin-block-start: var(--space-4);
 }
 
-svg + * {
+* + ul {
+	margin-block-start: var(--space-6);
+}
+
+svg + .title {
 	margin-block-start: var(--space-4);
 }
 

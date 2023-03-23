@@ -95,6 +95,10 @@
 	color: var(--color-fg-muted);
 }
 
+.inverse {
+	color: var(--color-surface);
+}
+
 /* ? Background Colors */
 .bg\:bg-tertiary {
 	background: var(--color-surface);

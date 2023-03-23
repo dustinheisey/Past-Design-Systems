@@ -25,6 +25,7 @@ label {
 
 .hero {
 	font-size: var(--font-size-hero);
+	max-inline-size: var(--measure-hero);
 	text-transform: uppercase;
 }
 
@@ -78,4 +79,13 @@ small > a {
 label {
 	font-size: var(--font-size-label);
 	font-weight: var(--font-weight-heading);
+}
+
+
+.section > a {
+	font-size: var(--font-size-section);
+}
+
+.subsection > a {
+	font-size: var(--font-size-subsection);
 }

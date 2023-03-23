@@ -121,7 +121,8 @@
 	--font-weight-body: 400;
 	--font-weight-btn: 700;
 
-	--measure-heading: 15ch;
+	--measure-heading: 25ch;
+	--measure-hero: 15ch;
 	--measure-body: 66ch;
 
 	--line-height-heading: 1.15;
@@ -138,8 +139,8 @@
 	--icon-size-3: var(--font-size-6);
 	--icon-size-4: var(--font-size-7);
 
-	--gap-page: var(--space-9);
-	--gap-section: var(--space-7);
+	--gap-page: var(--space-11);
+	--gap-section: var(--space-8);
 
 	--inset-body: var(--space-8);
 }
