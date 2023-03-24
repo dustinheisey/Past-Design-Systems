@@ -1,0 +1,15 @@
+.light-mode-hide {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode-hide {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .light-mode-hide {
+    display: initial;
+  }
+}
