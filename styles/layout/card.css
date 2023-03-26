@@ -26,3 +26,8 @@
 	padding: var(--space-3);
 	align-items: center;
 }
+
+
+.card.primary {
+	background-color: var(--color-bg);
+}

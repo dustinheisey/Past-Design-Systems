@@ -17,7 +17,7 @@
 	transition: all 0.5s ease 0s;
 }
 
-:is(button, .btn):not(.secondary):not(.tertiary) {
+:is(button, .btn) {
 	box-shadow: var(--elevation-btn);
 }
 
@@ -26,43 +26,36 @@
 	padding: var(--space-2) var(--space-7);
 }
 
-:is(button, .btn):is(:hover, :active):not(.secondary):not(.tertiary) {
+:is(button, .btn):is(:hover, :active) {
 	background-color: var(--color-brand-primary);
 	border-color: var(--color-brand-primary);
 	color: var(--color-brand-muted);
 }
 
-:is(button, .btn):not(.tertiary):hover {
+:is(button, .btn):hover {
 	box-shadow: var(--elevation-btn-hover);
 }
 
-:is(button, .btn):not(.tertiary):active {
+:is(button, .btn):active {
 	box-shadow: var(--elevation-btn-active);
 }
 
 :is(button, .btn).secondary {
 	background-color: var(--color-brand-muted);
 	color: var(--color-brand-primary);
+	box-shadow: none;
+}
+
+:is(button, .btn):is(.secondary, .tertiary):is(:hover, :active) {
+	box-shadow: none;
 }
 
 :is(button, .btn).tertiary {
 	background-color: transparent;
 	color: var(--color-brand-primary);
+	box-shadow: none;
 }
 
 :is(button, .btn).tertiary:is(:hover, :active) {
 	background-color: var(--color-brand-muted);
-}
-
-:is(button, .btn).icon {
-	min-inline-size: 44px;
-	min-block-size: 44px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: transparent;
-}
-
-:is(button, .btn).icon:is(:hover, :active) {
-	background-color: var(--color-bg-primary);
 }

@@ -1,25 +1,25 @@
-.icon {
+.icon:not(.btn) {
 	display: inline-block;
 	inline-size: 1cap;
 	block-size: 1cap;
 }
 
-.icon.body-small {
+.icon.body-small:not(.btn) {
 	inline-size: var(--icon-size-1);
 	block-size: var(--icon-size-1);
 }
 
-.icon.body {
+.icon.body:not(.btn) {
 	inline-size: var(--icon-size-2);
 	block-size: var(--icon-size-2);
 } 
 
-.icon {
+.icon:not(.btn) {
 	inline-size: var(--icon-size-3);
 	block-size: var(--icon-size-3);
 }
 
-.icon.large {
+.icon.large:not(.btn) {
 	inline-size: var(--icon-size-4);
 	block-size: var(--icon-size-4);
 }

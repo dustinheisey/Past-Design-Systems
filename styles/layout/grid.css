@@ -3,7 +3,7 @@
 .grid {
 	display: grid;
 	gap: var(--space-4);
-	grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(var(--size, 350px), 100%), 1fr));
 }
 
 .grid > * {
@@ -12,21 +12,21 @@
 }
 
 .col-2 {
-	grid-template-columns: repeat(2, 1fr);
+	--size: 500px
 }
 
 .col-3 {
-	grid-template-columns: repeat(3, 1fr);
+	--size: 300px;
 }
 
 .col-4 {
-	grid-template-columns: repeat(4, 1fr);
+	--size: 250px;
 }
 
 .col-5 {
-	grid-template-columns: repeat(5, 1fr);
+	--size: 200px;
 }
 
 .col-6 {
-	grid-template-columns: repeat(6, 1fr);
+	--size: 150px;
 }
