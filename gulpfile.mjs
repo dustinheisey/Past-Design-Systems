@@ -36,8 +36,7 @@ function processCss() {
 	])
 		.pipe(
 			postCSS([
-				presetEnv({ stage: 0 }),
-				autoprefixer(),
+				presetEnv({ stage: 3 }),
 				cssnano({ preset: "default" })
 			])
 		)

@@ -1,17 +1,4 @@
 :root {
-	--color-brand-400: #053326;
-	--color-brand-300: #14664f;
-	--color-brand-200: #52cca9;
-	--color-brand-100: #80f9ff;
-
-	--color-neutral-700: #090d0c;
-	--color-neutral-600: #27302e;
-	--color-neutral-500: #3f4745;
-	--color-neutral-400: #78827f;
-	--color-neutral-300: #b3bdba;
-	--color-neutral-200: #dae3e0;
-	--color-neutral-100: #f2fcfa;
-
 	--radius-s: 20px;
 	--radius-l: 20px;
 	--radius-btn: 999px;
@@ -28,15 +15,6 @@
 	--font-size-label: var(--font-size-2);
 	--font-size-btn: var(--font-size-2);
 	--font-size-btn-l: var(--font-size-4);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-brand-muted: #14332a;
-		--color-brand-border: #336658;
-		--color-brand: #8fccba;
-		--color-brand-primary: #cff4ea;
-	}
 }
 
 #header::before {
