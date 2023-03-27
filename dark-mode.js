@@ -1,39 +1,29 @@
 const toggle = document.querySelector("#color_mode_toggle");
+const htmlElement = document.querySelector("html");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+let currentTheme = localStorage.getItem("theme");
 
-toggle.addEventListener("change", switchTheme, false);
-
-const preferDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-function switchTheme(e) {
-	if (preferDark) {
-		if (e.target.checked) {
-			document.querySelector("html").setAttribute("data-theme", "light");
-			localStorage.setItem("theme", "light");
-		} else {
-			document.querySelector("html").setAttribute("data-theme", "dark");
-			localStorage.setItem("theme", "dark");
-		}
-	} else {
-		if (e.target.checked) {
-			document.querySelector("html").setAttribute("data-theme", "dark");
-			localStorage.setItem("theme", "dark");
-		} else {
-			document.querySelector("html").setAttribute("data-theme", "light");
-			localStorage.setItem("theme", "light");
-		}
-	}
+// Set theme based on localStorage or prefers-color-scheme
+if (!currentTheme) {
+	currentTheme = prefersDark ? "dark" : "light";
+	localStorage.setItem("theme", currentTheme);
 }
+htmlElement.setAttribute("data-theme", currentTheme);
+toggle.checked = currentTheme === "light";
 
-const currentTheme = localStorage.getItem("theme");
+// Toggle theme when user clicks the toggle button
+toggle.addEventListener("change", () => {
+	const newTheme = toggle.checked ? "light" : "dark";
+	htmlElement.setAttribute("data-theme", newTheme);
+	localStorage.setItem("theme", newTheme);
+});
 
-if (currentTheme) {
-	document.querySelector("html").setAttribute("data-theme", currentTheme);
-
-	if (preferDark) {
-		toggle.checked = currentTheme === "light";
-	} else {
-		toggle.checked = currentTheme === "dark";
-	}
-} else {
-	localStorage.setItem("theme", preferDark ? "dark" : "light");
-}
+// Listen for changes to prefers-color-scheme
+window
+	.matchMedia("(prefers-color-scheme: dark)")
+	.addEventListener("change", e => {
+		if (currentTheme === "system") return;
+		const newTheme = e.matches ? "dark" : "light";
+		htmlElement.setAttribute("data-theme", newTheme);
+		localStorage.setItem("theme", newTheme);
+	});
