@@ -1,0 +1,21 @@
+:root {
+	--icon-size-1: var(--font-size-3);
+	--icon-size-2: var(--font-size-5);
+	--icon-size-3: var(--font-size-6);
+	--icon-size-4: var(--font-size-7);
+}
+
+.center,
+.columns,
+.grid,
+.reel,
+.masonry,
+.sidebar,
+.stack,
+.switcher {
+	max-inline-size: 100%;
+}
+
+.full {
+	inline-size: 100%;
+}

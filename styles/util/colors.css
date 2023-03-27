@@ -1,0 +1,145 @@
+/* ? Semantics */
+.color-brand-primary {
+	color: var(--color-brand-primary) !important;
+}
+
+.color-brand {
+	color: var(--color-brand) !important;
+}
+
+.color-brand-border {
+	color: var(--color-brand-border) !important;
+}
+
+.color-brand-muted {
+	color: var(--color-brand-muted) !important;
+}
+
+.color-success-primary {
+	color: var(--color-success-primary) !important;
+}
+
+.color-success {
+	color: var(--color-success) !important;
+}
+
+.color-success-border {
+	color: var(--color-success-border) !important;
+}
+
+.color-success-muted {
+	color: var(--color-success-muted) !important;
+}
+
+.color-info-primary {
+	color: var(--color-info-primary) !important;
+}
+
+.color-info {
+	color: var(--color-info) !important;
+}
+
+.color-info-border {
+	color: var(--color-info-border) !important;
+}
+
+.color-info-muted {
+	color: var(--color-info-muted) !important;
+}
+
+.color-warning-primary {
+	color: var(--color-warning-primary) !important;
+}
+
+.color-warning {
+	color: var(--color-warning) !important;
+}
+
+.color-warning-border {
+	color: var(--color-warning-border) !important;
+}
+
+.color-warning-muted {
+	color: var(--color-warning-muted) !important;
+}
+
+.color-danger-primary {
+	color: var(--color-danger-primary) !important;
+}
+
+.color-danger {
+	color: var(--color-danger) !important;
+}
+
+.color-danger-border {
+	color: var(--color-danger-border) !important;
+}
+
+.color-danger-muted {
+	color: var(--color-danger-muted) !important;
+}
+
+.color-fg-primary {
+	color: var(--color-fg-primary) !important;
+}
+
+.color-fg {
+	color: var(--color-fg) !important;
+}
+
+.color-border {
+	color: var(--color-border) !important;
+}
+
+.color-muted {
+	color: var(--color-fg-muted) !important;
+}
+
+.color-inverse {
+	color: var(--color-surface) !important;
+}
+
+/* ? Background Colors */
+.bg-bg-tertiary {
+	background-color: var(--color-surface) !important;
+}
+
+.bg-bg-secondary {
+	background-color: var(--color-bg) !important;
+}
+
+.bg-bg-primary {
+	background-color: var(--color-bg-primary) !important;
+}
+
+.bg-fg-tertiary {
+	background-color: var(--color-surface) !important;
+}
+
+.bg-fg-secondary {
+	background-color: var(--color-bg) !important;
+}
+
+.bg-fg-primary {
+	background-color: var(--color-bg-primary) !important;
+}
+
+.bg-brand {
+	background-color: var(--color-brand-muted) !important;
+}
+
+.bg-success {
+	background-color: var(--color-success-muted) !important;
+}
+
+.bg-info {
+	background-color: var(--color-info-muted) !important;
+}
+
+.bg-warning {
+	background-color: var(--color-warning-muted) !important;
+}
+
+.bg-danger {
+	background-color: var(--color-danger-muted) !important;
+}

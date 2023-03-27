@@ -21,3 +21,7 @@
 .cover.small {
 	min-block-size: 50vh;
 }
+
+.cover.light > * {
+	color: var(--color-neutral-100);
+}

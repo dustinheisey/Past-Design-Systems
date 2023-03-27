@@ -23,7 +23,7 @@ video {
 .avatar {
 	border-radius: 50%;
 	inline-size: var(--font-size-7);
-	aspect-ratio: 1;
+	aspect-ratio: 1/1;
 }
 
 .avatar.small {

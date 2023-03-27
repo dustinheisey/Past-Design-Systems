@@ -1,0 +1,67 @@
+:not(.stack):not(.cover).start {
+	justify-content: start;
+}
+
+:not(.stack).center {
+	justify-content: center;
+}
+
+:not(.stack).end {
+	justify-content: end;
+}
+
+:not(.stack).around {
+	justify-content: space-around;
+}
+
+:not(.stack).between {
+	justify-content: space-between;
+}
+
+:not(.stack).evenly {
+	justify-content: space-evenly;
+}
+
+:not(.stack).stretch {
+	justify-content: stretch;
+}
+
+.cover.start {
+	align-items: start;
+}
+
+.stack.start {
+	align-items: start;
+}
+
+.stack.center {
+	align-items: center;
+}
+
+.stack.end {
+	align-items: end;
+}
+
+.equal > * {
+	flex: 1;
+}
+
+.grow-1 {
+	flex-grow: 1;
+}
+
+.grow-2 {
+	flex-grow: 2;
+}
+
+.grow-3 {
+	flex-grow: 3;
+}
+
+.align-start {
+	align-items: start;
+}
+
+.align-baseline {
+	align-items: baseline;
+}

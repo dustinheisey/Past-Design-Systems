@@ -1,0 +1,135 @@
+:root {
+	--font-size-1: clamp(6px, 0.75rem, 24px);
+	--font-size-2: clamp(7px, 0.875rem, 28px);
+	--font-size-3: clamp(8px, 1rem, 32px);
+	--font-size-4: clamp(9px, 1.125rem, 36px);
+	--font-size-5: clamp(10px, 1.25rem, 40px);
+	--font-size-6: clamp(12px, 1.75rem, 48px);
+	--font-size-7: clamp(16px, 2rem, 64px);
+	--font-size-8: clamp(18px, 2.25rem, 72px);
+	--font-size-9: clamp(20px, 2.5rem, 80px);
+	--font-size-10: clamp(24px, 3rem, 96px);
+	--font-size-11: clamp(30px, 3.75rem, 120px);
+	--font-size-12: clamp(36px, 4.5rem, 144px);
+	--font-size-13: clamp(48px, 5.5rem, 192px);
+	--font-size-14: clamp(64px, 8rem, 256px);
+	--font-size-15: clamp(104px, 9rem, 416px);
+	--font-size-16: clamp(128px, 16rem, 512px);
+
+	--font-size-base: 100%;
+
+	--font-family-heading: Impact;
+	--font-family-body: Helvetica;
+	--font-weight-heading: 700;
+	--font-weight-body: 400;
+	--font-weight-btn: 700;
+
+	--measure-heading: 25ch;
+	--measure-hero: 15ch;
+	--measure-body: 66ch;
+
+	--line-height-heading: 1.15;
+	--line-height-body: 1.5;
+
+	--letter-spacing-heading: initial;
+	--letter-spacing-body: initial;
+	--letter-spacing-overline: 0.05em;
+
+	--text-transform-btn: uppercase;
+	--text-transform-overline: uppercase;
+	--text-transform-label: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-heading);
+	font-weight: var(--font-weight-heading);
+	max-inline-size: var(--measure-heading) !important;
+	line-height: var(--line-height-heading);
+	letter-spacing: var(--letter-spacing-heading);
+	color: var(--color-fg-primary);
+	margin: 0;
+}
+
+p,
+a,
+label {
+	max-inline-size: var(--measure-body) !important;
+	line-height: var(--line-height-body);
+	letter-spacing: var(--letters-spacing-body);
+	color: var(--color-fg);
+	margin: 0;
+}
+
+.hero {
+	font-size: var(--font-size-hero);
+	max-inline-size: var(--measure-hero);
+	text-transform: uppercase;
+}
+
+.page {
+	font-size: var(--font-size-page);
+	max-inline-size: var(--measure-hero);
+}
+
+p,
+a {
+	font-size: var(--font-size-copy);
+}
+
+.overline {
+	font-size: var(--font-size-overline);
+	text-transform: var(--text-transform-overline, uppercase);
+	letter-spacing: var(--letter-spacing-overline);
+	color: var(--color-brand-primary);
+	font-family: var(--font-family-overline, var(--font-family-body));
+	font-weight: var(--font-weight-overline, var(--font-weight-body));
+	line-height: var(--line-height-body);
+	
+}
+
+.caption,
+small {
+	color: var(--color-fg-muted);
+	font-size: var(--font-size-caption);
+}
+
+small > a {
+	font-size: var(--font-size-caption);
+}
+
+.section {
+	font-size: var(--font-size-section);
+}
+
+.subsection {
+	font-size: var(--font-size-subsection);
+}
+
+.title {
+	font-size: var(--font-size-title);
+	font-weight: var(--font-weight-title, var(--font-weight-heading));
+	line-height: var(--line-height-body);
+}
+
+.card > p {
+	font-size: var(--font-size-card-copy);
+}
+
+label {
+	font-size: var(--font-size-label);
+	font-weight: var(--font-weight-heading);
+	text-transform: var(--text-transform-label, none);
+}
+
+.section > a {
+	font-size: var(--font-size-section);
+}
+
+.subsection > a {
+	font-size: var(--font-size-subsection);
+}

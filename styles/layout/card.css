@@ -14,7 +14,7 @@
 	padding: 0;
 }
 
-.card :first-child + {
+.card :first-child + * {
 	margin-block-start: var(--space-4);
 }
 
@@ -26,7 +26,6 @@
 	padding: var(--space-3);
 	align-items: center;
 }
-
 
 .card.primary {
 	background-color: var(--color-bg);

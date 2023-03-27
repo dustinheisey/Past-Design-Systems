@@ -1,6 +1,0 @@
-textarea {
-	padding: var(--space-3);
-	border: 1px solid var(--color-fg-muted);
-	border-radius: var(--radius-s);
-	resize: none;
-}
