@@ -12,3 +12,7 @@
 .inline.baseline {
 	align-items: baseline;
 }
+
+.inline.stretch {
+	align-items: stretch;
+}

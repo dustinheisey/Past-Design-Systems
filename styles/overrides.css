@@ -2,19 +2,6 @@
 	--radius-s: 20px;
 	--radius-l: 20px;
 	--radius-btn: 999px;
-
-	--font-size-hero: var(--font-size-15);
-	--font-size-page: var(--font-size-14);
-	--font-size-copy: var(--font-size-5);
-	--font-size-overline: var(--font-size-3);
-	--font-size-caption: var(--font-size-1);
-	--font-size-section: var(--font-size-12);
-	--font-size-subsection: var(--font-size-10);
-	--font-size-card-copy: var(--font-size-4);
-	--font-size-title: var(--font-size-5);
-	--font-size-label: var(--font-size-2);
-	--font-size-btn: var(--font-size-2);
-	--font-size-btn-l: var(--font-size-4);
 }
 
 #header::before {
@@ -36,6 +23,14 @@
 	display: none;
 }
 
+#services > #services_img {
+	display: block;
+}
+
 #services > section:target {
 	display: block;
+}
+
+#services > section:target ~ #services_img {
+	display: none;
 }

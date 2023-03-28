@@ -12,6 +12,11 @@
 
 .card.media {
 	padding: 0;
+	transition: all 0.3s;
+}
+
+.card.media:hover {
+	box-shadow: var(--elevation-5);
 }
 
 .card > img {

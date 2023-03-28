@@ -331,9 +331,17 @@ ul {
 	max-inline-size: max-content;
 }
 
+.nowrap > * {
+	white-space: nowrap;
+}
+
+.max-content {
+	inline-size: max-content;
+}
+
 ul > li {
 	max-inline-size: max-content;
-	word-wrap: wrap;
+	white-space: wrap;
 }
 
 html {

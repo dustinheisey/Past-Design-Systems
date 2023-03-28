@@ -15,3 +15,11 @@
 .switcher > :nth-last-child(n + 5) ~ * {
 	flex-basis: 100%;
 }
+
+.phone-down {
+	--threshold: 20rem;
+}
+
+.tablet-down {
+	--threshold: 40rem;
+}

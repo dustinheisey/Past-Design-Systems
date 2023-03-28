@@ -26,7 +26,7 @@
 	--inset-footer: var(--space-7);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 56rem) {
 	:root {
 		--gap-page: var(--space-11);
 		--gap-section: var(--space-8);
