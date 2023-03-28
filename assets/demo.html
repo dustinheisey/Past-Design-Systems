@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="demo/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="demo/favicon.svg">
+  <title>SVG Symbol Icons | Nucleo</title>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="todo" viewBox="0 0 24 24"><g class="nc-icon-wrapper"><path fill="currentColor" d="M22,0H2C1.447,0,1,0.448,1,1v22c0,0.552,0.447,1,1,1h20c0.553,0,1-0.448,1-1V1C23,0.448,22.553,0,22,0z M20,21H4V3h3v3h3c0-1.105,0.895-2,2-2s2,0.895,2,2h3V3h3V21z" stroke="none"></path> <path d="M11,17c-0.256,0-0.512-0.098-0.707-0.293L7.586,14L9,12.586l2,2l4-4L16.414,12l-4.707,4.707 C11.512,16.902,11.256,17,11,17z" stroke="none"></path></g></symbol><symbol id="code" viewBox="0 0 24 24"><g class="nc-icon-wrapper"><path fill="currentColor" d="M6,17.414l-4.707-4.707c-0.391-0.391-0.391-1.023,0-1.414L6,6.586L7.414,8l-4,4l4,4L6,17.414z" stroke="none"></path> <path fill="currentColor" d="M18,17.414L16.586,16l4-4l-4-4L18,6.586l4.707,4.707c0.391,0.391,0.391,1.023,0,1.414L18,17.414z" stroke="none"></path> <rect x="2.754" y="11" transform="matrix(0.2427 -0.9701 0.9701 0.2427 -2.5532 20.7296)" width="18.493" height="2" stroke="none"></rect></g></symbol><symbol id="spaceship" viewBox="0 0 24 24"><g class="nc-icon-wrapper"><path d="M23.58.424A1,1,0,0,0,22.819.13C8.791.862,3.609,13.358,3.559,13.484a1,1,0,0,0,.22,1.08l5.657,5.657a1,1,0,0,0,1.085.218c.125-.051,12.554-5.291,13.348-19.253A1,1,0,0,0,23.58.424Zm-8.166,10.99a2,2,0,1,1,0-2.828A2,2,0,0,1,15.414,11.414Z" fill="currentColor" stroke="none"></path> <path d="M1.113,18.844a2.844,2.844,0,1,1,4.022,4.022C4.024,23.977,0,24,0,24S0,19.954,1.113,18.844Z" stroke="none"></path> <path id="color-2" d="M10.357,2.341A8.911,8.911,0,0,0,2.522,4.825a9.084,9.084,0,0,0-1.384,1.8,1,1,0,0,0,.155,1.215l1.989,1.99A26.623,26.623,0,0,1,10.357,2.341Z" fill="currentColor" stroke="none"></path> <path id="color-3" d="M21.659,13.643a8.911,8.911,0,0,1-2.484,7.835,9.084,9.084,0,0,1-1.8,1.384,1,1,0,0,1-1.215-.155l-1.99-1.989A26.623,26.623,0,0,0,21.659,13.643Z" fill="currentColor" stroke="none"></path></g></symbol></svg>
+
+  <header>
+    <h1>SVG Symbol Icons</h1>
+    <p>Generated using <a href="https://nucleoapp.com">nucleoapp.com</a></p>
+  </header><ul><li>
+    <div class="svg-wrapper"><svg class="icon"><use href="#todo"/></svg></div>
+    <p data-size="24" data-folder="assets/icons.svg">&lt;svg class="icon"&gt;&lt;use href="assets/icons.svg#todo"/&gt;&lt;/svg&gt;</p>
+</li>
+<li>
+    <div class="svg-wrapper"><svg class="icon"><use href="#code"/></svg></div>
+    <p data-size="24" data-folder="assets/icons.svg">&lt;svg class="icon"&gt;&lt;use href="assets/icons.svg#code"/&gt;&lt;/svg&gt;</p>
+</li>
+<li>
+    <div class="svg-wrapper"><svg class="icon"><use href="#spaceship"/></svg></div>
+    <p data-size="24" data-folder="assets/icons.svg">&lt;svg class="icon"&gt;&lt;use href="assets/icons.svg#spaceship"/&gt;&lt;/svg&gt;</p>
+</li>
+</ul><script>function SelectText(element) {var doc = document , text = element , range, selection; if (doc.body.createTextRange) { range = document.body.createTextRange(); range.moveToElementText(text); range.select(); } else if (window.getSelection) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(text); selection.removeAllRanges(); selection.addRange(range); }}window.onload = function() {var listItems = document.getElementsByTagName("li");for (var i = 0; i < listItems.length; i++) {listItems[i].onclick = function fun() {var item = this.getElementsByTagName("p");SelectText(item[0]);}}}</script></body></html>

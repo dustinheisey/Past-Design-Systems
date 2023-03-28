@@ -18,9 +18,9 @@ main > :first-child {
 	padding-block-start: var(--gap-page);
 }
 
-main > :last-child {
+/* main > :last-child {
 	padding-block-end: var(--gap-page);
-}
+} */
 
 /* ? Gap Modifiers */
 .gap-0:not(.stack) {

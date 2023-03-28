@@ -1,13 +1,17 @@
 header {
-	padding: var(--inset-body, var(--inset-header));
+	padding: var(--inset-header, var(--inset-body));
 }
 
-main > section {
-	padding-inline: var(--inset-body, var(--inset-main));
+main > * {
+	padding-inline: var(--inset-main, var(--inset-body));
+}
+
+main > .cover {
+	padding: var(--inset-main, var(--inset-body));
 }
 
 footer {
-	padding: var(--inset-body, var(--inset-footer));
+	padding: var(--inset-footer, var(--inset-body));
 }
 
 /* ? Inset Modifiers */

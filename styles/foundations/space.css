@@ -16,12 +16,24 @@
 	--space-15: 640px;
 	--space-16: 768px;
 
-    /*? Aliases */
-    --gap-page: var(--space-11);
-	--gap-section: var(--space-8);
+	/*? Aliases */
+	--gap-page: var(--space-8);
+	--gap-section: var(--space-6);
 
-	--inset-body: var(--space-8);
-    --inset-header: var(--space-8);
-    --inset-main: var(--space-8);
-    --inset-footer: var(--space-8);
+	--inset-body: var(--space-7);
+	--inset-header: var(--space-7);
+	--inset-main: var(--space-7);
+	--inset-footer: var(--space-7);
+}
+
+@media (min-width: 1200px) {
+	:root {
+		--gap-page: var(--space-11);
+		--gap-section: var(--space-8);
+
+		--inset-body: var(--space-8);
+		--inset-header: var(--space-8);
+		--inset-main: var(--space-8);
+		--inset-footer: var(--space-8);
+	}
 }

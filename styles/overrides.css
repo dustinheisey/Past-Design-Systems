@@ -31,3 +31,11 @@
 	background-image: linear-gradient(to right bottom, #05313345, #14626645),
 		url("../assets/cafe.jpg");
 }
+
+#services > section {
+	display: none;
+}
+
+#services > section:target {
+	display: block;
+}

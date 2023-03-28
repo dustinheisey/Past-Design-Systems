@@ -8,6 +8,7 @@ import concat from "gulp-concat";
 import cleanCss from "gulp-clean-css";
 import { deleteSync } from "del";
 import imagemin from "gulp-imagemin";
+import optimizejs from "gulp-optimize-js";
 
 const { src, dest, watch } = gulp;
 
@@ -34,12 +35,7 @@ function processCss() {
 		"styles/util/*.css",
 		"styles/overrides.css"
 	])
-		.pipe(
-			postCSS([
-				presetEnv({ stage: 3 }),
-				cssnano({ preset: "default" })
-			])
-		)
+		.pipe(postCSS([presetEnv({ stage: 0 }), cssnano({ preset: "default" })]))
 		.pipe(concat("style.css"))
 		.pipe(cleanCss())
 		.pipe(dest("./"));
@@ -52,8 +48,8 @@ function processAssets() {
 		.pipe(gulp.dest("./build/assets"));
 }
 
-function moveCss() {
-	return src("./style.css").pipe(gulp.dest("./build"));
+function moveFiles() {
+	return src(["./style.css", "dark-mode.js"]).pipe(gulp.dest("./build"));
 }
 
 const watchFiles = () => {
@@ -63,7 +59,7 @@ const watchFiles = () => {
 async function buildFiles() {
 	cleanBuild();
 	processHtml();
-	moveCss();
+	moveFiles();
 	processAssets();
 }
 

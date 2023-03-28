@@ -10,3 +10,17 @@
 .center.intrinsic {
 	text-align: center;
 }
+
+@media (min-width: 40em) {
+	.center\:tablet-up {
+		box-sizing: content-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.center\:tablet-up.intrinsic {
+		text-align: center;
+	}
+}
