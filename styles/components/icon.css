@@ -2,24 +2,14 @@
 	display: inline-block;
 	inline-size: 1cap;
 	block-size: 1cap;
+	inline-size: 1.5em;
+	block-size: 1.5em;
 }
 
-.icon.body-small:not(.btn) {
-	inline-size: var(--icon-size-1);
-	block-size: var(--icon-size-1);
-}
-
-.icon.body:not(.btn) {
-	inline-size: var(--icon-size-2);
-	block-size: var(--icon-size-2);
-} 
-
-.icon:not(.btn) {
-	inline-size: var(--icon-size-3);
-	block-size: var(--icon-size-3);
+.icon.small:not(.btn) {
+	font-size: 0.75em;
 }
 
 .icon.large:not(.btn) {
-	inline-size: var(--icon-size-4);
-	block-size: var(--icon-size-4);
+	font-size: 1.5em;
 }

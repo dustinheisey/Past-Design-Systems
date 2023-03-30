@@ -16,22 +16,22 @@ video {
 }
 
 .logo {
-	block-size: var(--font-size-10);
+	block-size: 2em;
 	inline-size: auto;
 }
 
 .avatar {
 	border-radius: 50%;
-	inline-size: var(--font-size-7);
+	inline-size: 2em;
 	aspect-ratio: 1/1;
 }
 
 .avatar.small {
-	inline-size: var(--font-size-5);
+	font-size: 1em;
 }
 
 .avatar.large {
-	inline-size: var(--font-size-9);
+	font-size: 2em;
 }
 
 .bg-img {

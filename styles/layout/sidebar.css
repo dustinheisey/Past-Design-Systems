@@ -3,7 +3,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	gap: var(--space-4);
+	gap: var(--gap);
 }
 
 .sidebar > .fixed {

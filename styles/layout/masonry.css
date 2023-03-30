@@ -1,6 +1,6 @@
 /* Masonry style grid */
 .masonry {
-	gap: var(--space-6);
+	gap: var(--gap);
 }
 
 .masonry.col-2 {
@@ -24,6 +24,6 @@
 }
 
 .masonry > * + * {
-	margin-block-start: var(--space-6);
+	margin-block-start: var(--gap);
 	break-inside: avoid;
 }

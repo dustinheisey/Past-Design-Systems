@@ -5,18 +5,20 @@
 }
 
 #header::before {
-	background-image: linear-gradient(to right bottom, #05313345, #14626645),
-		url("../assets/hero-index.svg");
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(7, 55, 46, 0.65),
+			rgba(7, 55, 46, 0.65)
+		),
+		url("../assets/web-development.jpeg");
 }
-
-#services::before {
-	background-image: linear-gradient(to right bottom, #05313345, #14626645),
-		url("../assets/cafe.jpg");
-}
-
 #c2contact::before {
-	background-image: linear-gradient(to right bottom, #05313345, #14626645),
-		url("../assets/cafe.jpg");
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(7, 55, 46, 0.65),
+			rgba(7, 55, 46, 0.65)
+		),
+		url("../assets/nature-background.jpeg");
 }
 
 #services > section {

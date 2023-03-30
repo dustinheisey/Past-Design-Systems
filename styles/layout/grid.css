@@ -2,8 +2,11 @@
 
 .grid {
 	display: grid;
-	gap: var(--space-4);
-	grid-template-columns: repeat(auto-fit, minmax(min(var(--size, 350px), 100%), 1fr));
+	gap: var(--gap);
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(min(var(--size, 350px), 100%), 1fr)
+	);
 }
 
 .grid > * {
@@ -12,7 +15,7 @@
 }
 
 .col-2 {
-	--size: 500px
+	--size: 500px;
 }
 
 .col-3 {

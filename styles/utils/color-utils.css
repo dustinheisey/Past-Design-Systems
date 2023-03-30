@@ -1,0 +1,41 @@
+/* ? Color */
+.color-light {
+	color: var(--color-light) !important;
+}
+
+.color-dark {
+	color: var(--color-dark) !important;
+}
+
+.color-fg {
+	color: var(--color-fg) !important;
+}
+
+.color-bg {
+	color: var(--color-bg) !important;
+}
+
+.color-accent {
+	color: var(--color-accent) !important;
+}
+
+/* ? Background Color */
+.bg-light {
+	background-color: var(--color-light) !important;
+}
+
+.bg-dark {
+	background-color: var(--color-dark) !important;
+}
+
+.bg-fg {
+	background-color: var(--color-fg) !important;
+}
+
+.bg-bg {
+	background-color: var(--color-bg) !important;
+}
+
+.bg-accent {
+	background-color: var(--color-accent) !important;
+}

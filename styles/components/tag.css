@@ -3,10 +3,9 @@
 	background-color: var(--color-surface);
 	color: var(--color-fg-primary);
 	border-radius: var(--radius-pill);
-	font-size: var(--font-size-s);
 	font-family: var(--font-family-body);
 	font-weight: var(--font-weight-bold);
-	padding: var(--space-3xs) var(--space-2);
+	padding: var(--space-3xs) var(--space-xs);
 	inline-size: fit-content;
 }
 

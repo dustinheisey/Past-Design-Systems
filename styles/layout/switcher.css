@@ -2,7 +2,7 @@
 .switcher {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space-4);
+	gap: var(--gap);
 }
 
 .switcher > * {
@@ -11,10 +11,10 @@
 	max-inline-size: 100%;
 }
 
-.switcher > :nth-last-child(n + 5),
+/* .switcher > :nth-last-child(n + 5),
 .switcher > :nth-last-child(n + 5) ~ * {
 	flex-basis: 100%;
-}
+} */
 
 .phone-down {
 	--threshold: 20rem;

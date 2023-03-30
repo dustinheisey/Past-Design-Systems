@@ -32,7 +32,7 @@ function processCss() {
 		"styles/foundations/*.css",
 		"styles/layout/*.css",
 		"styles/components/*.css",
-		"styles/util/*.css",
+		"styles/utils/*.css",
 		"styles/overrides.css"
 	])
 		.pipe(postCSS([presetEnv({ stage: 0 }), cssnano({ preset: "default" })]))
