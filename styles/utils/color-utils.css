@@ -15,6 +15,18 @@
 	color: var(--color-bg) !important;
 }
 
+.color-accent-light {
+	color: var(--color-accent-light) !important;
+}
+
+.color-accent-dark {
+	color: var(--color-accent-dark) !important;
+}
+
+.color-accent-inverse {
+	color: var(--color-accent-inverse) !important;
+}
+
 .color-accent {
 	color: var(--color-accent) !important;
 }
@@ -34,6 +46,18 @@
 
 .bg-bg {
 	background-color: var(--color-bg) !important;
+}
+
+.bg-accent-light {
+	background-color: var(--color-accent-light) !important;
+}
+
+.bg-accent-dark {
+	background-color: var(--color-accent-dark) !important;
+}
+
+.bg-accent-inverse {
+	background-color: var(--color-accent-inverse) !important;
 }
 
 .bg-accent {
