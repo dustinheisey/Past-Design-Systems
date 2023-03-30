@@ -11,18 +11,6 @@
 	align-items: center !important;
 }
 
-.align-between {
-	align-items: space-between !important;
-}
-
-.align-around {
-	align-items: space-around !important;
-}
-
-.align-evenly {
-	align-items: space-evenly !important;
-}
-
 .align-stretch {
 	align-items: stretch !important;
 }
@@ -58,10 +46,6 @@
 
 .justify-stretch {
 	justify-content: stretch !important;
-}
-
-.justify-baseline {
-	justify-content: baseline !important;
 }
 
 

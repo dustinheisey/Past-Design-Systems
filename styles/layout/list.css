@@ -15,5 +15,4 @@ ul {
 
 ul > li {
 	max-inline-size: max-content;
-	white-space: wrap;
 }
