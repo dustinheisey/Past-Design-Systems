@@ -1,14 +1,25 @@
-/** @type { import('@storybook/web-components').Preview } */
-const preview = {
-  parameters: {
-    actions: {argTypesRegex: '^on[A-Z].*'},
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/,
-      },
+import '../src/tailwind.css';
+import { withThemeByDataAttribute } from '@storybook/addon-styling';
+
+export default {
+    parameters: {
+        actions: { argTypesRegex: '^on[A-Z].*' },
+        controls: {
+            matchers: {
+                color: /(background|color)$/i,
+                date: /Date$/,
+            },
+        },
     },
-  },
 };
 
-export default preview;
+export const decorators = [
+    withThemeByDataAttribute({
+        themes: {
+            light: 'light',
+            dark: 'dark',
+        },
+        defaultTheme: 'light',
+        attributeName: 'data-mode',
+    }),
+];
