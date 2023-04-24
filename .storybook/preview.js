@@ -1,25 +1,34 @@
-import '../src/tailwind.css';
+import '../dist/index.css';
 import { withThemeByDataAttribute } from '@storybook/addon-styling';
+import { setCustomElementsManifest } from '@storybook/web-components';
+import customElements from '../custom-elements.json';
+
+setCustomElementsManifest(customElements);
+
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 export default {
     parameters: {
         actions: { argTypesRegex: '^on[A-Z].*' },
+        layout: 'centered',
         controls: {
             matchers: {
                 color: /(background|color)$/i,
                 date: /Date$/,
             },
         },
-    },
-};
-
-export const decorators = [
-    withThemeByDataAttribute({
-        themes: {
-            light: 'light',
-            dark: 'dark',
+        viewport: {
+            viewports: INITIAL_VIEWPORTS,
         },
-        defaultTheme: 'light',
-        attributeName: 'data-mode',
-    }),
-];
+    },
+    decorators: [
+        withThemeByDataAttribute({
+            themes: {
+                light: 'light',
+                dark: 'dark',
+            },
+            defaultTheme: 'light',
+            attributeName: 'data-mode',
+        }),
+    ],
+};

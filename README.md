@@ -51,13 +51,13 @@ There is a development HTML file located at `/dev/index.html` that you can view 
 
 If you use VS Code, we highly recommend the [lit-plugin extension](https://marketplace.visualstudio.com/items?itemName=runem.lit-plugin), which enables some extremely useful features for lit-html templates:
 
-- Syntax highlighting
-- Type-checking
-- Code completion
-- Hover-over docs
-- Jump to definition
-- Linting
-- Quick Fixes
+-   Syntax highlighting
+-   Type-checking
+-   Code completion
+-   Hover-over docs
+-   Jump to definition
+-   Linting
+-   Quick Fixes
 
 The project is setup to recommend lit-plugin to VS Code users if they don't already have it installed.
 

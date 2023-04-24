@@ -1,0 +1,51 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Tokens/Shape" />
+
+## Border Radius
+
+<div className="full flex flex-wrap items-center gap-m">
+    <button className="py-3xs px-xs text-white bg-primary-900 rounded-btn">
+        <span>Button</span>
+    </button>
+    <div className="py-3xs px-xs text-primary-900 border-primary-900 border-2 font-headline bg-primary-100 rounded-tag">
+        <span>Tag</span>
+    </div>
+    <input
+        placeholder="Input"
+        className="py-3xs px-xs border-gray-300 border-2 rounded-input"
+    />
+    <div className="w-xl h-xl flex items-center justify-center text-white border-2 font-headline bg-primary-900 shadow-2xl rounded-fab">
+        <span className="font-xl">+</span>
+    </div>
+    <div className="w-4xl h-4xl p-xs  border-gray-200 border-2 font-headline bg-white rounded-card">
+        <h2>Card Border Radius</h2>
+        <p>
+            Dolor ad sunt tempor sunt laboris velit proident aliqua labore
+            magna. In ea reprehenderit tempor.
+        </p>
+    </div>
+</div>
+
+## Shadows
+
+<div className="full flex w-max bg-gray-50 p-m flex-wrap gap-m">
+    <div className="w-3xl h-3xl bg-white rounded-card shadow-inner flex items-center justify-center">
+        <span>inner</span>
+    </div>
+    <div className="w-3xl h-3xl bg-white rounded-card shadow-sm flex items-center justify-center">
+        <span>xs</span>
+    </div>
+    <div className="w-3xl h-3xl bg-white rounded-card shadow-md flex items-center justify-center">
+        <span>s</span>
+    </div>
+    <div className="w-3xl h-3xl bg-white rounded-card shadow-lg flex items-center justify-center">
+        <span>m</span>
+    </div>
+    <div className="w-3xl h-3xl bg-white rounded-card shadow-xl flex items-center justify-center">
+        <span>l</span>
+    </div>
+    <div className="w-3xl h-3xl bg-white rounded-card shadow-2xl flex items-center justify-center">
+        <span>xl</span>
+    </div>
+</div>

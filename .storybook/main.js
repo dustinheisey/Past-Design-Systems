@@ -1,9 +1,6 @@
 /** @type { import('@storybook/web-components-webpack5').StorybookConfig } */
 const config = {
-    stories: [
-        '../stories/**/*.mdx',
-        '../stories/**/*.stories.@(js|jsx|ts|tsx)',
-    ],
+    stories: ['../src/**/*.mdx', '../src/**/*.story.js'],
     addons: [
         '@storybook/addon-links',
         '@storybook/addon-essentials',
@@ -11,6 +8,7 @@ const config = {
         'storybook-addon-pseudo-states',
         '@storybook/addon-styling',
         'storybook-addon-rem',
+        '@storybook/addon-coverage',
     ],
     framework: {
         name: '@storybook/web-components-vite',
