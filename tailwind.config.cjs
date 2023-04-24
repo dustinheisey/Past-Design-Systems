@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
+var defaultTheme = require('tailwindcss/defaultTheme');
+var colors = require('tailwindcss/colors');
 
 module.exports = {
     content: ['./src/**/*.js', './src/**/*.mdx'],
@@ -106,4 +106,8 @@ module.exports = {
         },
         maxWidth: { region: '1200px' },
     },
+    // plugins: [
+    //     require('@tailwindcss/forms'),
+    //     require('@tailwindcss/typography'),
+    // ],
 };

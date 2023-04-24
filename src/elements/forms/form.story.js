@@ -6,7 +6,7 @@ export default {
 };
 
 export const Form = () => html`
-    <form action="/submit-form" method="post">
+    <form action="/submit-form"  method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" /><br />
         <label for="email">Email:</label>

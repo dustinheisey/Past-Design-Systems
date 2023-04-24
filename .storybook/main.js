@@ -1,4 +1,4 @@
-/** @type { import('@storybook/web-components-webpack5').StorybookConfig } */
+/** @type { import('@storybook/web-components-vite').StorybookConfig } */
 const config = {
     stories: ['../src/**/*.mdx', '../src/**/*.story.js'],
     addons: [
