@@ -7,6 +7,6 @@ export default {
 
 export const Input = () =>
     html`
-<label for="name">Name:</label>
-<input type="text" id="name" name="name" />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
     `;

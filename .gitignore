@@ -2,7 +2,4 @@
 custom-elements.json
 build-storybook.log
 dist
-
-# only generated for size check
-my-element.bundled.js
 package-lock.json

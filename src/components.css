@@ -1,0 +1,5 @@
+@layer components {
+    .btn-primary {
+        @apply px-xs py-2xs font-body text-white bg-primary-700 rounded-btn transition-all hover:shadow-lg shadow-md focus-within:ring-2 hover:bg-primary-600 focus:outline-none  focus:ring-offset-2 focus:ring-primary-500;
+    }
+}
