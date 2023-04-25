@@ -1,0 +1,547 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Tokens/Color" />
+
+# Color
+
+## Light Mode
+
+<ColorPalette>
+    <ColorItem
+        title="UI"
+        colors={{
+            UIBgTertiary: 'var(--color-stone-50)',
+            UIBgSecondary: 'var(--color-stone-100)',
+            UIBgPrimary: 'var(--color-stone-200)',
+            UIFgTertiary: 'var(--color-stone-300)',
+            UIFgSecondary: 'var(--color-stone-400)',
+            UIFgPrimary: 'var(--color-stone-500)',
+        }}
+    />
+
+    <ColorItem
+        title="Primary"
+        colors={{
+            PrimaryBg: 'var(--color-lime-100)',
+            PrimaryUI: 'var(--color-lime-200)',
+            PrimaryFG: 'var(--color-lime-300)',
+        }}
+    />
+
+    <ColorItem
+        title="Accent 1"
+        colors={{
+            Accent1Bg: 'var(--color-amber-100)',
+            Accent1UI: 'var(--color-amber-200)',
+            Accent1FG: 'var(--color-amber-300)',
+        }}
+    />
+
+    <ColorItem
+        title="Accent 2"
+        colors={{
+            Accent2Bg: 'var(--color-yellow-100)',
+            Accent2UI: 'var(--color-yellow-200)',
+            Accent2FG: 'var(--color-yellow-300)',
+        }}
+    />
+
+</ColorPalette>
+
+## Dark Mode
+
+<ColorPalette>
+    <ColorItem
+        title="UI Dark"
+        colors={{
+            UIBgTertiary: 'var(--color-stone-500)',
+            UIBgSecondary: 'var(--color-stone-400)',
+            UIBgPrimary: 'var(--color-stone-300)',
+            UIFgTertiary: 'var(--color-stone-200)',
+            UIFgSecondary: 'var(--color-stone-100)',
+            UIFgPrimary: 'var(--color-stone-50)',
+        }}
+    />
+
+    <ColorItem
+        title="Primary Dark"
+        colors={{
+            PrimaryBg: 'var(--color-lime-200)',
+            PrimaryUI: 'var(--color-lime-200)',
+            PrimaryFG: 'var(--color-gray-50)',
+        }}
+    />
+
+    <ColorItem
+        title="Accent 1 Dark"
+        colors={{
+            Accent1Bg: 'var(--color-amber-200)',
+            Accent1UI: 'var(--color-amber-200)',
+            Accent1FG: 'var(--color-gray-50)',
+        }}
+    />
+
+    <ColorItem
+        title="Accent 2 Dark"
+        colors={{
+            Accent2Bg: 'var(--color-yellow-200)',
+            Accent2UI: 'var(--color-yellow-200)',
+            Accent2FG: 'var(--color-gray-50)',
+        }}
+    />
+
+</ColorPalette>
+
+## Light Mode Primatives
+
+<ColorPalette>
+    <ColorItem
+        title="Gray"
+        subtitle="Cool Grays"
+        colors={{
+            Gray50: '#f9fafb',
+            Gray100: '#e5e7eb',
+            Gray200: '#9ca3af',
+            Gray300: '#4b5563',
+            Gray400: '#1f2937',
+            Gray500: '#030712',
+        }}
+    />
+
+    <ColorItem
+        title="Zinc"
+        subtitle="Cool Grays"
+        colors={{
+            Zinc50: '#fafafa',
+            Zinc100: '#e4e4e7',
+            Zinc200: '#a1a1aa',
+            Zinc300: '#52525b',
+            Zinc400: '#27272a',
+            Zinc500: '#09090b',
+        }}
+    />
+
+    <ColorItem
+        title="Neutral"
+        subtitle="Cool Grays"
+        colors={{
+            Neutral50: '#fafafa',
+            Neutral100: '#e5e5e5',
+            Neutral200: '#a3a3a3',
+            Neutral300: '#525252',
+            Neutral400: '#262626',
+            Neutral500: '#0a0a0a',
+        }}
+    />
+
+    <ColorItem
+        title="Stone"
+        subtitle="Cool Grays"
+        colors={{
+            Stone50: '#fafaf9',
+            Stone100: '#e7e5e4',
+            Stone200: '#a8a29e',
+            Stone300: '#57534e',
+            Stone400: '#292524',
+            Stone500: '#0c0a09',
+        }}
+    />
+
+    <ColorItem
+        title="Red"
+        subtitle="Warm Reds"
+        colors={{
+            Red100: '#fecaca',
+            Red200: '#dc2626',
+            Red300: '#450a0a',
+        }}
+    />
+
+    <ColorItem
+        title="Orange"
+        subtitle="Warm Oranges"
+        colors={{
+            Orange100: '#fed7aa',
+            Orange200: '#ea580c',
+            Orange300: '#431407',
+        }}
+    />
+
+    <ColorItem
+        title="Amber"
+        subtitle="Warm Yellows"
+        colors={{
+            Amber100: '#fde68a',
+            Amber200: '#d97706',
+            Amber300: '#451a03',
+        }}
+    />
+
+    <ColorItem
+        title="Yellow"
+        subtitle="Warm Yellows"
+        colors={{
+            Yellow100: '#fef08a',
+            Yellow200: '#ca8a04',
+            Yellow300: '#422006',
+        }}
+    />
+
+    <ColorItem
+        title="Lime"
+        subtitle="Cool Greens"
+        colors={{
+            Lime100: '#d9f99d',
+            Lime200: '#65a30d',
+            Lime300: '#1a2e05',
+        }}
+    />
+
+    <ColorItem
+        title="Green"
+        subtitle="Cool Greens"
+        colors={{
+            Green100: '#bbf7d0',
+            Green200: '#16a34a',
+            Green300: '#052e16',
+        }}
+    />
+
+    <ColorItem
+        title="Emerald"
+        subtitle="Cool Greens"
+        colors={{
+            Emerald100: '#a7f3d0',
+            Emerald200: '#059669',
+            Emerald300: '#022c22',
+        }}
+    />
+
+    <ColorItem
+        title="Teal"
+        subtitle="Cool Blues"
+        colors={{
+            Teal100: '#99f6e4',
+            Teal200: '#0d9488',
+            Teal300: '#042f2e',
+        }}
+    />
+
+    <ColorItem
+        title="Cyan"
+        subtitle="Blues"
+        colors={{
+            Cyan100: '#a5f3fc',
+            Cyan200: '#0891b2',
+            Cyan300: '#083344',
+        }}
+    />
+
+    <ColorItem
+        title="Sky"
+        subtitle="Blues"
+        colors={{
+            Sky100: '#bae6fd',
+            Sky200: '#0284c7',
+            Sky300: '#082f49',
+        }}
+    />
+
+    <ColorItem
+        title="Blue"
+        subtitle="Blues"
+        colors={{
+            Blue100: '#bfdbfe',
+            Blue200: '#2563eb',
+            Blue300: '#172554',
+        }}
+    />
+
+    <ColorItem
+        title="Indigo"
+        subtitle="Blues"
+        colors={{
+            Indigo100: '#c7d2fe',
+            Indigo200: '#4f46e5',
+            Indigo300: '#1e1b4b',
+        }}
+    />
+
+    <ColorItem
+        title="Violet"
+        subtitle="Purples"
+        colors={{
+            Violet100: '#ddd6fe',
+            Violet200: '#7c3aed',
+            Violet300: '#2e1065',
+        }}
+    />
+
+    <ColorItem
+        title="Purple"
+        subtitle="Purples"
+        colors={{
+            Purple100: '#e9d5ff',
+            Purple200: '#9333ea',
+            Purple300: '#3b0764',
+        }}
+    />
+
+    <ColorItem
+        title="Fuchsia"
+        subtitle="Purples"
+        colors={{
+            Fuchsia100: '#f5d0fe',
+            Fuchsia200: '#c026d3',
+            Fuchsia300: '#4a044e',
+        }}
+    />
+
+    <ColorItem
+        title="Pink"
+        subtitle="Pinks"
+        colors={{
+            Pink100: '#fbcfe8',
+            Pink200: '#db2777',
+            Pink300: '#500724',
+        }}
+    />
+
+    <ColorItem
+        title="Rose"
+        subtitle="Reds"
+        colors={{
+            Rose100: '#fecdd3',
+            Rose200: '#e11d48',
+            Rose300: '#4c0519',
+        }}
+    />
+
+</ColorPalette>
+
+## Dark Mode Primatives
+
+<ColorPalette>
+    <ColorItem
+        title="Gray"
+        subtitle="Cool Grays"
+        colors={{
+            Gray50: '#fafbfc',
+            Gray100: '#eaeef2',
+            Gray200: '#a3adb9',
+            Gray300: '#56637a',
+            Gray400: '#273446',
+            Gray500: '#0c1321',
+        }}
+    />
+
+    <ColorItem
+        title="Zinc"
+        subtitle="Cool Grays"
+        colors={{
+            Zinc50: '#fafafa',
+            Zinc100: '#e2e2e5',
+            Zinc200: '#a8adb6',
+            Zinc300: '#555c6b',
+            Zinc400: '#2a2d34',
+            Zinc500: '#0c0e11',
+        }}
+    />
+
+    <ColorItem
+        title="Neutral"
+        subtitle="Cool Grays"
+        colors={{
+            Neutral50: '#fafafa',
+            Neutral100: '#e7e7e7',
+            Neutral200: '#a8a8a8',
+            Neutral300: '#555555',
+            Neutral400: '#2a2a2a',
+            Neutral500: '#0d0d0d',
+        }}
+    />
+
+    <ColorItem
+        title="Stone"
+        subtitle="Cool Grays"
+        colors={{
+            Stone50: '#f9f9f8',
+            Stone100: '#e8e6e5',
+            Stone200: '#ada9a5',
+            Stone300: '#5c5852',
+            Stone400: '#2f2b24',
+            Stone500: '#11100c',
+        }}
+    />
+
+    <ColorItem
+        title="Red"
+        subtitle="Warm Reds"
+        colors={{
+            Red100: '#fee0e0',
+            Red200: '#d91f1f',
+            Red300: '#4f0a0a',
+        }}
+    />
+
+    <ColorItem
+        title="Orange"
+        subtitle="Warm Oranges"
+        colors={{
+            Orange100: '#fed1b2',
+            Orange200: '#e04607',
+            Orange300: '#4c1804',
+        }}
+    />
+
+    <ColorItem
+        title="Amber"
+        subtitle="Warm Yellows"
+        colors={{
+            Amber100: '#fde075',
+            Amber200: '#d15c06',
+            Amber300: '#512303',
+        }}
+    />
+
+    <ColorItem
+        title="Yellow"
+        subtitle="Warm Yellows"
+        colors={{
+            Yellow100: '#fedc75',
+            Yellow200: '#c38d05',
+            Yellow300: '#513a06',
+        }}
+    />
+
+    <ColorItem
+        title="Lime"
+        subtitle="Cool Greens"
+        colors={{
+            Lime100: '#dbfca0',
+            Lime200: '#71990f',
+            Lime300: '#243b06',
+        }}
+    />
+
+    <ColorItem
+        title="Green"
+        subtitle="Cool Greens"
+        colors={{
+            Green100: '#b5f7b5',
+            Green200: '#1da854',
+            Green300: '#0c2a12',
+        }}
+    />
+
+    <ColorItem
+        title="Emerald"
+        subtitle="Cool Greens"
+        colors={{
+            Emerald100: '#aaf5c7',
+            Emerald200: '#008a36',
+            Emerald300: '#003319',
+        }}
+    />
+
+    <ColorItem
+        title="Teal"
+        subtitle="Cool Blues"
+        colors={{
+            Teal100: '#9cf1e9',
+            Teal200: '#006d64',
+            Teal300: '#002a27',
+        }}
+    />
+
+    <ColorItem
+        title="Cyan"
+        subtitle="Blues"
+        colors={{
+            Cyan100: '#a7f8ff',
+            Cyan200: '#0b8294',
+            Cyan300: '#00434d',
+        }}
+    />
+
+    <ColorItem
+        title="Sky"
+        subtitle="Blues"
+        colors={{
+            Sky100: '#c2dfff',
+            Sky200: '#0166a4',
+            Sky300: '#002e4d',
+        }}
+    />
+
+    <ColorItem
+        title="Blue"
+        subtitle="Blues"
+        colors={{
+            Blue100: '#c7dbff',
+            Blue200: '#1a5bbf',
+            Blue300: '#00274d',
+        }}
+    />
+
+        <ColorItem
+            title="Indigo"
+            subtitle="Blues"
+            colors={{
+                Indigo100: '#cdd2fe',
+                Indigo200: '#3e37d3',
+                Indigo300: '#13103d',
+            }}
+        />
+
+        <ColorItem
+            title="Violet"
+            subtitle="Purples"
+            colors={{
+                Violet100: '#d9d3fe',
+                Violet200: '#5e25b5',
+                Violet300: '#21143f',
+            }}
+        />
+
+        <ColorItem
+            title="Purple"
+            subtitle="Purples"
+            colors={{
+                Purple100: '#e2cffc',
+                Purple200: '#7227a1',
+                Purple300: '#280a38',
+            }}
+        />
+
+        <ColorItem
+            title="Fuchsia"
+            subtitle="Purples"
+            colors={{
+                Fuchsia100: '#efc9fc',
+                Fuchsia200: '#9f1aae',
+                Fuchsia300: '#370b35',
+            }}
+        />
+
+        <ColorItem
+            title="Pink"
+            subtitle="Pinks"
+            colors={{
+                Pink100: '#f8c2df',
+                Pink200: '#b82063',
+                Pink300: '#3c0d20',
+            }}
+        />
+
+        <ColorItem
+            title="Rose"
+            subtitle="Reds"
+            colors={{
+                Rose100: '#fec3c6',
+                Rose200: '#c8193d',
+                Rose300: '#440c1a',
+            }}
+        />
+
+</ColorPalette>

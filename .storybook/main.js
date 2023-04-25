@@ -8,7 +8,6 @@ const config = {
         'storybook-addon-pseudo-states',
         '@storybook/addon-styling',
         'storybook-addon-rem',
-        '@storybook/addon-coverage',
     ],
     framework: {
         name: '@storybook/web-components-vite',

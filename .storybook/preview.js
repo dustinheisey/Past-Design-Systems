@@ -1,4 +1,5 @@
 import '../dist/index.css';
+import '../styles/tokens.css';
 import { withThemeByDataAttribute } from '@storybook/addon-styling';
 import { setCustomElementsManifest } from '@storybook/web-components';
 import customElements from '../custom-elements.json';
@@ -19,6 +20,17 @@ export default {
         },
         viewport: {
             viewports: INITIAL_VIEWPORTS,
+        },
+        options: {
+            storySort: {
+                order: [
+                    'Tokens',
+                    'Elements',
+                    'Components',
+                    'Regions',
+                    'Templates',
+                ],
+            },
         },
     },
     decorators: [

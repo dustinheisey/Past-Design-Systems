@@ -1,0 +1,309 @@
+blockquote {
+    font-style: italic;
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-body);
+    margin: var(--space-l) 0;
+    padding: var(--space-m);
+    border-left: 4px solid #ccc;
+}
+
+dd {
+    margin-left: var(--space-m);
+}
+
+dl {
+    margin: var(--space-m) 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+figcaption {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-body);
+    margin: var(--space-s) 0;
+    text-align: center;
+}
+
+figure {
+    margin: var(--space-m) 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: var(--space-l) 0;
+}
+
+ul {
+    margin: var(--space-m) 0;
+    padding-left: var(--space-m);
+    list-style: disc;
+}
+
+ol {
+    margin: var(--space-m) 0;
+    padding-left: var(--space-m);
+    list-style: decimal;
+}
+
+p {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-body);
+    margin: var(--space-m) 0;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-body);
+    margin: var(--space-m) 0;
+    white-space: pre-wrap;
+}
+
+a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-s);
+}
+
+small {
+    font-size: var(--font-size-xs);
+}
+
+audio,
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+math {
+    display: block;
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-body);
+    margin: var(--space-m) 0;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    margin: var(--space-m) 0;
+    width: 100%;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: var(--space-xs);
+    text-align: center;
+}
+
+col {
+    width: 100%;
+}
+
+colgroup {
+    width: 100%;
+}
+
+tbody {
+    vertical-align: middle;
+}
+
+td,
+th {
+    border: 1px solid #ccc;
+    padding: var(--space-xs) var(--space-s);
+    text-align: left;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+thead {
+    font-weight: bold;
+}
+
+tr {
+    vertical-align: middle;
+}
+
+button {
+    border: none;
+    border-radius: var(--border-radius-pill);
+    cursor: pointer;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-headline);
+    letter-spacing: var(--letter-spacing-overline);
+    margin: var(--space-m) 0;
+    padding: var(--space-s) var(--space-m);
+    transition: all 0.3s ease;
+}
+
+button.primary {
+    background-color: #0070f3;
+    color: #fff;
+}
+
+button.secondary {
+    background-color: #fff;
+    border: 1px solid #0070f3;
+    color: #0070f3;
+}
+
+button.tertiary {
+    background-color: transparent;
+    border: none;
+    color: #0070f3;
+}
+
+button.circular {
+    border-radius: var(--border-radius-circle);
+    height: 40px;
+    width: 40px;
+}
+
+datalist {
+    margin: var(--space-m) 0;
+}
+
+fieldset {
+    border: none;
+    margin: var(--space-m) 0;
+    padding: 0;
+}
+
+form {
+    margin: var(--space-m) 0;
+}
+
+input[type='text'],
+input[type='radio'],
+input[type='checkbox'],
+input[type='range'],
+select,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-m);
+    margin: var(--space-xs) 0;
+    padding: var(--space-xs) var(--space-s);
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-body);
+    margin: var(--space-m) 0 var(--space-xs);
+}
+
+legend {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-headline);
+}
+
+meter {
+    display: block;
+    margin: var(--space-m) 0;
+}
+
+select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><path d="M5 5L0 0h10L5 5z"/></svg>')
+        no-repeat right center/8px var(--font-size-m) #fff;
+    padding-right: calc(var(--font-size-m) * 1.5);
+}
+
+output {
+    display: block;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-body);
+    margin: var(--space-m) 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+details {
+    margin: var(--space-m) 0;
+}
+
+dialog {
+    padding: var(--space-m);
+}
+
+h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-headline);
+    line-height: var(--line-height-headline);
+    letter-spacing: var(--letter-spacing-headline);
+    margin: var(--space-l) 0 var(--space-m);
+}
+
+h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-headline);
+    line-height: var(--line-height-headline);
+    letter-spacing: var(--letter-spacing-headline);
+    margin: var(--space-l) 0 var(--space-m);
+}
+
+h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-headline);
+    line-height: var(--line-height-headline);
+    letter-spacing: var(--letter-spacing-headline);
+    margin: var(--space-l) 0 var(--space-m);
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-headline);
+    line-height: var(--line-height-headline);
+    letter-spacing: var(--letter-spacing-headline);
+    margin: var(--space-l) 0 var(--space-m);
+}
+
+h5 {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-headline);
+    line-height: var(--line-height-headline);
+    letter-spacing: var(--letter-spacing-headline);
+    margin: var(--space-l) 0 var(--space-m);
+}
+
+h6 {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-headline);
+    line-height: var(--line-height-headline);
+    letter-spacing: var(--letter-spacing-headline);
+    margin: var(--space-l) 0 var(--space-m);
+}

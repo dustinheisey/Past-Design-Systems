@@ -1,0 +1,88 @@
+.btn {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-family: inherit;
+    margin: 0;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-image: none;
+    border-radius: 0.375rem;
+    background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
+.btn-secondary {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-family: inherit;
+    margin: 0;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-image: none;
+    border-radius: 0.375rem;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
+input[type='text'] {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    --tw-text-opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    --tw-divide-y-reverse: 0;
+    box-sizing: border-box;
+    border-style: solid;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    margin: 0;
+    appearance: none;
+    background-color: #fff;
+    border-width: 1px;
+    padding-top: 0.5rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0.25rem;
+    display: block;
+    width: 100%;
+    border-radius: 0.375rem;
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
