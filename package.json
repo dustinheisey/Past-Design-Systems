@@ -4,6 +4,10 @@
     "version": "1.0.0",
     "description": "Marketing website design system",
     "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dustinheisey/lit-design-system.git"
+    },
     "scripts": {
         "lint:eslint": "eslint '**/*.js'",
         "lint:lit-analyzer": "lit-analyzer 'src/**/*.js'",
@@ -29,20 +33,20 @@
         "name": "Dustin Heisey"
     },
     "dependencies": {
-        "lit": "^2.2.4"
+        "lit": "^2.7.2"
     },
     "devDependencies": {
-        "@babel/eslint-parser": "^7.17.0",
-        "@custom-elements-manifest/analyzer": "^0.6.3",
+        "@babel/eslint-parser": "^7.21.3",
+        "@custom-elements-manifest/analyzer": "^0.8.0",
         "@storybook/addon-a11y": "^7.0.7",
         "@storybook/addon-essentials": "^7.0.7",
         "@storybook/addon-links": "^7.0.7",
-        "@storybook/addon-styling": "^1.0.2",
+        "@storybook/addon-styling": "^1.0.3",
         "@storybook/blocks": "^7.0.7",
         "@storybook/web-components-vite": "^7.0.7",
         "@tailwindcss/forms": "^0.5.3",
         "@tailwindcss/typography": "^0.5.9",
-        "@webcomponents/webcomponentsjs": "^2.6.0",
+        "@webcomponents/webcomponentsjs": "^2.8.0",
         "autoprefixer": "^10.4.14",
         "chromatic": "^6.17.3",
         "eslint": "^8.39.0",
@@ -62,12 +66,14 @@
         "storybook": "^7.0.7",
         "storybook-addon-pseudo-states": "^2.0.1",
         "storybook-addon-rem": "^1.3.0",
-        "storybook-design-token": "^3.0.0-beta.2",
-        "storybook-icon-gallery": "^1.2.1",
-        "tailwindcss": "^3.3.1"
+        "tailwindcss": "^3.3.2"
     },
     "customElements": "custom-elements.json",
     "lint-staged": {
         "*.js": "eslint --fix"
+    },
+    "engines": {
+        "node": ">=12.0.0",
+        "npm": ">=6.0.0"
     }
 }

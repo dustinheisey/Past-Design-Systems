@@ -1,0 +1,10 @@
+figcaption {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-body);
+    margin: var(--space-s) 0;
+    text-align: center;
+}
+
+figure {
+    margin: var(--space-m) 0;
+}

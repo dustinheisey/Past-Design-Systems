@@ -1,0 +1,68 @@
+dd {
+    margin-left: var(--space-m);
+}
+
+dl {
+    margin: var(--space-m) 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+ul {
+    margin: var(--space-m) 0;
+    padding-left: var(--space-m);
+    list-style: disc;
+}
+
+ol {
+    margin: var(--space-m) 0;
+    padding-left: var(--space-m);
+    list-style: decimal;
+}
+
+table {
+    border-collapse: collapse;
+    margin: var(--space-m) 0;
+    width: 100%;
+}
+
+col {
+    width: 100%;
+}
+
+colgroup {
+    width: 100%;
+}
+
+tbody {
+    vertical-align: middle;
+}
+
+td,
+th {
+    border: 1px solid #ccc;
+    padding: var(--space-xs) var(--space-s);
+    text-align: left;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+thead {
+    font-weight: bold;
+}
+
+tr {
+    vertical-align: middle;
+}
+
+details {
+    margin: var(--space-m) 0;
+}
+
+dialog {
+    padding: var(--space-m);
+}

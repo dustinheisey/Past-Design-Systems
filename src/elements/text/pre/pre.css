@@ -1,0 +1,7 @@
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-body);
+    margin: var(--space-m) 0;
+    white-space: pre-wrap;
+}

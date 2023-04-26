@@ -32,10 +32,10 @@ class SpinButtonsComponent extends LitElement {
             <button @click="${this.decrement}">-</button>
             <input
                 type="number"
-                .value="${this.value}"
-                .min="${this.min}"
-                .max="${this.max}"
-                .step="${this.step}"
+                .value="${this.value.toString()}"
+                .min="${this.min.toString()}"
+                .max="${this.max.toString()}"
+                .step="${this.step.toString()}"
                 @input="${this.onInput}"
             />
             <button @click="${this.increment}">+</button>

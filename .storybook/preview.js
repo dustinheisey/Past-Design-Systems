@@ -1,5 +1,4 @@
-import '../dist/index.css';
-import '../styles/tokens.css';
+import '../src/style.css';
 import { withThemeByDataAttribute } from '@storybook/addon-styling';
 import { setCustomElementsManifest } from '@storybook/web-components';
 import customElements from '../custom-elements.json';

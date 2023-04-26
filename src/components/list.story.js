@@ -1,7 +1,7 @@
 import { html } from 'lit';
 
 export default {
-    title: 'Elements/List',
+    title: 'Components/List',
 };
 
 export const UnorderedList = () => html`

@@ -1,0 +1,103 @@
+import { Meta } from '@storybook/blocks';
+import { getProperty } from '../../utils/functions.js';
+
+<Meta title="Tokens/Border Radius" />
+
+# Border Radius
+
+<table>
+    <thead>
+        <tr>
+            <th>Token</th>
+            <th>Value</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code>--border-radius-s</code>
+            </td>
+            <td>{getProperty('--border-radius-s')}</td>
+            <td>
+                <div
+                    class="rounded-demo"
+                    style={{
+                        backgroundColor: 'var(--color-primary-ui)',
+                        width: 'var(--space-xl)',
+                        height: 'var(--space-xl)',
+                        borderRadius: 'var(--border-radius-s)',
+                    }}
+                ></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>--border-radius-m</code>
+            </td>
+            <td>{getProperty('--border-radius-m')}</td>
+            <td>
+                <div
+                    class="rounded-demo"
+                    style={{
+                        backgroundColor: 'var(--color-primary-ui)',
+                        width: 'var(--space-xl)',
+                        height: 'var(--space-xl)',
+                        borderRadius: 'var(--border-radius-m)',
+                    }}
+                ></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>--border-radius-l</code>
+            </td>
+            <td>{getProperty('--border-radius-l')}</td>
+            <td>
+                <div
+                    class="rounded-demo"
+                    style={{
+                        backgroundColor: 'var(--color-primary-ui)',
+                        width: 'var(--space-xl)',
+                        height: 'var(--space-xl)',
+                        borderRadius: 'var(--border-radius-l)',
+                    }}
+                ></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>--border-radius-pill</code>
+            </td>
+            <td>{getProperty('--border-radius-pill')}</td>
+            <td>
+                <div
+                    class="rounded-demo"
+                    style={{
+                        backgroundColor: 'var(--color-primary-ui)',
+                        width: 'var(--space-2xl)',
+                        height: 'var(--space-l)',
+                        borderRadius: 'var(--border-radius-pill)',
+                    }}
+                ></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>--border-radius-circle</code>
+            </td>
+            <td>{getProperty('--border-radius-circle')}</td>
+            <td>
+                <div
+                    class="rounded-demo"
+                    style={{
+                        backgroundColor: 'var(--color-primary-ui)',
+                        width: 'var(--space-xl)',
+                        height: 'var(--space-xl)',
+                        borderRadius: 'var(--border-radius-circle)',
+                    }}
+                ></div>
+            </td>
+        </tr>
+    </tbody>
+</table>

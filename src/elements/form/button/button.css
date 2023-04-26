@@ -1,0 +1,92 @@
+button {
+    border: none;
+    border-radius: var(--border-radius-pill);
+    cursor: pointer;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-headline);
+    letter-spacing: var(--letter-spacing-overline);
+    margin: var(--space-m) 0;
+    padding: var(--space-s) var(--space-m);
+    transition: all 0.3s ease;
+}
+
+button.primary {
+    background-color: #0070f3;
+    color: #fff;
+}
+
+button.secondary {
+    background-color: #fff;
+    border: 1px solid #0070f3;
+    color: #0070f3;
+}
+
+button.tertiary {
+    background-color: transparent;
+    border: none;
+    color: #0070f3;
+}
+
+button.circular {
+    border-radius: var(--border-radius-circle);
+    height: 40px;
+    width: 40px;
+}
+
+.btn {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-family: inherit;
+    margin: 0;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-image: none;
+    border-radius: 0.375rem;
+    background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
+.btn-secondary {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-family: inherit;
+    margin: 0;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-image: none;
+    border-radius: 0.375rem;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+        var(--tw-shadow, 0 0 #0000);
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}

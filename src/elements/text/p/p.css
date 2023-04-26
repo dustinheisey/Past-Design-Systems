@@ -1,0 +1,5 @@
+p {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-body);
+    margin: var(--space-m) 0;
+}

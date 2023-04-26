@@ -13,7 +13,7 @@ const config = {
         name: '@storybook/web-components-vite',
     },
     docs: {
-        autodocs: 'tag',
+        autodocs: true,
     },
 };
 export default config;

@@ -1,7 +1,7 @@
 import { html } from 'lit';
 
 export default {
-    title: 'Elements/Definition List',
+    title: 'Components/Definition List',
 };
 
 export const Default = () => html`
