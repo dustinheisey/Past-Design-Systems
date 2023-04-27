@@ -1,9 +1,9 @@
-import { html } from 'lit';
-import './ds-toggle.js';
+import { html } from "lit";
+import "./ds-toggle.js";
 
 export default {
-    title: 'Components/Switch',
-    component: 'ds-toggle',
+  title: "Components/Switch",
+  component: "ds-toggle",
 };
 
 export const Default = () => html` <ds-toggle></ds-toggle> `;

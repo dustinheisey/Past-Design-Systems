@@ -1,12 +1,23 @@
-import { html } from 'lit';
+import { html } from "lit";
 
 export default {
-    title: 'Elements/Text/Label',
+  title: "Elements/Text/Label",
+  argTypes: {
+    required: {
+      control: "boolean",
+      description: "Input Required?",
+      table: {
+        type: { summary: "boolean" },
+        defaultValue: { summary: "false" },
+      },
+    },
+  },
 };
 
-export const Default = () => html`
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br /><br />
-    </form>
-`;
+export const Default = ({ required }) =>
+  html` <label class="${required ? "required" : ""}">Input Label</label> `;
+
+export const Required = () =>
+  html` <label class="required">Input Label</label> `;
+
+export const Optional = () => html` <label>Input Label</label> `;

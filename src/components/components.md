@@ -1,24 +1,24 @@
--   alert
--   progress ring
--   spinner
--   button group
--   card
--   carousel
--   details / accordion
--   dialog
+- alert
+- progress ring
+- spinner
+- button group
+- card
+- carousel
+- details / accordion
+- dialog
 
--   radio button
--   radio group
--   rating
--   skeleton
--   switch / toggle
--   tabs
--   tooltip
--   popover
--   strip "card overflow swipe"
--   navbar
--   bottombar
--   banner
--   spin-buttons
--   toggletip
--   breadcrumb
+- radio button
+- radio group
+- rating
+- skeleton
+- switch / toggle
+- tabs
+- tooltip
+- popover
+- strip "card overflow swipe"
+- navbar
+- bottombar
+- banner
+- spin-buttons
+- toggletip
+- breadcrumb

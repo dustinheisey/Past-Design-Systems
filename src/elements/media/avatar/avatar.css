@@ -1,0 +1,14 @@
+.avatar {
+  border-radius: 50%;
+  inline-size: 2em;
+  aspect-ratio: 1/1;
+  font-size: 1.25em;
+}
+
+.avatar-s {
+  font-size: 1em;
+}
+
+.avatar-l {
+  font-size: 1.5em;
+}

@@ -1,5 +1,33 @@
 p {
-    font-size: var(--font-size-m);
-    line-height: var(--line-height-body);
-    margin: var(--space-m) 0;
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-body);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body);
+  color: var(--color-fg-primary);
+}
+
+.lead {
+  font-size: var(--font-size-l);
+}
+
+.overline {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-family-body);
+  letter-spacing: var(--letter-spacing-overline);
+  text-transform: uppercase;
+  color: var(--color-primary-fg);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-overline);
+  font-weight: var(--font-weight-headline);
+}
+
+.caption,
+.caption > * {
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+  text-align: center;
+  line-height: var(--line-height-body);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body);
 }

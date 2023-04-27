@@ -1,0 +1,239 @@
+[inset="3xs"] {
+	--inset: var(--space-3xs) !important;
+}
+
+[inset="2xs"] {
+	--inset: var(--space-2xs) !important;
+}
+
+[inset="xs"] {
+	--inset: var(--space-xs) !important;
+}
+
+[inset="s"] {
+	--inset: var(--space-s) !important;
+}
+
+[inset="m"] {
+	--inset: var(--space-m) !important;
+}
+
+[inset="l"] {
+	--inset: var(--space-l) !important;
+}
+
+[inset="xl"] {
+	--inset: var(--space-xl) !important;
+}
+
+[inset="2xl"] {
+	--inset: var(--space-2xl) !important;
+}
+
+[inset="3xl"] {
+	--inset: var(--space-3xl) !important;
+}
+
+[inset="4xl"] {
+	--inset: var(--space-4xl) !important;
+}
+
+[inset="3xs-2xs"] {
+	--inset: var(--space-3xs-2xs) !important;
+}
+
+[inset="2xs-xs"] {
+	--inset: var(--space-2xs-xs) !important;
+}
+
+[inset="xs-s"] {
+	--inset: var(--space-xs-s) !important;
+}
+
+[inset="s-m"] {
+	--inset: var(--space-s-m) !important;
+}
+
+[inset="m-l"] {
+	--inset: var(--space-m-l) !important;
+}
+
+[inset="l-xl"] {
+	--inset: var(--space-l-xl) !important;
+}
+
+[inset="xl-2xl"] {
+	--inset: var(--space-xl-2xl) !important;
+}
+
+[inset="2xl-3xl"] {
+	--inset: var(--space-2xl-3xl) !important;
+}
+
+[inset="3xl-4xl"] {
+	--inset: var(--space-3xl-4xl) !important;
+}
+
+[inset] > * {
+	--inset: initial;
+}
+
+[gap="3xs"] {
+	--gap: var(--space-3xs) !important;
+}
+
+[gap="2xs"] {
+	--gap: var(--space-2xs) !important;
+}
+
+[gap="xs"] {
+	--gap: var(--space-xs) !important;
+}
+
+[gap="s"] {
+	--gap: var(--space-s) !important;
+}
+
+[gap="m"] {
+	--gap: var(--space-m) !important;
+}
+
+[gap="l"] {
+	--gap: var(--space-l) !important;
+}
+
+[gap="xl"] {
+	--gap: var(--space-xl) !important;
+}
+
+[gap="2xl"] {
+	--gap: var(--space-2xl) !important;
+}
+
+[gap="3xl"] {
+	--gap: var(--space-3xl) !important;
+}
+
+[gap="4xl"] {
+	--gap: var(--space-4xl) !important;
+}
+
+[gap="3xs-2xs"] {
+	--gap: var(--space-3xs-2xs) !important;
+}
+
+[gap="2xs-xs"] {
+	--gap: var(--space-2xs-xs) !important;
+}
+
+[gap="xs-s"] {
+	--gap: var(--space-xs-s) !important;
+}
+
+[gap="s-m"] {
+	--gap: var(--space-s-m) !important;
+}
+
+[gap="m-l"] {
+	--gap: var(--space-m-l) !important;
+}
+
+[gap="l-xl"] {
+	--gap: var(--space-l-xl) !important;
+}
+
+[gap="xl-2xl"] {
+	--gap: var(--space-xl-2xl) !important;
+}
+
+[gap="2xl-3xl"] {
+	--gap: var(--space-2xl-3xl) !important;
+}
+
+[gap="3xl-4xl"] {
+	--gap: var(--space-3xl-4xl) !important;
+}
+
+[gap] > * {
+	--gap: initial;
+}
+
+[space="3xs"] {
+	--space: var(--space-3xs) !important;
+}
+
+[space="2xs"] {
+	--space: var(--space-2xs) !important;
+}
+
+[space="xs"] {
+	--space: var(--space-xs) !important;
+}
+
+[space="s"] {
+	--space: var(--space-s) !important;
+}
+
+[space="m"] {
+	--space: var(--space-m) !important;
+}
+
+[space="l"] {
+	--space: var(--space-l) !important;
+}
+
+[space="xl"] {
+	--space: var(--space-xl) !important;
+}
+
+[space="2xl"] {
+	--space: var(--space-2xl) !important;
+}
+
+[space="3xl"] {
+	--space: var(--space-3xl) !important;
+}
+
+[space="4xl"] {
+	--space: var(--space-4xl) !important;
+}
+
+[space="3xs-2xs"] {
+	--space: var(--space-3xs-2xs) !important;
+}
+
+[space="2xs-xs"] {
+	--space: var(--space-2xs-xs) !important;
+}
+
+[space="xs-s"] {
+	--space: var(--space-xs-s) !important;
+}
+
+[space="s-m"] {
+	--space: var(--space-s-m) !important;
+}
+
+[space="m-l"] {
+	--space: var(--space-m-l) !important;
+}
+
+[space="l-xl"] {
+	--space: var(--space-l-xl) !important;
+}
+
+[space="xl-2xl"] {
+	--space: var(--space-xl-2xl) !important;
+}
+
+[space="2xl-3xl"] {
+	--space: var(--space-2xl-3xl) !important;
+}
+
+[space="3xl-4xl"] {
+	--space: var(--space-3xl-4xl) !important;
+}
+
+[space] > * {
+	--space: initial;
+}

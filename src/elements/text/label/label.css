@@ -1,6 +1,14 @@
 label {
-    display: block;
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-body);
-    margin: var(--space-m) 0 var(--space-xs);
+  display: block;
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  font-family: var(--font-family-body);
+  line-height: var(--light-height-body);
+  color: var(--color-fg-secondary);
+}
+
+.required::after {
+  content: "*";
+  font-size: var(--font-size-m);
+  color: var(--accent-1-ui, var(--color-accent1-ui));
 }

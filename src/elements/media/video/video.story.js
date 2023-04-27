@@ -1,12 +1,12 @@
-import { html } from 'lit';
+import { html } from "lit";
 
 export default {
-    title: 'Elements/Media/Video',
+  title: "Elements/Media/Video",
 };
 
 export const Default = () => html`
-    <video controls>
-        <source src="https://example.com/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
+  <video controls>
+    <source src="https://example.com/video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 `;

@@ -1,16 +1,16 @@
-import { html } from 'lit';
+import { html } from "lit";
 
 export default {
-    title: 'Components/Details',
+  title: "Components/Details",
 };
 
 export const Default = () => html`
-    <details>
-        <summary>Click to expand</summary>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            vehicula sapien at nisl bibendum, quis pretium massa elementum. Nunc
-            fermentum mi sit amet augue iaculis, vel pharetra metus pulvinar.
-        </p>
-    </details>
+  <details>
+    <summary>Click to expand</summary>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+      sapien at nisl bibendum, quis pretium massa elementum. Nunc fermentum mi
+      sit amet augue iaculis, vel pharetra metus pulvinar.
+    </p>
+  </details>
 `;

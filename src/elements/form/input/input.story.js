@@ -1,35 +1,80 @@
-import { html } from 'lit';
+import { html } from "lit";
+import "../../../components/ds-icon.js";
 
 export default {
-    title: 'Elements/Form/Input',
+  title: "Elements/Form/Input",
+  argTypes: {
+    variant: {
+      control: "select",
+      description: "Input Variant",
+      table: {
+        type: { summary: "string" },
+        defaultValue: { summary: "simple" },
+      },
+      options: ["simple", "filled", "underline"],
+    },
+  },
+  args: { variant: "simple" },
 };
 
-export const Input = () =>
-    html`
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-    `;
-
-export const Text = () => html`
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" /><br /><br />
+export const Default = ({ variant }) => html`
+  <label>Input Label</label>
+  <input class="input ${variant === "simple" ? "" : `input-${variant}`}" />
 `;
 
-export const Radio = () => html`
-    <input type="radio" id="male" name="gender" value="male" />
-    <label for="male">Male</label><br />
-    <input type="radio" id="female" name="gender" value="female" />
-    <label for="female">Female</label><br />
+export const SimpleInput = () => html`
+  <label>Input Label</label>
+  <input class="input" placeholder="Simple Input" />
 `;
 
-export const Checkbox = () => html`
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-    <label for="vehicle1"> I have a bike</label><br />
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-    <label for="vehicle2"> I have a car</label><br />
+SimpleInput.parameters = {
+  docs: {
+    description: {
+      story:
+        "Simple inputs should be used for basic input fields where no additional emphasis or styling is required. They should be used for fields like email, username, or password input fields.",
+    },
+    source: {
+      code: `
+<input class="input" placeholder="Simple Input" />
+      `,
+    },
+  },
+};
+
+export const FilledInput = () => html`
+  <label>Input Label</label>
+  <input class="input input-filled" placeholder="Filled Input" />
 `;
 
-export const Range = () => html`
-    <label for="volume">Volume:</label>
-    <input type="range" id="volume" name="volume" min="0" max="100" />
+FilledInput.parameters = {
+  docs: {
+    description: {
+      story:
+        "Filled inputs should be used when the input field needs additional emphasis or when the input field is being used in a dark mode interface. They should be used for fields like search, filter, or date input fields.",
+    },
+    source: {
+      code: `
+<input class="input input-filled" placeholder="Filled Input" />
+      `,
+    },
+  },
+};
+
+export const UnderlineInput = () => html`
+  <label>Input Label</label>
+  <input class="input input-underline" placeholder="Underline Input" />
 `;
+
+UnderlineInput.parameters = {
+  docs: {
+    description: {
+      story:
+        "Underline inputs should be used when the input field needs additional emphasis, but a solid fill or outline is not desired. They should be used for fields like website URL, phone number, or address input fields.",
+    },
+    source: {
+      code: `
+<input class="input input-underline" placeholder="Underline Input" />
+      `,
+    },
+  },
+};

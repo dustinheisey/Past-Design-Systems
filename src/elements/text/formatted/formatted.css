@@ -1,94 +1,60 @@
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 ins {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* 
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: var(--font-size-s);
+}
 
-export const Abbr = () => html`
-    <p>
-        The <abbr title="World Health Organization">WHO</abbr> is a specialized
-        agency of the United Nations.
-    </p>
-`;
+pre {
+  font-family: monospace;
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-body);
+  color: #abb2bf;
+  background-color: #282c34;
+  border-radius: 6px;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
 
-export const Bdi = () => html`
-    <p><bdi>Isolated Text</bdi> surrounded by normal text.</p>
-`;
+pre code {
+  display: block;
+}
 
-export const Bdo = () => html` <p><bdo dir="rtl">RTL Text</bdo></p> `;
+pre code span {
+  display: inline-block;
+  padding: 0 0.25rem;
+}
 
-export const Br = () => html` <p>Line 1<br />Line 2</p> `;
+pre code span.token {
+  color: #e06c75;
+}
 
-export const Cite = () => html` <p><cite>Book Title</cite> by Author Name</p> `;
+pre code span.keyword {
+  color: #c678dd;
+}
 
-export const Data = () => html`
-    <p>
-        The boiling point of water is
-        <data value="100">100 degrees Celsius</data>.
-    </p>
-`;
+pre code span.function {
+  color: #d19a66;
+}
 
-export const Dfn = () => html`
-    <p>The <dfn>HTML</dfn> stands for Hypertext Markup Language.</p>
-`;
+pre code span.comment {
+  color: #5c6370;
+}
 
-export const Em = () => html` <p><em>Emphasized Text</em></p> `;
+pre code span.string {
+  color: #98c379;
+}
 
-export const I = () => html` <p><i>Italicized Text</i></p> `;
+pre code span.operator {
+  color: #56b6c2;
+}
 
-export const Kbd = () => html`
-    <p>To save a file, press <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
-`;
-
-export const Mark = () => html`
-    <p>Search for <mark>keywords</mark> on this page.</p>
-`;
-
-export const Q = () => html` <p><q>Quoted Text</q></p> `;
-
-export const Rp = () => html` <p>The price is 100<rp>(</rp>$<rp>)</rp>.</p> `;
-
-export const Rt = () => html`
-    <p>
-        The <ruby>日本<rt>Nihon</rt></ruby> is a country in East Asia.
-    </p>
-`;
-
-export const Ruby = () => html`
-    <p>
-        The <ruby>日本<rt>Nihon</rt></ruby> is a country in East Asia.
-    </p>
-`;
-
-export const S = () => html` <p><s>Strikethrough Text</s></p> `;
-
-export const Samp = () => html`
-    <p>The output of the program is <samp>Hello, World!</samp></p>
-`;
-
-export const Strong = () => html` <p><strong>Strong Text</strong></p> `;
-
-export const Sub = () => html`
-    <p>The chemical formula for water is H<sub>2</sub>O.</p>
-`;
-
-export const Sup = () => html` <p>The square of 2 is 2<sup>2</sup>.</p> `;
-
-export const Time = () => html`
-    <p>The current time is <time>9:00 AM</time>.</p>
-`;
-
-export const U = () => html` <p><u>Underlined Text</u></p> `;
-
-export const Var = () => html` <p>The value of x is <var>x</var>.</p> `;
-
-export const Wbr = () => html` <div id="example-paragraphs">
-    <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
-    <p>Fernstraßen<wbr />bau<wbr />privat<wbr />finanzierungs<wbr />gesetz</p>
-    <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
-</div>`;
- */
+pre code span.punctuation {
+  color: #abb2bf;
+}
