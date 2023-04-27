@@ -34,32 +34,8 @@ select:focus {
 }
 
 .select-filled {
-  background: var(--color-bg-secondary);
-  border-color: var(--color-bg-secondary);
-}
-
-.select-filled::placeholder {
-  color: var(--color-fg-primary);
-}
-
-.select-filled {
   background-color: var(--color-bg-secondary);
   border-color: var(--color-bg-secondary);
-  background-image: none; /* remove the background image */
-  position: relative; /* make the ::after pseudo-element positioned relative to this element */
-}
-
-.select-filled:after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 0.375rem);
-  right: 0.75rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  background-image: url("path/to/caret-down-icon.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
 }
 
 .select-underline {

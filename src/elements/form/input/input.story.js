@@ -77,3 +77,17 @@ UnderlineInput.parameters = {
     },
   },
 };
+
+export const Checkbox = () => html`
+  <label>
+    <input type="checkbox" name="checkbox" />
+    Checkbox
+  </label>
+`;
+
+export const Radio = () => html`
+  <label>
+    <input type="radio" name="radio" />
+    Radio
+  </label>
+`;
