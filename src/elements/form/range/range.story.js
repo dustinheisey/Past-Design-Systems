@@ -1,5 +1,4 @@
 import { html } from "lit";
-import "../../../components/ds-icon.js";
 
 export default {
   title: "Elements/Form/Range",

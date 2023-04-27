@@ -30,5 +30,19 @@
 @import "./elements/text/math/math.css";
 @import "./elements/text/p/p.css";
 
-@import "./components/layout.css";
-@import "./components/fieldset/fieldset.css";
+@import "./layouts/center.css";
+@import "./layouts/cluster.css";
+@import "./layouts/cover.css";
+@import "./layouts/drawer.css";
+@import "./layouts/frame.css";
+@import "./layouts/grid.css";
+@import "./layouts/imposter.css";
+@import "./layouts/layout.css";
+@import "./layouts/masonry.css";
+@import "./layouts/quilted.css";
+@import "./layouts/reel.css";
+@import "./layouts/sidebar.css";
+@import "./layouts/stack.css";
+@import "./layouts/sticky.css";
+@import "./layouts/switcher.css";
+@import "./layouts/theme.css";

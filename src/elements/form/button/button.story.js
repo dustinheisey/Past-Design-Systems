@@ -1,5 +1,5 @@
 import { html } from "lit";
-import "../../../components/ds-icon.js";
+import "../../../components/prose/nds-icon/nds-icon.js";
 
 export default {
   title: "Elements/Form/Button",
@@ -111,13 +111,13 @@ TertiaryButtons.parameters = {
 export const CircularButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn btn-circular btn-s">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
     <button class="btn btn-circular btn-m">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
     <button class="btn btn-circular btn-l">
-      <ds-icon name="contact" type="fill"></ds-icon>
+      <nds-icon name="contact" type="fill"></nds-icon>
     </button>
   </div>
 `;
@@ -131,10 +131,10 @@ CircularButtons.parameters = {
     source: {
       code: `
 <button class="btn btn-circular">
-    <ds-icon
+    <nds-icon
         name="contact"
         type="fill"
-    ></ds-icon>
+    ></nds-icon>
 </button>
     `,
     },
@@ -144,15 +144,15 @@ CircularButtons.parameters = {
 export const IconLeftButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
       Button with Icon
     </button>
     <button class="btn btn-secondary">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
       Button with Icon
     </button>
     <button class="btn btn-tertiary">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
       Button with Icon
     </button>
   </div>
@@ -162,15 +162,15 @@ export const IconRightButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
       Button with Icon
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
     <button class="btn btn-secondary">
       Button with Icon
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
     <button class="btn btn-tertiary">
       Button with Icon
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
   </div>
 `;
@@ -178,13 +178,13 @@ export const IconRightButtons = () => html`
 export const IconButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
     <button class="btn btn-secondary">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
     <button class="btn btn-tertiary">
-      <ds-icon name="contact" type="fill" size="s"></ds-icon>
+      <nds-icon name="contact" type="fill" size="s"></nds-icon>
     </button>
   </div>
 `;
