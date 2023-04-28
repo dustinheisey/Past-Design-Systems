@@ -1,8 +1,8 @@
 import "./nds-timeline.js";
 
 export default {
-  title: "Components/Prose/Timeline",
-  component: "ds-timeline",
+  title: "Regions/Timeline",
+  component: "nds-timeline",
 };
 
 export const Default = {};
