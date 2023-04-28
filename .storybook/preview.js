@@ -22,7 +22,14 @@ export default {
     },
     options: {
       storySort: {
-        order: ["Tokens", "Elements", "Components", "Regions", "Templates"],
+        order: [
+          "Tokens",
+          "Elements",
+          "Layouts",
+          "Components",
+          "Regions",
+          "Templates",
+        ],
       },
     },
   },

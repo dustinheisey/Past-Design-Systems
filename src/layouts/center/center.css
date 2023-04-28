@@ -1,0 +1,9 @@
+/*? The Center - Center something */
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

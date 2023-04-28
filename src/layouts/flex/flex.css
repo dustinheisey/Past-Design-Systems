@@ -1,0 +1,7 @@
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--gap, var(--space-s));
+  justify-content: flex-start;
+  align-items: center;
+}

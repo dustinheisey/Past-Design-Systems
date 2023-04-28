@@ -1,0 +1,41 @@
+/*? The Split-Screen - Divide the screen into two equal or unequal parts */
+.split-screen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap, var(--gap-region));
+}
+
+.split-screen.start {
+  /* flex-direction: row-reverse; */
+}
+
+.split-screen > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+}
+
+.split-screen.start > :first-child {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 50%;
+}
+
+.split-screen.start > :last-child {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+}
+
+.split-screen.end > :first-child {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+}
+
+.split-screen.end > :last-child {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 50%;
+}

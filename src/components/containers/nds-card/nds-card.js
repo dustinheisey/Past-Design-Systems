@@ -27,6 +27,43 @@ class CardComponent extends LitElement {
         background-color: #f9f9f9;
         border-top: 1px solid #e0e0e0;
       }
+
+      /*? The Card - Showcase products, services, blog posts, or other types of content  */
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--color-bg, var(--color-bg-primary));
+        border: var(--border-thin) solid;
+        padding: var(--space-m);
+        border-radius: var(--radius-m);
+        box-shadow: var(--shadow-card);
+        max-inline-size: 66ch;
+        text-decoration: none;
+        border: 2px solid var(--color-bg-secondary-text);
+      }
+
+      .card > p {
+        margin-block-end: 0;
+      }
+
+      .card.media {
+        padding: 0;
+        transition: all 0.3s;
+      }
+
+      .card.media:hover {
+        box-shadow: var(--shadow-card-hover);
+      }
+
+      .card > img {
+        border-radius: var(--radius-m) var(--radius-m) 0 0;
+        box-shadow: none;
+      }
+
+      .card > .inline {
+        align-items: center;
+      }
     `;
   }
 

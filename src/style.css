@@ -29,22 +29,24 @@
 @import "./elements/text/math/math.css";
 @import "./elements/text/p/p.css";
 
-@import "./layouts/center.css";
-@import "./layouts/cluster.css";
-@import "./layouts/cover.css";
-@import "./layouts/drawer.css";
-@import "./layouts/frame.css";
-@import "./layouts/grid.css";
-@import "./layouts/imposter.css";
-@import "./layouts/layout.css";
-@import "./layouts/masonry.css";
-@import "./layouts/quilted.css";
-@import "./layouts/reel.css";
-@import "./layouts/sidebar.css";
-@import "./layouts/stack.css";
-@import "./layouts/sticky.css";
-@import "./layouts/switcher.css";
-@import "./layouts/theme.css";
+@import "./layouts/center/center.css";
+@import "./layouts/cluster/cluster.css";
+@import "./layouts/cover/cover.css";
+@import "./layouts/drawer/drawer.css";
+@import "./layouts/flex/flex.css";
+@import "./layouts/frame/frame.css";
+@import "./layouts/grid/grid.css";
+@import "./layouts/imposter/imposter.css";
+@import "./layouts/list/list.css";
+@import "./layouts/masonry/masonry.css";
+@import "./layouts/quilted/quilted.css";
+@import "./layouts/reel/reel.css";
+@import "./layouts/sidebar/sidebar.css";
+@import "./layouts/split-screen/split-screen.css";
+@import "./layouts/split-scroll/split-scroll.css";
+@import "./layouts/stack/stack.css";
+@import "./layouts/switcher/switcher.css";
+@import "./layouts/theme/theme.css";
 
 /* Utils */
 @import "./utils/space-utils.css";

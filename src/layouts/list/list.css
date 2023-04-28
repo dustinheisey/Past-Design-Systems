@@ -1,0 +1,29 @@
+/*? The List  */
+ol,
+ul {
+  columns: 2;
+  column-gap: var(--gutter);
+}
+
+li {
+  column-span: all;
+}
+
+li:nth-last-child(n + 3),
+li:nth-last-child(n + 3) ~ * {
+  column-span: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nowrap > * {
+  white-space: nowrap;
+}
+
+.max-content {
+  inline-size: max-content;
+}
