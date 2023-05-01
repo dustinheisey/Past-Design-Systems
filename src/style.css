@@ -32,21 +32,21 @@
 @import "./layouts/center/center.css";
 @import "./layouts/cluster/cluster.css";
 @import "./layouts/cover/cover.css";
-@import "./layouts/drawer/drawer.css";
-@import "./layouts/flex/flex.css";
+@import "./layouts/inline/inline.css";
 @import "./layouts/frame/frame.css";
 @import "./layouts/grid/grid.css";
-@import "./layouts/imposter/imposter.css";
 @import "./layouts/list/list.css";
 @import "./layouts/masonry/masonry.css";
-@import "./layouts/quilted/quilted.css";
+@import "./layouts/prose/prose.css";
 @import "./layouts/reel/reel.css";
 @import "./layouts/sidebar/sidebar.css";
-@import "./layouts/split-screen/split-screen.css";
-@import "./layouts/split-scroll/split-scroll.css";
 @import "./layouts/stack/stack.css";
 @import "./layouts/switcher/switcher.css";
 @import "./layouts/theme/theme.css";
 
 /* Utils */
 @import "./utils/space-utils.css";
+
+* {
+  box-sizing: border-box;
+}

@@ -2,7 +2,6 @@
 
 /*? The Frame - Cropping media (videos and images) to a desired aspect ratio */
 .frame {
-  aspect-ratio: 3/2;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -19,6 +18,11 @@
 
 .frame.video {
   aspect-ratio: 16/9;
+}
+
+.frame.full {
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .frame > img,

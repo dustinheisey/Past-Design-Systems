@@ -1,16 +1,13 @@
 label {
-  display: block;
   font-size: var(--font-size-s);
   font-weight: 400;
   font-family: var(--font-family-body);
   line-height: var(--light-height-body);
-  color: var(--color-fg-secondary);
-  display: grid;
-  gap: var(--space-2xs);
+  color: var(--color-label-override, var(--color-on-background));
 }
 
 .required::after {
   content: "*";
   font-size: var(--font-size-m);
-  color: var(--accent-1-ui, var(--color-accent1-ui));
+  color: var(--color-label-accent-override, var(--color-secondary));
 }

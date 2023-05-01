@@ -2,17 +2,39 @@
 .cover {
   display: flex;
   flex-direction: column;
-  min-block-size: 100vh;
-  inline-size: 100%;
-  align-items: center;
+  block-size: 100vh;
+  max-inline-size: 100%;
+  max-inline-size: 100%;
   gap: var(--gap-region);
   padding: var(--inset, var(--inset-page));
 }
 
-.cover > :nth-child(2),
-.cover > :only-child {
+.cover > .principle {
   margin-block: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+}
+
+.cover.cover-s {
+  block-size: 75vh;
+}
+
+.bg-img {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.bg-img > img {
+  grid-column: 1;
+  grid-row: 1;
+  object-fit: cover;
+  object-position: center;
+  min-inline-size: 100%;
+  min-block-size: 100%;
+  z-index: 0;
+}
+
+.bg-img > :not(img) {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
 }

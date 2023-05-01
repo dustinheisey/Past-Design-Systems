@@ -6,14 +6,26 @@ export default {
 
 export const Default = () =>
   html`
-    <div class="stack">
-      <h1>{blog post title}</h1>
-      <p>{blog post intro}</p>
-      <hr />
-      <p>{blog post section 1}</p>
-      <hr />
-      <p>{blog post section 2}</p>
-      <hr />
-      <p>{blog post conclusion}</p>
-    </div>
+    <ul class="stack gap-xs">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
   `;
+
+Default.parameters = {
+  docs: {
+    description: {
+      story:
+        "The Stack layout should be used whenever elements are stacked one on top of another, except for adjacent elements like grid cells, which should not be subject to a Stack.",
+    },
+    source: {
+      code: `
+<div class="center">
+</div>
+    `,
+    },
+  },
+};

@@ -3,38 +3,29 @@
   font-weight: 400;
   margin: 0;
   appearance: none;
-  background-color: #fff;
-  border: 1px solid var(--color-bg-primary);
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  border: 1px solid var(--color-outline);
+  padding-right: var(--space-2xs);
+  padding-left: var(--space-2xs);
+  padding-top: var(--space-3xs);
+  padding-bottom: var(--space-3xs);
   display: block;
   width: 100%;
-  border-radius: 0.375rem;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  border-radius: var(--border-radius-s);
   box-shadow: none;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-body);
   margin-block-start: var(--space-2xs);
+}
+
+.input::placeholder {
+  color: var(--color-outline);
 }
 
 .input:focus {
   border-color: transparent;
-  outline: 2px solid var(--color-primary-ui);
-}
-
-.input-filled {
-  background: var(--color-bg-secondary);
-  border-color: var(--color-bg-secondary);
-}
-
-.input-filled::placeholder {
-  color: var(--color-fg-primary);
-}
-
-.input-filled:focus {
-  background-color: #fff;
+  outline: 2px solid var(--color-primary);
 }
 
 .input-underline {
@@ -43,12 +34,12 @@
   width: 100%;
   padding: 0 var(--space-2xs);
   border: none;
-  border-block-end: 2px solid var(--color-bg-primary);
+  border-block-end: 2px solid var(--color-outline);
 }
 
 .input-underline:focus {
   outline: none;
-  border-color: var(--color-fg-primary);
+  border-color: var(--color-on-surface);
 }
 
 label:has(input[type="radio"]),
@@ -61,16 +52,16 @@ label:has(input[type="checkbox"]) {
 }
 
 label:has(input[type="radio"]):focus-within > input[type="radio"] {
-  color: var(--color-primary-ui);
+  color: var(--color-primary);
 }
 
 input[type="radio"] {
   appearance: none;
-  background-color: var(--color-bg-tertiary);
+  background-color: var(--color-background);
   margin: 0;
-  inline-size: 1.15em;
-  block-size: 1.15em;
-  border: 1px solid var(--color-bg-primary);
+  inline-size: 1.25em;
+  block-size: 1.25em;
+  border: 1px solid var(--color-outline);
   border-radius: 50%;
   transform: translateY(-0.075em);
   display: grid;
@@ -84,7 +75,7 @@ input[type="radio"]::before {
   border-radius: 50%;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-bg-tertiary);
+  box-shadow: inset 1em 1em var(--color-surface);
   background-color: CanvasText;
 }
 
@@ -95,7 +86,7 @@ input[type="radio"]:checked::before {
 input[type="radio"]:focus,
 input[type="radio"]:checked {
   outline: none;
-  background-color: var(--color-primary-ui);
+  background-color: var(--color-primary);
   border: none;
 }
 
@@ -104,10 +95,9 @@ input[type="checkbox"] {
   background-color: var(--color-bg-tertiary);
   margin: 0;
   font: inherit;
-  color: currentColor;
   width: 1.15em;
   height: 1.15em;
-  border: 0.15em solid currentColor;
+  border: 0.15em solid var(--color-outline);
   border-radius: var(--border-radius-s);
   transform: translateY(-0.075em);
   display: grid;
@@ -130,7 +120,7 @@ input[type="checkbox"]::before {
   transform: scale(0);
   transform-origin: bottom left;
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-primary-ui);
+  box-shadow: inset 1em 1em var(--color-primary);
   background-color: CanvasText;
 }
 
@@ -139,6 +129,6 @@ input[type="checkbox"]:checked::before {
 }
 
 input[type="checkbox"]:focus {
-  outline: 2px solid var(--color-primary-ui);
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }

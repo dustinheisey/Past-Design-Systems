@@ -1,30 +1,34 @@
 /*? The Masonry - Product galleries, testimonials, blog posts, portfolio items */
 /* Masonry style grid */
 .masonry {
-  gap: var(--gutter);
-}
-
-.masonry.col-2 {
-  columns: 2;
-}
-
-.masonry.col-3 {
-  columns: 3;
-}
-
-.masonry.col-4 {
-  columns: 4;
-}
-
-.masonry.col-5 {
-  columns: 5;
-}
-
-.masonry.col-6 {
-  columns: 6;
+  gap: var(--gap, var(--space-m));
 }
 
 .masonry > * + * {
-  margin-block-start: var(--gutter);
+  margin-block-start: var(--gap, var(--space-m));
   break-inside: avoid;
+}
+
+@media only screen and (min-width: 1100px) {
+  .masonry {
+    columns: 4;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .masonry {
+    columns: 1;
+  }
 }

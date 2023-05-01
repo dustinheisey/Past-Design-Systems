@@ -1,0 +1,23 @@
+.inline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--gap, var(--space-s));
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inline-start {
+  align-items: flex-start;
+}
+
+.inline-end {
+  align-items: flex-end;
+}
+
+.inline-center {
+  align-items: center;
+}
+
+.inline-baseline {
+  align-items: baseline;
+}

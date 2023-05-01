@@ -7,9 +7,6 @@ export default {
 export const Default = () =>
   html`
     <nav class="reel">
-      <a href="{home link}">
-        <img src="https://placehold.co/600x400" alt="Home" />
-      </a>
       <a href="{about link}">
         <img src="https://placehold.co/600x400" alt="About" />
       </a>
@@ -24,3 +21,52 @@ export const Default = () =>
       </a>
     </nav>
   `;
+
+export const SausageLinks = () =>
+  html`
+    <nav class="reel no-bar">
+      <a href="{home link}" class="btn"> Link Text </a>
+      <a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a
+      ><a href="{home link}" class="btn"> Link Text </a>
+    </nav>
+  `;
+
+Default.parameters = {
+  docs: {
+    description: {
+      story:
+        "The Reel custom element is a versatile alternative to carousel/slider components and button-activated menu systems, and is particularly suited for browsing categories of content such as movies, products, news stories, and photographs, with the added flexibility of a customizable scrollbar.",
+    },
+    source: {
+      code: `
+<div class="center">
+</div>
+    `,
+    },
+  },
+};

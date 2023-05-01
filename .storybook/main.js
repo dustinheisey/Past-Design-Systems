@@ -8,6 +8,7 @@ const config = {
     "storybook-addon-pseudo-states",
     "@storybook/addon-styling",
     "storybook-addon-rem",
+    "storybook-dark-mode",
   ],
   framework: {
     name: "@storybook/web-components-vite",

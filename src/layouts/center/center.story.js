@@ -2,23 +2,47 @@ import { html } from "lit";
 
 export default {
   title: "Layouts/Center",
+  args: { intrinsic: false },
 };
 
-export const Default = () =>
+export const Default = ({ intrinsic }) =>
   html`
-    <div class="center">
-      <p>
-        Exercitation aute tempor laboris elit non sit minim pariatur mollit.
-        Aliquip nulla ullamco enim ad cillum ea qui Lorem. Reprehenderit nulla
-        ad culpa amet velit cupidatat. Amet consectetur veniam sint occaecat
-        amet aliquip excepteur dolor id.
-      </p>
+    <div class="${intrinsic ? "center-intrinsic" : "center"} prose">
+      <h2>Start your free trial today</h2>
+      <p>Experience the difference for yourself</p>
+      <button class="btn">Sign up now</button>
     </div>
   `;
 
-export const CTASectionStory = () =>
-  html`<div class="center">
-    <h2 class="region-headline">Start your free trial today</h2>
-    <p>Experience the {product} difference for yourself</p>
-    <button class="btn">Sign up now</button>
-  </div>`;
+Default.parameters = {
+  docs: {
+    description: {
+      story:
+        "The Center component should be used whenever you want something to be horizontally centered. Use by default to center the container, or use the intrinsic modifier to center the content within the centered container.",
+    },
+    source: {
+      code: `
+<div class="center">
+</div>
+    `,
+    },
+  },
+};
+
+export const Container = () =>
+  html`
+    <div class="center prose">
+      <h2>Start your free trial today</h2>
+      <p>Experience the difference for yourself</p>
+      <button class="btn">Sign up now</button>
+    </div>
+  `;
+
+export const Intrinsic = () =>
+  html`
+    <div class="center-intrinsic prose">
+      <h2>Start your free trial today</h2>
+      <p>Experience the difference for yourself</p>
+      <button class="btn">Sign up now</button>
+    </div>
+  `;

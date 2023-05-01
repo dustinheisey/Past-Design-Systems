@@ -1,30 +1,37 @@
-/*? The Reel - Carousel, Mobile Navigation Sausage Links */
 .reel {
   display: flex;
   block-size: auto;
   overflow-x: auto;
   overflow-y: hidden;
-  gap: var(--gap-section, var(--space-s));
-  /* scrollbar-color: #fff #000; */
+  max-inline-size: 100%;
+  scrollbar-color: var(--color-bg-primary) var(--color-bg-tertiary);
+}
+
+.reel.no-bar {
+  scrollbar-width: none;
+}
+
+.reel.no-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .reel::-webkit-scrollbar {
-  block-size: 1rem;
+  block-size: var(--space-m);
 }
 
 .reel::-webkit-scrollbar-track {
-  /* background-color: #000; */
+  background-color: var(--color-bg-tertiary);
 }
 
 .reel::-webkit-scrollbar-thumb {
-  /* background-color: #000; */
-  /* background-image: linear-gradient(
-		#000 0,
-		#000 0.25rem,
-		#fff 0.25rem,
-		#fff 0.75rem,
-		#000 0.75rem
-	); */
+  background-color: var(--color-bg-tertiary);
+  background-image: linear-gradient(
+    var(--color-bg-tertiary) 0,
+    var(--color-bg-tertiary) calc(var(--space-m) / 4),
+    var(--color-bg-primary) calc(var(--space-m) / 4),
+    var(--color-bg-primary) calc((var(--space-m) / 4) * 3),
+    var(--color-bg-tertiary) calc((var(--space-m) / 4) * 3)
+  );
 }
 
 .reel > * {
@@ -33,6 +40,14 @@
 
 .reel > img {
   block-size: 100%;
-  inline-size: auto;
   flex-basis: auto;
+  width: auto;
+}
+
+.reel > * + * {
+  margin-inline-start: var(--space-m);
+}
+
+.reel.overflowing {
+  padding-block-end: var(--space-m);
 }

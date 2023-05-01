@@ -3,6 +3,7 @@
   inline-size: 2em;
   aspect-ratio: 1/1;
   font-size: 1.25em;
+  border: 3px solid var(--color-background);
 }
 
 .avatar-s {
@@ -11,4 +12,15 @@
 
 .avatar-l {
   font-size: 1.5em;
+}
+
+.avatar-list {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.avatar-list > *:not(:first-child) {
+  margin-inline-start: -0.5em;
 }

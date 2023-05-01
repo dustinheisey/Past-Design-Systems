@@ -3,7 +3,7 @@
   font-family: var(--font-family-body);
   font-weight: 400;
   letter-spacing: var(--letter-spacing-body);
-  color: var(--color-gray-50);
+  color: var(--color-on-btn, var(--color-on-primary));
   line-height: var(--line-height-body);
   font-size: var(--font-size-s);
   display: inline-flex;
@@ -13,46 +13,42 @@
   position: relative;
   inline-size: auto;
   cursor: pointer;
-  background-color: var(--color-primary-ui);
+  background-color: var(--color-primary);
   border-radius: var(--border-radius-pill);
-  border: 1px solid transparent;
+  border: 1.5px solid var(--color-primary);
   padding: var(--space-2xs) var(--space-s);
   box-shadow: var(--shadow-xs);
   transition: all 0.2s ease-in-out;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 .btn:hover {
   box-shadow: var(--shadow-m);
-  background-color: var(--color-primary-ui-raised);
+  transform: translate3d(0, -2px, 0);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-primary-ui);
-  border-color: var(--color-primary-ui);
+  color: var(--color-btn, var(--color-primary));
+  border-color: var(--color-btn, var(--color-primary));
   box-shadow: none;
 }
 
 .btn-secondary:hover {
-  color: var(--color-primary-ui);
-  border-color: var(--color-primary-ui);
-  background-color: var(--color-gray-50);
+  color: var(--color-on-btn, var(--color-primary));
+  border-color: var(--color-btn, var(--color-primary));
   box-shadow: none;
 }
 
 .btn-tertiary {
   background-color: transparent;
-  color: var(--color-primary-ui);
+  color: var(--color-btn, var(--color-primary));
   border-color: transparent;
   box-shadow: none;
-}
-
-.btn-tertiary {
-  font-size: var(--font-size-m);
-  text-decoration: underline;
-}
-.btn-tertiary.btn-s {
   font-size: var(--font-size-s);
+  text-decoration: underline;
 }
 
 .btn-tertiary.btn-l {
@@ -60,7 +56,6 @@
 }
 
 .btn-tertiary:hover {
-  color: var(--color-primary-fg);
   border-color: transparent;
   background-color: transparent;
   box-shadow: none;

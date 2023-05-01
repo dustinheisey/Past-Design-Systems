@@ -1,5 +1,5 @@
 import { html } from "lit";
-import "../../../components/prose/nds-icon/nds-icon.js";
+import "../../../components/content/nds-icon/nds-icon.js";
 
 export default {
   title: "Elements/Form/Button",
