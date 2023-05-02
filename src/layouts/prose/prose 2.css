@@ -93,7 +93,17 @@
 }
 
 /* Page */
+.prose :where(h1),
+.prose :where(.page-headline) {
+  margin-block-start: var(--space-l);
+  margin-block-end: var(--space-m);
+}
+
 /* Hero */
+.prose :where(.hero-headline) {
+  margin-block-start: var(--space-l);
+  margin-block-end: var(--space-m);
+}
 
 .prose
   :where(

@@ -1,24 +1,19 @@
-/* Tokens */
 @import "./tokens/border-radius/border-radius.css";
 @import "./tokens/color/color.css";
 @import "./tokens/elevation/elevation.css";
-@import "./tokens/icon/icon.css";
 @import "./tokens/space/space.css";
 @import "./tokens/typography/typography.css";
 
-/* Elements */
 @import "./elements/form/button/button.css";
 @import "./elements/form/input/input.css";
 @import "./elements/form/select/select.css";
 @import "./elements/form/textarea/textarea.css";
 @import "./elements/form/range/range.css";
-
 @import "./elements/media/avatar/avatar.css";
 @import "./elements/media/figure/figure.css";
 @import "./elements/media/image/image.css";
 @import "./elements/media/svg/svg.css";
 @import "./elements/media/video/video.css";
-
 @import "./elements/text/badge/badge.css";
 @import "./elements/text/blockquote/blockquote.css";
 @import "./elements/text/divider/divider.css";
@@ -43,8 +38,9 @@
 @import "./layouts/stack/stack.css";
 @import "./layouts/switcher/switcher.css";
 @import "./layouts/theme/theme.css";
+@import "./layouts/tooltip/tooltip.css";
+@import "./layouts/dropdown/dropdown.css";
 
-/* Utils */
 @import "./utils/space-utils.css";
 
 * {

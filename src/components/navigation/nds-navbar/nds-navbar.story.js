@@ -1,22 +1,17 @@
 import { html } from "lit";
-import "./nds-navbar.js";
+import { navbar } from "./nds-navbar.js";
 
 export default {
   title: "Components/Navigation/Navbar",
-  component: "ds-navbar",
+  argTypes: {
+    layout: {
+      name: "layout",
+      control: {
+        type: "select",
+        options: ["start", "end", "center", "spaced"],
+      },
+    },
+  },
 };
 
-export const Default = () =>
-  html`
-    <nds-navbar>
-      <nav slot="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-      <main slot="main-content">
-        <h1>Welcome to my website!</h1>
-        <p>Here you'll find all sorts of interesting things.</p>
-      </main>
-    </nds-navbar>
-  `;
+export const Default = () => html`${navbar()}`;

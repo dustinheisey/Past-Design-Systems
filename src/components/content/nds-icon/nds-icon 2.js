@@ -21,6 +21,7 @@ class Icon extends LitElement {
         width: 100%;
         height: 100%;
         stroke-width: 2px;
+        fill: var(--color-icon-override, var(--color-on-background));
       }
     `;
   }
@@ -61,13 +62,25 @@ class Icon extends LitElement {
         <title id="${name}-title">${name}</title>
         <path
           d="${path[type][0]}"
-          fill="${type !== "outline" ? this.color || "currentColor" : "none"}"
-          stroke="${type === "outline" ? this.color || "currentColor" : "none"}"
+          fill="${type !== "outline"
+            ? this.color ||
+              "var(--color-icon-override, var(--color-on-background))"
+            : "none"}"
+          stroke="${type === "outline"
+            ? this.color ||
+              "var(--color-icon-override, var(--color-on-background))"
+            : "none"}"
         ></path>
         <path
           d="${path[type][1]}"
-          fill="${type !== "outline" ? this.color || "currentColor" : "none"}"
-          stroke="${type === "outline" ? this.color || "currentColor" : "none"}"
+          fill="${type !== "outline"
+            ? this.color ||
+              "var(--color-icon-override, var(--color-on-background))"
+            : "none"}"
+          stroke="${type === "outline"
+            ? this.color ||
+              "var(--color-icon-override, var(--color-on-background))"
+            : "none"}"
         ></path>
       </svg>
     `;

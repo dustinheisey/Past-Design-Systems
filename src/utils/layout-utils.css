@@ -50,3 +50,7 @@
 .align-baseline {
   align-items: baseline !important;
 }
+
+.full {
+  inline-size: 100%;
+}
