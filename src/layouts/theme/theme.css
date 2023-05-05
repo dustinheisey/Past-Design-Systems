@@ -1,14 +1,14 @@
-[class*="theme"] {
+/* [class*="theme"] {
   padding: var(--space-m);
   border-radius: var(--border-radius-l);
   box-shadow: var(--shadow-l);
-}
+} */
 
 .theme-background {
   background-color: var(--color-background);
 }
 
-.theme-background-inverse {
+.theme-dark {
   background-color: var(--color-on-background-light);
 
   --color-primary: var(--color-primary-dark);
@@ -296,7 +296,7 @@
   --color-blockquote-text: ;
 } */
 
-/* .theme-background-inverse {
+/* .theme-background-dark {
   background-color: var(--color-on-background);
   --color-headline-override: var(--color-background);
   --color-p-override: var(--color-background);

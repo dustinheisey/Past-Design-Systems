@@ -1,12 +1,15 @@
 /*? The Cover - “Above the fold” introductory content */
 .cover {
   display: flex;
-  flex-direction: column;
   block-size: 100vh;
   max-inline-size: 100%;
   max-inline-size: 100%;
   gap: var(--gap-region);
   padding: var(--inset, var(--inset-page));
+}
+
+.cover-nav {
+  flex-direction: column;
 }
 
 .cover > .principle {
@@ -21,6 +24,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  place-items: center;
+  place-content: center;
 }
 
 .bg-img > img {
@@ -37,4 +42,41 @@
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
+}
+
+.bg-img .filter {
+  padding: var(--space-xl);
+  border-radius: var(--border-radius-l);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-xl);
+}
+
+.clip {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.clip-top-left {
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-top-right {
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.clip-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+.clip-bottom-right {
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.bg-gradient {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    )
+    var(--color-background);
 }

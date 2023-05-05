@@ -1,13 +1,22 @@
 import { html } from "lit";
+// import "./range.js";
 
 export default {
   title: "Elements/Form/Range",
 };
 
 export const Default = () => html`
+  <script>
+    const budgetInput = document.getElementById("budget");
+    const budgetValue = document.getElementById("budget-value");
+
+    budgetInput.addEventListener("input", function () {
+      budgetValue.textContent = "$" + budgetInput.value;
+    });
+  </script>
   <label for="budget">
     <span class="required">Budget</span>
-    <div class="flex" gap="2xs">
+    <div class="inline" gap="2xs">
       <input
         type="range"
         id="budget"

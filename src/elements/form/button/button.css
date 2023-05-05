@@ -48,7 +48,8 @@
   border-color: transparent;
   box-shadow: none;
   font-size: var(--font-size-s);
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  padding-inline-start: 0;
 }
 
 .btn-tertiary.btn-l {

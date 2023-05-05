@@ -10,7 +10,7 @@ export default {
         type: { summary: "string" },
         defaultValue: { summary: "simple" },
       },
-      options: ["simple", "filled", "underline"],
+      options: ["simple", "underline"],
     },
   },
   args: { variant: "simple" },
@@ -23,12 +23,12 @@ export const Default = ({ variant }) => html`
   ></textarea>
 `;
 
-export const Simpletextarea = () => html`
+export const SimpleTextArea = () => html`
   <label>Textarea Label</label>
   <textarea class="textarea" placeholder="Simple textarea"></textarea>
 `;
 
-Simpletextarea.parameters = {
+SimpleTextArea.parameters = {
   docs: {
     description: {
       story:
@@ -42,26 +42,7 @@ Simpletextarea.parameters = {
   },
 };
 
-export const Filledtextarea = () => html`
-  <label>Textarea Label</label>
-  <textarea class="textarea-filled" placeholder="Filled textarea"></textarea>
-`;
-
-Filledtextarea.parameters = {
-  docs: {
-    description: {
-      story:
-        "Filled textareas should be used when the textarea field needs additional emphasis or when the textarea field is being used in a dark mode interface. They should be used for fields like search, filter, or date textarea fields.",
-    },
-    source: {
-      code: `
-<textarea class="textarea-filled" placeholder="Filled textarea"></textarea>
-      `,
-    },
-  },
-};
-
-export const Underlinetextarea = () => html`
+export const UnderlineTextArea = () => html`
   <label>Textarea Label</label>
   <textarea
     class="textarea-underline"
@@ -69,7 +50,7 @@ export const Underlinetextarea = () => html`
   ></textarea>
 `;
 
-Underlinetextarea.parameters = {
+UnderlineTextArea.parameters = {
   docs: {
     description: {
       story:

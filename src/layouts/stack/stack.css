@@ -2,7 +2,6 @@
 .stack {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .stack > * {
@@ -13,10 +12,14 @@
   margin-block-start: var(--gap, var(--space-xl));
 }
 
-.stack:only-child {
-  block-size: 100%;
+.stack > :only-child {
+  margin-block: auto;
 }
 
 .stack > .split {
   margin-block-end: auto;
+}
+
+.stack > .auto {
+  margin-block: auto;
 }

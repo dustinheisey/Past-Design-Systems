@@ -1,5 +1,4 @@
 import { html } from "lit";
-import "../../../components/content/nds-icon/nds-icon.js";
 
 export default {
   title: "Elements/Form/Button",
@@ -111,13 +110,19 @@ TertiaryButtons.parameters = {
 export const CircularButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn btn-circular btn-s">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
     <button class="btn btn-circular btn-m">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
     <button class="btn btn-circular btn-l">
-      <nds-icon name="contact" type="fill"></nds-icon>
+      <svg class="icon">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
   </div>
 `;
@@ -131,10 +136,9 @@ CircularButtons.parameters = {
     source: {
       code: `
 <button class="btn btn-circular">
-    <nds-icon
-        name="contact"
-        type="fill"
-    ></nds-icon>
+    <svg class="icon">
+      <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+    </svg>
 </button>
     `,
     },
@@ -144,15 +148,21 @@ CircularButtons.parameters = {
 export const IconLeftButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
       Button with Icon
     </button>
     <button class="btn btn-secondary">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
       Button with Icon
     </button>
     <button class="btn btn-tertiary">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
       Button with Icon
     </button>
   </div>
@@ -162,15 +172,21 @@ export const IconRightButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
       Button with Icon
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
     <button class="btn btn-secondary">
       Button with Icon
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
     <button class="btn btn-tertiary">
       Button with Icon
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
   </div>
 `;
@@ -178,13 +194,19 @@ export const IconRightButtons = () => html`
 export const IconButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
     <button class="btn btn-secondary">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
     <button class="btn btn-tertiary">
-      <nds-icon name="contact" type="fill" size="s"></nds-icon>
+      <svg class="icon icon-s">
+        <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+      </svg>
     </button>
   </div>
 `;

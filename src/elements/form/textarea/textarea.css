@@ -2,7 +2,7 @@ textarea {
   resize: vertical;
   font-family: var(--font-family-body);
   font-weight: 400;
-  background-color: var(--color-textarea-override, var(--color-background));
+  background-color: transparent;
   border: 1px solid var(--color-outline);
   color: var(--color-on-background);
   padding-right: 0.75rem;
@@ -10,7 +10,8 @@ textarea {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   display: block;
-  max-inline-size: 100%;
+  inline-size: 100%;
+  /* max-inline-size: 66ch; */
   border-radius: 0.375rem;
   color: var(--color-on-background));
   box-shadow: none;

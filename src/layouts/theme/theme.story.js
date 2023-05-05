@@ -1,5 +1,4 @@
 import { html } from "lit";
-import "../../components/content/nds-icon/nds-icon.js";
 
 export default {
   title: "Layouts/Theme",
@@ -40,7 +39,9 @@ export const Default = ({ theme }) =>
         <a class="btn btn-secondary">Button Text</a>
         <a class="btn btn-tertiary">Button Text</a>
         <a class="link link-navigation">Button Text</a>
-        <nds-icon name="accessibility" type="fill"></nds-icon>
+           <svg>
+      <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+    </svg>
       </div>
       <div class="cluster gap-l">
         <div class="cluster gap-s">
@@ -161,7 +162,7 @@ export const All = () =>
         </div>
       </div>
 
-      <div class="card prose theme-background-inverse">
+      <div class="card prose theme-dark">
         <p class="overline">Overline Text</p>
         <h4>Background Inverse Heading</h4>
         <p>

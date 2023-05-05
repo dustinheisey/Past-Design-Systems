@@ -1,5 +1,4 @@
 import { html } from "lit";
-import "../../components/content/nds-icon/nds-icon.js";
 
 export default {
   title: "Layouts/List",
@@ -64,51 +63,39 @@ export const SVG = () =>
   html`
     <ul class="list list-marker">
       <li>
-        <nds-icon
-          name="accessibility"
-          color="var(--color-accent1-ui)"
-          type="fill"
-        ></nds-icon>
+        <svg>
+          <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+        </svg>
         Product Features
       </li>
       <li>
-        <nds-icon
-          name="accessibility"
-          color="var(--color-accent1-ui)"
-          type="fill"
-        ></nds-icon>
+        <svg>
+          <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+        </svg>
         Customer Reviews
       </li>
       <li>
-        <nds-icon
-          name="accessibility"
-          color="var(--color-accent1-ui)"
-          type="fill"
-        ></nds-icon>
+        <svg>
+          <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+        </svg>
         FAQs
       </li>
       <li>
-        <nds-icon
-          name="accessibility"
-          color="var(--color-accent1-ui)"
-          type="fill"
-        ></nds-icon>
+        <svg>
+          <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+        </svg>
         Contact Information
       </li>
       <li>
-        <nds-icon
-          name="accessibility"
-          color="var(--color-accent1-ui)"
-          type="fill"
-        ></nds-icon>
+        <svg>
+          <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+        </svg>
         Shipping and Returns
       </li>
       <li>
-        <nds-icon
-          name="accessibility"
-          color="var(--color-accent1-ui)"
-          type="fill"
-        ></nds-icon>
+        <svg>
+          <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+        </svg>
         Terms and Conditions
       </li>
     </ul>

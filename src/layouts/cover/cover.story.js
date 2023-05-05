@@ -72,7 +72,11 @@ export const SplitScreen = () =>
             consequat. Aute ut adipisicing veniam ad elit non officia eu.
           </p>
         </div>
-        <div class="frame"><img src="https://via.placeholder.com/150" /></div>
+        <div class="frame">
+          <img
+            src="https://generative-placeholders.glitch.me/image?width=600&height=300"
+          />
+        </div>
       </div>
       <p>Footer Text</p>
     </div>
@@ -81,7 +85,9 @@ export const SplitScreen = () =>
 export const Background = () =>
   html`
     <div class="bg-img">
-      <img src="https://via.placeholder.com/150" />
+      <img
+        src="https://generative-placeholders.glitch.me/image?width=600&height=300"
+      />
       <div class="cover">
         <header>
           <nav>

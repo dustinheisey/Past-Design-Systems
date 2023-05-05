@@ -11,14 +11,15 @@ a {
   max-inline-size: var(--measure-body);
   line-height: var(--line-height-body);
   letter-spacing: var(--letters-spacing-body);
-  color: var(--color-link, var(--color-primary));
+  color: var(--color-primary);
   text-decoration: underline;
   cursor: pointer;
+  max-inline-size: 100%;
 }
 
 .link:hover,
 .link:active {
-  color: var(--color-link, var(--color-primary));
+  color: var(--color-primary);
 }
 
 .link-navigation {

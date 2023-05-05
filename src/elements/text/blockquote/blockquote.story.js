@@ -5,7 +5,7 @@ export default {
 };
 
 export const Default = () => html`
-  <blockquote>
+  <blockquote class="blockquote-accent">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
       erat a ante.

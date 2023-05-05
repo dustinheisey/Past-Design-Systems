@@ -15,6 +15,10 @@ img {
   position: relative;
 }
 
+img.rounded {
+  border-radius: var(--border-radius-l);
+}
+
 .img-container {
   display: grid;
   block-size: 100%;
@@ -41,4 +45,12 @@ img {
 
 img.full {
   inline-size: 100%;
+}
+
+.logo {
+  block-size: 2rem;
+}
+
+.logo-l {
+  block-size: 4rem;
 }

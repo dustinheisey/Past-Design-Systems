@@ -15,6 +15,10 @@ ul {
   font-family: var(--font-family-body);
 }
 
+li {
+  max-inline-size: 66ch;
+}
+
 /* List */
 .list {
   display: flex;

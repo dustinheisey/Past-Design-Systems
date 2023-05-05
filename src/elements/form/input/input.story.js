@@ -10,7 +10,7 @@ export default {
         type: { summary: "string" },
         defaultValue: { summary: "simple" },
       },
-      options: ["simple", "filled", "underline"],
+      options: ["simple", "underline"],
     },
   },
   args: { variant: "simple" },
@@ -40,25 +40,6 @@ SimpleInput.parameters = {
   },
 };
 
-export const FilledInput = () => html`
-  <label>Input Label</label>
-  <input class="input input-filled" placeholder="Filled Input" />
-`;
-
-FilledInput.parameters = {
-  docs: {
-    description: {
-      story:
-        "Filled inputs should be used when the input field needs additional emphasis or when the input field is being used in a dark mode interface. They should be used for fields like search, filter, or date input fields.",
-    },
-    source: {
-      code: `
-<input class="input input-filled" placeholder="Filled Input" />
-      `,
-    },
-  },
-};
-
 export const UnderlineInput = () => html`
   <label>Input Label</label>
   <input class="input input-underline" placeholder="Underline Input" />
@@ -77,17 +58,3 @@ UnderlineInput.parameters = {
     },
   },
 };
-
-export const Checkbox = () => html`
-  <label>
-    <input type="checkbox" name="checkbox" />
-    Checkbox
-  </label>
-`;
-
-export const Radio = () => html`
-  <label>
-    <input type="radio" name="radio" />
-    Radio
-  </label>
-`;

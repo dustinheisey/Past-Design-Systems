@@ -2,6 +2,7 @@
 /* Masonry style grid */
 .masonry {
   gap: var(--gap, var(--space-m));
+  columns: 1;
 }
 
 .masonry > * + * {
@@ -9,26 +10,14 @@
   break-inside: avoid;
 }
 
-@media only screen and (min-width: 1100px) {
-  .masonry {
-    columns: 4;
-  }
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1099px) {
-  .masonry {
-    columns: 3;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media (--tablet-portrait-up) {
   .masonry {
     columns: 2;
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media (--tablet-landscape-up) {
   .masonry {
-    columns: 1;
+    columns: 3;
   }
 }

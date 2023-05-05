@@ -45,12 +45,4 @@ export default {
       },
     },
   },
-  // decorators: [
-  //   (story) =>
-  //     html`<div
-  //       style="width: 50vw; height: 50vh; background: var(--color-background); display: grid; justify-items: center; padding: var(--space-xl)"
-  //     >
-  //       ${story()}
-  //     </div>`,
-  // ],
 };

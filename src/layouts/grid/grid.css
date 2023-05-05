@@ -8,6 +8,10 @@
   place-content: stretch;
 }
 
+.row-gap-xl {
+  row-gap: var(--space-xl);
+}
+
 .grid > * {
   margin: 0;
 }
@@ -29,10 +33,7 @@
   grid-template-columns: repeat(
     auto-fit,
     minmax(
-      max(
-        var(--min-inline-size, 10rem),
-        calc((100% - 2 * var(--grid-gap)) / 3)
-      ),
+      max(var(--min-inline-size, 9rem), calc((100% - 2 * var(--grid-gap)) / 3)),
       1fr
     )
   );

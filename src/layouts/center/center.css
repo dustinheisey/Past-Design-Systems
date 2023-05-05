@@ -1,12 +1,19 @@
 /*? The Center - Center something */
 .center {
   box-sizing: content-box;
+  margin: auto;
+}
+
+.center-vertical {
+  box-sizing: content-box;
+  margin-block: auto;
+}
+.center-horizontal {
+  box-sizing: content-box;
   margin-inline: auto;
 }
 
 .center-intrinsic {
-  box-sizing: content-box;
-  margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

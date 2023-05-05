@@ -1,9 +1,21 @@
+del,
+ins,
+code,
+pre {
+  color: var(--color-on-background);
+}
+
 del {
   text-decoration: line-through;
 }
 
 ins {
   text-decoration: underline;
+}
+
+time {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-s);
 }
 
 code {
