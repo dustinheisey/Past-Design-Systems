@@ -5,10 +5,10 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-a11y",
-    "storybook-addon-pseudo-states",
     "@storybook/addon-styling",
-    "storybook-addon-rem",
     "storybook-dark-mode",
+    "storybook-addon-pseudo-states",
+    "storybook-addon-rem",
   ],
   framework: {
     name: "@storybook/web-components-vite",

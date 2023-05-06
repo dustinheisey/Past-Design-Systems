@@ -1,17 +1,11 @@
-import "../src/style.css";
 import { setCustomElementsManifest } from "@storybook/web-components";
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import customElements from "../custom-elements.json";
-import { themes } from "@storybook/theming";
-import { html } from "lit";
+import "../src/system/style.css";
 
 setCustomElementsManifest(customElements);
 
-import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
-
 export default {
-  docs: {
-    theme: themes.dark,
-  },
   parameters: {
     backgrounds: {
       disable: true,
@@ -21,26 +15,38 @@ export default {
       lightClass: "mode-light",
       stylePreview: true,
     },
-    actions: { argTypesRegex: "^on[A-Z].*" },
-    layout: "centered",
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/,
-      },
-    },
     viewport: {
       viewports: INITIAL_VIEWPORTS,
     },
     options: {
       storySort: {
         order: [
-          "Tokens",
-          "Elements",
-          "Layouts",
-          "Components",
-          "Regions",
-          "Templates",
+          "Builders",
+          [
+            "Navigation Builder",
+            "Footer Builder",
+            "Landing Builder",
+            "About Builder",
+            "Portfolio Builder",
+            "Programs or Services Builder",
+            "Program or Service Builder",
+            "Testimonials or Impact Builder",
+            "Contact Builder",
+            "Blog Builder",
+            "Blog Post Builder",
+            "FAQ Builder",
+            "Donate Builder",
+            "News or Events Builder",
+            "Partners Builder",
+            "Get Involved Builder",
+            "Resources Builder",
+            "404 Builder",
+            "Privacy Policy Builder",
+            "Terms & Conditions Builder",
+            "Page Builder",
+          ],
+          "Design System",
+          ["Regions", "Components", "Layouts", "Elements", "Tokens"],
         ],
       },
     },
