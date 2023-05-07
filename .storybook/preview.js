@@ -8,7 +8,48 @@ setCustomElementsManifest(customElements);
 export default {
   parameters: {
     backgrounds: {
-      disable: true,
+      values: [
+        {
+          name: "Background",
+          value: "var(--color-background)",
+        },
+        {
+          name: "Surface",
+          value: "var(--color-surface)",
+        },
+        {
+          name: "Dark Background",
+          value: "var(--color-background-dark)",
+        },
+        {
+          name: "Dark Surface",
+          value: "var(--color-surface-dark)",
+        },
+        {
+          name: "Primary",
+          value: "var(--color-primary)",
+        },
+        {
+          name: "Primary Container",
+          value: "var(--color-primary-container)",
+        },
+        {
+          name: "Secondary",
+          value: "var(--color-secondary)",
+        },
+        {
+          name: "Secondary Container",
+          value: "var(--color-secondary-container)",
+        },
+        {
+          name: "Tertiary",
+          value: "var(--color-tertiary)",
+        },
+        {
+          name: "Tertiary Container",
+          value: "var(--color-tertiary-container)",
+        },
+      ],
     },
     darkMode: {
       darkClass: "mode-dark",
@@ -18,6 +59,7 @@ export default {
     viewport: {
       viewports: INITIAL_VIEWPORTS,
     },
+    docs: { canvas: { withToolbar: false } },
     options: {
       storySort: {
         order: [

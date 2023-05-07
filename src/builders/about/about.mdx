@@ -1,0 +1,13 @@
+import { Meta, Canvas, Controls, Title, Subtitle } from "@storybook/blocks";
+import * as Story from "./about.story.js";
+
+<Title>About Builder</Title>
+<Subtitle>
+  Establish a strong personal brand, build trust, and showcase expertise to
+  potential clients
+</Subtitle>
+
+<Meta of={Story} />
+
+<Controls of={Story.Default} />
+<Canvas of={Story.Default} sourceState="shown" />

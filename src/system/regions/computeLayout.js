@@ -1,8 +1,4 @@
-import {
-  simple404,
-  splitWithImage404,
-  bgImage404,
-} from "../system/regions/404/404.js";
+import { simple404, splitWithImage404, bgImage404 } from "./404/404.js";
 import {
   textGridBlog,
   cardGridBlog,
@@ -12,13 +8,13 @@ import {
   featuredTextGridBlog,
   featuredMixedGridBlog,
   featuredCardGridBlog,
-} from "../system/regions/blog/blog.js";
+} from "./blog/blog.js";
 import {
   centeredContact,
   splitLeftContact,
   splitRightContact,
-} from "../system/regions/contact/contact.js";
-import { contentContent } from "../system/regions/content/content.js";
+} from "./contact/contact.js";
+import { contentContent } from "./content/content.js";
 import {
   simpleCta,
   simpleLeftCta,
@@ -56,7 +52,7 @@ import {
   centerGradientNewsletterCta,
   rightGradientNewsletterCta,
   justifiedNewsletterCta,
-} from "../system/regions/cta/cta.js";
+} from "./cta/cta.js";
 import {
   offsetFaq,
   accordionFaq,
@@ -65,16 +61,16 @@ import {
   blurbGrid3Faq,
   cardGrid2Faq,
   cardGrid3Faq,
-} from "../system/regions/faq/faq.js";
+} from "./faq/faq.js";
 import {
-  leftImageInfo,
-  rightImageInfo,
-  cardGridInfo,
-  blurbGridInfo,
-  offsetGridInfo,
-  offsetListInfo,
-  listInfo,
-} from "../system/regions/info/info.js";
+  leftImageFeature,
+  rightImageFeature,
+  cardGridFeature,
+  blurbGridFeature,
+  offsetGridFeature,
+  offsetListFeature,
+  listFeature,
+} from "./feature/feature.js";
 import {
   missionFooter,
   missionDarkFooter,
@@ -97,7 +93,7 @@ import {
   inlineFooter,
   inlineDarkFooter,
   inlinePrimaryFooter,
-} from "../system/regions/footer/footer.js";
+} from "./footer/footer.js";
 import {
   leftHeader,
   rightHeader,
@@ -109,7 +105,7 @@ import {
   leftImageInverseHeader,
   rightImageInverseHeader,
   centerInverseHeader,
-} from "../system/regions/header/header.js";
+} from "./header/header.js";
 import {
   leftHero,
   rightHero,
@@ -130,25 +126,18 @@ import {
   leftGradientHero,
   centerGradientHero,
   rightGradientHero,
-} from "../system/regions/hero/hero.js";
+} from "./hero/hero.js";
 import {
   gridLogoCloud,
   simpleLogoCloud,
   splitLogoCloud,
-} from "../system/regions/logo-clouds/logo-clouds.js";
-import {
-  centeredNavbar,
-  spacedNavbar,
-  startNavbar,
-  endNavbar,
-  stackedNavbar,
-} from "../system/regions/navbar/navbar.js";
+} from "./logo-clouds/logo-clouds.js";
 import {
   leftImagePortfolio,
   rightImagePortfolio,
   cardGrid2Portfolio,
   coverPortfolio,
-} from "../system/regions/portfolio/portfolio.js";
+} from "./portfolio/portfolio.js";
 import {
   simple3Stats,
   simple4Stats,
@@ -157,307 +146,437 @@ import {
   splitLeftStats,
   splitRightStats,
   descriptionStats,
-} from "../system/regions/stats/stats.js";
+} from "./stats/stats.js";
 import {
   simpleQuoteTestimonials,
   centeredQuoteTestimonials,
   leftAvatarTestimonials,
   rightAvatarTestimonials,
-} from "../system/regions/testimonials/testimonials.js";
+  splitTestimonials,
+} from "./testimonials/testimonials.js";
 import {
   inlineStartTimeline,
   inlineStaggeredTimeline,
   blockStartTimeline,
   blockStaggeredTimeline,
-} from "../system/regions/timeline/timeline.js";
+} from "./timeline/timeline.js";
 
-export function computeLayout(layout) {
+export function computeLayout(type, layout) {
+  console.log(type, layout);
+  switch (type) {
+    case "404":
+      return compute404(layout);
+    case "blog":
+      return computeBlog(layout);
+    case "contact":
+      return computeContact(layout);
+    case "content":
+      return computeContent(layout);
+    case "cta":
+      return computeCta(layout);
+    case "faq":
+      return computeFaq(layout);
+    case "feature":
+      return computeFeature(layout);
+    case "footer":
+      return computeFooter(layout);
+    case "header":
+      return computeHeader(layout);
+    case "hero":
+      return computeHero(layout);
+    case "logo-clouds":
+      return computeLogoClouds(layout);
+    case "portfolio":
+      return computePortfolio(layout);
+    case "stats":
+      return computeStats(layout);
+    case "testimonials":
+      return computeTestimonials(layout);
+    case "timeline":
+      return computeTimeline(layout);
+    default:
+      break;
+  }
+}
+
+function compute404(layout) {
   switch (layout) {
-    case "simple404":
+    case "simple":
       return simple404;
-    case "splitWithImage404":
+    case "splitWithImage":
       return splitWithImage404;
-    case "bgImage404":
+    case "bgImage":
       return bgImage404;
-    case "textGridBlog":
+    default:
+      return simple404;
+  }
+}
+
+function computeBlog(layout) {
+  switch (layout) {
+    case "textGrid":
       return textGridBlog;
-    case "cardGridBlog":
+    case "cardGrid":
       return cardGridBlog;
-    case "imgGridBlog":
+    case "imgGrid":
       return imgGridBlog;
-    case "stackBlog":
+    case "stack":
       return stackBlog;
-    case "leftBlog":
+    case "left":
       return leftBlog;
-    case "featuredTextGridBlog":
+    case "featuredTextGrid":
       return featuredTextGridBlog;
-    case "featuredMixedGridBlog":
+    case "featuredMixedGrid":
       return featuredMixedGridBlog;
-    case "featuredCardGridBlog":
+    case "featuredCardGrid":
       return featuredCardGridBlog;
-    case "centeredContact":
+    default:
+      return textGridBlog;
+  }
+}
+
+function computeContact(layout) {
+  switch (layout) {
+    case "centered":
       return centeredContact;
-    case "splitLeftContact":
+    case "splitLeft":
       return splitLeftContact;
-    case "splitRightContact":
+    case "splitRight":
       return splitRightContact;
-    case "contentContent":
+    default:
+      return centeredContact;
+  }
+}
+
+function computeContent(layout) {
+  switch (layout) {
+    case "content":
       return contentContent;
-    case "simpleCta":
+    default:
+      return contentContent;
+  }
+}
+
+function computeCta(layout) {
+  switch (layout) {
+    case "simple":
       return simpleCta;
-    case "simpleLeftCta":
+    case "simpleLeft":
       return simpleLeftCta;
-    case "simpleRightCta":
+    case "simpleRight":
       return simpleRightCta;
-    case "leftImageCta":
+    case "leftImage":
       return leftImageCta;
-    case "rightImageCta":
+    case "rightImage":
       return rightImageCta;
-    case "splitLeftCta":
+    case "splitLeft":
       return splitLeftCta;
-    case "splitRightCta":
+    case "splitRight":
       return splitRightCta;
-    case "tiles2LeftCta":
+    case "tiles2Left":
       return tiles2LeftCta;
-    case "tiles2RightCta":
+    case "tiles2Right":
       return tiles2RightCta;
-    case "tiles3LeftCta":
+    case "tiles3Left":
       return tiles3LeftCta;
-    case "tiles3RightCta":
+    case "tiles3Right":
       return tiles3RightCta;
-    case "leftBgCta":
+    case "leftBg":
       return leftBgCta;
-    case "centerBgCta":
+    case "centerBg":
       return centerBgCta;
-    case "rightBgCta":
+    case "rightBg":
       return rightBgCta;
-    case "leftGradientCta":
+    case "leftGradient":
       return leftGradientCta;
-    case "centerGradientCta":
+    case "centerGradient":
       return centerGradientCta;
-    case "rightGradientCta":
+    case "rightGradient":
       return rightGradientCta;
-    case "justifiedCta":
+    case "justified":
       return justifiedCta;
-    case "simpleNewsletterCta":
+    case "simpleNewsletter":
       return simpleNewsletterCta;
-    case "simpleLeftNewsletterCta":
+    case "simpleLeftNewsletter":
       return simpleLeftNewsletterCta;
-    case "simpleRightNewsletterCta":
+    case "simpleRightNewsletter":
       return simpleRightNewsletterCta;
-    case "leftImageNewsletterCta":
+    case "leftImageNewsletter":
       return leftImageNewsletterCta;
-    case "rightImageNewsletterCta":
+    case "rightImageNewsletter":
       return rightImageNewsletterCta;
-    case "splitLeftNewsletterCta":
+    case "splitLeftNewsletter":
       return splitLeftNewsletterCta;
-    case "splitRightNewsletterCta":
+    case "splitRightNewsletter":
       return splitRightNewsletterCta;
-    case "tiles2LeftNewsletterCta":
+    case "tiles2LeftNewsletter":
       return tiles2LeftNewsletterCta;
-    case "tiles2RightNewsletterCta":
+    case "tiles2RightNewsletter":
       return tiles2RightNewsletterCta;
-    case "tiles3LeftNewsletterCta":
+    case "tiles3LeftNewsletter":
       return tiles3LeftNewsletterCta;
-    case "tiles3RightNewsletterCta":
+    case "tiles3RightNewsletter":
       return tiles3RightNewsletterCta;
-    case "leftBgNewsletterCta":
+    case "leftBgNewsletter":
       return leftBgNewsletterCta;
-    case "centerBgNewsletterCta":
+    case "centerBgNewsletter":
       return centerBgNewsletterCta;
-    case "rightBgNewsletterCta":
+    case "rightBgNewsletter":
       return rightBgNewsletterCta;
-    case "leftGradientNewsletterCta":
+    case "leftGradientNewsletter":
       return leftGradientNewsletterCta;
-    case "centerGradientNewsletterCta":
+    case "centerGradientNewsletter":
       return centerGradientNewsletterCta;
-    case "rightGradientNewsletterCta":
+    case "rightGradientNewsletter":
       return rightGradientNewsletterCta;
-    case "justifiedNewsletterCta":
+    case "justifiedNewsletter":
       return justifiedNewsletterCta;
-    case "offsetFaq":
+    default:
+      return simpleCta;
+  }
+}
+
+function computeFaq(layout) {
+  switch (layout) {
+    case "offset":
       return offsetFaq;
-    case "accordionFaq":
+    case "accordion":
       return accordionFaq;
-    case "inlineFaq":
+    case "inline":
       return inlineFaq;
-    case "blurbGrid2Faq":
+    case "blurbGrid2":
       return blurbGrid2Faq;
-    case "blurbGrid3Faq":
+    case "blurbGrid3":
       return blurbGrid3Faq;
-    case "cardGrid2Faq":
+    case "cardGrid2":
       return cardGrid2Faq;
-    case "cardGrid3Faq":
+    case "cardGrid3":
       return cardGrid3Faq;
-    case "leftImageInfo":
-      return leftImageInfo;
-    case "rightImageInfo":
-      return rightImageInfo;
-    case "cardGridInfo":
-      return cardGridInfo;
-    case "blurbGridInfo":
-      return blurbGridInfo;
-    case "offsetGridInfo":
-      return offsetGridInfo;
-    case "offsetListInfo":
-      return offsetListInfo;
-    case "listInfo":
-      return listInfo;
-    case "missionFooter":
+    default:
+      return offsetFaq;
+  }
+}
+
+function computeFeature(layout) {
+  switch (layout) {
+    case "leftImage":
+      return leftImageFeature;
+    case "rightImage":
+      return rightImageFeature;
+    case "cardGrid":
+      return cardGridFeature;
+    case "blurbGrid":
+      return blurbGridFeature;
+    case "offsetGrid":
+      return offsetGridFeature;
+    case "offsetList":
+      return offsetListFeature;
+    case "list":
+      return listFeature;
+    default:
+      return leftImageFeature;
+  }
+}
+
+function computeFooter(layout) {
+  switch (layout) {
+    case "mission":
       return missionFooter;
-    case "missionDarkFooter":
+    case "missionDark":
       return missionDarkFooter;
-    case "missionPrimaryFooter":
+    case "missionPrimary":
       return missionPrimaryFooter;
-    case "missionBgFooter":
+    case "missionBg":
       return missionBgFooter;
-    case "missionDarkBgFooter":
+    case "missionDarkBg":
       return missionDarkBgFooter;
-    case "missionPrimaryBgFooter":
+    case "missionPrimaryBg":
       return missionPrimaryBgFooter;
-    case "newsletterFooter":
+    case "newsletter":
       return newsletterFooter;
-    case "newsletterDarkFooter":
+    case "newsletterDark":
       return newsletterDarkFooter;
-    case "newsletterPrimaryFooter":
+    case "newsletterPrimary":
       return newsletterPrimaryFooter;
-    case "newsletterBgFooter":
+    case "newsletterBg":
       return newsletterBgFooter;
-    case "newsletterDarkBgFooter":
+    case "newsletterDarkBg":
       return newsletterDarkBgFooter;
-    case "newsletterPrimaryBgFooter":
+    case "newsletterPrimaryBg":
       return newsletterPrimaryBgFooter;
-    case "simpleFooter":
+    case "simple":
       return simpleFooter;
-    case "simpleDarkFooter":
+    case "simpleDark":
       return simpleDarkFooter;
-    case "simplePrimaryFooter":
+    case "simplePrimary":
       return simplePrimaryFooter;
-    case "simpleBgFooter":
+    case "simpleBg":
       return simpleBgFooter;
-    case "simpleDarkBgFooter":
+    case "simpleDarkBg":
       return simpleDarkBgFooter;
-    case "simplePrimaryBgFooter":
+    case "simplePrimaryBg":
       return simplePrimaryBgFooter;
-    case "inlineFooter":
+    case "inline":
       return inlineFooter;
-    case "inlineDarkFooter":
+    case "inlineDark":
       return inlineDarkFooter;
-    case "inlinePrimaryFooter":
+    case "inlinePrimary":
       return inlinePrimaryFooter;
-    case "leftHeader":
+    default:
+      return missionFooter;
+  }
+}
+
+function computeHeader(layout) {
+  switch (layout) {
+    case "left":
       return leftHeader;
-    case "rightHeader":
+    case "right":
       return rightHeader;
-    case "leftImageHeader":
+    case "leftImage":
       return leftImageHeader;
-    case "rightImageHeader":
+    case "rightImage":
       return rightImageHeader;
-    case "centerHeader":
+    case "center":
       return centerHeader;
-    case "leftInverseHeader":
+    case "leftInverse":
       return leftInverseHeader;
-    case "rightInverseHeader":
+    case "rightInverse":
       return rightInverseHeader;
-    case "leftImageInverseHeader":
+    case "leftImageInverse":
       return leftImageInverseHeader;
-    case "rightImageInverseHeader":
+    case "rightImageInverse":
       return rightImageInverseHeader;
-    case "centerInverseHeader":
+    case "centerInverse":
       return centerInverseHeader;
-    case "leftHero":
+    default:
+      return leftHeader;
+  }
+}
+
+function computeHero(layout) {
+  switch (layout) {
+    case "left":
       return leftHero;
-    case "rightHero":
+    case "right":
       return rightHero;
-    case "splitLeftHero":
+    case "splitLeft":
       return splitLeftHero;
-    case "splitRightHero":
+    case "splitRight":
       return splitRightHero;
-    case "angledTopLeftHero":
+    case "angledTopLeft":
       return angledTopLeftHero;
-    case "angledTopRightHero":
+    case "angledTopRight":
       return angledTopRightHero;
-    case "angledBottomLeftHero":
+    case "angledBottomLeft":
       return angledBottomLeftHero;
-    case "angledBottomRightHero":
+    case "angledBottomRight":
       return angledBottomRightHero;
-    case "tiles2LeftHero":
+    case "tiles2Left":
       return tiles2LeftHero;
-    case "tiles2RightHero":
+    case "tiles2Right":
       return tiles2RightHero;
-    case "tiles3LeftHero":
+    case "tiles3Left":
       return tiles3LeftHero;
-    case "tiles3RightHero":
+    case "tiles3Right":
       return tiles3RightHero;
-    case "centerImageHero":
+    case "centerImage":
       return centerImageHero;
-    case "leftBgHero":
+    case "leftBg":
       return leftBgHero;
-    case "centerBgHero":
+    case "centerBg":
       return centerBgHero;
-    case "rightBgHero":
+    case "rightBg":
       return rightBgHero;
-    case "leftGradientHero":
+    case "leftGradient":
       return leftGradientHero;
-    case "centerGradientHero":
+    case "centerGradient":
       return centerGradientHero;
-    case "rightGradientHero":
+    case "rightGradient":
       return rightGradientHero;
-    case "gridLogoCloud":
+    default:
+      return leftHero;
+  }
+}
+
+function computeLogoClouds(layout) {
+  switch (layout) {
+    case "grid":
       return gridLogoCloud;
-    case "simpleLogoCloud":
+    case "simple":
       return simpleLogoCloud;
-    case "splitLogoCloud":
+    case "split":
       return splitLogoCloud;
-    case "centeredNavbar":
-      return centeredNavbar;
-    case "spacedNavbar":
-      return spacedNavbar;
-    case "startNavbar":
-      return startNavbar;
-    case "endNavbar":
-      return endNavbar;
-    case "stackedNavbar":
-      return stackedNavbar;
-    case "leftImagePortfolio":
+    default:
+      return gridLogoCloud;
+  }
+}
+
+function computePortfolio(layout) {
+  switch (layout) {
+    case "leftImage":
       return leftImagePortfolio;
-    case "rightImagePortfolio":
+    case "rightImage":
       return rightImagePortfolio;
-    case "cardGrid2Portfolio":
+
+    case "cardGrid2":
       return cardGrid2Portfolio;
-    case "coverPortfolio":
+    case "cover":
       return coverPortfolio;
-    case "simple3Stats":
+    default:
+      return leftImagePortfolio;
+  }
+}
+
+function computeStats(layout) {
+  switch (layout) {
+    case "simple3":
       return simple3Stats;
-    case "simple4Stats":
+    case "simple4":
       return simple4Stats;
-    case "imageLeftStats":
+    case "imageLeft":
       return imageLeftStats;
-    case "imageRightStats":
+    case "imageRight":
       return imageRightStats;
-    case "splitLeftStats":
+    case "splitLeft":
       return splitLeftStats;
-    case "splitRightStats":
+    case "splitRight":
       return splitRightStats;
-    case "descriptionStats":
+    case "description":
       return descriptionStats;
-    case "simpleQuoteTestimonials":
+    default:
+      return simple3Stats;
+  }
+}
+
+function computeTestimonials(layout) {
+  switch (layout) {
+    case "simpleQuote":
       return simpleQuoteTestimonials;
-    case "centeredQuoteTestimonials":
+    case "centeredQuote":
       return centeredQuoteTestimonials;
-    case "leftAvatarTestimonials":
+    case "leftAvatar":
       return leftAvatarTestimonials;
-    case "rightAvatarTestimonials":
+    case "rightAvatar":
       return rightAvatarTestimonials;
-    case "inlineStartTimeline":
+    case "split":
+      return splitTestimonials;
+    default:
+      return simpleQuoteTestimonials;
+  }
+}
+
+function computeTimeline(layout) {
+  switch (layout) {
+    case "inlineStart":
       return inlineStartTimeline;
-    case "inlineStaggeredTimeline":
+    case "inlineStaggered":
       return inlineStaggeredTimeline;
-    case "blockStartTimeline":
+    case "blockStart":
       return blockStartTimeline;
-    case "blockStaggeredTimeline":
+    case "blockStaggered":
       return blockStaggeredTimeline;
     default:
-      return null;
+      return inlineStartTimeline;
   }
 }
