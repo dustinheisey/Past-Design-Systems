@@ -1,0 +1,286 @@
+@storybook/cli v7.0.9
+
+info => Cleaning outputDir: /var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE
+info => Loading presets
+info => Building manager..
+info => Manager built (120 ms)
+info => Copying static files: /Users/dustinheisey/Documents/Projects/Web Design/design-system/storybook/node_modules/@storybook/manager/static at /var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/sb-common-assets
+vite v4.3.5 building for production...
+
+./sb-common-assets/fonts.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+transforming...
+[vite:css] /Users/dustinheisey/Documents/Projects/Web Design/design-system/storybook/src/components/dark-mode/dark-mode.css is empty
+61 |  @import "./components/breadcrumb/breadcrumb.css";
+62 |  @import "./components/card/card.css";
+63 |  @import "./components/dark-mode/dark-mode.css";
+   |   ^
+64 |  @import "./components/input-group/input-group.css";
+65 |  @import "./components/navigation/navigation.css";
+[vite:css] Parse error on line 1: 
+(100% - 1 * max(0.88rem, min(calc(0.85rem + 0.11vw), 0.94rem))) / 2
+--------------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+46 |  @import "./layouts/list/list.css";
+47 |  @import "./layouts/masonry/masonry.css";
+48 |  @import "./layouts/mosaic/mosaic.css";
+   |     ^
+49 |  @import "./layouts/prose/prose.css";
+50 |  @import "./layouts/reel/reel.css";
+[vite:css] Parse error on line 1: 
+max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem)) / 4
+-------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+26 |  @import "./elements/icon/icon.css";
+27 |  @import "./elements/image/image.css";
+28 |  @import "./elements/input/input.css";
+   |     ^
+29 |  @import "./elements/label/label.css";
+30 |  @import "./elements/link/link.css";
+[vite:css] Parse error on line 1: 
+(100% - max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem))) / 2
+----------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+13 |  @import "./tokens/typography/typography.css";
+14 |  
+15 |  @import "./elements/avatar/avatar.css";
+   |     ^
+16 |  @import "./elements/badge/badge.css";
+17 |  @import "./elements/blockquote/blockquote.css";
+[vite:css] Parse error on line 1: 
+(100% - max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem))) / 2
+----------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+13 |  @import "./tokens/typography/typography.css";
+14 |  
+15 |  @import "./elements/avatar/avatar.css";
+   |     ^
+16 |  @import "./elements/badge/badge.css";
+17 |  @import "./elements/blockquote/blockquote.css";
+[vite:css] Parse error on line 1: 
+(100% - max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem))) / 2
+----------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+33 |  @import "./elements/range/range.css";
+34 |  @import "./elements/select/select.css";
+35 |  @import "./elements/svg/svg.css";
+   |     ^
+36 |  @import "./elements/textarea/textarea.css";
+37 |  @import "./elements/video/video.css";
+[vite:css] Parse error on line 1: 
+(100% - max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem))) / 2
+----------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+33 |  @import "./elements/range/range.css";
+34 |  @import "./elements/select/select.css";
+35 |  @import "./elements/svg/svg.css";
+   |     ^
+36 |  @import "./elements/textarea/textarea.css";
+37 |  @import "./elements/video/video.css";
+[vite:css] Parse error on line 1: 
+-1 * max(1.13rem, min(calc(1.08rem + 0.22vw), 1.25rem))
+------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+57 |  
+58 |  @import "./components/accordion/accordion.css";
+59 |  @import "./components/banner/banner.css";
+   |     ^
+60 |  @import "./components/blurb/blurb.css";
+61 |  @import "./components/breadcrumb/breadcrumb.css";
+[vite:css] Parse error on line 1: 
+-1 * max(1.13rem, min(calc(1.08rem + 0.22vw), 1.25rem))
+------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+57 |  
+58 |  @import "./components/accordion/accordion.css";
+59 |  @import "./components/banner/banner.css";
+   |     ^
+60 |  @import "./components/blurb/blurb.css";
+61 |  @import "./components/breadcrumb/breadcrumb.css";
+[vite:css] Parse error on line 1: 
+...eshold) - (100% - max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem)))) * 999
+------------------------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+8  |  
+9  |  @import "./tokens/border-radius/border-radius.css";
+10 |  @import "./tokens/color/color.css";
+   |     ^
+11 |  @import "./tokens/elevation/elevation.css";
+12 |  @import "./tokens/space/space.css";
+[vite:css] Parse error on line 1: 
+4rem + max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem))
+--------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+8  |  
+9  |  @import "./tokens/border-radius/border-radius.css";
+10 |  @import "./tokens/color/color.css";
+   |     ^
+11 |  @import "./tokens/elevation/elevation.css";
+12 |  @import "./tokens/space/space.css";
+[vite:css] Parse error on line 1: 
+4rem + max(1.69rem, min(calc(1.62rem + 0.33vw), 1.88rem))
+--------------------------------------------------------^
+Expecting end of input, "ADD", "SUB", "MUL", "DIV", got unexpected "RPAREN"
+8  |  
+9  |  @import "./tokens/border-radius/border-radius.css";
+10 |  @import "./tokens/color/color.css";
+   |     ^
+11 |  @import "./tokens/elevation/elevation.css";
+12 |  @import "./tokens/space/space.css";
+Use of eval in "node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
+Use of eval in "node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
+✓ 638 modules transformed.
+rendering chunks...
+computing gzip size...
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/iframe.html                                          12.72 kB │ gzip:   3.56 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-da9dce65.css                          87.43 kB │ gzip:  13.47 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-0b293f2a.js                            0.11 kB │ gzip:   0.13 kB │ map:     0.51 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/tokens-2d9de1e3.js                             0.15 kB │ gzip:   0.15 kB │ map:     0.47 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/index-d475d2ea.js                              0.21 kB │ gzip:   0.17 kB │ map:     0.86 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/_commonjsHelpers-725317a4.js                   0.29 kB │ gzip:   0.23 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/WithTooltip-FBT32F6Q-cbeaa9ac.js               0.37 kB │ gzip:   0.24 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/syntaxhighlighter-QTQ2UBB4-418e06c9.js         0.38 kB │ gzip:   0.26 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/mosaic.story-f11b261a.js                       0.38 kB │ gzip:   0.27 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/sparkline.story-6cceb476.js                    0.39 kB │ gzip:   0.27 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/index-acbf490d.js                              0.40 kB │ gzip:   0.26 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/content.story-da92e575.js                      0.42 kB │ gzip:   0.28 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-84422117.js                            0.47 kB │ gzip:   0.31 kB │ map:     0.59 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/index-33638417.js                              0.53 kB │ gzip:   0.34 kB │ map:     4.32 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/input-group.story-b212ea58.js                  0.56 kB │ gzip:   0.37 kB │ map:     0.55 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/404.story-ade948f2.js                          0.65 kB │ gzip:   0.44 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/navigation.story-97ab10f4.js                   0.67 kB │ gzip:   0.44 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/dark-mode.story-5c59d89e.js                    0.67 kB │ gzip:   0.42 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/footer.story-deadb0e2.js                       0.68 kB │ gzip:   0.44 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/video.story-1c9d0eec.js                        0.68 kB │ gzip:   0.36 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/breadcrumb.story-4a568ec9.js                   0.68 kB │ gzip:   0.39 kB │ map:     0.71 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/figure.story-5d411ef1.js                       0.68 kB │ gzip:   0.36 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blog.story-eddb0f48.js                         0.74 kB │ gzip:   0.46 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/tooltip.story-de85e6f2.js                      0.77 kB │ gzip:   0.37 kB │ map:     0.13 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/index-356e4a49.js                              0.81 kB │ gzip:   0.51 kB │ map:     3.29 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/contact.story-82a17075.js                      0.83 kB │ gzip:   0.48 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/404.story-41baecf4.js                          0.87 kB │ gzip:   0.38 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blog-post.story-d685cfeb.js                    0.87 kB │ gzip:   0.50 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-b1164a2e.js                            0.88 kB │ gzip:   0.58 kB │ map:     2.95 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/contact.story-d268a0a8.js                      0.89 kB │ gzip:   0.39 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blockquote.story-961faea2.js                   0.93 kB │ gzip:   0.42 kB │ map:     0.13 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/stack.story-f12d0fa6.js                        0.95 kB │ gzip:   0.47 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/logo-clouds.story-20afea76.js                  0.96 kB │ gzip:   0.45 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/jsx-runtime-6b35a7bd.js                        0.97 kB │ gzip:   0.61 kB │ map:     2.37 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/accordion.story-41b47e1b.js                    0.97 kB │ gzip:   0.56 kB │ map:     1.00 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/portfolio.story-f685c4e1.js                    0.99 kB │ gzip:   0.53 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/todo-pages-33d38e8c.js                         1.01 kB │ gzip:   0.50 kB │ map:     1.44 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/image.story-2e727c07.js                        1.06 kB │ gzip:   0.43 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-9ac6b782.js                            1.06 kB │ gzip:   0.69 kB │ map:     3.30 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/portfolio.story-2dfda4c5.js                    1.13 kB │ gzip:   0.44 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/timeline.story-966d52f8.js                     1.16 kB │ gzip:   0.44 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/testimonials.story-f9508868.js                 1.18 kB │ gzip:   0.44 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/dropdown.story-eeafe2f8.js                     1.19 kB │ gzip:   0.41 kB │ map:     0.13 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/radio.story-9fd4941b.js                        1.23 kB │ gzip:   0.46 kB │ map:     0.13 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/label.story-2cd024dc.js                        1.24 kB │ gzip:   0.51 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/landing.story-f7d8affe.js                      1.26 kB │ gzip:   0.59 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/404-b68b8b8a.js                                1.26 kB │ gzip:   0.65 kB │ map:     1.06 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/footer-75a3e6dd.js                             1.27 kB │ gzip:   0.65 kB │ map:     1.07 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/navigation-4261260d.js                         1.28 kB │ gzip:   0.66 kB │ map:     1.08 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/checkbox.story-15e00400.js                     1.31 kB │ gzip:   0.47 kB │ map:     0.14 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/navbar.story-1a59ead1.js                       1.42 kB │ gzip:   0.55 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/services.story-2f14c158.js                     1.45 kB │ gzip:   0.61 kB │ map:     0.13 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/404-0c614484.js                                1.45 kB │ gzip:   0.48 kB │ map:     2.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blog-e28a33b2.js                               1.52 kB │ gzip:   0.73 kB │ map:     1.48 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blog-post-c99f6dc4.js                          1.55 kB │ gzip:   0.74 kB │ map:     1.51 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/about.story-b1f814f8.js                        1.60 kB │ gzip:   0.70 kB │ map:     0.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/service.story-6fbf3442.js                      1.60 kB │ gzip:   0.68 kB │ map:     0.13 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/contact-792500d2.js                            1.62 kB │ gzip:   0.75 kB │ map:     1.64 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/portfolio-a3b6d302.js                          1.66 kB │ gzip:   0.75 kB │ map:     1.68 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/DocsRenderer-EYKKDMVH-46d2434c.js              1.69 kB │ gzip:   0.86 kB │ map:     5.09 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/todo-components-6ae4fcee.js                    1.70 kB │ gzip:   0.60 kB │ map:     2.61 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/range.story-662a0bd9.js                        1.74 kB │ gzip:   0.62 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/faq.story-03fe5edf.js                          1.77 kB │ gzip:   0.58 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/inline.story-6c2fa39a.js                       1.78 kB │ gzip:   0.51 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/info.story-0592965d.js                         1.79 kB │ gzip:   0.58 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/landing-e36fc6ed.js                            1.80 kB │ gzip:   0.80 kB │ map:     1.90 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/stats.story-e8a018e7.js                        1.88 kB │ gzip:   0.63 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/avatar.story-13148d21.js                       2.00 kB │ gzip:   0.65 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/service-1acbe46b.js                            2.11 kB │ gzip:   0.93 kB │ map:     2.28 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blog.story-d94be0c8.js                         2.11 kB │ gzip:   0.68 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/services-93b42287.js                           2.13 kB │ gzip:   0.83 kB │ map:     2.27 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/fieldset.story-c3a9020b.js                     2.14 kB │ gzip:   0.49 kB │ map:     0.17 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/color-f0e720ff.js                              2.20 kB │ gzip:   0.69 kB │ map:     3.73 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/banner.story-e733a0e1.js                       2.20 kB │ gzip:   0.93 kB │ map:     2.40 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/select.story-b4477d34.js                       2.26 kB │ gzip:   0.58 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/input.story-d30b43d0.js                        2.29 kB │ gzip:   0.80 kB │ map:     0.13 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/divider.story-550d82cf.js                      2.29 kB │ gzip:   0.68 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/center.story-c9277c24.js                       2.39 kB │ gzip:   0.69 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-a60aa466.js                            2.40 kB │ gzip:   1.25 kB │ map:    11.25 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/elevation-a806a16c.js                          2.42 kB │ gzip:   0.62 kB │ map:     4.96 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/about-95846daf.js                              2.46 kB │ gzip:   1.00 kB │ map:     3.03 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/textarea.story-426edc66.js                     2.53 kB │ gzip:   0.83 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/border-radius-93e1fdae.js                      2.58 kB │ gzip:   0.67 kB │ map:     5.35 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/header.story-8f1fc57d.js                       2.62 kB │ gzip:   0.77 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-5a902275.js                            3.02 kB │ gzip:   0.92 kB │ map:     7.35 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/content-de85988e.js                            3.03 kB │ gzip:   1.06 kB │ map:     3.74 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/testimonials-91ab86c2.js                       3.10 kB │ gzip:   1.00 kB │ map:     4.23 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/svg.story-24f01720.js                          3.17 kB │ gzip:   0.96 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-770cc08b.js                            3.22 kB │ gzip:   1.39 kB │ map:    10.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/link.story-bb85b09e.js                         3.56 kB │ gzip:   1.16 kB │ map:     0.17 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/switcher.story-3eb4801c.js                     3.70 kB │ gzip:   0.82 kB │ map:     0.18 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/headline.story-f42a028d.js                     3.72 kB │ gzip:   1.24 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/button-group.story-d3e61f82.js                 4.05 kB │ gzip:   0.88 kB │ map:     3.20 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/badge.story-f2003c53.js                        4.09 kB │ gzip:   0.88 kB │ map:     0.15 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/cluster.story-9c6035f0.js                      4.39 kB │ gzip:   0.96 kB │ map:     0.17 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/logo-clouds-15ab94d3.js                        4.42 kB │ gzip:   0.61 kB │ map:     5.95 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/portfolio-bd7a5171.js                          4.63 kB │ gzip:   0.93 kB │ map:     6.33 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/p.story-a46ad444.js                            4.70 kB │ gzip:   1.09 kB │ map:     0.17 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/navigation.story-c2162d18.js                   4.72 kB │ gzip:   0.98 kB │ map:     5.69 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/hero.story-477d2774.js                         4.72 kB │ gzip:   1.18 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/list.story-eccae530.js                         4.77 kB │ gzip:   0.86 kB │ map:     0.24 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/config-29b68f2c.js                             4.88 kB │ gzip:   2.41 kB │ map:    15.21 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/reel.story-5786aeb7.js                         5.15 kB │ gzip:   0.74 kB │ map:     0.20 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/footer.story-9687d4c4.js                       5.40 kB │ gzip:   1.33 kB │ map:     0.11 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/frame.story-618be397.js                        5.43 kB │ gzip:   0.59 kB │ map:     0.23 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/form.story-e9e7f425.js                         6.26 kB │ gzip:   1.17 kB │ map:     0.30 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/icon-41a1d153.js                               6.87 kB │ gzip:   0.90 kB │ map:    13.84 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/sidebar.story-f5921c79.js                      7.01 kB │ gzip:   1.22 kB │ map:     0.25 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/timeline-0876700d.js                           7.05 kB │ gzip:   0.50 kB │ map:     9.12 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/dark-mode-45058909.js                          7.22 kB │ gzip:   1.79 kB │ map:    10.35 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/space-726f64fd.js                              7.30 kB │ gzip:   0.78 kB │ map:    17.91 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-62235626.js                            7.69 kB │ gzip:   1.60 kB │ map:    13.85 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/stats-c795edef.js                              7.78 kB │ gzip:   0.91 kB │ map:    10.03 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/preview-e6f1f377.js                            7.97 kB │ gzip:   3.03 kB │ map:    28.09 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/header-0e541323.js                             8.08 kB │ gzip:   0.85 kB │ map:    10.42 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blurb.story-4d10eeb1.js                        8.33 kB │ gzip:   0.71 kB │ map:     0.33 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/cover.story-3a0c5fac.js                        8.35 kB │ gzip:   1.16 kB │ map:     0.29 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/card.story-5843fc54.js                         8.48 kB │ gzip:   1.30 kB │ map:     9.46 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/typography-60a561f5.js                         8.53 kB │ gzip:   1.35 kB │ map:    14.67 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/contact-e79b662a.js                            9.09 kB │ gzip:   1.36 kB │ map:    11.61 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/layouts-10ac6cc1.js                            9.26 kB │ gzip:   2.43 kB │ map:    24.41 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/cta.story-f604608f.js                          9.26 kB │ gzip:   2.09 kB │ map:     0.10 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/masonry.story-3ce44fc9.js                      9.53 kB │ gzip:   0.87 kB │ map:     0.30 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/grid.story-be1c0f17.js                         9.93 kB │ gzip:   0.91 kB │ map:     0.27 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/GlobalScrollAreaStyles-XIHNDKUY-fa06d9f7.js   10.34 kB │ gzip:   2.32 kB │ map:    15.76 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/button.story-6769a911.js                      11.37 kB │ gzip:   1.76 kB │ map:     0.33 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/strip.story-37c073e7.js                       12.64 kB │ gzip:   1.07 kB │ map:    15.02 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/formatted.story-829510b0.js                   12.69 kB │ gzip:   3.03 kB │ map:     0.26 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/navbar-1bf9353a.js                            12.96 kB │ gzip:   1.18 kB │ map:    16.25 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/elements-32dd7701.js                          16.17 kB │ gzip:   3.51 kB │ map:    23.07 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/lit-element-c577cf25.js                       16.20 kB │ gzip:   5.96 kB │ map:    37.59 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/info-b44f46fc.js                              18.04 kB │ gzip:   1.39 kB │ map:    22.22 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/faq-63e7918b.js                               21.09 kB │ gzip:   1.09 kB │ map:    25.24 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/theme.story-807944f8.js                       22.70 kB │ gzip:   1.87 kB │ map:     0.71 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/prose.story-31c40171.js                       27.16 kB │ gzip:   5.06 kB │ map:     0.77 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/Color-3YIJY6X7-538e5673.js                    30.97 kB │ gzip:  11.62 kB │ map:   112.97 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/iframe-8dd24e3f.js                            32.92 kB │ gzip:   4.21 kB │ map:    24.69 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/cta-a2ac6aec.js                               43.88 kB │ gzip:   1.89 kB │ map:    58.77 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/blog-f9d22426.js                              55.28 kB │ gzip:   1.75 kB │ map:    65.95 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/OverlayScrollbars-VAV6LJAB-79ef09cd.js        58.91 kB │ gzip:  25.25 kB │ map:   277.49 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/index-c45868c5.js                             64.19 kB │ gzip:  18.36 kB │ map:   258.55 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/hero-fb23639b.js                              74.04 kB │ gzip:   2.94 kB │ map:    91.19 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/footer-108104b6.js                            74.97 kB │ gzip:   2.27 kB │ map:    92.75 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/axe-49d45c1b.js                              482.71 kB │ gzip: 127.39 kB │ map: 1,711.57 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/formatter-S4K5WUZV-04193ed8.js               601.57 kB │ gzip: 185.04 kB │ map: 1,314.35 kB
+../../../../../../../var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE/assets/index-151ec251.js                            653.89 kB │ gzip: 214.75 kB │ map: 1,850.55 kB
+
+(!) Some chunks are larger than 500 kBs after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 8.82s
+info => Output directory: /var/folders/0m/7rww5g3j2rqgfb__fyr505c00000gn/T/chromatic--10663-OmInIU3qh1uE

@@ -1,0 +1,17 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as Story from "./landing.story.js";
+
+## landing
+
+- hero [hero]
+- problem [infoLayouts]
+- guide [infoLayouts]
+- plan [feature/processLayouts]
+- call to action [ctaLayouts]
+- success [testimonialLayouts]
+- freebie / newsletter [ctaLayouts]
+
+<Meta of={Story} />
+
+<Controls of={Story.Default} />
+<Canvas of={Story.Default} sourceState="shown" />

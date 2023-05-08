@@ -1,0 +1,66 @@
+{
+  "name": "design-system",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Marketing website design system",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dustinheisey/lit-design-system.git"
+  },
+  "scripts": {
+    "lint:eslint": "eslint '**/*.js'",
+    "lint:lit-analyzer": "lit-analyzer 'src/**/*.js'",
+    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
+    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
+    "analyze": "cem analyze --litelement --globs \"**/*.js\" --exclude docs",
+    "analyze:watch": "cem analyze --litelement --globs \"**/*.js\" --exclude docs --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "storybook:test": "test-storybook --coverage --passWithNoTests",
+    "chromatic": "npx chromatic --project-token=07779aa098ab -exit-zero-on-changes",
+    "postcss": "postcss src/index.css -o ../sites/portfolio/style.css -w"
+  },
+  "keywords": [
+    "web-components",
+    "lit-element",
+    "javascript",
+    "lit"
+  ],
+  "author": {
+    "name": "Dustin Heisey"
+  },
+  "dependencies": {
+    "lit": "^2.7.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "@custom-elements-manifest/analyzer": "^0.8.0",
+    "@storybook/addon-a11y": "^7.0.7",
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-styling": "^1.0.3",
+    "@storybook/blocks": "^7.0.7",
+    "@storybook/web-components-vite": "^7.0.7",
+    "addon-screen-reader": "^1.8.6",
+    "autoprefixer": "^10.4.14",
+    "chromatic": "^6.17.3",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-storybook": "^0.6.11",
+    "lit-analyzer": "^1.2.1",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.3.2",
+    "prettier": "^2.8.8",
+    "storybook": "^7.0.7",
+    "storybook-addon-rem": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  }
+}

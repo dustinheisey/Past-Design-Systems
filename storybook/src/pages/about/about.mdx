@@ -1,0 +1,25 @@
+import { Meta, Canvas, Controls, Title, Subtitle } from "@storybook/blocks";
+import * as Story from "./about.story.js";
+
+## about
+
+- dont make it about you
+- keep it short
+
+- header [header/heroLayouts]
+- introduction paragraph with personal relatable microstory to build connection. second paragraph linking it back to services and why its good for your customer [infoLayouts]
+- skills & expertise
+- portfolio samples [portfolioLayouts]
+- testimonials [testimonialLayouts]
+- cta [ctaLayouts]
+
+<Title>About Builder</Title>
+<Subtitle>
+  Establish a strong personal brand, build trust, and showcase expertise to
+  potential clients
+</Subtitle>
+
+<Meta of={Story} />
+
+<Controls of={Story.Default} />
+<Canvas of={Story.Default} sourceState="shown" />

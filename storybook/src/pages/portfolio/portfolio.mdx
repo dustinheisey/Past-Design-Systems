@@ -1,0 +1,14 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as Story from "./portfolio.story.js";
+
+## portfolio
+
+- header [header/heroLayouts]
+- portfolio grid [portfolioLayouts]
+- testimonials [testimonialLayouts]
+- cta [ctaLayouts]
+
+<Meta of={Story} />
+
+<Controls of={Story.Default} />
+<Canvas of={Story.Default} sourceState="shown" />
