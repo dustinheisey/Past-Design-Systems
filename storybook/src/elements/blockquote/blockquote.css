@@ -10,6 +10,7 @@ blockquote.blockquote-accent:before {
   font-size: 7.5em;
   position: absolute;
   top: -0.55em;
+  font-family: var(--font-family-headline);
   color: var(--color-blockquote-accent-override, var(--color-primary));
 }
 

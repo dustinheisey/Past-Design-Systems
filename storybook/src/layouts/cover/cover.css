@@ -1,13 +1,23 @@
 /*? The Cover - “Above the fold” introductory content */
 .cover {
   display: flex;
-  block-size: 100vh;
-  max-inline-size: 100%;
-  max-inline-size: 100%;
+  min-block-size: 100vh;
+  inline-size: 100%;
   gap: var(--gap-region);
   padding: var(--inset, var(--inset-page));
 }
 
+.cover.sidebar {
+  padding: 0;
+}
+
+.cover.sidebar > .stack {
+  padding: var(--inset, var(--inset-page));
+}
+
+.cover.sidebar :is(.frame, img) {
+  border-radius: 0;
+}
 .cover-nav {
   flex-direction: column;
 }
@@ -17,7 +27,7 @@
 }
 
 .cover.cover-s {
-  block-size: 75vh;
+  min-block-size: 75vh;
 }
 
 .bg-img {

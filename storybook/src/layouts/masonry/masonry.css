@@ -8,6 +8,7 @@
 .masonry > * + * {
   margin-block-start: var(--gap, var(--space-m));
   break-inside: avoid;
+  display: block;
 }
 
 @media (--tablet-portrait-up) {

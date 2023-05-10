@@ -4,7 +4,7 @@ export const navigation = html`
   <header>
     <nav>
       <div class="desktop-navigation">
-        <div class="cluster full justify-between region" inset="xl">
+        <div class="cluster full justify-between" inset="xl">
           <div class="cluster justify-start" gap="xl">
             <a href="/" class="media">
               <svg
@@ -12,7 +12,7 @@ export const navigation = html`
                 class="logo"
                 viewBox="0 0 100 245.68853462923755"
               >
-                <use href="assets/icons.svg#logo" />
+                <use href="/assets/icons.svg#logo" />
               </svg>
               <span class="sr-only">Logo</span>
             </a>
@@ -31,13 +31,13 @@ export const navigation = html`
               <input type="checkbox" id="color_mode_toggle" />
               <span class="sun">
                 <svg focusable="false" class="icon">
-                  <use href="assets/icons.svg#sun" />
+                  <use href="/assets/icons.svg#sun" />
                 </svg>
                 <span class="sr-only">Light Mode</span>
               </span>
               <span class="moon">
                 <svg focusable="false" class="icon">
-                  <use href="assets/icons.svg#moon" />
+                  <use href="/assets/icons.svg#moon" />
                 </svg>
                 <span class="sr-only">Dark Mode</span>
               </span>
@@ -54,7 +54,7 @@ export const navigation = html`
               class="logo color-lighter"
               viewBox="0 0 100 245.68853462923755"
             >
-              <use href="assets/icons.svg#logo" />
+              <use href="/assets/icons.svg#logo" />
             </svg>
             <span class="sr-only">Logo</span>
           </a>
@@ -63,13 +63,13 @@ export const navigation = html`
             <label for="color_mode_toggle">
               <span class="sun">
                 <svg focusable="false" class="icon color-lighter">
-                  <use href="assets/icons.svg#sun" />
+                  <use href="/assets/icons.svg#sun" />
                 </svg>
                 <span class="sr-only">Light Mode</span>
               </span>
               <span class="moon">
                 <svg focusable="false" class="icon color-lighter">
-                  <use href="assets/icons.svg#moon" />
+                  <use href="/assets/icons.svg#moon" />
                 </svg>
                 <span class="sr-only">Dark Mode</span>
               </span>
@@ -80,7 +80,7 @@ export const navigation = html`
           <li>
             <a href="/index" aria-current="page" class="navigation">
               <svg focusable="false" class="icon color-lighter">
-                <use href="assets/icons.svg#home" />
+                <use href="/assets/icons.svg#home" />
               </svg>
               <span>Home</span>
             </a>
@@ -88,7 +88,7 @@ export const navigation = html`
           <li>
             <a href="/about" class="navigation">
               <svg focusable="false" class="icon color-lighter">
-                <use href="assets/icons.svg#about" />
+                <use href="/assets/icons.svg#about" />
               </svg>
               <span>About</span></a
             >
@@ -96,7 +96,7 @@ export const navigation = html`
           <li>
             <a href="/services" class="navigation">
               <svg focusable="false" class="icon color-lighter">
-                <use href="assets/icons.svg#webpage" />
+                <use href="/assets/icons.svg#webpage" />
               </svg>
               <span>Services</span>
             </a>
@@ -104,7 +104,7 @@ export const navigation = html`
           <li>
             <a href="/portfolio" class="navigation">
               <svg focusable="false" class="icon color-lighter">
-                <use href="assets/icons.svg#portfolio" />
+                <use href="/assets/icons.svg#portfolio" />
               </svg>
               <span>Portfolio</span></a
             >
@@ -112,7 +112,7 @@ export const navigation = html`
           <li>
             <a href="/contact" class="navigation">
               <svg focusable="false" class="icon color-lighter">
-                <use href="assets/icons.svg#contact" />
+                <use href="/assets/icons.svg#contact" />
               </svg>
               <span>Contact</span></a
             >

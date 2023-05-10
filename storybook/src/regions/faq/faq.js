@@ -69,7 +69,7 @@ export const offsetFaq = html`
 `;
 
 export const accordionFaq = html`
-  <div class="region">
+  <div>
     <div class="prose">
       <h2 class="region-headline">Frequently Asked Questions</h2>
       <p>

@@ -1,0 +1,72 @@
+{
+  "header": {
+    "links": [
+      { "label": "Home", "url": "/" },
+      { "label": "About", "url": "/about.html" },
+      {
+        "label": "Services",
+        "url": "/services.html",
+        "subLinks": [
+          { "label": "Branding", "url": "/services/branding.html" },
+          {
+            "label": "Web Design",
+            "url": "/services/web-design.html"
+          },
+          { "label": "Optimization", "url": "/services/optimization.html" }
+        ]
+      },
+      { "label": "Portfolio", "url": "/portfolio.html" },
+      { "label": "Blog", "url": "/blog.html" }
+    ],
+    "cta": { "label": "Start a Project", "url": "/contact.html" }
+  },
+  "footer": {
+    "groups": [
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy Policy", "url": "/privacy-policy.html" },
+          { "label": "Terms of Service", "url": "/terms-of-service.html" },
+          { "label": "Cookies", "url": "/cookie-policy.html" },
+          { "label": "Sitemap", "url": "/sitemap.html" }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Branding", "url": "/services/branding.html" },
+          {
+            "label": "Web Design",
+            "url": "/services/web-design.html"
+          },
+          { "label": "Optimization", "url": "/services/optimization.html" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Home", "url": "/" },
+          { "label": "About", "url": "/about.html" },
+          { "label": "Portfolio", "url": "/portfolio.html" },
+          { "label": "Blog", "url": "/blog.html" },
+          { "label": "Start a Project", "url": "/contact.html" }
+        ]
+      }
+    ],
+    "social": [
+      {
+        "label": "Medium",
+        "icon": "medium",
+        "url": "#"
+      },
+      { "label": "Dribbble", "icon": "dribbble", "url": "#" },
+      { "label": "Behance", "icon": "behance", "url": "#" },
+      {
+        "label": "LinkedIn",
+        "icon": "linkedin",
+        "url": "#"
+      },
+      { "label": "Twitter", "icon": "twitter", "url": "#" }
+    ]
+  }
+}

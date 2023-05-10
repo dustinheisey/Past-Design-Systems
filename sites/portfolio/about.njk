@@ -1,0 +1,86 @@
+---
+layout: base
+permalink: /about.html
+title: Meet the Freelance Web Designer Committed to Accessibility, Sustainability, and Social Impact
+description: I'm Dustin Heisey and I'm committed to creating accessible, sustainable, and socially impactful websites. Get to know me and see how I can transform your online presence.
+---
+
+<div class="cover cover-nav">
+    <div class="principle">
+        <div class="sidebar sidebar-split gap-m">
+            <div class="prose fixed">
+                <p class="overline">{{content.about.header.overline}}</p>
+                <h1>{{content.about.header.headline}}</h1>
+                <p>
+                    {{content.about.header.body}}
+                </p>
+                <a href="/contact" class="btn">Start a Project</a>
+            </div>
+            <div class="frame photo">
+                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="stack gap-s">
+    <div class="prose center center-intrinsic">
+        <p>
+            {{content.about.introduction.intro}}
+        </p>
+        <p>{{content.about.introduction.value}}</p>
+    </div>
+</div>
+
+<div class="stack">
+    <section class="prose center center-intrinsic">
+        <p class="overline">{{content.about.skills.overline}}</p>
+        <h2 class="region-headline">{{content.about.skills.headline}}</h2>
+        <p>{{contnet.about.skills.body}}</p>
+        </section>
+        <ul>
+            {% for skill in content.about.skills.skills %}
+                <li>{{skill}}</li>
+            {% endfor %}
+        </ul>
+    <div class="switcher switch-phone align-start gap-xl">
+        <div class="prose stack center-intrinsic gap-2xs">
+            <h4 class="section-headline">10,000</h4>
+            <p>Trees saved per second</p>
+        </div>
+        <div class="prose stack center-intrinsic gap-2xs">
+            <h4 class="section-headline">5 Million</h4>
+            <p>Plastic pieces removed</p>
+        </div>
+        <div class="prose stack center-intrinsic gap-2xs">
+            <h4 class="section-headline">400</h4>
+            <p>Orcas saved per month</p>
+        </div>
+        <div class="prose stack center-intrinsic gap-2xs">
+            <h4 class="section-headline">400</h4>
+            <p>Orcas saved per month</p>
+        </div>
+    </div>
+</div>
+
+<div class="cover cover-nav">
+    <h2 class="region-headline">{{content.about.portfolio.headline}}</h2>
+</div>
+
+<div class="cover cover-nav">
+    <div class="principle">
+        <div class="sidebar sidebar-split gap-m">
+            <div class="frame photo">
+                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
+            </div>
+            <div class="prose fixed">
+                <p class="overline">{{content.cta.overline}}</p>
+                <h1>{{content.cta.headline}}</h1>
+                <p>
+                    {{content.cta.body}}
+                </p>
+                <a href="/contact" class="btn">Start a Project</a>
+            </div>
+        </div>
+    </div>
+</div>

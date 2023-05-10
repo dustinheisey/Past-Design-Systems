@@ -1,0 +1,56 @@
+---
+layout: base
+permalink: /blog.html
+title: Accessibility & Sustainability Tips for Businesses & Nonprofits | Blog | Dustin Heisey
+description: Explore my blog for insightful articles on user-centered, accessible, and environmentally sustainable web design practices. Stay updated with the latest trends and tips for eco-conscious businesses and nonprofits.
+---
+
+<div class="cover cover-nav">
+    <div class="principle">
+        <div class="sidebar sidebar-split gap-m">
+            <div class="prose fixed">
+                <p class="overline">{{content.blog.overline}}</p>
+                <h1 class="page-headline">{{content.blog.headline}}</h1>
+                <p>
+                    {{content.blog.body}}
+                </p>
+            </div>
+            <div class="frame photo">
+                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="stack region center center-intrinsic">
+    <div class="masonry">
+        {% for post in collections.post %}
+        <a href="{{post.url}}">
+            <article class="card theme-tertiary-container prose">
+                <h2 class="title-section">{{ post.data.title }}</h2>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="cover cover-nav">
+    <div class="principle">
+        <div class="sidebar sidebar-split gap-m">
+            <div class="frame photo">
+                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
+            </div>
+            <div class="prose fixed">
+                <p class="overline">{{content.cta.overline}}</p>
+                <h1>{{content.cta.headline}}</h1>
+                <p>
+                    {{content.cta.body}}
+                </p>
+                <a href="/contact" class="btn">Start a Project</a>
+            </div>
+        </div>
+    </div>
+</div>

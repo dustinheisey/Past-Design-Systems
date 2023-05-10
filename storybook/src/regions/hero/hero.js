@@ -68,7 +68,44 @@ export const leftHero = html`
         </li>
       </ul>
       <div class="cluster gap-xs">
-        <nds-dark-mode></nds-dark-mode>
+        <button
+          class="dark-mode-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          onclick="onClick"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="var(--color-primary)"
+            />
+            <g class="sun-beams" stroke="var(--color-primary)">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" height="100%" width="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+          </svg>
+        </button>
         <a href="/start-a-project" class="btn">Start a Project</a>
       </div>
     </nav>
@@ -167,7 +204,44 @@ export const rightHero = html`
         </li>
       </ul>
       <div class="cluster gap-xs">
-        <nds-dark-mode></nds-dark-mode>
+        <button
+          class="dark-mode-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          onclick="onClick"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="var(--color-primary)"
+            />
+            <g class="sun-beams" stroke="var(--color-primary)">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" height="100%" width="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+          </svg>
+        </button>
         <a href="/start-a-project" class="btn">Start a Project</a>
       </div>
     </nav>
@@ -267,7 +341,44 @@ export const splitLeftHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>
@@ -369,7 +480,44 @@ export const splitRightHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>
@@ -457,7 +605,44 @@ export const angledTopLeftHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>
@@ -559,7 +744,44 @@ export const angledTopRightHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>
@@ -647,7 +869,44 @@ export const angledBottomLeftHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>
@@ -749,7 +1008,44 @@ export const angledBottomRightHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>
@@ -836,7 +1132,44 @@ export const tiles2LeftHero = html`
         </li>
       </ul>
       <div class="cluster gap-xs">
-        <nds-dark-mode></nds-dark-mode>
+        <button
+          class="dark-mode-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          onclick="onClick"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="var(--color-primary)"
+            />
+            <g class="sun-beams" stroke="var(--color-primary)">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" height="100%" width="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+          </svg>
+        </button>
         <a href="/start-a-project" class="btn">Start a Project</a>
       </div>
     </nav>
@@ -960,7 +1293,44 @@ export const tiles2RightHero = html`
         </li>
       </ul>
       <div class="cluster gap-xs">
-        <nds-dark-mode></nds-dark-mode>
+        <button
+          class="dark-mode-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          onclick="onClick"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="var(--color-primary)"
+            />
+            <g class="sun-beams" stroke="var(--color-primary)">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" height="100%" width="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+          </svg>
+        </button>
         <a href="/start-a-project" class="btn">Start a Project</a>
       </div>
     </nav>
@@ -1084,7 +1454,44 @@ export const tiles3LeftHero = html`
         </li>
       </ul>
       <div class="cluster gap-xs">
-        <nds-dark-mode></nds-dark-mode>
+        <button
+          class="dark-mode-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          onclick="onClick"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="var(--color-primary)"
+            />
+            <g class="sun-beams" stroke="var(--color-primary)">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" height="100%" width="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+          </svg>
+        </button>
         <a href="/start-a-project" class="btn">Start a Project</a>
       </div>
     </nav>
@@ -1243,7 +1650,44 @@ export const tiles3RightHero = html`
         </li>
       </ul>
       <div class="cluster gap-xs">
-        <nds-dark-mode></nds-dark-mode>
+        <button
+          class="dark-mode-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          onclick="onClick"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="var(--color-primary)"
+            />
+            <g class="sun-beams" stroke="var(--color-primary)">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" height="100%" width="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+          </svg>
+        </button>
         <a href="/start-a-project" class="btn">Start a Project</a>
       </div>
     </nav>
@@ -1402,7 +1846,44 @@ export const centerImageHero = html`
       </li>
     </ul>
     <div class="cluster gap-xs">
-      <nds-dark-mode></nds-dark-mode>
+      <button
+    class="dark-mode-toggle"
+    id="theme-toggle"
+    title="Toggles light & dark"
+    onclick="onClick"
+    aria-live="polite"
+  >
+    <svg
+      class="sun-and-moon"
+      aria-hidden="true"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        class="sun"
+        cx="12"
+        cy="12"
+        r="6"
+        mask="url(#moon-mask)"
+        fill="var(--color-primary)"
+      />
+      <g class="sun-beams" stroke="var(--color-primary)">
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </g>
+      <mask class="moon" id="moon-mask">
+        <rect x="0" y="0" height="100%" width="100%" fill="white" />
+        <circle cx="24" cy="10" r="6" fill="black" />
+      </mask>
+    </svg>
+  </button>
       <a href="/start-a-project" class="btn">Start a Project</a>
     </div>
   </nav>
@@ -1506,7 +1987,44 @@ export const leftBgHero = html`
       </li>
     </ul>
     <div class="cluster gap-xs">
-      <nds-dark-mode></nds-dark-mode>
+      <button
+    class="dark-mode-toggle"
+    id="theme-toggle"
+    title="Toggles light & dark"
+    onclick="onClick"
+    aria-live="polite"
+  >
+    <svg
+      class="sun-and-moon"
+      aria-hidden="true"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        class="sun"
+        cx="12"
+        cy="12"
+        r="6"
+        mask="url(#moon-mask)"
+        fill="var(--color-primary)"
+      />
+      <g class="sun-beams" stroke="var(--color-primary)">
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </g>
+      <mask class="moon" id="moon-mask">
+        <rect x="0" y="0" height="100%" width="100%" fill="white" />
+        <circle cx="24" cy="10" r="6" fill="black" />
+      </mask>
+    </svg>
+  </button>
       <a href="/start-a-project" class="btn">Start a Project</a>
     </div>
   </nav>
@@ -1604,7 +2122,44 @@ export const centerBgHero = html`
       </li>
     </ul>
     <div class="cluster gap-xs">
-      <nds-dark-mode></nds-dark-mode>
+      <button
+    class="dark-mode-toggle"
+    id="theme-toggle"
+    title="Toggles light & dark"
+    onclick="onClick"
+    aria-live="polite"
+  >
+    <svg
+      class="sun-and-moon"
+      aria-hidden="true"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        class="sun"
+        cx="12"
+        cy="12"
+        r="6"
+        mask="url(#moon-mask)"
+        fill="var(--color-primary)"
+      />
+      <g class="sun-beams" stroke="var(--color-primary)">
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </g>
+      <mask class="moon" id="moon-mask">
+        <rect x="0" y="0" height="100%" width="100%" fill="white" />
+        <circle cx="24" cy="10" r="6" fill="black" />
+      </mask>
+    </svg>
+  </button>
       <a href="/start-a-project" class="btn">Start a Project</a>
     </div>
   </nav>
@@ -1702,7 +2257,44 @@ export const rightBgHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>
@@ -1796,7 +2388,44 @@ export const leftGradientHero = html`
       </li>
     </ul>
     <div class="cluster gap-xs">
-      <nds-dark-mode></nds-dark-mode>
+      <button
+    class="dark-mode-toggle"
+    id="theme-toggle"
+    title="Toggles light & dark"
+    onclick="onClick"
+    aria-live="polite"
+  >
+    <svg
+      class="sun-and-moon"
+      aria-hidden="true"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        class="sun"
+        cx="12"
+        cy="12"
+        r="6"
+        mask="url(#moon-mask)"
+        fill="var(--color-primary)"
+      />
+      <g class="sun-beams" stroke="var(--color-primary)">
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </g>
+      <mask class="moon" id="moon-mask">
+        <rect x="0" y="0" height="100%" width="100%" fill="white" />
+        <circle cx="24" cy="10" r="6" fill="black" />
+      </mask>
+    </svg>
+  </button>
       <a href="/start-a-project" class="btn">Start a Project</a>
     </div>
   </nav>
@@ -1889,7 +2518,44 @@ export const centerGradientHero = html`
       </li>
     </ul>
     <div class="cluster gap-xs">
-      <nds-dark-mode></nds-dark-mode>
+      <button
+    class="dark-mode-toggle"
+    id="theme-toggle"
+    title="Toggles light & dark"
+    onclick="onClick"
+    aria-live="polite"
+  >
+    <svg
+      class="sun-and-moon"
+      aria-hidden="true"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        class="sun"
+        cx="12"
+        cy="12"
+        r="6"
+        mask="url(#moon-mask)"
+        fill="var(--color-primary)"
+      />
+      <g class="sun-beams" stroke="var(--color-primary)">
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </g>
+      <mask class="moon" id="moon-mask">
+        <rect x="0" y="0" height="100%" width="100%" fill="white" />
+        <circle cx="24" cy="10" r="6" fill="black" />
+      </mask>
+    </svg>
+  </button>
       <a href="/start-a-project" class="btn">Start a Project</a>
     </div>
   </nav>
@@ -1982,7 +2648,44 @@ export const rightGradientHero = html`
           </li>
         </ul>
         <div class="cluster gap-xs">
-          <nds-dark-mode></nds-dark-mode>
+          <button
+            class="dark-mode-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            onclick="onClick"
+            aria-live="polite"
+          >
+            <svg
+              class="sun-and-moon"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="sun"
+                cx="12"
+                cy="12"
+                r="6"
+                mask="url(#moon-mask)"
+                fill="var(--color-primary)"
+              />
+              <g class="sun-beams" stroke="var(--color-primary)">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" height="100%" width="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+            </svg>
+          </button>
           <a href="/start-a-project" class="btn">Start a Project</a>
         </div>
       </nav>

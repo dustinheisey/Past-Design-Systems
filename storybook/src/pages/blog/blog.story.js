@@ -19,4 +19,5 @@ export default {
   },
 };
 
-export const Default = ({ header }) => html` ${computeLayout(header)} `;
+export const Default = ({ header, grid, cta }) =>
+  html` ${computeLayout(header)} ${computeLayout(grid)} ${computeLayout(cta)} `;

@@ -27,7 +27,7 @@ export const leftImageInfo = html`
           <div class="stack gap-s">
             <div class="inline align-start gap-xs">
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+                <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
                 <strong>Hello world</strong> In ex velit eiusmod est proident
@@ -36,7 +36,7 @@ export const leftImageInfo = html`
             </div>
             <div class="inline align-start gap-xs">
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+                <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
                 <strong>Hello world</strong> In ex velit eiusmod est proident
@@ -45,7 +45,7 @@ export const leftImageInfo = html`
             </div>
             <div class="inline align-start gap-xs">
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+                <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
                 <strong>Hello world</strong> In ex velit eiusmod est proident
@@ -79,7 +79,7 @@ export const rightImageInfo = html`
           <div class="stack gap-s">
             <div class="inline align-start gap-xs">
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+                <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
                 <strong>Hello world</strong> In ex velit eiusmod est proident
@@ -88,7 +88,7 @@ export const rightImageInfo = html`
             </div>
             <div class="inline align-start gap-xs">
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+                <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
                 <strong>Hello world</strong> In ex velit eiusmod est proident
@@ -97,7 +97,7 @@ export const rightImageInfo = html`
             </div>
             <div class="inline align-start gap-xs">
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+                <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
                 <strong>Hello world</strong> In ex velit eiusmod est proident
@@ -119,7 +119,7 @@ export const rightImageInfo = html`
 `;
 
 export const cardGridInfo = html`
-  <div class="region stack gap-s">
+  <div class="stack gap-s">
     <div class="prose center center-intrinsic">
       <h2 class="region-headline">Frequently Asked Questions</h2>
       <p>
@@ -142,7 +142,7 @@ export const cardGridInfo = html`
       </div>
       <div class="card prose theme-secondary-container">
         <svg class="icon icon-l block">
-          <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+          <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
         <p>
@@ -169,7 +169,7 @@ export const cardGridInfo = html`
 `;
 
 export const blurbGridInfo = html`
-  <div class="region stack gap-s">
+  <div class="stack gap-s">
     <div class="prose center center-intrinsic">
       <h2 class="region-headline">Frequently Asked Questions</h2>
       <p>
@@ -192,7 +192,7 @@ export const blurbGridInfo = html`
       </div>
       <div class="prose">
         <svg class="icon icon-l block">
-          <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+          <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
         <p>
@@ -228,7 +228,7 @@ export const blurbGridInfo = html`
       </div>
       <div class="prose">
         <svg class="icon icon-l block">
-          <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+          <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
         <p>
@@ -262,7 +262,7 @@ export const offsetGridInfo = html`
     <div class="grid grid-2 gap-s">
       <div class="prose">
         <svg class="icon icon-l block">
-          <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+          <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
         <p>
@@ -274,7 +274,7 @@ export const offsetGridInfo = html`
       </div>
       <div class="prose">
         <svg class="icon icon-l block">
-          <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+          <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
         <p>
@@ -286,7 +286,7 @@ export const offsetGridInfo = html`
       </div>
       <div class="prose">
         <svg class="icon icon-l block">
-          <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+          <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
         <p>
@@ -298,7 +298,7 @@ export const offsetGridInfo = html`
       </div>
       <div class="prose">
         <svg class="icon icon-l block">
-          <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+          <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
         <p>
@@ -419,7 +419,7 @@ export const offsetListInfo = html`
 `;
 
 export const listInfo = html`
-  <div class="region stack gap-s">
+  <div class="stack gap-s">
     <div class="prose center center-intrinsic">
       <h2 class="region-headline">Frequently Asked Questions</h2>
       <p>
@@ -431,7 +431,7 @@ export const listInfo = html`
       <div class="stack gap-s">
         <div class="inline align-start gap-xs">
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+            <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
             <strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.
@@ -439,7 +439,7 @@ export const listInfo = html`
         </div>
         <div class="inline align-start gap-xs">
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+            <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
             <strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.
@@ -447,7 +447,7 @@ export const listInfo = html`
         </div>
         <div class="inline align-start gap-xs">
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+            <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
             <strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.
@@ -457,7 +457,7 @@ export const listInfo = html`
       <div class="stack gap-s">
         <div class="inline align-start gap-xs">
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+            <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
             <strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.
@@ -465,7 +465,7 @@ export const listInfo = html`
         </div>
         <div class="inline align-start gap-xs">
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+            <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
             <strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.
@@ -473,7 +473,7 @@ export const listInfo = html`
         </div>
         <div class="inline align-start gap-xs">
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+            <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
             <strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.

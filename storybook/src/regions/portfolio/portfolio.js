@@ -59,7 +59,7 @@ export const rightImagePortfolio = html`
 `;
 
 export const cardGrid2Portfolio = html`
-  <div class="region stack gap-s">
+  <div class="stack gap-s">
     <div class="prose center center-intrinsic">
       <h2 class="region-headline">My Projects</h2>
       <p>

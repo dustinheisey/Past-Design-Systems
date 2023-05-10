@@ -1,11 +1,6 @@
-:root {
-  --icon-color-primary: inherit;
-  --icon-color-secondary: currentColor;
-}
-
 .icon {
   display: inline-block;
-  color: var(--icon-color-primary); /* icon primary color */
+  color: inherit;
   inline-size: 24px;
   block-size: 24px;
   line-height: 1;
@@ -15,8 +10,20 @@
 
 .icon use {
   /* icon secondary color */
-  fill: var(--icon-color-secondary);
-  stroke: var(--icon-color-secondary);
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.icon-primary {
+  color: var(--color-primary);
+}
+
+.icon-secondary {
+  color: var(--color-secondary);
+}
+
+.icon-tertiary {
+  color: var(--color-tertiary);
 }
 
 /* --------------------------------

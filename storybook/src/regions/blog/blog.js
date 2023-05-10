@@ -1,7 +1,7 @@
 import { html } from "lit";
 
 export const textGridBlog = html`
-  <div class="stack region">
+  <div class="stack">
     <section class="prose">
       <h1 class="page-headline">Blog Title</h1>
       <p>
@@ -139,7 +139,7 @@ export const textGridBlog = html`
 `;
 
 export const cardGridBlog = html`
-  <div class="stack region">
+  <div class="stack">
     <section class="prose">
       <h1 class="page-headline">Blog Title</h1>
       <p>
@@ -301,7 +301,7 @@ export const cardGridBlog = html`
 `;
 
 export const imgGridBlog = html`
-  <div class="stack region">
+  <div class="stack">
     <section class="prose">
       <h1 class="page-headline">Blog Title</h1>
       <p>
@@ -486,7 +486,7 @@ export const imgGridBlog = html`
 `;
 
 export const stackBlog = html`
-  <div class="stack center region">
+  <div class="stack center">
     <section class="prose center">
       <h1 class="page-headline">Blog Title</h1>
       <p>
@@ -633,7 +633,7 @@ export const stackBlog = html`
 `;
 
 export const leftBlog = html`
-  <div class="stack center region">
+  <div class="stack center">
     <section class="prose justify-start">
       <h1 class="page-headline">Blog Title</h1>
       <p>
@@ -819,7 +819,7 @@ export const leftBlog = html`
 `;
 
 export const featuredTextGridBlog = html`
-  <div class="stack region">
+  <div class="stack">
     <section class="prose">
       <h1 class="page-headline">Blog Title</h1>
       <p>
@@ -981,7 +981,7 @@ export const featuredTextGridBlog = html`
 `;
 
 export const featuredMixedGridBlog = html`
-  <div class="stack region">
+  <div class="stack">
     <section class="prose">
       <h1 class="page-headline">Blog Title</h1>
       <p>
@@ -1143,7 +1143,7 @@ export const featuredMixedGridBlog = html`
 `;
 
 export const featuredCardGridBlog = html`
-  <div class="stack region">
+  <div class="stack">
     <section class="prose">
       <h1 class="page-headline">Blog Title</h1>
       <p>

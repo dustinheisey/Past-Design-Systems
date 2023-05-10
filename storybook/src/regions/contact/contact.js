@@ -9,7 +9,7 @@ export const centeredContact = html`
       budgetValue.textContent = "$" + budgetInput.value;
     });
   </script>
-  <div class="region center stack">
+  <div class="center stack">
     <section class="prose">
       <p class="overline">Overline Text</p>
       <h2 class="region-headline">Apply to Work With Me</h2>

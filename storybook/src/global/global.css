@@ -4,9 +4,22 @@
 @custom-media --desktop-up (min-width: 75em);
 @custom-media --desktop-hd-up (min-width: 112.5em);
 
+body {
+  background-color: var(--color-background);
+}
+
 header,
 footer {
   padding: var(--inset-page);
+}
+
+footer.bg-img {
+  padding: 0;
+}
+
+footer.bg-img > .stack {
+  padding: var(--inset-page);
+  padding-block-end: calc(2 * var(--inset-page));
 }
 
 .region {

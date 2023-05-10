@@ -48,7 +48,7 @@ export const banner = html`
     <p>Hello world</p>
     <button>
       <svg class="icon">
-        <use href="src/elements/text/icon/icons.svg#c-remove-2"></use>
+        <use href="src/elements/text/icon/icons.svg#remove"></use>
       </svg>
       <span class="sr-only">Close</span>
     </button>

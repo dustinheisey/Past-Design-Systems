@@ -89,31 +89,31 @@ export const missionFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -211,31 +211,31 @@ export const missionDarkFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -333,31 +333,31 @@ export const missionPrimaryFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -457,31 +457,31 @@ export const missionBgFooter = html`
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
           </li>
@@ -583,31 +583,31 @@ export const missionDarkBgFooter = html`
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
           </li>
@@ -708,31 +708,31 @@ export const missionPrimaryBgFooter = html`
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
           </li>
@@ -832,31 +832,31 @@ export const newsletterFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -954,31 +954,31 @@ export const newsletterDarkFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -1076,31 +1076,31 @@ export const newsletterPrimaryFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>     
             <svg class="icon">
-              <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -1200,31 +1200,31 @@ export const newsletterBgFooter = html`
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
           </li>
@@ -1325,31 +1325,31 @@ export const newsletterDarkBgFooter = html`
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
           </li>
@@ -1450,31 +1450,31 @@ export const newsletterPrimaryBgFooter = html`
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
             <a href="/" class="btn btn-tertiary">
               <span class="sr-only">Link Text</span>
               <svg class="icon">
-                <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+                <use href="src/elements/icon/icons.svg#audio-description-1" />
               </svg>
             </a>
           </li>
@@ -1509,31 +1509,31 @@ export const simpleFooter = html`
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
       </li>
@@ -1565,31 +1565,31 @@ export const simpleDarkFooter = html`
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
       </li>
@@ -1621,31 +1621,31 @@ export const simplePrimaryFooter = html`
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
       </li>
@@ -1683,41 +1683,31 @@ export const simpleBgFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -1756,41 +1746,31 @@ export const simpleDarkBgFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -1829,41 +1809,31 @@ export const simplePrimaryBgFooter = html`
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
           <a href="/" class="btn btn-tertiary">
             <span class="sr-only">Link Text</span>
             <svg class="icon">
-              <use
-                href="src/elements/text/icon/icons.svg#audio-description-1"
-              />
+              <use href="src/elements/icon/icons.svg#audio-description-1" />
             </svg>
           </a>
         </li>
@@ -1881,31 +1851,31 @@ export const inlineFooter = html`
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
       </li>
@@ -1920,31 +1890,31 @@ export const inlineDarkFooter = html`
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
       </li>
@@ -1959,31 +1929,31 @@ export const inlinePrimaryFooter = html`
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
         <a href="/" class="btn btn-tertiary">
           <span class="sr-only">Link Text</span>
           <svg class="icon">
-            <use href="src/elements/text/icon/icons.svg#audio-description-1" />
+            <use href="src/elements/icon/icons.svg#audio-description-1" />
           </svg>
         </a>
       </li>
