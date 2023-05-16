@@ -1,6 +1,7 @@
 .sidebar {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--gap, var(--space-m));
 }
 
@@ -20,7 +21,7 @@
 }
 
 .sidebar-split > .fixed {
-  flex-basis: 55ch;
+  flex-basis: 45ch;
 }
 
 .sidebar-split > :not(.fixed) {

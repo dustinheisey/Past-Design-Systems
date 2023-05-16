@@ -17,6 +17,7 @@ ul {
 
 li {
   max-inline-size: 66ch;
+  font-size: var(--font-size-body);
 }
 
 /* List */

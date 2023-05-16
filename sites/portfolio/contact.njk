@@ -5,19 +5,12 @@ title: Start Your Web Design Project with Me
 description: Ready to create a website that accurately represents your organization? Get in touch with me today to start your web design project. My comprehensive web design services prioritize accessibility, sustainability, and social impact. I provide customized solutions to meet your unique website needs and requirements, ensuring that your website effectively communicates your vision and is accessible to as many people as possible. Fill out the contact form below to get started.
 ---
 
-<script>
-    const budgetInput = document.getElementById("budget");
-    const budgetValue = document.getElementById("budget-value");
-
-    budgetInput.addEventListener("input", function () {
-        budgetValue.textContent = "$" + budgetInput.value;
-    });
-</script>
-<div class="cover sidebar sidebar-split gap-m">
-    <div class="frame photo fixed">
-      <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
+<div class="cover region cover-nav">
+  <div class="sidebar align-stretch sidebar-split gap-m">
+    <div class="frame square">
+      <img src="{{content.contact.img.src}}" alt="{{content.contact.img.alt}}" srcset="">
     </div>
-    <div class="stack center">
+    <div class="stack fixed center center-intrinsic">
       <section class="prose">
         <h2 class="region-headline">{{content.contact.headline}}</h2>
         <p>
@@ -37,7 +30,7 @@ description: Ready to create a website that accurately represents your organizat
           <span class="required">Describe Your Organization</span>
           <textarea id="organization_description" name="organization_description" required=""></textarea>
         </label>
-        <fieldset class="cards">
+        <fieldset class="cards switcher switch-phone">
           <legend>
             <span class="required">What Services Are You Interested In?</span>
           </legend>
@@ -45,7 +38,7 @@ description: Ready to create a website that accurately represents your organizat
             <input type="checkbox">
             <span>
               <svg>
-                <use xlink:href="src/elements/text/icon/icons.svg#palette"></use>
+                <use href="/assets/icons.svg#branding"></use>
               </svg>
               Branding
             </span>
@@ -54,7 +47,7 @@ description: Ready to create a website that accurately represents your organizat
             <input type="checkbox">
             <span>
               <svg>
-                <use xlink:href="src/elements/text/icon/icons.svg#web-design"></use>
+                <use href="/assets/icons.svg#web-design"></use>
               </svg>
               Web Design
             </span>
@@ -63,7 +56,7 @@ description: Ready to create a website that accurately represents your organizat
             <input type="checkbox">
             <span>
               <svg>
-                <use xlink:href="src/elements/text/icon/icons.svg#optimization"></use>
+                <use href="/assets/icons.svg#performance"></use>
               </svg>
               Optimization
             </span>
@@ -80,3 +73,6 @@ description: Ready to create a website that accurately represents your organizat
       </form>
     </div>
   </div>
+</div>
+
+</div>

@@ -8,12 +8,24 @@
   align-items: center;
 }
 
+.frame img {
+  background-color: var(--color-background-light);
+  /* padding: var(--space-3xs); */
+}
+
+.frame.cover {
+}
+
 .frame.square {
   aspect-ratio: 1/1;
 }
 
 .frame.logo {
   aspect-ratio: 2/1;
+}
+
+.frame.vertical {
+  aspect-ratio: 1/2;
 }
 
 .frame.photo {

@@ -14,6 +14,8 @@
   --font-size-3xl: clamp(2.33rem, calc(1.77rem + 2.81vw), 3.95rem);
   --font-size-4xl: clamp(2.8rem, calc(1.94rem + 4.28vw), 5.26rem);
 
+  --font-size-body: var(--font-size-m);
+
   --line-height-headline: 1.2;
   --line-height-body: 1.5;
 

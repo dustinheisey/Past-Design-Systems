@@ -1,6 +1,6 @@
 :root {
   /* light */
-  --color-primary-light: #566500;
+  /* --color-primary-light: #566500;
   --color-on-primary-light: #ffffff;
   --color-primary-container-light: #d9ec7b;
   --color-on-primary-container-light: #181e00;
@@ -16,9 +16,9 @@
   --color-error-container-light: #ffdad6;
   --color-on-error-light: #ffffff;
   --color-on-error-container-light: #410002;
-  --color-background-light: #fffbff;
+  --color-background-light: #f1dec1;
   --color-on-background-light: #251a00;
-  --color-surface-light: #fffbff;
+  --color-surface-light: #fcefdd;
   --color-on-surface-light: #251a00;
   --color-surface-variant-light: #e4e3d3;
   --color-on-surface-variant-light: #46483b;
@@ -28,10 +28,54 @@
   --color-inverse-primary-light: #bdd062;
   --color-shadow-light: #000000;
   --color-surface-tint-light: #566500;
-  --color-outline-variant-light: #c7c7b7;
-  --color-scrim-light: #000000;
+  --color-outline-variant-light: #c7c7b7; */
+
+  --color-primary-light: #566500;
+  --color-on-primary-light: #ffffff;
+  --color-primary-container-light: #d9ec7b;
+  --color-on-primary-container-light: #181e00;
+  --color-secondary-light: #855300;
+  --color-on-secondary-light: #ffffff;
+  --color-secondary-container-light: #ffddb7;
+  --color-on-secondary-container-light: #2a1700;
+  /* --color-primary-light: #2c6b28;
+  --color-on-primary-light: #ffffff;
+  --color-primary-container-light: #aef4a0;
+  --color-on-primary-container-light: #002201;
+  --color-secondary-light: #8d4f00;
+  --color-on-secondary-light: #ffffff;
+  --color-secondary-container-light: #ffdcc0;
+  --color-on-secondary-container-light: #2d1600; */
+  --color-tertiary-light: #785a00;
+  --color-on-tertiary-light: #ffffff;
+  --color-tertiary-container-light: #ffdf9d;
+  --color-on-tertiary-container-light: #251a00;
+  --color-error-light: #ba1a1a;
+  --color-error-container-light: #ffdad6;
+  --color-on-error-light: #ffffff;
+  --color-on-error-container-light: #410002;
+  --color-background-light: #f1dec1;
+  --color-on-background-light: #251a00;
+  --color-surface-light: #fcefdd;
+  --color-on-surface-light: #251a00;
+  --color-surface-variant-light: #dfe4d8;
+  --color-on-surface-variant-light: #42493f;
+  --color-outline-light: #73796e;
+  --color-inverse-on-surface-light: #ffefd3;
+  --color-inverse-surface-light: #3f2e00;
+  --color-inverse-primary-light: #93d786;
+  --color-surface-tint-light: #2c6b28;
+  --color-outline-variant-light: #c2c8bc;
 
   /* dark */
+  /* --color-primary-dark: #93d786;
+  --color-on-primary-dark: #003a04;
+  --color-primary-container-dark: #115211;
+  --color-on-primary-container-dark: #aef4a0;
+  --color-secondary-dark: #ffb875;
+  --color-on-secondary-dark: #4b2800;
+  --color-secondary-container-dark: #6b3b00;
+  --color-on-secondary-container-dark: #ffdcc0; */
   --color-primary-dark: #bdd062;
   --color-on-primary-dark: #2c3400;
   --color-primary-container-dark: #414c00;
@@ -40,6 +84,28 @@
   --color-on-secondary-dark: #472a00;
   --color-secondary-container-dark: #653e00;
   --color-on-secondary-container-dark: #ffddb7;
+  --color-tertiary-dark: #f5be34;
+  --color-on-tertiary-dark: #3f2e00;
+  --color-tertiary-container-dark: #5b4300;
+  --color-on-tertiary-container-dark: #ffdf9d;
+  --color-error-dark: #ffb4ab;
+  --color-error-container-dark: #93000a;
+  --color-on-error-dark: #690005;
+  --color-on-error-container-dark: #ffdad6;
+  --color-background-dark: #251a00;
+  --color-on-background-dark: #ffdf9c;
+  --color-surface-dark: #352900;
+  --color-on-surface-dark: #ffdf9c;
+  --color-surface-variant-dark: #42493f;
+  --color-on-surface-variant-dark: #c2c8bc;
+  --color-outline-dark: #8c9388;
+  --color-inverse-on-surface-dark: #251a00;
+  --color-inverse-surface-dark: #ffdf9c;
+  --color-inverse-primary-dark: #2c6b28;
+  --color-surface-tint-dark: #93d786;
+  --color-outline-variant-dark: #42493f;
+
+  /* dark
   --color-tertiary-dark: #f3bf34;
   --color-on-tertiary-dark: #3f2e00;
   --color-tertiary-container-dark: #5a4300;
@@ -61,7 +127,7 @@
   --color-shadow-dark: #000000;
   --color-surface-tint-dark: #bdd062;
   --color-outline-variant-dark: #46483b;
-  --color-scrim-dark: #000000;
+  --color-scrim-dark: #000000; */
 }
 
 :root {

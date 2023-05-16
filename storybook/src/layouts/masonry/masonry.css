@@ -12,13 +12,13 @@
 }
 
 @media (--tablet-portrait-up) {
-  .masonry {
+  .masonry.col-2 {
     columns: 2;
   }
 }
 
 @media (--tablet-landscape-up) {
-  .masonry {
+  .masonry.col-3 {
     columns: 3;
   }
 }

@@ -8,7 +8,7 @@ select {
   padding: 0 1em 0 0;
   margin: 0;
   width: 100%;
-  z-index: 1;
+  /* z-index: 1; */
   outline: none;
   cursor: pointer;
   color: var(--color-on-background);

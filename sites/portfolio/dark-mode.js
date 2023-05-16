@@ -21,6 +21,10 @@ const reflectPreference = () => {
     ?.setAttribute("aria-label", theme.value);
 };
 
+const theme = {
+  value: getColorPreference(),
+};
+
 reflectPreference();
 
 window.onload = () => {
@@ -33,8 +37,13 @@ window.onload = () => {
 
 const onClick = () => {
   theme.value = theme.value === "light" ? "dark" : "light";
-
   setPreference();
+};
+
+document.onkeyup = function (e) {
+  if (e.key === "\\") {
+    onClick();
+  }
 };
 
 window

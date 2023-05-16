@@ -1,52 +1,52 @@
 <footer class="bg-img">
-    {% svg "/assets/images/footer-background.svg", "", "100vw" %}
-    <div class="full stack align-center inset-xl">
-      <div class="cluster justify-between full gap-xl align-start">
-         <div class="stack gap-xs prose">
-              <h4>Subscribe to My Newsletter</h4>
-              <p>
-                  Get weekly updates on web accessibility and sustainability trends, case studies, and tutorials in my newsletter. Stay informed on best practices and resources to build an inclusive, eco-friendly digital presence.
-              </p>
-              <form class="input-group sidebar gap-0">
-                <input type="email" class="input" placeholder="Email">
-                <button type="submit" class="fixed btn btn-primary">Subscribe</button>
-              </form>
-          </div>
-          <div class="cluster gap-2xl align-start">
-            {% for group in navigation.footer.groups %}
-                <div class="stack gap-2xs">
-                  <h4>{{group.title}}</h4>
-                  <ul class="stack gap-xs">
-                    {% for link in group.links %}
-                    <li>
-                        <a href="{{ link.url }}" class="link link-navigation">
-                            {{ link.label }}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-              </div>
-            {% endfor %}
-          </div>
+  {% svg "/assets/images/footer-background.svg", "", "100vw" %}
+  <div class="full stack align-center region">
+    <div class="cluster justify-between full gap-xl align-start">
+      <div class="stack gap-xs prose">
+        <h4>Subscribe to My Newsletter</h4>
+        <p class="measure-s">
+          Get weekly updates on web accessibility and sustainability trends, case studies, and tutorials in my newsletter. Stay informed on best practices and resources to build an inclusive, eco-friendly digital presence.
+        </p>
+        <form class="input-group sidebar gap-0">
+          <input type="email" class="input" placeholder="Email">
+          <button type="submit" class="fixed btn btn-primary">Subscribe</button>
+        </form>
       </div>
-      <hr>
-      <div class="cluster full justify-between">
-        <ul class="cluster gap-xs">
-            {% for link in navigation.footer.social %}
-                <li>
-                    <a href="{{link.url}}" class="btn btn-circular">
-                        <span class="sr-only">{{link.label}}</span>
-                        <svg class="icon">
-                            <use href="/assets/icons.svg#logo-{{link.icon}}"></use>
-                        </svg>
-                        <tool-tip tip-position="block-start">
-                            {{link.label}}
-                        </tool-tip>
-                    </a>
-                </li>
+      <div class="cluster gap-2xl align-start">
+        {% for group in navigation.footer.groups %}
+        <div class="stack stack-bg gap-2xs">
+          <h4>{{group.title}}</h4>
+          <ul class="stack gap-xs">
+            {% for link in group.links %}
+            <li>
+              <a href="{{ link.url }}" class="link link-s link-navigation">
+                {{ link.label }}
+              </a>
+            </li>
             {% endfor %}
-        </ul>
-        <small>© 2023 Dustin Heisey, All rights reserved.</small>
+          </ul>
+        </div>
+        {% endfor %}
       </div>
-</div>
-  </footer>
+    </div>
+    <hr>
+    <div class="cluster full justify-between">
+      <ul class="cluster gap-xs">
+        {% for link in navigation.footer.social %}
+        <li>
+          <a href="{{link.url}}" class="btn btn-circular">
+            <span class="sr-only">{{link.label}}</span>
+            <svg class="icon">
+              <use href="/assets/icons.svg#logo-{{link.icon}}"></use>
+            </svg>
+            <tool-tip tip-position="block-start">
+              {{link.label}}
+            </tool-tip>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <small class="copywrite">© 2023 Dustin Heisey, All rights reserved.</small>
+    </div>
+  </div>
+</footer>

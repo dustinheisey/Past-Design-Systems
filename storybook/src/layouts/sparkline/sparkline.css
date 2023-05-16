@@ -30,30 +30,36 @@
   margin-block-end: var(--space-xs);
 }
 
-.timeline-block time {
+.timeline-block [aria-hidden="true"] {
   grid-column: 2/3;
+  position: relative;
 }
 
-.timeline time {
+.timeline [aria-hidden="true"] {
   color: var(--color-primary);
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.timeline-inline time::before {
+.timeline-inline [aria-hidden="true"]::before {
   content: "";
   display: block;
   width: 0.35rem;
   height: 0.35rem;
   background-color: var(--color-primary);
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: calc(-1 * var(--space-xs));
+  transform: translateY(-50%);
 }
 
-.timeline-inline time::before {
+.timeline-inline [aria-hidden="true"]::before {
   margin-inline-end: var(--space-xs);
 }
 
-.timeline time > div {
+.timeline [aria-hidden="true"] {
   flex: 1;
   margin-inline-start: var(--space-xs);
   margin-inline-end: calc(-1 * var(--space-s));
@@ -84,13 +90,16 @@
     border-radius: 50%;
     transform: translateX(-50%);
     margin-block-end: var(--space-xs);
+    position: absolute;
+    top: 50%;
+    translate: translateY(-50%);
   }
 
-  .timeline-block > time {
+  .timeline-block > [aria-hidden="true"] {
     grid-column: 1/2;
   }
 
-  .timeline time > div {
+  .timeline [aria-hidden="true"] {
     display: block;
   }
 
@@ -98,7 +107,12 @@
     grid-template-rows: 1fr max-content 1fr;
   }
 
-  .timeline-inline.timeline-staggered time {
+  .timeline-inline > :not([aria-hidden="true"]) {
+    grid-row: 2/3;
+    align-self: start;
+  }
+
+  .timeline-inline.timeline-staggered [aria-hidden="true"] {
     grid-row: 2/3;
   }
 
@@ -130,23 +144,27 @@
     grid-row: 4/5;
   }
 
-  .timeline-inline.timeline-staggered > .stack:nth-of-type(1) {
+  .timeline-inline.timeline-staggered > .stack:nth-of-type(2) {
     grid-column: 1/2;
     grid-row: 1/2;
-  }
-
-  .timeline-inline.timeline-staggered > .stack:nth-of-type(2) {
-    grid-column: 2/3;
-    grid-row: 3/-1;
-  }
-
-  .timeline-inline.timeline-staggered > .stack:nth-of-type(3) {
-    grid-column: 3/4;
-    grid-row: 1/2;
+    align-self: end;
   }
 
   .timeline-inline.timeline-staggered > .stack:nth-of-type(4) {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+    align-self: start;
+  }
+
+  .timeline-inline.timeline-staggered > .stack:nth-of-type(6) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: end;
+  }
+
+  .timeline-inline.timeline-staggered > .stack:nth-of-type(8) {
     grid-column: 4/5;
     grid-row: 3/-1;
+    align-self: start;
   }
 }

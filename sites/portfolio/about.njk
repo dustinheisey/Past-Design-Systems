@@ -5,9 +5,12 @@ title: Meet the Freelance Web Designer Committed to Accessibility, Sustainabilit
 description: I'm Dustin Heisey and I'm committed to creating accessible, sustainable, and socially impactful websites. Get to know me and see how I can transform your online presence.
 ---
 
-<div class="cover cover-nav">
+<div class="cover region cover-nav">
     <div class="principle">
-        <div class="sidebar sidebar-split gap-m">
+        <div class="sidebar  reverse sidebar-split gap-m">
+            <div class="frame square">
+                <img src="{{content.about.header.img.src}}" alt="{{content.about.header.img.alt}}" srcset="">
+            </div>
             <div class="prose fixed">
                 <p class="overline">{{content.about.header.overline}}</p>
                 <h1>{{content.about.header.headline}}</h1>
@@ -16,71 +19,44 @@ description: I'm Dustin Heisey and I'm committed to creating accessible, sustain
                 </p>
                 <a href="/contact" class="btn">Start a Project</a>
             </div>
-            <div class="frame photo">
-                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
-            </div>
         </div>
     </div>
 </div>
 
-<div class="stack gap-s">
-    <div class="prose center center-intrinsic">
-        <p>
+<div class="region sidebar align-stretch sidebar-split gap-m">
+    <div class="frame">
+        <img src="{{content.about.introduction.img.src}}" alt="{{content.about.introduction.img.alt}}" srcset="">
+    </div>
+    <div class="prose fixed">
+        <p class="lead">
             {{content.about.introduction.intro}}
         </p>
         <p>{{content.about.introduction.value}}</p>
     </div>
 </div>
 
-<div class="stack">
+<div class="stack region">
     <section class="prose center center-intrinsic">
-        <p class="overline">{{content.about.skills.overline}}</p>
         <h2 class="region-headline">{{content.about.skills.headline}}</h2>
-        <p>{{contnet.about.skills.body}}</p>
-        </section>
-        <ul>
-            {% for skill in content.about.skills.skills %}
-                <li>{{skill}}</li>
-            {% endfor %}
-        </ul>
-    <div class="switcher switch-phone align-start gap-xl">
+    </section>
+    <div class="grid grid-4 align-start gap-xl">
+        {% for skill in content.about.skills.skills %}
         <div class="prose stack center-intrinsic gap-2xs">
-            <h4 class="section-headline">10,000</h4>
-            <p>Trees saved per second</p>
+            <svg class="icon icon-xl">
+                <use href="/assets/icons.svg#{{skill.icon}}"></use>
+            </svg>
+            <h4 class="title-headline">{{skill.headline}}</h4>
         </div>
-        <div class="prose stack center-intrinsic gap-2xs">
-            <h4 class="section-headline">5 Million</h4>
-            <p>Plastic pieces removed</p>
-        </div>
-        <div class="prose stack center-intrinsic gap-2xs">
-            <h4 class="section-headline">400</h4>
-            <p>Orcas saved per month</p>
-        </div>
-        <div class="prose stack center-intrinsic gap-2xs">
-            <h4 class="section-headline">400</h4>
-            <p>Orcas saved per month</p>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
-<div class="cover cover-nav">
-    <h2 class="region-headline">{{content.about.portfolio.headline}}</h2>
-</div>
-
-<div class="cover cover-nav">
-    <div class="principle">
-        <div class="sidebar sidebar-split gap-m">
-            <div class="frame photo">
-                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
-            </div>
-            <div class="prose fixed">
-                <p class="overline">{{content.cta.overline}}</p>
-                <h1>{{content.cta.headline}}</h1>
-                <p>
-                    {{content.cta.body}}
-                </p>
-                <a href="/contact" class="btn">Start a Project</a>
-            </div>
-        </div>
+<div class="region bg-pattern theme-primary">
+    <div class="prose">
+        <h2 class="region-headline">{{content.cta.headline}}</h2>
+        <p>
+            {{content.cta.body}}
+        </p>
+        <a href="/contact" class="btn">Start a Project</a>
     </div>
 </div>

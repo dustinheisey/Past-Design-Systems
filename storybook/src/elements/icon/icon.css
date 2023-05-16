@@ -11,7 +11,6 @@
 .icon use {
   /* icon secondary color */
   fill: currentColor;
-  stroke: currentColor;
 }
 
 .icon-primary {
@@ -45,6 +44,11 @@ Sizes
 .icon-l {
   inline-size: 32px;
   block-size: 32px;
+}
+
+.icon-xl {
+  inline-size: 48px;
+  block-size: 48px;
 }
 
 .block {

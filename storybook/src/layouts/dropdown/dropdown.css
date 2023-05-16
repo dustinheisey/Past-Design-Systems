@@ -25,11 +25,12 @@ drop-down > ul {
   justify-content: center;
   align-items: flex-start;
   gap: var(--space-3xs);
-  padding-block-start: var(--space-3xs);
   z-index: 900;
   background-color: var(--color-surface);
-  padding: var(--space-3xs);
+  padding: var(--space-xs);
   border-radius: var(--radius-s);
+  box-shadow: var(--shadow-xl);
+  inline-size: max-content;
 }
 
 drop-down > ul li {

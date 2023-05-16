@@ -50,7 +50,7 @@
 
 .prose :where(li) {
   margin-block: var(--space-2xs);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-body);
   display: inline-flex;
   align-items: flex-start;
   gap: var(--space-xs);

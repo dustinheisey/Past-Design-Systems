@@ -23,3 +23,9 @@
 .stack > .auto {
   margin-block: auto;
 }
+
+.stack-bg {
+  background-color: var(--color-background);
+  border-radius: var(--radius-s);
+  padding: var(--space-2xs);
+}

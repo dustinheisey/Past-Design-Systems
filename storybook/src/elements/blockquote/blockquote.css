@@ -2,6 +2,7 @@ blockquote {
   border: none;
   quotes: "\201C""\201D""\2018""\2019";
   position: relative;
+  margin: 0;
   margin-block-start: var(--space-xl);
 }
 
@@ -17,14 +18,14 @@ blockquote.blockquote-accent:before {
 blockquote p {
   font-family: var(--font-family-headline);
   font-style: italic;
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
   line-height: var(--line-height-body);
   color: var(--color-blockquote-override, var(--color-on-background));
   max-width: 40ch;
   margin: 0;
 }
 
-blockquote footer {
+blockquote figcaption {
   padding: 0;
   margin-block-start: var(--space-xs);
   font-family: var(--font-family-body);

@@ -71,7 +71,6 @@ export const centeredNavbar = html`
         class="dark-mode-toggle"
         id="theme-toggle"
         title="Toggles light & dark"
-        onclick="onClick"
         aria-live="polite"
       >
         <svg
@@ -181,7 +180,6 @@ export const spacedNavbar = html`
         class="dark-mode-toggle"
         id="theme-toggle"
         title="Toggles light & dark"
-        onclick="onClick"
         aria-live="polite"
       >
         <svg
@@ -291,7 +289,6 @@ export const startNavbar = html`
         class="dark-mode-toggle"
         id="theme-toggle"
         title="Toggles light & dark"
-        onclick="onClick"
         aria-live="polite"
       >
         <svg
@@ -401,7 +398,6 @@ export const endNavbar = html`
         class="dark-mode-toggle"
         id="theme-toggle"
         title="Toggles light & dark"
-        onclick="onClick"
         aria-live="polite"
       >
         <svg
@@ -512,7 +508,6 @@ export const stackedNavbar = html`
           class="dark-mode-toggle"
           id="theme-toggle"
           title="Toggles light & dark"
-          onclick="onClick"
           aria-live="polite"
         >
           <svg

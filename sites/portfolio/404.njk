@@ -1,4 +1,3 @@
-
 ---
 layout: base
 title: Page Not Found
@@ -6,16 +5,16 @@ permalink: 404.html
 description: The page you're looking for could not be found. Please use the navigation to find what you're looking for, or contact me for further assistance.
 ---
 
-<section class="cover sidebar split-screen">
-    <div class="fixed center-intrinsic prose">
-      <div class="principle">
-        <p class="overline">{{error.overline}}</p>
-        <h1 class="page-headline">{{error.headline}}</h1>
-        <p>{{error.body}}</p>
-        <a href="/" class="btn">{{error.btn}}</a>
-      </div>
+<section class="cover region sidebar  split-screen">
+  <div class="fixed center-intrinsic prose">
+    <div class="principle">
+      <p class="overline">{{error.overline}}</p>
+      <h1 class="page-headline">{{error.headline}}</h1>
+      <p>{{error.body}}</p>
+      <a href="/" class="btn">{{error.btn}}</a>
     </div>
-    <div class="frame full">
-      <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
-    </div>
-  </section>
+  </div>
+  <div class="frame full">
+    <img src="{{content.error.img.src}}" alt="{{content.error.img.alt}}" srcset="">
+  </div>
+</section>

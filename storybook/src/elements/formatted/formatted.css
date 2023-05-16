@@ -20,7 +20,7 @@ time {
 
 math {
   display: block;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   margin: var(--space-m) 0;
 }

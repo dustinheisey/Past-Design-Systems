@@ -1,4 +1,4 @@
-.desktop-navigation {
+/* .desktop-navigation {
   display: none;
 }
 
@@ -8,10 +8,6 @@
 
 main {
   margin-block-start: calc(4rem + var(--space-m));
-}
-
-header {
-  padding: 0;
 }
 
 .topbar {
@@ -106,7 +102,7 @@ header {
   header {
     padding: var(--space-xl);
   }
-}
+} */
 
 /* ? Temp */
 /*? The Navigation - Mobile/Desktop navigation  */

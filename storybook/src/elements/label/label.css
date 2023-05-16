@@ -4,12 +4,12 @@ label {
   font-family: var(--font-family-body);
   line-height: var(--light-height-body);
   color: var(--color-label-override, var(--color-on-background));
-  max-inline-size: 66ch;
+  /* max-inline-size: 66ch; */
   inline-size: 100%;
 }
 
 .required::after {
   content: "*";
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-body);
   color: var(--color-label-accent-override, var(--color-secondary));
 }

@@ -1,6 +1,6 @@
 .dark-mode-toggle {
   color: var(--color-primary);
-  --size: 24px;
+  --size: 1.5rem;
   --icon-fill: var(--color-primary);
   --ease-1: cubic-bezier(0.25, 0, 0.5, 1);
   --ease-2: cubic-bezier(0.25, 0, 0.4, 1);
@@ -156,6 +156,6 @@
 
 @media (hover: none) {
   .dark-mode-toggle {
-    --size: 48px;
+    --size: 2rem;
   }
 }

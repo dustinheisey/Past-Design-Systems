@@ -7,9 +7,9 @@ input {
   font-weight: 400;
   margin: 0;
   appearance: none;
-  background-color: transparent;
+  background-color: var(--color-surface);
   color: var(--color-on-background);
-  border: 1px solid var(--color-outline);
+  border: 1px solid var(--color-outline-variant);
   padding-right: var(--space-2xs);
   padding-left: var(--space-2xs);
   padding-top: var(--space-3xs);

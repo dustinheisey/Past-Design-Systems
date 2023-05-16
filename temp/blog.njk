@@ -1,0 +1,46 @@
+---
+layout: base
+permalink: /blog.html
+title: Accessibility & Sustainability Tips for Businesses & Nonprofits | Blog | Dustin Heisey
+description: Explore my blog for insightful articles on user-centered, accessible, and environmentally sustainable web design practices. Stay updated with the latest trends and tips for eco-conscious businesses and nonprofits.
+---
+
+<div class="region cover cover-nav">
+    <div class="principle">
+        <div class="sidebar sidebar-split gap-m">
+            <div class="prose fixed">
+                <p class="overline">{{content.blog.overline}}</p>
+                <h1 class="page-headline">{{content.blog.headline}}</h1>
+                <p>
+                    {{content.blog.body}}
+                </p>
+            </div>
+            <div class="frame square">
+                <img src="{{content.blog.img.src}}" alt="{{content.blog.img.alt}}" srcset="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="region masonry col-3 gap-m">
+    {% for post in collections.post %}
+    <article class="prose card card-link theme-{{post.data.theme}}-container">
+        <a href="{{post.url}}">
+            <h2 class="section-headline">{{ post.data.title }}</h2>
+            <p>
+                {{ post.data.description }}
+            </p>
+        </a>
+    </article>
+    {% endfor %}
+</div>
+
+<div class="region bg-pattern theme-primary">
+    <div class="prose">
+        <h2 class="region-headline">{{content.cta.headline}}</h2>
+        <p>
+            {{content.cta.body}}
+        </p>
+        <a href="/contact" class="btn">Start a Project</a>
+    </div>
+</div>

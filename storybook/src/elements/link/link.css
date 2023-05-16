@@ -7,7 +7,7 @@ a {
   transition: all 0.3s;
   vertical-align: baseline;
   font-family: var(--font-family-body);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   max-inline-size: var(--measure-body);
   line-height: var(--line-height-body);
   letter-spacing: var(--letters-spacing-body);
@@ -17,12 +17,20 @@ a {
   max-inline-size: 100%;
 }
 
+.link-navigation.link-s {
+  font-size: var(--font-size-s);
+  /* background: var(--color-background);
+  padding: var(--space-3xs) var(--space-2xs);
+  border-radius: var(--radius-pill); */
+}
+
 .link:hover,
 .link:active {
   color: var(--color-primary);
 }
 
 .link-navigation {
+  color: var(--color-primary);
   background: linear-gradient(0deg, currentColor, currentColor) no-repeat right
     bottom / 0 2px;
   padding-block-end: 2px;

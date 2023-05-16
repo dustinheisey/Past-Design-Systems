@@ -68,8 +68,9 @@ input[type="radio"]:checked {
   inline-size: 100%;
   min-block-size: 8rem;
   border-radius: var(--radius-m);
-  border: 2px solid var(--color-outline);
-  background-color: transparent;
+  border: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface);
+  color: var(--color-primary);
   box-shadow: var(--shadow-xs);
   transition: 0.15s ease;
   cursor: pointer;

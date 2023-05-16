@@ -1,4 +1,4 @@
-figcaption {
+/* figcaption {
   font-size: var(--font-size-s);
   line-height: var(--line-height-body);
   margin: 0;
@@ -10,4 +10,4 @@ figure {
   display: grid;
   place-items: center;
   gap: var(--space-3xs);
-}
+} */

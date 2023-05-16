@@ -1,19 +1,18 @@
 ---
 layout: base
 permalink: /index.html
-hero: true
 title: Accessible and Sustainable Web Design Services
 description: The portfolio of Dustin Heisey. I provide comprehensive, customized web design services that prioritize accessibility, sustainability, and social impact. Partner with me to create a website that showcases your social impact and aligns with your values.
 ---
 
-<div class="cover sidebar sidebar-split gap-m">
-    <div class="frame photo fixed">
-        <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
-    </div>
-    <div class="stack">
-        {% include "navbar.njk" %}
-        <div class="prose auto">
+<div class="cover region cover-nav">
+    <div class="sidebar  reverse sidebar-split gap-m">
+        <div class="frame">
+            <img src="{{content.index.hero.img.src}}" alt="{{content.index.hero.img.alt}}" srcset="">
+        </div>
+        <div class="prose auto fixed">
             <h1 class="hero-headline">
+                <span class="color-primary">{{content.index.hero.accent}}</span>
                 {{content.index.hero.headline}}
             </h1>
             <p>
@@ -24,48 +23,42 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
     </div>
 </div>
 
-<div class="region stack gap-s">
-    <section class="prose center center-intrinsic">
+<div class="region stack gap-xl">
+    <section class="prose center">
         <h2 class="region-headline">{{content.index.problem.headline}}</h2>
     </section>
-    <div class="grid grid-2">
-        <ul class="stack gap-s">
-            {% for item in content.index.problem.list %}
-                <li class="inline align-start gap-xs">
-                <svg class="icon icon-secondary">
-                    <use href="/assets/icons.svg#{{item.icon}}"></use>
-                </svg>
-                {{item.text}}
-            </li>
-            {% endfor %}
-        </ul>
+    <ul class="grid grid-2 gap-s">
+        {% for item in content.index.problem.list %}
+        <li class="inline align-start gap-xs">
+            <svg class="icon icon-secondary">
+                <use href="/assets/icons.svg#{{item.icon}}"></use>
+            </svg>
+            {{item.text}}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="region sidebar  sidebar-split gap-m">
+    <div class="frame square">
+        {# {% image "/assets/images/profile.png", "profile picture", "300" %} #}
+        <img src="/assets/images/profile.png" alt="placeholder" srcset="">
+    </div>
+    <div class="fixed prose">
+        <p class="overline">{{content.index.guide.overline}}</p>
+        <h2 class="region-headline">{{content.index.guide.headline}}</h2>
+        <p>
+            {{content.index.guide.body}}
+        </p>
     </div>
 </div>
 
-<div class="region cover cover-nav">
-    <div class="principle">
-        <div class="sidebar sidebar-split gap-m">
-            <div class="frame photo">
-                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
-            </div>
-            <div class="fixed prose">
-                <p class="overline">{{content.index.guide.overline}}</p>
-                <h2 class="region-headline">{{content.index.guide.headline}}</h2>
-                <p>
-                    {{content.index.guide.body}}
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="stack region gap-s">
+<div class="stack region gap-xl">
     <section class="prose center center-intrinsic">
         <h2 class="region-headline">{{content.index.plan.headline}}</h2>
     </section>
-    <div class="grid grid-3">
-        <a href="{{content.index.plan.services[0].link}}" class="card prose theme-primary-container">
+    <div class="switcher switch-phone">
+        <a href="{{content.index.plan.services[0].link}}" class="card card-link prose theme-secondary-container">
             <svg class="icon block icon-l">
                 <use href="/assets/icons.svg#{{content.index.plan.services[0].icon}}"></use>
             </svg>
@@ -74,7 +67,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
                 {{content.index.plan.services[0].body}}
             </p>
         </a>
-        <a href="{{content.index.plan.services[1].link}}" class="card prose theme-secondary-container">
+        <a href="{{content.index.plan.services[1].link}}" class="card card-link prose theme-primary-container">
             <svg class="icon icon-l block">
                 <use href="/assets/icons.svg#{{content.index.plan.services[1].icon}}"></use>
             </svg>
@@ -83,7 +76,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
                 {{content.index.plan.services[1].body}}
             </p>
         </a>
-        <a href="{{content.index.plan.services[2].link}}" class="card prose theme-tertiary-container">
+        <a href="{{content.index.plan.services[2].link}}" class="card card-link prose theme-tertiary-container">
             <svg class="icon icon-l block">
                 <use href="/assets/icons.svg#{{content.index.plan.services[2].icon}}"></use>
             </svg>
@@ -95,28 +88,24 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
     </div>
 </div>
 
-<div class="cover region cover-nav">
-    <div class="principle">
-        <div class="sidebar sidebar-split gap-m">
-            <div class="prose fixed">
-                <h2>{{content.index.action.headline}}</h2>
-                <p>
-                    {{content.index.action.body}}
-                </p>
-                <a href="{{content.index.action.cta.url}}" class="btn">{{content.index.action.cta.label}}</a>
-            </div>
-            <div class="frame photo">
-                <img src="https://generative-placeholders.glitch.me/image?width=600&amp;height=300" alt="placeholder" srcset="">
-            </div>
-        </div>
+<div class="region sidebar reverse  sidebar-split gap-m">
+    <div class="frame square">
+        <img src="{{content.index.action.img.src}}" alt="{{content.index.action.img.alt}}" srcset="">
+    </div>
+    <div class="prose fixed">
+        <h2>{{content.index.action.headline}}</h2>
+        <p>
+            {{content.index.action.body}}
+        </p>
+        <a href="{{content.index.action.cta.url}}" class="btn">{{content.index.action.cta.label}}</a>
     </div>
 </div>
 
-<div class="region cover cover-nav">
-    <blockquote class="center blockquote-accent">
+<figure class="region center-intrinsic">
+    <blockquote class="blockquote-accent">
         <p>
             {{ content.index.success.quote }}
         </p>
-        <footer class="overline">{{ content.index.success.footer }}</footer>
+        <figcaption class="overline">{{ content.index.success.footer }}</figcaption>
     </blockquote>
-</div>
+</figure>

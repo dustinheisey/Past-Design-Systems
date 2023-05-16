@@ -34,5 +34,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("service-worker.js");
   eleventyConfig.addPassthroughCopy("dark-mode.js");
+  eleventyConfig.addPassthroughCopy("range.js");
+  eleventyConfig.addPassthroughCopy("navbar.js");
   eleventyConfig.addPassthroughCopy("assets");
 };
