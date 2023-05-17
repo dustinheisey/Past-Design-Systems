@@ -30,7 +30,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
     <ul class="grid grid-2 gap-s">
         {% for item in content.index.problem.list %}
         <li class="inline align-start gap-xs">
-            <svg class="icon icon-secondary">
+            <svg focusable="false" class="icon icon-secondary">
                 <use href="/assets/icons.svg#{{item.icon}}"></use>
             </svg>
             {{item.text}}
@@ -59,7 +59,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
     </section>
     <div class="switcher switch-phone">
         <a href="{{content.index.plan.services[0].link}}" class="card card-link prose theme-secondary-container">
-            <svg class="icon block icon-l">
+            <svg focusable="false" class="icon block icon-l">
                 <use href="/assets/icons.svg#{{content.index.plan.services[0].icon}}"></use>
             </svg>
             <h3 class="title-headline">{{content.index.plan.services[0].headline}}</h3>
@@ -68,7 +68,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
             </p>
         </a>
         <a href="{{content.index.plan.services[1].link}}" class="card card-link prose theme-primary-container">
-            <svg class="icon icon-l block">
+            <svg focusable="false" class="icon icon-l block">
                 <use href="/assets/icons.svg#{{content.index.plan.services[1].icon}}"></use>
             </svg>
             <h3 class="title-headline">{{content.index.plan.services[1].headline}}</h3>
@@ -77,7 +77,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
             </p>
         </a>
         <a href="{{content.index.plan.services[2].link}}" class="card card-link prose theme-tertiary-container">
-            <svg class="icon icon-l block">
+            <svg focusable="false" class="icon icon-l block">
                 <use href="/assets/icons.svg#{{content.index.plan.services[2].icon}}"></use>
             </svg>
             <h3 class="title-headline">{{content.index.plan.services[2].headline}}</h3>

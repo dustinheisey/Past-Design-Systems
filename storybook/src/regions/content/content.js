@@ -20,7 +20,7 @@ export const contentContent = html`
       </p>
       <ul class="stack gap-s">
         <li>
-          <svg class="icon icon-32">
+          <svg focusable="false" class="icon icon-32">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           <span>
@@ -30,7 +30,7 @@ export const contentContent = html`
           </span>
         </li>
         <li>
-          <svg class="icon icon-32">
+          <svg focusable="false" class="icon icon-32">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           <span>
@@ -40,7 +40,7 @@ export const contentContent = html`
           </span>
         </li>
         <li>
-          <svg class="icon icon-32">
+          <svg focusable="false" class="icon icon-32">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           <span>

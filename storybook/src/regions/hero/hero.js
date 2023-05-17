@@ -6,6 +6,7 @@ export const leftHero = html`
       <a href="/">
         <span class="sr-only">Home</span>
         <svg
+          focusable="false"
           class="logo"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 245.68853462923755"
@@ -76,6 +77,7 @@ export const leftHero = html`
           aria-live="polite"
         >
           <svg
+            focusable="false"
             class="sun-and-moon"
             aria-hidden="true"
             width="20"
@@ -142,6 +144,7 @@ export const rightHero = html`
       <a href="/">
         <span class="sr-only">Home</span>
         <svg
+          focusable="false"
           class="logo"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 245.68853462923755"
@@ -212,6 +215,7 @@ export const rightHero = html`
           aria-live="polite"
         >
           <svg
+            focusable="false"
             class="sun-and-moon"
             aria-hidden="true"
             width="20"
@@ -279,6 +283,7 @@ export const splitLeftHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -349,6 +354,7 @@ export const splitLeftHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"
@@ -418,6 +424,7 @@ export const splitRightHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -488,6 +495,7 @@ export const splitRightHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"
@@ -543,6 +551,7 @@ export const angledTopLeftHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -613,6 +622,7 @@ export const angledTopLeftHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"
@@ -682,6 +692,7 @@ export const angledTopRightHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -752,6 +763,7 @@ export const angledTopRightHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"
@@ -807,6 +819,7 @@ export const angledBottomLeftHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -877,6 +890,7 @@ export const angledBottomLeftHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"
@@ -946,6 +960,7 @@ export const angledBottomRightHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -1016,6 +1031,7 @@ export const angledBottomRightHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"
@@ -1070,6 +1086,7 @@ export const tiles2LeftHero = html`
       <a href="/">
         <span class="sr-only">Home</span>
         <svg
+          focusable="false"
           class="logo"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 245.68853462923755"
@@ -1140,6 +1157,7 @@ export const tiles2LeftHero = html`
           aria-live="polite"
         >
           <svg
+            focusable="false"
             class="sun-and-moon"
             aria-hidden="true"
             width="20"
@@ -1231,6 +1249,7 @@ export const tiles2RightHero = html`
       <a href="/">
         <span class="sr-only">Home</span>
         <svg
+          focusable="false"
           class="logo"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 245.68853462923755"
@@ -1301,6 +1320,7 @@ export const tiles2RightHero = html`
           aria-live="polite"
         >
           <svg
+            focusable="false"
             class="sun-and-moon"
             aria-hidden="true"
             width="20"
@@ -1392,6 +1412,7 @@ export const tiles3LeftHero = html`
       <a href="/">
         <span class="sr-only">Home</span>
         <svg
+          focusable="false"
           class="logo"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 245.68853462923755"
@@ -1462,6 +1483,7 @@ export const tiles3LeftHero = html`
           aria-live="polite"
         >
           <svg
+            focusable="false"
             class="sun-and-moon"
             aria-hidden="true"
             width="20"
@@ -1588,6 +1610,7 @@ export const tiles3RightHero = html`
       <a href="/">
         <span class="sr-only">Home</span>
         <svg
+          focusable="false"
           class="logo"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 245.68853462923755"
@@ -1658,6 +1681,7 @@ export const tiles3RightHero = html`
           aria-live="polite"
         >
           <svg
+            focusable="false"
             class="sun-and-moon"
             aria-hidden="true"
             width="20"
@@ -1783,7 +1807,7 @@ export const centerImageHero = html`
     <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
-      <svg
+      <svg focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -1853,7 +1877,7 @@ export const centerImageHero = html`
     onclick="onClick"
     aria-live="polite"
   >
-    <svg
+    <svg focusable="false"
       class="sun-and-moon"
       aria-hidden="true"
       width="20"
@@ -1924,7 +1948,7 @@ export const leftBgHero = html`
       <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
-      <svg
+      <svg focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -1994,7 +2018,7 @@ export const leftBgHero = html`
     onclick="onClick"
     aria-live="polite"
   >
-    <svg
+    <svg focusable="false"
       class="sun-and-moon"
       aria-hidden="true"
       width="20"
@@ -2059,7 +2083,7 @@ export const centerBgHero = html`
       <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
-      <svg
+      <svg focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -2129,7 +2153,7 @@ export const centerBgHero = html`
     onclick="onClick"
     aria-live="polite"
   >
-    <svg
+    <svg focusable="false"
       class="sun-and-moon"
       aria-hidden="true"
       width="20"
@@ -2195,6 +2219,7 @@ export const rightBgHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -2265,6 +2290,7 @@ export const rightBgHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"
@@ -2325,7 +2351,7 @@ export const leftGradientHero = html`
       <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
-      <svg
+      <svg focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -2395,7 +2421,7 @@ export const leftGradientHero = html`
     onclick="onClick"
     aria-live="polite"
   >
-    <svg
+    <svg focusable="false"
       class="sun-and-moon"
       aria-hidden="true"
       width="20"
@@ -2455,7 +2481,7 @@ export const centerGradientHero = html`
       <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
-      <svg
+      <svg focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -2525,7 +2551,7 @@ export const centerGradientHero = html`
     onclick="onClick"
     aria-live="polite"
   >
-    <svg
+    <svg focusable="false"
       class="sun-and-moon"
       aria-hidden="true"
       width="20"
@@ -2586,6 +2612,7 @@ export const rightGradientHero = html`
         <a href="/">
           <span class="sr-only">Home</span>
           <svg
+            focusable="false"
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 245.68853462923755"
@@ -2656,6 +2683,7 @@ export const rightGradientHero = html`
             aria-live="polite"
           >
             <svg
+              focusable="false"
               class="sun-and-moon"
               aria-hidden="true"
               width="20"

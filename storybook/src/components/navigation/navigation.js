@@ -9,6 +9,7 @@ export const navigation = html`
             <a href="/" class="media">
               <svg
                 focusable="false"
+                focusable="false"
                 class="logo"
                 viewBox="0 0 100 245.68853462923755"
               >
@@ -50,6 +51,7 @@ export const navigation = html`
         <div class="topbar">
           <a href="/" class="media">
             <svg
+              focusable="false"
               focusable="false"
               class="logo color-lighter"
               viewBox="0 0 100 245.68853462923755"

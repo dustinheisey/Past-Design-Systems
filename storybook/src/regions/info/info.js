@@ -26,7 +26,7 @@ export const leftImageInfo = html`
           </div>
           <div class="stack gap-s">
             <div class="inline align-start gap-xs">
-              <svg class="icon">
+              <svg focusable="false" class="icon">
                 <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
@@ -35,7 +35,7 @@ export const leftImageInfo = html`
               </p>
             </div>
             <div class="inline align-start gap-xs">
-              <svg class="icon">
+              <svg focusable="false" class="icon">
                 <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
@@ -44,7 +44,7 @@ export const leftImageInfo = html`
               </p>
             </div>
             <div class="inline align-start gap-xs">
-              <svg class="icon">
+              <svg focusable="false" class="icon">
                 <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
@@ -78,7 +78,7 @@ export const rightImageInfo = html`
           </div>
           <div class="stack gap-s">
             <div class="inline align-start gap-xs">
-              <svg class="icon">
+              <svg focusable="false" class="icon">
                 <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
@@ -87,7 +87,7 @@ export const rightImageInfo = html`
               </p>
             </div>
             <div class="inline align-start gap-xs">
-              <svg class="icon">
+              <svg focusable="false" class="icon">
                 <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
@@ -96,7 +96,7 @@ export const rightImageInfo = html`
               </p>
             </div>
             <div class="inline align-start gap-xs">
-              <svg class="icon">
+              <svg focusable="false" class="icon">
                 <use href="src/elements/text/icon/icons.svg#remove"></use>
               </svg>
               <p>
@@ -129,7 +129,7 @@ export const cardGridInfo = html`
     </div>
     <div class="grid grid-3">
       <div class="card prose theme-primary-container">
-        <svg class="icon block icon-l">
+        <svg focusable="false" class="icon block icon-l">
           <use href="src/elements/text/icon/icons.svg#accessibility"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -141,7 +141,7 @@ export const cardGridInfo = html`
         </p>
       </div>
       <div class="card prose theme-secondary-container">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -153,7 +153,7 @@ export const cardGridInfo = html`
         </p>
       </div>
       <div class="card prose theme-tertiary-container">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#browser-chrome-2"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -179,7 +179,7 @@ export const blurbGridInfo = html`
     </div>
     <div class="grid grid-3">
       <div class="prose">
-        <svg class="icon block icon-l">
+        <svg focusable="false" class="icon block icon-l">
           <use href="src/elements/text/icon/icons.svg#accessibility"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -191,7 +191,7 @@ export const blurbGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -203,7 +203,7 @@ export const blurbGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#browser-chrome-2"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -215,7 +215,7 @@ export const blurbGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon block icon-l">
+        <svg focusable="false" class="icon block icon-l">
           <use href="src/elements/text/icon/icons.svg#accessibility"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -227,7 +227,7 @@ export const blurbGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -239,7 +239,7 @@ export const blurbGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#browser-chrome-2"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -261,7 +261,7 @@ export const offsetGridInfo = html`
     </div>
     <div class="grid grid-2 gap-s">
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -273,7 +273,7 @@ export const offsetGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -285,7 +285,7 @@ export const offsetGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -297,7 +297,7 @@ export const offsetGridInfo = html`
         </p>
       </div>
       <div class="prose">
-        <svg class="icon icon-l block">
+        <svg focusable="false" class="icon icon-l block">
           <use href="src/elements/text/icon/icons.svg#remove"></use>
         </svg>
         <h3 class="title-headline">Question Title</h3>
@@ -320,7 +320,7 @@ export const offsetListInfo = html`
     <div class="grid grid-2 gap-s">
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -332,7 +332,7 @@ export const offsetListInfo = html`
       </div>
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -344,7 +344,7 @@ export const offsetListInfo = html`
       </div>
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -356,7 +356,7 @@ export const offsetListInfo = html`
       </div>
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -368,7 +368,7 @@ export const offsetListInfo = html`
       </div>
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -380,7 +380,7 @@ export const offsetListInfo = html`
       </div>
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -392,7 +392,7 @@ export const offsetListInfo = html`
       </div>
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -404,7 +404,7 @@ export const offsetListInfo = html`
       </div>
       <div class="prose">
         <h3 class="title-headline inline gap-xs align-center">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#f-check"></use>
           </svg>
           Question Title
@@ -430,7 +430,7 @@ export const listInfo = html`
     <div class="grid grid-2">
       <div class="stack gap-s">
         <div class="inline align-start gap-xs">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
@@ -438,7 +438,7 @@ export const listInfo = html`
           </p>
         </div>
         <div class="inline align-start gap-xs">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
@@ -446,7 +446,7 @@ export const listInfo = html`
           </p>
         </div>
         <div class="inline align-start gap-xs">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
@@ -456,7 +456,7 @@ export const listInfo = html`
       </div>
       <div class="stack gap-s">
         <div class="inline align-start gap-xs">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
@@ -464,7 +464,7 @@ export const listInfo = html`
           </p>
         </div>
         <div class="inline align-start gap-xs">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>
@@ -472,7 +472,7 @@ export const listInfo = html`
           </p>
         </div>
         <div class="inline align-start gap-xs">
-          <svg class="icon">
+          <svg focusable="false" class="icon">
             <use href="src/elements/text/icon/icons.svg#remove"></use>
           </svg>
           <p>

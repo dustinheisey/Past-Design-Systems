@@ -13,6 +13,7 @@ export default {
 };
 
 export const Default = () => html`<button
+  type="button"
   class="dark-mode-toggle"
   id="theme-toggle"
   title="Toggles light & dark"
@@ -20,6 +21,7 @@ export const Default = () => html`<button
   aria-live="polite"
 >
   <svg
+    focusable="false"
     class="sun-and-moon"
     aria-hidden="true"
     width="20"

@@ -42,7 +42,7 @@ description: I'm Dustin Heisey and I'm committed to creating accessible, sustain
     <div class="grid grid-4 align-start gap-xl">
         {% for skill in content.about.skills.skills %}
         <div class="prose stack center-intrinsic gap-2xs">
-            <svg class="icon icon-xl">
+            <svg focusable="false" class="icon icon-xl">
                 <use href="/assets/icons.svg#{{skill.icon}}"></use>
             </svg>
             <h4 class="title-headline">{{skill.headline}}</h4>

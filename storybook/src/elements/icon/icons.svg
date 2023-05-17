@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="height: 0; width: 0; position: absolute;">
+<svg focusable="false" xmlns="http://www.w3.org/2000/svg" style="height: 0; width: 0; position: absolute;">
     <defs>
         <symbol id="accessibility-o" viewBox="0 0 24 24">
             <title>accessibility outline</title>

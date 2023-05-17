@@ -110,19 +110,19 @@ TertiaryButtons.parameters = {
 export const CircularButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn btn-circular btn-s">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       <span class="sr-only">Audio Description</span>
     </button>
     <button class="btn btn-circular btn-m">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       <span class="sr-only">Audio Description</span>
     </button>
     <button class="btn btn-circular btn-l">
-      <svg class="icon">
+      <svg focusable="false" class="icon">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       <span class="sr-only">Audio Description</span>
@@ -139,7 +139,7 @@ CircularButtons.parameters = {
     source: {
       code: `
 <button class="btn btn-circular">
-    <svg class="icon">
+    <svg focusable="false" class="icon">
       <use href="src/elements/text/icon/icons.svg#audio-description-1" />
     </svg>
 </button>
@@ -151,19 +151,19 @@ CircularButtons.parameters = {
 export const IconLeftButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       Button with Icon
     </button>
     <button class="btn btn-secondary">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       Button with Icon
     </button>
     <button class="btn btn-tertiary">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       Button with Icon
@@ -175,19 +175,19 @@ export const IconRightButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
       Button with Icon
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
     </button>
     <button class="btn btn-secondary">
       Button with Icon
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
     </button>
     <button class="btn btn-tertiary">
       Button with Icon
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
     </button>
@@ -197,19 +197,19 @@ export const IconRightButtons = () => html`
 export const IconButtons = () => html`
   <div class="cluster gap-m">
     <button class="btn">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       <span class="sr-only">Audio Description</span>
     </button>
     <button class="btn btn-secondary">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       <span class="sr-only">Audio Description</span>
     </button>
     <button class="btn btn-tertiary">
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#audio-description-1" />
       </svg>
       <span class="sr-only">Audio Description</span>

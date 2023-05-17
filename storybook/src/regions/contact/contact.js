@@ -47,7 +47,7 @@ export const centeredContact = html`
         <label class="input-card">
           <input type="checkbox" />
           <span>
-            <svg>
+            <svg focusable="false">
               <use
                 xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
               ></use>
@@ -58,7 +58,7 @@ export const centeredContact = html`
         <label class="input-card">
           <input type="checkbox" />
           <span>
-            <svg>
+            <svg focusable="false">
               <use
                 xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
               ></use>
@@ -69,7 +69,7 @@ export const centeredContact = html`
         <label class="input-card">
           <input type="checkbox" />
           <span>
-            <svg>
+            <svg focusable="false">
               <use
                 xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
               ></use>
@@ -139,7 +139,7 @@ export const splitLeftContact = html`
           <label class="input-card">
             <input type="checkbox" />
             <span>
-              <svg>
+              <svg focusable="false">
                 <use
                   xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
                 ></use>
@@ -150,7 +150,7 @@ export const splitLeftContact = html`
           <label class="input-card">
             <input type="checkbox" />
             <span>
-              <svg>
+              <svg focusable="false">
                 <use
                   xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
                 ></use>
@@ -161,7 +161,7 @@ export const splitLeftContact = html`
           <label class="input-card">
             <input type="checkbox" />
             <span>
-              <svg>
+              <svg focusable="false">
                 <use
                   xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
                 ></use>
@@ -246,7 +246,7 @@ export const splitRightContact = html`
           <label class="input-card">
             <input type="checkbox" />
             <span>
-              <svg>
+              <svg focusable="false">
                 <use
                   xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
                 ></use>
@@ -257,7 +257,7 @@ export const splitRightContact = html`
           <label class="input-card">
             <input type="checkbox" />
             <span>
-              <svg>
+              <svg focusable="false">
                 <use
                   xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
                 ></use>
@@ -268,7 +268,7 @@ export const splitRightContact = html`
           <label class="input-card">
             <input type="checkbox" />
             <span>
-              <svg>
+              <svg focusable="false">
                 <use
                   xlink:href="src/elements/text/icon/icons.svg#edit-note-2"
                 ></use>

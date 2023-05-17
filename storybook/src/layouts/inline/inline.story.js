@@ -8,19 +8,19 @@ export const Default = () =>
   html`
     <ul class="stack gap-xs">
       <li class="inline">
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         <span>Product Features</span>
       </li>
       <li class="inline">
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         <span>Product Features</span>
       </li>
       <li class="inline">
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         <span>Product Features</span>

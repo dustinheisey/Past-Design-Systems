@@ -63,37 +63,37 @@ export const SVG = () =>
   html`
     <ul class="list list-marker">
       <li>
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         Product Features
       </li>
       <li>
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         Customer Reviews
       </li>
       <li>
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         FAQs
       </li>
       <li>
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         Contact Information
       </li>
       <li>
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         Shipping and Returns
       </li>
       <li>
-        <svg>
+        <svg focusable="false">
           <use href="src/elements/text/icon/icons.svg#audio-description-1" />
         </svg>
         Terms and Conditions

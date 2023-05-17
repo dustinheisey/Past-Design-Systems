@@ -15,7 +15,7 @@ export const RadioCard = () => html`
   <label class="input-card">
     <input type="radio" />
     <span>
-      <svg>
+      <svg focusable="false">
         <use xlink:href="src/elements/text/icon/icons.svg#edit-note-2"></use>
       </svg>
       Web Design & Development

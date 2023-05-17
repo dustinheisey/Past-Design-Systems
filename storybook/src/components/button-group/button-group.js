@@ -47,7 +47,7 @@ export const tertiaryStartArrows = html`
     <a class="btn" href="#">Primary Action</a>
     <a class="btn btn-tertiary" href="#"
       >Tertiary Action
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#arrow-sm-right"></use></svg
     ></a>
   </div>
@@ -58,7 +58,7 @@ export const tertiaryCenterArrows = html`
     <a class="btn" href="#">Primary Action</a>
     <a class="btn btn-tertiary" href="#"
       >Tertiary Action
-      <svg class="icon icon-s">
+      <svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#arrow-sm-right"></use></svg
     ></a>
   </div>
@@ -67,7 +67,7 @@ export const tertiaryCenterArrows = html`
 export const tertiaryEndArrows = html`
   <div class="cluster justify-end full">
     <a class="btn btn-tertiary" href="#"
-      ><svg class="icon icon-s">
+      ><svg focusable="false" class="icon icon-s">
         <use href="src/elements/text/icon/icons.svg#arrow-sm-left"></use>
       </svg>
       Tertiary Action

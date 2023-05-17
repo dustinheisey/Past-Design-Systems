@@ -39,7 +39,7 @@ export const Default = ({ theme }) =>
         <a class="btn btn-secondary">Button Text</a>
         <a class="btn btn-tertiary">Button Text</a>
         <a class="link link-navigation">Button Text</a>
-           <svg class="icon icon-l">
+           <svg focusable="false" class="icon icon-l">
       <use href="src/elements/text/icon/icons.svg#audio-description-1" />
     </svg>
       </div>

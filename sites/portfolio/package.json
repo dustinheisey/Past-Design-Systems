@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
     "start": "npx @11ty/eleventy --serve --quiet --incremental",
-    "build": "npx @11ty/eleventy"
+    "build": "npm run format && npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-vite": "^4.0.0"
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
+    "prettier": "^2.8.8"
   }
 }

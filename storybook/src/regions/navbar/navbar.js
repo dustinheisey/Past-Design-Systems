@@ -5,6 +5,7 @@ export const centeredNavbar = html`
     <a href="/">
       <span class="sr-only">Home</span>
       <svg
+        focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -74,6 +75,7 @@ export const centeredNavbar = html`
         aria-live="polite"
       >
         <svg
+          focusable="false"
           class="sun-and-moon"
           aria-hidden="true"
           width="20"
@@ -114,6 +116,7 @@ export const spacedNavbar = html`
     <a href="/">
       <span class="sr-only">Home</span>
       <svg
+        focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -183,6 +186,7 @@ export const spacedNavbar = html`
         aria-live="polite"
       >
         <svg
+          focusable="false"
           class="sun-and-moon"
           aria-hidden="true"
           width="20"
@@ -223,6 +227,7 @@ export const startNavbar = html`
     <a href="/">
       <span class="sr-only">Home</span>
       <svg
+        focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -292,6 +297,7 @@ export const startNavbar = html`
         aria-live="polite"
       >
         <svg
+          focusable="false"
           class="sun-and-moon"
           aria-hidden="true"
           width="20"
@@ -332,6 +338,7 @@ export const endNavbar = html`
     <a href="/">
       <span class="sr-only">Home</span>
       <svg
+        focusable="false"
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -401,6 +408,7 @@ export const endNavbar = html`
         aria-live="polite"
       >
         <svg
+          focusable="false"
           class="sun-and-moon"
           aria-hidden="true"
           width="20"
@@ -441,6 +449,7 @@ export const stackedNavbar = html`
     <a href="/">
       <span class="sr-only">Home</span>
       <svg
+        focusable="false"
         class="logo-l"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 245.68853462923755"
@@ -511,6 +520,7 @@ export const stackedNavbar = html`
           aria-live="polite"
         >
           <svg
+            focusable="false"
             class="sun-and-moon"
             aria-hidden="true"
             width="20"

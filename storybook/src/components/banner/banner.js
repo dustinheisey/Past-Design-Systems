@@ -46,8 +46,8 @@ export const banner = html`
   </script>
   <div class="banner" data-component="dismissible-item">
     <p>Hello world</p>
-    <button>
-      <svg class="icon">
+    <button type="button">
+      <svg focusable="false" class="icon">
         <use href="src/elements/text/icon/icons.svg#remove"></use>
       </svg>
       <span class="sr-only">Close</span>
