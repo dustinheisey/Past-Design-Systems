@@ -8,35 +8,30 @@ export const simpleLogoCloud = html`
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
     </div>
@@ -61,42 +56,36 @@ export const splitLogoCloud = html`
         <img
           src="https://generative-placeholders.glitch.me/image?width=150&height=100"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=150&height=100"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=150&height=100"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
     </div>
@@ -111,42 +100,36 @@ export const gridLogoCloud = html`
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
       <div class="frame photo">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300"
           alt="placeholder"
-          srcset=""
         />
       </div>
     </div>

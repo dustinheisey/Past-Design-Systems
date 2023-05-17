@@ -8,7 +8,6 @@ export const leftImagePortfolio = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <div class="prose fixed">
@@ -50,7 +49,6 @@ export const rightImagePortfolio = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
       </div>
@@ -73,7 +71,6 @@ export const cardGrid2Portfolio = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <h3 class="link link-navigation">
@@ -87,7 +84,6 @@ export const cardGrid2Portfolio = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <h3 class="link link-navigation">
@@ -101,7 +97,6 @@ export const cardGrid2Portfolio = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <h3 class="link link-navigation">
@@ -115,7 +110,6 @@ export const cardGrid2Portfolio = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <h3 class="link link-navigation">
@@ -137,7 +131,6 @@ export const coverPortfolio = html`
     <img
       src="https://generative-placeholders.glitch.me/image?width=300&height=300"
       alt="placeholder"
-      srcset=""
     />
     <div class="cover cover-s cover-nav">
       <a href="/" class="principle">

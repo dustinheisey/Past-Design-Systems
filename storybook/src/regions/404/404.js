@@ -25,7 +25,6 @@ export const splitWithImage404 = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
   </section>

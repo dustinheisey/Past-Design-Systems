@@ -1658,7 +1658,6 @@ export const simpleBgFooter = html`
     <img
       src="https://generative-placeholders.glitch.me/image?width=600&height=300"
       alt="placeholder"
-      srcset=""
     />
     <div class="stack align-center gap-xs">
       <ul class="cluster">
@@ -1721,7 +1720,6 @@ export const simpleDarkBgFooter = html`
     <img
       src="https://generative-placeholders.glitch.me/image?width=600&height=300"
       alt="placeholder"
-      srcset=""
     />
     <div class="stack align-center gap-xs">
       <ul class="cluster">
@@ -1784,7 +1782,6 @@ export const simplePrimaryBgFooter = html`
     <img
       src="https://generative-placeholders.glitch.me/image?width=600&height=300"
       alt="placeholder"
-      srcset=""
     />
     <div class="stack align-center gap-xs">
       <ul class="cluster">

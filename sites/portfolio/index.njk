@@ -8,7 +8,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
 <div class="cover region cover-nav">
     <div class="sidebar  reverse sidebar-split gap-m">
         <div class="frame">
-            <img src="{{content.index.hero.img.src}}" alt="{{content.index.hero.img.alt}}" srcset="">
+            <img src="{{content.index.hero.img.src}}" alt="{{content.index.hero.img.alt}}">
         </div>
         <div class="prose auto fixed">
             <h1 class="hero-headline">
@@ -42,7 +42,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
 <div class="region sidebar  sidebar-split gap-m">
     <div class="frame square">
         {# {% image "/assets/images/profile.png", "profile picture", "300" %} #}
-        <img src="/assets/images/profile.png" alt="placeholder" srcset="">
+        <img src="/assets/images/profile.png" alt="placeholder">
     </div>
     <div class="fixed prose">
         <p class="overline">{{content.index.guide.overline}}</p>
@@ -90,7 +90,7 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
 
 <div class="region sidebar reverse  sidebar-split gap-m">
     <div class="frame square">
-        <img src="{{content.index.action.img.src}}" alt="{{content.index.action.img.alt}}" srcset="">
+        <img src="{{content.index.action.img.src}}" alt="{{content.index.action.img.alt}}">
     </div>
     <div class="prose fixed">
         <h2>{{content.index.action.headline}}</h2>
@@ -101,11 +101,13 @@ description: The portfolio of Dustin Heisey. I provide comprehensive, customized
     </div>
 </div>
 
-<figure class="region center-intrinsic">
-    <blockquote class="blockquote-accent">
-        <p>
-            {{ content.index.success.quote }}
-        </p>
+<div class="region center-intrinsic">
+    <figure>
+        <blockquote class="blockquote-accent">
+            <p>
+                {{ content.index.success.quote }}
+            </p>
+        </blockquote>
         <figcaption class="overline">{{ content.index.success.footer }}</figcaption>
-    </blockquote>
-</figure>
+    </figure>
+</div>

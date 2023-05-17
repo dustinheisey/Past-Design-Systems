@@ -8,7 +8,6 @@ export const leftImageHeader = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <div class="prose fixed">
@@ -50,7 +49,6 @@ export const rightImageHeader = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
       </div>
@@ -119,7 +117,6 @@ export const leftImageInverseHeader = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <div class="prose fixed">
@@ -161,7 +158,6 @@ export const rightImageInverseHeader = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
       </div>

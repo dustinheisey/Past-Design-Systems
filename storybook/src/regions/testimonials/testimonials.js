@@ -47,7 +47,6 @@ export const leftAvatarTestimonials = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=300&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <div class="center">
@@ -85,7 +84,6 @@ export const rightAvatarTestimonials = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=300&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
       </div>

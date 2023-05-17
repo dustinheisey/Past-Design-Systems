@@ -117,7 +117,6 @@ export const leftHero = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <div class="prose fixed">
@@ -268,7 +267,6 @@ export const rightHero = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
       </div>
@@ -404,7 +402,6 @@ export const splitLeftHero = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
   </div>
@@ -416,7 +413,6 @@ export const splitRightHero = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
     <div class="stack">
@@ -672,7 +668,6 @@ export const angledTopLeftHero = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
   </div>
@@ -684,7 +679,6 @@ export const angledTopRightHero = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
     <div class="stack">
@@ -940,7 +934,6 @@ export const angledBottomLeftHero = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
   </div>
@@ -952,7 +945,6 @@ export const angledBottomRightHero = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
     <div class="stack">
@@ -1198,28 +1190,24 @@ export const tiles2LeftHero = html`
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
         </div>
@@ -1376,28 +1364,24 @@ export const tiles2RightHero = html`
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
         </div>
@@ -1524,63 +1508,54 @@ export const tiles3LeftHero = html`
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
         </div>
@@ -1737,63 +1712,54 @@ export const tiles3RightHero = html`
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
           <div class="frame square">
             <img
               src="https://generative-placeholders.glitch.me/image?width=600&height=300"
               alt="placeholder"
-              srcset=""
             />
           </div>
         </div>
@@ -1929,7 +1895,7 @@ export const centerImageHero = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=400"
             alt="placeholder"
-            srcset=""
+            
           />
         </div>
       </div>
@@ -1942,7 +1908,7 @@ export const leftBgHero = html`
     <img
       src="https://generative-placeholders.glitch.me/image?width=600&height=400"
       alt="placeholder"
-      srcset=""
+      
     />
     <div class="cover cover-nav">
       <nav class="cluster justify-between">
@@ -2077,7 +2043,7 @@ export const centerBgHero = html`
     <img
       src="https://generative-placeholders.glitch.me/image?width=600&height=400"
       alt="placeholder"
-      srcset=""
+      
     />
     <div class="cover cover-nav">
       <nav class="cluster justify-between">
@@ -2212,7 +2178,6 @@ export const rightBgHero = html`
     <img
       src="https://generative-placeholders.glitch.me/image?width=600&height=300"
       alt="placeholder"
-      srcset=""
     />
     <div class="cover cover-nav">
       <nav class="cluster justify-between">

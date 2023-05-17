@@ -46,7 +46,6 @@ export const imageLeftStats = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
         <div class="grid grid-2 gap-xs fixed">
@@ -98,7 +97,6 @@ export const imageRightStats = html`
           <img
             src="https://generative-placeholders.glitch.me/image?width=600&height=300"
             alt="placeholder"
-            srcset=""
           />
         </div>
       </div>
@@ -138,7 +136,6 @@ export const splitLeftStats = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
   </div>
@@ -150,7 +147,6 @@ export const splitRightStats = html`
       <img
         src="https://generative-placeholders.glitch.me/image?width=600&height=300"
         alt="placeholder"
-        srcset=""
       />
     </div>
     <div class="prose center">
