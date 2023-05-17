@@ -8,7 +8,7 @@ description: Establish an effective brand identity with my branding service. I d
 <div class="cover region cover-nav">
     <div class="sidebar  reverse sidebar-split gap-m">
         <div class="frame square">
-            <img src="{{content.branding.header.img.src}}" alt="{{content.branding.header.img.alt}}">
+            {% image content.branding.header.img.src, content.branding.header.img.alt %}
         </div>
         <div class="prose auto fixed">
             <h1 class="page-headline">
@@ -28,7 +28,7 @@ description: Establish an effective brand identity with my branding service. I d
 
 <div class="region sidebar  sidebar-split gap-m">
     <div class="frame square">
-        <img src="{{content.branding.description.img.src}}" alt="{{content.branding.description.img.alt}}">
+        {% image content.branding.description.img.src, content.branding.description.img.alt %}
     </div>
     <div class="fixed prose">
         <p class="overline">{{content.branding.description.overline}}</p>
@@ -61,7 +61,7 @@ description: Establish an effective brand identity with my branding service. I d
 
 <div class="region reverse sidebar  sidebar-split gap-m">
     <div class="frame square">
-        <img src="{{content.branding.transformation.img.src}}" alt="{{content.branding.transformation.img.alt}}">
+        {% image content.branding.transformation.img.src, content.branding.transformation.img.alt %}
     </div>
     <div class="prose fixed">
         <p class="overline">{{content.branding.transformation.overline}}</p>

@@ -8,7 +8,7 @@ description: Ready to create a website that accurately represents your organizat
 <div class="cover region cover-nav">
   <div class="sidebar align-stretch sidebar-split gap-m">
     <div class="frame square">
-      <img src="{{content.contact.img.src}}" alt="{{content.contact.img.alt}}">
+      {% image content.contact.img.src, content.contact.img.alt %}
     </div>
     <div class="stack fixed center center-intrinsic">
       <section class="prose">
@@ -17,7 +17,7 @@ description: Ready to create a website that accurately represents your organizat
           {{content.contact.body}}
         </p>
       </section>
-      <form class="stack gap-s">
+      <form class="stack gap-s" name="contact" method="POST" data-netlify="true">
         <label>
           <span class="required">Full Name</span>
           <input type="text" id="full_name" name="full_name" class="input" required>

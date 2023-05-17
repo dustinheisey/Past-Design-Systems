@@ -9,7 +9,7 @@ description: I'm Dustin Heisey and I'm committed to creating accessible, sustain
     <div class="principle">
         <div class="sidebar  reverse sidebar-split gap-m">
             <div class="frame square">
-                <img src="{{content.about.header.img.src}}" alt="{{content.about.header.img.alt}}">
+                {% image content.about.header.img.src, content.about.header.img.alt %}
             </div>
             <div class="prose fixed">
                 <p class="overline">{{content.about.header.overline}}</p>
@@ -25,7 +25,7 @@ description: I'm Dustin Heisey and I'm committed to creating accessible, sustain
 
 <div class="region sidebar align-stretch sidebar-split gap-m">
     <div class="frame">
-        <img src="{{content.about.introduction.img.src}}" alt="{{content.about.introduction.img.alt}}">
+        {% image content.about.introduction.img.src, content.about.introduction.img.alt %}
     </div>
     <div class="prose fixed">
         <p class="lead">

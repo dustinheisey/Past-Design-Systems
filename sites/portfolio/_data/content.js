@@ -9,7 +9,7 @@ module.exports = {
         url: "/contact",
       },
       img: {
-        src: "/assets/images/hero.png",
+        src: "./assets/images/hero.png",
         alt: "",
       },
     },
@@ -48,7 +48,7 @@ module.exports = {
       headline: "I'm Dustin Heisey",
       body: "As a passionate advocate for environmental sustainability and social welfare, as well as an expert in accessible, responsive and low carbon web design, I can help you navigate this difficult terrain.",
       img: {
-        src: "/assets/images/profile.png",
+        src: "./assets/images/profile.png",
         alt: "",
       },
     },
@@ -83,7 +83,7 @@ module.exports = {
         url: "/contact",
       },
       img: {
-        src: "/assets/images/transformation.png",
+        src: "./assets/images/transformation.png",
         alt: "",
       },
     },
@@ -100,7 +100,7 @@ module.exports = {
         "Partnering with Eco-Conscious Businesses and Nonprofits for a Greener Digital Future",
       body: "As a web designer specializing in accessibility and sustainability, I'm dedicated to helping your business or nonprofit reach as many people as possible and make as much of an impact as possible.",
       img: {
-        src: "/assets/images/about-intro.png",
+        src: "./assets/images/about-intro.png",
         alt: "",
       },
     },
@@ -110,7 +110,7 @@ module.exports = {
       value:
         "By choosing to work with me, you're not only investing in a visually stunning and user-friendly website but also supporting a diverse population of users and helping to create a greener digital future. I am committed to helping your organization maximize its impact on people and the planet, showcasing your dedication to social and environmental responsibility. Together, we can create a digital presence that resonates with your target audience and sets you apart from the competition.",
       img: {
-        src: "/assets/images/about-bio.png",
+        src: "./assets/images/about-bio.png",
         alt: "",
       },
     },
@@ -150,7 +150,7 @@ module.exports = {
       headline:
         "Empowering Eco-Conscious Businesses and Nonprofits with Accessible, Sustainable Web Solutions",
       img: {
-        src: "/assets/images/services.png",
+        src: "./assets/images/services.png",
         alt: "",
       },
     },
@@ -169,7 +169,7 @@ module.exports = {
         url: "/services/branding",
       },
       img: {
-        src: "/assets/images/branding-service.png",
+        src: "./assets/images/branding-service.png",
         alt: "",
       },
     },
@@ -182,7 +182,7 @@ module.exports = {
         url: "/services/web-design",
       },
       img: {
-        src: "/assets/images/web-design-service.png",
+        src: "./assets/images/web-design-service.png",
         alt: "",
       },
     },
@@ -195,7 +195,7 @@ module.exports = {
         url: "/services/optimization",
       },
       img: {
-        src: "/assets/images/optimization-service.png",
+        src: "./assets/images/optimization-service.png",
         alt: "",
       },
     },
@@ -207,7 +207,7 @@ module.exports = {
         "Effective Storytelling and Cohesive Visuals for Purpose-Driven Organizations",
       body: "Build a strong, resonant brand that connects with your target audience and reflects your organization's values.",
       img: {
-        src: "/assets/images/branding-intro.png",
+        src: "./assets/images/branding-intro.png",
         alt: "",
       },
     },
@@ -221,7 +221,7 @@ module.exports = {
       headline: "Authentic Branding Solutions for Your Organization",
       body: "I get it, and I'm here to help. My branding service is designed to ease your journey by authentically communicating your purpose, balancing it with the realities of running your organization, and managing your limited resources efficiently. I can help you create a compelling, eco-conscious brand that resonates with a wide audience.",
       img: {
-        src: "/assets/images/branding-description.png",
+        src: "./assets/images/branding-description.png",
         alt: "",
       },
     },
@@ -252,7 +252,7 @@ module.exports = {
       headline: "Elevate Your Organization's Impact",
       body: "By investing in this branding service, you'll witness a remarkable transformation in your organization. It will emerge with a solid brand strategy and clear guidelines that ensure consistency across all platforms. Expect to see heightened audience engagement, improved brand recognition, and a strengthened commitment to your mission, amplifying the impact and reach of your purpose-driven organization.",
       img: {
-        src: "/assets/images/branding-transformation.png",
+        src: "./assets/images/branding-transformation.png",
         alt: "",
       },
     },
@@ -305,7 +305,7 @@ module.exports = {
         "Accessible, Sustainable, and Responsive Websites for Eco-Conscious Organizations",
       body: "Craft a unique online presence that reflects your brand, supports your goals, and sets you apart from competitors.",
       img: {
-        src: "/assets/images/web-design-intro.png",
+        src: "./assets/images/web-design-intro.png",
         alt: "",
       },
     },
@@ -317,7 +317,7 @@ module.exports = {
       headline: "Tailored Web Solutions that Reflect Your Vision",
       body: "Overwhelmed by all of these moving parts? I can help. My web design service simplifies this complex process, balancing WCAG guidelines, emerging tech trends, and user demands within your budget. More than just a service, I can be your partner in bringing your mission to life online, promoting inclusivity and demonstrating to users your commitment to environmental sustainability.",
       img: {
-        src: "/assets/images/web-design-description.png",
+        src: "./assets/images/web-design-description.png",
         alt: "",
       },
     },
@@ -349,7 +349,7 @@ module.exports = {
       headline: "Elevate Your Organization's Online Presence",
       body: "Imagine creating a digital space that effectively communicates your mission, attracts your target audience, and promotes inclusivity, all while demonstrating your commitment to environmental sustainability. More than just a website, it's a beacon of your values, a powerful tool that engages, inspires, and fosters a deeper connection with your audience, fueling growth and amplifying your impact.",
       img: {
-        src: "/assets/images/web-design-transformation.png",
+        src: "./assets/images/web-design-transformation.png",
         alt: "",
       },
     },
@@ -413,7 +413,7 @@ module.exports = {
       headline: "Maximize Accessibility, Sustainability, and Performance",
       body: "Transform your existing website into a consistent, scalable, and responsive progressive web app that meets accessibility standards and generates less carbon per page view than at least 70% of websites.",
       img: {
-        src: "/assets/images/optimization-intro.png",
+        src: "./assets/images/optimization-intro.png",
         alt: "",
       },
     },
@@ -426,7 +426,7 @@ module.exports = {
         "Master the Labyrinth of Web Design with Comprehensive, Sustainable Solutions",
       body: "Navigate this maze with confidence by entrusting me with your website optimization. I'll transform your digital presence, making it sustainable, accessible, and visually compelling, while ensuring compliance with evolving legal requirements. I can mitigate the stress of limited time and resources, adeptly managing the growth of your site to maintain visual and navigational consistency. I'll also convert your site to a responsive Progressive Web App for a seamless user experience across all devices. You can focus on your mission and leave the rest to me.",
       img: {
-        src: "/assets/images/optimization-description.png",
+        src: "./assets/images/optimization-description.png",
         alt: "",
       },
     },
@@ -458,7 +458,7 @@ module.exports = {
       headline: "Experience the Benefits of an Optimized Website",
       body: "With my optimization services, you can expect an optimized website that is sustainable, accessible, and visually compelling, making your brand more recognizable and attractive to all users. And with continuous maintenance, your digital presence will remain resilient and current, adapting to ever-changing trends and standards. Anticipate an uplift in user engagement, a surge in website traffic, and a renewed commitment to your mission as your online reach expands.",
       img: {
-        src: "/assets/images/optimization-transformation.png",
+        src: "./assets/images/optimization-transformation.png",
         alt: "",
       },
     },
@@ -511,7 +511,7 @@ module.exports = {
       headline: "Crafting Digital Experiences for a Better World",
       body: "I've had the privilege of working with some amazing organizations. Here are a few of my favorites.",
       img: {
-        src: "/assets/images/portfolio.png",
+        src: "./assets/images/portfolio.png",
         alt: "",
       },
     },
@@ -540,8 +540,9 @@ module.exports = {
             "Encouraging User-Friendly and Accessible Science Education",
           url: "https://www.vernier.com/product-category/?category=software",
           body: "At Vernier Science Education, I designed and developed dozens of user-friendly and accessible features for their data collections/visualization apps, including Video Analysis, Graphical Analysis, Instrumental Analysis, and Spectral Analysis. By creating an accessible design system and AA contrast compliant color palette, I created consistency between and within each app.",
+          // image: "./assets/images/graphical-analysis-desktop-mockup.jpeg",
           image: {
-            src: "graphical-analysis-desktop-mockup.jpeg",
+            src: "./assets/images/graphical-analysis-desktop-mockup.jpeg",
             alt: "Vernier Science Education Graphical Analysis App",
           },
         },
@@ -549,8 +550,9 @@ module.exports = {
           headline: "Designing and Developing a Website to Mobilize Thousands",
           url: "https://climatestrikeoregon.org/",
           body: "To assist the climate strikes that occurred in 2019, I designed and developed a website to help inspire 15,000 attendees to strikes happening all across Oregon. By creating a visually appealing and easy-to-use website, I was able to mobilize thousands of people and make a real impact in the fight against climate change.",
+          // image: "./assets/images/climate-strike-oregon-desktop-mockup.jpeg",
           image: {
-            src: "climate-strike-oregon-desktop-mockup.jpeg",
+            src: "./assets/images/climate-strike-oregon-desktop-mockup.jpeg",
             alt: "Climate Strike Oregon Website",
           },
         },
@@ -571,7 +573,7 @@ module.exports = {
     headline: "Apply to Work With Me",
     body: "Fill out the application below, and let's make a difference together.",
     img: {
-      src: "/assets/images/contact.png",
+      src: "./assets/images/contact.png",
       alt: "",
     },
   },

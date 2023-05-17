@@ -8,7 +8,7 @@ description: Elevate your online presence with my eco-friendly web design servic
 <div class="cover region cover-nav">
     <div class="sidebar reverse sidebar-split gap-m">
         <div class="frame square">
-            <img src="{{content.design.header.img.src}}" alt="{{content.design.header.img.alt}}">
+            {% image content.design.header.img.src, content.design.header.img.alt %}
         </div>
         <div class="prose auto fixed">
             <h1 class="page-headline">
@@ -28,7 +28,7 @@ description: Elevate your online presence with my eco-friendly web design servic
 
 <div class="region sidebar sidebar-split gap-m">
     <div class="frame square">
-        <img src="{{content.design.description.img.src}}" alt="{{content.design.description.img.alt}}">
+        {% image content.design.description.img.src, content.design.description.img.alt %}
     </div>
     <div class="fixed prose">
         <p class="overline">{{content.design.description.overline}}</p>
@@ -61,7 +61,7 @@ description: Elevate your online presence with my eco-friendly web design servic
 
 <div class="region reverse sidebar sidebar-split gap-m">
     <div class="frame square">
-        <img src="{{content.design.transformation.img.src}}" alt="{{content.design.transformation.img.alt}}">
+        {% image content.design.transformation.img.src, content.design.transformation.img.alt %}
     </div>
     <div class="prose fixed">
         <p class="overline">{{content.design.transformation.overline}}</p>

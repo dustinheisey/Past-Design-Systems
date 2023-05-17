@@ -8,7 +8,7 @@ description: Boost your website's performance with my eco-friendly optimization 
 <div class="cover region cover-nav">
     <div class="sidebar  reverse sidebar-split gap-m">
         <div class="frame square">
-            <img src="{{content.optimization.header.img.src}}" alt="{{content.optimization.header.img.alt}}">
+            {% image content.optimization.header.img.src, content.optimization.header.img.alt %}
         </div>
         <div class="prose auto fixed">
             <h1 class="page-headline">
@@ -28,7 +28,7 @@ description: Boost your website's performance with my eco-friendly optimization 
 
 <div class="region sidebar sidebar-split gap-m">
     <div class="frame square">
-        <img src="{{content.optimization.description.img.src}}" alt="{{content.optimization.description.img.alt}}">
+        {% image content.optimization.description.img.src, content.optimization.description.img.alt %}
     </div>
     <div class="fixed prose">
         <p class="overline">{{content.optimization.description.overline}}</p>
@@ -61,7 +61,7 @@ description: Boost your website's performance with my eco-friendly optimization 
 
 <div class="region reverse sidebar sidebar-split gap-m">
     <div class="frame square">
-        <img src="{{content.optimization.transformation.img.src}}" alt="{{content.optimization.transformation.img.alt}}">
+        {% image content.optimization.transformation.img.src, content.optimization.transformation.img.alt %}
     </div>
     <div class="prose fixed">
         <p class="overline">{{content.optimization.transformation.overline}}</p>
