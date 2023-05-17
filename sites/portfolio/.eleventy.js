@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
 
   const nunjucksEnvironment = new Nunjucks.Environment(
     // Specify the directories where your templates reside.
-    new Nunjucks.FileSystemLoader(["./", "_includes", "_layouts"]),
+    new Nunjucks.FileSystemLoader(["./", "views", "_includes", "_layouts"]),
 
     // Apply rendering options
     {

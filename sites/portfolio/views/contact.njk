@@ -18,15 +18,15 @@ description: Ready to create a website that accurately represents your organizat
         </p>
       </section>
       <form class="stack gap-s">
-        <label for="full_name">
+        <label>
           <span class="required">Full Name</span>
           <input type="text" id="full_name" name="full_name" class="input" required>
         </label>
-        <label for="email">
+        <label>
           <span class="required">Email</span>
           <input type="email" id="email" name="email" class="input" required>
         </label>
-        <label for="organization_description">
+        <label>
           <span class="required">Describe Your Organization</span>
           <textarea id="organization_description" name="organization_description" required></textarea>
         </label>
@@ -62,13 +62,13 @@ description: Ready to create a website that accurately represents your organizat
             </span>
           </label>
         </fieldset>
-        <label for="budget">
-          <span class="required">Budget</span>
-          <div class="inline" gap="2xs">
-            <input type="range" id="budget" name="budget" min="500" max="10000" step="500" value="500">
-            <output id="budget-value">$500</output>
-          </div>
+        <label for="budget" class="required">
+          Budget
         </label>
+        <div class="inline" gap="2xs">
+          <input type="range" id="budget" name="budget" min="500" max="10000" step="500" value="500">
+          <output id="budget-value">$500</output>
+        </div>
         <button type="submit" class="btn">Send Application</button>
       </form>
     </div>
