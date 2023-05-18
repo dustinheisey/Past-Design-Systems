@@ -8,7 +8,7 @@
         <p class="measure-s">
           Get weekly updates on web accessibility and sustainability trends, case studies, and tutorials in my newsletter. Stay informed on best practices and resources to build an inclusive, eco-friendly digital presence.
         </p>
-        <form class="input-group sidebar gap-0">
+        <form class="input-group sidebar gap-0" name="newsletter" data-netlify="true">
           <input type="email" class="input" aria-label="Email Address" placeholder="Email Address">
           <button type="submit" class="fixed btn btn-primary">Subscribe</button>
         </form>
@@ -47,6 +47,8 @@
         </li>
         {% endfor %}
       </ul>
+      {# <div id="wcb" class="copywrite"></div>
+      <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script> #}
       <small class="copywrite">© 2023 Dustin Heisey, All rights reserved.</small>
     </div>
   </div>
