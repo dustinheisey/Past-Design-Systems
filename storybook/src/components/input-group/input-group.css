@@ -8,6 +8,7 @@
 .input-group > input,
 .input-group > button {
   border-radius: 0;
+  margin: 0;
 }
 
 /* .input-group > input {
