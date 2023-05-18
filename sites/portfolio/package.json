@@ -5,19 +5,26 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
-    "start": "npx @11ty/eleventy --serve --quiet --incremental",
-    "build": "npm run format && npx @11ty/eleventy"
+    "start": "rm -rf _site && npm run js-build && npx @11ty/eleventy --serve --quiet --incremental",
+    "build": "rm -rf _site && npm run format && npm run js-build && npx @11ty/eleventy",
+    "js-build": "rollup -c rollup.config.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^3.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
     "csso": "^5.0.5",
+    "eleventy-plugin-gen-favicons": "^1.1.2",
     "html-minifier": "^4.0.0",
     "prettier": "^2.8.8",
     "purgecss": "^5.0.0",
     "purgecss-from-html": "^6.0.0-alpha.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-html-validate": "^0.0.5",
+    "eleventy-plugin-pwa-v2": "^1.0.0"
   }
 }

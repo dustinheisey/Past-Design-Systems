@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .region.navbar {
   padding-inline: var(--space-s);
 }
@@ -97,3 +98,4 @@
     background-color: var(--color-surface);
   }
 }
+/*! purgecss end ignore */

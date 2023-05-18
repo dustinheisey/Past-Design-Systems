@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 :root {
   /* light */
   --color-primary-light: #566500;
@@ -195,3 +196,4 @@ html.mode-dark {
     --color-scrim: var(--color-scrim-light);
   }
 }
+/*! purgecss end ignore */

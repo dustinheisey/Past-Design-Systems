@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // ? Navbar
+  const navbar = document.querySelector("#navbar");
+  let top = navbar.offsetTop;
+  function floating() {
+    if (window.scrollY > top) {
+      navbar.classList.add("floating");
+    } else {
+      navbar.classList.remove("floating");
+    }
+  }
+  window.addEventListener("scroll", floating);
+
+  // ? Range
+  const budgetInput = document.getElementById("budget");
+  const budgetValue = document.getElementById("budget-value");
+
+  if (budgetInput)
+    budgetInput.addEventListener("input", function () {
+      budgetValue.textContent = "$" + budgetInput.value;
+    });
+});
+
+// ? Dark Mode
 const storageKey = "theme-preference";
 
 const getColorPreference = () => {

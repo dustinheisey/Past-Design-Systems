@@ -1,10 +1,10 @@
 <footer class="bg-img">
-  {# {% svg "./assets/images/footer-background.svg" %} #}
-  <img src="/assets/images/footer-background.svg" , alt="" />
+  {# {% svg "./assets/footer-background.svg" %} #}
+  <img src="/assets/footer-background.svg" alt="" />
   <div class="full stack align-center region">
     <div class="cluster justify-between full gap-xl align-start">
       <div class="stack gap-xs prose">
-        <h4>Subscribe to My Newsletter</h4>
+        <h3 class="title-headline">Subscribe to My Newsletter</h3>
         <p class="measure-s">
           Get weekly updates on web accessibility and sustainability trends, case studies, and tutorials in my newsletter. Stay informed on best practices and resources to build an inclusive, eco-friendly digital presence.
         </p>
@@ -16,7 +16,7 @@
       <div class="cluster gap-2xl align-start">
         {% for group in navigation.footer.groups %}
         <div class="stack stack-bg gap-2xs">
-          <h4>{{group.title}}</h4>
+          <h3 class="title-headline">{{group.title}}</h3>
           <ul class="stack gap-xs">
             {% for link in group.links %}
             <li>

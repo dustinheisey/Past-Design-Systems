@@ -3,35 +3,30 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}} | Dustin Heisey</title>
     <meta name="description" content="{{description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{{title}} | Dustin Heisey">
     <meta property="og:description" content="{{description}}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dustinheisey.com">
-    <meta property="og:image" content="https://dustinheisey.com/assets/logo.svg">
+    <meta property="og:url" content="{{page.url}}">
+    <meta property="og:image" content="{{ogImage}}">
 
-    <!-- Progressive Web App (PWA) Meta Tags -->
-    <meta name="theme-color" content="#07372e">
-    <meta name="application-name" content="Dustin Heisey">
-    <meta name="apple-mobile-web-app-title" content="Dustin Heisey">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href=/favicon.ico rel=icon sizes=any>
+    <link href=/favicon.svg rel=icon type=image/svg+xml>
+    <link href=/apple-touch-icon-180.png rel=apple-touch-icon>
+    <link href=/manifest.webmanifest rel=manifest>
+    <meta name="theme-color" content="#566500">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/style.css">
+    <!-- INLINE CSS -->
 
-    <!-- Favicon and Touch Icons -->
-    <link rel="icon" href="/assets/favicon/favicon.ico">
-    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
-    <meta name="msapplication-TileColor" content="#07372E">
-    <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png">
-    <script src="/js/dark-mode.js" async defer></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/range.js"></script>
+    <script src="/min.js"></script>
+    <script>
+        if ("serviceWorker" in navigator)
+            navigator.serviceWorker.register("/sw.js");
+    </script>
 </head>
 
 <body class="theme-background">

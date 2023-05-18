@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .dark-mode-toggle {
   color: var(--color-primary);
   --size: 1.5rem;
@@ -159,3 +160,4 @@
     --size: 2rem;
   }
 }
+/*! purgecss end ignore */
