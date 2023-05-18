@@ -49,11 +49,13 @@ img.full {
 
 .logo {
   block-size: 2rem;
+  inline-size: 2rem;
 }
 
 @media (--tablet-landscape-up) {
   .logo {
     block-size: 3rem;
+    inline-size: 3rem;
   }
 }
 
