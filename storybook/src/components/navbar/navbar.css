@@ -40,7 +40,7 @@
   justify-content: space-around;
   background: var(--color-surface);
   box-shadow: var(--shadow-l);
-  padding-block-end: env(safe-area-inset-bottom);
+  padding-block-end: env(safe-area-inset-bottom, 0px);
 }
 
 .bottombar > * {
