@@ -29,6 +29,7 @@
 @import "./elements/label/label.css";
 @import "./elements/link/link.css";
 @import "./elements/p/p.css";
+@import "./elements/caption/caption.css";
 @import "./elements/radio/radio.css";
 @import "./elements/range/range.css";
 @import "./elements/select/select.css";
