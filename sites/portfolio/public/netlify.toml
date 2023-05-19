@@ -4,4 +4,4 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "0"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'self' usefathom.com *.usefathom.com websitecarbon.com *.websitecarbon.com; style-src 'unsafe-inline'; form-action 'self'; script-src 'unsafe-inline'; connect-src 'self'; img-src 'self'; base-uri 'self';"
+    Content-Security-Policy = "script-src 'self' https://cdn.usefathom.com https://dustinheisey.com https://unpkg.com/website-carbon-badges@1.1.3"
