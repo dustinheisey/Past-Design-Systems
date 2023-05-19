@@ -1,6 +1,6 @@
 .input-group {
   display: flex;
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-pill);
   align-items: stretch;
   overflow: hidden;
 }
