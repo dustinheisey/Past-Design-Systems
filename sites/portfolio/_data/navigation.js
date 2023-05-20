@@ -2,50 +2,55 @@ module.exports = {
   header: {
     links: [
       { label: "Home", url: "/" },
-      { label: "About", url: "/about.html" },
+      { label: "About", url: "/about" },
       {
         label: "Services",
-        url: "/services.html",
+        url: "/services",
         subLinks: [
-          { label: "Branding", url: "/services/branding.html" },
+          { label: "Branding", url: "/services/branding" },
           {
             label: "Web Design",
-            url: "/services/web-design.html",
+            url: "/services/web-design",
           },
-          { label: "Optimization", url: "/services/optimization.html" },
+          { label: "Optimization", url: "/services/optimization" },
         ],
       },
-      { label: "Portfolio", url: "/portfolio.html" },
+      { label: "Portfolio", url: "/portfolio" },
+      { label: "Blog", url: "/blog" },
     ],
-    cta: { label: "Start a Project", url: "/contact.html" },
+    cta: { label: "Start a Project", url: "/contact" },
   },
-  bottombar: [
-    { label: "Home", url: "/", icon: "home" },
-    { label: "About", url: "/about", icon: "about" },
-    { label: "Services", url: "/services", icon: "web-design" },
-    { label: "Portfolio", url: "/portfolio", icon: "portfolio" },
-    { label: "Contact", url: "/contact", icon: "contact" },
-  ],
+  bottombar: {
+    links: [
+      { label: "Home", url: "/", icon: "home" },
+      { label: "About", url: "/about", icon: "about" },
+      { label: "Services", url: "/services", icon: "web-design" },
+      { label: "Portfolio", url: "/portfolio", icon: "portfolio" },
+      { label: "Blog", url: "/blog", icon: "blog" },
+    ],
+    fab: { url: "/contact", icon: "contact" },
+  },
   footer: {
     groups: [
       {
         title: "Services",
         links: [
-          { label: "Branding", url: "/services/branding.html" },
+          { label: "Branding", url: "/services/branding" },
           {
             label: "Web Design",
-            url: "/services/web-design.html",
+            url: "/services/web-design",
           },
-          { label: "Optimization", url: "/services/optimization.html" },
+          { label: "Optimization", url: "/services/optimization" },
         ],
       },
       {
         title: "Company",
         links: [
           { label: "Home", url: "/" },
-          { label: "About", url: "/about.html" },
-          { label: "Portfolio", url: "/portfolio.html" },
-          { label: "Start a Project", url: "/contact.html" },
+          { label: "About", url: "/about" },
+          { label: "Portfolio", url: "/portfolio" },
+          { label: "Blog", url: "/blog" },
+          { label: "Start a Project", url: "/contact" },
         ],
       },
       {

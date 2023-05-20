@@ -71,16 +71,23 @@
         </button>
         <a href="{{navigation.header.cta.url}}" class="btn">{{navigation.header.cta.label}}</a>
     </div>
-    <ul class="bottombar">
-        {% for item in navigation.bottombar %}
-        <li>
-            <a href="{{item.url}}" class="navigation">
-                <svg focusable="false" class="icon">
-                    <use href="/assets/icons.svg#{{item.icon}}" />
-                </svg>
-                <span>{{item.label}}</span>
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="bottombar">
+        <ul>
+            {% for item in navigation.bottombar.links %}
+            <li>
+                <a href="{{item.url}}" class="navigation">
+                    <svg focusable="false" class="icon">
+                        <use href="/assets/icons.svg#{{item.icon}}" />
+                    </svg>
+                    <span>{{item.label}}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{navigation.bottombar.fab.url}}" class="fab">
+            <svg focusable="false" class="icon">
+                <use href="/assets/icons.svg#{{navigation.bottombar.fab.icon}}" />
+            </svg>
+        </a>
+    </div>
 </nav>
