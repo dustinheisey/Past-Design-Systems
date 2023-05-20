@@ -5,6 +5,10 @@ hr {
   inline-size: 100%;
 }
 
+hr.outline {
+  border-top-color: var(--color-outline);
+}
+
 details + hr {
   margin-block: var(--space-s);
 }

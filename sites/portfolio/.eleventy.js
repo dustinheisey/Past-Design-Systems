@@ -1,15 +1,30 @@
-const Nunjucks = require("nunjucks");
 const Image = require("@11ty/eleventy-img");
+const { promisify } = require("util");
+const { DateTime } = require("luxon");
+const fs = require("fs");
 const { PurgeCSS } = require("purgecss");
 const purgeCssFromHtml = require("purgecss-from-html");
+const stat = promisify(fs.stat);
 const minify = require("html-minifier").minify;
 const csso = require("csso");
-const eleventyHTMLValidate = require("eleventy-plugin-html-validate");
 const pluginPWA = require("eleventy-plugin-pwa-v2");
-const faviconsPlugin = require("eleventy-plugin-gen-favicons");
+const pluginNavigation = require("@11ty/eleventy-navigation");
+const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const execFile = promisify(require("child_process").execFile);
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ public: "/" });
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
+  eleventyConfig.addPlugin(pluginPWA, {
+    swDest: "./_site/sw.js",
+    globDirectory: "./_site",
+    sourcemap: false,
+    inlineWorkboxRuntime: true,
+  });
 
   eleventyConfig.addNunjucksAsyncShortcode(
     "image",
@@ -46,16 +61,6 @@ module.exports = function (eleventyConfig) {
     return metadata.svg[0].buffer.toString();
   });
 
-  eleventyConfig.addPlugin(eleventyHTMLValidate);
-  eleventyConfig.addPlugin(pluginPWA, {
-    swDest: "./_site/sw.js",
-    globDirectory: "./_site",
-    sourcemap: false,
-    inlineWorkboxRuntime: true,
-  });
-
-  eleventyConfig.addLayoutAlias("base", "base.njk");
-
   eleventyConfig.addTransform(
     "purge-and-inline-css",
     async (content, outputPath) => {
@@ -63,12 +68,12 @@ module.exports = function (eleventyConfig) {
         const purgeCssResult = await new PurgeCSS().purge({
           content: [{ raw: content, extension: "html" }],
           css: ["./style.css"],
-          // extractors: [
-          //   {
-          //     extractor: purgeCssFromHtml,
-          //     extensions: ["html"],
-          //   },
-          // ],
+          extractors: [
+            {
+              extractor: purgeCssFromHtml,
+              extensions: ["html"],
+            },
+          ],
         });
 
         const after = csso.minify(purgeCssResult[0].css).css;
@@ -99,13 +104,80 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+
+  eleventyConfig.addPassthroughCopy({ public: "/" });
+  eleventyConfig.addWatchTarget("./index.js");
+  eleventyConfig.addWatchTarget("./style.css");
+
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLL yyyy"
+    );
+  });
+
+  async function lastModifiedDate(filename) {
+    try {
+      const { stdout } = await execFile("git", [
+        "log",
+        "-1",
+        "--format=%cd",
+        filename,
+      ]);
+      return new Date(stdout);
+    } catch (e) {
+      console.error(e.message);
+      // Fallback to stat if git isn't working.
+      const stats = await stat(filename);
+      return stats.mtime; // Date
+    }
+  }
+  // Cache the lastModifiedDate call because shelling out to git is expensive.
+  // This means the lastModifiedDate will never change per single eleventy invocation.
+  const lastModifiedDateCache = new Map();
+  eleventyConfig.addNunjucksAsyncFilter(
+    "lastModifiedDate",
+    function (filename, callback) {
+      const call = (result) => {
+        result.then((date) => callback(null, date));
+        result.catch((error) => callback(error));
+      };
+      const cached = lastModifiedDateCache.get(filename);
+      if (cached) {
+        return call(cached);
+      }
+      const promise = lastModifiedDate(filename);
+      lastModifiedDateCache.set(filename, promise);
+      call(promise);
+    }
+  );
+
+  /* Markdown Overrides */
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  }).use(markdownItAnchor, {
+    permalink: markdownItAnchor.permalink.linkAfterHeader({
+      assistiveText: (title) => `Permalink to “${title}”`,
+      visuallyHiddenClass: "sr-only",
+      wrapper: ['<div class="inline-header">', "</div>"],
+    }),
+    permalinkSymbol: "#",
+  });
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
   return {
     dir: {
       input: ".",
       output: "_site",
       data: "_data",
       includes: "_includes",
-      layouts: "_layouts",
     },
   };
 };

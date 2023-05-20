@@ -1,7 +1,23 @@
 /*! purgecss start ignore */
-.region.navbar {
-  padding-inline: var(--space-s);
+nav {
+  position: relative;
+  padding: var(--inset-page);
 }
+
+#reading-progress {
+  z-index: 1;
+  background-color: var(--color-primary);
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  block-size: 3px;
+  bottom: 0;
+  right: 0;
+  transform: translate(-100vw, 0);
+  will-change: transform;
+  pointer-events: none;
+}
+
 .navbar {
   position: sticky;
   top: -200px;
@@ -18,10 +34,13 @@
 }
 
 .navbar.floating {
-  padding: var(--space-2xs);
   box-shadow: var(--shadow-l);
   animation: transition 0.2s ease-in-out;
   animation-fill-mode: forwards;
+}
+
+.navbar.floating > nav {
+  padding: var(--space-2xs);
 }
 
 .navbar .topbar,
@@ -47,7 +66,7 @@
   justify-content: space-around;
   background: var(--color-surface);
   box-shadow: var(--shadow-l);
-  padding-block-end: env(safe-area-inset-bottom, 0px);
+  padding-block-end: env(safe-area-inset-bottom);
 }
 
 .bottombar > ul > * {

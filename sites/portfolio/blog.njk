@@ -1,13 +1,18 @@
 ---
 layout: base
-permalink: /blog.html
+eleventyNavigation:
+key: Blog
+order: 5
 title: Accessibility & Sustainability Tips for Businesses & Nonprofits | Blog | Dustin Heisey
 description: Explore my blog for insightful articles on user-centered, accessible, and environmentally sustainable web design practices. Stay updated with the latest trends and tips for eco-conscious businesses and nonprofits.
 ---
 
 <div class="region cover cover-nav">
     <div class="principle">
-        <div class="sidebar sidebar-split gap-m">
+        <div class="reverse sidebar sidebar-split gap-m">
+            <div class="frame square">
+                {% image content.blog.img.src, content.blog.img.alt %}
+            </div>
             <div class="prose fixed">
                 <p class="overline">{{content.blog.overline}}</p>
                 <h1 class="page-headline">{{content.blog.headline}}</h1>
@@ -15,24 +20,25 @@ description: Explore my blog for insightful articles on user-centered, accessibl
                     {{content.blog.body}}
                 </p>
             </div>
-            <div class="frame square">
-                {% image content.blog.img.src, content.blog.img.alt %}
-            </div>
         </div>
     </div>
 </div>
 
-<div class="region masonry col-3 gap-m">
-    {% for post in collections.post %}
-    <article class="prose card card-link theme-{{post.data.theme}}-container">
-        <a href="{{post.url}}">
-            <h2 class="section-headline">{{ post.data.title }}</h2>
-            <p>
-                {{ post.data.description }}
-            </p>
-        </a>
-    </article>
-    {% endfor %}
+<div class="region stack">
+    <h2 class="region-headline text-center center-intrinsic">Recent Posts</h2>
+    <div class="masonry col-3 gap-m">
+        {% for post in collections.post | reverse %}
+        <article class="prose card card-link theme-{{post.data.theme}}-container">
+            <a href="{{ post.url | url }}">
+                <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                <h2 class="section-headline">{{ post.data.title }}</h2>
+                <p>
+                    {{ post.data.description }}
+                </p>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
 </div>
 
 <div class="region bg-pattern theme-primary">

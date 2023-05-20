@@ -1,15 +1,12 @@
 ---
 title: "The Ultimate Guide to Eco-Friendly Web Design for Conscious Businesses and Nonprofits"
-date: Created
 description: "A comprehensive guide to eco-friendly web design for conscious businesses and nonprofits."
-theme: primary
+theme: tertiary
 ---
-
-# The Ultimate Guide to Eco-Friendly Web Design for Conscious Businesses and Nonprofits
 
 ## Introduction to Eco-Friendly Web Design
 
-In today's world, environmentally responsible practices are no longer just a preference, but a necessity. This extends to the digital sphere as well, where eco-friendly web design plays a crucial role in reducing the environmental impact of online experiences. This comprehensive guide will provide an overview of eco-friendly web design, focusing on its importance, key principles, and steps to create a sustainable website for your conscious business or nonprofit organization.
+In today's world, environmentally responsible practices are no longer a preference, but a necessity. This extends to the digital sphere as well, where eco-friendly web design plays a crucial role in reducing the environmental impact of online experiences. This comprehensive guide will provide an overview of eco-friendly web design, focusing on its importance, key principles, and steps to create a sustainable website for your conscious business or nonprofit organization.
 
 ## The Importance of Sustainable Practices
 
@@ -69,7 +66,7 @@ An eco-friendly website should also prioritize accessibility to cater to a wider
 
 - Descriptive alternative text: Provide alternative text for images and other non-text elements, allowing screen reader users to understand the content and context of the visuals.
 
-- Sufficient color contrast: Opt for high-contrast color schemes that make it easy for users with vision impairments to read and interact with your content.
+- Sufficient color contrast: Opt for high-contrast color schemes that make it easier for users with vision impairments to read and interact with your content.
 
 - Scalable font sizes: Enable users to adjust the font size of your website according to their preferences, making the content more accessible to users with vision difficulties.
 

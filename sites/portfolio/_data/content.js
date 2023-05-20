@@ -562,7 +562,7 @@ module.exports = {
     headline: "Explore the Green Web Revolution",
     body: "Immerse yourself in the latest trends, insights, and best practices for accessible and eco-conscious web design. Here you can find inspiration and resources to help you use the web as a powerful tool to spread your message and reach more people sustainably.",
     img: {
-      src: "./public/assets/hero.png",
+      src: "./public/assets/blog.png",
       alt: "",
     },
   },

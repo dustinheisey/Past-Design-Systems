@@ -10,10 +10,18 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{{title}} | Dustin Heisey">
     <meta property="og:description" content="{{description}}">
+    {% if type == "article" %}
+    <meta property="og:type" content="article">
+    {% else %}
     <meta property="og:type" content="website">
+    {% endif %}
     <meta property="og:url" content="{{page.url}}">
     <meta property="og:image" content="{{ogImage}}">
+    {% if image %}
+    <meta property="og:image" content="{{ image | absoluteUrl(metadata.url) }}">
+    {% endif %}
 
+    <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}">
 
     <link href=/favicon.ico rel=icon sizes=any>
     <link href=/favicon.svg rel=icon type=image/svg+xml>

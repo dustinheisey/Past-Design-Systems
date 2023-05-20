@@ -6,6 +6,15 @@
   align-items: center;
 }
 
+.inline-header,
+.inline-header > * {
+  display: inline !important;
+}
+
+.inline-header > :first-child {
+  margin-inline-end: var(--space-3xs);
+}
+
 .inline-start {
   align-items: flex-start;
 }

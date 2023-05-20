@@ -1,7 +1,6 @@
 module.exports = {
   header: {
     links: [
-      { label: "Home", url: "/" },
       { label: "About", url: "/about" },
       {
         label: "Services",
@@ -76,16 +75,23 @@ module.exports = {
       {
         label: "Medium",
         icon: "medium",
-        url: "#",
+        url: "https://medium.com/@dustin_heisey",
       },
-      { label: "Dribbble", icon: "dribbble", url: "#" },
-      { label: "Behance", icon: "behance", url: "#" },
+      {
+        label: "Dribbble",
+        icon: "dribbble",
+        url: "https://dribbble.com/dustin_heisey",
+      },
+      {
+        label: "Behance",
+        icon: "behance",
+        url: "https://www.behance.net/dustin_heisey",
+      },
       {
         label: "LinkedIn",
         icon: "linkedin",
-        url: "#",
+        url: "https://www.linkedin.com/in/heiseydustin/",
       },
-      { label: "Twitter", icon: "twitter", url: "#" },
     ],
   },
 };
