@@ -48,15 +48,24 @@ module.exports = {
           { label: "Start a Project", url: "/contact.html" },
         ],
       },
-      // {
-      //   title: "Legal",
-      //   links: [
-      //     { label: "Privacy Policy", url: "/privacy-policy.html" },
-      //     { label: "Terms of Service", url: "/terms-of-service.html" },
-      //     { label: "Cookies", url: "/cookie-policy.html" },
-      //     { label: "Sitemap", url: "/sitemap.html" },
-      //   ],
-      // },
+      {
+        title: "Legal",
+        links: [
+          {
+            label: "Privacy Policy",
+            url: "https://www.termsfeed.com/live/d5271eb0-e06a-49f5-9021-99c0bb40389b",
+          },
+          {
+            label: "Terms of Service",
+            url: "https://www.termsfeed.com/live/dc519ac0-71e6-49d3-a0d6-f9ce86815fa5",
+          },
+          {
+            label: "Cookies",
+            url: "https://www.termsfeed.com/live/012a4e98-08d0-48ab-b716-764b86ca84df",
+          },
+          { label: "Sitemap", url: "/sitemap.xml" },
+        ],
+      },
     ],
     social: [
       {
