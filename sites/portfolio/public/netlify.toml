@@ -4,4 +4,4 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "0"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = script-src 'unsafe-inline';
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' cdn.usefathom.com unpkg.com/website-carbon-badges@1.1.3;"
