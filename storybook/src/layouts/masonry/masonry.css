@@ -5,9 +5,12 @@
   columns: 1;
 }
 
+.masonry > * {
+  break-inside: avoid;
+}
+
 .masonry > * + * {
   margin-block-start: var(--gap, var(--space-m));
-  break-inside: avoid;
   display: block;
 }
 

@@ -4,7 +4,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   max-inline-size: 100%;
-  scrollbar-color: var(--color-bg-primary) var(--color-bg-tertiary);
+  scrollbar-color: var(--color-primary) var(--color-background);
 }
 
 .reel.no-bar {
@@ -20,17 +20,17 @@
 }
 
 .reel::-webkit-scrollbar-track {
-  background-color: var(--color-bg-tertiary);
+  background-color: var(--color-background);
 }
 
 .reel::-webkit-scrollbar-thumb {
-  background-color: var(--color-bg-tertiary);
+  background-color: var(--color-background);
   background-image: linear-gradient(
-    var(--color-bg-tertiary) 0,
-    var(--color-bg-tertiary) calc(var(--space-m) / 4),
-    var(--color-bg-primary) calc(var(--space-m) / 4),
-    var(--color-bg-primary) calc((var(--space-m) / 4) * 3),
-    var(--color-bg-tertiary) calc((var(--space-m) / 4) * 3)
+    var(--color-background) 0,
+    var(--color-background) calc(var(--space-m) / 4),
+    var(--color-primary) calc(var(--space-m) / 4),
+    var(--color-primary) calc((var(--space-m) / 4) * 3),
+    var(--color-background) calc((var(--space-m) / 4) * 3)
   );
 }
 
@@ -45,9 +45,9 @@
 }
 
 .reel > * + * {
-  margin-inline-start: var(--space-m);
+  margin-inline-start: var(--space-s);
 }
 
 .reel.overflowing {
-  padding-block-end: var(--space-m);
+  padding-block-end: var(--space-s);
 }

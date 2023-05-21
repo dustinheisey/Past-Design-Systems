@@ -1,7 +1,7 @@
 ---
-title: "The Ultimate Guide to Eco-Friendly Web Design for Conscious Businesses and Nonprofits"
-description: "A comprehensive guide to eco-friendly web design for conscious businesses and nonprofits."
-theme: tertiary
+title: The Ultimate Guide to Eco-Friendly Web Design for Conscious Businesses and Nonprofits
+description: A comprehensive guide to eco-friendly web design for conscious businesses and nonprofits.
+tags: Design Systems
 ---
 
 ## Introduction to Eco-Friendly Web Design

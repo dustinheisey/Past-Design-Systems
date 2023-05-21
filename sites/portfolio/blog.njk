@@ -24,13 +24,23 @@ description: Explore my blog for insightful articles on user-centered, accessibl
     </div>
 </div>
 
-<div class="region stack">
+<div class="region stack gap-l">
     <h2 class="region-headline text-center center-intrinsic">Recent Posts</h2>
+    <div class="reel justify-center no-bar">
+        {% for category in collections.categories %}
+        {% set categoryUrl %}/categories/{{ category.data.label | slugify }}/{% endset %}
+        <a href="{{ categoryUrl | url }}" class="badge badge-l badge-{{category.data.theme}}">{{ category.data.label}}</a>
+        {% endfor %}
+    </div>
     <div class="masonry col-3 gap-m">
         {% for post in collections.post | reverse %}
-        <article class="prose card card-link theme-{{post.data.theme}}-container">
+        {% set postCategory = collections.categories | getCategory(post.data.tags) %}
+        <article class="prose card card-link theme-{{postCategory.data.theme}}-container">
             <a href="{{ post.url | url }}">
-                <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                <div class="cluster align-center gap-2xs">
+                    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                    <div class="badge badge-primary">{{post.data.tags | tagsOnly}}</div>
+                </div>
                 <h2 class="section-headline">{{ post.data.title }}</h2>
                 <p>
                     {{ post.data.description }}

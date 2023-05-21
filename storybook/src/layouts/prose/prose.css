@@ -121,10 +121,6 @@
   margin-block-start: var(--space-xs);
 }
 
-.prose :not(.not-prose):where(time + *) {
-  margin-block-start: var(--space-3xs);
-}
-
 .prose :not(.not-prose):where(:last-child) {
   margin-block-end: 0;
 }

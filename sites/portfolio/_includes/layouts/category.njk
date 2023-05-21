@@ -1,0 +1,38 @@
+---
+layout: base
+---
+
+<div class="region stack gap-l">
+    <h2 class="region-headline text-center center-intrinsic">{{label}} Posts</h2>
+    <div class="reel justify-center no-bar">
+        <a href="/blog" class="badge badge-l badge-primary">All Posts</a>
+        {% for category in collections.categories %}
+        {% set categoryUrl %}/categories/{{ category.data.label | slugify }}/{% endset %}
+        <a href="{{ categoryUrl | url }}" class="badge badge-l badge-{{category.data.theme}}">{{ category.data.label}}</a>
+        {% endfor %}
+    </div>
+    <div class="masonry col-3 gap-m">
+        {% for post in collections[label] | reverse %}
+          {% set postCategory = collections.categories | getCategory(post.data.tags) %}
+       <article class="prose card card-link theme-{{postCategory.data.theme}}-container">
+            <a href="{{ post.url | url }}">
+                <div class="cluster align-center gap-2xs">
+                    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                    <div class="badge badge-primary">{{post.data.tags | tagsOnly}}</div>
+                </div>
+                <h2 class="section-headline">{{ post.data.title }}</h2>
+                <p>
+                    {{ post.data.description }}
+                </p>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="region bg-pattern theme-primary">
+    <div class="prose">
+        <h2 class="region-headline">Ready to Make a Difference? Let's Collaborate!</h2>
+        <p>I'm dedicated to helping businesses and nonprofits like yours thrive while protecting our planet. Get in touch and let's embark on a journey towards a more sustainable future for your organization.</p><a href="/contact" class="btn">Start a Project</a>
+    </div>
+</div>

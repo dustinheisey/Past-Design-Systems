@@ -7,7 +7,8 @@
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
     "start": "rm -rf _site && npm run js-build && npx @11ty/eleventy --serve --quiet --incremental",
     "build": "rm -rf _site && npm run format && npm run js-build && npx @11ty/eleventy",
-    "js-build": "rollup -c rollup.config.mjs"
+    "js-build": "rollup -c rollup.config.mjs",
+    "ally": "a11y-sitechecker --config=ally.config.json -T=1000"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "a11y-sitechecker": "^6.0.1",
     "eleventy-plugin-html-validate": "^0.0.5",
     "eleventy-plugin-pwa-v2": "^1.0.0",
     "luxon": "^3.3.0",

@@ -26,6 +26,11 @@
   font-family: var(--font-family-body);
 }
 
+.badge-l {
+  font-size: var(--font-size-s);
+  padding: var(--space-2xs) var(--space-xs);
+}
+
 .status::before {
   content: "";
   display: inline-block;

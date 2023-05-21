@@ -106,6 +106,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("category", "layouts/category.njk");
 
   eleventyConfig.addPassthroughCopy({ public: "/" });
   eleventyConfig.addWatchTarget("./index.js");
@@ -113,6 +114,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  eleventyConfig.addFilter("tagsOnly", (tag) => {
+    return tag.filter((item) => item !== "post");
+  });
+
+  eleventyConfig.addFilter("getCategory", (categories, categoryTag) => {
+    let postCategory = categoryTag.find((item) => item !== "post");
+    return categories.find((item) => item.data.label === postCategory);
   });
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
