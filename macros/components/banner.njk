@@ -1,6 +1,6 @@
 {% macro render( props ) %}
 <script>
-  ;(function (window) {
+  ; (function (window) {
     var dismissibleItem = function (el, type, value) {
       el.querySelector('button').addEventListener('click', function (event) {
         var height = el.offsetHeight,
@@ -42,7 +42,7 @@
     }
   })(window)
 </script>
-<div class="banner" data-component="dismissible-item">
+<div class="banner {% if props.theme %}theme-{{props.theme}}{% endif %}" data-component="dismissible-item">
   <p>Hello world</p>
   <button type="button">
     <svg focusable="false" class="icon">

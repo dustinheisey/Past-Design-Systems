@@ -1,16 +1,11 @@
 {% macro render( props ) %}
-<header>
+<header class="{% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav>
     <div class="desktop-navigation">
       <div class="cluster full justify-between" inset="xl">
         <div class="cluster justify-start" gap="xl">
           <a href="/" class="media">
-            <svg
-              focusable="false"
-              focusable="false"
-              class="logo"
-              viewBox="0 0 100 245.68853462923755"
-            >
+            <svg focusable="false" focusable="false" class="logo" viewBox="0 0 100 245.68853462923755">
               <use href="/assets/icons.svg#logo" />
             </svg>
             <span class="sr-only">Logo</span>
@@ -52,12 +47,7 @@
     <div class="mobile-navigation">
       <div class="topbar">
         <a href="/" class="media">
-          <svg
-            focusable="false"
-            focusable="false"
-            class="logo color-lighter"
-            viewBox="0 0 100 245.68853462923755"
-          >
+          <svg focusable="false" focusable="false" class="logo color-lighter" viewBox="0 0 100 245.68853462923755">
             <use href="/assets/icons.svg#logo" />
           </svg>
           <span class="sr-only">Logo</span>
@@ -94,8 +84,7 @@
             <svg focusable="false" class="icon color-lighter">
               <use href="/assets/icons.svg#about" />
             </svg>
-            <span>About</span></a
-          >
+            <span>About</span></a>
         </li>
         <li>
           <a href="/services" class="navigation">
@@ -110,16 +99,14 @@
             <svg focusable="false" class="icon color-lighter">
               <use href="/assets/icons.svg#portfolio" />
             </svg>
-            <span>Portfolio</span></a
-          >
+            <span>Portfolio</span></a>
         </li>
         <li>
           <a href="/contact" class="navigation">
             <svg focusable="false" class="icon color-lighter">
               <use href="/assets/icons.svg#contact" />
             </svg>
-            <span>Contact</span></a
-          >
+            <span>Contact</span></a>
         </li>
       </ul>
     </div>

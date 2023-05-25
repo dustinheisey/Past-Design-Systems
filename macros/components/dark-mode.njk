@@ -1,28 +1,7 @@
 {% macro render( props ) %}
-<button
-  type="button"
-  class="dark-mode-toggle"
-  id="theme-toggle"
-  title="Toggles light & dark"
-  onclick="onClick"
-  aria-live="polite"
->
-  <svg
-    focusable="false"
-    class="sun-and-moon"
-    aria-hidden="true"
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-  >
-    <circle
-      class="sun"
-      cx="12"
-      cy="12"
-      r="6"
-      mask="url(#moon-mask)"
-      fill="var(--color-primary)"
-    />
+<button type="button" class="dark-mode-toggle {% if props.theme %}theme-{{props.theme}}{% endif %}" id="theme-toggle" title="Toggles light & dark" onclick="onClick" aria-live="polite">
+  <svg focusable="false" class="sun-and-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
+    <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="var(--color-primary)" />
     <g class="sun-beams" stroke="var(--color-primary)">
       <line x1="12" y1="1" x2="12" y2="3" />
       <line x1="12" y1="21" x2="12" y2="23" />

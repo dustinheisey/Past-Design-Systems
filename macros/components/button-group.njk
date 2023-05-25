@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "start" %}
-<div class="cluster full">
+<div class="cluster full {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <a class="btn" href="#">Primary Action</a>
   <a class="btn btn-secondary" href="#">Secondary Action</a>
 </div>
@@ -31,25 +31,22 @@
 {% elif props.variant === "tertiary-start-arrows" %}
 <div class="cluster full">
   <a class="btn" href="#">Primary Action</a>
-  <a class="btn btn-tertiary" href="#"
-    >Tertiary Action
+  <a class="btn btn-tertiary" href="#">Tertiary Action
     <svg focusable="false" class="icon icon-s">
-      <use href="src/elements/text/icon/icons.svg#arrow-sm-right"></use></svg
-  ></a>
+      <use href="src/elements/text/icon/icons.svg#arrow-sm-right"></use>
+    </svg></a>
 </div>
 {% elif props.variant === "tertiary-center-arrows" %}
 <div class="cluster justify-center full">
   <a class="btn" href="#">Primary Action</a>
-  <a class="btn btn-tertiary" href="#"
-    >Tertiary Action
+  <a class="btn btn-tertiary" href="#">Tertiary Action
     <svg focusable="false" class="icon icon-s">
-      <use href="src/elements/text/icon/icons.svg#arrow-sm-right"></use></svg
-  ></a>
+      <use href="src/elements/text/icon/icons.svg#arrow-sm-right"></use>
+    </svg></a>
 </div>
 {% elif props.variant === "tertiary-end-arrows" %}
 <div class="cluster justify-end full">
-  <a class="btn btn-tertiary" href="#"
-    ><svg focusable="false" class="icon icon-s">
+  <a class="btn btn-tertiary" href="#"><svg focusable="false" class="icon icon-s">
       <use href="src/elements/text/icon/icons.svg#arrow-sm-left"></use>
     </svg>
     Tertiary Action

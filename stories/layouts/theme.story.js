@@ -1,3 +1,4 @@
+import { themes } from '../util/consts.js'
 export default {
   title: 'Layouts/Theme',
   argTypes: {
@@ -8,20 +9,7 @@ export default {
         type: { summary: 'string' },
         defaultValue: { summary: 'primary' }
       },
-      options: [
-        'background',
-        'background-inverse',
-        'surface',
-        'surface-inverse',
-        'primary',
-        'primary-container',
-        'secondary',
-        'secondary-container',
-        'tertiary',
-        'tertiary-container',
-        'error',
-        'error-container'
-      ]
+      options: themes
     }
   },
   args: {

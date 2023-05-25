@@ -1,11 +1,8 @@
 {% macro render( props ) %}
-<div class="reel">
+<div class="reel {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -21,11 +18,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -35,10 +28,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -54,11 +44,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -68,10 +54,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -87,11 +70,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -101,10 +80,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -120,11 +96,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -134,10 +106,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -153,11 +122,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -167,10 +132,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -186,11 +148,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -200,10 +158,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -219,11 +174,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -233,10 +184,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -252,11 +200,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
@@ -266,10 +210,7 @@
   </article>
   <article class="card card-image stack gap-xs">
     <div class="frame">
-      <img
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
-        alt=""
-      />
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />
     </div>
     <div class="content">
       <div class="cluster">
@@ -285,11 +226,7 @@
         </p>
       </div>
       <div class="cluster">
-        <img
-          src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
-          class="avatar avatar-l"
-        />
+        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="avatar avatar-l" />
         <div class="stack align-start gap-0">
           <h4 class="label">Michael Foster</h4>
           <p class="caption">Co-Founder / CTO</p>
