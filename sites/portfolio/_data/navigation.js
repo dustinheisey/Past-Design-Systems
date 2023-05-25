@@ -27,7 +27,7 @@ module.exports = {
       { label: 'Portfolio', url: '/portfolio', icon: 'portfolio' },
       { label: 'Blog', url: '/blog', icon: 'blog' }
     ],
-    fab: { url: '/contact', icon: 'contact' }
+    fab: { label: 'Contact', url: '/contact', icon: 'contact' }
   },
   footer: {
     groups: [
