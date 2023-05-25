@@ -1,4 +1,5 @@
-/*? The List  */
+/* ? The List  */
+
 /* 
 - lists with disk/decimal markers flex stack with gap
 - list with disk/decimal markers flex stack gap 2 column layout that stacks to one when needed
@@ -22,11 +23,20 @@ li {
 
 /* List */
 .list {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: var(--gap, var(--space-xs));
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      max(var(--min-inline-size, 15ch), calc((100% - 1 * var(--grid-gap)) / 2)),
+      1fr
+    )
+  );
+
+  --grid-gap: var(--gap, var(--space-xs));
+
+  gap: var(--grid-gap);
 }
 
 /* ol,
@@ -43,20 +53,6 @@ li:nth-last-child(n + 3),
 li:nth-last-child(n + 3) ~ * {
   column-span: none;
 } */
-
-.list {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-      max(var(--min-inline-size, 15ch), calc((100% - 1 * var(--grid-gap)) / 2)),
-      1fr
-    )
-  );
-  --grid-gap: var(--gap, var(--space-xs));
-
-  gap: var(--grid-gap);
-}
 
 .list li {
   margin: 0;

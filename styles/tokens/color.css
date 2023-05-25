@@ -1,21 +1,23 @@
 /*! purgecss start ignore */
 :root {
+  /* base values */
+
   /* light */
   --color-primary-light: #566500;
-  --color-on-primary-light: #ffffff;
+  --color-on-primary-light: #fff;
   --color-primary-container-light: #d9ec7b;
   --color-on-primary-container-light: #181e00;
   --color-secondary-light: #855300;
-  --color-on-secondary-light: #ffffff;
+  --color-on-secondary-light: #fff;
   --color-secondary-container-light: #ffddb7;
   --color-on-secondary-container-light: #2a1700;
   --color-tertiary-light: #785a00;
-  --color-on-tertiary-light: #ffffff;
+  --color-on-tertiary-light: #fff;
   --color-tertiary-container-light: #ffdf9d;
   --color-on-tertiary-container-light: #251a00;
   --color-error-light: #ba1a1a;
   --color-error-container-light: #ffdad6;
-  --color-on-error-light: #ffffff;
+  --color-on-error-light: #fff;
   --color-on-error-container-light: #410002;
   --color-background-light: #f1dec1;
   --color-on-background-light: #251a00;
@@ -59,9 +61,8 @@
   --color-inverse-primary-dark: #2c6b28;
   --color-surface-tint-dark: #93d786;
   --color-outline-variant-dark: #42493f;
-}
 
-:root {
+  /* aliases */
   --color-primary: var(--color-primary-light);
   --color-on-primary: var(--color-on-primary-light);
   --color-primary-container: var(--color-primary-container-light);
@@ -196,4 +197,5 @@ html.mode-dark {
     --color-scrim: var(--color-scrim-light);
   }
 }
+
 /*! purgecss end ignore */

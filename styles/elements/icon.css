@@ -8,11 +8,6 @@
   max-width: initial;
 }
 
-.icon use {
-  /* icon secondary color */
-  fill: currentColor;
-}
-
 .icon-primary {
   color: var(--color-primary);
 }
@@ -102,13 +97,16 @@ Caps/Corners
 
 .icon use {
   --icon-stroke-linecap-butt: butt;
+
   stroke-miterlimit: 10;
   stroke-linecap: square;
   stroke-linejoin: miter;
+  fill: currentcolor;
 }
 
 .stroke-round use {
   --icon-stroke-linecap-butt: round;
+
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -147,6 +145,7 @@ Transformations/Animations
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

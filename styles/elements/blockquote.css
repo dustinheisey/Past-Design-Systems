@@ -6,7 +6,7 @@ blockquote {
   margin-block-start: var(--space-xl);
 }
 
-blockquote.blockquote-accent:before {
+blockquote.blockquote-accent::before {
   content: open-quote;
   font-size: 7.5em;
   position: absolute;

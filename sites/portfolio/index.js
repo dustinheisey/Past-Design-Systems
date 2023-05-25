@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // ? Navbar
   const navbar = document.querySelector('#navbar')
   const top = navbar.offsetTop
-  function floating() {
+  function floating () {
     if (window.scrollY > top) {
       navbar.classList.add('floating')
     } else {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let timeOfLastScroll = 0
     let requestedAniFrame = false
-    function scroll() {
+    function scroll () {
       if (!requestedAniFrame) {
         requestAnimationFrame(updateProgress)
         requestedAniFrame = true
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let winHeight = 1000
     let bottom = 10000
-    function updateProgress() {
+    function updateProgress () {
       requestedAniFrame = false
       const percent = Math.min(
         (document.scrollingElement.scrollTop / (bottom - winHeight)) * 100,

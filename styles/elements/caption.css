@@ -1,9 +1,8 @@
-.caption,
-.caption > *,
 small,
-small > * {
+small > *,
+.caption,
+.caption > * {
   font-size: var(--font-size-s);
-  font-weight: bold;
   text-align: center;
   line-height: var(--line-height-body);
   font-family: var(--font-family-body);
@@ -16,8 +15,10 @@ small > * {
   background: var(--color-primary);
   padding: var(--space-3xs) var(--space-2xs);
   border-radius: var(--radius-pill);
+
   --b1: var(--color-on-primary) !important;
   --b2: var(--color-primary) !important;
+
   font-weight: 400 !important;
   font-family: var(--font-family-body) !important;
   font-size: var(--font-size-s) !important;
@@ -29,11 +30,13 @@ small > * {
 #wcb {
   --b1: var(--color-on-primary) !important;
   --b2: var(--color-primary) !important;
+
   display: inline-flex !important;
   gap: var(--space-3xs) !important;
   flex-wrap: wrap !important;
 }
 
+/* stylelint-disable */
 #wcb #wcb_g {
   color: var(--color-primary) !important;
   background: var(--color-on-primary) !important;
@@ -42,9 +45,9 @@ small > * {
 #wcb_2 {
   color: var(--color-primary) !important;
 }
+/* stylelint-enable */
+
 /* 
-
-
 #wcb #wcb_a {
   border-radius: 0 var(--radius-pill) var(--radius-pill) 0 !important;
   font-weight: 400 !important;
@@ -54,4 +57,5 @@ small > * {
 #wcb_2 {
   background: var(--color-primary) !important;
 } */
+
 /*! purgecss end ignore */

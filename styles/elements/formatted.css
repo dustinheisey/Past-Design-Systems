@@ -50,13 +50,13 @@ pre code {
   color: var(--color-background-dark);
 }
 
-pre code span {
-  display: inline-block;
-  padding: 0 0.25rem;
+pre span {
   color: var(--color-on-background-dark);
 }
 
-pre span {
+pre code span {
+  display: inline-block;
+  padding: 0 0.25rem;
   color: var(--color-on-background-dark);
 }
 

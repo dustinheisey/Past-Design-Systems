@@ -1,23 +1,43 @@
+input[type='range'] {
+  cursor: pointer;
+  appearance: none;
+  border-radius: 3px;
+  width: 100%;
+  height: 6px;
+  background-position: initial;
+  background-size: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  line-height: var(--line-height-body);
+  vertical-align: middle;
+  margin: 0;
+  background-color: var(--color-outline-variant);
+}
+
 input[type='range']:focus {
   outline: none;
 }
+
 input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none;
   appearance: none;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background: var(--color-primary);
   cursor: pointer;
-  -webkit-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
+
 input[type='range']:hover::-webkit-slider-thumb {
   background: var(--color-primary);
 }
+
 input[type='range']:active::-webkit-slider-thumb {
   background: var(--color-primary);
 }
+
 input[type='range']::-moz-range-thumb {
   width: 20px;
   height: 20px;
@@ -25,15 +45,17 @@ input[type='range']::-moz-range-thumb {
   border-radius: 50%;
   background: var(--color-primary);
   cursor: pointer;
-  -moz-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
+
 input[type='range']::-moz-range-thumb:hover {
   background: var(--color-primary);
 }
+
 input[type='range']:active::-moz-range-thumb {
   background: var(--color-primary);
 }
+
 input[type='range']:focus::-webkit-slider-thumb {
   box-shadow: 0 0 0 3px var(--color-background), 0 0 0 6px var(--color-primary);
 }
@@ -51,23 +73,4 @@ output {
   padding: var(--space-3xs) var(--space-2xs);
   margin: 0;
   min-inline-size: 9ch;
-}
-
-input[type='range'] {
-  cursor: pointer;
-  appearance: none;
-  border-radius: 3px;
-  width: 100%;
-  height: 6px;
-  background-position: initial;
-  background-size: initial;
-  background-repeat: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: transparent;
-  line-height: var(--line-height-body);
-  vertical-align: middle;
-  margin: 0px;
-  background-color: var(--color-outline-variant);
 }
