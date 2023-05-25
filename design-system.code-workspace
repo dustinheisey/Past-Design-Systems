@@ -1,15 +1,8 @@
 {
-  "folders": [
-    {
-      "name": "Design System",
-      "path": "."
-    },
-    {
-      "name": "Portfolio",
-      "path": "./sites/portfolio"
-    },
-    {
-      "path": "../portfolio"
-    }
-  ]
+    "folders": [
+        {
+            "name": "Design System",
+            "path": "."
+        }
+    ]
 }

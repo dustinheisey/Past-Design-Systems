@@ -3,54 +3,62 @@ layout: base
 type: article
 ---
 
-
 {% block article %}
 
 <article class="region inset prose prose-l">
-    <header class="stack gap-xs">
-        {# Breadcrumb #}
-        <h1 class="page-headline">{{ title }}</h1>
-        {% set wc = content | striptags | wordcount %}
-        {% set wPerMinute = (wc / 240) + 1 %}
-        <ul class="cluster gap-xs">
-            <li class="not-prose color-primary">{{ page.date | readableDate }}</li>
-            <li class="not-prose color-primary">{{ wPerMinute | round }} min read.</li>
-        </ul>
-    </header>
+  <header class="stack gap-xs">
+    {# Breadcrumb #}
+    <h1 class="page-headline">{{ title }}</h1>
+    {% set wc = content | striptags | wordcount %} {% set wPerMinute = (wc /
+    240) + 1 %}
+    <ul class="cluster gap-xs">
+      <li class="not-prose color-primary">{{ page.date | readableDate }}</li>
+      <li class="not-prose color-primary">
+        {{ wPerMinute | round }} min read.
+      </li>
+    </ul>
+  </header>
 
-    <hr class="outline" />
-    {{ content | safe }}
+  <hr class="outline" />
+  {{ content | safe }}
 </article>
 
 <div class="region bg-pattern theme-primary">
-    <div class="prose">
-        <h2 class="region-headline">Ready to Make a Difference? Let's Collaborate!</h2>
-        <p>I'm dedicated to helping businesses and nonprofits like yours thrive while protecting our planet. Get in touch and let's embark on a journey towards a more sustainable future for your organization.</p><a href="/contact" class="btn">Start a Project</a>
-    </div>
+  <div class="prose">
+    <h2 class="region-headline">
+      Ready to Make a Difference? Let's Collaborate!
+    </h2>
+    <p>
+      I'm dedicated to helping businesses and nonprofits like yours thrive while
+      protecting our planet. Get in touch and let's embark on a journey towards
+      a more sustainable future for your organization.
+    </p>
+    <a href="/contact" class="btn">Start a Project</a>
+  </div>
 </div>
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ title }}",
-  "image": [],
-  "author": "{{ metadata.author.name }}", 
-  "genre": "{{ metadata.genre }}", 
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ metadata.publisher.name }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ '/public/favicon/manifest-icon-192.maskable.png' }}"
-    }
-  },
-  "url": "{{ metadata.url }}{{ canonicalUrl or page.url }}",
-  "mainEntityOfPage": "{{ metadata.url }}{{ canonicalUrl or page.url }}",
-  "datePublished": "{{ page.date | htmlDateString }}",
-  "dateModified": "{{ page.inputPath | lastModifiedDate  | htmlDateString }}",
-  "description": "{{ content | striptags | truncate(140) }}"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "image": [],
+    "author": "{{ metadata.author.name }}",
+    "genre": "{{ metadata.genre }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ metadata.publisher.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ '/public/favicon/manifest-icon-192.maskable.png' }}"
+      }
+    },
+    "url": "{{ metadata.url }}{{ canonicalUrl or page.url }}",
+    "mainEntityOfPage": "{{ metadata.url }}{{ canonicalUrl or page.url }}",
+    "datePublished": "{{ page.date | htmlDateString }}",
+    "dateModified": "{{ page.inputPath | lastModifiedDate  | htmlDateString }}",
+    "description": "{{ content | striptags | truncate(140) }}"
+  }
 </script>
 
 {% endblock %}

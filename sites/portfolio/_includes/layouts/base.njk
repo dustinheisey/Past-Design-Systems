@@ -2,51 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>{{title}} | Dustin Heisey</title>
-    <meta name="description" content="{{description}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta charset="utf-8" />
+  <title>{{title}} | Dustin Heisey</title>
+  <meta name="description" content="{{description}}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{{title}} | Dustin Heisey">
-    <meta property="og:description" content="{{description}}">
-    {% if type == "article" %}
-    <meta property="og:type" content="article">
-    {% else %}
-    <meta property="og:type" content="website">
-    {% endif %}
-    <meta property="og:url" content="{{page.url}}">
-    <meta property="og:image" content="{{ogImage}}">
-    {% if image %}
-    <meta property="og:image" content="{{ image | absoluteUrl(metadata.url) }}">
-    {% endif %}
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{{title}} | Dustin Heisey" />
+  <meta property="og:description" content="{{description}}" />
+  {% if type == "article" %}
+  <meta property="og:type" content="article" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+  <meta property="og:url" content="{{page.url}}" />
+  <meta property="og:image" content="{{ogImage}}" />
+  {% if image %}
+  <meta property="og:image" content="{{ image | absoluteUrl(metadata.url) }}" />
+  {% endif %}
 
-    <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+  <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}" />
 
-    <link href=/favicon.ico rel=icon sizes=any>
-    <link href=/favicon.svg rel=icon type=image/svg+xml>
-    <link href=/apple-touch-icon-180.png rel=apple-touch-icon>
-    <link href=/manifest.webmanifest rel=manifest>
-    <meta name="theme-color" content="#566500">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href=/favicon.ico rel=icon sizes=any>
+  <link href=/favicon.svg rel=icon type=image/svg+xml>
+  <link href=/apple-touch-icon-180.png rel=apple-touch-icon>
+  <link href=/manifest.webmanifest rel=manifest>
+  <meta name="theme-color" content="#566500" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- INLINE CSS -->
+  <!-- INLINE CSS -->
 
-    <script src="https://cdn.usefathom.com/script.js" data-site="VCCTYWMM" defer></script>
-    <script src="/min.js"></script>
-    <script>
-        if ("serviceWorker" in navigator)
-            navigator.serviceWorker.register("/sw.js");
-    </script>
+  <script src="https://cdn.usefathom.com/script.js" data-site="VCCTYWMM" defer></script>
+  <script src="/min.js"></script>
+  <script>
+    if ('serviceWorker' in navigator)
+      navigator.serviceWorker.register('/sw.js')
+  </script>
 </head>
 
 <body class="theme-background">
-    <header class="navbar" id="navbar">
-        {% include "_includes/navbar.njk" %}
-    </header>
-    <main>{{ content | safe }}</main>
-    {% include "_includes/footer.njk" %}
+  <header class="navbar" id="navbar">
+    {% include "_includes/navbar.njk" %}
+  </header>
+  <main>{{ content | safe }}</main>
+  {% include "_includes/footer.njk" %}
 </body>
 
 </html>

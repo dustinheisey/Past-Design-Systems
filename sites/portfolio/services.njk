@@ -6,83 +6,78 @@ description: Discover comprehensive web design services that prioritize accessib
 ---
 
 <div class="region cover cover-nav">
-    <div class="principle">
-        <div class="sidebar reverse sidebar-split gap-xl">
-            <div class="frame">
-                {% image content.services.header.img.src, content.services.header.img.alt %}
-            </div>
-            <div class="stack fixed">
-                <div class="prose">
-                    <p class="overline">{{content.services.header.overline}}
-                    <h1>{{content.services.header.headline}}</h1>
-                </div>
-            </div>
+  <div class="principle">
+    <div class="sidebar reverse sidebar-split gap-xl">
+      <div class="frame">
+        {% image content.services.header.img.src,
+        content.services.header.img.alt %}
+      </div>
+      <div class="stack fixed">
+        <div class="prose">
+          <p class="overline">{{content.services.header.overline}}</p>
+          <h1>{{content.services.header.headline}}</h1>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <section class="region prose bg-pattern theme-secondary">
-    <p class="overline">{{content.services.introduction.overline}}</p>
-    <h2 class="region-headline">{{content.services.introduction.headline}}</h2>
-    <p>
-        {{content.services.introduction.body}}
-    </p>
+  <p class="overline">{{content.services.introduction.overline}}</p>
+  <h2 class="region-headline">{{content.services.introduction.headline}}</h2>
+  <p>{{content.services.introduction.body}}</p>
 </section>
 
 <div class="region reverse sidebar sidebar-split gap-m">
-    <div class="frame square">
-        {% image content.services.branding.img.src, content.services.branding.img.alt %}
+  <div class="frame square">
+    {% image content.services.branding.img.src,
+    content.services.branding.img.alt %}
+  </div>
+  <div class="fixed">
+    <div class="prose">
+      <p class="overline">{{content.services.branding.overline}}</p>
+      <h2 class="region-headline">{{content.services.branding.headline}}</h2>
+      <p>{{content.services.branding.body}}</p>
+      <a href="{{content.services.branding.cta.url}}" class="btn btn-secondary">{{content.services.branding.cta.label}}</a>
     </div>
-    <div class="fixed">
-        <div class="prose">
-            <p class="overline">{{content.services.branding.overline}}</p>
-            <h2 class="region-headline">{{content.services.branding.headline}}</h2>
-            <p>
-                {{content.services.branding.body}}
-            </p>
-            <a href="{{content.services.branding.cta.url}}" class="btn btn-secondary">{{content.services.branding.cta.label}}</a>
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="region sidebar sidebar-split gap-m">
-    <div class="frame square">
-        {% image content.services.design.img.src, content.services.design.img.alt %}
+  <div class="frame square">
+    {% image content.services.design.img.src, content.services.design.img.alt %}
+  </div>
+  <div class="fixed">
+    <div class="prose">
+      <p class="overline">{{content.services.design.overline}}</p>
+      <h2 class="region-headline">{{content.services.design.headline}}</h2>
+      <p>{{content.services.design.body}}</p>
+      <a href="{{content.services.design.cta.url}}" class="btn btn-secondary">{{content.services.design.cta.label}}</a>
     </div>
-    <div class="fixed">
-        <div class="prose">
-            <p class="overline">{{content.services.design.overline}}</p>
-            <h2 class="region-headline">{{content.services.design.headline}}</h2>
-            <p>
-                {{content.services.design.body}}
-            </p>
-            <a href="{{content.services.design.cta.url}}" class="btn btn-secondary">{{content.services.design.cta.label}}</a>
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="region reverse sidebar sidebar-split gap-m">
-    <div class="frame square">
-        {% image content.services.optimization.img.src, content.services.optimization.img.alt %}
+  <div class="frame square">
+    {% image content.services.optimization.img.src,
+    content.services.optimization.img.alt %}
+  </div>
+  <div class="fixed">
+    <div class="prose">
+      <p class="overline">{{content.services.optimization.overline}}</p>
+      <h2 class="region-headline">
+        {{content.services.optimization.headline}}
+      </h2>
+      <p>{{content.services.optimization.body}}</p>
+      <a href="{{content.services.optimization.cta.url}}" class="btn btn-secondary">{{content.services.optimization.cta.label}}</a>
     </div>
-    <div class="fixed">
-        <div class="prose">
-            <p class="overline">{{content.services.optimization.overline}}</p>
-            <h2 class="region-headline">{{content.services.optimization.headline}}</h2>
-            <p>
-                {{content.services.optimization.body}}
-            </p>
-            <a href="{{content.services.optimization.cta.url}}" class="btn btn-secondary">{{content.services.optimization.cta.label}}</a>
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="region bg-pattern theme-primary">
-    <div class="prose">
-        <h2 class="region-headline">{{content.cta.headline}}</h2>
-        <p>
-            {{content.cta.body}}
-        </p>
-        <a href="/contact" class="btn">Start a Project</a>
-    </div>
+  <div class="prose">
+    <h2 class="region-headline">{{content.cta.headline}}</h2>
+    <p>{{content.cta.body}}</p>
+    <a href="/contact" class="btn">Start a Project</a>
+  </div>
 </div>

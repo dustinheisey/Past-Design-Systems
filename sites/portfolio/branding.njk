@@ -6,98 +6,91 @@ description: Establish an effective brand identity with my branding service. I d
 ---
 
 <div class="cover region cover-nav">
-    <div class="sidebar  reverse sidebar-split gap-m">
-        <div class="frame square">
-            {% image content.branding.header.img.src, content.branding.header.img.alt %}
-        </div>
-        <div class="prose auto fixed">
-            <h1 class="page-headline">
-                <span class="color-primary">{{content.branding.header.accent}}</span>
-                {{content.branding.header.headline}}
-            </h1>
-            <p>
-                {{content.branding.header.body}}
-            </p>
-        </div>
+  <div class="sidebar reverse sidebar-split gap-m">
+    <div class="frame square">
+      {% image content.branding.header.img.src, content.branding.header.img.alt
+      %}
     </div>
+    <div class="prose auto fixed">
+      <h1 class="page-headline">
+        <span class="color-primary">{{content.branding.header.accent}}</span>
+        {{content.branding.header.headline}}
+      </h1>
+      <p>{{content.branding.header.body}}</p>
+    </div>
+  </div>
 </div>
 
 <section class="region prose bg-pattern theme-secondary">
-    <p class="lead auto">{{content.branding.problem.body}}</p>
+  <p class="lead auto">{{content.branding.problem.body}}</p>
 </section>
 
-<div class="region sidebar  sidebar-split gap-m">
-    <div class="frame square">
-        {% image content.branding.description.img.src, content.branding.description.img.alt %}
-    </div>
-    <div class="fixed prose">
-        <p class="overline">{{content.branding.description.overline}}</p>
-        <h2 class="region-headline">{{content.branding.description.headline}}</h2>
-        <p>
-            {{content.branding.description.body}}
-        </p>
-    </div>
+<div class="region sidebar sidebar-split gap-m">
+  <div class="frame square">
+    {% image content.branding.description.img.src,
+    content.branding.description.img.alt %}
+  </div>
+  <div class="fixed prose">
+    <p class="overline">{{content.branding.description.overline}}</p>
+    <h2 class="region-headline">{{content.branding.description.headline}}</h2>
+    <p>{{content.branding.description.body}}</p>
+  </div>
 </div>
 
 <div class="region stack">
-    <section class="prose">
-        <p class="overline">{{content.branding.plan.overline}}</p>
-        <h2 class="region-headline">{{content.branding.plan.headline}}</h2>
-    </section>
-    <div class="timeline timeline-inline">
-        {% for step in content.branding.plan.steps %}
-        <div aria-hidden="true"></div>
-        <div class="stack gap-xs">
-            <div class="prose">
-                <h3 class="title-headline">{{step.headline}}</h3>
-                <p>
-                    {{step.body}}
-                </p>
-            </div>
-        </div>
-        {% endfor %}
+  <section class="prose">
+    <p class="overline">{{content.branding.plan.overline}}</p>
+    <h2 class="region-headline">{{content.branding.plan.headline}}</h2>
+  </section>
+  <div class="timeline timeline-inline">
+    {% for step in content.branding.plan.steps %}
+    <div aria-hidden="true"></div>
+    <div class="stack gap-xs">
+      <div class="prose">
+        <h3 class="title-headline">{{step.headline}}</h3>
+        <p>{{step.body}}</p>
+      </div>
     </div>
+    {% endfor %}
+  </div>
 </div>
 
-<div class="region reverse sidebar  sidebar-split gap-m">
-    <div class="frame square">
-        {% image content.branding.transformation.img.src, content.branding.transformation.img.alt %}
-    </div>
-    <div class="prose fixed">
-        <p class="overline">{{content.branding.transformation.overline}}</p>
-        <h2 class="region-headline">{{content.branding.transformation.headline}}</h2>
-        <p>
-            {{content.branding.transformation.body}}
-        </p>
-    </div>
+<div class="region reverse sidebar sidebar-split gap-m">
+  <div class="frame square">
+    {% image content.branding.transformation.img.src,
+    content.branding.transformation.img.alt %}
+  </div>
+  <div class="prose fixed">
+    <p class="overline">{{content.branding.transformation.overline}}</p>
+    <h2 class="region-headline">
+      {{content.branding.transformation.headline}}
+    </h2>
+    <p>{{content.branding.transformation.body}}</p>
+  </div>
 </div>
 
 <div class="region">
-    <div class="prose">
-        <p class="overline">{{content.branding.faqs.overline}}</p>
-        <h2 class="region-headline">{{content.branding.faqs.headline}}</h2>
-    </div>
-    <div class="space-xl">
-        {% for item in content.branding.faqs.faqs %}
-        <details>
-            <summary>
-                <h3 class="title-headline">{{item.question}}</h3>
-            </summary>
-            <p>
-                {{item.answer}}
-            </p>
-        </details>
-        <hr>
-        {% endfor %}
-    </div>
+  <div class="prose">
+    <p class="overline">{{content.branding.faqs.overline}}</p>
+    <h2 class="region-headline">{{content.branding.faqs.headline}}</h2>
+  </div>
+  <div class="space-xl">
+    {% for item in content.branding.faqs.faqs %}
+    <details>
+      <summary>
+        <h3 class="title-headline">{{item.question}}</h3>
+      </summary>
+      <p>{{item.answer}}</p>
+    </details>
+    <hr />
+    {% endfor %}
+  </div>
 </div>
 
 <div class="region bg-pattern theme-primary">
-    <div class="prose">
-        <h2 class="region-headline">{{content.branding.cta.headline}}</h2>
-        <p>
-            {{content.branding.cta.body}}
-        </p>
-        <a href="/contact" class="btn">Start a Project</a>
-    </div>
+  <div class="prose">
+    <h2 class="region-headline">{{content.branding.cta.headline}}</h2>
+    <p>{{content.branding.cta.body}}</p>
+    <a href="/contact" class="btn">Start a Project</a>
+  </div>
 </div>

@@ -13,18 +13,16 @@ description: Ready to create a website that accurately represents your organizat
     <div class="stack fixed center center-intrinsic">
       <section class="prose">
         <h1 class="page-headline">{{content.contact.headline}}</h1>
-        <p>
-          {{content.contact.body}}
-        </p>
+        <p>{{content.contact.body}}</p>
       </section>
       <form class="stack gap-s" name="contact" method="POST" data-netlify="true">
         <label>
           <span class="required">Full Name</span>
-          <input type="text" id="full_name" name="full_name" class="input" required>
+          <input type="text" id="full_name" name="full_name" class="input" required />
         </label>
         <label>
           <span class="required">Email</span>
-          <input type="email" id="email" name="email" class="input" required>
+          <input type="email" id="email" name="email" class="input" required />
         </label>
         <label>
           <span class="required">Describe Your Organization</span>
@@ -35,7 +33,7 @@ description: Ready to create a website that accurately represents your organizat
             <span class="required">What Services Are You Interested In?</span>
           </legend>
           <label class="input-card">
-            <input type="checkbox" name="services" value="Branding">
+            <input type="checkbox" name="services" value="Branding" />
             <span>
               <svg focusable="false">
                 <use href="/assets/icons.svg#branding"></use>
@@ -44,7 +42,7 @@ description: Ready to create a website that accurately represents your organizat
             </span>
           </label>
           <label class="input-card">
-            <input type="checkbox" name="services" value="Web Design">
+            <input type="checkbox" name="services" value="Web Design" />
             <span>
               <svg focusable="false">
                 <use href="/assets/icons.svg#web-design"></use>
@@ -53,7 +51,7 @@ description: Ready to create a website that accurately represents your organizat
             </span>
           </label>
           <label class="input-card">
-            <input type="checkbox" name="services" value="Optimization">
+            <input type="checkbox" name="services" value="Optimization" />
             <span>
               <svg focusable="false">
                 <use href="/assets/icons.svg#performance"></use>
@@ -62,11 +60,9 @@ description: Ready to create a website that accurately represents your organizat
             </span>
           </label>
         </fieldset>
-        <label for="budget" class="required">
-          Budget
-        </label>
+        <label for="budget" class="required"> Budget </label>
         <div class="inline gap-2xs">
-          <input type="range" id="budget" name="budget" min="500" max="10000" step="500" value="500">
+          <input type="range" id="budget" name="budget" min="500" max="10000" step="500" value="500" />
           <output id="budget-value">$500</output>
         </div>
         <button type="submit" class="btn">Send Application</button>
