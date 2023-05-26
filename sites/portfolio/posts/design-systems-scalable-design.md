@@ -4,7 +4,7 @@ description: Discover what makes a design system scalable, its role in web desig
 tags: Design Systems
 ---
 
-In today's rapidly evolving digital world, it's crucial to have web designs that are effective, easy to scale, and adaptable. This brings us to the realm of design systems – a well-planned and creative strategy, often likened to the DNA of digital products. But what is a design system in web design? How does it enhance scalability in User Interface (UI) designs, and what are the advantages it provides? This article aims to unpack these questions, offering an in-depth understanding of design systems and their vital role in crafting scalable web design.
+In today's rapidly evolving digital world, it's crucial to have web designs that are effective, easier to scale, and adaptable. This brings us to the realm of design systems – a well-planned and creative strategy, often likened to the DNA of digital products. But what is a design system in web design? How does it enhance scalability in User Interface (UI) designs, and what are the advantages it provides? This article aims to unpack these questions, offering an in-depth understanding of design systems and their vital role in crafting scalable web design.
 
 ## What is a Design System?
 

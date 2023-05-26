@@ -14,7 +14,7 @@ But web accessibility isn't merely about compliance or following rules. It's abo
 
 ## The Importance of Web Accessibility
 
-Web accessibility isn't just a moral duty; it's a business necessity. This is underscored by two main reasons.
+Web accessibility is more than a ethical choice; it's a business necessity. This is underscored by two main reasons.
 
 Firstly, an accessible website promotes an inclusive user experience. Approximately 15% of the global population experiences some form of disability. By integrating accessibility features in your website design, you invite millions of users who might otherwise have difficulty engaging with your digital content. It's about expanding your organization's reach and ensuring that everyone, irrespective of their physical or cognitive abilities, can interact with your business online.
 
@@ -35,4 +35,4 @@ Furthermore, an accessible website can help a purpose-driven organization reach 
 
 In conclusion, web accessibility is a critical element of website design that brings various benefits, from reaching a wider audience to improving SEO, enhancing brand image, and reducing legal risks. For purpose-driven organizations, web accessibility can help align their digital strategy with their organizational mission, thereby reinforcing their commitment to their cause.
 
-The path to complete web accessibility might seem complicated, but the benefits clearly outweigh the challenges, making it a journey worth embarking on. After all, a more accessible web leads to a more inclusive world.
+The path to complete web accessibility might seem complicated, but the benefits outweigh the challenges, making it a journey worth embarking on. After all, a more accessible web leads to a more inclusive world.

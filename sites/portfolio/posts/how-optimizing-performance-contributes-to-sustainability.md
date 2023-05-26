@@ -4,7 +4,7 @@ description: Understand why sustainable web design is vital, find practical stra
 tags: Sustainability
 ---
 
-The internet is a powerful tool that connects billions of devices worldwide, enabling us to share information and carry out complex tasks effortlessly. However, this convenience comes with a significant environmental price. The servers that power the internet contribute notably to global carbon emissions, equal to the impact of the airline industry. As conscientious internet users and developers, it's important we consider the sustainability of our online activities. One way to do this is by optimizing web performance with a focus on sustainability.
+The internet is a powerful tool that connects billions of devices worldwide, enabling us to share information and carry out complex tasks effortlessly. This convenience comes with a significant environmental price. The servers that power the internet contribute notably to global carbon emissions, equal to the impact of the airline industry. As conscientious internet users and developers, it's important we consider the sustainability of our online activities. One way to do this is by optimizing web performance with a focus on sustainability.
 
 ## Why Should We Care About Sustainable Web Design?
 
@@ -27,4 +27,4 @@ Building a more sustainable website revolves around efficiency: delivering a hig
 - **Reducing HTTP Requests:** Each file on your website requires a separate HTTP request. By combining files (like CSS or JavaScript), you can cut these requests and speed up load times.
 - **Content Distribution Network (CDN):** A CDN stores copies of your website at multiple locations worldwide. Users then download your website from a location near them, which can significantly improve load times.
 
-Improving web performance is not just about enhancing the user experience and search rankings—it's also a critical step towards sustainability. By being mindful in our web design and optimization efforts, we can reduce the environmental impact of the internet. It's a win-win strategy, supporting a greener planet while enhancing the user experience and also boosting business performance.
+Improving web performance is not only about enhancing the user experience and search rankings—it's also a critical step towards sustainability. By being mindful in our web design and optimization efforts, we can reduce the environmental impact of the internet. It's a win-win strategy, supporting a greener planet while enhancing the user experience and also boosting business performance.
