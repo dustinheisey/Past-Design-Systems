@@ -16,7 +16,8 @@
 
 .avatar-list {
   display: inline-flex;
-  flex-flow: row nowrap;
+  flex-wrap: nowrap;
+  flex-direction: row;
   align-items: baseline;
 }
 

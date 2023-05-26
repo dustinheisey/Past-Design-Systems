@@ -1,7 +1,7 @@
 ---
 title: 'How Optimizing Web Performance Can Contribute to Sustainability'
 description: A comprehensive guide to eco-friendly web design for conscious businesses and nonprofits.
-tags: Performance
+tags: Sustainability
 ---
 
 The internet is the largest machine ever built by humanity. It’s an intricate web that connects billions of devices, allowing for seamless interaction, sharing of information, and execution of complex processes. However, all this comes with an environmental cost. The servers powering the internet are significant contributors to global carbon emissions, comparable to the airline industry. As responsible internet users and creators, it is time we think critically about the sustainability of our online presence. One such approach is optimizing web performance for sustainability.

@@ -15,12 +15,23 @@ Use a better box model (opinionated).
   box-sizing: border-box;
 }
 
+/**
+Use a more readable tab size (opinionated).
+*/
+
 html {
+  -moz-tab-size: 4;
   tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
   line-height: 1.15; /* 1 */
-  text-size-adjust: 100%; /* 2 */
-  scroll-behavior: smooth;
-  font-size: 100%;
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /*
@@ -28,8 +39,19 @@ Sections
 ========
 */
 
+/**
+Remove the margin in all browsers.
+*/
+
 body {
   margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
   font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
@@ -83,7 +105,6 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
     monospace; /* 1 */
-
   font-size: 1em; /* 2 */
 }
 
@@ -126,7 +147,6 @@ Tabular data
 */
 
 table {
-  border-collapse: collapse;
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
 }
@@ -171,7 +191,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  appearance: button;
+  -webkit-appearance: button;
 }
 
 /**
@@ -231,7 +251,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  appearance: textfield; /* 1 */
+  -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -240,7 +260,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-search-decoration {
-  appearance: none;
+  -webkit-appearance: none;
 }
 
 /**
@@ -249,7 +269,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-  appearance: button; /* 1 */
+  -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
@@ -267,6 +287,11 @@ summary {
 }
 
 /* Added */
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -275,4 +300,8 @@ summary {
 img {
   max-inline-size: 100%;
   max-block-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
 }

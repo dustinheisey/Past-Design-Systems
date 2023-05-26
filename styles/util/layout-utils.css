@@ -2,7 +2,7 @@
   flex-direction: row-reverse;
 }
 
-/* ? Utils */
+/*? Utils */
 .justify-start {
   justify-content: start !important;
 }

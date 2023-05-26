@@ -12,7 +12,6 @@ img {
   max-inline-size: 100%;
   block-size: auto;
   box-shadow: var(--elevation-3);
-
   /* position: relative; */
 }
 

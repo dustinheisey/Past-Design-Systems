@@ -7,7 +7,6 @@
 
 .sidebar > .fixed {
   flex-grow: 1;
-
   /* min-inline-size: fit-content; */
 }
 

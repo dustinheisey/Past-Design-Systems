@@ -1,4 +1,4 @@
-/* ? The Cluster - Horizontally laid out elements */
+/*? The Cluster - Horizontally laid out elements */
 .cluster {
   display: flex;
   flex-wrap: wrap;

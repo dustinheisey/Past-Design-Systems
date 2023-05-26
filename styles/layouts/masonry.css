@@ -1,5 +1,4 @@
-/* ? The Masonry - Product galleries, testimonials, blog posts, portfolio items */
-
+/*? The Masonry - Product galleries, testimonials, blog posts, portfolio items */
 /* Masonry style grid */
 .masonry {
   gap: var(--gap, var(--space-m));

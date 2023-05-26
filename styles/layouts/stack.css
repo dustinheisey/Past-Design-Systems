@@ -1,4 +1,4 @@
-/* ? The Stack - Even veritcal space, lists */
+/*? The Stack - Even veritcal space, lists */
 .stack {
   display: flex;
   flex-direction: column;

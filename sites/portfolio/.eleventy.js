@@ -110,7 +110,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ public: '/' })
   eleventyConfig.addWatchTarget('./index.js')
-  eleventyConfig.addWatchTarget('./style.css')
+  eleventyConfig.addWatchTarget('../../styles/style.min.css')
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')

@@ -37,14 +37,9 @@
 
 .timeline [aria-hidden='true'] {
   color: var(--color-primary);
+  display: flex;
   align-items: center;
   position: relative;
-  flex: 1;
-  margin-inline-start: var(--space-xs);
-  margin-inline-end: calc(-1 * var(--space-s));
-  block-size: 0;
-  border-block-start: 1px solid var(--color-outline-variant);
-  display: none;
 }
 
 .timeline-inline [aria-hidden='true']::before {
@@ -58,7 +53,19 @@
   top: 50%;
   left: calc(-1 * var(--space-xs));
   transform: translateY(-50%);
+}
+
+.timeline-inline [aria-hidden='true']::before {
   margin-inline-end: var(--space-xs);
+}
+
+.timeline [aria-hidden='true'] {
+  flex: 1;
+  margin-inline-start: var(--space-xs);
+  margin-inline-end: calc(-1 * var(--space-s));
+  block-size: 0;
+  border-block-start: 1px solid var(--color-outline-variant);
+  display: none;
 }
 
 @media (--tablet-landscape-up) {

@@ -18,7 +18,6 @@
   align-items: center;
   border-radius: var(--radius-pill);
   color: var(--on-bg);
-
   /* border: 1.5px solid var(--on-bg); */
   background-color: var(--bg);
   padding: var(--space-3xs) var(--space-2xs);

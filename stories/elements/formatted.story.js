@@ -25,7 +25,7 @@ export default {
   }
 }
 
-function getTag (tag, text) {
+function getTag(tag, text) {
   switch (tag) {
     case 'Del':
       return `<del>${text}</del>`
