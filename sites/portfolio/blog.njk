@@ -24,7 +24,7 @@ description: Explore my blog for insightful articles on user-centered, accessibl
 
 <div class="region stack gap-l">
   <h2 class="region-headline text-center center-intrinsic">Recent Posts</h2>
-  <div class="reel no-bar">
+  <div class="reel justify-center no-bar">
     {% for category in collections.categories %} {% set categoryUrl
     %}/categories/{{ category.data.label | slugify }}/{% endset %}
     <a href="{{ categoryUrl | url }}" class="badge badge-l badge-{{category.data.theme}}">{{ category.data.label}}</a>

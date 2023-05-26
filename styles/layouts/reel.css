@@ -7,6 +7,16 @@
   scrollbar-color: var(--color-primary) var(--color-background);
 }
 
+.reel.justify-center {
+  justify-content: start !important;
+}
+
+@media (--tablet-portrait-up) {
+  .reel.justify-center {
+    justify-content: center !important;
+  }
+}
+
 .reel.no-bar {
   scrollbar-width: none;
 }

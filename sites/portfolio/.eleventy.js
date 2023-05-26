@@ -110,6 +110,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ public: '/' })
   eleventyConfig.addWatchTarget('./index.js')
+  eleventyConfig.addWatchTarget('./posts/*.md')
   eleventyConfig.addWatchTarget('../../styles/style.min.css')
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {

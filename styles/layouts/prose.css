@@ -1,6 +1,26 @@
 /* P */
-.prose-l {
+.prose-l p {
   max-inline-size: 66ch;
+}
+
+.prose-l :is(h1, h2, h3, h4, h5, h6) {
+  max-inline-size: 25ch;
+}
+
+.prose-l ul:not(.no-marker) {
+  list-style: disc !important;
+}
+
+.prose-l ol:not(.no-marker) {
+  list-style: decimal !important;
+}
+
+.prose-l :not(.no-marker) li {
+  display: revert !important;
+}
+
+.prose-l :not(.no-marker) li::marker {
+  color: var(--color-primary) !important;
 }
 
 .prose :not(.not-prose):where(p) {

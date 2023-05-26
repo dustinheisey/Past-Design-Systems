@@ -11,7 +11,7 @@ type: article
     <h1 class="page-headline">{{ title }}</h1>
     {% set wc = content | striptags | wordcount %} {% set wPerMinute = (wc /
     240) + 1 %}
-    <ul class="cluster gap-xs">
+    <ul class="cluster gap-xs no-marker">
       <li class="not-prose color-primary">{{ page.date | readableDate }}</li>
       <li class="not-prose color-primary">
         {{ wPerMinute | round }} min read.
