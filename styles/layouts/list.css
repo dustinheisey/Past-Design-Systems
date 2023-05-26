@@ -1,4 +1,5 @@
-/*? The List  */
+/* ? The List  */
+
 /* 
 - lists with disk/decimal markers flex stack with gap
 - list with disk/decimal markers flex stack gap 2 column layout that stacks to one when needed
@@ -53,6 +54,7 @@ li:nth-last-child(n + 3) ~ * {
       1fr
     )
   );
+
   --grid-gap: var(--gap, var(--space-xs));
 
   gap: var(--grid-gap);

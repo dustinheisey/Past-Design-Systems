@@ -1,6 +1,6 @@
 /* frame, clip, background image */
 
-/*? The Frame - Cropping media (videos and images) to a desired aspect ratio */
+/* ? The Frame - Cropping media (videos and images) to a desired aspect ratio */
 .frame {
   overflow: hidden;
   display: flex;
@@ -10,6 +10,7 @@
 
 .frame img {
   background-color: var(--color-background-light);
+
   /* padding: var(--space-3xs); */
 }
 

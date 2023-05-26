@@ -105,10 +105,13 @@ main {
 } */
 
 /* ? Temp */
-/*? The Navigation - Mobile/Desktop navigation  */
+
+/* ? The Navigation - Mobile/Desktop navigation  */
+
 /* footer {
   padding-block-end: calc(var(--inset-page) + 4rem);
 } */
+
 /* .mobile-navigation {
   display: none;
 }

@@ -6,9 +6,6 @@ fieldset.cards {
   gap: var(--space-xs);
   margin-left: auto;
   margin-right: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   margin: 0;
