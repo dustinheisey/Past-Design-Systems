@@ -1,7 +1,12 @@
 import render from '../../macros/components/navigation.njk'
 
 export default {
-  title: 'Components/Navigation'
+  title: 'Components/Navigation',
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 }
 
 export const Default = (args) => {

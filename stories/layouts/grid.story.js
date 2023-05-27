@@ -2,6 +2,12 @@ export default {
   title: 'Layouts/Grid',
   args: {
     columns: 3
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
   }
 }
 

@@ -10,6 +10,12 @@ export default {
       },
       options: ['s', 'm', 'l']
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
   }
 }
 

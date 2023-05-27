@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Fieldset'
+  title: 'Elements/Fieldset',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Fieldset = () => `

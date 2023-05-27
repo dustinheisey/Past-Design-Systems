@@ -2,7 +2,13 @@ export default {
   title: 'Layouts/List',
   decorators: [
     (story) => `<div style="inline-size: 50vw; margin: auto;">${story()}</div>`
-  ]
+  ],
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () =>

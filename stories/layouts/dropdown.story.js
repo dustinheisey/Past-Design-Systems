@@ -1,5 +1,11 @@
 export default {
-  title: 'Layouts/Dropdown'
+  title: 'Layouts/Dropdown',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = {

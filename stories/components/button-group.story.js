@@ -17,6 +17,11 @@ export default {
         'tertiary-end-arrows'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

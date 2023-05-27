@@ -1,7 +1,12 @@
 import render from '../../macros/components/breadcrumb.njk'
 
 export default {
-  title: 'Components/Breadcrumb'
+  title: 'Components/Breadcrumb',
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 }
 
 export const Default = (args) => {

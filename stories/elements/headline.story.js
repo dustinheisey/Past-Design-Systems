@@ -7,7 +7,13 @@ export default {
       options: ['hero', 'page', 'region', 'section', 'title']
     }
   },
-  args: { variant: 'hero' }
+  args: { variant: 'hero' },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = ({ variant }) =>

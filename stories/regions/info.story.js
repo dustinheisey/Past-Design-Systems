@@ -15,6 +15,11 @@ export default {
         'list'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Image'
+  title: 'Elements/Image',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () => `

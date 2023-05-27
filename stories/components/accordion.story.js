@@ -1,7 +1,12 @@
 import render from '../../macros/components/accordion.njk'
 
 export default {
-  title: 'Components/Accordion'
+  title: 'Components/Accordion',
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 }
 
 export const Default = (args) => {

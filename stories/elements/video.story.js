@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Video'
+  title: 'Elements/Video',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () => `

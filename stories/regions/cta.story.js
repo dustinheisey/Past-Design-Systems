@@ -45,6 +45,11 @@ export default {
         'justified-newsletter'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

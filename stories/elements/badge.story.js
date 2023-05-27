@@ -11,7 +11,13 @@ export default {
       options: ['primary', 'secondary', 'tertiary']
     }
   },
-  args: { type: 'primary' }
+  args: { type: 'primary' },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = ({ type }) => `

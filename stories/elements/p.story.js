@@ -11,7 +11,13 @@ export default {
       options: ['p', 'lead', 'overline', 'caption']
     }
   },
-  args: { variant: 'p' }
+  args: { variant: 'p' },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = ({ variant }) => {

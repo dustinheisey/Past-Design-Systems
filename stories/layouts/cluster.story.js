@@ -4,7 +4,13 @@ export default {
     justify: 'start',
     align: 'center'
   },
-  decorators: [(story) => ` <div style="width: 75vw">${story()}</div> `]
+  decorators: [(story) => ` <div style="width: 75vw">${story()}</div> `],
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = ({ justify, align }) =>

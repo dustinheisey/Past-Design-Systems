@@ -1,4 +1,5 @@
 /** @type { import('@storybook/html-webpack5').StorybookConfig } */
+
 const config = {
   stories: [
     '../tokens/*.mdx',
@@ -10,18 +11,18 @@ const config = {
     // "../pages/*.story.js",
   ],
   addons: [
-    '@storybook/addon-essentials',
     '@storybook/addon-a11y',
-    '@storybook/addon-styling',
-    'storybook-addon-rem',
-    'addon-screen-reader'
+    '@storybook/addon-essentials',
+    'storybook-dark-mode',
+    '@etchteam/storybook-addon-status'
   ],
   framework: {
     name: '@storybook/html-webpack5',
     options: {}
   },
   docs: {
-    autodocs: true
+    autodocs: 'tag',
+    defaultName: 'Source'
   },
   webpackFinal: (config) => {
     config.module.rules.push({

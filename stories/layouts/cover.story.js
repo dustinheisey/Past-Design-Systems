@@ -1,5 +1,10 @@
 export default {
-  title: 'Layouts/Cover'
+  title: 'Layouts/Cover',
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 }
 
 export const Default = () =>

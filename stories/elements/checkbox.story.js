@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Checkbox'
+  title: 'Elements/Checkbox',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Checkbox = () => `

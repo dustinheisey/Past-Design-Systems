@@ -1,6 +1,12 @@
 export default {
   title: 'Layouts/Center',
-  args: { intrinsic: false }
+  args: { intrinsic: false },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = ({ intrinsic }) =>

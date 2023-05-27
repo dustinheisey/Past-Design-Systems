@@ -9,6 +9,12 @@ export default {
         defaultValue: { summary: 'false' }
       }
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
   }
 }
 

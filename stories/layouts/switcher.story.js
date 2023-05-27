@@ -1,5 +1,11 @@
 export default {
-  title: 'Layouts/Switcher'
+  title: 'Layouts/Switcher',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () =>

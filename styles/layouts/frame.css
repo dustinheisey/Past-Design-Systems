@@ -14,9 +14,6 @@
   /* padding: var(--space-3xs); */
 }
 
-.frame.cover {
-}
-
 .frame.square {
   aspect-ratio: 1/1;
 }

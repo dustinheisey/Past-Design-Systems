@@ -6,6 +6,11 @@ export default {
       control: { type: 'select' },
       options: ['centered', 'split-left', 'split-right']
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

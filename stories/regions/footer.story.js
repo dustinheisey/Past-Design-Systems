@@ -29,6 +29,11 @@ export default {
         'inline-primary'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

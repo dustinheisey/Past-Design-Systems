@@ -22,6 +22,12 @@ export default {
         'math'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
   }
 }
 

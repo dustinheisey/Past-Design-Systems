@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "simple" %}
-<section class="cover center-intrinsic">
+<section class="region cover center-intrinsic">
   <div class="principle prose">
     <p class="overline">404</p>
     <h1 class="page-headline">Page not found</h1>
@@ -8,7 +8,7 @@
   </div>
 </section>
 {% elif props.variant === "split" %}
-<section class="cover sidebar split-screen">
+<section class="region cover sidebar split-screen">
   <div class="fixed center-intrinsic prose">
     <div class="principle">
       <p class="overline">404</p>
@@ -24,7 +24,7 @@
 {% elif props.variant === 'bg' %}
 <div class="bg-img">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-  <section class="cover center-intrinsic">
+  <section class="region cover center-intrinsic">
     <div class="principle prose filter">
       <p class="overline">404</p>
       <h1 class="page-headline">Page not found</h1>

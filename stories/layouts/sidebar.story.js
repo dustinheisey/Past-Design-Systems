@@ -1,5 +1,11 @@
 export default {
-  title: 'Layouts/Sidebar'
+  title: 'Layouts/Sidebar',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () =>

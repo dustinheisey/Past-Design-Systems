@@ -24,6 +24,11 @@ export default {
       control: 'select',
       options: faq
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

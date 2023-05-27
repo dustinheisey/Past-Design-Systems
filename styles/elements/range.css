@@ -28,7 +28,6 @@ input[type='range']::-moz-range-thumb {
   background: var(--color-primary);
   cursor: pointer;
   transition: background 0.15s ease-in-out;
-  transition: background 0.15s ease-in-out;
 }
 
 input[type='range']::-moz-range-thumb:hover {

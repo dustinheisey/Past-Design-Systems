@@ -12,6 +12,11 @@ export default {
   },
   args: {
     navbar: 'spacedNavbar'
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

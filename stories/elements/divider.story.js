@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Divider'
+  title: 'Elements/Divider',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () => {

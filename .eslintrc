@@ -4,10 +4,10 @@
     "commonjs": true,
     "es2021": true
   },
-  "extends": ["standard", "plugin:storybook/recommended"],
+  "extends": ["standard", "plugin:prettier/recommended", "prettier"],
+  "plugins": ["prettier"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest"
-  },
-  "rules": {}
+  }
 }

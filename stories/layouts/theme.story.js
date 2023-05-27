@@ -14,6 +14,12 @@ export default {
   },
   args: {
     theme: 'background'
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
   }
 }
 

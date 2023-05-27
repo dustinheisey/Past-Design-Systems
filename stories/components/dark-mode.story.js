@@ -9,7 +9,12 @@ export default {
       >
         ${story()}
       </div>`
-  ]
+  ],
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 }
 
 export const Default = (args) => {

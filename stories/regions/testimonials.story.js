@@ -7,6 +7,11 @@ export default {
       control: { type: 'select' },
       options: ['simple-quote', 'centered-quote', 'left-avatar', 'right-avatar']
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

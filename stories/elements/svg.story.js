@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/SVG'
+  title: 'Elements/SVG',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () => `

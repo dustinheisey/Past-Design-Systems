@@ -18,6 +18,11 @@ export default {
         'center-inverse'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

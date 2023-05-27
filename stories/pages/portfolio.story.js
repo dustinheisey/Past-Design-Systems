@@ -36,6 +36,11 @@ export default {
       control: 'select',
       options: cta
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

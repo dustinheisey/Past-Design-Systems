@@ -1,5 +1,11 @@
 export default {
-  title: 'Layouts/Tooltip'
+  title: 'Layouts/Tooltip',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () =>

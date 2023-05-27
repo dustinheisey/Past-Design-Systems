@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Form'
+  title: 'Elements/Form',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Form = () => `

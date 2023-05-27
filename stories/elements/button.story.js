@@ -26,7 +26,13 @@ export default {
       }
     }
   },
-  args: { variant: 'primary', size: 'm', label: 'Button Label' }
+  args: { variant: 'primary', size: 'm', label: 'Button Label' },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = ({ variant, size, label }) =>

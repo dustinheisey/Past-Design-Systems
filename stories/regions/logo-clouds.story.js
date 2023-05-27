@@ -8,6 +8,11 @@ export default {
       control: { type: 'select' },
       options: ['grid', 'simple', 'split']
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

@@ -11,7 +11,13 @@ export default {
       options: ['simple', 'underline']
     }
   },
-  args: { variant: 'simple' }
+  args: { variant: 'simple' },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Select = () =>

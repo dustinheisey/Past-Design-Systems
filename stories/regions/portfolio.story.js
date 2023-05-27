@@ -7,6 +7,11 @@ export default {
       control: { type: 'select' },
       options: ['left-image', 'right-image', 'card-grid-2', 'cover']
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

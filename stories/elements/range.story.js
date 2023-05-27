@@ -1,7 +1,13 @@
 // import "./range.js";
 
 export default {
-  title: 'Elements/Range'
+  title: 'Elements/Range',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () => `

@@ -1,5 +1,11 @@
 export default {
-  title: 'Layouts/Inline'
+  title: 'Layouts/Inline',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () =>

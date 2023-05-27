@@ -1,5 +1,10 @@
 export default {
-  title: 'Layouts/Mosaic'
+  title: 'Layouts/Mosaic',
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 }
 
 export const Default = () => ''

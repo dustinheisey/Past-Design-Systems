@@ -7,6 +7,11 @@ export default {
       control: { type: 'select' },
       options: ['content']
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

@@ -8,6 +8,11 @@ export default {
       control: { type: 'select' },
       options: ['centered', 'spaced', 'start', 'end', 'stacked']
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

@@ -15,6 +15,11 @@ export default {
         'cover'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

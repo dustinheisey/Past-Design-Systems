@@ -11,7 +11,13 @@ export default {
       options: ['inline', 'navigation']
     }
   },
-  args: { variant: 'inline' }
+  args: { variant: 'inline' },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 const links = [

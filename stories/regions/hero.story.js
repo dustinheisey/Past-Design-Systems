@@ -29,6 +29,11 @@ export default {
         'tiles-3-right'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Radio'
+  title: 'Elements/Radio',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Radio = () => `

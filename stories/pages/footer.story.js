@@ -12,6 +12,11 @@ export default {
   },
   args: {
     footer: 'inlinePrimaryFooter'
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

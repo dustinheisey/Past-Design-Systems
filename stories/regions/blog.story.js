@@ -17,6 +17,11 @@ export default {
         'featured-card-grid'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

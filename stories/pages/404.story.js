@@ -9,6 +9,11 @@ export default {
       control: 'select',
       options: error
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

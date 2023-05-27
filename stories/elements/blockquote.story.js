@@ -1,5 +1,11 @@
 export default {
-  title: 'Elements/Blockquote'
+  title: 'Elements/Blockquote',
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
+  }
 }
 
 export const Default = () => `

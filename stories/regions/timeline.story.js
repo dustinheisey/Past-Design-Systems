@@ -12,6 +12,11 @@ export default {
         'block-staggered'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 

@@ -15,6 +15,11 @@ export default {
         'card-grid-3'
       ]
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    }
   }
 }
 
