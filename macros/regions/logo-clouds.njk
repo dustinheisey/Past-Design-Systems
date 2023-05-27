@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "simple" %}
-<section class="center-intrinsic gap-xs stack">
+<section class="center-intrinsic gap-xs stack {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <h2 class="region-headline">Logo Clouds</h2>
   <div class="grid grid-5">
     <div class="frame photo">
@@ -21,7 +21,7 @@
 </section>
 
 {% elif props.variant === "split" %}
-<div class="sidebar sidebar-split align-center">
+<div class="sidebar sidebar-split align-center {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <section class="fixed prose">
     <h2 class="region-headline">
       Reprehenderit ipsum reprehenderit exercitation
@@ -56,7 +56,7 @@
 </div>
 
 {% elif props.variant === "grid" %}
-<section class="center-intrinsic stack gap-xs">
+<section class="center-intrinsic stack gap-xs {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <h2 class="region-headline">Logo Clouds</h2>
   <div class="grid grid-3">
     <div class="frame photo">

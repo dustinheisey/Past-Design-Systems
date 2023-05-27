@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "offset" %}
-<div class="sidebar sidebar-split-s gap-xl">
+<div class="sidebar sidebar-split-s gap-xl {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose fixed">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -66,7 +66,7 @@
 </div>
 
 {% elif props.variant === "accordion" %}
-<div>
+<div class="{% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -167,7 +167,7 @@
 </div>
 
 {% elif props.variant === "inline" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -244,7 +244,7 @@
 </div>
 
 {% elif props.variant === "card-grid-2" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -311,7 +311,7 @@
 </div>
 
 {% elif props.variant === "card-grid-3" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -378,7 +378,7 @@
 </div>
 
 {% elif props.variant === "blurb-grid-2" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -445,7 +445,7 @@
 </div>
 
 {% elif props.variant === "blurb-grid-3" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>

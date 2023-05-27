@@ -7,7 +7,7 @@
     budgetValue.textContent = '$' + budgetInput.value
   })
 </script>
-<div class="center stack">
+<div class="region center stack {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <section class="prose">
     <p class="overline">Overline Text</p>
     <h2 class="region-headline">Apply to Work With Me</h2>
@@ -70,7 +70,7 @@
 </div>
 
 {% elif props.variant === "split-left" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="stack center">
     <section class="prose">
       <p class="overline">Overline Text</p>
@@ -140,7 +140,7 @@
 </div>
 
 {% elif props.variant === "split-right" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="frame photo fixed">
     <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   </div>

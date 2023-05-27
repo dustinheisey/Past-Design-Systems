@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "simple-3" %}
-<div class="switcher switch-phone align-start gap-xl">
+<div class="switcher switch-phone align-start gap-xl {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose stack center-intrinsic gap-2xs">
     <h4 class="section-headline">10,000</h4>
     <p>Trees saved per second</p>
@@ -15,7 +15,7 @@
 </div>
 
 {% elif props.variant === "simple-4" %}
-<div class="switcher switch-phone align-start gap-xl">
+<div class="switcher switch-phone align-start gap-xl {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose stack center-intrinsic gap-2xs">
     <h4 class="section-headline">10,000</h4>
     <p>Trees saved per second</p>
@@ -35,7 +35,7 @@
 </div>
 
 {% elif props.variant === "image-left" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar gap-m">
       <div class="frame photo">
@@ -64,7 +64,7 @@
 </div>
 
 {% elif props.variant === "image-right" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar gap-m">
       <div class="grid grid-2 gap-xs fixed">
@@ -93,7 +93,7 @@
 </div>
 
 {% elif props.variant === "split-left" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose center">
     <p class="overline">Veniam aute aliqua</p>
     <h2 class="section-headline">Lorem ipsum dolor sit amet</h2>
@@ -126,7 +126,7 @@
 </div>
 
 {% elif props.variant === "split-right" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="frame photo fixed">
     <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   </div>
@@ -159,7 +159,7 @@
 </div>
 
 {% elif props.variant === "description" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <h2 class="region-headline">Magna magna cupidatat</h2>
     <div class="sidebar gap-m">

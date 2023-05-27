@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "simple" %}
-<section class="cover cover-s">
+<section class="cover cover-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle center-intrinsic prose">
     <h1 class="page-headline">Headline Text</h1>
     <p class="text-center">
@@ -13,7 +13,7 @@
 </section>
 
 {% elif props.variant === "simple-left" %}
-<section class="cover justify-start cover-s">
+<section class="cover justify-start cover-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle prose">
     <h1 class="page-headline">Headline Text</h1>
     <p>
@@ -27,7 +27,7 @@
 </section>
 
 {% elif props.variant === "simple-right" %}
-<section class="cover justify-end cover-s">
+<section class="cover justify-end cover-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle prose text-end">
     <h1 class="page-headline">Headline Text</h1>
     <p>
@@ -41,7 +41,7 @@
 </section>
 
 {% elif props.variant === "left-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="frame photo">
@@ -64,7 +64,7 @@
 </div>
 
 {% elif props.variant === "right-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="prose fixed">
@@ -87,7 +87,7 @@
 </div>
 
 {% elif props.variant === "split-left" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="stack">
     <div class="prose auto">
       <h1 class="hero-headline">landing page title</h1>
@@ -106,7 +106,7 @@
 </div>
 
 {% elif props.variant === "split-right" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="frame photo fixed">
     <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   </div>
@@ -125,7 +125,7 @@
 </div>
 
 {% elif props.variant === "tiles-2-left" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="grid grid-2">
@@ -162,7 +162,7 @@
 </div>
 
 {% elif props.variant === "tiles-2-right" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="stack fixed">
@@ -199,7 +199,7 @@
 </div>
 
 {% elif props.variant === "tiles-3-left" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="grid grid-3">
@@ -251,7 +251,7 @@
 </div>
 
 {% elif props.variant === "tiles-3-right" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="stack fixed">
@@ -303,7 +303,7 @@
 </div>
 
 {% elif props.variant === "left-bg" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=400" alt="placeholder" />
   <div class="cover cover-nav">
     <div class="principle">
@@ -324,7 +324,7 @@
 </div>
 
 {% elif props.variant === "center-bg" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=400" alt="placeholder" />
   <div class="cover cover-nav">
     <div class="principle">
@@ -345,7 +345,7 @@
 </div>
 
 {% elif props.variant === "right-bg" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   <div class="cover cover-nav">
     <div class="principle">
@@ -369,7 +369,7 @@
 </div>
 
 {% elif props.variant === "left-gradient" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <div class="principle">
       <div class="prose fixed">
@@ -389,7 +389,7 @@
 </div>
 
 {% elif props.variant === "center-gradient" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <div class="principle">
       <div class="prose fixed">
@@ -409,7 +409,7 @@
 </div>
 
 {% elif props.variant === "right-gradient" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <div class="principle">
       <div class="sidebar sidebar-split gap-m">
@@ -432,7 +432,7 @@
 </div>
 
 {% elif props.variant === "center-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="prose fixed">
       <a href="/" class="badge badge-primary">News</a>
@@ -453,7 +453,7 @@
 </div>
 
 {% elif props.variant === "justified" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar align-center gap-m">
       <div class="prose">
@@ -465,7 +465,7 @@
 </div>
 
 {% elif props.variant === "simple-newsletter" %}
-<section class="cover cover-s">
+<section class="cover cover-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle center-intrinsic prose">
     <h1 class="page-headline">Headline Text</h1>
     <p class="text-center">
@@ -481,7 +481,7 @@
 </section>
 
 {% elif props.variant === "simple-left-newsletter" %}
-<section class="cover justify-start cover-s">
+<section class="cover justify-start cover-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle prose">
     <h1 class="page-headline">Headline Text</h1>
     <p>
@@ -497,7 +497,7 @@
 </section>
 
 {% elif props.variant === "simple-right-newsletter" %}
-<section class="cover justify-end cover-s">
+<section class="cover justify-end cover-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle prose text-end">
     <h1 class="page-headline">Headline Text</h1>
     <p>
@@ -513,7 +513,7 @@
 </section>
 
 {% elif props.variant === "left-image-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="frame photo">
@@ -540,7 +540,7 @@
 </div>
 
 {% elif props.variant === "right-image-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="prose fixed">
@@ -567,7 +567,7 @@
 </div>
 
 {% elif props.variant === "split-left-newsletter" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="stack">
     <div class="prose auto">
       <h1 class="hero-headline">landing page title</h1>
@@ -590,7 +590,7 @@
 </div>
 
 {% elif props.variant === "split-right-newsletter" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="frame photo fixed">
     <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   </div>
@@ -613,7 +613,7 @@
 </div>
 
 {% elif props.variant === "tiles-2-left-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="grid grid-2">
@@ -654,7 +654,7 @@
 </div>
 
 {% elif props.variant === "tiles-2-right-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="stack fixed">
@@ -695,7 +695,7 @@
 </div>
 
 {% elif props.variant === "tiles-3-left-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="grid grid-3">
@@ -751,7 +751,7 @@
 </div>
 
 {% elif props.variant === "tiles-3-right-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-xl">
       <div class="stack fixed">
@@ -807,7 +807,7 @@
 </div>
 
 {% elif props.variant === "left-bg-newsletter" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=400" alt="placeholder" />
   <div class="cover cover-nav">
     <div class="principle">
@@ -832,7 +832,7 @@
 </div>
 
 {% elif props.variant === "center-bg-newsletter" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=400" alt="placeholder" />
   <div class="cover cover-nav">
     <div class="principle">
@@ -857,7 +857,7 @@
 </div>
 
 {% elif props.variant === "right-bg-newsletter" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   <div class="cover cover-nav">
     <div class="principle">
@@ -885,7 +885,7 @@
 </div>
 
 {% elif props.variant === "left-gradient-newsletter" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <div class="principle">
       <div class="prose">
@@ -909,7 +909,7 @@
 </div>
 
 {% elif props.variant === "center-gradient-newsletter" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <div class="principle">
       <div class="prose">
@@ -933,7 +933,7 @@
 </div>
 
 {% elif props.variant === "right-gradient-newsletter" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <div class="principle">
       <div class="sidebar sidebar-split gap-m">
@@ -960,7 +960,7 @@
 </div>
 
 {% elif props.variant === "center-image-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="prose fixed">
       <a href="/" class="badge badge-primary">News</a>
@@ -984,7 +984,7 @@
 </div>
 
 {% elif props.variant === "justified-newsletter" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar align-center gap-m">
       <div class="prose">

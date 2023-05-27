@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "left" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
@@ -89,7 +89,7 @@
 </div>
 
 {% elif props.variant === "right" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
@@ -179,7 +179,7 @@
 </div>
 
 {% elif props.variant === "split-left" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="stack">
     <nav class="cluster justify-between">
       <a href="/">
@@ -265,7 +265,7 @@
 </div>
 
 {% elif props.variant === "split-right" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="frame photo fixed">
     <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   </div>
@@ -351,7 +351,7 @@
 </div>
 
 {% elif props.variant === "angled-top-left" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="stack">
     <nav class="cluster justify-between">
       <a href="/">
@@ -437,7 +437,7 @@
 </div>
 
 {% elif props.variant === "angled-top-right" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="frame photo fixed clip-top-right">
     <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   </div>
@@ -523,7 +523,7 @@
 </div>
 
 {% elif props.variant === "angled-bottom-left" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="stack">
     <nav class="cluster justify-between">
       <a href="/">
@@ -609,7 +609,7 @@
 </div>
 
 {% elif props.variant === "angled-bottom-right" %}
-<div class="cover sidebar sidebar-split gap-m">
+<div class="cover sidebar sidebar-split gap-m {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="frame photo fixed clip-bottom-right">
     <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   </div>
@@ -695,7 +695,7 @@
 </div>
 
 {% elif props.variant === "tiles-2-left" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
@@ -799,7 +799,7 @@
 </div>
 
 {% elif props.variant === "tiles-2-right" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
@@ -903,7 +903,7 @@
 </div>
 
 {% elif props.variant === "tiles-3-left" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
@@ -1022,7 +1022,7 @@
 </div>
 
 {% elif props.variant === "tiles-3-right" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
@@ -1141,7 +1141,7 @@
 </div>
 
 {% elif props.variant === "center-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <nav class="cluster justify-between">
     <a href="/">
       <span class="sr-only">Home</span>
@@ -1229,7 +1229,7 @@
 </div>
 
 {% elif props.variant === "left-bg" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=400" alt="placeholder" />
   <div class="cover cover-nav">
     <nav class="cluster justify-between">
@@ -1317,7 +1317,7 @@
 </div>
 
 {% elif props.variant === "center-bg" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=400" alt="placeholder" />
   <div class="cover cover-nav">
     <nav class="cluster justify-between">
@@ -1405,7 +1405,7 @@
 </div>
 
 {% elif props.variant === "right-bg" %}
-<div class="bg-img">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
   <div class="cover cover-nav">
     <nav class="cluster justify-between">
@@ -1496,7 +1496,7 @@
 </div>
 
 {% elif props.variant === "left-gradient" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <nav class="cluster justify-between">
       <a href="/">
@@ -1583,7 +1583,7 @@
 </div>
 
 {% elif props.variant === "center-gradient" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <nav class="cluster justify-between">
       <a href="/">
@@ -1670,7 +1670,7 @@
 </div>
 
 {% elif props.variant === "right-gradient" %}
-<div class="bg-gradient">
+<div class="bg-gradient {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="cover cover-nav">
     <nav class="cluster justify-between">
       <a href="/">

@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "left-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="frame photo">
@@ -53,7 +53,7 @@
 </div>
 
 {% elif props.variant === "right-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="fixed">
@@ -107,7 +107,7 @@
 </div>
 
 {% elif props.variant === "card-grid" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose center center-intrinsic">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -156,7 +156,7 @@
 </div>
 
 {% elif props.variant === "blurb-grid" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose center center-intrinsic">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>
@@ -241,7 +241,7 @@
 </div>
 
 {% elif props.variant === "offset-grid" %}
-<div class="sidebar sidebar-split-s gap-xl">
+<div class="sidebar sidebar-split-s gap-xl {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose fixed">
     <h2 class="region-headline">Frequently Asked Questions</h2>
   </div>
@@ -298,7 +298,7 @@
 </div>
 
 {% elif props.variant === "offset-list" %}
-<div class="sidebar sidebar-split-s gap-xl">
+<div class="sidebar sidebar-split-s gap-xl {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose fixed">
     <h2 class="region-headline">Frequently Asked Questions</h2>
   </div>
@@ -403,7 +403,7 @@
 </div>
 
 {% elif props.variant === "list" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose center center-intrinsic">
     <h2 class="region-headline">Frequently Asked Questions</h2>
     <p>

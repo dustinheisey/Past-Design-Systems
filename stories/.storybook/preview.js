@@ -14,7 +14,6 @@ export default {
     viewport: {
       viewports: INITIAL_VIEWPORTS
     },
-
     options: {
       storySort: {
         order: [
@@ -49,14 +48,6 @@ export default {
           'Tokens'
         ]
       }
-    }
-  },
-  argTypes: {
-    theme: {
-      control: {
-        type: 'select'
-      },
-      options: themes
     }
   }
 }

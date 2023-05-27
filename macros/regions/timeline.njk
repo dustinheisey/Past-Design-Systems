@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "inline-start" %}
-<div class="timeline timeline-inline">
+<div class="timeline timeline-inline {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="stack gap-xs">
     <time datetime="2021-08">
       Aug 2021
@@ -55,7 +55,7 @@
 </div>
 
 {% elif props.variant === "inline-staggered" %}
-<div class="timeline timeline-inline timeline-staggered">
+<div class="timeline timeline-inline timeline-staggered {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <time datetime="2021-08">
     Aug 2021
     <div aria-hidden="true"></div>
@@ -111,7 +111,7 @@
 </div>
 
 {% elif props.variant === "block-start" %}
-<div class="timeline timeline-block">
+<div class="timeline timeline-block {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="sparkline" aria-hidden="true"></div>
   <div class="stack gap-xs">
     <time datetime="2021-08"> Aug 2021 </time>
@@ -159,7 +159,7 @@
 </div>
 
 {% elif props.variant === "block-staggered" %}
-<div class="timeline timeline-block timeline-staggered">
+<div class="timeline timeline-block timeline-staggered {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="sparkline" aria-hidden="true"></div>
   <div class="stack gap-xs">
     <time datetime="2021-08"> Aug 2021 </time>

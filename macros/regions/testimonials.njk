@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "simple-quote" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <blockquote class="center blockquote-accent">
     <p>
       I am beyond pleased with Dustin’s impeccable service. He was extremely
@@ -11,7 +11,7 @@
 </div>
 
 {% elif props.variant === "centered-quote" %}
-<div class="cover center cover-nav">
+<div class="cover center cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <figure class="stack center center-intrinsic gap-s">
     <img src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="placeholder" />
     <blockquote>
@@ -29,7 +29,7 @@
 </div>
 
 {% elif props.variant === "left-avatar" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar gap-m">
       <div class="frame fixed square">
@@ -51,7 +51,7 @@
 </div>
 
 {% elif props.variant === "right-avatar" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="principle">
     <div class="sidebar gap-m">
       <div class="center">

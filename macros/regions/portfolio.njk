@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "left-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <main class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="frame photo">
@@ -22,7 +22,7 @@
 </div>
 
 {% elif props.variant === "right-image" %}
-<div class="cover cover-nav">
+<div class="cover cover-nav {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <main class="principle">
     <div class="sidebar sidebar-split gap-m">
       <div class="prose fixed">
@@ -45,7 +45,7 @@
 </div>
 
 {% elif props.variant === "card-grid-2" %}
-<div class="stack gap-s">
+<div class="stack gap-s {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <div class="prose center center-intrinsic">
     <h2 class="region-headline">My Projects</h2>
     <p>
@@ -98,7 +98,7 @@
 </div>
 
 {% elif props.variant === "cover" %}
-<div class="bg-img theme-dark">
+<div class="bg-img {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <img src="https://generative-placeholders.glitch.me/image?width=300&height=300" alt="placeholder" />
   <div class="cover cover-s cover-nav">
     <a href="/" class="principle">

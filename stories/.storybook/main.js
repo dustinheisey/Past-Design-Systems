@@ -7,8 +7,8 @@ const config = {
     '../layouts/*.story.js',
     '../components/*.story.js',
     '../regions/*.story.js',
-    '../pages/*.story.js'
-    // "../pages/*.story.js",
+    '../pages/**/*.story.js',
+    '../pages/**/*.mdx'
   ],
   addons: [
     '@storybook/addon-a11y',
@@ -21,8 +21,7 @@ const config = {
     options: {}
   },
   docs: {
-    autodocs: 'tag',
-    defaultName: 'Source'
+    autodocs: 'tag'
   },
   webpackFinal: (config) => {
     config.module.rules.push({

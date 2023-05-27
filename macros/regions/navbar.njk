@@ -1,5 +1,5 @@
 {% macro render( props ) %} {% if props.variant === "centered" %}
-<nav class="cluster justify-center">
+<nav class="cluster justify-center {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <a href="/">
     <span class="sr-only">Home</span>
     <svg focusable="false" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 245.68853462923755" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -68,7 +68,7 @@
 </nav>
 
 {% elif props.variant === "spaced" %}
-<nav class="cluster justify-between">
+<nav class="cluster justify-between {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <a href="/">
     <span class="sr-only">Home</span>
     <svg focusable="false" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 245.68853462923755" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -137,7 +137,7 @@
 </nav>
 
 {% elif props.variant === "start" %}
-<nav class="cluster justify-start">
+<nav class="cluster justify-start {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <a href="/">
     <span class="sr-only">Home</span>
     <svg focusable="false" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 245.68853462923755" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -206,7 +206,7 @@
 </nav>
 
 {% elif props.variant === "end" %}
-<nav class="cluster justify-end">
+<nav class="cluster justify-end {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <a href="/">
     <span class="sr-only">Home</span>
     <svg focusable="false" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 245.68853462923755" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -275,7 +275,7 @@
 </nav>
 
 {% elif props.variant === "stacked" %}
-<nav class="cluster center-intrinsic stack gap-xs">
+<nav class="cluster center-intrinsic stack gap-xs {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <a href="/">
     <span class="sr-only">Home</span>
     <svg focusable="false" class="logo-l" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 245.68853462923755" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">

@@ -1,5 +1,5 @@
 {% macro render( props ) %}
-<div class="prose">
+<div class="region prose {% if props.theme %}theme-{{props.theme}}{% endif %}">
   <p class="overline">Deploy faster</p>
   <h1 class="page-headline">A better workflow</h1>
   <p class="lead">
