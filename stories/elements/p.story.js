@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Paragraph',
+  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: 'select',
@@ -14,7 +15,7 @@ export default {
   args: { variant: 'p' },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }

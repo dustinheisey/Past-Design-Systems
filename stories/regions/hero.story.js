@@ -1,33 +1,15 @@
-import render from '../../macros/regions/hero.njk'
+import { regions, themes } from '../util/consts.js'
 
 export default {
   title: 'Regions/Hero',
   argTypes: {
     variant: {
-      control: { type: 'select' },
-      options: [
-        'left',
-        'right',
-        'split-left',
-        'split-right',
-        'center',
-        'left-image',
-        'right-image',
-        'left-bg',
-        'center-bg',
-        'right-bg',
-        'left-gradient',
-        'center-gradient',
-        'right-gradient',
-        'angled-top-left',
-        'angled-top-right',
-        'angled-bottom-left',
-        'angled-bottom-right',
-        'tiles-2-left',
-        'tiles-2-right',
-        'tiles-3-left',
-        'tiles-3-right'
-      ]
+      control: 'select',
+      options: Object.keys(regions.hero)
+    },
+    theme: {
+      control: 'select',
+      options: themes
     }
   },
   parameters: {
@@ -37,11 +19,12 @@ export default {
   }
 }
 
-const Template = (args) => {
-  return render({
-    storybookArgs: args
-  })
-}
+const Template = (args) =>
+  `
+    ${regions.hero[args.variant]({
+      props: { theme: args.theme }
+    })}
+  `
 
 export const Left = Template.bind({})
 export const Right = Template.bind({})
@@ -55,7 +38,9 @@ export const Tiles2Left = Template.bind({})
 export const Tiles2Right = Template.bind({})
 export const Tiles3Left = Template.bind({})
 export const Tiles3Right = Template.bind({})
-export const CenterImage = Template.bind({})
+export const CenterImg = Template.bind({})
+export const LeftImg = Template.bind({})
+export const RightImg = Template.bind({})
 export const LeftBg = Template.bind({})
 export const CenterBg = Template.bind({})
 export const RightBg = Template.bind({})
@@ -63,22 +48,24 @@ export const LeftGradient = Template.bind({})
 export const CenterGradient = Template.bind({})
 export const RightGradient = Template.bind({})
 
-Left.args = { variant: 'left' }
-Right.args = { variant: 'right' }
-SplitLeft.args = { variant: 'split-left' }
-SplitRight.args = { variant: 'split-right' }
-AngledTopLeft.args = { variant: 'angled-top-left' }
-AngledTopRight.args = { variant: 'angled-top-right' }
-AngledBottomLeft.args = { variant: 'angled-bottom-left' }
-AngledBottomRight.args = { variant: 'angled-bottom-right' }
-Tiles2Left.args = { variant: 'tiles-2-left' }
-Tiles2Right.args = { variant: 'tiles-2-right' }
-Tiles3Left.args = { variant: 'tiles-3-left' }
-Tiles3Right.args = { variant: 'tiles-3-right' }
-CenterImage.args = { variant: 'center-image' }
-LeftBg.args = { variant: 'left-bg' }
-CenterBg.args = { variant: 'center-bg' }
-RightBg.args = { variant: 'right-bg' }
-LeftGradient.args = { variant: 'left-gradient' }
-CenterGradient.args = { variant: 'center-gradient' }
-RightGradient.args = { variant: 'right-gradient' }
+Left.args = { variant: 'left-hero' }
+Right.args = { variant: 'right-hero' }
+SplitLeft.args = { variant: 'split-left-hero' }
+SplitRight.args = { variant: 'split-right-hero' }
+AngledTopLeft.args = { variant: 'angled-top-left-hero' }
+AngledTopRight.args = { variant: 'angled-top-right-hero' }
+AngledBottomLeft.args = { variant: 'angled-bottom-left-hero' }
+AngledBottomRight.args = { variant: 'angled-bottom-right-hero' }
+Tiles2Left.args = { variant: 'tiles-2-left-hero' }
+Tiles2Right.args = { variant: 'tiles-2-right-hero' }
+Tiles3Left.args = { variant: 'tiles-3-left-hero' }
+Tiles3Right.args = { variant: 'tiles-3-right-hero' }
+CenterImg.args = { variant: 'center-img-hero' }
+LeftImg.args = { variant: 'left-img-hero' }
+RightImg.args = { variant: 'right-img-hero' }
+LeftBg.args = { variant: 'left-bg-hero' }
+CenterBg.args = { variant: 'center-bg-hero' }
+RightBg.args = { variant: 'right-bg-hero' }
+LeftGradient.args = { variant: 'left-gradient-hero' }
+CenterGradient.args = { variant: 'center-gradient-hero' }
+RightGradient.args = { variant: 'right-gradient-hero' }

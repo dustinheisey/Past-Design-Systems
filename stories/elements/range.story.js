@@ -2,6 +2,7 @@
 
 export default {
   title: 'Elements/Range',
+  tags: ['autodocs'],
   parameters: {
     status: {
       type: 'beta'

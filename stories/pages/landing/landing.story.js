@@ -1,26 +1,11 @@
-import renderHero from '../../../macros/regions/header.njk'
-import renderInfo from '../../../macros/regions/info.njk'
-import renderTestimonials from '../../../macros/regions/stats.njk'
-import renderCta from '../../../macros/regions/portfolio.njk'
-import renderProcess from '../../../macros/regions/testimonials.njk'
-
-import {
-  hero,
-  info,
-  testimonials,
-  cta,
-  process,
-  timeline,
-  themes
-} from '../../util/consts.js'
-import { storyProps } from '../../util/funcs.js'
-
+import { pageRegions, themes } from '../../util/consts.js'
+const { landing } = pageRegions
 export default {
   title: 'Pages/Landing',
   argTypes: {
     heroVariant: {
       control: 'select',
-      options: hero,
+      options: Object.keys(landing.hero),
       table: {
         category: 'Hero'
       }
@@ -34,7 +19,7 @@ export default {
     },
     problemVariant: {
       control: 'select',
-      options: info,
+      options: Object.keys(landing.problem),
       table: {
         category: 'Problem'
       }
@@ -48,7 +33,7 @@ export default {
     },
     guideVariant: {
       control: 'select',
-      options: info,
+      options: Object.keys(landing.guide),
       table: {
         category: 'Guide'
       }
@@ -62,7 +47,7 @@ export default {
     },
     planVariant: {
       control: 'select',
-      options: [...info, ...process, ...timeline],
+      options: Object.keys(landing.plan),
       table: {
         category: 'Plan'
       }
@@ -74,14 +59,14 @@ export default {
         category: 'Plan'
       }
     },
-    ctaVariant: {
+    actionVariant: {
       control: 'select',
-      options: cta,
+      options: Object.keys(landing.action),
       table: {
         category: 'CTA'
       }
     },
-    ctaTheme: {
+    actionTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -90,7 +75,7 @@ export default {
     },
     successVariant: {
       control: 'select',
-      options: testimonials,
+      options: Object.keys(landing.success),
       table: {
         category: 'Success'
       }
@@ -104,7 +89,7 @@ export default {
     },
     freebieVariant: {
       control: 'select',
-      options: cta,
+      options: Object.keys(landing.freebie),
       table: {
         category: 'Freebie'
       }
@@ -120,43 +105,62 @@ export default {
   parameters: {
     status: {
       type: 'beta'
+    },
+    docs: {
+      source: {
+        transform: (src, story) =>
+          `
+{{ hero({ variant: '${story.args.heroVariant}', theme: '${story.args.heroTheme}', content: content.index.hero }) }} 
+{{ info({ variant: '${story.args.storyVariant}', theme: '${story.args.storyTheme}', content: content.index.problem }) }} 
+{{ info({ variant: '${story.args.skillsVariant}', theme: '${story.args.skillsTheme}', content: content.index.guide }) }}
+{{ info({ variant: '${story.args.portfolioVariant}', theme: '${story.args.portfolioTheme}', content: content.index.plan }) }} 
+{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.index.cta }) }}
+{{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.index.testimonials }) }}
+{{ cta({ variant: '${story.args.freebieVariant}', theme: '${story.args.freebieTheme}', content: content.index.freebie }) }}
+
+          `
+      }
     }
   },
   args: {
     heroTheme: 'background',
+    heroVariant: 'angled-bottom-left-hero',
     problemTheme: 'background',
+    problemVariant: 'center-intro',
     guideTheme: 'background',
+    guideVariant: 'blurb-grid-feature',
     planTheme: 'background',
-    ctaTheme: 'background',
+    planVariant: 'card-grid-gallery',
+    actionTheme: 'background',
+    actionVariant: 'center-bg-action',
     successTheme: 'background',
-    freebieTheme: 'background'
+    successVariant: 'center-quote-testimonials',
+    freebieTheme: 'background',
+    freebieVariant: 'left-bg-action'
   }
 }
 
-export const Default = ({
-  heroVariant,
-  heroTheme,
-  problemVariant,
-  problemTheme,
-  guideVariant,
-  guideTheme,
-  planVariant,
-  planTheme,
-  ctaVariant,
-  ctaTheme,
-  successVariant,
-  successTheme,
-  freebieVariant,
-  freebieTheme
-}) =>
+export const Default = (args) =>
   `
-  ${renderHero(storyProps({ variant: heroVariant, theme: heroTheme }))} 
-  ${renderInfo(storyProps({ variant: problemVariant, theme: problemTheme }))} 
-  ${renderInfo(storyProps({ variant: guideVariant, theme: guideTheme }))} 
-  ${renderProcess(storyProps({ variant: planVariant, theme: planTheme }))} 
-  ${renderCta(storyProps({ variant: ctaVariant, theme: ctaTheme }))} 
-  ${renderTestimonials(
-    storyProps({ variant: successVariant, theme: successTheme })
-  )} 
-  ${renderCta(storyProps({ variant: freebieVariant, theme: freebieTheme }))} 
+    ${landing.hero[args.heroVariant]({
+      props: { theme: args.heroTheme }
+    })}
+    ${landing.problem[args.problemVariant]({
+      props: { theme: args.problemTheme }
+    })}
+    ${landing.guide[args.guideVariant]({
+      props: { theme: args.guideTheme }
+    })}
+    ${landing.plan[args.planVariant]({
+      props: { theme: args.planTheme }
+    })}
+    ${landing.action[args.actionVariant]({
+      props: { theme: args.actionTheme }
+    })}
+    ${landing.success[args.successVariant]({
+      props: { theme: args.successTheme }
+    })}
+    ${landing.freebie[args.freebieVariant]({
+      props: { theme: args.freebieTheme }
+    })}
   `

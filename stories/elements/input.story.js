@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Input',
+  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: 'select',
@@ -14,7 +15,7 @@ export default {
   args: { variant: 'simple' },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }

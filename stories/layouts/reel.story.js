@@ -2,9 +2,8 @@ export default {
   title: 'Layouts/Reel',
   parameters: {
     status: {
-      type: 'beta'
-    },
-    layout: 'centered'
+      type: 'stable'
+    }
   }
 }
 

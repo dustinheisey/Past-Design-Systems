@@ -1,21 +1,15 @@
-import render from '../../macros/components/button-group.njk'
+import { components, themes } from '../util/consts.js'
 
 export default {
   title: 'Components/Button Group',
   argTypes: {
+    theme: {
+      control: 'select',
+      options: themes
+    },
     variant: {
       control: { type: 'select' },
-      options: [
-        'start',
-        'center',
-        'end',
-        'tertiary-start',
-        'tertiary-center',
-        'tertiary-end',
-        'tertiary-start-arrows',
-        'tertiary-center-arrows',
-        'tertiary-end-arrows'
-      ]
+      options: ['start', 'center', 'end']
     }
   },
   parameters: {
@@ -25,46 +19,21 @@ export default {
   }
 }
 
-const Template = (args) => {
-  return render({
-    storybookArgs: args
+const Template = (args) =>
+  components.buttonGroup({
+    theme: args.theme
   })
-}
 
 export const Start = Template.bind({})
 export const Center = Template.bind({})
 export const End = Template.bind({})
-export const TertiaryStart = Template.bind({})
-export const TertiaryCenter = Template.bind({})
-export const TertiaryEnd = Template.bind({})
-export const TertiaryStartArrows = Template.bind({})
-export const TertiaryCenterArrows = Template.bind({})
-export const TertiaryEndArrows = Template.bind({})
 
 Start.args = {
-  variant: 'start'
+  location: 'start'
 }
 Center.args = {
-  variant: 'center'
+  location: 'center'
 }
 End.args = {
-  variant: 'end'
-}
-TertiaryStart.args = {
-  variant: 'tertiary-start'
-}
-TertiaryCenter.args = {
-  variant: 'tertiary-center'
-}
-TertiaryEnd.args = {
-  variant: 'tertiary-end'
-}
-TertiaryStartArrows.args = {
-  variant: 'tertiary-start-arrows'
-}
-TertiaryCenterArrows.args = {
-  variant: 'tertiary-center-arrows'
-}
-TertiaryEndArrows.args = {
-  variant: 'tertiary-end-arrows'
+  location: 'end'
 }

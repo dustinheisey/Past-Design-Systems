@@ -1,6 +1,6 @@
 import { Meta, ColorPalette, ColorItem } from '@storybook/blocks'
 
-<Meta title="Tokens/Color" />
+<Meta title="Tokens/Color" parameters={{ status: { type: 'stable' } }} />
 
 # Color
 
@@ -10,10 +10,7 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/blocks'
     colors={{
       Background: 'var(--color-background)',
       Surface: 'var(--color-surface)',
-      SurfaceVariant: 'var(--color-surface-variant)',
-      InverseSurface: 'var(--color-inverse-surface)',
-      InversePrimary: 'var(--color-inverse-primary)',
-      SurfaceTint: 'var(--color-surface-tint)'
+      SurfaceVariant: 'var(--color-surface-variant)'
     }}
   />
   <ColorItem
@@ -22,10 +19,8 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/blocks'
       OnBackground: 'var(--color-on-background)',
       OnSurface: 'var(--color-on-surface)',
       OnSurfaceVariant: 'var(--color-on-surface-variant)',
-      InverseOnSurface: 'var(--color-inverse-on-surface)',
       Outline: 'var(--color-outline)',
-      OutlineVariant: 'var(--color-outline-variant)',
-      Shadow: 'var(--color-shadow)'
+      OutlineVariant: 'var(--color-outline-variant)'
     }}
   />
   <ColorItem

@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Avatar',
+  tags: ['autodocs'],
   argTypes: {
     size: {
       control: 'select',
@@ -13,7 +14,7 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }

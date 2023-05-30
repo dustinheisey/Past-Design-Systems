@@ -1,4 +1,3 @@
-{% macro render( props ) %}
 <script>
   ; (function (window) {
     var dismissibleItem = function (el, type, value) {
@@ -42,7 +41,7 @@
     }
   })(window)
 </script>
-<div class="banner {% if props.theme %}theme-{{props.theme}}{% endif %}" data-component="dismissible-item">
+<div class="banner theme-{{props.theme}}" data-component="dismissible-item">
   <p>Hello world</p>
   <button type="button">
     <svg focusable="false" class="icon">
@@ -51,4 +50,3 @@
     <span class="sr-only">Close</span>
   </button>
 </div>
-{% endmacro %} {% if storybookArgs %} {{ render( storybookArgs ) }} {% endif %}

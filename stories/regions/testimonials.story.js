@@ -1,11 +1,15 @@
-import render from '../../macros/regions/testimonials.njk'
+import { regions, themes } from '../util/consts.js'
 
 export default {
   title: 'Regions/Testimonials',
   argTypes: {
     variant: {
-      control: { type: 'select' },
-      options: ['simple-quote', 'centered-quote', 'left-avatar', 'right-avatar']
+      control: 'select',
+      options: Object.keys(regions.testimonials)
+    },
+    theme: {
+      control: 'select',
+      options: themes
     }
   },
   parameters: {
@@ -15,18 +19,19 @@ export default {
   }
 }
 
-const Template = (args) => {
-  return render({
-    storybookArgs: args
-  })
-}
+const Template = (args) =>
+  `
+    ${regions.testimonials[args.variant]({
+      props: { theme: args.theme }
+    })}
+  `
 
 export const SimpleQuote = Template.bind({})
 export const CenteredQuote = Template.bind({})
 export const LeftAvatar = Template.bind({})
 export const RightAvatar = Template.bind({})
 
-SimpleQuote.args = { variant: 'simple-quote' }
-CenteredQuote.args = { variant: 'centered-quote' }
-LeftAvatar.args = { variant: 'left-avatar' }
-RightAvatar.args = { variant: 'right-avatar' }
+SimpleQuote.args = { variant: 'simple-quote-testimonials' }
+CenteredQuote.args = { variant: 'center-quote-testimonials' }
+LeftAvatar.args = { variant: 'left-avatar-testimonials' }
+RightAvatar.args = { variant: 'right-avatar-testimonials' }

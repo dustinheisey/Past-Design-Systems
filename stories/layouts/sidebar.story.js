@@ -2,7 +2,7 @@ export default {
   title: 'Layouts/Sidebar',
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }

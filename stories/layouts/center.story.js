@@ -3,33 +3,9 @@ export default {
   args: { intrinsic: false },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
-  }
-}
-
-export const Default = ({ intrinsic }) =>
-  `
-    <div class="${intrinsic ? 'center-intrinsic' : 'center'} prose">
-      <h2>Start your free trial today</h2>
-      <p>Experience the difference for yourself</p>
-      <button class="btn">Sign up now</button>
-    </div>
-  `
-
-Default.parameters = {
-  docs: {
-    description: {
-      story:
-        'The Center component should be used whenever you want something to be horizontally centered. Use by default to center the container, or use the intrinsic modifier to center the content within the centered container.'
-    },
-    source: {
-      code: `
-<div class="center">
-</div>
-    `
-    }
   }
 }
 

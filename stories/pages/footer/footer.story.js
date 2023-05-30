@@ -1,14 +1,11 @@
-import renderFooter from '../../../macros/regions/info.njk'
-
-import { footer, themes } from '../../util/consts.js'
-import { storyProps } from '../../util/funcs.js'
-
+import { pageRegions, themes } from '../../util/consts.js'
+const { footer } = pageRegions
 export default {
   title: 'Pages/Footer',
   argTypes: {
     footerVariant: {
       control: 'select',
-      options: footer,
+      options: Object.keys(footer),
       table: {
         category: 'Footer'
       }
@@ -22,14 +19,27 @@ export default {
     }
   },
   args: {
-    footerTheme: 'background'
+    footerTheme: 'background',
+    footerVariant: 'inline-footer'
   },
   parameters: {
     status: {
       type: 'beta'
+    },
+    docs: {
+      source: {
+        transform: (src, story) =>
+          `
+{{ footer({ variant: '${story.args.footerVariant}', theme: '${story.args.footerTheme}', content: content.footer }) }} 
+          `
+      }
     }
   }
 }
 
-export const Default = ({ footerVariant, footerTheme }) =>
-  `${renderFooter(storyProps({ variant: footerVariant, theme: footerTheme }))} `
+export const Default = (args) =>
+  `
+    ${footer[args.footerVariant]({
+      props: { theme: args.footerTheme }
+    })}
+  `

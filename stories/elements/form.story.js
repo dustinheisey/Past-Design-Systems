@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Form',
+  tags: ['autodocs'],
   parameters: {
     status: {
       type: 'beta'

@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Figure',
+  tags: ['autodocs'],
   parameters: {
     status: {
       type: 'beta'

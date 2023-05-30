@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Fieldset',
+  tags: ['autodocs'],
   parameters: {
     status: {
       type: 'beta'

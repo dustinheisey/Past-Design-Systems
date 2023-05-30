@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/blocks'
-import { getProperty } from '../util/tokens.js'
+import { getProperty } from '../util/funcs.js'
 
-<Meta title="Tokens/Border Radius" />
+<Meta title="Tokens/Border Radius" parameters={{ status: { type: 'stable' } }} />
 
 # Border Radius
 
@@ -15,15 +15,13 @@ import { getProperty } from '../util/tokens.js'
   </thead>
   <tbody>
     <tr>
-      <td>
-        <code>--radius-s</code>
-      </td>
+      <td>`--radius-s`</td>
       <td>{getProperty('--radius-s')}</td>
       <td>
         <div
-          class="rounded-demo"
+          className="rounded-demo"
           style={{
-            backgroundColor: 'var(--color-primary)',
+            backgroundColor: 'var(--color-primary-light)',
             width: 'var(--space-xl)',
             height: 'var(--space-xl)',
             borderRadius: 'var(--radius-s)'
@@ -32,15 +30,13 @@ import { getProperty } from '../util/tokens.js'
       </td>
     </tr>
     <tr>
-      <td>
-        <code>--radius-m</code>
-      </td>
+      <td>`--radius-m`</td>
       <td>{getProperty('--radius-m')}</td>
       <td>
         <div
-          class="rounded-demo"
+          className="rounded-demo"
           style={{
-            backgroundColor: 'var(--color-primary)',
+            backgroundColor: 'var(--color-primary-light)',
             width: 'var(--space-xl)',
             height: 'var(--space-xl)',
             borderRadius: 'var(--radius-m)'
@@ -49,15 +45,13 @@ import { getProperty } from '../util/tokens.js'
       </td>
     </tr>
     <tr>
-      <td>
-        <code>--radius-l</code>
-      </td>
+      <td>`--radius-l`</td>
       <td>{getProperty('--radius-l')}</td>
       <td>
         <div
-          class="rounded-demo"
+          className="rounded-demo"
           style={{
-            backgroundColor: 'var(--color-primary)',
+            backgroundColor: 'var(--color-primary-light)',
             width: 'var(--space-xl)',
             height: 'var(--space-xl)',
             borderRadius: 'var(--radius-l)'
@@ -66,15 +60,13 @@ import { getProperty } from '../util/tokens.js'
       </td>
     </tr>
     <tr>
-      <td>
-        <code>--radius-pill</code>
-      </td>
+      <td>`--radius-pill`</td>
       <td>{getProperty('--radius-pill')}</td>
       <td>
         <div
-          class="rounded-demo"
+          className="rounded-demo"
           style={{
-            backgroundColor: 'var(--color-primary)',
+            backgroundColor: 'var(--color-primary-light)',
             width: 'var(--space-2xl)',
             height: 'var(--space-l)',
             borderRadius: 'var(--radius-pill)'
@@ -83,15 +75,13 @@ import { getProperty } from '../util/tokens.js'
       </td>
     </tr>
     <tr>
-      <td>
-        <code>--radius-circle</code>
-      </td>
+      <td>`--radius-circle`</td>
       <td>{getProperty('--radius-circle')}</td>
       <td>
         <div
-          class="rounded-demo"
+          className="rounded-demo"
           style={{
-            backgroundColor: 'var(--color-primary)',
+            backgroundColor: 'var(--color-primary-light)',
             width: 'var(--space-xl)',
             height: 'var(--space-xl)',
             borderRadius: 'var(--radius-circle)'

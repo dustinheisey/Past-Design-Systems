@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Badge',
+  tags: ['autodocs'],
   argTypes: {
     type: {
       control: 'select',
@@ -9,19 +10,27 @@ export default {
         defaultValue: { summary: 'primary' }
       },
       options: ['primary', 'secondary', 'tertiary']
+    },
+    showStatus: {
+      control: 'boolean',
+      description: 'Badge Status Dot',
+      table: {
+        type: { summary: 'boolean' },
+        defaultValue: { summary: false }
+      }
     }
   },
-  args: { type: 'primary' },
+  args: { type: 'primary', showStatus: false },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }
 }
 
-export const Default = ({ type }) => `
-  <span class="badge badge-${type}">Badge Text</span>
+export const Default = ({ type, showStatus }) => `
+  <span class="badge badge-${type} ${showStatus ? 'status' : ''}">Badge Text</span>
 `
 
 // Badges
@@ -40,28 +49,4 @@ export const BadgesWithStatus = () => `
     <span class="badge badge-secondary status">Badge Text</span>
     <span class="badge badge-tertiary status">Badge Text</span>
   </div>
-`
-
-export const PrimaryBadge = () => `
-  <span class="badge badge-primary">Badge Text</span>
-`
-
-export const SecondaryBadge = () => `
-  <span class="badge badge-secondary">Badge Text</span>
-`
-
-export const TertiaryBadge = () => `
-  <span class="badge badge-tertiary">Badge Text</span>
-`
-
-export const PrimaryBadgeWithStatus = () => `
-  <span class="badge badge-primary status">Badge Text</span>
-`
-
-export const SecondaryBadgeWithStatus = () => `
-  <span class="badge badge-secondary status">Badge Text</span>
-`
-
-export const TertiaryBadgeWithStatus = () => `
-  <span class="badge badge-tertiary status">Badge Text</span>
 `

@@ -1,35 +1,16 @@
-import renderHeader from '../../../macros/regions/header.njk'
-import renderInfo from '../../../macros/regions/info.njk'
-import renderTimeline from '../../../macros/regions/timeline.njk'
-import renderFaq from '../../../macros/regions/faq.njk'
-import renderCta from '../../../macros/regions/cta.njk'
-
-import {
-  header,
-  hero,
-  info,
-  stats,
-  portfolio,
-  testimonial,
-  cta,
-  process,
-  timeline,
-  faq,
-  themes
-} from '../../util/consts.js'
-import { storyProps } from '../../util/funcs.js'
-
+import { pageRegions, themes } from '../../util/consts.js'
+const { service } = pageRegions
 export default {
   title: 'Pages/Service',
   argTypes: {
-    headerVariant: {
+    heroVariant: {
       control: 'select',
-      options: [...header, ...hero],
+      options: Object.keys(service.hero),
       table: {
         category: 'Header'
       }
     },
-    headerTheme: {
+    heroTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -38,7 +19,7 @@ export default {
     },
     problemVariant: {
       control: 'select',
-      options: info,
+      options: Object.keys(service.problem),
       table: {
         category: 'Problem'
       }
@@ -52,7 +33,7 @@ export default {
     },
     descriptionVariant: {
       control: 'select',
-      options: info,
+      options: Object.keys(service.description),
       table: {
         category: 'Description'
       }
@@ -66,7 +47,7 @@ export default {
     },
     proofVariant: {
       control: 'select',
-      options: [...testimonial, ...stats, ...portfolio],
+      options: Object.keys(service.proof),
       table: {
         category: 'Proof'
       }
@@ -80,7 +61,7 @@ export default {
     },
     processVariant: {
       control: 'select',
-      options: [...process, ...timeline],
+      options: Object.keys(service.process),
       table: {
         category: 'Process'
       }
@@ -94,7 +75,7 @@ export default {
     },
     transformationVariant: {
       control: 'select',
-      options: info,
+      options: Object.keys(service.transformation),
       table: {
         category: 'Transformation'
       }
@@ -108,7 +89,7 @@ export default {
     },
     faqVariant: {
       control: 'select',
-      options: faq,
+      options: Object.keys(service.faq),
       table: {
         category: 'FAQ'
       }
@@ -120,14 +101,14 @@ export default {
         category: 'FAQ'
       }
     },
-    ctaVariant: {
+    actionVariant: {
       control: 'select',
-      options: cta,
+      options: Object.keys(service.action),
       table: {
         category: 'CTA'
       }
     },
-    ctaTheme: {
+    actionTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -138,54 +119,69 @@ export default {
   parameters: {
     status: {
       type: 'beta'
+    },
+    docs: {
+      source: {
+        transform: (src, story) =>
+          `
+{{ header({ variant: '${story.args.heroVariant}', theme: '${story.args.heroTheme}', content: content.[service name].header }) }} 
+{{ info({ variant: '${story.args.problemVariant}', theme: '${story.args.problemTheme}', content: content.[service name].problem }) }} 
+{{ info({ variant: '${story.args.descriptionVariant}', theme: '${story.args.descriptionTheme}', content: content.[service name].description }) }}
+{{ info({ variant: '${story.args.proofVariant}', theme: '${story.args.proofTheme}', content: content.[service name].proof }) }} 
+{{ timeline({ variant: '${story.args.processVariant}', theme: '${story.args.processTheme}', content: content.[service name].process }) }}
+{{ info({ variant: '${story.args.transformationVariant}', theme: '${story.args.transformationTheme}', content: content.[service name].transformation }) }} 
+{{ faq({ variant: '${story.args.faqVariant}', theme: '${story.args.faqTheme}', content: content.[service name].faq }) }} 
+{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.[service name].cta }) }}
+          `
+      }
     }
   },
   args: {
-    headerTheme: 'background',
+    heroTheme: 'background',
+    heroVariant: 'center-bg-hero',
     problemTheme: 'background',
+    problemVariant: 'right-intro',
     descriptionTheme: 'background',
+    descriptionVariant: 'list-feature',
     proofTheme: 'background',
+    proofVariant: 'img-grid-gallery',
     processTheme: 'background',
-    packagesTheme: 'background',
+    processVariant: 'block-staggered-timeline',
     transformationTheme: 'background',
+    transformationVariant: 'offset-grid-feature',
     faqTheme: 'background',
-    ctaTheme: 'background'
+    faqVariant: 'card-grid-3-faq',
+    actionTheme: 'background',
+    actionVariant: 'left-img-action'
   }
 }
 
-export const Default = ({
-  headerVariant,
-  headerTheme,
-  problemVariant,
-  problemTheme,
-  descriptionVariant,
-  descriptionTheme,
-  proofVariant,
-  proofTheme,
-  processVariant,
-  processTheme,
-  packagesVariant,
-  packagesTheme,
-  transformationVariant,
-  transformationTheme,
-  faqVariant,
-  faqTheme,
-  ctaVariant,
-  ctaTheme
-}) =>
+export const Default = (args) =>
   `
-  ${renderHeader(storyProps({ variant: headerVariant, theme: headerTheme }))} 
-  ${renderInfo(storyProps({ variant: problemVariant, theme: problemTheme }))} 
-  ${renderInfo(
-    storyProps({ variant: descriptionVariant, theme: descriptionTheme })
-  )} 
-  ${renderInfo(storyProps({ variant: proofVariant, theme: proofTheme }))} 
-  ${renderTimeline(
-    storyProps({ variant: processVariant, theme: processTheme })
-  )} 
-  ${renderInfo(
-    storyProps({ variant: transformationVariant, theme: transformationTheme })
-  )} 
-  ${renderFaq(storyProps({ variant: faqVariant, theme: faqTheme }))} 
-  ${renderCta(storyProps({ variant: ctaVariant, theme: ctaTheme }))} 
+    ${service.hero[args.heroVariant]({
+      props: { theme: args.heroTheme }
+    })}
+    ${service.problem[args.problemVariant]({
+      props: { theme: args.problemTheme }
+    })}
+    ${service.description[args.descriptionVariant]({
+      props: { theme: args.descriptionTheme }
+    })}
+    ${service.proof[args.proofVariant]({
+      props: { theme: args.proofTheme }
+    })}
+    ${service.process[args.processVariant]({
+      props: { theme: args.processTheme }
+    })}
+    ${service.transformation[args.transformationVariant]({
+      props: {
+        theme: args.transformationTheme
+      }
+    })}
+    ${service.faq[args.faqVariant]({
+      props: { theme: args.faqTheme }
+    })}
+    ${service.action[args.actionVariant]({
+      props: { theme: args.actionTheme }
+    })}
   `

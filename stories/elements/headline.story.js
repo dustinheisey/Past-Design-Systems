@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Headlines',
+  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: 'select',
@@ -10,14 +11,13 @@ export default {
   args: { variant: 'hero' },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }
 }
 
-export const Default = ({ variant }) =>
-  ` <h1 class="${variant}-headline">Welcome to our website</h1> `
+export const Default = ({ variant }) => ` <h1 class="${variant}-headline">Welcome to our website</h1> `
 
 export const HeroHeadline = () => `
   <h1 class="hero-headline">Welcome to our website</h1>
@@ -43,8 +43,7 @@ PageHeadline.parameters = {
   }
 }
 
-export const RegionHeadline = () =>
-  ' <h2 class="region-headline">Our Services</h2> '
+export const RegionHeadline = () => ' <h2 class="region-headline">Our Services</h2> '
 
 RegionHeadline.parameters = {
   docs: {
@@ -55,8 +54,7 @@ RegionHeadline.parameters = {
   }
 }
 
-export const SectionHeadline = () =>
-  ' <h3 class="section-headline">Web Development</h3> '
+export const SectionHeadline = () => ' <h3 class="section-headline">Web Development</h3> '
 
 SectionHeadline.parameters = {
   docs: {

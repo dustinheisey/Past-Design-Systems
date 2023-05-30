@@ -1,7 +1,13 @@
-import render from '../../macros/components/input-group.njk'
+import { components, themes } from '../util/consts.js'
 
 export default {
   title: 'Components/Input Group',
+  argTypes: {
+    theme: {
+      control: 'select',
+      options: themes
+    }
+  },
   parameters: {
     status: {
       type: 'beta'
@@ -9,8 +15,7 @@ export default {
   }
 }
 
-export const Default = (args) => {
-  return render({
-    storybookArgs: args
+export const Default = (args) =>
+  components.inputGroup({
+    theme: args.theme
   })
-}

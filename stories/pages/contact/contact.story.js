@@ -1,21 +1,16 @@
-import renderHeader from '../../../macros/regions/header.njk'
-import renderForm from '../../../macros/regions/info.njk'
-import renderFaq from '../../../macros/regions/stats.njk'
-
-import { header, contact, faq, themes } from '../../util/consts.js'
-import { storyProps } from '../../util/funcs.js'
-
+import { pageRegions, themes } from '../../util/consts.js'
+const { contact } = pageRegions
 export default {
   title: 'Pages/Contact',
   argTypes: {
-    headerVariant: {
+    introVariant: {
       control: 'select',
-      options: header,
+      options: Object.keys(contact.intro),
       table: {
         category: 'Header'
       }
     },
-    headerTheme: {
+    introTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -24,7 +19,7 @@ export default {
     },
     formVariant: {
       control: 'select',
-      options: contact,
+      options: Object.keys(contact.form),
       table: {
         category: 'Form'
       }
@@ -38,7 +33,7 @@ export default {
     },
     faqVariant: {
       control: 'select',
-      options: faq,
+      options: Object.keys(contact.faq),
       table: {
         category: 'FAQ'
       }
@@ -54,24 +49,37 @@ export default {
   parameters: {
     status: {
       type: 'beta'
+    },
+    docs: {
+      source: {
+        transform: (src, story) =>
+          `
+{{ header({ variant: '${story.args.introVariant}', theme: '${story.args.introTheme}', content: content.contact.header }) }} 
+{{ contact({ variant: '${story.args.formVariant}', theme: '${story.args.formTheme}', content: content.contact.contact }) }} 
+{{ faq({ variant: '${story.args.faqVariant}', theme: '${story.args.faqTheme}', content: content.contact.faq }) }}
+          `
+      }
     }
   },
   args: {
-    headerTheme: 'background',
+    introTheme: 'background',
+    introVariant: 'center-intro',
     formTheme: 'background',
-    faqTheme: 'background'
+    formVariant: 'center-form',
+    faqTheme: 'background',
+    faqVariant: 'accordion-faq'
   }
 }
 
-export const Default = ({
-  headerVariant,
-  headerTheme,
-  formVariant,
-  formTheme,
-  faqVariant,
-  faqTheme
-}) =>
-  ` ${renderHeader(storyProps({ variant: headerVariant, theme: headerTheme }))} 
-  ${renderForm(storyProps({ variant: formVariant, theme: formTheme }))} 
-  ${renderFaq(storyProps({ variant: faqVariant, theme: faqTheme }))} 
-   `
+export const Default = (args) =>
+  ` 
+    ${contact.intro[args.introVariant]({
+      props: { theme: args.introTheme }
+    })}
+    ${contact.form[args.formVariant]({
+      props: { theme: args.formTheme }
+    })}
+    ${contact.faq[args.faqVariant]({
+      props: { theme: args.faqTheme }
+    })}
+  `

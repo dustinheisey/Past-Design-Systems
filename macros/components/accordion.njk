@@ -1,5 +1,16 @@
-{% macro render( props ) %}
-<details class="{% if props.theme %}theme-{{props.theme}}{% endif %}">
+{% if props.content %}
+{% for item in props.content %}
+<details class="theme-{{props.theme}}">
+  <summary>
+    <h4 class="title-headline">{{item.title}}</h4>
+  </summary>
+  <p>
+    {{item.body}}
+  </p>
+</details>
+{% endfor %}
+{% else %}
+<details class="theme-{{props.theme}}">
   <summary>
     <h4 class="title-headline">Question Title Text</h4>
   </summary>
@@ -12,4 +23,4 @@
     voluptate. Occaecat ad mollit exercitation velit et.
   </p>
 </details>
-{% endmacro %} {% if storybookArgs %} {{ render( storybookArgs ) }} {% endif %}
+{% endif %}

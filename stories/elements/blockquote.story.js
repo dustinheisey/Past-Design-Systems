@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Blockquote',
+  tags: ['autodocs'],
   parameters: {
     status: {
       type: 'beta'

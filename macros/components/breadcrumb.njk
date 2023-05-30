@@ -1,9 +1,7 @@
-{% macro render( props ) %}
-<nav class="breadcrumb {% if props.theme %}theme-{{props.theme}}{% endif %}" aria-label="Breadcrumb">
+<nav class="breadcrumb theme-{{props.theme}}" aria-label="Breadcrumb">
   <ol class="cluster gap-xs">
     <li><a href="#" class="link">Home</a></li>
     <li><a href="#" class="link">Section</a></li>
     <li aria-current="page"><a href="#" class="link">Subsection</a></li>
   </ol>
 </nav>
-{% endmacro %} {% if storybookArgs %} {{ render( storybookArgs ) }} {% endif %}

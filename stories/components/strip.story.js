@@ -1,8 +1,14 @@
-import render from '../../macros/components/strip.njk'
+import { components, themes } from '../util/consts.js'
 
 export default {
   title: 'Components/Strip',
   decorators: [(story) => `<div style="inline-size: 50vw;">${story()}</div>`],
+  argTypes: {
+    theme: {
+      control: 'select',
+      options: themes
+    }
+  },
   parameters: {
     status: {
       type: 'beta'
@@ -10,8 +16,7 @@ export default {
   }
 }
 
-export const Default = (args) => {
-  return render({
-    storybookArgs: args
+export const Default = (args) =>
+  components.strip({
+    theme: args.theme
   })
-}

@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Link',
+  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: 'select',
@@ -14,7 +15,7 @@ export default {
   args: { variant: 'inline' },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }

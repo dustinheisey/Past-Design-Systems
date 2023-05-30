@@ -1,16 +1,11 @@
-import renderHeader from '../../../macros/regions/header.njk'
-import renderGrid from '../../../macros/regions/info.njk'
-import renderCta from '../../../macros/regions/stats.njk'
-
-import { header, hero, blog, cta, themes } from '../../util/consts.js'
-import { storyProps } from '../../util/funcs.js'
-
+import { pageRegions, themes } from '../../util/consts.js'
+const { blog } = pageRegions
 export default {
   title: 'Pages/Blog',
   argTypes: {
     headerVariant: {
       control: 'select',
-      options: [...header, ...hero],
+      options: Object.keys(blog.hero),
       table: {
         category: 'Header'
       }
@@ -24,7 +19,7 @@ export default {
     },
     gridVariant: {
       control: 'select',
-      options: blog,
+      options: Object.keys(blog.grid),
       table: {
         category: 'Grid'
       }
@@ -36,14 +31,14 @@ export default {
         category: 'Grid'
       }
     },
-    ctaVariant: {
+    actionVariant: {
       control: 'select',
-      options: cta,
+      options: Object.keys(blog.action),
       table: {
         category: 'CTA'
       }
     },
-    ctaTheme: {
+    actionTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -54,23 +49,37 @@ export default {
   parameters: {
     status: {
       type: 'beta'
+    },
+    docs: {
+      source: {
+        transform: (src, story) =>
+          `
+{{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.blog.header }) }} 
+{{ blog({ variant: '${story.args.blogVariant}', theme: '${story.args.blogTheme}', content: content.blog.blog }) }} 
+{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.blog.cta }) }}
+          `
+      }
     }
   },
   args: {
     headerTheme: 'background',
+    headerVariant: 'left-hero',
     gridTheme: 'background',
-    ctaTheme: 'background'
+    gridVariant: 'card-grid-gallery',
+    actionTheme: 'background',
+    actionVariant: 'center-bg-action'
   }
 }
 
-export const Default = ({
-  headerVariant,
-  headerTheme,
-  gridVariant,
-  gridTheme,
-  ctaVariant,
-  ctaTheme
-}) =>
-  ` ${renderHeader(storyProps({ variant: headerVariant, theme: headerTheme }))} 
-  ${renderGrid(storyProps({ variant: gridVariant, theme: gridTheme }))} 
-  ${renderCta(storyProps({ variant: ctaVariant, theme: ctaTheme }))}  `
+export const Default = (args) =>
+  ` 
+    ${blog.hero[args.headerVariant]({
+      props: { theme: args.headerTheme }
+    })}
+    ${blog.grid[args.gridVariant]({
+      props: { theme: args.gridTheme }
+    })}
+    ${blog.action[args.actionVariant]({
+      props: { theme: args.actionTheme }
+    })}
+  `

@@ -16,6 +16,14 @@ const markdownItAnchor = require('markdown-it-anchor')
 const execFile = promisify(require('child_process').execFile)
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addCollection('everything', (collectionApi) => {
+    const macroImport = `{% from "region.njk" import error, blog, contact, post, cta, faq, footer, header, hero, info, logos, navbar, portfolio, stats, testimonials, timeline %}`
+    let collection = collectionApi.getFilteredByGlob('./*.njk')
+    collection.forEach((item) => {
+      item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`
+    })
+    return collection
+  })
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(inclusiveLangPlugin)
@@ -104,9 +112,9 @@ module.exports = function (eleventyConfig) {
     return content
   })
 
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
-  eleventyConfig.addLayoutAlias('category', 'layouts/category.njk')
+  eleventyConfig.addLayoutAlias('base', 'base.njk')
+  eleventyConfig.addLayoutAlias('post', 'post.njk')
+  eleventyConfig.addLayoutAlias('category', 'category.njk')
 
   eleventyConfig.addPassthroughCopy({ public: '/' })
   eleventyConfig.addWatchTarget('./index.js')
@@ -186,7 +194,8 @@ module.exports = function (eleventyConfig) {
       input: '.',
       output: '_site',
       data: '_data',
-      includes: '_includes'
+      includes: '../../macros',
+      layouts: '_layouts'
     }
   }
 }

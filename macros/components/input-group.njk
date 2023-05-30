@@ -1,6 +1,4 @@
-{% macro render( props ) %}
-<form class="input-group {% if props.theme %}theme-{{props.theme}}{% endif %}">
+<form class="input-group theme-{{props.theme}}">
   <input class="input" type="email" placeholder="Email Address" />
   <button type="submit" class="btn">Subscribe</button>
 </form>
-{% endmacro %} {% if storybookArgs %} {{ render( storybookArgs ) }} {% endif %}

@@ -1,5 +1,4 @@
-{% macro render( props ) %}
-<div class="blurb {% if props.theme %}theme-{{props.theme}}{% endif %}">
+<div class="blurb theme-{{props.theme}}">
   <svg focusable="false" class="icon icon-32">
     <use href="src/elements/text/icon/icons.svg#accessibility"></use>
   </svg>
@@ -14,4 +13,3 @@
       <use href="src/elements/text/icon/icons.svg#arrow-sm-right"></use>
     </svg></a>
 </div>
-{% endmacro %} {% if storybookArgs %} {{ render( storybookArgs ) }} {% endif %}

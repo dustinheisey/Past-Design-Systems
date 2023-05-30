@@ -1,8 +1,9 @@
 export default {
   title: 'Elements/Video',
+  tags: ['autodocs'],
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }

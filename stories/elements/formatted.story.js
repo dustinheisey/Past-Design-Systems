@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Formatted',
+  tags: ['autodocs'],
   argTypes: {
     tag: {
       control: 'select',
@@ -7,20 +8,7 @@ export default {
       table: {
         type: { summary: 'string' }
       },
-      options: [
-        'Del',
-        'Ins',
-        'Abbr',
-        'Bdi',
-        'Bdo',
-        'Mark',
-        'S',
-        'U',
-        'Wbr',
-        'code',
-        'pre',
-        'math'
-      ]
+      options: ['Del', 'Ins', 'Abbr', 'Bdi', 'Bdo', 'Mark', 'S', 'U', 'Wbr', 'code', 'pre', 'math']
     }
   },
   parameters: {

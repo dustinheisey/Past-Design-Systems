@@ -2,7 +2,7 @@ export default {
   title: 'Layouts/Frame',
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered',
     docs: {
@@ -19,12 +19,6 @@ export default {
     }
   }
 }
-
-export const Default = ({ variant }) => `
-  <div class="frame ${variant}">
-      <img src="https://placehold.co/600x400" alt="image name" />
-  </div>
-`
 
 export const Square = () => `
   <div class="frame square">

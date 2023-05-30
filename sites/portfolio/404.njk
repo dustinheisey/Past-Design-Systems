@@ -5,11 +5,4 @@ permalink: 404.html
 description: The page you're looking for could not be found. Please use the navigation to find what you're looking for, or contact me for further assistance.
 ---
 
-<section class="cover region cover-nav">
-  <div class="principle center-intrinsic prose">
-    <p class="overline">{{content.error.overline}}</p>
-    <h1 class="page-headline">{{content.error.headline}}</h1>
-    <p>{{content.error.body}}</p>
-    <a href="/" class="btn">{{content.error.btn}}</a>
-  </div>
-</section>
+{{ error({ variant: 'simple', theme: 'primary', content: content.error }) }}

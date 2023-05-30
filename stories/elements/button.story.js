@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Button',
+  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: 'select',

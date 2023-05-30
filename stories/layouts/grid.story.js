@@ -5,39 +5,9 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
-  }
-}
-
-export const Default = ({ columns }) =>
-  `
-    <div class="grid grid-${columns}">
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-      <img src="https://placehold.co/600x400" alt="image" />
-    </div>
-  `
-
-Default.parameters = {
-  docs: {
-    description: {
-      story:
-        'Use the Grid component when you want to display elements in a grid layout with automatically adjusting column width and customizable row and column spans.'
-    },
-    source: {
-      code: `
-<div class="center">
-</div>
-    `
-    }
   }
 }
 

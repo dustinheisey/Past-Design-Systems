@@ -1,28 +1,12 @@
-import renderHeader from '../../../macros/regions/header.njk'
-import renderStory from '../../../macros/regions/info.njk'
-import renderSkills from '../../../macros/regions/stats.njk'
-import renderPortfolio from '../../../macros/regions/portfolio.njk'
-import renderTestimonials from '../../../macros/regions/testimonials.njk'
-import renderCta from '../../../macros/regions/cta.njk'
-
-import {
-  header,
-  hero,
-  info,
-  stats,
-  portfolio,
-  testimonials,
-  cta,
-  themes
-} from '../../util/consts.js'
-import { storyProps } from '../../util/funcs.js'
+import { pageRegions, themes } from '../../util/consts.js'
+const { about } = pageRegions
 
 export default {
   title: 'Pages/About',
   argTypes: {
     headerVariant: {
       control: 'select',
-      options: [...header, ...hero],
+      options: Object.keys(about.hero),
       table: {
         category: 'Header'
       }
@@ -36,7 +20,7 @@ export default {
     },
     storyVariant: {
       control: 'select',
-      options: info,
+      options: Object.keys(about.story),
       table: {
         category: 'Story'
       }
@@ -50,7 +34,7 @@ export default {
     },
     skillsVariant: {
       control: 'select',
-      options: stats,
+      options: Object.keys(about.skills),
       table: {
         category: 'Skills'
       }
@@ -64,7 +48,7 @@ export default {
     },
     portfolioVariant: {
       control: 'select',
-      options: portfolio,
+      options: Object.keys(about.portfolio),
       table: {
         category: 'Portfolio'
       }
@@ -78,7 +62,7 @@ export default {
     },
     testimonialsVariant: {
       control: 'select',
-      options: testimonials,
+      options: Object.keys(about.testimonials),
       table: {
         category: 'Testimonials'
       }
@@ -90,14 +74,14 @@ export default {
         category: 'Testimonials'
       }
     },
-    ctaVariant: {
+    actionVariant: {
       control: 'select',
-      options: cta,
+      options: Object.keys(about.action),
       table: {
         category: 'CTA'
       }
     },
-    ctaTheme: {
+    actionTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -108,41 +92,55 @@ export default {
   parameters: {
     status: {
       type: 'beta'
+    },
+    docs: {
+      source: {
+        transform: (src, story) =>
+          `
+{{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.about.header }) }} 
+{{ info({ variant: '${story.args.storyVariant}', theme: '${story.args.storyTheme}', content: content.about.story }) }} 
+{{ stats({ variant: '${story.args.skillsVariant}', theme: '${story.args.skillsTheme}', content: content.about.skills }) }}
+{{ portfolio({ variant: '${story.args.portfolioVariant}', theme: '${story.args.portfolioTheme}', content: content.about.portfolio }) }} 
+{{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.about.testimonials }) }}
+{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.about.cta }) }}
+          `
+      }
     }
   },
   args: {
     headerTheme: 'background',
+    headerVariant: 'left-hero',
     storyTheme: 'background',
+    storyVariant: 'left-intro',
     skillsTheme: 'background',
+    skillsVariant: 'simple-4-stats',
     portfolioTheme: 'background',
+    portfolioVariant: 'card-grid-gallery',
     testimonialsTheme: 'background',
-    ctaTheme: 'background'
+    testimonialsVariant: 'left-avatar-testimonials',
+    actionTheme: 'background',
+    actionVariant: 'left-bg-action'
   }
 }
 
-export const Default = ({
-  headerVariant,
-  headerTheme,
-  storyVariant,
-  storyTheme,
-  skillsVariant,
-  skillsTheme,
-  portfolioVariant,
-  portfolioTheme,
-  testimonialsVariant,
-  testimonialsTheme,
-  ctaVariant,
-  ctaTheme
-}) =>
+export const Default = (args) =>
   `
-    ${renderHeader(storyProps({ variant: headerVariant, theme: headerTheme }))} 
-    ${renderStory(storyProps({ variant: storyVariant, theme: storyTheme }))} 
-    ${renderSkills(storyProps({ variant: skillsVariant, theme: skillsTheme }))}
-    ${renderPortfolio(
-      storyProps({ variant: portfolioVariant, theme: portfolioTheme })
-    )} 
-    ${renderTestimonials(
-      storyProps({ variant: testimonialsVariant, theme: testimonialsTheme })
-    )}
-    ${renderCta(storyProps({ variant: ctaVariant, theme: ctaTheme }))}
+    ${about.hero[args.headerVariant]({
+      theme: args.headerTheme
+    })} 
+    ${about.story[args.storyVariant]({
+      theme: args.storyTheme
+    })} 
+    ${about.skills[args.skillsVariant]({
+      theme: args.skillsTheme
+    })}
+    ${about.portfolio[args.portfolioVariant]({
+      theme: args.portfolioTheme
+    })} 
+    ${about.testimonials[args.testimonialsVariant]({
+      theme: args.testimonialsTheme
+    })}
+    ${about.action[args.actionVariant]({
+      theme: args.actionTheme
+    })}
   `

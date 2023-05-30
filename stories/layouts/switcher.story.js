@@ -2,15 +2,26 @@ export default {
   title: 'Layouts/Switcher',
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
+  },
+  argTypes: {
+    gap: {
+      control: {
+        type: 'select'
+      },
+      options: ['3xs', '2xs', 'xs', 's', 'm', 'l', 'xl', '2xl', '3xl', '4xl']
+    }
+  },
+  args: {
+    gap: 'xs'
   }
 }
 
-export const Default = () =>
+export const Default = ({ gap }) =>
   `
-    <div class="switcher switch-tablet gap">
+    <div class="switcher switch-tablet gap-${gap}">
       <div class="product prose">
         <img src="https://placehold.co/600x400" alt="Product Name" />
         <h3>Product Name</h3>
@@ -45,18 +56,3 @@ export const Default = () =>
       </div>
     </div>
   `
-
-Default.parameters = {
-  docs: {
-    description: {
-      story:
-        'The Switcher is ideal for situations where elements should be considered equal and can be displayed in either horizontal or vertical layouts, such as card components or numbered step lists.'
-    },
-    source: {
-      code: `
-<div class="switcher switch-phone">
-</div>
-    `
-    }
-  }
-}

@@ -1,19 +1,15 @@
-import render from '../../macros/regions/faq.njk'
+import { regions, themes } from '../util/consts.js'
 
 export default {
   title: 'Regions/FAQ',
   argTypes: {
     variant: {
-      control: { type: 'select' },
-      options: [
-        'offset',
-        'accordion',
-        'inline',
-        'blurb-grid-2',
-        'blurb-grid-3',
-        'card-grid-2',
-        'card-grid-3'
-      ]
+      control: 'select',
+      options: Object.keys(regions.faq)
+    },
+    theme: {
+      control: 'select',
+      options: themes
     }
   },
   parameters: {
@@ -23,11 +19,12 @@ export default {
   }
 }
 
-const Template = (args) => {
-  return render({
-    storybookArgs: args
-  })
-}
+const Template = (args) =>
+  `
+    ${regions.faq[args.variant]({
+      props: { theme: args.theme }
+    })}
+  `
 
 export const Offset = Template.bind({})
 export const Accordion = Template.bind({})
@@ -37,10 +34,10 @@ export const BlurbGrid3 = Template.bind({})
 export const CardGrid2 = Template.bind({})
 export const CardGrid3 = Template.bind({})
 
-Offset.args = { variant: 'offset' }
-Accordion.args = { variant: 'accordion' }
-Inline.args = { variant: 'inline' }
-BlurbGrid2.args = { variant: 'blurb-grid-2' }
-BlurbGrid3.args = { variant: 'blurb-grid-3' }
-CardGrid2.args = { variant: 'card-grid-2' }
-CardGrid3.args = { variant: 'card-grid-3' }
+Offset.args = { variant: 'offset-faq' }
+Accordion.args = { variant: 'accordion-faq' }
+Inline.args = { variant: 'inline-faq' }
+BlurbGrid2.args = { variant: 'blurb-grid-2-faq' }
+BlurbGrid3.args = { variant: 'blurb-grid-3-faq' }
+CardGrid2.args = { variant: 'card-grid-2-faq' }
+CardGrid3.args = { variant: 'card-grid-3-faq' }

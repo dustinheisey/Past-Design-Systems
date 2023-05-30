@@ -1,15 +1,7 @@
 /** @type { import('@storybook/html-webpack5').StorybookConfig } */
 
 const config = {
-  stories: [
-    '../tokens/*.mdx',
-    '../elements/*.story.js',
-    '../layouts/*.story.js',
-    '../components/*.story.js',
-    '../regions/*.story.js',
-    '../pages/**/*.story.js',
-    '../pages/**/*.mdx'
-  ],
+  stories: ['../**/*.story.js', '../**/*.mdx'],
   addons: [
     '@storybook/addon-a11y',
     '@storybook/addon-essentials',
@@ -19,9 +11,6 @@ const config = {
   framework: {
     name: '@storybook/html-webpack5',
     options: {}
-  },
-  docs: {
-    autodocs: 'tag'
   },
   webpackFinal: (config) => {
     config.module.rules.push({

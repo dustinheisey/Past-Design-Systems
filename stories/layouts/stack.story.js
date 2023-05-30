@@ -2,15 +2,26 @@ export default {
   title: 'Layouts/Stack',
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
+  },
+  argTypes: {
+    gap: {
+      control: {
+        type: 'select'
+      },
+      options: ['3xs', '2xs', 'xs', 's', 'm', 'l', 'xl', '2xl', '3xl', '4xl']
+    }
+  },
+  args: {
+    gap: 'xs'
   }
 }
 
-export const Default = () =>
+export const Default = ({ gap }) =>
   `
-    <ul class="stack gap-xs">
+    <ul class="stack gap-${gap}">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>

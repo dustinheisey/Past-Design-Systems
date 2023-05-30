@@ -1,24 +1,11 @@
-import renderHeader from '../../../macros/regions/header.njk'
-import renderGrid from '../../../macros/regions/portfolio.njk'
-import renderTestimonials from '../../../macros/regions/testimonials.njk'
-import renderCta from '../../../macros/regions/cta.njk'
-
-import {
-  header,
-  hero,
-  portfolio,
-  testimonials,
-  cta,
-  themes
-} from '../../util/consts.js'
-import { storyProps } from '../../util/funcs.js'
-
+import { pageRegions, themes } from '../../util/consts.js'
+const { portfolio } = pageRegions
 export default {
   title: 'Pages/Portfolio',
   argTypes: {
     headerVariant: {
       control: 'select',
-      options: [...header, ...hero],
+      options: Object.keys(portfolio.hero),
       table: {
         category: 'Header'
       }
@@ -32,7 +19,7 @@ export default {
     },
     gridVariant: {
       control: 'select',
-      options: portfolio,
+      options: Object.keys(portfolio.grid),
       table: {
         category: 'Grid'
       }
@@ -46,7 +33,7 @@ export default {
     },
     testimonialsVariant: {
       control: 'select',
-      options: testimonials,
+      options: Object.keys(portfolio.testimonials),
       table: {
         category: 'Testimonials'
       }
@@ -58,14 +45,14 @@ export default {
         category: 'Testimonials'
       }
     },
-    ctaVariant: {
+    actionVariant: {
       control: 'select',
-      options: cta,
+      options: Object.keys(portfolio.action),
       table: {
         category: 'CTA'
       }
     },
-    ctaTheme: {
+    actionTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -76,31 +63,46 @@ export default {
   parameters: {
     status: {
       type: 'beta'
+    },
+    docs: {
+      source: {
+        transform: (src, story) =>
+          `
+{{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.portfolio.header }) }} 
+{{ info({ variant: '${story.args.storyVariant}', theme: '${story.args.storyTheme}', content: content.portfolio.story }) }} 
+{{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.portfolio.testimonials }) }}
+{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.portfolio.cta }) }}
+          `
+      }
     }
   },
   args: {
     headerTheme: 'background',
+    headerVariant: 'angled-bottom-left-hero',
     gridTheme: 'background',
+    gridVariant: 'img-grid-gallery',
     testimonialsTheme: 'background',
-    ctaTheme: 'background'
+    testimonialsVariant: 'simple-quote-testimonials',
+    actionTheme: 'background',
+    actionVariant: 'left-img-action'
   }
 }
 
-export const Default = ({
-  headerVariant,
-  headerTheme,
-  gridVariant,
-  gridTheme,
-  testimonialsVariant,
-  testimonialsTheme,
-  ctaVariant,
-  ctaTheme
-}) =>
+export const Default = (args) =>
   `
-  ${renderHeader(storyProps({ variant: headerVariant, theme: headerTheme }))} 
-  ${renderGrid(storyProps({ variant: gridVariant, theme: gridTheme }))} 
-  ${renderTestimonials(
-    storyProps({ variant: testimonialsVariant, theme: testimonialsTheme })
-  )} 
-  ${renderCta(storyProps({ variant: ctaVariant, theme: ctaTheme }))} 
+    ${portfolio.hero[args.headerVariant]({
+      props: { theme: args.headerTheme, content: args.headerContent }
+    })}
+    ${portfolio.grid[args.gridVariant]({
+      props: { theme: args.gridTheme, content: args.gridContent }
+    })}
+    ${portfolio.testimonials[args.testimonialsVariant]({
+      props: {
+        theme: args.testimonialsTheme,
+        content: args.testimonialsContent
+      }
+    })}
+    ${portfolio.action[args.actionVariant]({
+      props: { theme: args.actionTheme }
+    })}
   `

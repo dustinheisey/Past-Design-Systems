@@ -1,5 +1,6 @@
 export default {
   title: 'Elements/Label',
+  tags: ['autodocs'],
   argTypes: {
     required: {
       control: 'boolean',
@@ -12,14 +13,13 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
     layout: 'centered'
   }
 }
 
-export const Default = ({ required }) =>
-  ` <label class="${required ? 'required' : ''}">Input Label</label> `
+export const Default = ({ required }) => ` <label class="${required ? 'required' : ''}">Input Label</label> `
 
 export const Required = () => ' <label class="required">Input Label</label> '
 

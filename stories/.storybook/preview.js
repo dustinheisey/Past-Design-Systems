@@ -1,5 +1,4 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { themes } from '../util/consts.js'
 import '../../styles/style.min.css'
 
 export default {
@@ -14,6 +13,7 @@ export default {
     viewport: {
       viewports: INITIAL_VIEWPORTS
     },
+    viewMode: 'docs',
     options: {
       storySort: {
         order: [
