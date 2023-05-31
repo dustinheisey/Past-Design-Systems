@@ -1,29 +1,29 @@
-{%- macro error(props) -%}
-{% include "./regions/error/" + props.variant + ".njk" ignore missing %}
+{%- macro action(props) -%}
+{% include "./regions/action/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
-{%- macro blog(props) -%}
-{% include "./regions/blog/" + props.variant + ".njk" ignore missing %}
-{%- endmacro -%}
-
-{%- macro contact(props) -%}
-{% include "./regions/contact/" + props.variant + ".njk" ignore missing %}
-{%- endmacro -%}
-
-{%- macro post(props) -%}
-{% include "./regions/post/" + props.variant + ".njk" ignore missing %}
-{%- endmacro -%}
-
-{%- macro cta(props) -%}
-{% include "./regions/cta/" + props.variant + ".njk" ignore missing %}
+{%- macro copy(props) -%}
+{% include "./regions/copy/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
 {%- macro faq(props) -%}
 {% include "./regions/faq/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
+{%- macro feature(props) -%}
+{% include "./regions/feature/" + props.variant + ".njk" ignore missing %}
+{%- endmacro -%}
+
 {%- macro footer(props) -%}
 {% include "./regions/footer/" + props.variant + ".njk" ignore missing %}
+{%- endmacro -%}
+
+{%- macro form(props) -%}
+{% include "./regions/form/" + props.variant + ".njk" ignore missing %}
+{%- endmacro -%}
+
+{%- macro gallery(props) -%}
+{% include "./regions/gallery/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
 {%- macro header(props) -%}
@@ -34,20 +34,16 @@
 {% include "./regions/hero/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
-{%- macro info(props) -%}
-{% include "./regions/info/" + props.variant + ".njk" ignore missing %}
+{%- macro intro(props) -%}
+{% include "./regions/intro/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
 {%- macro logos(props) -%}
 {% include "./regions/logos/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
-{%- macro navbar(props) -%}
-{% include "./regions/navbar/" + props.variant + ".njk" ignore missing %}
-{%- endmacro -%}
-
-{%- macro portfolio(props) -%}
-{% include "./regions/portfolio/" + props.variant + ".njk" ignore missing %}
+{%- macro pricing(props) -%}
+{% include "./regions/pricing/" + props.variant + ".njk" ignore missing %}
 {%- endmacro -%}
 
 {%- macro stats(props) -%}

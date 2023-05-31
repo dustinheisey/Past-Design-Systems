@@ -17,8 +17,8 @@ const execFile = promisify(require('child_process').execFile)
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('everything', (collectionApi) => {
-    const macroImport = `{% from "region.njk" import error, blog, contact, post, cta, faq, footer, header, hero, info, logos, navbar, portfolio, stats, testimonials, timeline %}`
-    let collection = collectionApi.getFilteredByGlob('./*.njk')
+    const macroImport = `{% from "../../../macros/region.njk" import action, copy, faq, feature, footer, form, gallery, header, hero, intro, logos, pricing, stats, testimonials, timeline %}`
+    let collection = collectionApi.getFilteredByGlob('./templates/*.njk')
     collection.forEach((item) => {
       item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`
     })
@@ -28,27 +28,24 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(inclusiveLangPlugin)
   eleventyConfig.addPlugin(pluginPWA, {
-    swDest: './_site/sw.js',
-    globDirectory: './_site',
+    swDest: './site/sw.js',
+    globDirectory: './site',
     sourcemap: false,
     inlineWorkboxRuntime: true
   })
 
+  eleventyConfig.addGlobalData('permalink', () => {
+    return (data) => `${data.page.filePathStem.substring(10)}.${data.page.outputFileExtension}`
+  })
+
   eleventyConfig.addNunjucksAsyncShortcode(
     'image',
-    async (
-      src,
-      alt,
-      className = undefined,
-      widths = [400, 800, 1280],
-      formats = ['webp', 'jpeg'],
-      sizes = '100vw'
-    ) => {
+    async (src, alt, className = undefined, widths = [400, 800, 1280], formats = ['webp', 'jpeg'], sizes = '100vw') => {
       const imageMetadata = await Image(src, {
         widths: [...widths, null],
         formats: [...formats, null],
         urlPath: '/assets/',
-        outputDir: './_site/assets/'
+        outputDir: './site/assets/'
       })
 
       const imageAttributes = {
@@ -69,30 +66,24 @@ module.exports = function (eleventyConfig) {
     return metadata.svg[0].buffer.toString()
   })
 
-  eleventyConfig.addTransform(
-    'purge-and-inline-css',
-    async (content, outputPath) => {
-      if (outputPath && outputPath.endsWith('.html')) {
-        const purgeCssResult = await new PurgeCSS().purge({
-          content: [{ raw: content, extension: 'html' }],
-          css: ['../../styles/style.min.css'],
-          extractors: [
-            {
-              extractor: purgeCssFromHtml,
-              extensions: ['html']
-            }
-          ]
-        })
+  eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
+    if (outputPath && outputPath.endsWith('.html')) {
+      const purgeCssResult = await new PurgeCSS().purge({
+        content: [{ raw: content, extension: 'html' }],
+        css: ['../../styles/style.min.css'],
+        extractors: [
+          {
+            extractor: purgeCssFromHtml,
+            extensions: ['html']
+          }
+        ]
+      })
 
-        const after = csso.minify(purgeCssResult[0].css).css
-        return content.replace(
-          '<!-- INLINE CSS -->',
-          `<style> ${after} </style>`
-        )
-      }
-      return content
+      const after = csso.minify(purgeCssResult[0].css).css
+      return content.replace('<!-- INLINE CSS -->', `<style> ${after} </style>`)
     }
-  )
+    return content
+  })
 
   eleventyConfig.addTransform('minify-html', (rawContent, outputPath) => {
     let content = rawContent
@@ -117,7 +108,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('category', 'category.njk')
 
   eleventyConfig.addPassthroughCopy({ public: '/' })
-  eleventyConfig.addWatchTarget('./index.js')
+  eleventyConfig.addPassthroughCopy({ '../../scripts/index.min.js': 'index.min.js' })
+
+  eleventyConfig.addWatchTarget('../../scripts/index.min.js')
   eleventyConfig.addWatchTarget('./posts/*.md')
   eleventyConfig.addWatchTarget('../../styles/style.min.css')
 
@@ -140,12 +133,7 @@ module.exports = function (eleventyConfig) {
 
   async function lastModifiedDate(filename) {
     try {
-      const { stdout } = await execFile('git', [
-        'log',
-        '-1',
-        '--format=%cd',
-        filename
-      ])
+      const { stdout } = await execFile('git', ['log', '-1', '--format=%cd', filename])
       return new Date(stdout)
     } catch (e) {
       console.error(e.message)
@@ -157,22 +145,19 @@ module.exports = function (eleventyConfig) {
   // Cache the lastModifiedDate call because shelling out to git is expensive.
   // This means the lastModifiedDate will never change per single eleventy invocation.
   const lastModifiedDateCache = new Map()
-  eleventyConfig.addNunjucksAsyncFilter(
-    'lastModifiedDate',
-    function (filename, callback) {
-      const call = (result) => {
-        result.then((date) => callback(null, date))
-        result.catch((error) => callback(error))
-      }
-      const cached = lastModifiedDateCache.get(filename)
-      if (cached) {
-        return call(cached)
-      }
-      const promise = lastModifiedDate(filename)
-      lastModifiedDateCache.set(filename, promise)
-      call(promise)
+  eleventyConfig.addNunjucksAsyncFilter('lastModifiedDate', function (filename, callback) {
+    const call = (result) => {
+      result.then((date) => callback(null, date))
+      result.catch((error) => callback(error))
     }
-  )
+    const cached = lastModifiedDateCache.get(filename)
+    if (cached) {
+      return call(cached)
+    }
+    const promise = lastModifiedDate(filename)
+    lastModifiedDateCache.set(filename, promise)
+    call(promise)
+  })
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -192,10 +177,10 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: '.',
-      output: '_site',
-      data: '_data',
+      output: 'site',
+      data: 'data',
       includes: '../../macros',
-      layouts: '_layouts'
+      layouts: '../../macros/layouts'
     }
   }
 }

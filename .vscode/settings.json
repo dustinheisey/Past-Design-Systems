@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "docs": true,
+    ".eslintrc": true,
+    ".gitignore": true,
+    ".prettierrc": true,
+    ".stylelintrc": true,
+    "postcss.config.js": true,
+    "package-lock.json": true,
+    "node_modules": true,
+    ".eslintignore": true,
+    "eleventy-design-system.code-workspace": true,
+    "rollup.config.js": true,
+    "ally.config.json": true,
+    ".vscode": true
+  }
+}
