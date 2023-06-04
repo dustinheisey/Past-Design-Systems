@@ -16,12 +16,25 @@ const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const execFile = promisify(require('child_process').execFile)
 const svgSprite = require('eleventy-plugin-svg-sprite')
+// const eleventyHTMLValidate = require('eleventy-plugin-html-validate')
+// const logicalContentFlow = require('eleventy-plugin-logical-content-flow')
+const sitemap = require('@quasibit/eleventy-plugin-sitemap')
+// const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
 
 module.exports = function (eleventyConfig) {
   // ? Plugins
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(inclusiveLangPlugin)
+  // eleventyConfig.addPlugin(eleventyHTMLValidate)
+  // eleventyConfig.addPlugin(logicalContentFlow)
+  // eleventyConfig.addPlugin(EleventyVitePlugin)
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: 'https://dustinheisey.com'
+    }
+  })
+
   eleventyConfig.addPlugin(svgSprite, {
     path: '../../public/icons',
     globalClasses: 'icon',
