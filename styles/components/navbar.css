@@ -101,9 +101,7 @@ nav {
   color: var(--color-primary);
 }
 
-.bottombar > .fab {
-  bottom: var(--space-2xl);
-  right: var(--space-3xs);
+.fab {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +113,16 @@ nav {
   aspect-ratio: 1/1;
   fill: var(--color-on-primary);
   color: var(--color-on-primary);
-  position: fixed;
+  position: absolute;
+  bottom: 100%;
+  right: var(--space-3xs);
+  margin-inline-end: var(--space-3xs);
+  margin-block-end: var(--space-xs);
+}
+
+.bottombar > ul > .fab > a {
+  padding-block-start: 0;
+  padding-block-end: 0;
 }
 
 @media (--tablet-portrait-up) {

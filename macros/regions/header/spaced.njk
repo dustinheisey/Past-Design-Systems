@@ -69,8 +69,8 @@
                         </a>
                     </li>
                     {% endfor %}
-                    <li>
-                        <a href="{{props.config.bottombar.fab.url}}" class="fab">
+                    <li class="fab">
+                        <a href="{{props.config.bottombar.fab.url}}">
                             <span class="sr-only">{{props.config.bottombar.fab.label}}</span>
                             {% if props.storybook %}
                             <img class="icon" src="../../public/icons/{{props.config.bottombar.fab.icon}}.svg" alt="{{props.config.bottombar.fab.icon}}" />
