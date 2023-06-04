@@ -1,4 +1,5 @@
 const Image = require('@11ty/eleventy-img')
+const path = require('path')
 const { promisify } = require('util')
 const { DateTime } = require('luxon')
 const fs = require('fs')
@@ -14,19 +15,19 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const execFile = promisify(require('child_process').execFile)
+const svgSprite = require('eleventy-plugin-svg-sprite')
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addCollection('everything', (collectionApi) => {
-    const macroImport = `{% from "../../../macros/region.njk" import action, copy, faq, feature, footer, form, gallery, header, hero, intro, logos, pricing, stats, testimonials, timeline %}`
-    let collection = collectionApi.getFilteredByGlob('./templates/*.njk')
-    collection.forEach((item) => {
-      item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`
-    })
-    return collection
-  })
+  // ? Plugins
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(inclusiveLangPlugin)
+  eleventyConfig.addPlugin(svgSprite, {
+    path: '../../public/icons',
+    globalClasses: 'icon',
+    svgSpriteShortcode: 'iconsprite',
+    svgShortcode: 'icon'
+  })
   eleventyConfig.addPlugin(pluginPWA, {
     swDest: './site/sw.js',
     globDirectory: './site',
@@ -34,38 +35,73 @@ module.exports = function (eleventyConfig) {
     inlineWorkboxRuntime: true
   })
 
+  // ? Global Data
   eleventyConfig.addGlobalData('permalink', () => {
     return (data) => `${data.page.filePathStem.substring(10)}.${data.page.outputFileExtension}`
   })
 
-  eleventyConfig.addNunjucksAsyncShortcode(
-    'image',
-    async (src, alt, className = undefined, widths = [400, 800, 1280], formats = ['webp', 'jpeg'], sizes = '100vw') => {
-      const imageMetadata = await Image(src, {
-        widths: [...widths, null],
-        formats: [...formats, null],
-        urlPath: '/assets/',
-        outputDir: './site/assets/'
-      })
+  // ? Collections
+  eleventyConfig.addCollection('templates', (collectionApi) => {
+    const macroImport = `{% from "../../../macros/region.njk" import action, copy, faq, feature, footer, form, gallery, header, hero, intro, logos, pricing, stats, testimonials, timeline %}`
+    let collection = collectionApi.getFilteredByGlob('./templates/*.njk')
+    collection.forEach((item) => {
+      item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`
+    })
+    return collection
+  })
+  eleventyConfig.addCollection('sub-templates', (collectionApi) => {
+    const macroImport = `{% from "../../../../macros/region.njk" import action, copy, faq, feature, footer, form, gallery, header, hero, intro, logos, pricing, stats, testimonials, timeline %}`
+    let collection = collectionApi.getFilteredByGlob('./templates/*/*.njk')
+    collection.forEach((item) => {
+      item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`
+    })
+    return collection
+  })
 
-      const imageAttributes = {
+  // ? Shortcodes
+  eleventyConfig.addNunjucksShortcode('img', function (src, alt, cls, sizes = '100vw', widths) {
+    try {
+      let options = {
+        widths: [400, 800, 1280],
+        formats: ['webp', 'jpeg'],
+        outputDir: './site/img/',
+        filenameFormat: function (id, src, width, format, options) {
+          const extension = path.extname(src)
+          const name = path.basename(src, extension)
+
+          return `${name}-${width}w.${format}`
+        }
+      }
+
+      // generate images, while this is async we don’t wait
+      Image(src, options)
+
+      let imageAttributes = {
+        class: cls,
         alt,
         sizes,
         loading: 'lazy',
         decoding: 'async'
       }
-
-      return Image.generateHTML(imageMetadata, imageAttributes)
+      // get metadata even if the images are not fully generated yet
+      let metadata = Image.statsSync(src, options)
+      return Image.generateHTML(metadata, imageAttributes)
+    } catch (error) {
+      console.log(error)
     }
-  )
-  eleventyConfig.addNunjucksAsyncShortcode('svg', async (src) => {
-    let metadata = await Image(src, {
-      formats: ['svg'],
-      dryRun: true
-    })
-    return metadata.svg[0].buffer.toString()
   })
 
+  eleventyConfig.addShortcode('svg', function (file) {
+    let relativeFilePath = `${file}.svg`
+    let data = fs.readFileSync(relativeFilePath, function (err, contents) {
+      if (err) return err
+      return contents
+    })
+
+    return data.toString('utf8')
+  })
+
+  // ? Transforms
   eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
     if (outputPath && outputPath.endsWith('.html')) {
       const purgeCssResult = await new PurgeCSS().purge({
@@ -84,7 +120,6 @@ module.exports = function (eleventyConfig) {
     }
     return content
   })
-
   eleventyConfig.addTransform('minify-html', (rawContent, outputPath) => {
     let content = rawContent
     if (outputPath && outputPath.endsWith('.html')) {
@@ -103,30 +138,34 @@ module.exports = function (eleventyConfig) {
     return content
   })
 
+  // ? Layout Aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk')
   eleventyConfig.addLayoutAlias('post', 'post.njk')
   eleventyConfig.addLayoutAlias('category', 'category.njk')
 
+  // ? Passthrough Copies
   eleventyConfig.addPassthroughCopy({ public: '/' })
+  eleventyConfig.addPassthroughCopy({ icons: '/icons' })
   eleventyConfig.addPassthroughCopy({ '../../scripts/index.min.js': 'index.min.js' })
 
+  // ? Watch Targets
   eleventyConfig.addWatchTarget('../../scripts/index.min.js')
   eleventyConfig.addWatchTarget('./posts/*.md')
   eleventyConfig.addWatchTarget('../../styles/style.min.css')
+  eleventyConfig.addWatchTarget('../../macros/**/*.njk')
+  eleventyConfig.addWatchTarget('./public/*')
 
+  // ? Filters
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
   })
-
   eleventyConfig.addFilter('tagsOnly', (tag) => {
     return tag.filter((item) => item !== 'post')
   })
-
   eleventyConfig.addFilter('getCategory', (categories, categoryTag) => {
     let postCategory = categoryTag.find((item) => item !== 'post')
     return categories.find((item) => item.data.label === postCategory)
   })
-
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy')
   })
@@ -180,7 +219,7 @@ module.exports = function (eleventyConfig) {
       output: 'site',
       data: 'data',
       includes: '../../macros',
-      layouts: '../../macros/layouts'
+      layouts: 'layouts'
     }
   }
 }

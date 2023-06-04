@@ -4,48 +4,6 @@ title: See Some Past Projects
 description: Check out some of my previous web design projects that prioritize accessibility, sustainability, and social impact.
 ---
 
-<div class="region cover cover-nav">
-  <div class="principle">
-    <div class="sidebar reverse sidebar-split gap-m">
-      <div class="frame square">
-        {% image content.portfolio.header.img.src,
-        content.portfolio.header.img.alt %}
-      </div>
-      <div class="prose fixed">
-        <h1>{{content.portfolio.header.headline}}</h1>
-        <p>{{content.portfolio.header.body}}</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="region stack gap-xl">
-  <section class="prose center center-intrinsic text-center">
-    <h2 class="region-headline">{{content.portfolio.projects.headline}}</h2>
-    <p>{{content.portfolio.projects.body}}</p>
-  </section>
-  <div class="region grid grid-2 inset-0 row-gap-xl">
-    {% for project in content.portfolio.projects.projects %}
-    <div class="stack gap-xs">
-      <div class="frame photo rounded">
-        {# {% image project.img, "" %} #} {% image project.image.src,
-        project.image.alt %}
-      </div>
-      <h3 class="section-headline">
-        <a href="{{project.url}}" class="link-navigation">
-          {{project.headline}}
-        </a>
-      </h3>
-      <p>{{project.body}}</p>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<div class="region bg-pattern theme-primary">
-  <div class="prose">
-    <h2 class="region-headline">{{content.cta.headline}}</h2>
-    <p>{{content.cta.body}}</p>
-    <a href="/contact" class="btn">Start a Project</a>
-  </div>
-</div>
+{{ intro({ variant: 'img-end', content: content.portfolio.hero }) }}
+{{ gallery({ variant: 'img-grid', content: content.portfolio.grid }) }}
+{{ action({variant: 'bg-pattern', pattern: 'topogrophy', theme: 'primary', content: content.action }) }}

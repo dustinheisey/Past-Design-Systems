@@ -37,7 +37,5 @@ export default {
 
 export const Default = (args) =>
   `
-    ${error[args.errorVariant]({
-      props: { theme: args.errorTheme }
-    })}
+    ${error[args.errorVariant]({ storybook: true, props: { theme: args.errorTheme } })}
   `

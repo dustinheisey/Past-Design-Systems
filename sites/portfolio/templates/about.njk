@@ -4,53 +4,7 @@ title: Web Designer for Accessible, Sustainable, Impactful Sites
 description: I'm Dustin Heisey and I'm committed to creating accessible, sustainable, and socially impactful websites. Get to know me and see how I can transform your online presence.
 ---
 
-<div class="cover region cover-nav">
-  <div class="principle">
-    <div class="sidebar reverse sidebar-split gap-m">
-      <div class="frame square">
-        {% image content.about.header.img.src, content.about.header.img.alt %}
-      </div>
-      <div class="prose fixed">
-        <p class="overline">{{content.about.header.overline}}</p>
-        <h1>{{content.about.header.headline}}</h1>
-        <p>{{content.about.header.body}}</p>
-        <a href="/contact" class="btn">Start a Project</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="region sidebar align-stretch sidebar-split gap-m">
-  <div class="frame">
-    {% image content.about.introduction.img.src,
-    content.about.introduction.img.alt %}
-  </div>
-  <div class="prose fixed">
-    <p class="lead">{{content.about.introduction.intro}}</p>
-    <p>{{content.about.introduction.value}}</p>
-  </div>
-</div>
-
-<div class="stack region">
-  <section class="prose center center-intrinsic">
-    <h2 class="region-headline">{{content.about.skills.headline}}</h2>
-  </section>
-  <div class="grid grid-4 align-start gap-xl">
-    {% for skill in content.about.skills.skills %}
-    <div class="prose stack center-intrinsic gap-2xs">
-      <svg focusable="false" class="icon icon-xl">
-        <use href="/assets/icons.svg#{{skill.icon}}"></use>
-      </svg>
-      <h3 class="title-headline">{{skill.headline}}</h3>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<div class="region bg-pattern theme-primary">
-  <div class="prose">
-    <h2 class="region-headline">{{content.cta.headline}}</h2>
-    <p>{{content.cta.body}}</p>
-    <a href="/contact" class="btn">Start a Project</a>
-  </div>
-</div>
+{{ intro({variant: 'img-end', content: content.about.hero }) }}
+{{ feature({variant: 'description', content: content.about.introduction }) }}
+{{ feature({variant: 'blurb-grid', content: content.about.skills }) }}
+{{ action({variant: 'bg-pattern', pattern: 'topogrophy', theme: 'primary', content: content.action }) }}

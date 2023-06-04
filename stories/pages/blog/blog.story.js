@@ -35,14 +35,14 @@ export default {
       control: 'select',
       options: Object.keys(blog.action),
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     actionTheme: {
       control: 'select',
       options: themes,
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     }
   },
@@ -56,7 +56,7 @@ export default {
           `
 {{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.blog.header }) }} 
 {{ blog({ variant: '${story.args.blogVariant}', theme: '${story.args.blogTheme}', content: content.blog.blog }) }} 
-{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.blog.cta }) }}
+{{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.blog.action }) }}
           `
       }
     }
@@ -73,13 +73,7 @@ export default {
 
 export const Default = (args) =>
   ` 
-    ${blog.hero[args.headerVariant]({
-      props: { theme: args.headerTheme }
-    })}
-    ${blog.grid[args.gridVariant]({
-      props: { theme: args.gridTheme }
-    })}
-    ${blog.action[args.actionVariant]({
-      props: { theme: args.actionTheme }
-    })}
+    ${blog.hero[args.headerVariant]({ storybook: true, props: { theme: args.headerTheme } })}
+    ${blog.grid[args.gridVariant]({ storybook: true, props: { theme: args.gridTheme } })}
+    ${blog.action[args.actionVariant]({ storybook: true, props: { theme: args.actionTheme } })}
   `

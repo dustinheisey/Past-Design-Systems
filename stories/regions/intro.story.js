@@ -17,7 +17,7 @@ export default {
 const Template = (args) =>
   `
     ${regions.intro[args.variant]({
-      props: { theme: args.theme }
+      props: { storybook: true, theme: args.theme }
     })}
   `
 

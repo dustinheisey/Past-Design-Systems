@@ -44,9 +44,10 @@
 <div class="banner theme-{{props.theme}}" data-component="dismissible-item">
   <p>Hello world</p>
   <button type="button">
-    <svg focusable="false" class="icon">
-      <use href="src/elements/text/icon/icons.svg#remove"></use>
-    </svg>
-    <span class="sr-only">Close</span>
+    {% if props.storybook %}
+    <img src="../../public/icons/remove.svg" alt="remove" />
+    {% else %}
+    {% icon 'remove' %}
+    {% endif %}
   </button>
 </div>

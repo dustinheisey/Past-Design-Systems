@@ -73,13 +73,7 @@ export default {
 
 export const Default = (args) =>
   ` 
-    ${contact.intro[args.introVariant]({
-      props: { theme: args.introTheme }
-    })}
-    ${contact.form[args.formVariant]({
-      props: { theme: args.formTheme }
-    })}
-    ${contact.faq[args.faqVariant]({
-      props: { theme: args.faqTheme }
-    })}
+    ${contact.intro[args.introVariant]({ storybook: true, props: { theme: args.introTheme } })}
+    ${contact.form[args.formVariant]({ storybook: true, props: { theme: args.formTheme } })}
+    ${contact.faq[args.faqVariant]({ storybook: true, props: { theme: args.faqTheme } })}
   `

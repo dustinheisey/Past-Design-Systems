@@ -1,51 +1,22 @@
-<div class="stack gap-s theme-{{props.theme}}">
-    <div class="prose center center-intrinsic">
-        <h2 class="region-headline">Frequently Asked Questions</h2>
-        <p>
-            Officia sit tempor et exercitation ex laboris aute cupidatat pariatur
-            adipisicing tempor. Nisi laboris nostrud quis sunt dolor.
-        </p>
-    </div>
-    <div class="grid grid-2">
-        <div class="stack gap-s">
-            <div class="inline align-start gap-xs">
-                <svg focusable="false" class="icon">
-                    <use href="src/elements/text/icon/icons.svg#remove"></use>
-                </svg>
-                <p><strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.</p>
-            </div>
-            <div class="inline align-start gap-xs">
-                <svg focusable="false" class="icon">
-                    <use href="src/elements/text/icon/icons.svg#remove"></use>
-                </svg>
-                <p><strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.</p>
-            </div>
-            <div class="inline align-start gap-xs">
-                <svg focusable="false" class="icon">
-                    <use href="src/elements/text/icon/icons.svg#remove"></use>
-                </svg>
-                <p><strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.</p>
-            </div>
-        </div>
-        <div class="stack gap-s">
-            <div class="inline align-start gap-xs">
-                <svg focusable="false" class="icon">
-                    <use href="src/elements/text/icon/icons.svg#remove"></use>
-                </svg>
-                <p><strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.</p>
-            </div>
-            <div class="inline align-start gap-xs">
-                <svg focusable="false" class="icon">
-                    <use href="src/elements/text/icon/icons.svg#remove"></use>
-                </svg>
-                <p><strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.</p>
-            </div>
-            <div class="inline align-start gap-xs">
-                <svg focusable="false" class="icon">
-                    <use href="src/elements/text/icon/icons.svg#remove"></use>
-                </svg>
-                <p><strong>Nulla nisi est</strong> incididunt nisi deserunt laborum.</p>
-            </div>
-        </div>
-    </div>
+{# Status: TODO #}
+<div class="region stack gap-xl">
+    <section class="prose center">
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
+    <ul class="grid grid-2 gap-s">
+        {% for item in props.content.list %}
+        <li class="inline align-start gap-xs">
+            {% if props.storybook %}
+            <img class="icon icon-secondary" src="../../public/icons/{{item.icon}}.svg" alt="{{item.icon}}" />
+            {% else %}
+            {% if props.storybook %}
+            <img class="icon icon-secondary" src="../../public/icons/{{item.icon}}.svg" alt="{item.icon}" />
+            {% else %}
+            {% icon item.icon, "icon-secondary" %}
+            {% endif %}
+            {% endif %}
+            {{item.text}}
+        </li>
+        {% endfor %}
+    </ul>
 </div>

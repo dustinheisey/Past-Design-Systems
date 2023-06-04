@@ -1,0 +1,13 @@
+{# Status: TODO #}
+<div class="region bg-pattern pattern-{{props.pattern}} theme-{{props.theme}}">
+    <section class="prose">
+        {% if props.content.headline %}
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+        {% endif %}
+        {% if props.content.lead %}
+        <p class="lead auto">{{props.content.lead}}</p>
+        {% else %}
+        <p>{{props.content.body}}</p>
+        {% endif %}
+    </section>
+</div>

@@ -1,12 +1,23 @@
-<section class="cover cover-s theme-{{props.theme}}">
-    <div class="principle center-intrinsic prose">
-        <h1 class="page-headline">Headline Text</h1>
-        <p class="text-center">
-            Tempor ad ullamco commodo velit. Sunt fugiat minim qui deserunt nulla
-            deserunt id cupidatat qui aliqu.
+{# Status: Stable #}
+<div class="region theme-{{props.theme or 'background'}}">
+    <section class="principle center center-intrinsic prose">
+        {% if props.content.overline %}
+        <p class="overline">
+            {{props.content.overline}}
         </p>
-        <div class="sidebar">
-            <input class="input" type="email" placeholder="Email Address" /><a href="/" class="btn fixed">Call to Action</a>
-        </div>
-    </div>
-</section>
+        {% endif %}
+        <h1 class="page-headline">{{props.content.headline or 'Tempor labore aliqua esse et ullamco id enim.'}}</h1>
+        <p>
+            {{props.content.body or 'Cupidatat amet exercitation anim ea reprehenderit. Deserunt nostrud ad incididunt sint do duis cillum velit eiusmod. Magna exercitation ipsum proident elit est ullamco laborum.'}}
+        </p>
+        {% if props.content.input %}
+        <form class="input-group sidebar gap-0" name="newsletter" method="POST" data-netlify="true">
+            <label class="sr-only required" for="newsletter-email">{{props.content.input.label or 'Email Address'}}</label>
+            <input type="{{props.content.input.type or 'email'}}" id="newsletter-email" name="newsletter-email" class="input" placeholder="{{props.content.input.placeholder or 'Email Address'}}" required />
+            <button type="submit" class="fixed btn btn-primary">{{props.content.btn.label or 'Subscribe'}}</button>
+        </form>
+        {% else %}
+        <a href="{{props.content.btn.href or '/'}}" class="btn">{{props.content.btn.label or 'Go Home'}}</a>
+        {% endif %}
+    </section>
+</div>

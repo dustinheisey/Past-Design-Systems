@@ -11,25 +11,29 @@ import navbar from '../../macros/components/navbar.njk'
 import strip from '../../macros/components/strip.njk'
 
 // ? Region Imports
-import centerBgAction from '../../macros/regions/action/center-bg.njk'
-import centerGradientAction from '../../macros/regions/action/center-gradient.njk'
-import centerImgAction from '../../macros/regions/action/center-img.njk'
-import justifiedAction from '../../macros/regions/action/justified.njk'
-import leftBgAction from '../../macros/regions/action/left-bg.njk'
-import leftGradientAction from '../../macros/regions/action/left-gradient.njk'
-import leftImgAction from '../../macros/regions/action/left-img.njk'
-import rightBgAction from '../../macros/regions/action/right-bg.njk'
-import rightGradientAction from '../../macros/regions/action/right-gradient.njk'
-import rightImgAction from '../../macros/regions/action/right-img.njk'
-import simpleLeftAction from '../../macros/regions/action/simple-left.njk'
-import simpleRightAction from '../../macros/regions/action/simple-right.njk'
+import bgCenterAction from '../../macros/regions/action/bg-center.njk'
+import bgEndAction from '../../macros/regions/action/bg-end.njk'
+import bgPatternAction from '../../macros/regions/action/bg-pattern.njk'
+import bgStartAction from '../../macros/regions/action/bg-start.njk'
+import coverEndAction from '../../macros/regions/action/cover-end.njk'
+import coverStartAction from '../../macros/regions/action/cover-start.njk'
+import coverAction from '../../macros/regions/action/cover.njk'
+import gradientCenterAction from '../../macros/regions/action/gradient-center.njk'
+import gradientEndAction from '../../macros/regions/action/gradient-end.njk'
+import gradientStartAction from '../../macros/regions/action/gradient-start.njk'
+import imgCenterAction from '../../macros/regions/action/img-center.njk'
+import imgEndAction from '../../macros/regions/action/img-end.njk'
+import imgStartAction from '../../macros/regions/action/img-start.njk'
+import inlineAction from '../../macros/regions/action/inline.njk'
+import simpleEndAction from '../../macros/regions/action/simple-end.njk'
+import simpleStartAction from '../../macros/regions/action/simple-start.njk'
 import simpleAction from '../../macros/regions/action/simple.njk'
-import splitLeftAction from '../../macros/regions/action/split-left.njk'
-import splitRightAction from '../../macros/regions/action/split-right.njk'
-import tiles2LeftAction from '../../macros/regions/action/tiles-2-left.njk'
-import tiles2RightAction from '../../macros/regions/action/tiles-2-right.njk'
-import tiles3LeftAction from '../../macros/regions/action/tiles-3-left.njk'
-import tiles3RightAction from '../../macros/regions/action/tiles-3-right.njk'
+import splitEndAction from '../../macros/regions/action/split-end.njk'
+import splitStartAction from '../../macros/regions/action/split-start.njk'
+import tiles2EndAction from '../../macros/regions/action/tiles-2-end.njk'
+import tiles2StartAction from '../../macros/regions/action/tiles-2-start.njk'
+import tiles3EndAction from '../../macros/regions/action/tiles-3-end.njk'
+import tiles3StartAction from '../../macros/regions/action/tiles-3-start.njk'
 
 import postCopy from '../../macros/regions/copy/post.njk'
 
@@ -41,13 +45,15 @@ import cardGrid3Faq from '../../macros/regions/faq/card-grid-3.njk'
 import inlineFaq from '../../macros/regions/faq/inline.njk'
 import offsetFaq from '../../macros/regions/faq/offset.njk'
 
+import bgPatternFeature from '../../macros/regions/feature/bg-pattern.njk'
 import blurbGridFeature from '../../macros/regions/feature/blurb-grid.njk'
 import cardGridFeature from '../../macros/regions/feature/card-grid.njk'
-import leftImgFeature from '../../macros/regions/feature/left-img.njk'
+import descriptionFeature from '../../macros/regions/feature/description.njk'
+import imgEndFeature from '../../macros/regions/feature/img-end.njk'
 import listFeature from '../../macros/regions/feature/list.njk'
 import offsetGridFeature from '../../macros/regions/feature/offset-grid.njk'
 import offsetListFeature from '../../macros/regions/feature/offset-list.njk'
-import rightImgFeature from '../../macros/regions/feature/right-img.njk'
+import imgStartFeature from '../../macros/regions/feature/img-start.njk'
 
 import inlineFooter from '../../macros/regions/footer/inline.njk'
 import missionBgFooter from '../../macros/regions/footer/mission-bg.njk'
@@ -58,15 +64,16 @@ import simpleBgFooter from '../../macros/regions/footer/simple-bg.njk'
 import simpleFooter from '../../macros/regions/footer/simple.njk'
 
 import centerForm from '../../macros/regions/form/center.njk'
-import splitLeftForm from '../../macros/regions/form/split-left.njk'
-import splitRightForm from '../../macros/regions/form/split-right.njk'
+import splitEndForm from '../../macros/regions/form/split-end.njk'
+import splitStartForm from '../../macros/regions/form/split-start.njk'
 
 import cardGridGallery from '../../macros/regions/gallery/card-grid.njk'
 import featuredCardGridGallery from '../../macros/regions/gallery/featured-card-grid.njk'
 import featuredMixedGridGallery from '../../macros/regions/gallery/featured-mixed-grid.njk'
 import featuredTextGridGallery from '../../macros/regions/gallery/featured-text-grid.njk'
 import imgGridGallery from '../../macros/regions/gallery/img-grid.njk'
-import leftGallery from '../../macros/regions/gallery/left.njk'
+import masonryGallery from '../../macros/regions/gallery/masonry.njk'
+import startGallery from '../../macros/regions/gallery/start.njk'
 import stackGallery from '../../macros/regions/gallery/stack.njk'
 import textGridGallery from '../../macros/regions/gallery/text-grid.njk'
 import cardGrid2Gallery from '../../macros/regions/gallery/card-grid-2.njk'
@@ -77,31 +84,33 @@ import spacedHeader from '../../macros/regions/header/spaced.njk'
 import stackedHeader from '../../macros/regions/header/stacked.njk'
 import startHeader from '../../macros/regions/header/start.njk'
 
-import angledBottomLeftHero from '../../macros/regions/hero/angled-bottom-left.njk'
-import angledBottomRightHero from '../../macros/regions/hero/angled-bottom-right.njk'
-import angledTopLeftHero from '../../macros/regions/hero/angled-top-left.njk'
-import angledTopRightHero from '../../macros/regions/hero/angled-top-right.njk'
-import centerBgHero from '../../macros/regions/hero/center-bg.njk'
-import centerGradientHero from '../../macros/regions/hero/center-gradient.njk'
-import centerImgHero from '../../macros/regions/hero/center-img.njk'
-import leftBgHero from '../../macros/regions/hero/left-bg.njk'
-import leftGradientHero from '../../macros/regions/hero/left-gradient.njk'
-import leftImgHero from '../../macros/regions/hero/left-img.njk'
-import leftHero from '../../macros/regions/hero/left.njk'
-import rightBgHero from '../../macros/regions/hero/right-bg.njk'
-import rightGradientHero from '../../macros/regions/hero/right-gradient.njk'
-import rightImgHero from '../../macros/regions/hero/right-img.njk'
-import rightHero from '../../macros/regions/hero/right.njk'
-import splitLeftHero from '../../macros/regions/hero/split-left.njk'
-import splitRightHero from '../../macros/regions/hero/split-right.njk'
-import tiles2LeftHero from '../../macros/regions/hero/tiles-2-left.njk'
-import tiles2RightHero from '../../macros/regions/hero/tiles-2-right.njk'
-import tiles3LeftHero from '../../macros/regions/hero/tiles-3-left.njk'
-import tiles3RightHero from '../../macros/regions/hero/tiles-3-right.njk'
+import angledBlockEndStartHero from '../../macros/regions/hero/angled-block-end-start.njk'
+import angledBlockEndEndHero from '../../macros/regions/hero/angled-block-end-end.njk'
+import angledBlockStartStartHero from '../../macros/regions/hero/angled-block-start-start.njk'
+import angledBlockStartEndHero from '../../macros/regions/hero/angled-block-start-end.njk'
+import bgCenterHero from '../../macros/regions/hero/bg-center.njk'
+import bgEndHero from '../../macros/regions/hero/bg-end.njk'
+import bgStartHero from '../../macros/regions/hero/bg-start.njk'
+import endHero from '../../macros/regions/hero/end.njk'
+import gradientCenterHero from '../../macros/regions/hero/gradient-center.njk'
+import gradientEndHero from '../../macros/regions/hero/gradient-end.njk'
+import gradientStartHero from '../../macros/regions/hero/gradient-start.njk'
+import imgCenterHero from '../../macros/regions/hero/img-center.njk'
+import imgEndHero from '../../macros/regions/hero/img-end.njk'
+import imgStartHero from '../../macros/regions/hero/img-start.njk'
+import startHero from '../../macros/regions/hero/start.njk'
+import splitEndHero from '../../macros/regions/hero/split-end.njk'
+import splitStartHero from '../../macros/regions/hero/split-start.njk'
+import tiles2StartHero from '../../macros/regions/hero/tiles-2-start.njk'
+import tiles2EndHero from '../../macros/regions/hero/tiles-2-end.njk'
+import tiles3StartHero from '../../macros/regions/hero/tiles-3-start.njk'
+import tiles3EndHero from '../../macros/regions/hero/tiles-3-end.njk'
 
 import centerIntro from '../../macros/regions/intro/center.njk'
-import leftIntro from '../../macros/regions/intro/left.njk'
-import rightIntro from '../../macros/regions/intro/right.njk'
+import startIntro from '../../macros/regions/intro/start.njk'
+import endIntro from '../../macros/regions/intro/end.njk'
+import imgStartIntro from '../../macros/regions/intro/img-start.njk'
+import imgEndIntro from '../../macros/regions/intro/img-end.njk'
 
 import gridLogos from '../../macros/regions/logos/grid.njk'
 import simpleLogos from '../../macros/regions/logos/simple.njk'
@@ -110,17 +119,17 @@ import splitLogos from '../../macros/regions/logos/split.njk'
 // pricing single, tiers-dividers, tiers
 
 import descriptionStats from '../../macros/regions/stats/description.njk'
-import imgLeftStats from '../../macros/regions/stats/img-left.njk'
-import imgRightStats from '../../macros/regions/stats/img-right.njk'
+import imgEndStats from '../../macros/regions/stats/img-end.njk'
+import imgStartStats from '../../macros/regions/stats/img-start.njk'
 import simple3Stats from '../../macros/regions/stats/simple-3.njk'
 import simple4Stats from '../../macros/regions/stats/simple-4.njk'
-import splitLeftStats from '../../macros/regions/stats/split-left.njk'
-import splitRightStats from '../../macros/regions/stats/split-right.njk'
+import splitEndStats from '../../macros/regions/stats/split-end.njk'
+import splitStartStats from '../../macros/regions/stats/split-start.njk'
 
-import centerQuoteTestimonials from '../../macros/regions/testimonials/center-quote.njk'
-import leftAvatarTestimonials from '../../macros/regions/testimonials/left-avatar.njk'
-import rightAvatarTestimonials from '../../macros/regions/testimonials/right-avatar.njk'
-import simpleQuoteTestimonials from '../../macros/regions/testimonials/simple-quote.njk'
+import avatarEndTestimonials from '../../macros/regions/testimonials/avatar-end.njk'
+import avatarStartTestimonials from '../../macros/regions/testimonials/avatar-start.njk'
+import quoteCenterTestimonials from '../../macros/regions/testimonials/quote-center.njk'
+import quoteSimpleTestimonials from '../../macros/regions/testimonials/quote-simple.njk'
 
 import blockStaggeredTimeline from '../../macros/regions/timeline/block-staggered.njk'
 import blockStartTimeline from '../../macros/regions/timeline/block-start.njk'
@@ -146,37 +155,42 @@ export const regions = {
     'featured-card-grid-gallery': featuredCardGridGallery,
     'featured-mixed-grid-gallery': featuredMixedGridGallery,
     'featured-text-grid-gallery': featuredTextGridGallery,
+    'masonry-gallery': masonryGallery,
     'img-grid-gallery': imgGridGallery,
-    'left-gallery': leftGallery,
+    'start-gallery': startGallery,
     'stack-gallery': stackGallery,
     'text-grid-gallery': textGridGallery,
     'card-grid-2-gallery': cardGrid2Gallery
   },
   form: {
     'center-form': centerForm,
-    'split-left-form': splitLeftForm,
-    'split-right-form': splitRightForm
+    'split-start-form': splitStartForm,
+    'split-end-form': splitEndForm
   },
   action: {
-    'center-bg-action': centerBgAction,
-    'center-gradient-action': centerGradientAction,
-    'center-img-action': centerImgAction,
-    'justified-action': justifiedAction,
-    'left-bg-action': leftBgAction,
-    'left-gradient-action': leftGradientAction,
-    'left-img-action': leftImgAction,
-    'right-bg-action': rightBgAction,
-    'right-gradient-action': rightGradientAction,
-    'right-img-action': rightImgAction,
-    'simple-left-action': simpleLeftAction,
-    'simple-right-action': simpleRightAction,
+    'bg-pattern': bgPatternAction,
+    'cover-end': coverEndAction,
+    'cover-start': coverStartAction,
+    cover: coverAction,
+    'bg-center-action': bgCenterAction,
+    'gradient-center-action': gradientCenterAction,
+    'img-center-action': imgCenterAction,
+    'inline-action': inlineAction,
+    'bg-start-action': bgStartAction,
+    'gradient-start-action': gradientStartAction,
+    'img-start-action': imgStartAction,
+    'bg-end-action': bgEndAction,
+    'gradient-end-action': gradientEndAction,
+    'img-end-action': imgEndAction,
+    'simple-start-action': simpleStartAction,
+    'simple-end-action': simpleEndAction,
     'simple-action': simpleAction,
-    'split-left-action': splitLeftAction,
-    'split-right-action': splitRightAction,
-    'tiles-2-left-action': tiles2LeftAction,
-    'tiles-2-right-action': tiles2RightAction,
-    'tiles-3-left-action': tiles3LeftAction,
-    'tiles-3-right-action': tiles3RightAction
+    'split-start-action': splitStartAction,
+    'split-end-action': splitEndAction,
+    'tiles-2-start-action': tiles2StartAction,
+    'tiles-2-end-action': tiles2EndAction,
+    'tiles-3-start-action': tiles3StartAction,
+    'tiles-3-end-action': tiles3EndAction
   },
   faq: {
     'accordion-faq': accordionFaq,
@@ -198,40 +212,44 @@ export const regions = {
   },
   intro: {
     'center-intro': centerIntro,
-    'left-intro': leftIntro,
-    'right-intro': rightIntro
+    'end-intro': endIntro,
+    'start-intro': startIntro,
+    'img-end': imgEndIntro,
+    'img-start': imgStartIntro
   },
   hero: {
-    'angled-bottom-left-hero': angledBottomLeftHero,
-    'angled-bottom-right-hero': angledBottomRightHero,
-    'angled-top-left-hero': angledTopLeftHero,
-    'angled-top-right-hero': angledTopRightHero,
-    'center-bg-hero': centerBgHero,
-    'center-gradient-hero': centerGradientHero,
-    'center-img-hero': centerImgHero,
-    'left-bg-hero': leftBgHero,
-    'left-gradient-hero': leftGradientHero,
-    'left-img-hero': leftImgHero,
-    'left-hero': leftHero,
-    'right-bg-hero': rightBgHero,
-    'right-gradient-hero': rightGradientHero,
-    'right-img-hero': rightImgHero,
-    'right-hero': rightHero,
-    'split-left-hero': splitLeftHero,
-    'split-right-hero': splitRightHero,
-    'tiles-2-left-hero': tiles2LeftHero,
-    'tiles-2-right-hero': tiles2RightHero,
-    'tiles-3-left-hero': tiles3LeftHero,
-    'tiles-3-right-hero': tiles3RightHero
+    'angled-block-end-end-hero': angledBlockEndEndHero,
+    'angled-block-end-start-hero': angledBlockEndStartHero,
+    'angled-block-start-end-hero': angledBlockStartEndHero,
+    'angled-block-start-start-hero': angledBlockStartStartHero,
+    'bg-center-hero': bgCenterHero,
+    'gradient-center-hero': gradientCenterHero,
+    'img-center-hero': imgCenterHero,
+    'bg-start-hero': bgStartHero,
+    'gradient-start-hero': gradientStartHero,
+    'img-start-hero': imgStartHero,
+    'start-hero': startHero,
+    'bg-end-hero': bgEndHero,
+    'gradient-end-hero': gradientEndHero,
+    'img-end-hero': imgEndHero,
+    'end-hero': endHero,
+    'split-start-hero': splitStartHero,
+    'split-end-hero': splitEndHero,
+    'tiles-2-start-hero': tiles2StartHero,
+    'tiles-2-end-hero': tiles2EndHero,
+    'tiles-3-start-hero': tiles3StartHero,
+    'tiles-3-end-hero': tiles3EndHero
   },
   feature: {
+    'bg-pattern-feature': bgPatternFeature,
     'blurb-grid-feature': blurbGridFeature,
     'card-grid-feature': cardGridFeature,
-    'left-img-feature': leftImgFeature,
+    'description-feature': descriptionFeature,
+    'img-start-feature': imgStartFeature,
     'list-feature': listFeature,
     'offset-grid-feature': offsetGridFeature,
     'offset-list-feature': offsetListFeature,
-    'right-img-feature': rightImgFeature
+    'img-end-feature': imgEndFeature
   },
   logos: {
     'grid-logos': gridLogos,
@@ -250,18 +268,18 @@ export const regions = {
   },
   stats: {
     'description-stats': descriptionStats,
-    'img-left-stats': imgLeftStats,
-    'img-right-stats': imgRightStats,
+    'img-end-stats': imgEndStats,
+    'img-start-stats': imgStartStats,
     'simple-3-stats': simple3Stats,
     'simple-4-stats': simple4Stats,
-    'split-left-stats': splitLeftStats,
-    'split-right-stats': splitRightStats
+    'split-end-stats': splitEndStats,
+    'split-start-stats': splitStartStats
   },
   testimonials: {
-    'center-quote-testimonials': centerQuoteTestimonials,
-    'left-avatar-testimonials': leftAvatarTestimonials,
-    'right-avatar-testimonials': rightAvatarTestimonials,
-    'simple-quote-testimonials': simpleQuoteTestimonials
+    'avatar-end-testimonials': avatarEndTestimonials,
+    'avatar-start-testimonials': avatarStartTestimonials,
+    'quote-center-testimonials': quoteCenterTestimonials,
+    'quote-simple-testimonials': quoteSimpleTestimonials
   },
   timeline: {
     'block-staggered-timeline': blockStaggeredTimeline,
@@ -296,9 +314,9 @@ export const pageRegions = {
     faq: regions.faq
   },
   error: {
-    'center-bg-action': centerBgAction,
+    'bg-center-action': bgCenterAction,
     'simple-action': simpleAction,
-    'split-left-action': splitLeftAction
+    'split-start-action': splitStartAction
   },
   footer: regions.footer,
   landing: {

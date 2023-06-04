@@ -28,6 +28,7 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@etchteam/storybook-addon-status": "^4.2.4",
     "@rollup/plugin-terser": "^0.4.3",
     "@storybook/addon-a11y": "^7.0.18",
     "@storybook/addon-essentials": "^7.0.18",
@@ -38,6 +39,7 @@
     "eleventy-plugin-gen-favicons": "^1.1.2",
     "eleventy-plugin-html-validate": "^0.0.5",
     "eleventy-plugin-pwa-v2": "^1.0.0",
+    "eleventy-plugin-svg-sprite": "^2.4.0",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard": "^17.1.0",
@@ -59,10 +61,9 @@
     "react-dom": "^18.2.0",
     "simple-nunjucks-loader": "^3.2.0",
     "storybook": "^7.0.18",
+    "storybook-dark-mode": "^3.0.0",
     "stylelint-config-standard": "^33.0.0",
-    "util": "^0.12.5",
-    "@etchteam/storybook-addon-status": "^4.2.4",
-    "storybook-dark-mode": "^3.0.0"
+    "util": "^0.12.5"
   },
   "engines": {
     "node": ">=12.0.0",

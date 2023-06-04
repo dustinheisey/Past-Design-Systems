@@ -1,126 +1,64 @@
-<footer class="bg-img theme-{{props.theme}}">
-    <img src="https://generative-placeholders.glitch.me/image?width=200&height=100" alt="placeholder" />
-    <div class="stack align-center inset-xl">
+{# Status: TODO #}
+<footer class="bg-img theme-{{props.theme or 'background'}}">
+    <img src="{{props.bg}}" alt="" />
+    <div class="full stack align-center region">
         <div class="cluster justify-between full gap-xl align-start">
-            <div class="stack gap-xs prose prose-s">
-                <h4>Subscribe to our newsletter</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    euismod eu lorem et ultricies.
+            <div class="stack gap-xs prose">
+                <h3 class="title-headline">{{props.content.newsletter.headline}}</h3>
+                <p class="measure-s">
+                    {{props.content.newsletter.body}}
                 </p>
-                <form class="input-group sidebar gap-0">
-                    <input type="email" class="input" placeholder="Email" />
-                    <button type="submit" class="fixed btn btn-primary">
-                        Subscribe
-                    </button>
+                <form class="input-group sidebar gap-0" name="newsletter" method="POST" data-netlify="true">
+                    <label class="sr-only required" for="newsletter-email">Email Address</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" class="input" placeholder="Email Address" required />
+                    <button type="submit" class="fixed btn btn-primary">Subscribe</button>
                 </form>
             </div>
-            <div class="cluster gap-xl align-start">
-                <div class="stack gap-2xs">
-                    <h4>Solutions</h4>
-                    <ul class="stack gap-2xs">
+            <div class="cluster gap-2xl align-start">
+                {% for group in props.config.footer.groups %}
+                <div class="stack stack-bg gap-2xs">
+                    <h3 class="title-headline">{{group.title}}</h3>
+                    <ul class="stack gap-xs">
+                        {% for link in group.links %}
                         <li>
-                            <a href="/" class="link link-navigation">Service 1</a>
+                            <a href="{{ link.url }}" class="link link-s link-navigation">
+                                {{ link.label }}
+                            </a>
                         </li>
-                        <li>
-                            <a href="/about" class="link link-navigation">Service 2</a>
-                        </li>
-                        <li>
-                            <a href="/services" class="link link-navigation">Service 3</a>
-                        </li>
-                        <li>
-                            <a href="/portfolio" class="link link-navigation">Service 4</a>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
-                <div class="stack gap-2xs">
-                    <h4>Support</h4>
-                    <ul class="stack gap-2xs">
-                        <li>
-                            <a href="/" class="link link-navigation">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="/about" class="link link-navigation">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="/services" class="link link-navigation">Guides</a>
-                        </li>
-                        <li>
-                            <a href="/portfolio" class="link link-navigation">API Status</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="stack gap-2xs">
-                    <h4>Company</h4>
-                    <ul class="stack gap-2xs">
-                        <li>
-                            <a href="/" class="link link-navigation">Home</a>
-                        </li>
-                        <li>
-                            <a href="/about" class="link link-navigation">About</a>
-                        </li>
-                        <li>
-                            <a href="/services" class="link link-navigation">Jobs</a>
-                        </li>
-                        <li>
-                            <a href="/portfolio" class="link link-navigation">Press</a>
-                        </li>
-                        <li>
-                            <a href="/contact" class="link link-navigation">Partners</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="stack gap-2xs">
-                    <h4>Legal</h4>
-                    <ul class="stack gap-2xs">
-                        <li>
-                            <a href="/" class="link link-navigation">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="/about" class="link link-navigation">Terms</a>
-                        </li>
-                    </ul>
-                </div>
+                {% endfor %}
             </div>
         </div>
         <hr />
-
+        {% if props.carbon === true %}
+        <div class="cluster full card theme-surface inset-s justify-center">
+            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        </div>
+        {% endif %}
         <div class="cluster full justify-between">
-            <ul class="cluster">
+            <ul class="cluster gap-xs">
+                {% for link in props.config.footer.social %}
                 <li>
-                    <a href="/" class="btn btn-tertiary">
-                        <span class="sr-only">Link Text</span>
-                        <svg focusable="false" class="icon">
-                            <use href="src/elements/icon/icons.svg#audio-description-1" />
-                        </svg>
-                    </a>
-                    <a href="/" class="btn btn-tertiary">
-                        <span class="sr-only">Link Text</span>
-                        <svg focusable="false" class="icon">
-                            <use href="src/elements/icon/icons.svg#audio-description-1" />
-                        </svg>
-                    </a>
-                    <a href="/" class="btn btn-tertiary">
-                        <span class="sr-only">Link Text</span>
-                        <svg focusable="false" class="icon">
-                            <use href="src/elements/icon/icons.svg#audio-description-1" />
-                        </svg>
-                    </a>
-                    <a href="/" class="btn btn-tertiary">
-                        <span class="sr-only">Link Text</span>
-                        <svg focusable="false" class="icon">
-                            <use href="src/elements/icon/icons.svg#audio-description-1" />
-                        </svg>
-                    </a>
-                    <a href="/" class="btn btn-tertiary">
-                        <span class="sr-only">Link Text</span>
-                        <svg focusable="false" class="icon">
-                            <use href="src/elements/icon/icons.svg#audio-description-1" />
-                        </svg>
+                    <a href="{{link.url}}" target="_blank" class="btn btn-circular">
+                        <span class="sr-only">{{link.label}}</span>
+                        {% if props.storybook %}
+                        <img class="icon" src="../../public/icons/{{link.icon}}.svg" alt="{{link.icon}}" />
+                        {% else %}
+                        {% if props.storybook %}
+                        <img class="icon" src="../../public/icons/{{link.icon}}.svg" alt="{{link.icon}}" />
+                        {% else %}
+                        {% icon link.icon %}
+                        {% endif %}
+                        {% endif %}
+                        <tool-tip tip-position="block-start"> {{link.label}} </tool-tip>
                     </a>
                 </li>
+                {% endfor %}
             </ul>
-            <small>&copy; 2023 Your nonprofit, All rights reserved.</small>
+            <small class="copywrite">{{props.content.copywrite}}</small>
         </div>
     </div>
 </footer>

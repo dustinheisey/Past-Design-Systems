@@ -7,6 +7,10 @@ picture {
   height: auto;
 }
 
+picture {
+  border-radius: var(--radius-m);
+}
+
 img {
   border-radius: var(--radius-m);
   max-inline-size: 100%;

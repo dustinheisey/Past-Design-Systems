@@ -17,7 +17,7 @@ module.exports = {
       { label: 'Portfolio', url: '/portfolio' },
       { label: 'Blog', url: '/blog' }
     ],
-    cta: { label: 'Start a Project', url: '/contact' }
+    action: { label: 'Start a Project', url: '/contact' }
   },
   bottombar: {
     links: [
@@ -74,22 +74,22 @@ module.exports = {
     social: [
       {
         label: 'Medium',
-        icon: 'medium',
+        icon: 'logo-medium',
         url: 'https://medium.com/@dustin_heisey'
       },
       {
         label: 'Dribbble',
-        icon: 'dribbble',
+        icon: 'logo-dribbble',
         url: 'https://dribbble.com/dustin_heisey'
       },
       {
         label: 'Behance',
-        icon: 'behance',
+        icon: 'logo-behance',
         url: 'https://www.behance.net/dustin_heisey'
       },
       {
         label: 'LinkedIn',
-        icon: 'linkedin',
+        icon: 'logo-linkedin',
         url: 'https://www.linkedin.com/in/heiseydustin/'
       }
     ]

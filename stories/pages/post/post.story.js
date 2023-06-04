@@ -35,14 +35,14 @@ export default {
       control: 'select',
       options: Object.keys(post.action),
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     actionTheme: {
       control: 'select',
       options: themes,
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     }
   },
@@ -56,7 +56,7 @@ export default {
           `
 {{ header({ variant: '${story.args.introVariant}', theme: '${story.args.introTheme}', content: content.post.header }) }} 
 {{ post({ variant: '${story.args.copyVariant}', theme: '${story.args.copyTheme}', content: content.post.post }) }} 
-{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.post.cta }) }}
+{{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.post.action }) }}
           `
       }
     }
@@ -73,13 +73,7 @@ export default {
 
 export const Default = (args) =>
   `
-    ${post.intro[args.introVariant]({
-      props: { theme: args.introTheme }
-    })}
-    ${post.copy[args.copyVariant]({
-      props: { theme: args.copyTheme }
-    })}
-    ${post.action[args.actionVariant]({
-      props: { theme: args.actionTheme }
-    })}
+    ${post.intro[args.introVariant]({ storybook: true, props: { theme: args.introTheme } })}
+    ${post.copy[args.copyVariant]({ storybook: true, props: { theme: args.copyTheme } })}
+    ${post.action[args.actionVariant]({ storybook: true, props: { theme: args.actionTheme } })}
   `

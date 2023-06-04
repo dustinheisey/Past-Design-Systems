@@ -12,6 +12,7 @@
     "eleventy-design-system.code-workspace": true,
     "rollup.config.js": true,
     "ally.config.json": true,
-    ".vscode": true
+    ".vscode": true,
+    "sites\\blue-horizons": true
   }
 }

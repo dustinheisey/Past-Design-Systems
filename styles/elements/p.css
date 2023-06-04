@@ -27,6 +27,7 @@ p {
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-overline);
   font-weight: var(--font-weight-headline);
+  min-inline-size: unset;
 }
 
 .color-primary {

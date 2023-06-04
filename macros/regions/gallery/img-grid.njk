@@ -1,146 +1,23 @@
-<div class="region stack theme-{{props.theme}}">
-    <section class="prose">
-        <h1 class="page-headline">Blog Title</h1>
-        <p>
-            In aliquip magna minim aliqua ipsum dolor anim voluptate in incididunt
-            consectetur quis Lorem.
-        </p>
+{# Status: TODO #}
+<div class="region stack gap-xl">
+    <section class="prose center center-intrinsic text-center">
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+        <p>{{props.content.body}}</p>
     </section>
-    <div class="grid grid-3">
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
+    <div class="region grid grid-{{props.col}} inset-0 row-gap-xl">
+        {% for item in props.content.items %}
+        <div class="stack gap-xs">
+            <div class="frame photo rounded">
+                {% set src = './public/img/' + item.img.src %}
+                {% img src, item.img.alt %}
             </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
-        <article class="stack gap-m">
-            <div class="frame rounded photo">
-                <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="placeholder" />
-            </div>
-            <div class="prose">
-                <time datetime="2020-03-16">Mar 16, 2020</time>
-                <h2 class="title-section">Boost your conversion rate</h2>
-                <p>
-                    Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco
-                    voluptate id deserunt adipisicing. Laborum duis veniam ullamco
-                    deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit
-                    qui ea esse esse.
-                </p>
-            </div>
-        </article>
+            <h3 class="section-headline">
+                <a href="{{item.url}}" class="link-navigation">
+                    {{item.headline}}
+                </a>
+            </h3>
+            <p>{{item.body}}</p>
+        </div>
+        {% endfor %}
     </div>
 </div>

@@ -8,8 +8,11 @@
   align-items: center;
 }
 
-.frame img {
+.frame * {
   background-color: var(--color-background-light);
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
 
   /* padding: var(--space-3xs); */
 }
@@ -39,15 +42,8 @@
   block-size: 100%;
 }
 
-.frame > img,
-.frame > video {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-}
-
 .frame.rounded,
-.frame.rounded > img {
+.frame.rounded * {
   border-radius: var(--radius-l);
 }
 

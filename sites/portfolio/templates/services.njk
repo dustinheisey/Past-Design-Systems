@@ -4,79 +4,9 @@ title: Web Solutions - Accessible, Sustainable, Impactful
 description: Discover comprehensive web design services that prioritize accessibility, sustainability, and social impact. Our customized solutions cater to your unique needs, ensuring your website communicates your mission effectively. Leverage our expertise for meticulous attention to detail, audience engagement, and a website that truly embodies your vision
 ---
 
-<div class="region cover cover-nav">
-  <div class="principle">
-    <div class="sidebar reverse sidebar-split gap-xl">
-      <div class="frame">
-        {% image content.services.header.img.src,
-        content.services.header.img.alt %}
-      </div>
-      <div class="stack fixed">
-        <div class="prose">
-          <p class="overline">{{content.services.header.overline}}</p>
-          <h1>{{content.services.header.headline}}</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="region prose bg-pattern theme-secondary">
-  <p class="overline">{{content.services.introduction.overline}}</p>
-  <h2 class="region-headline">{{content.services.introduction.headline}}</h2>
-  <p>{{content.services.introduction.body}}</p>
-</section>
-
-<div class="region reverse sidebar sidebar-split gap-m">
-  <div class="frame square">
-    {% image content.services.branding.img.src,
-    content.services.branding.img.alt %}
-  </div>
-  <div class="fixed">
-    <div class="prose">
-      <p class="overline">{{content.services.branding.overline}}</p>
-      <h2 class="region-headline">{{content.services.branding.headline}}</h2>
-      <p>{{content.services.branding.body}}</p>
-      <a href="{{content.services.branding.cta.url}}" class="btn btn-secondary">{{content.services.branding.cta.label}}</a>
-    </div>
-  </div>
-</div>
-
-<div class="region sidebar sidebar-split gap-m">
-  <div class="frame square">
-    {% image content.services.design.img.src, content.services.design.img.alt %}
-  </div>
-  <div class="fixed">
-    <div class="prose">
-      <p class="overline">{{content.services.design.overline}}</p>
-      <h2 class="region-headline">{{content.services.design.headline}}</h2>
-      <p>{{content.services.design.body}}</p>
-      <a href="{{content.services.design.cta.url}}" class="btn btn-secondary">{{content.services.design.cta.label}}</a>
-    </div>
-  </div>
-</div>
-
-<div class="region reverse sidebar sidebar-split gap-m">
-  <div class="frame square">
-    {% image content.services.optimization.img.src,
-    content.services.optimization.img.alt %}
-  </div>
-  <div class="fixed">
-    <div class="prose">
-      <p class="overline">{{content.services.optimization.overline}}</p>
-      <h2 class="region-headline">
-        {{content.services.optimization.headline}}
-      </h2>
-      <p>{{content.services.optimization.body}}</p>
-      <a href="{{content.services.optimization.cta.url}}" class="btn btn-secondary">{{content.services.optimization.cta.label}}</a>
-    </div>
-  </div>
-</div>
-
-<div class="region bg-pattern theme-primary">
-  <div class="prose">
-    <h2 class="region-headline">{{content.cta.headline}}</h2>
-    <p>{{content.cta.body}}</p>
-    <a href="/contact" class="btn">Start a Project</a>
-  </div>
-</div>
+{{ intro({ variant: 'img-end', content: content.services.hero }) }}
+{{ feature({variant: 'bg-pattern', pattern: 'topogrophy', theme: 'secondary', content: content.services.introduction }) }}
+{{ action({ variant: 'img-start', content: content.services.branding }) }}
+{{ action({ variant: 'img-end', content: content.services.design }) }}
+{{ action({ variant: 'img-start', content: content.services.optimization }) }}
+{{ action({variant: 'bg-pattern', pattern: 'topogrophy', theme: 'primary', content: content.action }) }}

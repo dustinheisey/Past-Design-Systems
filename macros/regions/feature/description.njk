@@ -1,0 +1,13 @@
+{# Status: TODO #}
+<div class="region sidebar align-stretch sidebar-split gap-m">
+    <div class="frame">
+        {% set src = './public/img/' + props.content.img.src %}
+        {% img src, props.content.img.alt %}
+    </div>
+    <div class="prose fixed">
+        {% if props.content.lead %}
+        <p class="lead">{{props.content.lead}}</p>
+        {% endif %}
+        <p>{{props.content.body}}</p>
+    </div>
+</div>

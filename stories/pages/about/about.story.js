@@ -78,14 +78,14 @@ export default {
       control: 'select',
       options: Object.keys(about.action),
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     actionTheme: {
       control: 'select',
       options: themes,
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     }
   },
@@ -102,7 +102,7 @@ export default {
 {{ stats({ variant: '${story.args.skillsVariant}', theme: '${story.args.skillsTheme}', content: content.about.skills }) }}
 {{ portfolio({ variant: '${story.args.portfolioVariant}', theme: '${story.args.portfolioTheme}', content: content.about.portfolio }) }} 
 {{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.about.testimonials }) }}
-{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.about.cta }) }}
+{{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.about.action }) }}
           `
       }
     }
@@ -125,22 +125,10 @@ export default {
 
 export const Default = (args) =>
   `
-    ${about.hero[args.headerVariant]({
-      theme: args.headerTheme
-    })} 
-    ${about.story[args.storyVariant]({
-      theme: args.storyTheme
-    })} 
-    ${about.skills[args.skillsVariant]({
-      theme: args.skillsTheme
-    })}
-    ${about.portfolio[args.portfolioVariant]({
-      theme: args.portfolioTheme
-    })} 
-    ${about.testimonials[args.testimonialsVariant]({
-      theme: args.testimonialsTheme
-    })}
-    ${about.action[args.actionVariant]({
-      theme: args.actionTheme
-    })}
+    ${about.hero[args.headerVariant]({ storybook: true, theme: args.headerTheme })} 
+    ${about.story[args.storyVariant]({ storybook: true, theme: args.storyTheme })} 
+    ${about.skills[args.skillsVariant]({ storybook: true, theme: args.skillsTheme })}
+    ${about.portfolio[args.portfolioVariant]({ storybook: true, theme: args.portfolioTheme })} 
+    ${about.testimonials[args.testimonialsVariant]({ storybook: true, theme: args.testimonialsTheme })}
+    ${about.action[args.actionVariant]({ storybook: true, theme: args.actionTheme })}
   `

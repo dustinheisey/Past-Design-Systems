@@ -23,7 +23,7 @@ export default {
 const Template = (args) =>
   `
     ${regions.footer[args.variant]({
-      props: { theme: args.theme }
+      props: { storybook: true, theme: args.theme }
     })}
   `
 

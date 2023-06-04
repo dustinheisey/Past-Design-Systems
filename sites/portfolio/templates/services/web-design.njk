@@ -4,89 +4,10 @@ title: Responsive, Accessible & Sustainable Web Design
 description: Elevate your online presence with my eco-friendly web design service, providing responsive, accessibility standards compliant, and low carbon progressive web apps for your organization. Enhance your brand while making a positive impact on the environment.
 ---
 
-<div class="cover region cover-nav">
-  <div class="sidebar reverse sidebar-split gap-m">
-    <div class="frame square">
-      {% image content.design.header.img.src, content.design.header.img.alt %}
-    </div>
-    <div class="prose auto fixed">
-      <h1 class="page-headline">
-        <span class="color-primary">{{content.design.header.accent}}</span>
-        {{content.design.header.headline}}
-      </h1>
-      <p>{{content.design.header.body}}</p>
-    </div>
-  </div>
-</div>
-
-<section class="region prose bg-pattern theme-primary">
-  <p class="lead auto">{{content.design.problem.body}}</p>
-</section>
-
-<div class="region sidebar sidebar-split gap-m">
-  <div class="frame square">
-    {% image content.design.description.img.src,
-    content.design.description.img.alt %}
-  </div>
-  <div class="fixed prose">
-    <p class="overline">{{content.design.description.overline}}</p>
-    <h2 class="region-headline">{{content.design.description.headline}}</h2>
-    <p>{{content.design.description.body}}</p>
-  </div>
-</div>
-
-<div class="region stack">
-  <section class="prose">
-    <p class="overline">{{content.design.plan.overline}}</p>
-    <h2 class="region-headline">{{content.design.plan.headline}}</h2>
-  </section>
-  <div class="timeline timeline-inline">
-    {% for step in content.design.plan.steps %}
-    <div aria-hidden="true"></div>
-    <div class="stack gap-xs">
-      <div class="prose">
-        <h3 class="title-headline">{{step.headline}}</h3>
-        <p>{{step.body}}</p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<div class="region reverse sidebar sidebar-split gap-m">
-  <div class="frame square">
-    {% image content.design.transformation.img.src,
-    content.design.transformation.img.alt %}
-  </div>
-  <div class="prose fixed">
-    <p class="overline">{{content.design.transformation.overline}}</p>
-    <h2 class="region-headline">{{content.design.transformation.headline}}</h2>
-    <p>{{content.design.transformation.body}}</p>
-  </div>
-</div>
-
-<div class="region">
-  <div class="prose">
-    <p class="overline">{{content.design.faqs.overline}}</p>
-    <h2 class="region-headline">{{content.design.faqs.headline}}</h2>
-  </div>
-  <div class="space-xl">
-    {% for item in content.design.faqs.faqs %}
-    <details>
-      <summary>
-        <h3 class="title-headline">{{item.question}}</h3>
-      </summary>
-      <p>{{item.answer}}</p>
-    </details>
-    <hr />
-    {% endfor %}
-  </div>
-</div>
-
-<div class="region bg-pattern theme-primary">
-  <div class="prose">
-    <h2 class="region-headline">{{content.design.cta.headline}}</h2>
-    <p>{{content.design.cta.body}}</p>
-    <a href="/contact" class="btn">Start a Project</a>
-  </div>
-</div>
+{{ intro({ variant: 'img-end', content: content.design.hero }) }}
+{{ feature({variant: 'bg-pattern', pattern: 'topogrophy', theme: 'primary', content: content.design.problem }) }}
+{{ feature({ variant: 'img-start', content: content.design.description }) }}
+{{ timeline({ variant: 'inline-start', content: content.design.plan }) }}
+{{ feature({ variant: 'img-end', content: content.design.transformation }) }}
+{{ faq({ variant: 'accordion', content: content.design.faqs }) }}
+{{ action({variant: 'bg-pattern', pattern: 'topogrophy', theme: 'primary', content: content.design.action }) }}

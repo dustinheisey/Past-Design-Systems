@@ -63,14 +63,14 @@ export default {
       control: 'select',
       options: Object.keys(landing.action),
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     actionTheme: {
       control: 'select',
       options: themes,
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     successVariant: {
@@ -114,9 +114,9 @@ export default {
 {{ info({ variant: '${story.args.storyVariant}', theme: '${story.args.storyTheme}', content: content.index.problem }) }} 
 {{ info({ variant: '${story.args.skillsVariant}', theme: '${story.args.skillsTheme}', content: content.index.guide }) }}
 {{ info({ variant: '${story.args.portfolioVariant}', theme: '${story.args.portfolioTheme}', content: content.index.plan }) }} 
-{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.index.cta }) }}
+{{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.index.action }) }}
 {{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.index.testimonials }) }}
-{{ cta({ variant: '${story.args.freebieVariant}', theme: '${story.args.freebieTheme}', content: content.index.freebie }) }}
+{{ action({ variant: '${story.args.freebieVariant}', theme: '${story.args.freebieTheme}', content: content.index.freebie }) }}
 
           `
       }
@@ -142,25 +142,11 @@ export default {
 
 export const Default = (args) =>
   `
-    ${landing.hero[args.heroVariant]({
-      props: { theme: args.heroTheme }
-    })}
-    ${landing.problem[args.problemVariant]({
-      props: { theme: args.problemTheme }
-    })}
-    ${landing.guide[args.guideVariant]({
-      props: { theme: args.guideTheme }
-    })}
-    ${landing.plan[args.planVariant]({
-      props: { theme: args.planTheme }
-    })}
-    ${landing.action[args.actionVariant]({
-      props: { theme: args.actionTheme }
-    })}
-    ${landing.success[args.successVariant]({
-      props: { theme: args.successTheme }
-    })}
-    ${landing.freebie[args.freebieVariant]({
-      props: { theme: args.freebieTheme }
-    })}
+    ${landing.hero[args.heroVariant]({ storybook: true, props: { theme: args.heroTheme } })}
+    ${landing.problem[args.problemVariant]({ storybook: true, props: { theme: args.problemTheme } })}
+    ${landing.guide[args.guideVariant]({ storybook: true, props: { theme: args.guideTheme } })}
+    ${landing.plan[args.planVariant]({ storybook: true, props: { theme: args.planTheme } })}
+    ${landing.action[args.actionVariant]({ storybook: true, props: { theme: args.actionTheme } })}
+    ${landing.success[args.successVariant]({ storybook: true, props: { theme: args.successTheme } })}
+    ${landing.freebie[args.freebieVariant]({ storybook: true, props: { theme: args.freebieTheme } })}
   `

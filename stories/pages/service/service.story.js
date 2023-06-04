@@ -105,14 +105,14 @@ export default {
       control: 'select',
       options: Object.keys(service.action),
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     actionTheme: {
       control: 'select',
       options: themes,
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     }
   },
@@ -131,7 +131,7 @@ export default {
 {{ timeline({ variant: '${story.args.processVariant}', theme: '${story.args.processTheme}', content: content.[service name].process }) }}
 {{ info({ variant: '${story.args.transformationVariant}', theme: '${story.args.transformationTheme}', content: content.[service name].transformation }) }} 
 {{ faq({ variant: '${story.args.faqVariant}', theme: '${story.args.faqTheme}', content: content.[service name].faq }) }} 
-{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.[service name].cta }) }}
+{{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.[service name].action }) }}
           `
       }
     }
@@ -158,30 +158,17 @@ export default {
 
 export const Default = (args) =>
   `
-    ${service.hero[args.heroVariant]({
-      props: { theme: args.heroTheme }
-    })}
-    ${service.problem[args.problemVariant]({
-      props: { theme: args.problemTheme }
-    })}
-    ${service.description[args.descriptionVariant]({
-      props: { theme: args.descriptionTheme }
-    })}
-    ${service.proof[args.proofVariant]({
-      props: { theme: args.proofTheme }
-    })}
-    ${service.process[args.processVariant]({
-      props: { theme: args.processTheme }
-    })}
+    ${service.hero[args.heroVariant]({ storybook: true, props: { theme: args.heroTheme } })}
+    ${service.problem[args.problemVariant]({ storybook: true, props: { theme: args.problemTheme } })}
+    ${service.description[args.descriptionVariant]({ storybook: true, props: { theme: args.descriptionTheme } })}
+    ${service.proof[args.proofVariant]({ storybook: true, props: { theme: args.proofTheme } })}
+    ${service.process[args.processVariant]({ storybook: true, props: { theme: args.processTheme } })}
     ${service.transformation[args.transformationVariant]({
+      storybook: true,
       props: {
         theme: args.transformationTheme
       }
     })}
-    ${service.faq[args.faqVariant]({
-      props: { theme: args.faqTheme }
-    })}
-    ${service.action[args.actionVariant]({
-      props: { theme: args.actionTheme }
-    })}
+    ${service.faq[args.faqVariant]({ storybook: true, props: { theme: args.faqTheme } })}
+    ${service.action[args.actionVariant]({ storybook: true, props: { theme: args.actionTheme } })}
   `

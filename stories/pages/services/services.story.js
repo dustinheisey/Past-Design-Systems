@@ -105,14 +105,14 @@ export default {
       control: 'select',
       options: Object.keys(services.action),
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     actionTheme: {
       control: 'select',
       options: themes,
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     }
   },
@@ -131,7 +131,7 @@ export default {
 {{ info({ variant: '${story.args.service3Variant}', theme: '${story.args.service3Theme}', content: content.services.service3 }) }} 
 {{ info({ variant: '${story.args.service4Variant}', theme: '${story.args.service4Theme}', content: content.services.service4 }) }} 
 {{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.services.testimonials }) }}
-{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.services.cta }) }}
+{{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.services.action }) }}
           `
       }
     }
@@ -158,32 +158,22 @@ export default {
 
 export const Default = (args) =>
   `
-    ${services.hero[args.heroVariant]({
-      props: { theme: args.heroTheme }
-    })}
+    ${services.hero[args.heroVariant]({ storybook: true, props: { theme: args.heroTheme } })}
     ${services.intro[args.introVariant]({
+      storybook: true,
       props: {
         theme: args.introTheme
       }
     })}
-    ${services.service1[args.service1Variant]({
-      props: { theme: args.service1Theme }
-    })}
-    ${services.service2[args.service2Variant]({
-      props: { theme: args.service2Theme }
-    })}
-    ${services.service3[args.service3Variant]({
-      props: { theme: args.service3Theme }
-    })}
-    ${services.service4[args.service4Variant]({
-      props: { theme: args.service4Theme }
-    })}
+    ${services.service1[args.service1Variant]({ storybook: true, props: { theme: args.service1Theme } })}
+    ${services.service2[args.service2Variant]({ storybook: true, props: { theme: args.service2Theme } })}
+    ${services.service3[args.service3Variant]({ storybook: true, props: { theme: args.service3Theme } })}
+    ${services.service4[args.service4Variant]({ storybook: true, props: { theme: args.service4Theme } })}
     ${services.testimonials[args.testimonialsVariant]({
+      storybook: true,
       props: {
         theme: args.testimonialsTheme
       }
     })}
-    ${services.action[args.actionVariant]({
-      props: { theme: args.actionTheme }
-    })}
+    ${services.action[args.actionVariant]({ storybook: true, props: { theme: args.actionTheme } })}
   `

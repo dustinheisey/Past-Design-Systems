@@ -1,47 +1,22 @@
-<div class="stack gap-s theme-{{props.theme}}">
-    <div class="prose center center-intrinsic">
-        <h2 class="region-headline">Frequently Asked Questions</h2>
-        <p>
-            Officia sit tempor et exercitation ex laboris aute cupidatat pariatur
-            adipisicing tempor. Nisi laboris nostrud quis sunt dolor.
-        </p>
-    </div>
-    <div class="grid grid-3">
-        <div class="card prose theme-primary-container">
-            <svg focusable="false" class="icon block icon-l">
-                <use href="src/elements/text/icon/icons.svg#accessibility"></use>
-            </svg>
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
-        <div class="card prose theme-secondary-container">
-            <svg focusable="false" class="icon icon-l block">
-                <use href="src/elements/text/icon/icons.svg#remove"></use>
-            </svg>
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
-        <div class="card prose theme-tertiary-container">
-            <svg focusable="false" class="icon icon-l block">
-                <use href="src/elements/text/icon/icons.svg#browser-chrome-2"></use>
-            </svg>
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
+{# Status: TODO #}
+<div class="stack region gap-xl">
+    <section class="prose center center-intrinsic">
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
+    <div class="switcher switch-phone">
+        {% for card in props.content.cards %}
+        <a href="{{card.link}}" class="card card-link prose theme-{{card.theme}}">
+
+            {% if props.storybook %}
+            <img class="icon block icon-l" src="../../public/icons/{{card.icon}}.svg" alt="{{card.icon}}" />
+            {% else %}
+            {% icon card.icon, "block icon-l" %}
+            {% endif %}
+            <h3 class="title-headline">
+                {{card.headline}}
+            </h3>
+            <p>{{card.body}}</p>
+        </a>
+        {% endfor %}
     </div>
 </div>

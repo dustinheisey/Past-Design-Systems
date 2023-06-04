@@ -39,7 +39,5 @@ export default {
 
 export const Default = (args) =>
   `
-    ${header[args.navbarVariant]({
-      props: { theme: args.navbarTheme }
-    })}
+    ${header[args.navbarVariant]({ storybook: true, props: { theme: args.navbarTheme } })}
   `

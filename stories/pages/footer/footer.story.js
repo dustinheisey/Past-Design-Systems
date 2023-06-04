@@ -39,7 +39,5 @@ export default {
 
 export const Default = (args) =>
   `
-    ${footer[args.footerVariant]({
-      props: { theme: args.footerTheme }
-    })}
+    ${footer[args.footerVariant]({ storybook: true, props: { theme: args.footerTheme } })}
   `

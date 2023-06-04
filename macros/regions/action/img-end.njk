@@ -1,0 +1,12 @@
+{# Status: TODO #}
+<div class="region sidebar reverse sidebar-split gap-m">
+    <div class="frame square">
+        {% set src = './public/img/' + props.content.img.src %}
+        {% img src, props.content.img.alt %}
+    </div>
+    <div class="prose fixed">
+        <h2>{{props.content.headline}}</h2>
+        <p>{{props.content.body}}</p>
+        <a href="{{props.content.action.url}}" class="btn {% if props.content.action.variant %}btn-{{props.content.action.variant}}{% endif %}">{{props.content.action.label}}</a>
+    </div>
+</div>

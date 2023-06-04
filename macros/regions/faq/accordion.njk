@@ -1,99 +1,18 @@
-<div class="theme-{{props.theme}}">
-    <div class="prose">
-        <h2 class="region-headline">Frequently Asked Questions</h2>
-        <p>
-            Officia sit tempor et exercitation ex laboris aute cupidatat pariatur
-            adipisicing tempor. Nisi laboris nostrud quis sunt dolor.
-        </p>
-    </div>
+{# Status: TODO #}
+<div class="region">
+    <section class="prose">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
     <div class="space-xl">
+        {% for item in props.content.faqs %}
         <details>
             <summary>
-                <h3 class="title-headline">Question Title Text</h3>
+                <h3 class="title-headline">{{item.question}}</h3>
             </summary>
-            <p>
-                Voluptate dolor nisi velit consequat do reprehenderit. Amet in consequat
-                duis minim dolor cupidatat adipisicing nulla cillum fugiat laborum minim
-                dolore. Fugiat culpa ea veniam deserunt eu cillum. Exercitation Lorem
-                adipisicing anim incididunt duis consectetur Lorem dolor id nulla id.
-                Irure dolor non minim incididunt qui. Non esse Lorem cillum eiusmod
-                officia ad voluptate. Occaecat ad mollit exercitation velit et.
-            </p>
+            <p>{{item.answer}}</p>
         </details>
         <hr />
-
-        <details>
-            <summary>
-                <h3 class="title-headline">Question Title Text</h3>
-            </summary>
-            <p>
-                Voluptate dolor nisi velit consequat do reprehenderit. Amet in consequat
-                duis minim dolor cupidatat adipisicing nulla cillum fugiat laborum minim
-                dolore. Fugiat culpa ea veniam deserunt eu cillum. Exercitation Lorem
-                adipisicing anim incididunt duis consectetur Lorem dolor id nulla id.
-                Irure dolor non minim incididunt qui. Non esse Lorem cillum eiusmod
-                officia ad voluptate. Occaecat ad mollit exercitation velit et.
-            </p>
-        </details>
-        <hr />
-
-        <details>
-            <summary>
-                <h3 class="title-headline">Question Title Text</h3>
-            </summary>
-            <p>
-                Voluptate dolor nisi velit consequat do reprehenderit. Amet in consequat
-                duis minim dolor cupidatat adipisicing nulla cillum fugiat laborum minim
-                dolore. Fugiat culpa ea veniam deserunt eu cillum. Exercitation Lorem
-                adipisicing anim incididunt duis consectetur Lorem dolor id nulla id.
-                Irure dolor non minim incididunt qui. Non esse Lorem cillum eiusmod
-                officia ad voluptate. Occaecat ad mollit exercitation velit et.
-            </p>
-        </details>
-        <hr />
-
-        <details>
-            <summary>
-                <h3 class="title-headline">Question Title Text</h3>
-            </summary>
-            <p>
-                Voluptate dolor nisi velit consequat do reprehenderit. Amet in consequat
-                duis minim dolor cupidatat adipisicing nulla cillum fugiat laborum minim
-                dolore. Fugiat culpa ea veniam deserunt eu cillum. Exercitation Lorem
-                adipisicing anim incididunt duis consectetur Lorem dolor id nulla id.
-                Irure dolor non minim incididunt qui. Non esse Lorem cillum eiusmod
-                officia ad voluptate. Occaecat ad mollit exercitation velit et.
-            </p>
-        </details>
-        <hr />
-
-        <details>
-            <summary>
-                <h3 class="title-headline">Question Title Text</h3>
-            </summary>
-            <p>
-                Voluptate dolor nisi velit consequat do reprehenderit. Amet in consequat
-                duis minim dolor cupidatat adipisicing nulla cillum fugiat laborum minim
-                dolore. Fugiat culpa ea veniam deserunt eu cillum. Exercitation Lorem
-                adipisicing anim incididunt duis consectetur Lorem dolor id nulla id.
-                Irure dolor non minim incididunt qui. Non esse Lorem cillum eiusmod
-                officia ad voluptate. Occaecat ad mollit exercitation velit et.
-            </p>
-        </details>
-        <hr />
-
-        <details>
-            <summary>
-                <h3 class="title-headline">Question Title Text</h3>
-            </summary>
-            <p>
-                Voluptate dolor nisi velit consequat do reprehenderit. Amet in consequat
-                duis minim dolor cupidatat adipisicing nulla cillum fugiat laborum minim
-                dolore. Fugiat culpa ea veniam deserunt eu cillum. Exercitation Lorem
-                adipisicing anim incididunt duis consectetur Lorem dolor id nulla id.
-                Irure dolor non minim incididunt qui. Non esse Lorem cillum eiusmod
-                officia ad voluptate. Occaecat ad mollit exercitation velit et.
-            </p>
-        </details>
+        {% endfor %}
     </div>
 </div>

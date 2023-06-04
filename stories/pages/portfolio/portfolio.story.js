@@ -49,14 +49,14 @@ export default {
       control: 'select',
       options: Object.keys(portfolio.action),
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     },
     actionTheme: {
       control: 'select',
       options: themes,
       table: {
-        category: 'CTA'
+        category: 'action'
       }
     }
   },
@@ -71,7 +71,7 @@ export default {
 {{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.portfolio.header }) }} 
 {{ info({ variant: '${story.args.storyVariant}', theme: '${story.args.storyTheme}', content: content.portfolio.story }) }} 
 {{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.portfolio.testimonials }) }}
-{{ cta({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.portfolio.cta }) }}
+{{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.portfolio.action }) }}
           `
       }
     }
@@ -91,18 +91,19 @@ export default {
 export const Default = (args) =>
   `
     ${portfolio.hero[args.headerVariant]({
+      storybook: true,
       props: { theme: args.headerTheme, content: args.headerContent }
     })}
     ${portfolio.grid[args.gridVariant]({
+      storybook: true,
       props: { theme: args.gridTheme, content: args.gridContent }
     })}
     ${portfolio.testimonials[args.testimonialsVariant]({
+      storybook: true,
       props: {
         theme: args.testimonialsTheme,
         content: args.testimonialsContent
       }
     })}
-    ${portfolio.action[args.actionVariant]({
-      props: { theme: args.actionTheme }
-    })}
+    ${portfolio.action[args.actionVariant]({ storybook: true, props: { theme: args.actionTheme } })}
   `
