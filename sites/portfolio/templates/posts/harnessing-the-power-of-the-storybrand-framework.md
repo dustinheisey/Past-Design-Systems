@@ -20,7 +20,7 @@ Character: In the StoryBrand framework, the customer is the protagonist of the s
 
 - **Guide:** The brand steps in as the guide, providing the protagonist with the tools and advice they need to surmount their challenges. This role of the guide is pivotal in the journey of the hero.
 
-- **Plan:** The guide proposes a plan to solve the protagonist's problem. This could be your products, services, or a specific process that your customers need to follow. It's crucial that this plan is simple and easy to understand, eliminating any potential barriers to action.
+- **Plan:** The guide proposes a plan to solve the protagonist's problem. This could be your products, services, or a specific process that your customers need to follow. It's crucial that this plan is simple, eliminating any potential barriers to action.
 
 - **Call to Action:** This is the juncture where you spur the protagonist to take action. A strong call to action is clear, direct, and compelling, leaving no room for ambiguity.
 
@@ -34,11 +34,11 @@ Whether you're a business or a nonprofit, implementing the StoryBrand framework 
 
 - **Understand Your Hero:** Invest time in understanding your customer or the cause you serve. What are their desires, challenges, and motivations? The more you understand your hero, the more effectively you can position your brand as the guide.
 
-- **Clearly Define the Problem:** Be specific about the problem your hero is facing. Remember, it's not just about the external problem but also the internal and philosophical challenges they might be grappling with.
+- **Define the Problem:** Be specific about the problem your hero is facing. Remember to consider the internal and philosophical challenges they might be grappling with along with their external problems.
 
 - **Be the Guide, Not the Hero:** Resist the temptation to position your brand as the hero. Your role is to guide the hero towards success. Show empathy and authority, demonstrating that you understand their problem and have the tools and expertise to help them overcome it.
 
-- **Offer a Clear Plan:** Your plan should be simple and easy to understand. Whether it's a step-by-step process or a straightforward product offering, make sure your hero knows exactly what they need to do to solve their problem.
+- **Offer a Clear Plan:** Whether it's a step-by-step process or a straightforward product offering, make sure your hero knows exactly what they need to do to solve their problem.
 
 - **Craft a Compelling Call to Action:** Don't be vague or passive in your call to action. Be clear and direct, encouraging your hero to take the necessary steps towards their success.
 

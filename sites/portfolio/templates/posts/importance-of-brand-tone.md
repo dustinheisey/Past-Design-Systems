@@ -58,7 +58,7 @@ Once you've defined your brand tone, it's time to implement it across all your c
 
 Creating an effective brand tone is a crucial part of your brand strategy. It can help you connect with your audience, differentiate you from your competitors, and reinforce your unique selling proposition. By understanding your brand, knowing your audience, analyzing your industry, defining your language style, choosing your tone, and developing your voice, you can create a brand tone that truly resonates with your audience and reflects your commitment to your cause.
 
-Your brand tone is more than just words. It's the voice of your brand, and it's a crucial part of your brand identity. In the world of purpose-driven businesses and nonprofits, a well-defined brand tone can be a powerful tool for making a positive impact. So, take the time to define your brand tone and use it to communicate your mission, vision, and values to the world.
+Your brand tone is the voice of your brand, and it's a crucial part of your brand identity. In the world of purpose-driven businesses and nonprofits, a well-defined brand tone can be a powerful tool for making a positive impact. So, take the time to define your brand tone and use it to communicate your mission, vision, and values to the world.
 
 ---
 

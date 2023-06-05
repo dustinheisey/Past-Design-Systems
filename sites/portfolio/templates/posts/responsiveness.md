@@ -28,7 +28,7 @@ Now that we understand the importance of responsiveness, let's look at a high-le
 - **Flexible Images:** Images on your website should also be flexible.
 - **Mobile-First Approach:** Design your website for mobile devices first and then scale up for larger screens.
 - **Prioritize Speed:** A responsive website should also be fast.
-- **Navigation:** Navigation should be intuitive and easy to use on all devices. Instead of a hamburger menu, consider taking inspiration from app bottom bars for a more user-friendly mobile navigation.
+- **Navigation:** Navigation should be intuitive and easier to use on all devices. Instead of a hamburger menu, consider taking inspiration from app bottom bars for a more user-friendly mobile navigation.
 - **Touch-Friendly Elements:** For mobile and tablet users, ensure that all elements of your website are touch-friendly.
 - **Readable Text:** Text should be readable without requiring users to zoom in.
 - **Media Queries as a Last Resort:** While media queries are a powerful tool for creating responsive designs, they should be used as a last resort.

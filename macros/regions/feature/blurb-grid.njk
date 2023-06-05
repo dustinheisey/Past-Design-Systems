@@ -7,9 +7,6 @@
         {% for blurb in props.content.blurbs %}
         <div class="prose stack center-intrinsic gap-2xs">
             {% if blurb.icon %}
-            {% if props.storybook %}
-            <img class="icon icon-xl" src="../../public/icons/{{blurb.icon}}.svg" alt="{{blurb.icon}}" />
-            {% else %}
             {% icon blurb.icon, "icon-xl" %}
             {% endif %}
             <h3 class="title-headline">{{blurb.headline}}</h3>
