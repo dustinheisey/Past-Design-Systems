@@ -4,14 +4,14 @@ const { about } = pageRegions
 export default {
   title: 'Pages/About',
   argTypes: {
-    headerVariant: {
+    heroVariant: {
       control: 'select',
       options: Object.keys(about.hero),
       table: {
         category: 'Header'
       }
     },
-    headerTheme: {
+    heroTheme: {
       control: 'select',
       options: themes,
       table: {
@@ -97,7 +97,7 @@ export default {
       source: {
         transform: (src, story) =>
           `
-{{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.about.header }) }} 
+{{ header({ variant: '${story.args.heroVariant}', theme: '${story.args.heroTheme}', content: content.about.header }) }} 
 {{ info({ variant: '${story.args.storyVariant}', theme: '${story.args.storyTheme}', content: content.about.story }) }} 
 {{ stats({ variant: '${story.args.skillsVariant}', theme: '${story.args.skillsTheme}', content: content.about.skills }) }}
 {{ portfolio({ variant: '${story.args.portfolioVariant}', theme: '${story.args.portfolioTheme}', content: content.about.portfolio }) }} 
@@ -108,24 +108,24 @@ export default {
     }
   },
   args: {
-    headerTheme: 'background',
-    headerVariant: 'left-hero',
+    heroTheme: 'background',
+    heroVariant: 'start-hero',
     storyTheme: 'background',
-    storyVariant: 'left-intro',
+    storyVariant: 'start-intro',
     skillsTheme: 'background',
     skillsVariant: 'simple-4-stats',
     portfolioTheme: 'background',
     portfolioVariant: 'card-grid-gallery',
     testimonialsTheme: 'background',
-    testimonialsVariant: 'left-avatar-testimonials',
+    testimonialsVariant: 'avatar-start-testimonials',
     actionTheme: 'background',
-    actionVariant: 'left-bg-action'
+    actionVariant: 'bg-start-action'
   }
 }
 
 export const Default = (args) =>
   `
-    ${about.hero[args.headerVariant]({ storybook: true, theme: args.headerTheme })} 
+    ${about.hero[args.heroVariant]({ storybook: true, theme: args.heroTheme })} 
     ${about.story[args.storyVariant]({ storybook: true, theme: args.storyTheme })} 
     ${about.skills[args.skillsVariant]({ storybook: true, theme: args.skillsTheme })}
     ${about.portfolio[args.portfolioVariant]({ storybook: true, theme: args.portfolioTheme })} 

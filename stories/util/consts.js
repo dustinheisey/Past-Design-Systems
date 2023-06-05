@@ -168,10 +168,10 @@ export const regions = {
     'split-end-form': splitEndForm
   },
   action: {
-    'bg-pattern': bgPatternAction,
-    'cover-end': coverEndAction,
-    'cover-start': coverStartAction,
-    cover: coverAction,
+    'bg-pattern-action': bgPatternAction,
+    'cover-end-action': coverEndAction,
+    'cover-start-action': coverStartAction,
+    'cover-action': coverAction,
     'bg-center-action': bgCenterAction,
     'gradient-center-action': gradientCenterAction,
     'img-center-action': imgCenterAction,
@@ -214,8 +214,8 @@ export const regions = {
     'center-intro': centerIntro,
     'end-intro': endIntro,
     'start-intro': startIntro,
-    'img-end': imgEndIntro,
-    'img-start': imgStartIntro
+    'img-end-intro': imgEndIntro,
+    'img-start-intro': imgStartIntro
   },
   hero: {
     'angled-block-end-end-hero': angledBlockEndEndHero,

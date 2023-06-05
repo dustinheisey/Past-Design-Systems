@@ -124,7 +124,7 @@ export default {
   },
   args: {
     heroTheme: 'background',
-    heroVariant: 'angled-bottom-left-hero',
+    heroVariant: 'angled-block-end-start-hero',
     problemTheme: 'background',
     problemVariant: 'center-intro',
     guideTheme: 'background',
@@ -132,11 +132,11 @@ export default {
     planTheme: 'background',
     planVariant: 'card-grid-gallery',
     actionTheme: 'background',
-    actionVariant: 'center-bg-action',
+    actionVariant: 'bg-center-action',
     successTheme: 'background',
-    successVariant: 'center-quote-testimonials',
+    successVariant: 'quote-center-testimonials',
     freebieTheme: 'background',
-    freebieVariant: 'left-bg-action'
+    freebieVariant: 'bg-start-action'
   }
 }
 

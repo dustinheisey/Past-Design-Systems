@@ -26,12 +26,12 @@ const Template = (args) =>
     })}
   `
 
-export const SimpleQuote = Template.bind({})
-export const CenteredQuote = Template.bind({})
-export const LeftAvatar = Template.bind({})
-export const RightAvatar = Template.bind({})
+export const QuoteSimple = Template.bind({})
+export const QuoteCenter = Template.bind({})
+export const AvatarStart = Template.bind({})
+export const AvatarEnd = Template.bind({})
 
-SimpleQuote.args = { variant: 'simple-quote-testimonials' }
-CenteredQuote.args = { variant: 'center-quote-testimonials' }
-LeftAvatar.args = { variant: 'left-avatar-testimonials' }
-RightAvatar.args = { variant: 'right-avatar-testimonials' }
+QuoteSimple.args = { variant: 'quote-simple-testimonials' }
+QuoteCenter.args = { variant: 'quote-center-testimonials' }
+AvatarStart.args = { variant: 'avatar-start-testimonials' }
+AvatarEnd.args = { variant: 'avatar-end-testimonials' }

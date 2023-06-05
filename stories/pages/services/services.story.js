@@ -138,21 +138,21 @@ export default {
   },
   args: {
     heroTheme: 'background',
-    heroVariant: 'angled-top-right-hero',
+    heroVariant: 'angled-block-start-end-hero',
     introTheme: 'background',
-    introVariant: 'left-intro',
+    introVariant: 'start-intro',
     service1Theme: 'background',
-    service1Variant: 'justified-action',
+    service1Variant: 'inline-action',
     service2Theme: 'background',
-    service2Variant: 'justified-action',
+    service2Variant: 'inline-action',
     service3Theme: 'background',
-    service3Variant: 'justified-action',
+    service3Variant: 'inline-action',
     service4Theme: 'background',
-    service4Variant: 'justified-action',
+    service4Variant: 'inline-action',
     testimonialsTheme: 'background',
-    testimonialsVariant: 'simple-quote-testimonials',
+    testimonialsVariant: 'quote-simple-testimonials',
     actionTheme: 'background',
-    actionVariant: 'left-bg-action'
+    actionVariant: 'bg-start-action'
   }
 }
 

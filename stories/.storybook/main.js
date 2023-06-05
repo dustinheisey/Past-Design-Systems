@@ -1,4 +1,5 @@
 /** @type { import('@storybook/html-webpack5').StorybookConfig } */
+import path from 'path'
 
 const config = {
   stories: ['../**/*.story.js', '../**/*.mdx'],
@@ -17,7 +18,14 @@ const config = {
       test: /\.njk$/,
       use: [
         {
-          loader: 'simple-nunjucks-loader'
+          loader: 'simple-nunjucks-loader',
+          options: {
+            extensions: {
+              Img: path.join(__dirname, 'extensions/img.js'),
+              Icon: path.join(__dirname, 'extensions/icon.js'),
+              Svg: path.join(__dirname, 'extensions/svg.js')
+            }
+          }
         }
       ]
     })

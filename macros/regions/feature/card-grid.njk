@@ -6,12 +6,7 @@
     <div class="switcher switch-phone">
         {% for card in props.content.cards %}
         <a href="{{card.link}}" class="card card-link prose theme-{{card.theme}}">
-
-            {% if props.storybook %}
-            <img class="icon block icon-l" src="../../public/icons/{{card.icon}}.svg" alt="{{card.icon}}" />
-            {% else %}
             {% icon card.icon, "block icon-l" %}
-            {% endif %}
             <h3 class="title-headline">
                 {{card.headline}}
             </h3>

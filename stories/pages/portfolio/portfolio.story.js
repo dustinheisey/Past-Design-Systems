@@ -3,7 +3,7 @@ const { portfolio } = pageRegions
 export default {
   title: 'Pages/Portfolio',
   argTypes: {
-    headerVariant: {
+    heroVariant: {
       control: 'select',
       options: Object.keys(portfolio.hero),
       table: {
@@ -68,7 +68,7 @@ export default {
       source: {
         transform: (src, story) =>
           `
-{{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.portfolio.header }) }} 
+{{ header({ variant: '${story.args.heroVariant}', theme: '${story.args.headerTheme}', content: content.portfolio.header }) }} 
 {{ info({ variant: '${story.args.storyVariant}', theme: '${story.args.storyTheme}', content: content.portfolio.story }) }} 
 {{ testimonials({ variant: '${story.args.testimonialsVariant}', theme: '${story.args.testimonialsTheme}', content: content.portfolio.testimonials }) }}
 {{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.portfolio.action }) }}
@@ -78,19 +78,19 @@ export default {
   },
   args: {
     headerTheme: 'background',
-    headerVariant: 'angled-bottom-left-hero',
+    heroVariant: 'angled-block-end-end-hero',
     gridTheme: 'background',
     gridVariant: 'img-grid-gallery',
     testimonialsTheme: 'background',
-    testimonialsVariant: 'simple-quote-testimonials',
+    testimonialsVariant: 'quote-simple-testimonials',
     actionTheme: 'background',
-    actionVariant: 'left-img-action'
+    actionVariant: 'img-start-action'
   }
 }
 
 export const Default = (args) =>
   `
-    ${portfolio.hero[args.headerVariant]({
+    ${portfolio.hero[args.heroVariant]({
       storybook: true,
       props: { theme: args.headerTheme, content: args.headerContent }
     })}

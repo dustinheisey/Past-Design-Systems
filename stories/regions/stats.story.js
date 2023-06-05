@@ -29,16 +29,16 @@ const Template = (args) =>
 
 export const Simple3 = Template.bind({})
 export const Simple4 = Template.bind({})
-export const ImgLeft = Template.bind({})
-export const ImgRight = Template.bind({})
-export const SplitLeft = Template.bind({})
-export const SplitRight = Template.bind({})
+export const ImgStart = Template.bind({})
+export const ImgEnd = Template.bind({})
+export const SplitStart = Template.bind({})
+export const SplitEnd = Template.bind({})
 export const Description = Template.bind({})
 
 Simple3.args = { variant: 'simple-3-stats' }
 Simple4.args = { variant: 'simple-4-stats' }
-ImgLeft.args = { variant: 'img-left-stats' }
-ImgRight.args = { variant: 'img-right-stats' }
-SplitLeft.args = { variant: 'split-left-stats' }
-SplitRight.args = { variant: 'split-right-stats' }
+ImgStart.args = { variant: 'img-start-stats' }
+ImgEnd.args = { variant: 'img-end-stats' }
+SplitStart.args = { variant: 'split-start-stats' }
+SplitEnd.args = { variant: 'split-end-stats' }
 Description.args = { variant: 'description-stats' }

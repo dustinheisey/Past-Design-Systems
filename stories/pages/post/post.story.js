@@ -67,7 +67,7 @@ export default {
     copyTheme: 'background',
     copyVariant: 'post-copy',
     actionTheme: 'background',
-    actionVariant: 'left-bg-action'
+    actionVariant: 'bg-start-action'
   }
 }
 

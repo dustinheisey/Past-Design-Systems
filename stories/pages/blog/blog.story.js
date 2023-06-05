@@ -3,7 +3,7 @@ const { blog } = pageRegions
 export default {
   title: 'Pages/Blog',
   argTypes: {
-    headerVariant: {
+    heroVariant: {
       control: 'select',
       options: Object.keys(blog.hero),
       table: {
@@ -54,7 +54,7 @@ export default {
       source: {
         transform: (src, story) =>
           `
-{{ header({ variant: '${story.args.headerVariant}', theme: '${story.args.headerTheme}', content: content.blog.header }) }} 
+{{ header({ variant: '${story.args.heroVariant}', theme: '${story.args.headerTheme}', content: content.blog.header }) }} 
 {{ blog({ variant: '${story.args.blogVariant}', theme: '${story.args.blogTheme}', content: content.blog.blog }) }} 
 {{ action({ variant: '${story.args.actionVariant}', theme: '${story.args.actionTheme}', content: content.blog.action }) }}
           `
@@ -63,17 +63,17 @@ export default {
   },
   args: {
     headerTheme: 'background',
-    headerVariant: 'left-hero',
+    heroVariant: 'start-hero',
     gridTheme: 'background',
     gridVariant: 'card-grid-gallery',
     actionTheme: 'background',
-    actionVariant: 'center-bg-action'
+    actionVariant: 'bg-center-action'
   }
 }
 
 export const Default = (args) =>
   ` 
-    ${blog.hero[args.headerVariant]({ storybook: true, props: { theme: args.headerTheme } })}
+    ${blog.hero[args.heroVariant]({ storybook: true, props: { theme: args.headerTheme } })}
     ${blog.grid[args.gridVariant]({ storybook: true, props: { theme: args.gridTheme } })}
     ${blog.action[args.actionVariant]({ storybook: true, props: { theme: args.actionTheme } })}
   `

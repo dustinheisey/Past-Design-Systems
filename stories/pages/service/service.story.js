@@ -138,9 +138,9 @@ export default {
   },
   args: {
     heroTheme: 'background',
-    heroVariant: 'center-bg-hero',
+    heroVariant: 'bg-center-hero',
     problemTheme: 'background',
-    problemVariant: 'right-intro',
+    problemVariant: 'end-intro',
     descriptionTheme: 'background',
     descriptionVariant: 'list-feature',
     proofTheme: 'background',
@@ -152,7 +152,7 @@ export default {
     faqTheme: 'background',
     faqVariant: 'card-grid-3-faq',
     actionTheme: 'background',
-    actionVariant: 'left-img-action'
+    actionVariant: 'img-start-action'
   }
 }
 

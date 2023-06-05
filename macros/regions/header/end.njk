@@ -60,11 +60,7 @@
                     {% for item in props.config.bottombar.links %}
                     <li>
                         <a href="{{item.url}}" class="navigation">
-                            {% if props.storybook %}
-                            <img class="icon" src="../../public/icons/{{item.icon}}.svg" alt="{{item.icon}}" />
-                            {% else %}
                             {% icon item.icon %}
-                            {% endif %}
                             <span>{{item.label}}</span>
                         </a>
                     </li>
@@ -72,11 +68,7 @@
                 </ul>
                 <a href="{{props.config.bottombar.fab.url}}" class="fab">
                     <span class="sr-only">{{props.config.bottombar.fab.label}}</span>
-                    {% if props.storybook %}
-                    <img class="icon" src="../../public/icons/{{props.config.bottombar.fab.icon}}.svg" alt="{{props.config.bottombar.fab.icon}}" />
-                    {% else %}
                     {% icon props.config.bottombar.fab.icon %}
-                    {% endif %}
                 </a>
             </div>
         </div>

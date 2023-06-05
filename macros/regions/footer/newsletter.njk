@@ -43,11 +43,7 @@
                 <li>
                     <a href="{{link.url}}" target="_blank" class="btn btn-circular">
                         <span class="sr-only">{{link.label}}</span>
-                        {% if props.storybook %}
-                        <img class="icon" src="../../public/icons/{{link.icon}}.svg" alt="{{link.icon}}" />
-                        {% else %}
                         {% icon link.icon %}
-                        {% endif %}
                         <tool-tip tip-position="block-start"> {{link.label}} </tool-tip>
                     </a>
                 </li>

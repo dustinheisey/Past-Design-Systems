@@ -22,9 +22,13 @@ const Template = (args) =>
   `
 
 export const Center = Template.bind({})
-export const Left = Template.bind({})
-export const Right = Template.bind({})
+export const Start = Template.bind({})
+export const End = Template.bind({})
+export const ImgEnd = Template.bind({})
+export const ImgStart = Template.bind({})
 
 Center.args = { variant: 'center-intro' }
-Left.args = { variant: 'left-intro' }
-Right.args = { variant: 'right-intro' }
+Start.args = { variant: 'start-intro' }
+End.args = { variant: 'end-intro' }
+ImgEnd.args = { variant: 'img-end-intro' }
+ImgStart.args = { variant: 'img-start-intro' }

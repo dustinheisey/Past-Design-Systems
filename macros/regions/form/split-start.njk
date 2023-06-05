@@ -26,11 +26,7 @@
                     <label class="input-card">
                         <input type="checkbox" name="{{input.name}}" value="{{card.value}}" />
                         <span>
-                            {% if props.storybook %}
-                            <img class="icon" src="../../public/icons/{{card.icon}}.svg" alt="{{card.icon}}" />
-                            {% else %}
                             {% icon card.icon %}
-                            {% endif %}
                             {{card.value}}
                         </span>
                     </label>
@@ -45,11 +41,7 @@
                     <label class="input-card">
                         <input type="radio" name="{{input.name}}" value="{{card.value}}" />
                         <span>
-                            {% if props.storybook %}
-                            <img class="icon" src="../../public/icons/{{card.icon}}.svg" alt="{{card.icon}}" />
-                            {% else %}
                             {% icon card.icon %}
-                            {% endif %}
                             {{card.value}}
                         </span>
                     </label>

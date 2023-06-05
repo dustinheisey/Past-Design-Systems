@@ -27,9 +27,9 @@ const Template = (args) =>
   `
 
 export const Center = Template.bind({})
-export const SplitLeft = Template.bind({})
-export const SplitRight = Template.bind({})
+export const SplitStart = Template.bind({})
+export const SplitEnd = Template.bind({})
 
 Center.args = { variant: 'center-form' }
-SplitLeft.args = { variant: 'split-left-form' }
-SplitRight.args = { variant: 'split-right-form' }
+SplitStart.args = { variant: 'split-start-form' }
+SplitEnd.args = { variant: 'split-end-form' }
