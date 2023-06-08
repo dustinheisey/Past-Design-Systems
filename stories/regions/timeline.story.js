@@ -22,7 +22,7 @@ export default {
 const Template = (args) =>
   `
     ${regions.timeline[args.variant]({
-      props: { storybook: true, theme: args.theme }
+      props: { storybook: true, theme: args.theme, content: args.content }
     })}
   `
 
