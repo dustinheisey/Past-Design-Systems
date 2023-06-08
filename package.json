@@ -12,11 +12,11 @@
     "lint:css": "cd styles & npx stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:js & npm run lint:css",
     "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
-    "storybook": "storybook dev -c stories/.storybook",
+    "sb": "storybook dev -c stories/.storybook",
     "styles": "postcss styles/style.css -o styles/style.min.css --watch",
     "build:js": "rollup -c rollup.config.js",
     "start": "npm run build:js & cd sites/portfolio & npx @11ty/eleventy --serve --quiet --incremental",
-    "build": "npm run build:js & cd sites/portfolio & npx @11ty/eleventy",
+    "build": "rollup -c rollup.config.js & npm run build:js & cd sites/portfolio & npx @11ty/eleventy",
     "ally": "cd sites/portfolio & a11y-sitechecker --config=ally.config.json -T=1000"
   },
   "author": {

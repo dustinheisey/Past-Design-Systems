@@ -13,7 +13,7 @@ const config = {
     name: '@storybook/html-webpack5',
     options: {}
   },
-  webpackFinal: (config) => {
+  webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.njk$/,
       use: [
@@ -29,6 +29,11 @@ const config = {
         }
       ]
     })
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      consts: path.resolve(__dirname, '../util/consts.js'),
+      funcs: path.resolve(__dirname, '../util/funcs.js')
+    }
 
     // Return the altered config
     return config

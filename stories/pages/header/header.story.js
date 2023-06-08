@@ -1,43 +1,21 @@
-import { pageRegions, themes } from '../../util/consts.js'
+import { pageRegions, themes } from 'consts'
+import { computeArgTypes, computeRender, computeDocs } from 'funcs'
 const { header } = pageRegions
+const sections = Object.keys(header)
+
 export default {
   title: 'Pages/Header',
-  argTypes: {
-    navbarVariant: {
-      control: 'select',
-      options: Object.keys(header),
-      table: {
-        category: 'Navbar'
-      }
-    },
-    navbarTheme: {
-      control: 'select',
-      options: themes,
-      table: {
-        category: 'Navbar'
-      }
-    }
-  },
-  args: {
-    navbarTheme: 'background',
-    navbarVariant: 'center-header'
-  },
+  argTypes: computeArgTypes(header, sections, themes),
   parameters: {
     status: {
       type: 'beta'
     },
     docs: {
       source: {
-        transform: (src, story) =>
-          `
-{{ navbar({ variant: '${story.args.navbarVariant}', theme: '${story.args.navbarTheme}', content: content.navbar }) }} 
-          `
+        transform: (src, story) => computeDocs('header', sections, story.args)
       }
     }
   }
 }
 
-export const Default = (args) =>
-  `
-    ${header[args.navbarVariant]({ storybook: true, props: { theme: args.navbarTheme } })}
-  `
+export const Default = (args) => computeRender(header, sections, args)

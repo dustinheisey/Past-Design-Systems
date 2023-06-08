@@ -49,5 +49,16 @@ export default {
         ]
       }
     }
+  },
+  args: {
+    content: {
+      overline: 'Anim irure dolore do',
+      headline: 'Est do esse veniam proident tempor qui adipisicing qui',
+      body: 'Minim irure sint veniam nisi aliqua pariatur nostrud quis excepteur reprehenderit. Irure Lorem adipisicing qui consequat non ullamco nulla cillum voluptate mollit et duis dolor proident.',
+      btn: {
+        label: 'CTA Label',
+        href: '#'
+      }
+    }
   }
 }

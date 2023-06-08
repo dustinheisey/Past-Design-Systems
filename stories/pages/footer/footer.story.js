@@ -1,43 +1,21 @@
-import { pageRegions, themes } from '../../util/consts.js'
+import { pageRegions, themes } from 'consts'
+import { computeArgTypes, computeRender, computeDocs } from 'funcs'
 const { footer } = pageRegions
+const sections = Object.keys(footer)
+
 export default {
   title: 'Pages/Footer',
-  argTypes: {
-    footerVariant: {
-      control: 'select',
-      options: Object.keys(footer),
-      table: {
-        category: 'Footer'
-      }
-    },
-    footerTheme: {
-      control: 'select',
-      options: themes,
-      table: {
-        category: 'Footer'
-      }
-    }
-  },
-  args: {
-    footerTheme: 'background',
-    footerVariant: 'inline-footer'
-  },
+  argTypes: computeArgTypes(footer, sections, themes),
   parameters: {
     status: {
       type: 'beta'
     },
     docs: {
       source: {
-        transform: (src, story) =>
-          `
-{{ footer({ variant: '${story.args.footerVariant}', theme: '${story.args.footerTheme}', content: content.footer }) }} 
-          `
+        transform: (src, story) => computeDocs('footer', sections, story.args)
       }
     }
   }
 }
 
-export const Default = (args) =>
-  `
-    ${footer[args.footerVariant]({ storybook: true, props: { theme: args.footerTheme } })}
-  `
+export const Default = (args) => computeRender(footer, sections, args)

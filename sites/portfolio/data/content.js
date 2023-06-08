@@ -4,7 +4,7 @@ module.exports = {
       accent: 'Sustainable',
       headline: ' Web Design for Purpose-Driven Orgs',
       body: 'You do important work for people and the planet. Elevate your online presence with a visually appealing, accessible, and eco-friendly web design that reflects your values and increases your impact.',
-      action: {
+      btn: {
         label: 'Start a Project',
         url: '/contact'
       },
@@ -80,7 +80,7 @@ module.exports = {
     action: {
       headline: 'Transform Your Online Presence',
       body: "Together we'll craft a compelling, sustainable website that resonates with your audience and amplifies the impact that only you can have.",
-      action: {
+      btn: {
         label: 'Start a Project',
         url: '/contact'
       },
@@ -309,7 +309,7 @@ module.exports = {
       }
     },
     problem: {
-      lead: 'Crafting a sustainable, accessible, and engaging website can be a daunting task. It means juggling WCAG guidelines, tech trends, and user expeactiontions with budget limitations. However, building a website that reflects your mission, promotes inclusivity, and minimizes digital footprint is a crucial commitment for your organization.'
+      lead: 'Crafting a sustainable, accessible, and engaging website can be a daunting task. It means juggling WCAG guidelines, tech trends, and user expectations with budget limitations. However, building a website that reflects your mission, promotes inclusivity, and minimizes digital footprint is a crucial commitment for your organization.'
     },
     description: {
       overline: 'A Collaborative Design Process',

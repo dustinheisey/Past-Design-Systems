@@ -286,75 +286,159 @@ export const regions = {
     'block-start-timeline': blockStartTimeline,
     'inline-staggered-timeline': inlineStaggeredTimeline,
     'inline-start-timeline': inlineStartTimeline
-  }
+  },
+  pricing: {},
+  map: {},
+  social: {}
 }
+
+const {
+  gallery,
+  hero,
+  intro,
+  feature,
+  stats,
+  testimonials,
+  action,
+  form,
+  faq,
+  map,
+  pricing,
+  timeline,
+  copy,
+  header,
+  footer
+} = regions
 
 export const pageRegions = {
   about: {
-    hero: regions.hero,
-    story: regions.intro,
-    skills: { ...regions.gallery, ...regions.feature, ...regions.stats },
-    portfolio: regions.gallery,
-    testimonials: regions.testimonials,
-    action: regions.action
+    hero: { ...hero, ...intro },
+    info1: intro,
+    info2: intro,
+    info3: intro,
+    skills: { ...gallery, ...feature, ...stats },
+    portfolio: gallery,
+    success: { ...testimonials, ...feature },
+    grid: gallery,
+    action
   },
   blog: {
-    hero: regions.hero,
-    grid: regions.gallery,
-    action: regions.action
-  },
-  post: {
-    intro: regions.intro,
-    copy: regions.copy,
-    action: regions.action
+    hero,
+    grid: gallery,
+    action
   },
   contact: {
-    intro: regions.intro,
-    form: regions.form,
-    faq: regions.faq
+    intro,
+    form,
+    faq,
+    map,
+    newsletter: action,
+    action
+  },
+  donate: {
+    hero,
+    why: feature,
+    form,
+    form2: form,
+    action
   },
   error: {
-    'bg-center-action': bgCenterAction,
-    'simple-action': simpleAction,
-    'split-start-action': splitStartAction
+    error: {
+      'bg-center-action': bgCenterAction,
+      'simple-action': simpleAction,
+      'split-start-action': splitStartAction
+    }
   },
-  footer: regions.footer,
+  footer: { footer },
+  getInvolved: {
+    hero,
+    action1: action,
+    action2: action,
+    action3: action,
+    action4: action,
+    action5: action,
+    action6: action
+  },
+  header: { header },
+  impact: {
+    hero,
+    category1: { ...testimonials, ...feature, ...stats },
+    category2: { ...testimonials, ...feature, ...stats },
+    category3: { ...testimonials, ...feature, ...stats },
+    category4: { ...testimonials, ...feature, ...stats },
+    goals: { ...feature, ...gallery },
+    action
+  },
   landing: {
-    hero: regions.hero,
-    problem: regions.intro,
-    guide: regions.feature,
-    plan: { ...regions.feature, ...regions.gallery },
-    action: regions.action,
-    success: regions.testimonials,
-    freebie: regions.action
+    hero,
+    problem: intro,
+    guide: feature,
+    plan: { ...feature, ...gallery },
+    action,
+    stakes: feature,
+    success: { ...testimonials, ...feature },
+    freebie: action
   },
-  header: regions.header,
   portfolio: {
-    hero: regions.hero,
-    grid: regions.gallery,
-    testimonials: regions.testimonials,
-    action: regions.action
+    hero,
+    grid: gallery,
+    testimonials,
+    action
+  },
+  post: {
+    intro,
+    copy,
+    action
+  },
+  program: {
+    hero,
+    intro,
+    approach: feature,
+    success: { ...testimonials, ...feature },
+    faq,
+    action
+  },
+  programs: {
+    hero,
+    intro,
+    program1: action,
+    program2: action,
+    program3: action,
+    program4: action,
+    action
+  },
+  resources: {
+    hero,
+    gallery1: gallery,
+    gallery2: gallery,
+    gallery3: gallery,
+    gallery4: gallery,
+    resource1: action,
+    resource2: action,
+    resource3: action,
+    resource4: action,
+    action
   },
   service: {
-    hero: regions.hero,
-    problem: regions.intro,
-    description: regions.feature,
-    proof: { ...regions.testimonials, ...regions.gallery },
-    process: regions.timeline,
-    pricing: regions.pricing,
-    transformation: regions.feature,
-    faq: regions.faq,
-    action: regions.action
+    hero,
+    problem: intro,
+    description: feature,
+    proof: { ...testimonials, ...gallery },
+    process: timeline,
+    pricing,
+    transformation: feature,
+    faq,
+    action
   },
   services: {
-    hero: regions.hero,
-    intro: regions.intro,
-    service1: regions.action,
-    service2: regions.action,
-    service3: regions.action,
-    service4: regions.action,
-    testimonials: regions.testimonials,
-    action: regions.action
+    hero,
+    intro,
+    service1: action,
+    service2: action,
+    service3: action,
+    service4: action,
+    testimonials,
+    action
   }
 }
 

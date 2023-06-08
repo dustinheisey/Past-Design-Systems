@@ -14,7 +14,7 @@ class IconTag {
   }
 
   run(context, url, alt = '') {
-    return `<img src="/public/icons/${url}.svg" alt="${alt}">`
+    return new nunjucks.runtime.SafeString(`<img src="/public/icons/${url}.svg" alt="${alt}">`)
   }
 }
 

@@ -1,0 +1,15 @@
+---
+layout: base
+---
+{% from "../../../macros/region.njk" import gallery, action %}
+
+{{ gallery({ variant: 'masonry', class: "inset", back: true, categories: collections.category, posts: collections[label], content: {headline: label + " Posts"} }) }}
+
+{{ action({variant: 'bg-pattern', pattern: 'topogrophy', theme: 'primary', content: {
+headline: "Ready to Make a Difference? Let's Collaborate!",
+body: "I'm dedicated to helping businesses and nonprofits like yours thrive while protecting our planet. Get in touch and let's embark on a journey towards a more sustainable future for your organization.",
+btn: {
+label: 'Start a Project',
+href: '/contact'
+}
+} }) }}

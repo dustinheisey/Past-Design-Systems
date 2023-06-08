@@ -1,0 +1,60 @@
+{
+  "name": "Portfolio of Dustin Heisey",
+  "short_name": "Dustin Heisey",
+  "description": "The portfolio of Dustin Heisey, optimized for accessibility, responsiveness, and sustainability",
+  "theme_color": "#566500",
+  "background_color": "#566500",
+  "display": "fullscreen",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "display_override": ["window-control-overlay", "fullscreen", "standalone", "browser"],
+  "shortcuts": [
+    {
+      "name": "About",
+      "description": "Read my bio and learn about my skills",
+      "url": "/about"
+    },
+    {
+      "name": "Services",
+      "url": "/services",
+      "description": "Learn about the services I offer"
+    },
+    {
+      "name": "Portfolio",
+      "url": "/portfolio",
+      "description": "View my portfolio"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact",
+      "description": "Contact me"
+    }
+  ]
+}

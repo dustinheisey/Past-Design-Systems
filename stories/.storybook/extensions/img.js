@@ -14,7 +14,9 @@ class ImgTag {
   }
 
   run(context) {
-    return `<img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80" alt="" />`
+    return new nunjucks.runtime.SafeString(
+      `<img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="" />`
+    )
   }
 }
 
