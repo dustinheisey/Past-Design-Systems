@@ -1,38 +1,27 @@
-{# Status: TODO #}
-<div class="region">
-    <h2 class="region-headline">Magna magna cupidatat</h2>
-    <div class="sidebar gap-m">
+<div class="region stack gap-m">
+    <section class="prose">{% if props.content.overline %}
+        <p class="overline">{{props.content.overline}}</p>
+        {% endif %}
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
+    <div class="sidebar align-start gap-m">
         <div class="prose">
+            {% if props.content.lead %}
             <p class="lead">
-                Sint ullamco cillum laborum commodo sunt do aliquip. Id aliqua aute
-                aliquip magna ut. Consectetur velit esse amet aute. Et adipisicing in
-                anim ullamco. Consectetur velit esse amet aute. Et adipisicing in anim
-                ullamco.
+                {{props.content.lead}}
             </p>
+            {% endif %}
             <p>
-                Sint ullamco cillum laborum commodo sunt do aliquip. Id aliqua aute
-                aliquip magna ut. Consectetur velit esse amet aute. Et adipisicing in
-                anim ullamco. Sint ullamco cillum laborum commodo sunt do aliquip. Id
-                aliqua aute aliquip magna ut. Consectetur velit esse amet aute. Et
-                adipisicing in anim ullamco. Sint ullamco cillum laborum commodo sunt
-                do aliquip. Id aliqua aute aliquip magna ut. Consectetur velit esse
-                amet aute. Et adipisicing in anim ullamco. Consectetur velit esse amet
-                aute. Et adipisicing in anim ullamco.
+                {{props.content.body}}
             </p>
         </div>
-        <div class="stack gap-xl fixed">
-            <div class="prose stack center-intrinsic gap-2xs">
-                <h3 class="section-headline">400</h3>
-                <p>Orcas saved per month</p>
+        <div class="stack gap-l fixed">
+            {% for stat in props.content.stats %}
+            <div class="prose stack gap-3xs">
+                <h3 class="section-headline">{{stat.headline}}</h3>
+                <p>{{stat.body}}</p>
             </div>
-            <div class="prose stack center-intrinsic gap-2xs">
-                <h3 class="section-headline">400</h3>
-                <p>Orcas saved per month</p>
-            </div>
-            <div class="prose stack center-intrinsic gap-2xs">
-                <h3 class="section-headline">400</h3>
-                <p>Orcas saved per month</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

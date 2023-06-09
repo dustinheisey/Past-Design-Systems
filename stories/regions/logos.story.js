@@ -11,13 +11,19 @@ export default {
       control: 'select',
       options: themes
     }
+  },
+  parameters: {
+    status: {
+      type: 'stable'
+    },
+    layout: 'centered'
   }
 }
 
 const Template = (args) =>
   `
     ${regions.logos[args.variant]({
-      props: { storybook: true, theme: args.theme, content: args.content }
+      props: { storybook: true, theme: args.theme, content: args.content, col: 3 }
     })}
   `
 

@@ -2,7 +2,6 @@ import { regions, themes } from '../util/consts.js'
 
 export default {
   title: 'Regions/Footer',
-  decorators: [(story) => `<div style="inline-size: 90vw">${story()}</div>`],
   argTypes: {
     variant: {
       control: 'select',
@@ -15,15 +14,16 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
-    }
+      type: 'stable'
+    },
+    layout: 'fullscreen'
   }
 }
 
 const Template = (args) =>
   `
     ${regions.footer[args.variant]({
-      props: { storybook: true, theme: args.theme, content: args.content }
+      props: { storybook: true, theme: args.theme, content: args.content, config: args.config }
     })}
   `
 

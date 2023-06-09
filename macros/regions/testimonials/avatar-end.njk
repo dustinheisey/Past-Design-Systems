@@ -1,19 +1,11 @@
-{# Status: TODO #}
-<div class="region principle">
-    <div class="sidebar gap-m">
-        <div class="center">
-            <blockquote class="blockquote-accent">
-                <p>
-                    I am beyond pleased with Dustin’s impeccable service. He was
-                    extremely attentive in understanding my business and provided very
-                    personalized help. Great designer. I 100% recommend working with
-                    him.
-                </p>
-                <footer>Jarod Hoover | CEO of Hoover Honey</footer>
-            </blockquote>
-        </div>
-        <div class="frame fixed square">
-            <img src="https://generative-placeholders.glitch.me/image?width=300&height=300" alt="placeholder" />
-        </div>
-    </div>
+<div class="region reverse sidebar gap-m">
+    <div class="fixed frame avatar-img">{% img props.content.img.src, props.content.img.alt %}</div>
+    <figure>
+        <blockquote>
+            &OpenCurlyDoubleQuote;{{ props.content.quote }}&CloseCurlyDoubleQuote;
+        </blockquote>
+        <figcaption class="overline">
+            {{ props.content.author }}
+        </figcaption>
+    </figure>
 </div>

@@ -15,8 +15,9 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
-    }
+      type: 'stable'
+    },
+    layout: 'centered'
   }
 }
 
@@ -27,18 +28,18 @@ const Template = (args) =>
     })}
   `
 
-export const Simple3 = Template.bind({})
-export const Simple4 = Template.bind({})
+export const Inline = Template.bind({})
 export const ImgStart = Template.bind({})
 export const ImgEnd = Template.bind({})
 export const SplitStart = Template.bind({})
 export const SplitEnd = Template.bind({})
 export const Description = Template.bind({})
 
-Simple3.args = { variant: 'simple-3-stats' }
-Simple4.args = { variant: 'simple-4-stats' }
+Inline.args = { variant: 'inline-stats' }
 ImgStart.args = { variant: 'img-start-stats' }
 ImgEnd.args = { variant: 'img-end-stats' }
 SplitStart.args = { variant: 'split-start-stats' }
 SplitEnd.args = { variant: 'split-end-stats' }
-Description.args = { variant: 'description-stats' }
+Description.args = {
+  variant: 'description-stats'
+}

@@ -14,8 +14,9 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
-    }
+      type: 'stable'
+    },
+    layout: 'centered'
   }
 }
 

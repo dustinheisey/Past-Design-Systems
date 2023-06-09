@@ -1,66 +1,16 @@
-{# Status: TODO #}
-<div class="sidebar region sidebar-split-s gap-xl theme-{{props.theme}}">
-    <div class="prose fixed">
-        <h2 class="region-headline">Frequently Asked Questions</h2>
-        <p>
-            Can’t find the answer you’re looking for? Reach out to our customer
-            support team.
-        </p>
-    </div>
+<div class="sidebar region sidebar-split-s gap-xl align-start theme-{{props.theme}}">
+    <section class="prose fixed">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
     <div class="stack gap-s">
+        {% for question in props.content.faqs %}
         <div class="prose">
-            <h3 class="title-headline">Question Title</h3>
+            <h3 class="title-headline">{{question.question}}</h3>
             <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
+                {{question.answer}}
             </p>
         </div>
-        <div class="prose">
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
-        <div class="prose">
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
-        <div class="prose">
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
-        <div class="prose">
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
-        <div class="prose">
-            <h3 class="title-headline">Question Title</h3>
-            <p>
-                Nulla nisi est incididunt nisi deserunt laborum. Et adipisicing et
-                mollit minim et consequat. Non magna dolore do anim fugiat excepteur
-                cillum ut veniam voluptate ad. Duis dolore adipisicing officia ipsum
-                mollit. Cupidatat ex anim Lorem.
-            </p>
-        </div>
+        {% endfor %}
     </div>
 </div>

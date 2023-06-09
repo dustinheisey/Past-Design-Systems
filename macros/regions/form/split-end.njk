@@ -1,69 +1,67 @@
-{# Status: TODO #}
-<div class="cover sidebar sidebar-split gap-m theme-{{props.theme}}">
-    <div class="frame photo fixed">
-        <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-    </div>
-    <div class="stack center">
-        <section class="prose">
-            <p class="overline">Overline Text</p>
-            <h2 class="region-headline">Apply to Work With Me</h2>
-            <p>
-                Fill out the application below, and let's make a difference together.
-            </p>
-        </section>
-        <form class="stack gap-s">
-            <label for="full_name">
-                <span class="required">Full Name</span>
-                <input type="text" id="full_name" name="full_name" class="input" required />
-            </label>
-            <label for="email">
-                <span class="required">Email</span>
-                <input type="email" id="email" name="email" class="input" required />
-            </label>
-            <label for="organization_description">
-                <span class="required">Describe Your Organization</span>
-                <textarea id="organization_description" name="organization_description" required></textarea>
-            </label>
-            <fieldset class="cards">
-                <legend>
-                    <span class="required">What Services Are You Interested In?</span>
-                </legend>
-                <label class="input-card">
-                    <input type="checkbox" />
-                    <span>
-                        <svg focusable="false">
-                            <use xlink:href="src/elements/text/icon/icons.svg#edit-note-2"></use>
-                        </svg>
-                        Web Design & Development
-                    </span>
+<div class="cover region cover-nav">
+    <div class="sidebar reverse align-stretch sidebar-split gap-m">
+        <div class="frame square">
+            {% set src = './public/img/' + props.content.img.src %}
+            {% img src, props.content.img.alt %}
+        </div>
+        <div class="stack fixed center center-intrinsic">
+            <section class="prose">
+                <p class="overline">{{props.content.overline}}</p>
+                <h1 class="page-headline">{{props.content.headline}}</h1>
+                <p>{{props.content.body}}</p>
+            </section>
+            <form class="stack gap-s" name="contact" method="POST" data-netlify="true">
+                {% for input in props.content.inputs %}
+                {% if input.type === 'textarea' %}
+                <label>
+                    <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    <textarea id="{{input.id}}" name="{{input.id}}" {% if input.required %}required{% endif %}></textarea>
                 </label>
-                <label class="input-card">
-                    <input type="checkbox" />
-                    <span>
-                        <svg focusable="false">
-                            <use xlink:href="src/elements/text/icon/icons.svg#edit-note-2"></use>
-                        </svg>
-                        Web Design & Development
-                    </span>
-                </label>
-                <label class="input-card">
-                    <input type="checkbox" />
-                    <span>
-                        <svg focusable="false">
-                            <use xlink:href="src/elements/text/icon/icons.svg#edit-note-2"></use>
-                        </svg>
-                        Web Design & Development
-                    </span>
-                </label>
-            </fieldset>
-            <label for="budget">
-                <span class="required">Budget</span>
-                <div class="inline" gap="2xs">
-                    <input type="range" id="budget" name="budget" min="500" max="10000" step="500" value="500" required />
-                    <output id="budget-value">$500</output>
+                {% elif input.type === 'checkbox-cards' %}
+                <fieldset class="cards switcher switch-phone">
+                    <legend>
+                        <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    </legend>
+                    {% for card in input.cards %}
+                    <label class="input-card">
+                        <input type="checkbox" name="{{input.name}}" value="{{card.value}}" />
+                        <span>
+                            {% icon card.icon %}
+                            {{card.value}}
+                        </span>
+                    </label>
+                    {% endfor %}
+                </fieldset>
+                {% elif input.type === 'radio-cards' %}
+                <fieldset class="cards switcher switch-phone">
+                    <legend>
+                        <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    </legend>
+                    {% for card in input.cards %}
+                    <label class="input-card">
+                        <input type="radio" name="{{input.name}}" value="{{card.value}}" />
+                        <span>
+                            {% icon card.icon %}
+                            {{card.value}}
+                        </span>
+                    </label>
+                    {% endfor %}
+                </fieldset>
+                {% elif input.type === 'range' %}
+                <label for="{{input.id}}" {% if input.required %}class="required" {% endif %}>{{input.label}}</label>
+                <div class="inline gap-2xs">
+                    <input type="range" id="{{input.id}}" name="{{input.id}}" min="{{input.min}}" max="{{input.max}}" step="{{input.step}}" value="{{input.value}}" />
+                    <output id="budget-value">{{input.output}}{{input.value}}</output>
                 </div>
-            </label>
-            <button type="submit" class="btn">Send Application</button>
-        </form>
+                {% else %}
+                <label>
+                    <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    <input type="{{input.type}}" id="{{input.id}}" name="{{input.id}}" class="input" {% if input.required %}required{% endif %} />
+                </label>
+                {% endif %}
+                {% endfor %}
+                <button type="submit" class="btn">{{props.content.submit}}</button>
+            </form>
+        </div>
     </div>
 </div>

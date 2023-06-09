@@ -1,47 +1,17 @@
-{# Status: TODO #}
-<div class="region timeline timeline-block theme-{{props.theme}}">
-    <div class="sparkline" aria-hidden="true"></div>
-    <div class="stack gap-xs">
-        <time datetime="2021-08"> Aug 2021 </time>
-        <div class="prose">
-            <h4 class="title-headline">Exercitation velit deserun</h4>
-            <p>
-                Non tempor nostrud sit esse ea est. Eiusmod sint fugiat excepteur esse.
-                Nisi tempor adipisicing dolor ea veniam consequat.
-            </p>
+<div class="region stack">
+    <section class="prose">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
+    <div class="timeline timeline-block">
+        {% for step in props.content.steps %}
+        <div class="sparkline" aria-hidden="true"></div>
+        <div class="stack gap-xs">
+            <div class="prose">
+                <h3 class="title-headline">{{step.headline}}</h3>
+                <p>{{step.body}}</p>
+            </div>
         </div>
-    </div>
-    <div class="sparkline" aria-hidden="true"></div>
-    <div class="stack gap-xs">
-        <time datetime="2021-08"> Aug 2021 </time>
-        <div class="prose">
-            <h4 class="title-headline">Exercitation velit deserun</h4>
-            <p>
-                Non tempor nostrud sit esse ea est. Eiusmod sint fugiat excepteur esse.
-                Nisi tempor adipisicing dolor ea veniam consequat.
-            </p>
-        </div>
-    </div>
-    <div class="sparkline" aria-hidden="true"></div>
-    <div class="stack gap-xs">
-        <time datetime="2021-08"> Aug 2021 </time>
-        <div class="prose">
-            <h4 class="title-headline">Exercitation velit deserun</h4>
-            <p>
-                Non tempor nostrud sit esse ea est. Eiusmod sint fugiat excepteur esse.
-                Nisi tempor adipisicing dolor ea veniam consequat.
-            </p>
-        </div>
-    </div>
-    <div class="sparkline" aria-hidden="true"></div>
-    <div class="stack gap-xs">
-        <time datetime="2021-08"> Aug 2021 </time>
-        <div class="prose">
-            <h4 class="title-headline">Exercitation velit deserun</h4>
-            <p>
-                Non tempor nostrud sit esse ea est. Eiusmod sint fugiat excepteur esse.
-                Nisi tempor adipisicing dolor ea veniam consequat.
-            </p>
-        </div>
+        {% endfor %}
     </div>
 </div>

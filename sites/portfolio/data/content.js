@@ -92,7 +92,7 @@ module.exports = {
     success: {
       quote:
         'I am beyond pleased with Dustin’s impeccable service. He was extremely attentive in understanding my business and provided very personalized help. Great designer. I 100% recommend working with him.',
-      footer: 'Jarod Hoover | CEO of Hoover Honey'
+      author: 'Jarod Hoover | CEO of Hoover Honey'
     }
   },
   about: {

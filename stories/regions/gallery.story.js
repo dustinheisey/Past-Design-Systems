@@ -11,6 +11,12 @@ export default {
       control: 'select',
       options: themes
     }
+  },
+  parameters: {
+    status: {
+      type: 'beta'
+    },
+    layout: 'centered'
   }
 }
 
@@ -21,7 +27,6 @@ const Template = (args) =>
     })}
   `
 
-export const CardGrid2 = Template.bind({})
 export const CardGrid = Template.bind({})
 export const FeaturedCardGrid = Template.bind({})
 export const FeaturedMixedGrid = Template.bind({})
@@ -32,7 +37,6 @@ export const Start = Template.bind({})
 export const Stack = Template.bind({})
 export const TextGrid = Template.bind({})
 
-CardGrid2.args = { variant: 'card-grid-2-gallery' }
 CardGrid.args = { variant: 'card-grid-gallery' }
 FeaturedCardGrid.args = { variant: 'featured-card-grid-gallery' }
 FeaturedMixedGrid.args = { variant: 'featured-mixed-grid-gallery' }

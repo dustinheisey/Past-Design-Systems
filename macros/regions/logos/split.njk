@@ -1,34 +1,18 @@
-{# Status: TODO #}
 <div class="region sidebar sidebar-split align-center theme-{{props.theme}}">
     <section class="fixed prose">
         <h2 class="region-headline">
-            Reprehenderit ipsum reprehenderit exercitation
+            {{props.content.headline}}
         </h2>
         <p>
-            Ad dolore proident esse excepteur nostrud pariatur tempor dolore tempor.
-            Exercitation nisi in officia non amet laborum nulla laboris magna.
-            Excepteur ex qui qui sunt in consectetur.
+            {{props.content.body}}
         </p>
-        <a href="/" class="btn">Call to Action</a>
+        <a href="{{props.content.btn.href}}" class="btn">{{props.content.btn.label}}</a>
     </section>
     <div class="grid grid-2">
+        {% for logo in props.content.logos %}
         <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=150&height=100" alt="placeholder" />
+            {% img logo.src, logo.alt %}
         </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=150&height=100" alt="placeholder" />
-        </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=150&height=100" alt="placeholder" />
-        </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-        </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-        </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-        </div>
+        {% endfor %}
     </div>
 </div>

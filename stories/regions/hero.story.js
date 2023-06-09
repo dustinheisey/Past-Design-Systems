@@ -14,20 +14,19 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
-    }
+      type: 'stable'
+    },
+    layout: 'fullscreen'
   }
 }
 
 const Template = (args) =>
   `
     ${regions.hero[args.variant]({
-      props: { storybook: true, theme: args.theme, content: args.content }
+      props: { storybook: true, theme: args.theme, content: args.content, config: args.config }
     })}
   `
 
-export const Start = Template.bind({})
-export const End = Template.bind({})
 export const SplitStart = Template.bind({})
 export const SplitEnd = Template.bind({})
 export const AngledBlockStartStart = Template.bind({})
@@ -48,8 +47,6 @@ export const GradientStart = Template.bind({})
 export const GradientCenter = Template.bind({})
 export const GradientEnd = Template.bind({})
 
-Start.args = { variant: 'start-hero' }
-End.args = { variant: 'end-hero' }
 SplitStart.args = { variant: 'split-start-hero' }
 SplitEnd.args = { variant: 'split-end-hero' }
 AngledBlockStartStart.args = { variant: 'angled-block-start-start-hero' }

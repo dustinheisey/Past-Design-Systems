@@ -13,21 +13,23 @@
 }
 
 .timeline-block .sparkline {
-  inline-size: 1px;
-  block-size: 100%;
-  background: var(--color-outline-variant);
-  grid-column: 1/2;
+  inline-size: 1px !important;
+  block-size: 100% !important;
+  background: var(--color-outline-variant) !important;
+  grid-column: 1/2 !important;
+  margin-block-start: var(--space-2xs);
 }
 
 .sparkline::before {
-  content: '';
-  display: block;
-  width: 0.35rem;
-  height: 0.35rem;
-  background-color: var(--color-primary);
-  border-radius: 50%;
-  transform: translateX(-50%);
-  margin-block-end: var(--space-xs);
+  top: 0 !important;
+  content: '' !important;
+  display: block !important;
+  width: 0.35rem !important;
+  height: 0.35rem !important;
+  background-color: var(--color-primary) !important;
+  border-radius: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-block-end: var(--space-xs) !important;
 }
 
 .timeline-block [aria-hidden='true'] {
@@ -78,7 +80,6 @@
     grid-template-rows: repeat(4, minmax(0, 1fr));
     grid-template-columns: max-content max-content 1fr;
     place-items: start;
-    row-gap: 0;
   }
 
   .sparkline::before {
@@ -121,7 +122,7 @@
   }
 
   .timeline-block.timeline-staggered > .sparkline {
-    grid-column: 2/3;
+    grid-column: 2/3 !important;
   }
 
   .timeline-block.timeline-staggered > .stack:nth-of-type(2) {

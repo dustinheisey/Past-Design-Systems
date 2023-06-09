@@ -11,6 +11,12 @@ export default {
       control: 'select',
       options: themes
     }
+  },
+  parameters: {
+    status: {
+      type: 'stable'
+    },
+    layout: 'fullscreen'
   }
 }
 

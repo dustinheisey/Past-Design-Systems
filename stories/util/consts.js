@@ -15,9 +15,6 @@ import bgCenterAction from '../../macros/regions/action/bg-center.njk'
 import bgEndAction from '../../macros/regions/action/bg-end.njk'
 import bgPatternAction from '../../macros/regions/action/bg-pattern.njk'
 import bgStartAction from '../../macros/regions/action/bg-start.njk'
-import coverEndAction from '../../macros/regions/action/cover-end.njk'
-import coverStartAction from '../../macros/regions/action/cover-start.njk'
-import coverAction from '../../macros/regions/action/cover.njk'
 import gradientCenterAction from '../../macros/regions/action/gradient-center.njk'
 import gradientEndAction from '../../macros/regions/action/gradient-end.njk'
 import gradientStartAction from '../../macros/regions/action/gradient-start.njk'
@@ -27,15 +24,13 @@ import imgStartAction from '../../macros/regions/action/img-start.njk'
 import inlineAction from '../../macros/regions/action/inline.njk'
 import simpleEndAction from '../../macros/regions/action/simple-end.njk'
 import simpleStartAction from '../../macros/regions/action/simple-start.njk'
-import simpleAction from '../../macros/regions/action/simple.njk'
+import simpleCenterAction from '../../macros/regions/action/simple-center.njk'
 import splitEndAction from '../../macros/regions/action/split-end.njk'
 import splitStartAction from '../../macros/regions/action/split-start.njk'
 import tiles2EndAction from '../../macros/regions/action/tiles-2-end.njk'
 import tiles2StartAction from '../../macros/regions/action/tiles-2-start.njk'
 import tiles3EndAction from '../../macros/regions/action/tiles-3-end.njk'
 import tiles3StartAction from '../../macros/regions/action/tiles-3-start.njk'
-
-import postCopy from '../../macros/regions/copy/post.njk'
 
 import accordionFaq from '../../macros/regions/faq/accordion.njk'
 import blurbGrid2Faq from '../../macros/regions/faq/blurb-grid-2.njk'
@@ -76,7 +71,6 @@ import masonryGallery from '../../macros/regions/gallery/masonry.njk'
 import startGallery from '../../macros/regions/gallery/start.njk'
 import stackGallery from '../../macros/regions/gallery/stack.njk'
 import textGridGallery from '../../macros/regions/gallery/text-grid.njk'
-import cardGrid2Gallery from '../../macros/regions/gallery/card-grid-2.njk'
 
 import centerHeader from '../../macros/regions/header/center.njk'
 import endHeader from '../../macros/regions/header/end.njk'
@@ -91,14 +85,12 @@ import angledBlockStartEndHero from '../../macros/regions/hero/angled-block-star
 import bgCenterHero from '../../macros/regions/hero/bg-center.njk'
 import bgEndHero from '../../macros/regions/hero/bg-end.njk'
 import bgStartHero from '../../macros/regions/hero/bg-start.njk'
-import endHero from '../../macros/regions/hero/end.njk'
 import gradientCenterHero from '../../macros/regions/hero/gradient-center.njk'
 import gradientEndHero from '../../macros/regions/hero/gradient-end.njk'
 import gradientStartHero from '../../macros/regions/hero/gradient-start.njk'
 import imgCenterHero from '../../macros/regions/hero/img-center.njk'
 import imgEndHero from '../../macros/regions/hero/img-end.njk'
 import imgStartHero from '../../macros/regions/hero/img-start.njk'
-import startHero from '../../macros/regions/hero/start.njk'
 import splitEndHero from '../../macros/regions/hero/split-end.njk'
 import splitStartHero from '../../macros/regions/hero/split-start.njk'
 import tiles2StartHero from '../../macros/regions/hero/tiles-2-start.njk'
@@ -121,8 +113,7 @@ import splitLogos from '../../macros/regions/logos/split.njk'
 import descriptionStats from '../../macros/regions/stats/description.njk'
 import imgEndStats from '../../macros/regions/stats/img-end.njk'
 import imgStartStats from '../../macros/regions/stats/img-start.njk'
-import simple3Stats from '../../macros/regions/stats/simple-3.njk'
-import simple4Stats from '../../macros/regions/stats/simple-4.njk'
+import inlineStats from '../../macros/regions/stats/inline.njk'
 import splitEndStats from '../../macros/regions/stats/split-end.njk'
 import splitStartStats from '../../macros/regions/stats/split-start.njk'
 
@@ -159,8 +150,7 @@ export const regions = {
     'img-grid-gallery': imgGridGallery,
     'start-gallery': startGallery,
     'stack-gallery': stackGallery,
-    'text-grid-gallery': textGridGallery,
-    'card-grid-2-gallery': cardGrid2Gallery
+    'text-grid-gallery': textGridGallery
   },
   form: {
     'center-form': centerForm,
@@ -169,9 +159,6 @@ export const regions = {
   },
   action: {
     'bg-pattern-action': bgPatternAction,
-    'cover-end-action': coverEndAction,
-    'cover-start-action': coverStartAction,
-    'cover-action': coverAction,
     'bg-center-action': bgCenterAction,
     'gradient-center-action': gradientCenterAction,
     'img-center-action': imgCenterAction,
@@ -184,7 +171,7 @@ export const regions = {
     'img-end-action': imgEndAction,
     'simple-start-action': simpleStartAction,
     'simple-end-action': simpleEndAction,
-    'simple-action': simpleAction,
+    'simple-center-action': simpleCenterAction,
     'split-start-action': splitStartAction,
     'split-end-action': splitEndAction,
     'tiles-2-start-action': tiles2StartAction,
@@ -228,11 +215,9 @@ export const regions = {
     'bg-start-hero': bgStartHero,
     'gradient-start-hero': gradientStartHero,
     'img-start-hero': imgStartHero,
-    'start-hero': startHero,
     'bg-end-hero': bgEndHero,
     'gradient-end-hero': gradientEndHero,
     'img-end-hero': imgEndHero,
-    'end-hero': endHero,
     'split-start-hero': splitStartHero,
     'split-end-hero': splitEndHero,
     'tiles-2-start-hero': tiles2StartHero,
@@ -263,15 +248,11 @@ export const regions = {
     'stacked-header': stackedHeader,
     'start-header': startHeader
   },
-  copy: {
-    'post-copy': postCopy
-  },
   stats: {
     'description-stats': descriptionStats,
     'img-end-stats': imgEndStats,
     'img-start-stats': imgStartStats,
-    'simple-3-stats': simple3Stats,
-    'simple-4-stats': simple4Stats,
+    'inline-stats': inlineStats,
     'split-end-stats': splitEndStats,
     'split-start-stats': splitStartStats
   },
@@ -345,7 +326,7 @@ export const pageRegions = {
   error: {
     error: {
       'bg-center-action': bgCenterAction,
-      'simple-action': simpleAction,
+      'simple-action': simpleCenterAction,
       'split-start-action': splitStartAction
     }
   },

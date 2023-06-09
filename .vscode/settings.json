@@ -12,6 +12,6 @@
     "rollup.config.js": true,
     "ally.config.json": true,
     ".vscode": true,
-    "sites\\portfolio": true
+    "sites\\oceans-voice": true
   }
 }

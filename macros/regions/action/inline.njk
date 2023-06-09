@@ -1,7 +1,6 @@
-{# Status: TODO #}
 <div class="sidebar region align-center gap-m">
     <div class="prose">
-        <h1>landing page title</h1>
+        <h1>{{props.content.headline}}</h1>
     </div>
-    <button class="btn fixed">Call to Action</button>
+    <a href="{{props.content.btn.href}}" class="btn fixed">{{props.content.btn.label}}</a>
 </div>

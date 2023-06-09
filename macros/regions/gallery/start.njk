@@ -1,11 +1,10 @@
 {# Status: TODO #}
 <div class="region stack center theme-{{props.theme}}">
-    <section class="prose justify-start">
-        <h1 class="page-headline">Blog Title</h1>
-        <p>
-            In aliquip magna minim aliqua ipsum dolor anim voluptate in incididunt
-            consectetur quis Lorem.
-        </p>
+    <section class="prose">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="page-headline">
+            {{props.content.headline}}
+        </h2>
     </section>
     <div class="stack gap-xl">
         <article class="sidebar">

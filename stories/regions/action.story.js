@@ -2,7 +2,6 @@ import { regions, themes } from '../util/consts.js'
 
 export default {
   title: 'Regions/Action',
-  decorators: [(story) => `<div style="inline-size: 90vw">${story()}</div>`],
   argTypes: {
     variant: {
       control: 'select',
@@ -15,8 +14,9 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
-    }
+      type: 'stable'
+    },
+    layout: 'fullscreen'
   }
 }
 
@@ -40,14 +40,11 @@ export const BgCenter = Template.bind({})
 export const BgStart = Template.bind({})
 export const BgEnd = Template.bind({})
 export const BgPattern = Template.bind({})
-export const Cover = Template.bind({})
-export const CoverStart = Template.bind({})
-export const CoverEnd = Template.bind({})
 export const GradientStart = Template.bind({})
 export const GradientCenter = Template.bind({})
 export const GradientEnd = Template.bind({})
 export const Inline = Template.bind({})
-export const Simple = Template.bind({})
+export const SimpleCenter = Template.bind({})
 export const SimpleEnd = Template.bind({})
 export const SimpleStart = Template.bind({})
 
@@ -67,10 +64,7 @@ GradientStart.args = { variant: 'gradient-start-action' }
 GradientCenter.args = { variant: 'gradient-center-action' }
 GradientEnd.args = { variant: 'gradient-end-action' }
 Inline.args = { variant: 'inline-action' }
-Simple.args = { variant: 'simple-action' }
+SimpleCenter.args = { variant: 'simple-center-action' }
 SimpleEnd.args = { variant: 'simple-end-action' }
 SimpleStart.args = { variant: 'simple-start-action' }
-Cover.args = { variant: 'cover-action' }
-CoverStart.args = { variant: 'cover-start-action' }
-CoverEnd.args = { variant: 'cover-end-action' }
-BgPattern.args = { variant: 'bg-pattern-action' }
+BgPattern.args = { variant: 'bg-pattern-action', pattern: 'topography' }

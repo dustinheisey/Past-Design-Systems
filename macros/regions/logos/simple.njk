@@ -1,21 +1,10 @@
-{# Status: TODO #}
-<section class="region center-intrinsic gap-xs stack theme-{{props.theme}}">
-    <h2 class="region-headline">Logo Clouds</h2>
-    <div class="grid grid-5">
+<section class="region center-intrinsic gap-xs stack text-center theme-{{props.theme}}">
+    <h2 class="region-headline">{{props.content.headline}}</h2>
+    <div class="grid grid-5 gap-l">
+        {% for logo in props.content.logos %}
         <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
+            {% img logo.src, logo.alt %}
         </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-        </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-        </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-        </div>
-        <div class="frame photo">
-            <img src="https://generative-placeholders.glitch.me/image?width=600&height=300" alt="placeholder" />
-        </div>
+        {% endfor %}
     </div>
 </section>

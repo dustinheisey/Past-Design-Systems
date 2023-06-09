@@ -14,15 +14,16 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
-    }
+      type: 'stable'
+    },
+    layout: 'fullscreen'
   }
 }
 
 const Template = (args) =>
   `
     ${regions.header[args.variant]({
-      props: { storybook: true, theme: args.theme, content: args.content }
+      props: { storybook: true, theme: args.theme, config: args.config }
     })}
   `
 
