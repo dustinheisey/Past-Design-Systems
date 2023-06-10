@@ -63,9 +63,6 @@ import splitEndForm from '../../macros/regions/form/split-end.njk'
 import splitStartForm from '../../macros/regions/form/split-start.njk'
 
 import cardGridGallery from '../../macros/regions/gallery/card-grid.njk'
-import featuredCardGridGallery from '../../macros/regions/gallery/featured-card-grid.njk'
-import featuredMixedGridGallery from '../../macros/regions/gallery/featured-mixed-grid.njk'
-import featuredTextGridGallery from '../../macros/regions/gallery/featured-text-grid.njk'
 import imgGridGallery from '../../macros/regions/gallery/img-grid.njk'
 import masonryGallery from '../../macros/regions/gallery/masonry.njk'
 import startGallery from '../../macros/regions/gallery/start.njk'
@@ -143,9 +140,6 @@ export const components = {
 export const regions = {
   gallery: {
     'card-grid-gallery': cardGridGallery,
-    'featured-card-grid-gallery': featuredCardGridGallery,
-    'featured-mixed-grid-gallery': featuredMixedGridGallery,
-    'featured-text-grid-gallery': featuredTextGridGallery,
     'masonry-gallery': masonryGallery,
     'img-grid-gallery': imgGridGallery,
     'start-gallery': startGallery,

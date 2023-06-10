@@ -1,4 +1,5 @@
 const nunjucks = require('nunjucks/browser/nunjucks-slim')
+const remove = require('../../../public/icons/remove.svg')
 
 class IconTag {
   constructor() {
@@ -14,7 +15,7 @@ class IconTag {
   }
 
   run(context, url, alt = '') {
-    return new nunjucks.runtime.SafeString(`<img src="/public/icons/${url}.svg" alt="${alt}">`)
+    return new nunjucks.runtime.SafeString(`<img class="icon icon-secondary" src="${remove}" alt="${alt}">`)
   }
 }
 

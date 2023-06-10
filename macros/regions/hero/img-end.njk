@@ -1,4 +1,4 @@
-<div class="cover region cover-nav">
+<div class="cover region cover-nav theme-{{props.theme or 'background'}}">
     <div class="sidebar reverse sidebar-split gap-m">
         <div class="frame">
             {% set src = './public/img/' + props.content.img.src %}
@@ -10,7 +10,7 @@
                 {{props.content.headline}}
             </h1>
             <p>{{props.content.body}}</p>
-            <a href="{{props.content.btn.url}}" class="btn">{{props.content.btn.label}}</a>
+            <a href="{{props.content.btn.href}}" class="btn">{{props.content.btn.label}}</a>
         </section>
     </div>
 </div>

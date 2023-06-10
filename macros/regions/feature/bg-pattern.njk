@@ -1,12 +1,12 @@
-{# Status: TODO #}
-<div class="region bg-pattern pattern-topography theme-{{props.theme}}">
+<div class="region bg-pattern pattern-topography theme-{{props.theme or 'primary'}} inset-xl">
     <section class="prose">
         {% if props.content.headline %}
         <h2 class="region-headline">{{props.content.headline}}</h2>
         {% endif %}
         {% if props.content.lead %}
-        <p class="lead auto">{{props.content.lead}}</p>
-        {% else %}
+        <p class="lead {% if props.center %}auto{% endif %}">{{props.content.lead}}</p>
+        {% endif %}
+        {% if props.content.body %}
         <p>{{props.content.body}}</p>
         {% endif %}
     </section>

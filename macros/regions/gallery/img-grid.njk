@@ -1,11 +1,10 @@
-{# Status: TODO #}
-<div class="region stack gap-xl">
+<div class="region stack gap-xl theme-{{props.theme or 'background'}}">
     <section class="prose center center-intrinsic text-center">
         <h2 class="region-headline">{{props.content.headline}}</h2>
         <p>{{props.content.body}}</p>
     </section>
-    <div class="region grid grid-{{props.col}} inset-0 row-gap-xl">
-        {% for item in props.content.items %}
+    <div class="region grid grid-{{props.col or 3}} inset-0 row-gap-xl">
+        {% for item in props.content.grid %}
         <div class="stack gap-xs">
             <div class="frame photo rounded">
                 {% set src = './public/img/' + item.img.src %}

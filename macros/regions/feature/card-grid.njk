@@ -1,12 +1,13 @@
-{# Status: TODO #}
-<div class="stack region gap-xl">
+<div class="stack region gap-xl theme-{{props.theme or 'background'}}">
     <section class="prose center center-intrinsic">
         <h2 class="region-headline">{{props.content.headline}}</h2>
     </section>
     <div class="switcher switch-phone">
-        {% for card in props.content.cards %}
+        {% for card in props.content.grid %}
         <a href="{{card.link}}" class="card card-link prose theme-{{card.theme}}">
+            {% if card.icon %}
             {% icon card.icon, "block icon-l" %}
+            {% endif %}
             <h3 class="title-headline">
                 {{card.headline}}
             </h3>

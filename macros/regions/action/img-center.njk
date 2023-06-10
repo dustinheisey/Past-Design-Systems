@@ -1,4 +1,4 @@
-<div class="region theme-{{props.theme}} stack gap-xl">
+<div class="region theme-{{props.theme or 'background'}} stack gap-xl">
     <div class="prose">
         {% if props.content.badge %}
         <a href="/" class="badge badge-primary">{{props.content.badge}}</a>
@@ -7,9 +7,10 @@
         <p>
             {{props.content.body}}
         </p>
-        <a href="{{props.content.btn.href}}" class="btn">{{props.content.btn.label}}</a>
+        <a href="{{props.content.btn.href}}" class="btn {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
     </div>
     <div class="frame full">
-        {% img props.content.img.src, props.content.img.alt %}
+        {% set src = './public/img/' + props.content.img.src %}
+        {% img src, props.content.img.alt %}
     </div>
 </div>

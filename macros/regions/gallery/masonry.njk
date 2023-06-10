@@ -1,5 +1,4 @@
-{# Status: TODO #}
-<div class="region stack gap-l {{props.class}}">
+<div class="region stack gap-l {{props.class}} theme-{{props.theme or 'background'}}">
     <h2 class="region-headline text-center center-intrinsic">{{props.content.headline}}</h2>
     {% if props.categories %}
     <div class="reel justify-center no-bar">
@@ -25,6 +24,20 @@
                 <h2 class="section-headline">{{ post.data.title }}</h2>
                 <p>{{ post.data.description }}</p>
             </a>
+        </article>
+        {% endfor %}
+        {% else %}
+        {% for item in props.content.grid %}
+        <article class="card theme-primary-container stack gap-xs">
+            <div class="cluster">
+                <time datetime="{{item.time.time}}">{{item.time.label}}</time>
+            </div>
+            <div class="prose">
+                <h2 class="title-section">{{item.headline}}</h2>
+                <p>
+                    {{item.body}}
+                </p>
+            </div>
         </article>
         {% endfor %}
         {% endif %}

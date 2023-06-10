@@ -41,7 +41,7 @@
     }
   })(window)
 </script>
-<div class="banner theme-{{props.theme}}" data-component="dismissible-item">
+<div class="banner theme-{{props.theme or 'background'}}" data-component="dismissible-item">
   <p>Hello world</p>
   <button type="button">
     {% if props.storybook %}

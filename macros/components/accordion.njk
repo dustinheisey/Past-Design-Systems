@@ -1,6 +1,6 @@
 {% if props.content %}
 {% for item in props.content %}
-<details class="theme-{{props.theme}}">
+<details class="theme-{{props.theme or 'background'}}">
   <summary>
     <h4 class="title-headline">{{item.title}}</h4>
   </summary>
@@ -10,7 +10,7 @@
 </details>
 {% endfor %}
 {% else %}
-<details class="theme-{{props.theme}}">
+<details class="theme-{{props.theme or 'background'}}">
   <summary>
     <h4 class="title-headline">Question Title Text</h4>
   </summary>

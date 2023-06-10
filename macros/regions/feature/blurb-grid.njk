@@ -1,17 +1,16 @@
-{# Status: TODO #}
-<div class="stack region">
+<div class="stack region theme-{{props.theme or 'background'}}">
     <section class="prose center center-intrinsic">
         <h2 class="region-headline">{{props.content.headline}}</h2>
     </section>
     <div class="grid grid-4 align-start gap-xl">
-        {% for blurb in props.content.blurbs %}
-        <div class="prose stack center-intrinsic gap-2xs">
-            {% if blurb.icon %}
-            {% icon blurb.icon, "icon-xl" %}
+        {% for item in props.content.grid %}
+        <div class="prose stack {% if props.center %}align-center{% endif %} gap-2xs">
+            {% if item.icon %}
+            {% icon item.icon, "icon-xl" %}
             {% endif %}
-            <h3 class="title-headline">{{blurb.headline}}</h3>
-            {% if blurb.body %}
-            <p>{{blurb.body}}</p>
+            <h3 class="title-headline">{{item.headline}}</h3>
+            {% if item.body %}
+            <p>{{item.body}}</p>
             {% endif %}
         </div>
         {% endfor %}

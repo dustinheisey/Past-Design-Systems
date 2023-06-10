@@ -1,5 +1,4 @@
-{# Status: TODO #}
-<footer class="cluster region justify-between inset-l theme-{{props.theme}}">
+<footer class="cluster region justify-between inset-l theme-{{props.theme or 'background'}}">
     <small>&copy; 2023 Your nonprofit, All rights reserved.</small>
     <ul class="cluster">
         {% for link in props.config.footer.links %}

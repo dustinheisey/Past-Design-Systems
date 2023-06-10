@@ -1,5 +1,5 @@
-<footer class="bg-img theme-primary">
-    {% img props.content.img.src, props.content.img.alt %}
+<footer class="bg-img theme-{{props.theme or 'background'}}">
+    <img src='{{props.content.img}}' alt="">
     <div class="stack region align-center gap-s">
         <ul class="cluster gap-xs">
             {% for link in props.config.footer.links %}

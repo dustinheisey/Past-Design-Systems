@@ -14,9 +14,9 @@ export default {
   },
   parameters: {
     status: {
-      type: 'beta'
+      type: 'stable'
     },
-    layout: 'centered'
+    layout: 'fullscreen'
   }
 }
 
@@ -28,9 +28,6 @@ const Template = (args) =>
   `
 
 export const CardGrid = Template.bind({})
-export const FeaturedCardGrid = Template.bind({})
-export const FeaturedMixedGrid = Template.bind({})
-export const FeaturedTextGrid = Template.bind({})
 export const ImgGrid = Template.bind({})
 export const Masonry = Template.bind({})
 export const Start = Template.bind({})
@@ -38,9 +35,6 @@ export const Stack = Template.bind({})
 export const TextGrid = Template.bind({})
 
 CardGrid.args = { variant: 'card-grid-gallery' }
-FeaturedCardGrid.args = { variant: 'featured-card-grid-gallery' }
-FeaturedMixedGrid.args = { variant: 'featured-mixed-grid-gallery' }
-FeaturedTextGrid.args = { variant: 'featured-text-grid-gallery' }
 ImgGrid.args = { variant: 'img-grid-gallery' }
 Masonry.args = { variant: 'masonry-gallery' }
 Start.args = { variant: 'start-gallery' }

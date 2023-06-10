@@ -1,5 +1,4 @@
-{# Status: TODO #}
-<div class="region sidebar sidebar-split gap-m">
+<div class="region sidebar sidebar-split gap-m theme-{{props.theme or 'background'}}">
     <div class="frame square">
         {% set src = './public/img/' + props.content.img.src %}
         {% img src, props.content.img.alt %}

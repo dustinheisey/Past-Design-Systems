@@ -1,4 +1,4 @@
-<div class="bg-gradient theme-{{props.theme}}">
+<div class="bg-gradient theme-{{props.theme or 'background'}}">
     <div class="cover region cover-nav">
         <div class="prose principle stack align-start text-start gap-xs">
             {% if props.content.badge %}
@@ -8,7 +8,7 @@
             <p>
                 {{props.content.body}}
             </p>
-            <a href="{{props.content.btn.href}}" class="btn">{{props.content.btn.label}}</a>
+            <a href="{{props.content.btn.href}}" class="btn {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
         </div>
     </div>
 </div>

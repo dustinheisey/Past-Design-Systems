@@ -1,4 +1,4 @@
-<footer class="stack region align-center gap-xs inset-xl theme-{{props.theme}}">
+<footer class="stack region align-center gap-xs inset-xl theme-{{props.theme or 'background'}}">
     <ul class="cluster gap-xs">
         {% for link in props.config.footer.links %}
         <li>

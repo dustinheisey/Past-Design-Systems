@@ -192,12 +192,39 @@ export default {
         }
       ],
       submit: 'Send Application',
+      list: [
+        {
+          icon: 'remove',
+          text: "There's too many moving parts to manage"
+        },
+        {
+          icon: 'remove',
+          text: 'The costs are too high for your budget'
+        },
+        {
+          icon: 'remove',
+          text: 'Unsatisfying results without proper expertise'
+        },
+        {
+          icon: 'remove',
+          text: 'You need to support a diverse population'
+        },
+        {
+          icon: 'remove',
+          text: 'Your users may not have reliable internet access'
+        },
+        {
+          icon: 'remove',
+          text: 'Finding eco-conscious designers is challenging'
+        }
+      ],
       grid: [
         {
           time: {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -206,6 +233,7 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -214,6 +242,7 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -222,6 +251,7 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -230,6 +260,7 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -238,6 +269,7 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -246,6 +278,7 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -254,6 +287,7 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
         },
@@ -262,8 +296,20 @@ export default {
             label: 'Mar 16, 2020',
             time: '2020-03-16'
           },
+          theme: 'primary-container',
           headline: 'Boost your conversion rate',
           body: 'Ullamco Lorem in laborum sint anim sint occaecat Lorem ullamco voluptate id deserunt adipisicing. Laborum duis veniam ullamco deserunt. Dolore enim nisi et occaecat dolor ipsum do deserunt elit qui ea esse esse.'
+        }
+      ],
+      posts: [
+        {
+          data: {
+            date: 'Mar 16, 2020',
+            time: '2020-03-16'
+          },
+          title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu lorem et ultricies. In porta lorem at dui semper porttitor.'
         }
       ],
       mission:

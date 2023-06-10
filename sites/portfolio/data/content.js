@@ -53,7 +53,7 @@ module.exports = {
     },
     plan: {
       headline: 'Tailored Plans for Every Client',
-      cards: [
+      grid: [
         {
           theme: 'secondary-container',
           icon: 'branding',
@@ -115,7 +115,7 @@ module.exports = {
     },
     skills: {
       headline: 'Skills & Expertise',
-      blurbs: [
+      grid: [
         {
           headline: 'User Experience Design',
           icon: 'ux-design-l'
@@ -161,10 +161,10 @@ module.exports = {
       overline: 'Crafting Your Unique Identity',
       headline: 'Comprehensive Branding Solutions Tailored to Your Organization',
       body: "For organizations seeking a strong, cohesive brand identity: I work closely with your team to understand your organization's vision and values. Together, we'll develop a marketing message fit for your organization's mission & values, a comprehensive brand strategy guide, and a visual style guide for consistent branding across all platforms.",
-      action: {
+      btn: {
         variant: 'secondary',
         label: 'Learn More About Branding',
-        url: '/services/branding'
+        href: '/services/branding'
       },
       img: {
         src: 'branding-service.png',
@@ -175,10 +175,10 @@ module.exports = {
       overline: 'Building Accessible Experiences',
       headline: 'Responsive, Sustainable Websites for a Conscious Audience',
       body: "For organizations looking to build a visually stunning and accessible online presence: I create responsive, aesthetically pleasing, and user-friendly websites that adhere to WCAG 2.1 accessibility standards. By prioritizing sustainability, I ensure that your website not only looks great but also supports your organization's commitment to the environment.",
-      action: {
+      btn: {
         variant: 'secondary',
         label: 'Learn More About Web Design',
-        url: '/services/web-design'
+        href: '/services/web-design'
       },
       img: {
         src: 'web-design-service.png',
@@ -189,10 +189,10 @@ module.exports = {
       overline: 'Enhancing Your Online Presence',
       headline: 'Streamlined Performance, Accessibility, and Consistency',
       body: "For organizations aiming to optimize their website and maintain its quality over time: I enhance your website's accessibility and performance, converting it into a progressive web app and implementing a design system for consistency and scalability. With ongoing maintenance, I keep your web app up to date and error-free, ensuring a seamless user experience.",
-      action: {
+      btn: {
         variant: 'secondary',
         label: 'Learn More About Optimization',
-        url: '/services/optimization'
+        href: '/services/optimization'
       },
       img: {
         src: 'optimization-service.png',
@@ -516,7 +516,7 @@ module.exports = {
     grid: {
       headline: 'Recent Projects',
       body: "Find a curated selection of real-world projects I've completed for nonprofits and companies.",
-      items: [
+      grid: [
         // {
         //   headline: "Empowering Ocean Conservation Efforts",
         //   url: "/",

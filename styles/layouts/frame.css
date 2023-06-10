@@ -25,6 +25,10 @@
   aspect-ratio: 2/1;
 }
 
+.frame.logo * {
+  background-color: initial;
+}
+
 .frame.vertical {
   aspect-ratio: 1/2;
 }

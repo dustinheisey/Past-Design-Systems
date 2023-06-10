@@ -1,4 +1,4 @@
-<button type="button" class="dark-mode-toggle theme-{{props.theme}}" id="theme-toggle" title="Toggles light & dark" onclick="onClick" aria-live="polite">
+<button type="button" class="dark-mode-toggle theme-{{props.theme or 'background'}}" id="theme-toggle" title="Toggles light & dark" onclick="onClick" aria-live="polite">
   <svg focusable="false" class="sun-and-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
     <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="var(--color-primary)" />
     <g class="sun-beams" stroke="var(--color-primary)">
