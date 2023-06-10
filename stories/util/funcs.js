@@ -45,15 +45,17 @@ export function computeDocs(page, sections, args) {
 }
 
 export function computeRender(page, sections, args) {
+  console.log(args)
   let render = ''
   sections.forEach((section) => {
     if (args[`${section}Variant`]) {
       render += page[section][args[`${section}Variant`]]({
-        storybook: true,
         theme: args[`${section}Theme`],
-        content: args.content
+        content: args.content,
+        config: args.config
       })
     }
   })
+  console.log(render)
   return render
 }

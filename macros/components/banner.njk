@@ -44,10 +44,6 @@
 <div class="banner theme-{{props.theme or 'background'}}" data-component="dismissible-item">
   <p>Hello world</p>
   <button type="button">
-    {% if props.storybook %}
-    <img src="../../public/icons/remove.svg" alt="remove" />
-    {% else %}
     {% icon 'remove' %}
-    {% endif %}
   </button>
 </div>

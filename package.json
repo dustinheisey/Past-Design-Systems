@@ -29,6 +29,7 @@
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@etchteam/storybook-addon-status": "^4.2.4",
+    "@jackdbd/eleventy-plugin-content-security-policy": "^1.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@rollup/plugin-terser": "^0.4.3",
     "@storybook/addon-a11y": "^7.0.18",

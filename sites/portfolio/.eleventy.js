@@ -19,6 +19,7 @@ const svgSprite = require('eleventy-plugin-svg-sprite')
 // const eleventyHTMLValidate = require('eleventy-plugin-html-validate')
 // const logicalContentFlow = require('eleventy-plugin-logical-content-flow')
 const sitemap = require('@quasibit/eleventy-plugin-sitemap')
+const cspPlugin = require('@jackdbd/eleventy-plugin-content-security-policy')
 // const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
 
 module.exports = function (eleventyConfig) {
@@ -29,6 +30,30 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(eleventyHTMLValidate)
   // eleventyConfig.addPlugin(logicalContentFlow)
   // eleventyConfig.addPlugin(EleventyVitePlugin)
+  eleventyConfig.addPlugin(cspPlugin, {
+    allowDeprecatedDirectives: true,
+
+    directives: {
+      'base-uri': ['self'],
+
+      // allow only self-hosted fonts (i.e. fonts hosted on this origin)
+      'font-src': ['self'],
+
+      // allow scripts hosted on this origin, on plausible.io (analytics),
+      // cloudflareinsights.com (analytics), unpkg.com (preact)
+      'script-src-elem': ['self', 'cdn.usefathom.com', 'unpkg.com/website-carbon-badges@1.1.3/b.min.js']
+
+      // allow CSS hosted on this origin, and inline styles that match a sha256
+      // hash automatically computed at build time by this 11ty plugin.
+      // See also here for the pros and cons of 'unsafe-inline'
+      // https://stackoverflow.com/questions/30653698/csp-style-src-unsafe-inline-is-it-worth-it
+      // 'style-src-elem': ['self', 'sha256']
+    },
+
+    // Only .html files should be served with the Content-Security-Policy header. Avoid header bloat by making sure that other files are not served with Content-Security-Policy header.
+    globPatternsDetach: ['/*.png', '/*.jpeg', '/*.webp'],
+    includePatterns: ['/**/**.html']
+  })
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
       hostname: 'https://dustinheisey.com'
