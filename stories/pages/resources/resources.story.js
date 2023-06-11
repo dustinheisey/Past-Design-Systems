@@ -10,6 +10,7 @@ export default {
     status: {
       type: 'beta'
     },
+    layout: 'fullscreen',
     docs: {
       source: {
         transform: (src, story) => computeDocs('resources', sections, story.args)
