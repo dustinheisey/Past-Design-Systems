@@ -13,10 +13,14 @@ header {
   padding: 0;
 }
 
+footer .region {
+  margin-block-end: var(--space-xl);
+}
+
 footer {
   padding: var(--inset-page);
-  margin-block-start: calc(var(--gap-page) / 2);
-  margin-block-end: calc(var(--gap-page) / 2);
+  /* margin-block-start: calc(var(--gap-page) / 2);
+  margin-block-end: calc(var(--gap-page) / 2); */
 }
 
 @media (--tablet-portrait-up) {
@@ -43,9 +47,12 @@ footer.bg-img > .stack {
   --gap: var(--gap-region);
 }
 
-.region + .region,
-.region.inset {
+.inset {
   padding-block: calc(var(--inset, var(--gap-page)) / 2);
+}
+
+.gap {
+  margin-block-start: calc(var(--gap-page) / 2);
 }
 
 :is(.region, .section, header, footer) > * {

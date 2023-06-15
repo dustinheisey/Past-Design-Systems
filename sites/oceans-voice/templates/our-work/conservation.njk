@@ -1,5 +1,19 @@
 ---
 layout: base
-title:
-description:
+title: "Conservation: Ocean's Voice's Direct Actions to Protect Marine Life"
+description: "Discover our conservation projects aimed at protecting marine life and restoring the health of our oceans."
 ---
+
+{{ header({ variant: 'spaced', logo: 'public/svg/logo', config: config }) }}
+
+{{ intro({ variant: 'img-end', above: true, logo: 'public/svg/logo', img: { src: 'tree-healing.png', alt: '' }, content: { overline: 'Our Work', headline: 'Turning the Tide: Our Conservation', body: "Conservation is at the heart of our mission at Ocean's Voice. We're actively working to protect marine life, restore damaged ecosystems, and ensure a healthy, vibrant ocean for future generations." }, config: config }) }}
+
+{{ intro({ variant: 'img-start', img: { src: 'turtle-conserve.png', alt: '' }, content: { overline: 'Our Approach', headline: 'Healing the Seas', body: 'Our conservation initiatives range from protecting endangered marine species to restoring coral reefs and reducing pollution. Each project is a step towards a healthier ocean.' } }) }}
+
+{{ stats({ variant: 'inline', center: true, content: { overline: 'Our Impact', headline: 'Making Waves', body: 'Our conservation work has led to tangible improvements in the health and vitality of our oceans. But the fight is far from over. With every new challenge, our resolve only strengthens.', stats: [ { headline: '100+', body: 'Marine Species Protected' }, { headline: '50,000+', body: 'Square Miles of Ocean Conserved' }, { headline: '20+', body: 'Coral Reef Restoration Projects' }, { headline: '2 Million', body: 'Pounds of Trash Removed' } ] } }) }}
+
+{{ faq({ variant: 'offset', content: { headline: 'Frequently Asked Questions', faqs: [ { question: 'What is ocean conservation?', answer: 'Ocean conservation is the protection and management of marine ecosystems to prevent their degradation and ensure biodiversity.' }, { question: 'How does Ocean’s Voice contribute to conservation?', answer: 'We protect marine species, restore coral reefs, reduce pollution, and work on conserving large areas of the ocean.' }, { question: 'Can individuals contribute to ocean conservation?', answer: 'Yes, individuals can contribute by reducing waste, supporting sustainable products, participating in clean-ups, and raising awareness.' }, { question: 'What challenges does marine conservation face?', answer: 'Challenges include overfishing, pollution, climate change, habitat destruction, and lack of funding and public support.' }, { question: 'How is Ocean’s Voice funded for conservation efforts?', answer: 'Funding comes from donations, grants, partnerships, and fundraising events.' } ] } }) }}
+
+{{ action({ variant: 'simple-center', theme: 'primary', content: { overline: 'Get Involved', headline: 'Support Ocean Conservation', body: 'Your support can help us continue our vital conservation work. Donate today and help us turn the tide for our oceans.', btn: { label: 'Become a Guardian', href: '/donate' } } }) }}
+
+{{ footer({ variant: 'mission-bg', logo: 'public/svg/logo', config: config }) }}

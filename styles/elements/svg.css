@@ -1,5 +1,5 @@
 svg {
   display: block;
-  inline-size: 100%;
-  block-size: auto;
+  block-size: 100%;
+  inline-size: auto;
 }

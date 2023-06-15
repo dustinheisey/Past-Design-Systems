@@ -1,20 +1,60 @@
 const Image = require('@11ty/eleventy-img')
 const path = require('path')
+const { promisify } = require('util')
+const { DateTime } = require('luxon')
 const fs = require('fs')
 const { PurgeCSS } = require('purgecss')
 const purgeCssFromHtml = require('purgecss-from-html')
+const stat = promisify(fs.stat)
 const minify = require('html-minifier').minify
 const csso = require('csso')
 const pluginPWA = require('eleventy-plugin-pwa-v2')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language')
+const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+const execFile = promisify(require('child_process').execFile)
 const svgSprite = require('eleventy-plugin-svg-sprite')
+// const eleventyHTMLValidate = require('eleventy-plugin-html-validate')
+// const logicalContentFlow = require('eleventy-plugin-logical-content-flow')
 const sitemap = require('@quasibit/eleventy-plugin-sitemap')
+const cspPlugin = require('@jackdbd/eleventy-plugin-content-security-policy')
+const CleanCSS = require('clean-css')
+// const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
 
 module.exports = function (eleventyConfig) {
   // ? Plugins
+  eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(inclusiveLangPlugin)
+  // eleventyConfig.addPlugin(eleventyHTMLValidate)
+  // eleventyConfig.addPlugin(logicalContentFlow)
+  // eleventyConfig.addPlugin(EleventyVitePlugin)
+  eleventyConfig.addPlugin(cspPlugin, {
+    allowDeprecatedDirectives: true,
+
+    directives: {
+      'base-uri': ['self'],
+
+      // allow only self-hosted fonts (i.e. fonts hosted on this origin)
+      'font-src': ['self'],
+
+      // allow scripts hosted on this origin, on plausible.io (analytics),
+      // cloudflareinsights.com (analytics), unpkg.com (preact)
+      'script-src-elem': ['self', 'cdn.usefathom.com', 'unpkg.com/website-carbon-badges@1.1.3/b.min.js'],
+
+      // allow CSS hosted on this origin, and inline styles that match a sha256
+      // hash automatically computed at build time by this 11ty plugin.
+      // See also here for the pros and cons of 'unsafe-inline'
+      // https://stackoverflow.com/questions/30653698/csp-style-src-unsafe-inline-is-it-worth-it
+      'style-src-elem': ['self', 'unsafe-inline']
+    },
+
+    // Only .html files should be served with the Content-Security-Policy header. Avoid header bloat by making sure that other files are not served with Content-Security-Policy header.
+    globPatternsDetach: ['/*.png', '/*.jpeg', '/*.webp'],
+    includePatterns: ['/**/**.html']
+  })
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
       hostname: 'https://oceans-voice.dustinheisey.com'
@@ -61,7 +101,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksShortcode('img', function (src, alt, cls, sizes = '100vw', widths) {
     try {
       let options = {
-        widths: [400, 800, 1280],
+        widths: [400, 800, 1280, null],
         formats: ['webp', 'jpeg'],
         outputDir: './site/img/',
         filenameFormat: function (id, src, width, format, options) {
@@ -91,34 +131,20 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addShortcode('svg', function (file) {
-    let relativeFilePath = `${file}.svg`
-    let data = fs.readFileSync(relativeFilePath, function (err, contents) {
-      if (err) return err
-      return contents
-    })
-
-    return data.toString('utf8')
+    try {
+      let relativeFilePath = `${file}.svg`
+      let data = fs.readFileSync(relativeFilePath, function (err, contents) {
+        if (err) return err
+        return contents
+      })
+      console.log(data)
+      return data.toString('utf8')
+    } catch (error) {
+      console.log(error)
+    }
   })
 
   // ? Transforms
-  eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
-    if (outputPath && outputPath.endsWith('.html')) {
-      const purgeCssResult = await new PurgeCSS().purge({
-        content: [{ raw: content, extension: 'html' }],
-        css: ['../../styles/style.min.css'],
-        extractors: [
-          {
-            extractor: purgeCssFromHtml,
-            extensions: ['html']
-          }
-        ]
-      })
-
-      const after = csso.minify(purgeCssResult[0].css).css
-      return content.replace('<!-- INLINE CSS -->', `<style> ${after} </style>`)
-    }
-    return content
-  })
   eleventyConfig.addTransform('minify-html', (rawContent, outputPath) => {
     let content = rawContent
     if (outputPath && outputPath.endsWith('.html')) {
@@ -139,17 +165,84 @@ module.exports = function (eleventyConfig) {
 
   // ? Layout Aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk')
+  eleventyConfig.addLayoutAlias('post', 'post.njk')
+  eleventyConfig.addLayoutAlias('category', 'category.njk')
 
   // ? Passthrough Copies
   eleventyConfig.addPassthroughCopy({ public: '/' })
   eleventyConfig.addPassthroughCopy({ icons: '/icons' })
+  eleventyConfig.addPassthroughCopy({ '../../styles/style.min.css': 'style.min.css' })
+  eleventyConfig.addPassthroughCopy({ 'theme.css': 'theme.css' })
   eleventyConfig.addPassthroughCopy({ '../../scripts/index.min.js': 'index.min.js' })
 
   // ? Watch Targets
   eleventyConfig.addWatchTarget('../../scripts/index.min.js')
+  eleventyConfig.addWatchTarget('./posts/*.md')
   eleventyConfig.addWatchTarget('../../styles/style.min.css')
   eleventyConfig.addWatchTarget('../../macros/**/*.njk')
   eleventyConfig.addWatchTarget('./public/*')
+
+  // ? Filters
+  eleventyConfig.addFilter('cssmin', function (code) {
+    return new CleanCSS({}).minify(code).styles
+  })
+
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
+  })
+  eleventyConfig.addFilter('tagsOnly', (tag) => {
+    return tag.filter((item) => item !== 'post')
+  })
+  eleventyConfig.addFilter('getCategory', (categories, categoryTag) => {
+    let postCategory = categoryTag.find((item) => item !== 'post')
+    return categories.find((item) => item.data.label === postCategory)
+  })
+  eleventyConfig.addFilter('readableDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy')
+  })
+
+  async function lastModifiedDate(filename) {
+    try {
+      const { stdout } = await execFile('git', ['log', '-1', '--format=%cd', filename])
+      return new Date(stdout)
+    } catch (e) {
+      console.error(e.message)
+      // Fallback to stat if git isn't working.
+      const stats = await stat(filename)
+      return stats.mtime // Date
+    }
+  }
+  // Cache the lastModifiedDate call because shelling out to git is expensive.
+  // This means the lastModifiedDate will never change per single eleventy invocation.
+  const lastModifiedDateCache = new Map()
+  eleventyConfig.addNunjucksAsyncFilter('lastModifiedDate', function (filename, callback) {
+    const call = (result) => {
+      result.then((date) => callback(null, date))
+      result.catch((error) => callback(error))
+    }
+    const cached = lastModifiedDateCache.get(filename)
+    if (cached) {
+      return call(cached)
+    }
+    const promise = lastModifiedDate(filename)
+    lastModifiedDateCache.set(filename, promise)
+    call(promise)
+  })
+
+  /* Markdown Overrides */
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: markdownItAnchor.permalink.linkAfterHeader({
+      assistiveText: (title) => `Permalink to “${title}”`,
+      visuallyHiddenClass: 'sr-only',
+      wrapper: ['<div class="inline-header">', '</div>']
+    }),
+    permalinkSymbol: '#'
+  })
+  eleventyConfig.setLibrary('md', markdownLibrary)
 
   return {
     dir: {

@@ -31,6 +31,8 @@ import tiles2EndAction from '../../macros/regions/action/tiles-2-end.njk'
 import tiles2StartAction from '../../macros/regions/action/tiles-2-start.njk'
 import tiles3EndAction from '../../macros/regions/action/tiles-3-end.njk'
 import tiles3StartAction from '../../macros/regions/action/tiles-3-start.njk'
+import listStartAction from '../../macros/regions/action/list-start.njk'
+import listEndAction from '../../macros/regions/action/list-end.njk'
 
 import accordionFaq from '../../macros/regions/faq/accordion.njk'
 import blurbGrid2Faq from '../../macros/regions/faq/blurb-grid-2.njk'
@@ -45,9 +47,12 @@ import blurbGridFeature from '../../macros/regions/feature/blurb-grid.njk'
 import cardGridFeature from '../../macros/regions/feature/card-grid.njk'
 import descriptionFeature from '../../macros/regions/feature/description.njk'
 import imgEndFeature from '../../macros/regions/feature/img-end.njk'
+import listStartFeature from '../../macros/regions/feature/list-start.njk'
+import listEndFeature from '../../macros/regions/feature/list-end.njk'
 import listFeature from '../../macros/regions/feature/list.njk'
 import offsetGridFeature from '../../macros/regions/feature/offset-grid.njk'
-import offsetListFeature from '../../macros/regions/feature/offset-list.njk'
+import offsetListStartFeature from '../../macros/regions/feature/offset-list-start.njk'
+import offsetListEndFeature from '../../macros/regions/feature/offset-list-end.njk'
 import imgStartFeature from '../../macros/regions/feature/img-start.njk'
 
 import inlineFooter from '../../macros/regions/footer/inline.njk'
@@ -171,7 +176,9 @@ export const regions = {
     'tiles-2-start-action': tiles2StartAction,
     'tiles-2-end-action': tiles2EndAction,
     'tiles-3-start-action': tiles3StartAction,
-    'tiles-3-end-action': tiles3EndAction
+    'tiles-3-end-action': tiles3EndAction,
+    'list-start-action': listStartAction,
+    'list-end-action': listEndAction
   },
   faq: {
     'accordion-faq': accordionFaq,
@@ -227,8 +234,11 @@ export const regions = {
     'img-start-feature': imgStartFeature,
     'list-feature': listFeature,
     'offset-grid-feature': offsetGridFeature,
-    'offset-list-feature': offsetListFeature,
-    'img-end-feature': imgEndFeature
+    'offset-list-start-feature': offsetListStartFeature,
+    'offset-list-end-feature': offsetListEndFeature,
+    'img-end-feature': imgEndFeature,
+    'list-start-feature': listStartFeature,
+    'list-end-feature': listEndFeature
   },
   logos: {
     'grid-logos': gridLogos,
@@ -288,9 +298,9 @@ const {
 export const pageRegions = {
   about: {
     hero: { ...hero, ...intro },
-    info1: intro,
-    info2: intro,
-    info3: intro,
+    info1: { ...intro, ...feature, ...stats },
+    info2: { ...intro, ...feature, ...stats },
+    info3: { ...intro, ...feature, ...stats },
     skills: { ...gallery, ...feature, ...stats },
     portfolio: gallery,
     success: { ...testimonials, ...feature },
@@ -327,6 +337,7 @@ export const pageRegions = {
   footer: { footer },
   getInvolved: {
     hero,
+    grid: gallery,
     action1: action,
     action2: action,
     action3: action,
@@ -346,11 +357,11 @@ export const pageRegions = {
   },
   landing: {
     hero,
-    problem: intro,
+    problem: { ...intro, ...feature },
     guide: feature,
     plan: { ...feature, ...gallery },
     action,
-    stakes: feature,
+    stakes: { ...intro, ...feature },
     success: { ...testimonials, ...feature },
     freebie: action
   },
@@ -368,8 +379,8 @@ export const pageRegions = {
   program: {
     hero,
     intro,
-    approach: feature,
-    success: { ...testimonials, ...feature },
+    approach: { ...intro, ...feature },
+    success: { ...testimonials, ...feature, ...stats },
     faq,
     action
   },

@@ -4,10 +4,16 @@ title: Responsive, Accessible & Sustainable Web Design
 description: Elevate your online presence with my eco-friendly web design service, providing responsive, accessibility standards compliant, and low carbon progressive web apps for your organization. Enhance your brand while making a positive impact on the environment.
 ---
 
-{{ intro({ variant: 'img-end', content: content.design.hero }) }}
-{{ feature({variant: 'bg-pattern', center: true, theme: 'primary', content: content.design.problem }) }}
-{{ feature({ variant: 'img-start', content: content.design.description }) }}
+{{ intro({ variant: 'img-end', img: { src: 'web-design-intro.png', alt: '' }, content: content.design.hero }) }}
+
+{{ feature({variant: 'bg-pattern', pattern: 'topography', center: true, theme: 'primary', content: content.design.problem }) }}
+
+{{ feature({ variant: 'img-start', img: { src: 'web-design-description.png', alt: '' }, content: content.design.description }) }}
+
 {{ timeline({ variant: 'inline-start', content: content.design.plan }) }}
-{{ feature({ variant: 'img-end', content: content.design.transformation }) }}
-{{ faq({ variant: 'accordion', content: content.design.faqs }) }}
-{{ action({variant: 'bg-pattern', theme: 'primary', content: content.design.action }) }}
+
+{{ feature({ variant: 'img-end', img: { src: 'web-design-transformation.png', alt: '' }, content: content.design.transformation }) }}
+
+{{ faq({ variant: 'accordion', classes: 'inset', content: content.design.faqs }) }}
+
+{{ action({variant: 'bg-pattern', pattern: 'topography', theme: 'primary', content: content.design.action }) }}

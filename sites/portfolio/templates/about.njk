@@ -4,7 +4,10 @@ title: Web Designer for Accessible, Sustainable, Impactful Sites
 description: I'm Dustin Heisey and I'm committed to creating accessible, sustainable, and socially impactful websites. Get to know me and see how I can transform your online presence.
 ---
 
-{{ intro({variant: 'img-end', content: content.about.hero }) }}
-{{ feature({variant: 'description', content: content.about.introduction }) }}
-{{ feature({variant: 'blurb-grid', center: true, content: content.about.skills }) }}
-{{ action({variant: 'bg-pattern', theme: 'primary', content: content.action }) }}
+{{ intro({variant: 'img-end', classes: 'inset', img: { src: 'about-intro.png', alt: '' }, content: content.about.hero }) }}
+
+{{ feature({variant: 'description', classes: 'inset', img: { src: 'about-bio.png', alt: '' }, content: content.about.introduction }) }}
+
+{{ feature({variant: 'blurb-grid', classes: 'inset', center: true, content: content.about.skills }) }}
+
+{{ action({variant: 'bg-pattern', pattern: 'topography', theme: 'primary', content: content.action }) }}

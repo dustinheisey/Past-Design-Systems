@@ -1,8 +1,8 @@
-<div class="cover region cover-nav theme-{{props.theme or 'background'}}">
+<div class="cover inset region cover-nav theme-{{props.theme or 'background'}}">
     <div class="sidebar reverse align-stretch sidebar-split gap-m">
-        <div class="frame square">
-            {% set src = './public/img/' + props.content.img.src %}
-            {% img src, props.content.img.alt %}
+        <div class="frame vertical-s">
+            {% set src = './public/img/' + props.img.src%}
+            {% img src, props.img.alt%}
         </div>
         <div class="stack fixed center center-intrinsic">
             <section class="prose">

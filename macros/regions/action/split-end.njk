@@ -1,7 +1,7 @@
-<div class="cover sidebar reverse sidebar-split gap-m theme-{{props.theme or 'background'}}">
+<div class="cover sidebar reverse sidebar-split gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
     <div class="frame-cover">
-        {% set src = './public/img/' + props.content.img.src %}
-        {% img src, props.content.img.alt %}
+        {% set src = './public/img/' + props.img.src%}
+        {% img src, props.img.alt%}
     </div>
     <div class="stack fixed gap-xl">
         <div class="prose auto">

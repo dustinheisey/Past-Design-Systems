@@ -1,5 +1,5 @@
-<div class="cover sidebar reverse sidebar-split gap-m theme-{{props.theme or 'background'}}">
-    <div class="frame-cover clip-top-left">{% img props.content.img.src, props.content.img.alt %}</div>
+<div class="cover sidebar reverse sidebar-split gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="frame-cover clip-top-left">{% img props.content.img.src, props.img.alt%}</div>
     <div class="stack fixed gap-xl">
         <header class="navbar" id="navbar">
             <nav class="inset-0">

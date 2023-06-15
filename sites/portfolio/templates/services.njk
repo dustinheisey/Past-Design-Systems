@@ -4,9 +4,14 @@ title: Web Solutions - Accessible, Sustainable, Impactful
 description: Discover comprehensive web design services that prioritize accessibility, sustainability, and social impact. Our customized solutions cater to your unique needs, ensuring your website communicates your mission effectively. Leverage our expertise for meticulous attention to detail, audience engagement, and a website that truly embodies your vision
 ---
 
-{{ intro({ variant: 'img-end', content: content.services.hero }) }}
-{{ feature({variant: 'bg-pattern', theme: 'secondary', content: content.services.introduction }) }}
-{{ action({ variant: 'img-start', content: content.services.branding }) }}
-{{ action({ variant: 'img-end', content: content.services.design }) }}
-{{ action({ variant: 'img-start', content: content.services.optimization }) }}
-{{ action({variant: 'bg-pattern', theme: 'primary', content: content.action }) }}
+{{ intro({ variant: 'img-end', img: { src: 'services.png', alt: '' }, content: content.services.hero }) }}
+
+{{ feature({variant: 'bg-pattern', classes: 'inset', pattern: 'topography', theme: 'secondary', content: content.services.introduction }) }}
+
+{{ action({ variant: 'img-start', classes: 'inset', img: { src: 'branding-service.png', alt: '' }, content: content.services.branding }) }}
+
+{{ action({ variant: 'img-end', classes: 'inset', img: { src: 'web-design-service.png', alt: '' }, content: content.services.design }) }}
+
+{{ action({ variant: 'img-start', classes: 'inset', img: { src: 'optimization-service.png', alt: '' }, content: content.services.optimization }) }}
+
+{{ action({variant: 'bg-pattern', pattern: 'topography', theme: 'primary', content: content.action }) }}

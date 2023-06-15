@@ -5,7 +5,7 @@
         <h2 class="region-headline">{{props.content.headline}}</h2>
     </section>
     <div class="sidebar gap-m">
-        <div class="frame photo">{% img props.content.img.src, props.content.img.alt %}</div>
+        <div class="frame photo">{% img props.content.img.src, props.img.alt%}</div>
         <div class="grid grid-2 gap-xs fixed">
             {% for stat in props.content.stats %}
             <div class="prose stack gap-3xs">

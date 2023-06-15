@@ -7,10 +7,6 @@ module.exports = {
       btn: {
         label: 'Start a Project',
         url: '/contact'
-      },
-      img: {
-        src: 'hero.png',
-        alt: ''
       }
     },
     problem: {
@@ -45,11 +41,7 @@ module.exports = {
     guide: {
       overline: 'Your eco-conscious web designer',
       headline: "I'm Dustin Heisey",
-      body: 'As a passionate advocate for environmental sustainability and social welfare, as well as an expert in accessible, responsive and low carbon web design, I can help you navigate this difficult terrain.',
-      img: {
-        src: 'profile.png',
-        alt: ''
-      }
+      body: 'As a passionate advocate for environmental sustainability and social welfare, as well as an expert in accessible, responsive and low carbon web design, I can help you navigate this difficult terrain.'
     },
     plan: {
       headline: 'Tailored Plans for Every Client',
@@ -83,10 +75,6 @@ module.exports = {
       btn: {
         label: 'Start a Project',
         url: '/contact'
-      },
-      img: {
-        src: 'transformation.png',
-        alt: ''
       }
     },
     success: {
@@ -99,19 +87,11 @@ module.exports = {
     hero: {
       overline: 'Sustainable Web Solutions',
       headline: 'Partnering with Eco-Conscious Businesses and Nonprofits for a Greener Digital Future',
-      body: "As a web designer specializing in accessibility and sustainability, I'm dedicated to helping your business or nonprofit reach as many people as possible and make as much of an impact as possible.",
-      img: {
-        src: 'about-intro.png',
-        alt: ''
-      }
+      body: "As a web designer specializing in accessibility and sustainability, I'm dedicated to helping your business or nonprofit reach as many people as possible and make as much of an impact as possible."
     },
     introduction: {
       lead: 'Growing up, I always felt a deep connection to nature. As I witnessed the escalating dangers of climate change, I realized that businesses and nonprofits play a crucial role in addressing this global crisis. My passion for the environment and my expertise in web design led me to create accessible and sustainable digital solutions for purpose-driven organizations.',
-      body: "By choosing to work with me, you're not only investing in a visually stunning and user-friendly website but also supporting a diverse population of users and helping to create a greener digital future. I am committed to helping your organization maximize its impact on people and the planet, showcasing your dedication to social and environmental responsibility. Together, we can create a digital presence that resonates with your target audience and sets you apart from the competition.",
-      img: {
-        src: 'about-bio.png',
-        alt: ''
-      }
+      body: "By choosing to work with me, you're not only investing in a visually stunning and user-friendly website but also supporting a diverse population of users and helping to create a greener digital future. I am committed to helping your organization maximize its impact on people and the planet, showcasing your dedication to social and environmental responsibility. Together, we can create a digital presence that resonates with your target audience and sets you apart from the competition."
     },
     skills: {
       headline: 'Skills & Expertise',
@@ -146,11 +126,7 @@ module.exports = {
   services: {
     hero: {
       overline: 'A Sustainable Future for Your Online Presence',
-      headline: 'Empowering Eco-Conscious Businesses and Nonprofits with Accessible, Sustainable Web Solutions',
-      img: {
-        src: 'services.png',
-        alt: ''
-      }
+      headline: 'Empowering Eco-Conscious Businesses and Nonprofits with Accessible, Sustainable Web Solutions'
     },
     introduction: {
       overline: 'Bridging the Gap',
@@ -165,10 +141,6 @@ module.exports = {
         variant: 'secondary',
         label: 'Learn More About Branding',
         href: '/services/branding'
-      },
-      img: {
-        src: 'branding-service.png',
-        alt: ''
       }
     },
     design: {
@@ -179,10 +151,6 @@ module.exports = {
         variant: 'secondary',
         label: 'Learn More About Web Design',
         href: '/services/web-design'
-      },
-      img: {
-        src: 'web-design-service.png',
-        alt: ''
       }
     },
     optimization: {
@@ -193,10 +161,6 @@ module.exports = {
         variant: 'secondary',
         label: 'Learn More About Optimization',
         href: '/services/optimization'
-      },
-      img: {
-        src: 'optimization-service.png',
-        alt: ''
       }
     }
   },
@@ -204,11 +168,7 @@ module.exports = {
     hero: {
       overline: 'Shape Your Brand Identity',
       headline: 'Effective Storytelling and Cohesive Visuals for Purpose-Driven Organizations',
-      body: "Build a strong, resonant brand that connects with your target audience and reflects your organization's values.",
-      img: {
-        src: 'branding-intro.png',
-        alt: ''
-      }
+      body: "Build a strong, resonant brand that connects with your target audience and reflects your organization's values."
     },
     problem: {
       lead: "Purpose driven businesses or nonprofits like yours faces tough challenges. From skeptical markets and the struggle of balancing purpose with profit, to managing limited resources and tricky regulations, it's a tough path. Marketing your purpose without over-promising is hard, and creating a brand that's eco-conscious and widely appealing isn't easy. These hurdles can limit the impact of even the most passionate organizations."
@@ -216,11 +176,7 @@ module.exports = {
     description: {
       overline: 'A Holistic Approach to Branding',
       headline: 'Authentic Branding Solutions for Your Organization',
-      body: "I get it, and I'm here to help. My branding service is designed to ease your journey by authentically communicating your purpose, balancing it with the realities of running your organization, and managing your limited resources efficiently. I can help you create a compelling, eco-conscious brand that resonates with a wide audience.",
-      img: {
-        src: 'branding-description.png',
-        alt: ''
-      }
+      body: "I get it, and I'm here to help. My branding service is designed to ease your journey by authentically communicating your purpose, balancing it with the realities of running your organization, and managing your limited resources efficiently. I can help you create a compelling, eco-conscious brand that resonates with a wide audience."
     },
     plan: {
       overline: 'Your Branding Journey',
@@ -247,11 +203,7 @@ module.exports = {
     transformation: {
       overline: 'The Power of Branding',
       headline: "Elevate Your Organization's Impact",
-      body: "By investing in this branding service, you'll witness a remarkable transformation in your organization. It will emerge with a solid brand strategy and clear guidelines that ensure consistency across all platforms. Expect to see heightened audience engagement, improved brand recognition, and a strengthened commitment to your mission, amplifying the impact and reach of your purpose-driven organization.",
-      img: {
-        src: 'branding-transformation.png',
-        alt: ''
-      }
+      body: "By investing in this branding service, you'll witness a remarkable transformation in your organization. It will emerge with a solid brand strategy and clear guidelines that ensure consistency across all platforms. Expect to see heightened audience engagement, improved brand recognition, and a strengthened commitment to your mission, amplifying the impact and reach of your purpose-driven organization."
     },
     faqs: {
       overline: 'Branding Service faqs',
@@ -302,11 +254,7 @@ module.exports = {
     hero: {
       overline: 'Customized Web Design Solutions',
       headline: 'Accessible, Sustainable, and Responsive Websites for Eco-Conscious Organizations',
-      body: 'Craft a unique online presence that reflects your brand, supports your goals, and sets you apart from competitors.',
-      img: {
-        src: 'web-design-intro.png',
-        alt: ''
-      }
+      body: 'Craft a unique online presence that reflects your brand, supports your goals, and sets you apart from competitors.'
     },
     problem: {
       lead: 'Crafting a sustainable, accessible, and engaging website can be a daunting task. It means juggling WCAG guidelines, tech trends, and user expectations with budget limitations. However, building a website that reflects your mission, promotes inclusivity, and minimizes digital footprint is a crucial commitment for your organization.'
@@ -314,11 +262,7 @@ module.exports = {
     description: {
       overline: 'A Collaborative Design Process',
       headline: 'Tailored Web Solutions that Reflect Your Vision',
-      body: 'Overwhelmed by all of these moving parts? I can help. My web design service simplifies this complex process, balancing WCAG guidelines, emerging tech trends, and user demands within your budget. More than just a service, I can be your partner in bringing your mission to life online, promoting inclusivity and demonstrating to users your commitment to environmental sustainability.',
-      img: {
-        src: 'web-design-description.png',
-        alt: ''
-      }
+      body: 'Overwhelmed by all of these moving parts? I can help. My web design service simplifies this complex process, balancing WCAG guidelines, emerging tech trends, and user demands within your budget. More than just a service, I can be your partner in bringing your mission to life online, promoting inclusivity and demonstrating to users your commitment to environmental sustainability.'
     },
     plan: {
       overline: 'Your Web Design Journey',
@@ -345,11 +289,7 @@ module.exports = {
     transformation: {
       overline: 'The Power of Web Design',
       headline: "Elevate Your Organization's Online Presence",
-      body: "Imagine creating a digital space that effectively communicates your mission, attracts your target audience, and promotes inclusivity, all while demonstrating your commitment to environmental sustainability. More than just a website, it's a beacon of your values, a powerful tool that engages, inspires, and fosters a deeper connection with your audience, fueling growth and amplifying your impact.",
-      img: {
-        src: 'web-design-transformation.png',
-        alt: ''
-      }
+      body: "Imagine creating a digital space that effectively communicates your mission, attracts your target audience, and promotes inclusivity, all while demonstrating your commitment to environmental sustainability. More than just a website, it's a beacon of your values, a powerful tool that engages, inspires, and fosters a deeper connection with your audience, fueling growth and amplifying your impact."
     },
     faqs: {
       overline: 'Web Design Service faqs',
@@ -410,11 +350,7 @@ module.exports = {
     hero: {
       overline: 'Website Optimization Service',
       headline: 'Maximize Accessibility, Sustainability, and Performance',
-      body: 'Transform your existing website into a consistent, scalable, and responsive progressive web app that meets accessibility standards and generates less carbon per page view than at least 70% of websites.',
-      img: {
-        src: 'optimization-intro.png',
-        alt: ''
-      }
+      body: 'Transform your existing website into a consistent, scalable, and responsive progressive web app that meets accessibility standards and generates less carbon per page view than at least 70% of websites.'
     },
     problem: {
       lead: "Optimizing your website to be sustainable, accessible, and visually appealing can feel like navigating a labyrinth. Legal requirements and the fast-paced digital landscape demand constant vigilance, while scarce resources and limited expertise can stall progress. As your website expands, the surge in content, features, and user interactions can lead to a jumbled visual and navigational experience, reducing consistency and straining your brand's identity and user engagement."
@@ -422,11 +358,7 @@ module.exports = {
     description: {
       overline: 'Comprehensive Optimization',
       headline: 'Master the Labyrinth of Web Design with Comprehensive, Sustainable Solutions',
-      body: "Navigate this maze with confidence by entrusting me with your website optimization. I'll transform your digital presence, making it sustainable, accessible, and visually compelling, while ensuring compliance with evolving legal requirements. I can mitigate the stress of limited time and resources, adeptly managing the growth of your site to maintain visual and navigational consistency. I'll also convert your site to a responsive Progressive Web App for a seamless user experience across all devices. You can focus on your mission and leave the rest to me.",
-      img: {
-        src: 'optimization-description.png',
-        alt: ''
-      }
+      body: "Navigate this maze with confidence by entrusting me with your website optimization. I'll transform your digital presence, making it sustainable, accessible, and visually compelling, while ensuring compliance with evolving legal requirements. I can mitigate the stress of limited time and resources, adeptly managing the growth of your site to maintain visual and navigational consistency. I'll also convert your site to a responsive Progressive Web App for a seamless user experience across all devices. You can focus on your mission and leave the rest to me."
     },
     plan: {
       overline: 'Your Optimization Journey',
@@ -453,11 +385,7 @@ module.exports = {
     transformation: {
       overline: 'The Power of Optimization',
       headline: 'Experience the Benefits of an Optimized Website',
-      body: 'With my optimization services, you can expect an optimized website that is sustainable, accessible, and visually compelling, making your brand more recognizable and attractive to all users. And with continuous maintenance, your digital presence will remain resilient and current, adapting to ever-changing trends and standards. Anticipate an uplift in user engagement, a surge in website traffic, and a renewed commitment to your mission as your online reach expands.',
-      img: {
-        src: 'optimization-transformation.png',
-        alt: ''
-      }
+      body: 'With my optimization services, you can expect an optimized website that is sustainable, accessible, and visually compelling, making your brand more recognizable and attractive to all users. And with continuous maintenance, your digital presence will remain resilient and current, adapting to ever-changing trends and standards. Anticipate an uplift in user engagement, a surge in website traffic, and a renewed commitment to your mission as your online reach expands.'
     },
     faqs: {
       overline: 'Optimization Service FAQs',
@@ -507,11 +435,7 @@ module.exports = {
   portfolio: {
     hero: {
       headline: 'Crafting Digital Experiences for a Better World',
-      body: "I've had the privilege of working with some amazing organizations. Here are a few of my favorites.",
-      img: {
-        src: 'portfolio.png',
-        alt: ''
-      }
+      body: "I've had the privilege of working with some amazing organizations. Here are a few of my favorites."
     },
     grid: {
       headline: 'Recent Projects',
@@ -558,11 +482,7 @@ module.exports = {
     hero: {
       overline: 'Sustainable Design Insights',
       headline: 'Explore the Green Web Revolution',
-      body: 'Immerse yourself in the latest trends, insights, and best practices for accessible and eco-conscious web design. Here you can find inspiration and resources to help you use the web as a powerful tool to spread your message and reach more people sustainably.',
-      img: {
-        src: 'blog.png',
-        alt: ''
-      }
+      body: 'Immerse yourself in the latest trends, insights, and best practices for accessible and eco-conscious web design. Here you can find inspiration and resources to help you use the web as a powerful tool to spread your message and reach more people sustainably.'
     },
     grid: {
       headline: 'Recent Posts'
@@ -575,10 +495,6 @@ module.exports = {
   contact: {
     headline: 'Apply to Work With Me',
     body: "Fill out the application below, and let's make a difference together.",
-    img: {
-      src: 'contact.png',
-      alt: ''
-    },
     inputs: [
       { required: true, label: 'Full Name', id: 'full_name', type: 'text' },
       { required: true, label: 'Email', id: 'email', type: 'email' },

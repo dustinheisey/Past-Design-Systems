@@ -1,13 +1,22 @@
 ---
 layout: base
-title:
-description:
+title: "Ocean's Voice: Leading the Charge in Ocean Conservation"
+description: "Join Ocean's Voice in our mission to protect and preserve the world's oceans. Learn about our advocacy, conservation, education, and research efforts."
 ---
 
-{{ hero({ variant: 'bg-center-hero', content: content.landing.hero }) }}
-{{ problem({ variant: 'center-intro', content: content.landing.problem }) }}
-{{ guide({ variant: 'img-end-feature', content: content.landing.guide }) }}
-{{ plan({ variant: 'blurb-grid-feature', content: content.landing.plan }) }}
-{{ action({ variant: 'cover-start-action', content: content.landing.action }) }}
-{{ stakes({ variant: 'list-feature', content: content.landing.stakes }) }}
-{{ success({ variant: 'bg-pattern-feature', content: content.landing.success }) }}
+{{ hero({ variant: 'split-end', theme: 'dark', logo: 'public/svg/logo', img: { src: 'whale.png', alt: '' }, content: { headline: "Ocean's Voice: Your Call Can Echo Through the Depths", body: "Stand with us at the edge of a critical precipice, where the fate of our oceans hangs in the balance.", btn: { label: "Join the Fight", href: "/contact" } }, config: config }) }}
+
+{{ feature({ variant: 'list-start', classes: 'gap', img: { src: 'oil-seabird.png', alt: '' }, content: { overline: 'The Challenge', headline: 'A Cry from the Deep', body: "Our oceans are gasping for breath. The relentless onslaught of pollution, the greed of overfishing, and the silent killer of climate change are suffocating the lifeblood of our planet. This is not just a fight for the environment; it's a fight for our very survival. Our oceans are our lifeline, providing sustenance, regulating our climate, and breathing life into our world. If they perish, we perish." } }) }}
+
+{{ feature({ variant: 'bg-pattern', classes: 'gap', pattern: 'waves', content: { overline: 'Our Role', headline: 'Guiding the Charge', body: "Ocean's Voice is your beacon in this storm. Armed with years of experience and a relentless spirit, we have the knowledge and the tools to combat these threats. But our strength is not enough. We need your courage. We need your voice." } }) }}
+
+{{ feature({ variant: 'card-grid', content: { overline: 'Your Part', headline: 'Join the Battle', grid: [ { theme: 'primary-container', icon: 'book', body:
+'Immerse yourself in our free e-book to grasp the gravity of the threats our oceans face and discover how your voice can echo change.' }, { theme: 'secondary-container', icon: 'donate', body: 'Your generous contribution will fuel the frontlines of critical conservation battles.' }, { theme: 'tertiary-container', icon: 'advocate', body: 'Enlist in our army of ocean warriors. Advocate for policy changes, shun the chains of plastic, and let your voice ripple through your community.'} ] } }) }}
+
+{{ feature({ variant: 'img-end', img: { src: 'time.png', alt: '' }, content: { overline: 'Call to Action', headline: "Amplify Ocean's Voice", body: "Don't let our oceans fade into a silent, lifeless abyss. Stand with us today and become a beacon of hope. Together, we can amplify Ocean's Voice." } }) }}
+
+{{ feature({ variant: 'simple-center', content: { overline: 'The Stakes', headline: 'The Balance of Life', body: 'If we falter, we risk losing the mesmerizing beauty and vital resources our oceans provide. But with your courage, we can shield marine life, mend wounded ecosystems, and secure a vibrant, thriving ocean for generations yet unborn.' } }) }}
+
+{{ action({ variant: 'simple-center', theme: 'primary', content: { overline: 'Your Transformation', headline: 'From Despair to Guardian', body: "Before you joined Ocean's Voice, you may have felt a sense of despair, a feeling of insignificance against the vastness of the problem. But now, you're part of a legion making waves of change. You're not just a donor; you're a guardian of our oceans.", btn: { label: 'Become a Guardian', href: '/contact'} } }) }}
+
+{{ footer({ variant: 'mission-bg', logo: 'public/svg/logo', config: config }) }}

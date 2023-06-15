@@ -37,7 +37,10 @@ export function computeDocs(page, sections, args) {
       }', content: content.${page}.${section} }) }}
 `
     } else if (args[`${section}Variant`]) {
-      render += `{{ section({ variant: '${args[`${section}Variant`]}', content: content.${page}.${section} }) }}
+      render += `{{ ${args[`${section}Variant`].split('-').pop()}({ variant: '${args[`${section}Variant`].substring(
+        0,
+        args[`${section}Variant`].lastIndexOf('-')
+      )}', content: content.${page}.${section} }) }}
 `
     }
   })

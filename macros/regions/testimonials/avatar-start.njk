@@ -1,5 +1,5 @@
-<div class="region sidebar gap-m theme-{{props.theme or 'background'}}">
-    <div class="fixed frame avatar-img">{% img props.content.img.src, props.content.img.alt %}</div>
+<div class="region sidebar gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="fixed frame avatar-img">{% img props.content.img.src, props.img.alt%}</div>
     <figure>
         <blockquote>
             &OpenCurlyDoubleQuote;{{ props.content.quote }}&CloseCurlyDoubleQuote;

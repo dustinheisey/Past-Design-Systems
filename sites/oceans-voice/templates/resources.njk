@@ -1,5 +1,15 @@
 ---
 layout: base
-title:
-description:
+title: "Resources: Ocean's Voice's Comprehensive Information on Ocean Conservation"
+description: "Access a wealth of resources on ocean conservation, including educational materials, research papers, and advocacy tools."
 ---
+
+{{ header({ variant: 'spaced', logo: 'public/svg/logo', config: config }) }}
+
+{{ intro({ variant: 'img-end', img: { src: 'resources.png', alt: '' }, content: { overline: 'Your Journey', headline: "Dive Deeper with Ocean's Voice", body: "At Ocean's Voice, we believe that knowledge is the first step towards action. That's why we've curated a collection of resources to help you learn more about ocean conservation and how you can make a difference." } }) }}
+
+{{ gallery({ variant: 'card-grid', center: true, col: 2, content: { overline: 'Resources and Tools', headline: 'Empowering Ocean Guardians', grid: [ { theme: 'primary-container', overline: 'Educational Materials', headline: 'Ignite the Spark of Knowledge', body: 'Our educational materials are designed to provide a comprehensive understanding of the challenges facing our oceans and the solutions that can make a difference. From detailed reports to engaging infographics, these resources are a great starting point for anyone looking to learn more.' }, { theme: 'secondary-container', overline: 'Advocacy Tools', headline: 'Amplify Your Voice', body: "Ready to take action? Our advocacy tools can help. We've compiled a collection of guides, templates, and resources to help you advocate for ocean conservation in your community and beyond." }, { theme: 'tertiary-container', overline: 'Volunteer Resources', headline: 'Dive into Action', body: "If you're interested in volunteering with Ocean's Voice, we've got you covered. Our volunteer resources include everything you need to know to get started, from volunteer opportunities to tips for making the most of your experience." }, { theme: 'primary-container', overline: 'Partner Resources', headline: 'Unite for the Oceans', body: 'Are you part of a business, school, or organization that shares our passion for the oceans? Our partner resources provide guidance on how we can work together to amplify our impact and create lasting change for our oceans.' }, { theme: 'secondary-container', overline: 'Multimedia', headline: "Experience the Ocean's Story", body: 'Our collection of videos, podcasts, and interactive content brings the story of our oceans to life. Immerse yourself in these captivating resources and let the beauty and urgency of ocean conservation inspire you to action.' } ] } }) }}
+
+{{ action({ variant: 'simple-center', classes: 'gap', theme: 'primary', content: { overline: 'Join Us', headline: 'Become a Guardian of the Ocean', body: 'No matter where you are on your ocean conservation journey, our resources are here to support you. Dive in, learn, and let your actions echo through the depths. Together, we can give our oceans a voice.', btn: { label: 'Become a Guardian', href: '/donate' } } }) }}
+
+{{ footer({ variant: 'mission-bg', logo: 'public/svg/logo', config: config }) }}

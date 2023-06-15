@@ -1,5 +1,19 @@
 ---
 layout: base
-title:
-description:
+title: "Research: Ocean's Voice's Scientific Contributions to Ocean Conservation"
+description: "Learn about our research initiatives that provide vital data to guide our conservation efforts and influence policy."
 ---
+
+{{ header({ variant: 'spaced', logo: 'public/svg/logo', config: config }) }}
+
+{{ intro({ variant: 'img-end', above: true, logo: 'public/svg/logo', img: { src: 'iceberg.png', alt: '' }, content: { overline: 'Our Work', headline: 'Uncovering the Depths: Our Research', body: "At Ocean's Voice, our research forms the backbone of our work. Our dedicated team of scientists and researchers work tirelessly to understand the complex challenges facing our oceans and develop effective strategies to address them." }, config: config }) }}
+
+{{ intro({ variant: 'img-start', img: { src: 'data.png', alt: '' }, content: { overline: 'Our Approach', headline: 'Diving into Data', body: "We employ rigorous scientific methods to gather data, analyze trends, and uncover the realities of our ocean's health. This data-driven approach ensures our actions are targeted and effective." } }) }}
+
+{{ stats({ variant: 'inline', center: true, content: { overline: 'Our Impact', headline: 'Illuminating the Way Forward', body: "Our research has shed light on critical issues, informed policy decisions, and guided our conservation initiatives. It's not just about understanding the problem; it's about paving the way for solutions.", stats: [ { headline: '50+', body: 'Research Papers Published' }, { headline: '5', body: 'Ocean Exploration Expeditions' }, { headline: '20+', body: 'Collaborations with Global Institutions' }, { headline: '100+', body: 'Environmental Factors Monitored' } ] } }) }}
+
+{{ faq({ variant: 'offset', content: { headline: 'Frequently Asked Questions', faqs: [ { question: 'What kind of research does Ocean’s Voice conduct?', answer: 'We conduct studies on ocean health, marine biodiversity, environmental factors, and the impacts of human activities on marine ecosystems.' }, { question: 'How does Ocean’s Voice use research in conservation efforts?', answer: 'Our research provides data that guides the development of targeted conservation strategies and helps in influencing policy decisions.' }, { question: 'Can I access Ocean’s Voice research papers?', answer: 'Yes, our published research papers are accessible to the public and can be found on our website.' }, { question: 'How does Ocean’s Voice collaborate with other institutions?', answer: 'We collaborate with global institutions through data sharing, joint research projects, and contributing to discussions on ocean conservation.' }, { question: 'How can I support Ocean’s Voice’s research initiatives?', answer: 'You can support by donating, sharing our research with others, or even engaging in citizen science initiatives.' } ] } }) }}
+
+{{ action({ variant: 'simple-center', theme: 'primary', content: { overline: 'Get Involved', headline: 'Support Ocean Research', body: "Your support can help us continue our vital research work. Donate today and help us uncover the truths that lie beneath the ocean's surface.", btn: { label: 'Become a Guardian', href: '/donate' } } }) }}
+
+{{ footer({ variant: 'mission-bg', logo: 'public/svg/logo', config: config }) }}

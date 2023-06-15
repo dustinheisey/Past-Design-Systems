@@ -4,6 +4,8 @@ title: See Some Past Projects
 description: Check out some of my previous web design projects that prioritize accessibility, sustainability, and social impact.
 ---
 
-{{ intro({ variant: 'img-end', content: content.portfolio.hero }) }}
-{{ gallery({ variant: 'img-grid', col: 2, content: content.portfolio.grid }) }}
-{{ action({variant: 'bg-pattern', theme: 'primary', content: content.action }) }}
+{{ intro({ variant: 'img-end', img: { src: 'portfolio.png', alt: '' }, content: content.portfolio.hero }) }}
+
+{{ gallery({ variant: 'img-grid', classes: 'inset', col: 2, content: content.portfolio.grid }) }}
+
+{{ action({variant: 'bg-pattern', pattern: 'topography', theme: 'primary', content: content.action }) }}

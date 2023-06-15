@@ -1,12 +1,18 @@
 ---
 layout: base
-title:
-description:
+title: "About Ocean's Voice: Our Mission and Vision for Ocean Conservation"
+description: "Discover the story behind Ocean's Voice, our mission, vision, and the team dedicated to ocean conservation and marine life protection."
 ---
+{{ header({ variant: 'spaced', logo: 'public/svg/logo', config: config }) }}
 
-{{ section({ variant: 'img-end-intro', content: content.about.hero }) }}
-{{ section({ variant: 'start-intro', content: content.about.info1 }) }}
-{{ section({ variant: 'center-intro', content: content.about.info2 }) }}
-{{ section({ variant: 'end-intro', content: content.about.info3 }) }}
-{{ section({ variant: 'img-start-feature', content: content.about.success }) }}
-{{ section({ variant: 'cover-end-action', content: content.about.action }) }}
+{{ intro({ variant: 'img-end', img: { src: 'wave.png', alt: '' }, content: { overline: 'Our Origin', headline: "The Birth of Ocean's Voice", body: "Ocean's Voice was born out of a profound love for the sea and a deep concern for its future. We saw the beauty of the ocean being threatened by human actions and knew we had to step in. Our mission began as a ripple, but with your help, it's becoming a wave of change." } }) }}
+
+{{ feature({ variant: 'simple-center', content: { overline: 'Our Mission', headline: 'The Echo of Our Purpose', body: "Our mission at Ocean's Voice is to protect and restore the world's oceans. We believe in a future where marine life thrives, where our oceans are free of pollution, and where every wave reveals a vibrant, healthy ecosystem. But this future is not guaranteed. It requires action, dedication, and voices willing to speak up for our oceans." } }) }}
+
+{{ feature({ variant: 'blurb-grid', theme: 'secondary', center: true, content: { overline: 'Our Approach', headline: 'Guiding the Wave of Change', body: "At Ocean's Voice, we use a multifaceted approach to address the challenges facing our oceans.", grid: [ { headline: "Research", icon: 'magnifier' }, { headline: 'Advocacy', icon: 'advocate' }, { headline: 'Education', icon: 'book' }, { headline: 'Conservation', icon: 'shield' } ] } }) }}
+
+{{ stats({ variant: 'description', content: { overline: 'Our Impact', headline: 'Making Waves', body: "Since our inception, we've made significant strides in ocean conservation. From successful policy advocacy to impactful conservation projects, our work is making a difference. But the fight is far from over. With every new challenge, our resolve only strengthens.", stats: [ { headline: '400', body: 'Policy changes' }, { headline: '3000', body: 'Conservation Projects' }, { headline: '1000', body: 'Volunteers' } ] } }) }}
+
+{{ action({ variant: 'simple-center', theme: 'primary', content: { overline: 'Join Us', headline: "Amplify Ocean's Voice", body: "We're always looking for more voices to join our chorus for the oceans. Whether you're interested in volunteering, donating, or simply learning more about our work, there's a place for you at Ocean's Voice. Together, we can turn the tide for our oceans.", btn: { label: 'Become a Guardian', href: '/donate' } } }) }}
+
+{{ footer({ variant: 'mission-bg', logo: 'public/svg/logo', config: config }) }}

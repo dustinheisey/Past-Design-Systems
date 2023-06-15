@@ -46,7 +46,7 @@
   {% iconsprite %}
   {{ header({variant: 'spaced', logo: '../../sites/portfolio/public/svg/logo', type: type, config: navigation}) }}
   <main>{{ content | safe }}</main>
-  {{ footer({variant: 'newsletter-bg', carbon: true, config: navigation, content: { img: 'svg/footer-background.svg', newsletter: { headline: 'Subscribe to My Newsletter', body: 'Get weekly updates on web accessibility and sustainability trends, case studies, and tutorials in my newsletter. Stay informed on best practices and resources to build an inclusive, eco-friendly digital presence.' }, copywrite: '© 2023 Dustin Heisey, All rights reserved.' } }) }}
+  {{ footer({variant: 'newsletter-bg', classes: 'gap', carbon: true, config: navigation, content: { img: '/svg/footer-background.svg', newsletter: { headline: 'Subscribe to My Newsletter', body: 'Get weekly updates on web accessibility and sustainability trends, case studies, and tutorials in my newsletter. Stay informed on best practices and resources to build an inclusive, eco-friendly digital presence.' }, copywrite: '© 2023 Dustin Heisey, All rights reserved.' } }) }}
 </body>
 
 </html>

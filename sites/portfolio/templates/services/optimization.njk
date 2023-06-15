@@ -4,10 +4,16 @@ title: Low-Carbon Web Optimization & WCAG 2.2 Compliance
 description: Boost your website's performance with my eco-friendly optimization services, ensuring minimal carbon emissions, full WCAG 2.2 compliance, and a seamless design system for unparalleled user experience and accessibility.
 ---
 
-{{ intro({ variant: 'img-end', content: content.optimization.hero }) }}
-{{ feature({variant: 'bg-pattern', center: true, theme: 'tertiary', content: content.optimization.problem }) }}
-{{ feature({ variant: 'img-start', content: content.optimization.description }) }}
+{{ intro({ variant: 'img-end', img: { src: 'optimization-intro.png', alt: '' }, content: content.optimization.hero }) }}
+
+{{ feature({variant: 'bg-pattern', pattern: 'topography', center: true, theme: 'tertiary', content: content.optimization.problem }) }}
+
+{{ feature({ variant: 'img-start', img: { src: 'optimization-description.png', alt: '' }, content: content.optimization.description }) }}
+
 {{ timeline({ variant: 'inline-start', content: content.optimization.plan }) }}
-{{ feature({ variant: 'img-end', content: content.optimization.transformation }) }}
-{{ faq({ variant: 'accordion', content: content.optimization.faqs }) }}
-{{ action({variant: 'bg-pattern', theme: 'primary', content: content.optimization.action }) }}
+
+{{ feature({ variant: 'img-end', img: { src: 'optimization-transformation.png', alt: '' }, content: content.optimization.transformation }) }}
+
+{{ faq({ variant: 'accordion', classes: 'inset', content: content.optimization.faqs }) }}
+
+{{ action({variant: 'bg-pattern', pattern: 'topography', theme: 'primary', content: content.optimization.action }) }}

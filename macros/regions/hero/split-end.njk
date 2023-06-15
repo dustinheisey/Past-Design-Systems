@@ -1,7 +1,6 @@
-<div class="cover sidebar reverse sidebar-split gap-m theme-{{props.theme or 'background'}}">
-    <div class="frame-cover">{% img props.content.img.src, props.content.img.alt %}</div>
-    <div class="stack fixed gap-xl">
-        <header class="navbar" id="navbar">
+<div class="cover sidebar align-stretch sidebar-split gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="stack fixed">
+        <header class="navbar">
             <nav class="inset-0">
                 <div class="stack region align-start inset-0 gap-m">
                     <a href="/" class="frame logo">
@@ -88,5 +87,9 @@
             </p>
             <a href="{{props.content.btn.href}}" class="btn {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
         </div>
+    </div>
+    <div class="frame-cover">
+        {% set src = './public/img/' + props.img.src%}
+        {% img src, props.img.alt%}
     </div>
 </div>

@@ -4,10 +4,16 @@ title: Comprehensive Brand Guide & Marketing Solutions
 description: Establish an effective brand identity with my branding service. I dive deep into your organization's ethos to create a unique brand guide, compelling marketing story, and style guide that resonates with your target audience and enhances your brand's impact.
 ---
 
-{{ intro({ variant: 'img-end', content: content.branding.hero }) }}
-{{ feature({variant: 'bg-pattern', center: true, theme: 'secondary', content: content.branding.problem }) }}
-{{ feature({ variant: 'img-start', content: content.branding.description }) }}
+{{ intro({ variant: 'img-end', img: { src: 'branding-intro.png', alt: '' }, content: content.branding.hero }) }}
+
+{{ feature({variant: 'bg-pattern', pattern: 'topography', center: true, theme: 'secondary', content: content.branding.problem }) }}
+
+{{ feature({ variant: 'img-start', img: { src: 'branding-description.png', alt: '' }, content: content.branding.description }) }}
+
 {{ timeline({ variant: 'inline-start', content: content.branding.plan }) }}
-{{ feature({ variant: 'img-end', content: content.branding.transformation }) }}
-{{ faq({ variant: 'accordion', content: content.branding.faqs }) }}
-{{ action({variant: 'bg-pattern', theme: 'primary', content: content.branding.action }) }}
+
+{{ feature({ variant: 'img-end', img: { src: 'branding-transformation.png', alt: '' }, content: content.branding.transformation }) }}
+
+{{ faq({ variant: 'accordion', classes: 'inset', content: content.branding.faqs }) }}
+
+{{ action({variant: 'bg-pattern', pattern: 'topography', theme: 'primary', content: content.branding.action }) }}

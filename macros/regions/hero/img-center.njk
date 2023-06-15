@@ -1,4 +1,7 @@
-<div class="cover region cover-nav theme-{{props.theme or 'background'}}">
+{% if props.img.src%}
+{% set src = './public/img/' + props.img.src%}
+{% endif %}
+<div class="cover region cover-nav theme-{{props.theme or 'background'}} {{props.classes}}">
     <header class="navbar" id="navbar">
         <nav>
             <div class="cluster region justify-between">
@@ -80,6 +83,11 @@
         </nav>
     </header>
     <div class="principle stack gap-xl">
+        {% if props.above %}
+        <div class="frame full">
+            {% img src, props.img.alt%}
+        </div>
+        {% endif %}
         <div class="prose">
             {% if props.content.badge %}
             <a href="/" class="badge badge-primary">{{props.content.badge}}</a>
@@ -90,8 +98,10 @@
             </p>
             <a href="{{props.content.btn.href}}" class="btn {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
         </div>
+        {% if props.below %}
         <div class="frame full">
-            {% img props.content.img.src, props.content.img.alt %}
+            {% img src, props.img.alt%}
         </div>
+        {% endif %}
     </div>
 </div>

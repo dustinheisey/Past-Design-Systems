@@ -4,8 +4,13 @@ import { range } from './funcs/range.js'
 import { darkMode } from './funcs/dark-mode.js'
 
 document.addEventListener('DOMContentLoaded', function () {
-  readingProgress()
-  scrollingNav()
-  range()
-  darkMode()
+  const navbar = document.querySelector('#navbar')
+  const progress = document.getElementById('reading-progress')
+  const budgetInput = document.getElementById('budget')
+  const darkModeToggle = document.querySelector('#theme-toggle')
+
+  if (darkModeToggle) darkMode()
+  if (budgetInput) range()
+  if (progress) readingProgress()
+  if (navbar) scrollingNav()
 })

@@ -57,13 +57,6 @@ img.full {
   inline-size: auto;
 }
 
-@media (--tablet-landscape-up) {
-  .logo {
-    block-size: 3rem;
-    inline-size: auto;
-  }
-}
-
 .logo-l {
   block-size: 4rem;
 }

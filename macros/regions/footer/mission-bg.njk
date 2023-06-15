@@ -1,14 +1,16 @@
-<footer class="bg-img theme-{{props.theme or 'background'}}">
-    <img src='{{props.content.img}}' alt="">
+<footer class="bg-img theme-{{props.theme or 'background'}} {{props.classes}}">
+    {% set src = '/svg/' + props.config.footer.background %}
+    <img src='{{src}}' alt="">
     <div class="full stack align-center region">
         <div class="cluster justify-between full gap-xl align-start">
-            <div class="stack gap-xs">
+            <div class="stack align-start gap-xs">
                 <a href="/">
-                    <img src="https://generative-placeholders.glitch.me/image?width=200&height=100" alt="Logo" />
+                    <span class="sr-only">Home</span>
+                    {% svg props.logo %}
                 </a>
                 <div class="prose prose-s">
                     <p>
-                        {{props.content.mission}}
+                        {{props.config.footer.mission}}
                     </p>
                 </div>
             </div>
@@ -48,7 +50,7 @@
                 </li>
                 {% endfor %}
             </ul>
-            <small class="copywrite">{{props.content.copywrite}}</small>
+            <small class="copywrite">{{props.config.footer.copywrite}}</small>
         </div>
     </div>
 </footer>

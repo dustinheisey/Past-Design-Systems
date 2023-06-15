@@ -11,7 +11,6 @@
     "eleventy-design-system.code-workspace": true,
     "rollup.config.js": true,
     "ally.config.json": true,
-    ".vscode": true,
-    "sites\\oceans-voice": true
+    ".vscode": true
   }
 }

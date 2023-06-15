@@ -23,7 +23,7 @@ blockquote.blockquote-accent::before {
   content: open-quote;
   font-size: 7.5em;
   position: absolute;
-  top: -0.65em;
+  top: -0.75em;
   left: -0.05em;
   font-style: normal;
   font-family: var(--font-family-headline);

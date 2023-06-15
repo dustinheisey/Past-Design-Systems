@@ -1,15 +1,15 @@
-{% from "../../../macros/region.njk" import header, footer %}
+{# {% from "../../../macros/region.njk" import header, footer %} #}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>{{title}} | Dustin Heisey</title>
+  <title>{{title}}</title>
   <meta name="description" content="{{description}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="{{title}} | Dustin Heisey" />
+  <meta property="og:title" content="{{title}}" />
   <meta property="og:description" content="{{description}}" />
   {% if type == "article" %}
   <meta property="og:type" content="article" />
@@ -24,7 +24,6 @@
 
   <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}" />
 
-  <link href=/favicon/favicon.ico rel=icon sizes=any>
   <link href=/favicon/favicon.svg rel=icon type=image/svg+xml>
   <link href=/favicon/apple-touch-icon-180.png rel=apple-touch-icon>
   <link href=/manifest.webmanifest rel=manifest>
@@ -32,7 +31,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-  <!-- INLINE CSS -->
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/theme.css">
 
   <script src="https://cdn.usefathom.com/script.js" data-site="VCCTYWMM" defer></script>
   <script src="/index.min.js"></script>
@@ -44,9 +44,7 @@
 
 <body class="theme-background">
   {% iconsprite %}
-  {{ header({variant: 'spaced', logo: '../../sites/portfolio/public/svg/logo', type: type, config: navigation}) }}
   <main>{{ content | safe }}</main>
-  {{ footer({variant: 'newsletter-bg', bg: './svg/footer-background.svg', carbon: true, config: navigation, content: { newsletter: { headline: 'Subscribe to My Newsletter', body: 'Get weekly updates on web accessibility and sustainability trends, case studies, and tutorials in my newsletter. Stay informed on best practices and resources to build an inclusive, eco-friendly digital presence.' }, copywrite: '© 2023 Dustin Heisey, All rights reserved.' } }) }}
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<footer class="theme-{{props.theme or 'background'}}">
+<footer class="theme-{{props.theme or 'background'}} {{props.classes}}">
     <div class="full stack align-center region">
         <div class="cluster justify-between full gap-xl align-start">
             <div class="stack gap-xs">
@@ -7,7 +7,7 @@
                 </a>
                 <div class="prose prose-s">
                     <p>
-                        {{props.content.mission}}
+                        {{props.config.mission}}
                     </p>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </li>
                 {% endfor %}
             </ul>
-            <small class="copywrite">{{props.content.copywrite}}</small>
+            <small class="copywrite">{{props.config.footer.copywrite}}</small>
         </div>
     </div>
 </footer>

@@ -1,13 +1,13 @@
-<div class="region stack theme-{{props.theme or 'background'}}">
-    <section class="prose">
+<div class="region stack theme-{{props.theme or 'background'}} {{props.classes}}">
+    <section class="prose center">
         <p class="overline">{{props.content.overline}}</p>
         <h2 class="page-headline">
             {{props.content.headline}}
         </h2>
     </section>
-    <div class="grid grid-3">
+    <div class="grid grid-{{props.col or 3}}">
         {% for item in props.content.grid %}
-        <article class="card theme-primary-container stack gap-xs">
+        <article class="card theme-{{item.theme}} stack gap-xs">
             <div class="cluster">
                 <time datetime="{{item.time.time}}">{{item.time.label}}</time>
             </div>

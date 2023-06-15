@@ -1,5 +1,16 @@
 ---
 layout: base
-title:
-description:
+title: "Contact Ocean's Voice: Get in Touch with Our Ocean Conservation Team"
+description: "Have questions or want to get involved? Contact Ocean's Voice. We'd love to hear from you."
 ---
+
+{{ header({ theme: 'primary', logo: 'public/svg/logo', variant: 'spaced', config: config }) }}
+
+{{ form({ variant: 'split-start', img: { src: 'contact.png', alt: '' }, content: { overline: 'Reach Out', headline: 'Let Your Voice Be Heard', body: 'Reach out to us via email, phone, or our online contact form. Our team is ready to listen, answer your questions, and provide any information you need.', inputs: [ { required: true, label: 'Full Name', id: 'full_name', type: 'text' }, { required: true, label: 'Email', id: 'email', type: 'email' }, { required: true, label: 'Message', id: 'message', type: 'textarea' } ], submit: 'Connect' } }) }}
+
+{# Map { overline: 'Visit Us', headline: 'Dive Deeper into Our World', body: "If you're in the area, we invite you to visit our office. Meet our team, learn more about our work, and see firsthand the impact of your support." } #}
+
+{{ action({ variant: 'bg-pattern', pattern: 'waves', input: true, content: {
+overline: 'Newsletter', headline: 'Stay in the Loop', body: "Sign up for our newsletter to receive regular updates on our work, upcoming events, and ways you can get involved. Let's stay connected." } }) }}
+
+{{ footer({ variant: 'mission-bg', logo: 'public/svg/logo', config: config }) }}
