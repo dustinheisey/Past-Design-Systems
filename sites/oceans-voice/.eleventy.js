@@ -130,15 +130,18 @@ module.exports = function (eleventyConfig) {
     }
   })
 
-  eleventyConfig.addShortcode('svg', function (file) {
+  eleventyConfig.addShortcode('svg', function (file, classes) {
     try {
       let relativeFilePath = `${file}.svg`
       let data = fs.readFileSync(relativeFilePath, function (err, contents) {
         if (err) return err
         return contents
       })
-      console.log(data)
-      return data.toString('utf8')
+      let svg = data.toString('utf8')
+      if (classes) {
+        return svg.replace('<svg', `<svg class="${classes}"`)
+      }
+      return svg
     } catch (error) {
       console.log(error)
     }
