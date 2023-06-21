@@ -1,10 +1,9 @@
-{# Status: Stable #}
 <header class="navbar" id="navbar">
     <nav>
         <div class="cluster region justify-end">
             <a href="/">
                 <span class="sr-only">Home</span>
-                {% svg props.logo %}
+                {% svg './public/svg/logo' %}
             </a>
             <ul class="topbar cluster gap-m">
                 {% for link in props.config.header.links %} {% if link.subLinks %}

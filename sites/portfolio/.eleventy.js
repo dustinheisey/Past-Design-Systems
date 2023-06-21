@@ -20,6 +20,7 @@ const svgSprite = require('eleventy-plugin-svg-sprite')
 // const logicalContentFlow = require('eleventy-plugin-logical-content-flow')
 const sitemap = require('@quasibit/eleventy-plugin-sitemap')
 const cspPlugin = require('@jackdbd/eleventy-plugin-content-security-policy')
+const faviconsPlugin = require('eleventy-plugin-gen-favicons')
 // const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
 
 module.exports = function (eleventyConfig) {
@@ -27,6 +28,43 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(inclusiveLangPlugin)
+  eleventyConfig.addPlugin(faviconsPlugin, {
+    outputDir: './site',
+    manifestData: {
+      name: 'Portfolio of Dustin Heisey',
+      short_name: 'Dustin Heisey',
+      description: 'The portfolio of Dustin Heisey, optimized for accessibility, responsiveness, and sustainability',
+      theme_color: '#566500',
+      background_color: '#566500',
+      display: 'fullscreen',
+      start_url: '/',
+      scope: '/',
+      orientation: 'portrait',
+      display_override: ['window-control-overlay', 'fullscreen', 'standalone', 'browser'],
+      shortcuts: [
+        {
+          name: 'About',
+          description: 'Read my bio and learn about my skills',
+          url: '/about'
+        },
+        {
+          name: 'Services',
+          url: '/services',
+          description: 'Learn about the services I offer'
+        },
+        {
+          name: 'Portfolio',
+          url: '/portfolio',
+          description: 'View my portfolio'
+        },
+        {
+          name: 'Contact',
+          url: '/contact',
+          description: 'Contact me'
+        }
+      ]
+    }
+  })
   // eleventyConfig.addPlugin(eleventyHTMLValidate)
   // eleventyConfig.addPlugin(logicalContentFlow)
   // eleventyConfig.addPlugin(EleventyVitePlugin)

@@ -15,11 +15,21 @@
     "sb": "storybook dev -c stories/.storybook",
     "styles": "postcss styles/style.css -o styles/style.min.css --watch",
     "build:js": "rollup -c rollup.config.js",
-    "dev:portfolio": "npm run build:js && cd sites/portfolio && npx @11ty/eleventy --serve --incremental",
-    "dev:oceans-voice": "npm run build:js && cd sites/oceans-voice && npx @11ty/eleventy --serve --incremental",
-    "build": "rollup -c rollup.config.js && npm run build:js && cd sites/oceans-voice && npx @11ty/eleventy",
+    "portfolio": "npm run build:js && cd sites/portfolio && rm -rf sites/ && npx @11ty/eleventy --serve --incremental",
+    "oceans-voice": "npm run build:js && cd sites/oceans-voice && rm -rf sites/ && npx @11ty/eleventy --serve --incremental",
+    "bee-leaf": "npm run build:js && cd sites/bee-leaf && rm -rf sites/ && npx @11ty/eleventy --serve --incremental",
+    "city-roots": "npm run build:js && cd sites/city-roots && rm -rf sites/ && npx @11ty/eleventy --serve --incremental",
+    "desert-bloom": "npm run build:js && cd sites/desert-bloom && rm -rf sites/ && npx @11ty/eleventy --serve --incremental",
+    "build:portfolio": "rollup -c rollup.config.js && npm run build:js && cd sites/portfolio && rm -rf sites/ && npx @11ty/eleventy",
+    "build:oceans-voice": "rollup -c rollup.config.js && npm run build:js && cd sites/oceans-voice && rm -rf sites/ && npx @11ty/eleventy",
+    "build:bee-leaf": "rollup -c rollup.config.js && npm run build:js && cd sites/bee-leaf && rm -rf sites/ && npx @11ty/eleventy",
+    "build:city-roots": "rollup -c rollup.config.js && npm run build:js && cd sites/city-roots && rm -rf sites/ && npx @11ty/eleventy",
+    "build:desert-bloom": "rollup -c rollup.config.js && npm run build:js && cd sites/desert-bloom && rm -rf sites/ && npx @11ty/eleventy",
     "ally:portfolio": "cd sites/portfolio && a11y-sitechecker --config=ally.config.json -T=1000",
-    "ally:oceans-voice": "cd sites/oceans-voice && a11y-sitechecker --config=ally.config.json -T=1000"
+    "ally:oceans-voice": "cd sites/oceans-voice && a11y-sitechecker --config=ally.config.json -T=1000",
+    "ally:bee-leaf": "cd sites/bee-leaf && a11y-sitechecker --config=ally.config.json -T=1000",
+    "ally:city-bloom": "cd sites/city-bloom && a11y-sitechecker --config=ally.config.json -T=1000",
+    "ally:desert-bloom": "cd sites/desert-bloom && a11y-sitechecker --config=ally.config.json -T=1000"
   },
   "author": {
     "name": "Dustin Heisey"
@@ -40,6 +50,7 @@
     "@storybook/html-webpack5": "^7.0.18",
     "a11y-sitechecker": "^6.0.1",
     "cssnano": "^6.0.1",
+    "eleventy-multisite": "^0.0.5",
     "eleventy-plugin-gen-favicons": "^1.1.2",
     "eleventy-plugin-pwa-v2": "^1.0.0",
     "eleventy-plugin-svg-sprite": "^2.4.0",

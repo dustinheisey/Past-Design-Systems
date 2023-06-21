@@ -24,11 +24,7 @@
 
   <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}" />
 
-  <link href=/favicon/favicon.ico rel=icon sizes=any>
-  <link href=/favicon/favicon.svg rel=icon type=image/svg+xml>
-  <link href=/favicon/apple-touch-icon-180.png rel=apple-touch-icon>
-  <link href=/manifest.webmanifest rel=manifest>
-  <meta name="theme-color" content="#566500" />
+  {% favicons './public/favicon.svg', appleIconBgColor='#F1DEC1' %}
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 

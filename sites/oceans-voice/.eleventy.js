@@ -1,27 +1,16 @@
 const Image = require('@11ty/eleventy-img')
 const path = require('path')
-const { promisify } = require('util')
-const { DateTime } = require('luxon')
 const fs = require('fs')
-const { PurgeCSS } = require('purgecss')
-const purgeCssFromHtml = require('purgecss-from-html')
-const stat = promisify(fs.stat)
 const minify = require('html-minifier').minify
-const csso = require('csso')
 const pluginPWA = require('eleventy-plugin-pwa-v2')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const markdownIt = require('markdown-it')
-const markdownItAnchor = require('markdown-it-anchor')
-const execFile = promisify(require('child_process').execFile)
 const svgSprite = require('eleventy-plugin-svg-sprite')
-// const eleventyHTMLValidate = require('eleventy-plugin-html-validate')
-// const logicalContentFlow = require('eleventy-plugin-logical-content-flow')
 const sitemap = require('@quasibit/eleventy-plugin-sitemap')
 const cspPlugin = require('@jackdbd/eleventy-plugin-content-security-policy')
 const CleanCSS = require('clean-css')
-// const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
+const faviconsPlugin = require('eleventy-plugin-gen-favicons')
 
 module.exports = function (eleventyConfig) {
   // ? Plugins
@@ -31,6 +20,22 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(eleventyHTMLValidate)
   // eleventyConfig.addPlugin(logicalContentFlow)
   // eleventyConfig.addPlugin(EleventyVitePlugin)
+  eleventyConfig.addPlugin(faviconsPlugin, {
+    outputDir: './site',
+    manifestData: {
+      name: "Ocean's Voice - Ocean Conservation Nonprofit",
+      short_name: "Ocean's Voice",
+      description:
+        "Ocean's Voice is a nonprofit organization dedicated to protecting and restoring the world's oceans. We conduct research, advocate for policy change, educate the public, and lead conservation initiatives. Join us in creating a future where our oceans thrive.",
+      theme_color: '#01658D',
+      background_color: '#F8FDFF',
+      display: 'fullscreen',
+      start_url: '/',
+      scope: '/',
+      orientation: 'portrait',
+      display_override: ['window-control-overlay', 'fullscreen', 'standalone', 'browser']
+    }
+  })
   eleventyConfig.addPlugin(cspPlugin, {
     allowDeprecatedDirectives: true,
 
@@ -168,8 +173,6 @@ module.exports = function (eleventyConfig) {
 
   // ? Layout Aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk')
-  eleventyConfig.addLayoutAlias('post', 'post.njk')
-  eleventyConfig.addLayoutAlias('category', 'category.njk')
 
   // ? Passthrough Copies
   eleventyConfig.addPassthroughCopy({ public: '/' })
@@ -189,63 +192,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('cssmin', function (code) {
     return new CleanCSS({}).minify(code).styles
   })
-
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
-  })
-  eleventyConfig.addFilter('tagsOnly', (tag) => {
-    return tag.filter((item) => item !== 'post')
-  })
-  eleventyConfig.addFilter('getCategory', (categories, categoryTag) => {
-    let postCategory = categoryTag.find((item) => item !== 'post')
-    return categories.find((item) => item.data.label === postCategory)
-  })
-  eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy')
-  })
-
-  async function lastModifiedDate(filename) {
-    try {
-      const { stdout } = await execFile('git', ['log', '-1', '--format=%cd', filename])
-      return new Date(stdout)
-    } catch (e) {
-      console.error(e.message)
-      // Fallback to stat if git isn't working.
-      const stats = await stat(filename)
-      return stats.mtime // Date
-    }
-  }
-  // Cache the lastModifiedDate call because shelling out to git is expensive.
-  // This means the lastModifiedDate will never change per single eleventy invocation.
-  const lastModifiedDateCache = new Map()
-  eleventyConfig.addNunjucksAsyncFilter('lastModifiedDate', function (filename, callback) {
-    const call = (result) => {
-      result.then((date) => callback(null, date))
-      result.catch((error) => callback(error))
-    }
-    const cached = lastModifiedDateCache.get(filename)
-    if (cached) {
-      return call(cached)
-    }
-    const promise = lastModifiedDate(filename)
-    lastModifiedDateCache.set(filename, promise)
-    call(promise)
-  })
-
-  /* Markdown Overrides */
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.linkAfterHeader({
-      assistiveText: (title) => `Permalink to “${title}”`,
-      visuallyHiddenClass: 'sr-only',
-      wrapper: ['<div class="inline-header">', '</div>']
-    }),
-    permalinkSymbol: '#'
-  })
-  eleventyConfig.setLibrary('md', markdownLibrary)
 
   return {
     dir: {

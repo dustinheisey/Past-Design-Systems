@@ -1,12 +1,11 @@
 <footer class="bg-img theme-{{props.theme or 'background'}} {{props.classes}}">
-    {% set src = '/svg/' + props.config.footer.background %}
-    <img src='{{src}}' alt="">
+    <img src='/svg/footer-background.svg' alt="">
     <div class="full stack align-center region">
         <div class="cluster justify-between full gap-xl align-start">
             <div class="stack align-start gap-xs">
                 <a href="/">
                     <span class="sr-only">Home</span>
-                    {% svg props.logo %}
+                    {% svg './public/svg/logo' %}
                 </a>
                 <div class="prose prose-s">
                     <p>
