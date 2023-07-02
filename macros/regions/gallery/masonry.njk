@@ -1,4 +1,12 @@
 <div class="region stack gap-l {{props.class}} theme-{{props.theme or 'background'}} {{props.classes}}">
+    {% if props.content.headline %}
+        <section class="prose center">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="page-headline">
+            {{props.content.headline}}
+        </h2>
+    </section>
+    {% endif %}
     <h2 class="region-headline text-center center-intrinsic">{{props.content.headline}}</h2>
     {% if props.categories %}
     <div class="reel justify-center no-bar">

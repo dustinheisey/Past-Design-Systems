@@ -9,7 +9,7 @@
             <button type="submit" class="fixed btn btn-primary">Subscribe</button>
         </form>
         {% endif %}
-        {% if props.btn %}
+        {% if props.content.btn %}
         <a href="{{props.content.btn.href}}" class="btn fixed {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
         {% endif %}
     </section>

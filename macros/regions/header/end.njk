@@ -1,12 +1,12 @@
 <header class="navbar" id="navbar">
     <nav>
-        <div class="cluster region justify-end">
+        <div class="cluster region no-inset justify-end">
             <a href="/">
                 <span class="sr-only">Home</span>
                 {% svg './public/svg/logo' %}
             </a>
             <ul class="topbar cluster gap-m">
-                {% for link in props.config.header.links %} {% if link.subLinks %}
+                {% for link in props.navigation.header.links %} {% if link.subLinks %}
                 <li>
                     <drop-down>
                         <a href="{{ link.url }}" class="link link-navigation" {% if isActive %}aria-current="page" {% endif %}>
@@ -52,11 +52,11 @@
                     </svg>
                     <tool-tip tip-position="block-end">Toggle <span class="badge badge-primary">\</span></tool-tip>
                 </button>
-                <a href="{{props.config.header.action.url}}" class="btn">{{props.config.header.action.label}}</a>
+                <a href="{{props.navigation.header.action.url}}" class="btn">{{props.navigation.header.action.label}}</a>
             </div>
             <div class="bottombar">
                 <ul>
-                    {% for item in props.config.bottombar.links %}
+                    {% for item in props.navigation.bottombar.links %}
                     <li>
                         <a href="{{item.url}}" class="navigation">
                             {% icon item.icon %}
@@ -65,9 +65,9 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <a href="{{props.config.bottombar.fab.url}}" class="fab">
-                    <span class="sr-only">{{props.config.bottombar.fab.label}}</span>
-                    {% icon props.config.bottombar.fab.icon %}
+                <a href="{{props.navigation.bottombar.fab.url}}" class="fab">
+                    <span class="sr-only">{{props.navigation.bottombar.fab.label}}</span>
+                    {% icon props.navigation.bottombar.fab.icon %}
                 </a>
             </div>
         </div>

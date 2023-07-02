@@ -1,4 +1,8 @@
 module.exports = {
+  logo: {
+    src: '/svg/logo',
+    alt: 'Dustin Heisey'
+  },
   header: {
     links: [
       { label: 'About', url: '/about' },

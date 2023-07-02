@@ -11,7 +11,7 @@
   padding: 0;
 }
 
-.cover.sidebar > .stack {
+.cover.sidebar > :is(.stack, .prose) {
   padding: var(--inset, var(--inset-page));
 }
 

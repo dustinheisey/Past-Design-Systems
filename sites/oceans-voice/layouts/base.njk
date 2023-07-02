@@ -1,14 +1,15 @@
+{% from "../../../macros/region.njk" import header, footer %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>{{title}}</title>
+  <title>{{title}} | Dustin Heisey</title>
   <meta name="description" content="{{description}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="{{title}}" />
+  <meta property="og:title" content="{{title}} | Dustin Heisey" />
   <meta property="og:description" content="{{description}}" />
   {% if type == "article" %}
   <meta property="og:type" content="article" />
@@ -23,11 +24,12 @@
 
   <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}" />
 
-  {% favicons './public/favicon.svg', appleIconBgColor='#016397' %}
+  {% favicons './public/favicon.svg', appleIconBgColor='#F1DEC1' %}
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-  <link rel="stylesheet" href="/style.min.css">
+  <!-- INLINE CSS -->
+
   <link rel="stylesheet" href="/theme.css">
 
   <script src="https://cdn.usefathom.com/script.js" data-site="VCCTYWMM" defer></script>

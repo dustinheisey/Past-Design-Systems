@@ -442,12 +442,21 @@ module.exports = {
       body: "Find a curated selection of real-world projects I've completed for nonprofits and companies.",
       grid: [
         {
+          headline: 'Fostering Buzz for Bee Conservation',
+          url: 'https://beeleaf.dustinheisey.com/',
+          body: 'I crafted an engaging, and influential marketing website for an imagined bee conservation nonprofit, the BeeLeaf Foundation, to showcase my web design and marketing skills. By including vibrant imagery, persuasive narratives, and fluid user interfaces, this website conveys the urgency and importance of bee conservation and educates about the symbiotic relationship between bees and the ecosystems they tirelessly support',
+          img: {
+            src: 'bee-leaf-desktop-mockup.jpg',
+            alt: 'BeeLeaf Marketing Website'
+          }
+        },
+        {
           headline: 'Empowering Ocean Conservation Efforts',
           url: 'https://oceansvoice.dustinheisey.com/',
           body: 'I crafted an immersive and impactful marketing website for a fictional ocean conservation nonprofit as a portfolio piece to showcase my web design and marketing skills. Through integration of captivating visuals, compelling narratives, and streamlined user experiences, the website fosters a deep emotional connection between visitors and the plight of our oceans.',
           img: {
             src: 'oceans-voice-desktop-mockup.jpg',
-            alt: 'Vernier Science Education Graphical Analysis App'
+            alt: "Ocean's Voice Marketing Website"
           }
         },
         // {

@@ -3,7 +3,9 @@ layout: base
 type: article
 ---
 
-{% from "../../../macros/region.njk" import action %}
+{% from "../../../macros/region.njk" import action, header %}
+
+{{ header({variant: 'spaced', type: type, config: navigation}) }}
 
 {% block article %}
 

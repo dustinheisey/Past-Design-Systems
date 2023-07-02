@@ -43,15 +43,16 @@ footer.bg-img > .stack {
   margin-inline: auto;
   max-inline-size: var(--max-inline-size-region);
   inline-size: 100%;
-
+  padding-block: calc(var(--inset, var(--gap-page)) / 2);
   --gap: var(--gap-region);
 }
 
-.inset {
-  padding-block: calc(var(--inset, var(--gap-page)) / 2);
+.no-inset {
+  padding-block: 0;
 }
 
 .gap {
+  padding-block: unset;
   margin-block-start: calc(var(--gap-page) / 2);
 }
 

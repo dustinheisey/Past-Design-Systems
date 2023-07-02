@@ -18,6 +18,10 @@
 {% include "./regions/footer/" + props.variant + ".njk" %}
 {%- endmacro -%}
 
+{%- macro region(region, props) -%}
+{% include "./regions/" + region + "/" + props.variant + ".njk" ignore missing %}
+{%- endmacro -%}
+
 {%- macro form(props) -%}
 {% include "./regions/form/" + props.variant + ".njk" %}
 {%- endmacro -%}

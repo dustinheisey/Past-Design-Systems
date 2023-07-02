@@ -313,3 +313,15 @@
 .space-3xl-4xl {
   margin-block-start: var(--space-3xl-4xl) !important;
 }
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.grow-2 {
+  flex-grow: 2;
+}
+
+.grow-3 {
+  flex-grow: 3;
+}

@@ -1,7 +1,9 @@
 ---
 layout: base
 ---
-{% from "../../../macros/region.njk" import gallery, action %}
+{% from "../../../macros/region.njk" import gallery, action, header %}
+
+{{ header({variant: 'spaced', type: type, config: navigation}) }}
 
 {{ gallery({ variant: 'masonry', class: "inset", back: true, categories: collections.category, posts: collections[label], content: {headline: label + " Posts"} }) }}
 
