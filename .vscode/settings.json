@@ -1,7 +1,6 @@
 {
   "files.exclude": {
     ".eslintrc": true,
-    ".gitignore": true,
     ".prettierrc": true,
     ".stylelintrc": true,
     "postcss.config.js": true,
