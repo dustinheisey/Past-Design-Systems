@@ -1,7 +1,33 @@
 
 Todo:
-  ☐ Setup PWA Config
-    ☐ Setup PWA Manifest
-    ☐ Generate Favicons
-  ☐ Optimize Assets
-    ☐ Optimize SVG
+  ☐ answer questionnaire
+  ☐ generate brand strategy
+  ☐ generate logo
+    ☐ chatGPT logo creator prompt
+    ☐ generate midjourney Logo
+    ☐ convert logo to SVG
+    ☐ create logo.svg and favicon.svg
+  ☐ create styleguide
+    ☐ create color pallete from logo and https://m3.material.io/theme-builder
+    ☐ create font size scale and spacing scale with https://utopia.fyi/type/calculator and https://utopia.fyi/space/calculator
+    ☐ choose font families from https://modernfontstacks.com/
+  ☐ create sitemap - pages and content regions
+    ☐ fill out navigation object
+    ☐ scaffold pages array
+  ☐ pick layouts for each content region
+  ☐ pick components for each layout
+  ☐ generate content for each component
+    ☐ generate text written in brand tone to fit each page region
+  ☐ meta titles and descriptions
+    ☐ site title and description based on brand strategy
+    ☐ page titles and descriptions based on page content
+  ☐ generate images
+    ☐ generate image subject based on paired content
+    ☐ generate image in midjourney
+    ☐ generate footer background image
+  ☐ fill in fixmes
+    ☐ add .eleventy.js domain name
+    ☐ add package.json package name and pwa icon colors/paddings
+    ☐ add template.njk theme colors (primary light and dark mode)
+    ☐ add robots.txt domain name
+    ☐ add manifest.webmanifest properties
