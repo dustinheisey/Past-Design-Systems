@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: dustinheisey/portfolio
+  branch: main
+media_folder: "/public/img/uploads"
+public_folder: "/img/uploads"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+collections:
+  - label: "Blog"
+    name: "blog"
+    folder: "posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
