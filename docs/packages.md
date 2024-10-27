@@ -12,6 +12,10 @@
 
 ## JS
 - terser - minify js file from command line
+- eslint - lint js
+- eslint/js - basic eslint config
+- globals - eslint config language option property
+
 
 ## Accessibility
 

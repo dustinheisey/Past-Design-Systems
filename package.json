@@ -6,11 +6,11 @@
     "start": "npx @11ty/eleventy --serve --quiet --incremental",
     "build": "rm -rf _site && npx @11ty/eleventy",
     "assets": "svgo -f ./public/svg -o ./_site/svg && pwa-asset-generator ./public/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#1a110f' --padding '10%' --icon-only && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#1a110f' --splash-only --type png --padding '10%'",
-    "lint:js": "npx eslint **/*.js",
-    "lint:css": "npx stylelint '**/*.css'",
+    "lint:js": "npx eslint .",
+    "lint:css": "npx stylelint .",
     "lint": "npm run lint:js && npm run lint:css",
-    "format:css": "npx stylelint '**/*.css' --fix",
-    "format:js": "npx eslint **/*.js --fix",
+    "format:css": "npx stylelint . --fix",
+    "format:js": "npx eslint . --fix",
     "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
     "styles": "postcss styles/index.css -o styles/index.min.css --watch",
     "scripts": "npx terser scripts/index.js -o scripts/index.min.js"
@@ -26,9 +26,12 @@
     "eleventy-plugin-svg-sprite": "^2.4.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.13.0",
     "a11y-sitechecker": "^6.1.0",
     "cssnano": "^7.0.6",
     "cssnano-preset-advanced": "^7.0.6",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
     "html-minifier": "^4.0.0",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
