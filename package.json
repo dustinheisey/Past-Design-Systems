@@ -6,12 +6,14 @@
     "start": "npx @11ty/eleventy --serve --quiet --incremental",
     "build": "rm -rf _site && npx @11ty/eleventy",
     "assets": "svgo -f ./public/svg -o ./_site/svg && pwa-asset-generator ./public/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#1a110f' --padding '10%' --icon-only && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#1a110f' --splash-only --type png --padding '10%'",
-    "lint:js": "npx eslint **/*.js --fix",
-    "lint:css": "npx stylelint \"**/*.css\" --fix",
+    "lint:js": "npx eslint **/*.js",
+    "lint:css": "npx stylelint '**/*.css'",
     "lint": "npm run lint:js && npm run lint:css",
+    "format:css": "npx stylelint '**/*.css' --fix",
+    "format:js": "npx eslint **/*.js --fix",
     "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
     "styles": "postcss styles/index.css -o styles/index.min.css --watch",
-    "scripts": "rollup -c rollup.config.js"
+    "scripts": "npx terser scripts/index.js -o scripts/index.min.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -24,7 +26,6 @@
     "eleventy-plugin-svg-sprite": "^2.4.2"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
     "a11y-sitechecker": "^6.1.0",
     "cssnano": "^7.0.6",
     "cssnano-preset-advanced": "^7.0.6",
@@ -36,7 +37,8 @@
     "prettier": "^3.3.3",
     "pwa-asset-generator": "^6.4.0",
     "stylelint": "^16.10.0",
-    "stylelint-config-standard": "^36.0.1"
+    "stylelint-config-standard": "^36.0.1",
+    "terser": "^5.36.0"
   },
   "author": "Dustin Heisey",
   "license": "MIT"
