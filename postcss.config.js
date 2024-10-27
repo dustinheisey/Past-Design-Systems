@@ -3,7 +3,7 @@ module.exports = {
     require('postcss-easy-import'),
     require('postcss-preset-env')({ stage: 0 }),
     require('cssnano')({
-      preset: 'default'
+      preset: 'advanced'
     })
   ]
 }

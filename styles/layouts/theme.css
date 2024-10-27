@@ -65,6 +65,7 @@
 .theme-card {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
+
   --color-headline-override: var(--color-on-primary);
   --color-on-background: var(--color-on-primary);
 }
@@ -72,6 +73,7 @@
 .theme-clay {
   background-color: #8c5942;
   color: var(--color-on-primary-light);
+
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
   --color-on-button: var(--color-on-primary-light);
@@ -80,6 +82,7 @@
 .theme-olive {
   background-color: #6b7d4d;
   color: var(--color-on-primary-light);
+
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
   --color-on-button: var(--color-on-primary-light);
@@ -88,6 +91,7 @@
 .theme-beige {
   background-color: #d3c4a3;
   color: var(--color-on-background-light);
+
   --color-headline-override: var(--color-on-background-light);
   --color-on-btn: var(--color-on-background-light);
   --color-p-override: var(--color-on-background-light);
@@ -96,6 +100,7 @@
 .theme-rust {
   background-color: #a55a4e;
   color: var(--color-on-primary-light);
+
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
   --color-on-button: var(--color-on-primary-light);
@@ -104,6 +109,7 @@
 .theme-slate {
   background-color: #6a788a;
   color: var(--color-on-primary-light);
+
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
   --color-on-button: var(--color-on-primary-light);
@@ -313,7 +319,7 @@
 }
 
 .theme-youtube {
-  background-color: #ff0000;
+  background-color: #f00;
   color: var(--color-on-primary-light);
 
   p {
@@ -360,6 +366,7 @@
 .theme-action {
   background-color: var(--color-primary-split);
   color: var(--color-on-primary-light);
+
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
 }
