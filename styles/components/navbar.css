@@ -1,4 +1,3 @@
-/*! purgecss start ignore */
 nav {
   position: relative;
   padding: var(--inset-page);
@@ -172,5 +171,3 @@ nav {
     background-color: var(--color-surface);
   }
 }
-
-/*! purgecss end ignore */

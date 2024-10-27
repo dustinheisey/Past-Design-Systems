@@ -8,10 +8,6 @@ const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const svgSprite = require('eleventy-plugin-svg-sprite')
 const sitemap = require('@quasibit/eleventy-plugin-sitemap')
-const CleanCSS = require('clean-css')
-const { promisify } = require('util')
-// const purgeCssPlugin = require("eleventy-plugin-purgecss");
-// const criticalCss = require("eleventy-critical-css");
 
 module.exports = (eleventyConfig, options = {}) => {
   // ? Plugins
@@ -37,10 +33,6 @@ module.exports = (eleventyConfig, options = {}) => {
     sourcemap: false,
     inlineWorkboxRuntime: true
   })
-  // eleventyConfig.addPlugin(purgeCssPlugin, {
-  //   config: "./purgecss.config.js",
-  // });
-  // eleventyConfig.addPlugin(criticalCss);
 
   // ? Shortcodes
   eleventyConfig.addNunjucksShortcode('img', function (src, alt, cls, sizes = '100vw', loading) {
@@ -114,9 +106,4 @@ module.exports = (eleventyConfig, options = {}) => {
     './scripts/index.min.js': 'index.min.js'
   })
   eleventyConfig.addPassthroughCopy({ public: '/' })
-
-  // ? Filters
-  // eleventyConfig.addFilter('cssmin', function (code) {
-  //   return new CleanCSS({}).minify(code).styles
-  // })
 }

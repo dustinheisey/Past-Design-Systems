@@ -17,7 +17,6 @@ small > * {
   justify-content: center;
 }
 
-/*! purgecss start ignore */
 #wcb {
   --b1: var(--color-on-primary) !important;
   --b2: var(--color-primary) !important;
@@ -48,5 +47,3 @@ small > * {
 #wcb_2 {
   background: var(--color-primary) !important;
 } */
-
-/*! purgecss end ignore */

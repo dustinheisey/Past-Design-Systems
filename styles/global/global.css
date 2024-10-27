@@ -1,4 +1,3 @@
-/*! purgecss start ignore */
 @custom-media --phone-only (max-width: 37.4375em);
 @custom-media --tablet-portrait-up (min-width: 37.5em);
 @custom-media --tablet-landscape-up (min-width: 56.25em);
@@ -101,5 +100,3 @@ footer.bg-img > .stack {
   font-size: var(--font-size-xl);
   color: var(--color-primary);
 }
-
-/*! purgecss end ignore */
