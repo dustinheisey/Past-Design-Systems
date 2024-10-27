@@ -189,7 +189,9 @@ article:has(:hover, :focus) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsl(from var(--color-primary) h s l / 90%); /* Semi-transparent overlay */
+  background-color: hsl(
+    from var(--color-primary) h s l / 90%
+  ); /* Semi-transparent overlay */
   opacity: 0; /* Hidden by default */
   display: flex;
   justify-content: start;

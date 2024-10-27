@@ -131,7 +131,10 @@
   fill: var(--icon-fill);
 }
 
-[data-theme='dark'] .dark-mode-toggle:is(:hover, :focus-visible) > .sun-and-moon > .sun {
+[data-theme='dark']
+  .dark-mode-toggle:is(:hover, :focus-visible)
+  > .sun-and-moon
+  > .sun {
   fill: var(--icon-fill);
 }
 
@@ -139,7 +142,10 @@
   stroke: var(--icon-fill);
 }
 
-[data-theme='dark'] .dark-mode-toggle:is(:hover, :focus-visible) > .sun-and-moon > .sun-beams {
+[data-theme='dark']
+  .dark-mode-toggle:is(:hover, :focus-visible)
+  > .sun-and-moon
+  > .sun-beams {
   stroke: var(--icon-fill);
 }
 

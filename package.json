@@ -12,7 +12,7 @@
     "format:css": "npx stylelint . --config ./config/.stylelintrc --fix",
     "format:js": "npx eslint . --config ./config/eslint.config.mjs --fix",
     "format": "npm run format:js && npm run format:css",
-    "prettier": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
+    "prettier": "prettier . --config ./config/prettier.config.mjs --write",
     "styles": "postcss --config ./config/postcss.config.js styles/index.css -o styles/index.min.css --watch",
     "scripts": "npx terser scripts/index.js -o scripts/index.min.js"
   },

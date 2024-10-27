@@ -29,11 +29,10 @@ const config = {
             ]
           }
         */
-        
       ],
-      action: { 
-        label: 'TODO - action button label', 
-        url: 'TODO - action button path', 
+      action: {
+        label: 'TODO - action button label',
+        url: 'TODO - action button path'
         // external:  true || false
       },
       bottombar: {
@@ -47,10 +46,10 @@ const config = {
             },
           */
         ],
-        fab: { 
-          label: 'TODO - fab label', 
-          url: 'TODO - fab path', 
-          icon: 'icon' 
+        fab: {
+          label: 'TODO - fab label',
+          url: 'TODO - fab path',
+          icon: 'icon'
         }
       }
     },
@@ -86,8 +85,7 @@ const config = {
       url: 'index',
       header: false,
       title: 'TODO - SEO friendly page title',
-      description:
-        'TODO - SEO friendly page description',
+      description: 'TODO - SEO friendly page description',
       regions: {
         // TODO page regions
         wakeUp: {
@@ -259,7 +257,10 @@ const config = {
               body: "I'm watching the news of a Category 6 hurricane that has been sweeping through the country for weeks now. It's bringing with it massive floods that have forced millions to evacuate and lose their homes."
             }
           ],
-          btn: { url: 'https://wiki.inconvenient.gg/milestones', label: 'See Dozens More Milestones' }
+          btn: {
+            url: 'https://wiki.inconvenient.gg/milestones',
+            label: 'See Dozens More Milestones'
+          }
         },
         explore: {
           layout: 'reel',
@@ -271,14 +272,23 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { ar: 'square', src: 'everbright.webp', alt: 'Everbright', loading: 'lazy' },
+              img: {
+                ar: 'square',
+                src: 'everbright.webp',
+                alt: 'Everbright',
+                loading: 'lazy'
+              },
               headline: 'Everbright',
               body: 'Step into the snowy expanses of Everbright, where a mysterious, long-lost civilization once thrived. The frosty beauty of this land hides the darker truths of a world that ignored its warnings. Will you explore its icy secrets?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'undergarden.webp', alt: 'Undergarden', loading: 'lazy' },
+              img: {
+                src: 'undergarden.webp',
+                alt: 'Undergarden',
+                loading: 'lazy'
+              },
               headline: 'Undergarden',
               body: 'In the eerie caverns of Undergarden, something far worse than darkness awaits. Nature has reclaimed this place, but it left behind a haunting legacy. Can you navigate its forgotten depths?'
             },
@@ -292,7 +302,11 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'twilight.webp', alt: 'The Twilight Forest', loading: 'lazy' },
+              img: {
+                src: 'twilight.webp',
+                alt: 'The Twilight Forest',
+                loading: 'lazy'
+              },
               headline: 'The Twilight Forest',
               body: 'In the abandoned streets of The Twilight Forest, echoes of a great tragedy persist. This once-flourishing land now lies in silence. Can you face the shadows of its forgotten past?'
             },
@@ -301,12 +315,16 @@ const config = {
               variant: 'flip',
               img: { src: 'nether.webp', alt: 'The Nether', loading: 'lazy' },
               headline: 'The Nether',
-              body: 'Once a thriving landscape, The Nether now burns from the effects of unchecked climate devastation. Fire and brimstone fill the air, leaving a grim reminder of the cost of ignoring nature\'s limits. What role will you play?'
+              body: "Once a thriving landscape, The Nether now burns from the effects of unchecked climate devastation. Fire and brimstone fill the air, leaving a grim reminder of the cost of ignoring nature's limits. What role will you play?"
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'bumblezone.webp', alt: 'The Bumblezone', loading: 'lazy' },
+              img: {
+                src: 'bumblezone.webp',
+                alt: 'The Bumblezone',
+                loading: 'lazy'
+              },
               headline: 'The Bumblezone',
               body: 'Explore the buzzing world inside The Bumblezone, a realm of endless honeycombs and hidden danger. But don’t be fooled by its golden glow—this world has seen better days. Will you find hope here?'
             },
@@ -325,7 +343,8 @@ const config = {
             component: 'text',
             size: 'region',
             overline: 'The Future is in Your Hands',
-            headline: 'Will You Dream of a New World or Stay Trapped in The Nightmare?',
+            headline:
+              'Will You Dream of a New World or Stay Trapped in The Nightmare?',
             body: 'We’ve been living in a dream—a nightmare that we mistake for reality. You now have the power to wake up, to reject the broken path we’re on, dream a new dream, and create a new world. Or will you stay trapped, letting the Earth spiral further into chaos? The future is yours to decide.',
             btn: {
               label: 'Play Now',
@@ -355,8 +374,8 @@ const config = {
           ]
         }
       }
-    },
+    }
   ]
-}
+};
 
-module.exports = config
+module.exports = config;

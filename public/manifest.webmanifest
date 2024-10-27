@@ -7,7 +7,12 @@
   "start_url": "/",
   "scope": "/",
   "orientation": "portrait",
-  "display_override": ["window-control-overlay", "fullscreen", "standalone", "browser"],
+  "display_override": [
+    "window-control-overlay",
+    "fullscreen",
+    "standalone",
+    "browser"
+  ],
   "lang": "en",
   "icons": [
     {
