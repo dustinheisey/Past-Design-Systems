@@ -8,7 +8,7 @@ import inclusiveLangPlugin from '@11ty/eleventy-plugin-inclusive-language';
 import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import svgSprite from 'eleventy-plugin-svg-sprite';
 
-export default (eleventyConfig, options = {}) => {
+export default (eleventyConfig) => {
   // ? Plugins
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -37,7 +37,7 @@ export default (eleventyConfig, options = {}) => {
           widths: [400, 800, 1280, null],
           formats: ['webp', 'jpeg'],
           outputDir: './_site/img/',
-          filenameFormat: function (id, src, width, format, options) {
+          filenameFormat: function (id, src, width, format) {
             const extension = path.extname(src);
             const name = path.basename(src, extension);
 
