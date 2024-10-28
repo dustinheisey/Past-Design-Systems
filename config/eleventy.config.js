@@ -1,24 +1,18 @@
-const Image = require('@11ty/eleventy-img');
-const path = require('path');
-const fs = require('fs');
-const minify = require('html-minifier').minify;
-const pluginPWA = require('eleventy-plugin-pwa-v2');
-const pluginNavigation = require('@11ty/eleventy-navigation');
-const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const svgSprite = require('eleventy-plugin-svg-sprite');
-const sitemap = require('@quasibit/eleventy-plugin-sitemap');
+import Image from '@11ty/eleventy-img';
+import path from 'path';
+import fs from 'fs';
+import { minify } from 'html-minifier';
+import pluginPWA from 'eleventy-plugin-pwa-v2';
+import pluginNavigation from '@11ty/eleventy-navigation';
+import inclusiveLangPlugin from '@11ty/eleventy-plugin-inclusive-language';
+import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import svgSprite from 'eleventy-plugin-svg-sprite';
 
-module.exports = (eleventyConfig, options = {}) => {
+export default (eleventyConfig, options = {}) => {
   // ? Plugins
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
-  eleventyConfig.addPlugin(sitemap, {
-    sitemap: {
-      hostname: 'https://inconvenient.gg'
-    }
-  });
   eleventyConfig.addPlugin(svgSprite, [
     {
       path: './icons',
@@ -109,4 +103,9 @@ module.exports = (eleventyConfig, options = {}) => {
     './scripts/index.min.js': 'index.min.js'
   });
   eleventyConfig.addPassthroughCopy({ public: '/' });
+
+  eleventyConfig.ignores.add('README.md');
+  eleventyConfig.ignores.add('.vscode/');
+  eleventyConfig.ignores.add('config/');
+  eleventyConfig.ignores.add('docs/');
 };

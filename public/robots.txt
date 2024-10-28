@@ -1,1 +1,4 @@
 Sitemap: https://TODO - url/sitemap.xml
+
+User-agent: *
+Disallow:

@@ -1,4 +1,4 @@
-const config = {
+export default {
   title: 'TODO - site title',
   url: 'TODO - site url',
   navigation: {
@@ -377,5 +377,3 @@ const config = {
     }
   ]
 };
-
-module.exports = config;
