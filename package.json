@@ -28,7 +28,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
-    "a11y-sitechecker": "^6.1.0",
     "cssnano": "^7.0.6",
     "cssnano-preset-advanced": "^7.0.6",
     "eslint": "^9.13.0",

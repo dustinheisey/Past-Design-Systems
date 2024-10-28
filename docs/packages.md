@@ -22,7 +22,11 @@
 
 - prettier - format everything
 
-## Accessibility
+## HTML
+
+- htmlhint - eslint for html
+- pa11y - accessibility linting
+- html minifier - minify html
 
 ## Eleventy
 
