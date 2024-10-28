@@ -42,6 +42,23 @@ input.slider {
   height: 100%;
 }
 
+.slider-button {
+  position: absolute;
+  background-color: var(--color-on-background);
+  color: var(--color-background);
+  padding: 0.5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  /* z-index: 100; */
+  box-shadow: var(--shadow-xs);
+}
+
 .slider:focus-visible ~ .slider-button {
   outline: 3px solid var(--color-primary);
   outline-offset: 3px;
@@ -58,21 +75,4 @@ input.slider {
   left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;
-}
-
-.slider-button {
-  position: absolute;
-  background-color: var(--color-on-background);
-  color: var(--color-background);
-  padding: 0.5rem;
-  border-radius: 100vw;
-  display: grid;
-  place-items: center;
-  top: 50%;
-  left: var(--position);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-
-  /* z-index: 100; */
-  box-shadow: var(--shadow-xs);
 }

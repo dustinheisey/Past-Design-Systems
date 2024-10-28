@@ -1,3 +1,21 @@
+input[type='range'] {
+  cursor: pointer;
+  appearance: none;
+  border-radius: 3px;
+  width: 100%;
+  height: 6px;
+  background-position: initial;
+  background-size: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  line-height: var(--line-height-body);
+  vertical-align: middle;
+  margin: 0;
+  background-color: var(--color-outline-variant);
+}
+
 input[type='range']:focus {
   outline: none;
 }
@@ -57,22 +75,4 @@ output {
   padding: var(--space-3xs) var(--space-2xs);
   margin: 0;
   min-inline-size: 9ch;
-}
-
-input[type='range'] {
-  cursor: pointer;
-  appearance: none;
-  border-radius: 3px;
-  width: 100%;
-  height: 6px;
-  background-position: initial;
-  background-size: initial;
-  background-repeat: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  line-height: var(--line-height-body);
-  vertical-align: middle;
-  margin: 0;
-  background-color: var(--color-outline-variant);
 }

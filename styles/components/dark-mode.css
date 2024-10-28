@@ -1,4 +1,15 @@
 .dark-mode-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  inline-size: var(--size);
+  block-size: var(--size);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  outline-offset: 5px;
   color: var(--color-primary);
 
   --size: 1.5rem;
@@ -71,20 +82,6 @@
     transition-delay: 0.25s;
     transition-duration: 0.5s;
   }
-}
-
-.dark-mode-toggle {
-  background: none;
-  border: none;
-  padding: 0;
-  inline-size: var(--size);
-  block-size: var(--size);
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  cursor: pointer;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-  outline-offset: 5px;
 }
 
 .dark-mode-toggle > svg {

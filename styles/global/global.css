@@ -12,6 +12,16 @@ header {
   padding: 0;
 }
 
+.region {
+  padding-inline: var(--inset, var(--inset-page));
+  margin-inline: auto;
+  max-inline-size: var(--max-inline-size-region);
+  inline-size: 100%;
+  padding-block: calc(var(--inset, var(--gap-page)) / 2);
+
+  --gap: var(--gap-region);
+}
+
 footer .region {
   margin-block-end: var(--space-xl);
 }
@@ -38,16 +48,6 @@ footer.bg-img > .stack {
   padding-block-end: calc(2 * var(--inset-page));
 }
 
-.region {
-  padding-inline: var(--inset, var(--inset-page));
-  margin-inline: auto;
-  max-inline-size: var(--max-inline-size-region);
-  inline-size: 100%;
-  padding-block: calc(var(--inset, var(--gap-page)) / 2);
-
-  --gap: var(--gap-region);
-}
-
 .no-inset {
   padding-block: 0;
 }
@@ -70,12 +70,6 @@ footer.bg-img > .stack {
 
 :focus:not(:focus-visible) {
   outline: none;
-}
-
-::selection {
-  background: var(--color-primary);
-  color: var(--color-on-primary);
-  text-shadow: none;
 }
 
 ::selection {

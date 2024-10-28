@@ -143,10 +143,6 @@ article:has(:hover, :focus) {
   transform: translate3d(0, -2px, 0);
 }
 
-.card:hover {
-  /* transform: scale(1.05); Slight scale on hover */
-}
-
 .card-image {
   padding: 0;
   grid-column: 1/1;
@@ -192,6 +188,7 @@ article:has(:hover, :focus) {
   background-color: hsl(
     from var(--color-primary) h s l / 90%
   ); /* Semi-transparent overlay */
+
   opacity: 0; /* Hidden by default */
   display: flex;
   justify-content: start;
@@ -202,6 +199,7 @@ article:has(:hover, :focus) {
 }
 
 .card:hover {
+  /* transform: scale(1.05); Slight scale on hover */
   .card-overlay {
     opacity: 1; /* Show the overlay on hover */
   }

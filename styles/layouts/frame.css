@@ -21,6 +21,12 @@
   aspect-ratio: 1/1;
 }
 
+.frame-cover,
+.frame-cover > * {
+  /* min-block-size: 100vh; */
+  block-size: 100%;
+}
+
 .frame.logo * {
   background-color: initial;
 }
@@ -43,12 +49,6 @@
 
 .frame.full {
   inline-size: 100%;
-  block-size: 100%;
-}
-
-.frame-cover,
-.frame-cover > * {
-  /* min-block-size: 100vh; */
   block-size: 100%;
 }
 

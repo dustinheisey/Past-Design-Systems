@@ -7,10 +7,6 @@
   place-items: center;
 }
 
-label:focus-within > input[type='radio'] {
-  color: var(--color-primary);
-}
-
 input[type='radio'] {
   appearance: none;
   background-color: var(--color-background);
@@ -46,7 +42,6 @@ input[type='radio']:checked {
   border: none;
 }
 
-/* Card */
 .input-card input[type='radio'] {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
@@ -56,6 +51,12 @@ input[type='radio']:checked {
   white-space: nowrap;
   width: 1px;
 }
+
+label:focus-within > input[type='radio'] {
+  color: var(--color-primary);
+}
+
+/* Card */
 
 .input-card span {
   display: flex;

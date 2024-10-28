@@ -1,7 +1,7 @@
-.caption,
-.caption > *,
 small,
-small > * {
+small > *,
+.caption,
+.caption > * {
   font-size: var(--font-size-s);
   text-align: center;
   line-height: var(--line-height-body);
@@ -26,24 +26,11 @@ small > * {
   flex-wrap: wrap !important;
 }
 
-#wcb #wcb_g {
+#wcb #wcb_g { /* stylelint-disable-line */
   color: var(--color-primary) !important;
   background: var(--color-on-primary) !important;
 }
 
-#wcb_2 {
+#wcb_2 { /* stylelint-disable-line */
   color: var(--color-primary) !important;
 }
-
-/* 
-
-
-#wcb #wcb_a {
-  border-radius: 0 var(--radius-pill) var(--radius-pill) 0 !important;
-  font-weight: 400 !important;
-  display: none !important;
-}
-
-#wcb_2 {
-  background: var(--color-primary) !important;
-} */

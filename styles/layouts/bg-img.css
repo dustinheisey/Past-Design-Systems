@@ -1,3 +1,9 @@
+video {
+  z-index: 0;
+  position: relative;
+}
+
+
 .bg-img {
   display: grid;
   grid-template-columns: 1fr;
@@ -38,11 +44,6 @@
   border-image: fill 1
     linear-gradient(hsl(from var(--color-primary) h s l / 0.5), hsl(from var(--color-primary) h s l / 0.5));
 } */
-
-video {
-  z-index: 0;
-  position: relative;
-}
 
 .inconvenient-logo-video {
   --color-on-background: var(--color-background-light);

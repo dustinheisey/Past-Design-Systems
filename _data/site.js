@@ -7,8 +7,16 @@ export default {
       alt: 'TODO - site title'
     },
     header: {
-      variant: 'TODO - header variant',
+      variant: 'center',
       links: [
+        {
+            label: 'label',
+            url: 'path',
+            external: true,
+            subLinks: [
+              { label: 'label', url: 'path' , external: true },
+            ]
+          },
         // TODO links
         /* Simple Link
           {
@@ -83,7 +91,6 @@ export default {
     // TODO pages
     {
       url: 'index',
-      header: false,
       title: 'TODO - SEO friendly page title',
       description: 'TODO - SEO friendly page description',
       regions: {

@@ -1,3 +1,5 @@
+/* stylelint-disable no-duplicate-selectors */
+
 /* ? Typography */
 @font-face {
   font-family: Impact;
@@ -39,9 +41,7 @@
   --letter-spacing-overline: 0.025em;
   --font-weight-headline: 700;
   --font-weight-body: 400;
-}
 
-:root {
   /* ? Border Radius */
   --radius-s: 0.25rem;
   --radius-m: 0.5rem;

@@ -11,6 +11,12 @@
 .icon use {
   /* icon secondary color */
   fill: currentcolor;
+
+  --icon-stroke-linecap-butt: butt;
+
+  stroke-miterlimit: 10;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
 }
 
 .icon-primary {
@@ -104,14 +110,6 @@ Stroke
 Caps/Corners
 
 -------------------------------- */
-
-.icon use {
-  --icon-stroke-linecap-butt: butt;
-
-  stroke-miterlimit: 10;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
-}
 
 .stroke-round use {
   --icon-stroke-linecap-butt: round;
